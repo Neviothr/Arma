@@ -1,4 +1,4 @@
-//https://forums.bistudio.com/topic/190861-how-to-make-device-a-bomb-and-able-to-disarm/
+// https://forums.bistudio.com/topic/190861-how-to-make-device-a-bomb-and-able-to-disarm/
 
 // In assembled device's init:
 this addAction ["Disarm","disarm.sqf"];
