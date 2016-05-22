@@ -1,0 +1,17 @@
+// Name of scenario creator.
+author = "cx64";
+
+// ============================================================================================
+
+// Enabling the debug console.
+enableDebugConsole = 2;
+
+// ============================================================================================
+
+// Automatic removal of dead bodies.
+corpseManagerMode = 1;
+corpseLimit = 30;
+corpseRemovalMinTime = 400;
+corpseRemovalMaxTime = 900;
+
+// ============================================================================================
