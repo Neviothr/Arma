@@ -1,8 +1,9 @@
-*/ This script create a custom, player placed waypoint without the distance indicator, as a replacement for the default player placed waypoints.
+/* This script create a custom, player placed waypoint without the distance indicator, as a replacement for the default player placed waypoints.
 NOTES:
 * Does not work after a restart when used a script.
 * Disable waypoints in the difficulty manu.
-\*
+*/
+
 disableSerialization;
 if (hasInterface) then { waitUntil {!isNull (findDisplay 12)};
 _mapDisplay = findDisplay 12;
