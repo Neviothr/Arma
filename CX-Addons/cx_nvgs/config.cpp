@@ -15,7 +15,7 @@ class CfgWeapons
 	class NVGoggles
 	{
 		displayName = "Custom NVGs";
-		modelOptics="\cx_nvg\lens";
+		modelOptics="\cx_nvg\twotube";
 		Scope=2;
 		ScopeCurator=2;
 		class ItemInfo
