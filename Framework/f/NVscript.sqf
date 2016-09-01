@@ -1,6 +1,6 @@
 /*
 File: NVscript.sqf
-Author: @BroDouYouEvenBro (BIS Forums), @Tuboswaggg (BIS Forums), @Tripod27 (BIS Forums), @Killzone_Kid (BIS Forums/KK_Blog), @PabstMirror (/r/ArmaDev) and cx64.
+Author: @BroDouYouEvenBro (BIS Forums), @Tuboswaggg (BIS Forums), @Tripod27 (BIS Forums), @Killzone_Kid (BIS Forums/KK_Blog), @PabstMirror (/r/ArmaDev) and Neviothr.
 Credits: BIS Forums, https://forums.bistudio.com/topic/168966-tweaked-night-vision-script/
 
 Description:
