@@ -1,6 +1,6 @@
 /*
 File: skill.sqf
-Author: cx64
+Author: Neviothr
 Credits: BIS Wiki
 
 Description:
