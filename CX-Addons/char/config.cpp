@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class cx_soldier
+	class Nev_soldier
 	{
 		units[]={};
 		weapons[]={};
@@ -12,15 +12,15 @@ class CfgVehicleClasses
 {
 	class universal_soldier
 	{
-		displayName="CX Universal Soldier";
+		displayName="Neviothr's Universal Soldier";
 	};
 };
 class CfgVehicles
 {
 	class B_Soldier_base_F;
-	class cx_Soldier_blufor: B_Soldier_base_F
+	class Nev_Soldier_blufor: B_Soldier_base_F
 	{
-		author = "cx64";
+		author = "Neviothr";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -39,7 +39,7 @@ class CfgVehicles
 	};
 
 	class O_Soldier_base_F;
-	class cx_Soldier_opfor: O_Soldier_base_F
+	class nev_Soldier_opfor: O_Soldier_base_F
 	{
 		author = "cx64";
 		scope = 2;
@@ -60,7 +60,7 @@ class CfgVehicles
 	};
 
 	class I_Soldier_base_F;
-	class cx_Soldier_independent: I_Soldier_base_F
+	class nev_Soldier_independent: I_Soldier_base_F
 	{
 		author = "cx64";
 		scope = 2;
