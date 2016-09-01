@@ -2,7 +2,7 @@
 // https://forums.bistudio.com/topic/191118-howto-make-ugl-40mm-smoke-grenades-less-bouncy/
 class CfgPatches
 {
-	class cx_ugls
+	class nev_ugls
 	{
 		units[] = {};
 		weapons[] = {};
