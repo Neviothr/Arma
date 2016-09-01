@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class Nev_soldier
+	class nev_soldier
 	{
 		units[]={};
 		weapons[]={};
@@ -41,7 +41,7 @@ class CfgVehicles
 	class O_Soldier_base_F;
 	class nev_Soldier_opfor: O_Soldier_base_F
 	{
-		author = "cx64";
+		author = "Neviothr";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -62,7 +62,7 @@ class CfgVehicles
 	class I_Soldier_base_F;
 	class nev_Soldier_independent: I_Soldier_base_F
 	{
-		author = "cx64";
+		author = "Neviothr";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
