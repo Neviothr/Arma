@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class cxAddons
+	class nev_waypoint
 	{
 		units[] = {};
 		weapons[] = {};
@@ -12,5 +12,5 @@ class CfgPatches
 
 class Extended_PostInit_EventHandlers
 {
-  TAG_myAddon_Post_Init = "TAG_myAddon_Post_Init_Var = [] execVM ""\cxAddons\waypointDistance.sqf""";
+  nev_waypoint_Post_Init = "TAG_myAddon_Post_Init_Var = [] execVM ""\cxAddons\waypointDistance.sqf""";
 };
