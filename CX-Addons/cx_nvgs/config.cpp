@@ -1,6 +1,6 @@
 class CfgPatches
 {
-    class cx_nvg
+    class nev_nvg
     {
         units[]={};
         weapons[]={};
@@ -19,7 +19,7 @@ class CfgWeapons
 
     class cx_pvs14: NVGoggles
     {
-        author = "cx64";
+        author = "Neviothr";
         modelOptics = "\cx_nvg\onetube";
         displayName = "PVS-14";
         scope = 2;
@@ -33,7 +33,7 @@ class CfgWeapons
 
     class cx_pvs15: cx_pvs14
     {
-        author = "cx64";
+        author = "Neviothr";
         modelOptics = "\cx_nvg\twotube";
         displayName = "PVS-15";
         scope = 2;
