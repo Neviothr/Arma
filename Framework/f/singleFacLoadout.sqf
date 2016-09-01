@@ -1,6 +1,6 @@
 /*
 File: singleFacLoadout.sqf
-Author: cx64
+Author: Neviothr
 Credits: BIS Forums, BIS Wiki
 
 Description:
