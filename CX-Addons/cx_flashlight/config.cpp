@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class cx_flashlight
+	class nev_flashlight
 	{
 		units[] = {};
 		weapons[] = {"acc_flashlight"};
