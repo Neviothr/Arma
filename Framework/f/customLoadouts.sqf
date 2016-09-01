@@ -1,6 +1,6 @@
 /*
 File: customLoadouts.sqf
-Author: @Davidoss (BIS Forums), cx64
+Author: @Davidoss (BIS Forums), Neviothr
 Credits: BIS Forums, https://forums.bistudio.com/topic/187197-help-with-custom-loadouts/
 
 Description:
