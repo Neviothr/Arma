@@ -7,12 +7,22 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.0;
-		requiredAddons[] = {"Extended_EventHandlers"};
+		requiredAddons[] = {"A3_Weapons_F"};
 
 	};
 };
 
-class Extended_PostInit_EventHandlers
+class CfgFunctions
 {
-  nev_waypointReplacement_Post_Init = "nev_waypointReplacement_Post_Init_Var = [] execVM ""\nev_waypointReplacement\waypointDistance.sqf""";
+	class nev
+	{
+		class waypoint
+		{
+			class replacement_init
+			{
+				file = "nev_waypointReplacement\waypointDistance.sqf";
+				preInit = 1;
+			};
+		};
+	};
 };
