@@ -13,5 +13,5 @@ class CfgPatches
 
 class Extended_PostInit_EventHandlers
 {
-		nev_waypointReplacement_Post_Init = "nev_waypointReplacement_Post_Init_Var = [] execVM ""\nev_waypointReplacement\waypointDistance.sqf""";
+	nev_waypointReplacement_Post_Init = "nev_waypointReplacement_Post_Init_Var = [] execVM ""\nev_waypointReplacement\waypointDistance.sqf""";
 };
