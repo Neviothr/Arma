@@ -39,4 +39,3 @@ class CfgAmmo
 		intensity  = 500000;
 	};
 };
-
