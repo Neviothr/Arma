@@ -29,7 +29,7 @@ class CfgAmmo
 	class F_20mm_White: FlareBase
 	{
 		timeToLive = 35;
-		brightness = 4000; // 8 (x 1250)
+		brightness = 4000; // 8 (1250:1)
 		intensity  = 5000000; // 10000
 	};
 	class F_Signal_Green: FlareBase
