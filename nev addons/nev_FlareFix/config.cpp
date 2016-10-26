@@ -16,26 +16,26 @@ class CfgAmmo
 	class FlareBase;
 	class Flare_82mm_AMOS_White: FlareCore
 	{
-		timeToLive = 30;
-		brightness = 4000000;
+		timeToLive = 35;
+		brightness = 4000;
 		intensity  = 5000000;
 	};
 	class F_40mm_White: FlareBase
 	{
-		timeToLive = 30;
-		brightness = 4000000;
+		timeToLive = 35;
+		brightness = 4000;
 		intensity  = 5000000;
 	};
 	class F_20mm_White: FlareBase
 	{
-		timeToLive = 30;
-		brightness = 4000000;
-		intensity  = 5000000;
+		timeToLive = 35;
+		brightness = 4000; // 8 (x 1250)
+		intensity  = 5000000; // 10000
 	};
 	class F_Signal_Green: FlareBase
 	{
-		timeToLive = 30;
-		brightness = 4000000;
+		timeToLive = 35;
+		brightness = 4000;
 		intensity  = 5000000;
 	};
 };
