@@ -41,6 +41,15 @@ switch (_TypNumber) do
     _Unit_Pool_A = [];
   };
 //-------------------------------------------------------------------------------------------------
+// CTRG Pacific (BLUFOR, A3)
+  case 3:
+  {
+    _Unit_Pool_S = ["B_CTRG_Soldier_Medic_tna_F","B_CTRG_Soldier_JTAC_tna_F","B_CTRG_Soldier_TL_tna_F","B_CTRG_Soldier_AR_tna_F","B_CTRG_Soldier_tna_F","B_CTRG_Soldier_LAT_tna_F"];
+    _Unit_Pool_V = ["B_CTRG_LSV_01_light_F"];
+    _Unit_Pool_T = [];
+    _Unit_Pool_A = ["B_CTRG_Heli_Transport_01_sand_F","B_CTRG_Heli_Transport_01_tropic_F"];
+  };
+//-------------------------------------------------------------------------------------------------
   Default
   {
     if(DAC_Basic_Value != 5) then
