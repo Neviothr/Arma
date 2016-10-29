@@ -50,6 +50,15 @@ switch (_TypNumber) do
     _Unit_Pool_A = ["B_CTRG_Heli_Transport_01_sand_F","B_CTRG_Heli_Transport_01_tropic_F"];
   };
 //-------------------------------------------------------------------------------------------------
+// FIA (BLUFOR, A3)
+  case 4:
+  {
+    _Unit_Pool_S = ["B_G_officer_F","B_G_Soldier_lite_F","B_G_Soldier_SL_F","B_G_Soldier_AR_F","B_G_Soldier_F","B_G_Soldier_LAT_F"];
+    _Unit_Pool_V = ["B_G_Offroad_01_armed_F"];
+    _Unit_Pool_T = [];
+    _Unit_Pool_A = [];
+  };
+//-------------------------------------------------------------------------------------------------
   Default
   {
     if(DAC_Basic_Value != 5) then
