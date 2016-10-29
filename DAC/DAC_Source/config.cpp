@@ -2,16 +2,11 @@ class CfgPatches
 {
 	class DAC_Source
 	{
-		units[]={};
-		weapons[]={};
-		requiredAddons[]=	{	
-								"A3_Data_F","A3_Misc_F","A3_Structures_F","A3_Plants_F_Bush","A3_Roads_F","A3_Rocks_F","A3_Signs_F",
-								"A3_Soft_F","A3_Structures_F_Wrecks","A3_Structures_F_Mil","A3_Structures_F_Ind","A3_Structures_F_Households"
-							};
-		requiredVersion=0.1;
-		versionStr = "3.1";
-		versionAr[] = {3,1};
-		author[] = {"Silola"};
+		units[] = {};
+		weapons[] = {};
+		requiredAddons[] = {"A3_Data_F"};
+		requiredVersion = 0.1;
+		author = "Silola";
 	};
 };
 
