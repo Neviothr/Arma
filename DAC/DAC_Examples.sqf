@@ -36,8 +36,8 @@ fun = 		   // Zone name
 		],
 		[
 			1, // 0 = East, 1 = West, 2 = IND, 3 = CIV
-			1, // Same as above
-			1, // Same as above
+			1, // Faction, look inside config_units.sqf
+			1, // Keep as 1
 			0  // Keep as 0
 		]
 	] spawn DAC_Zone
