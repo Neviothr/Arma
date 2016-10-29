@@ -59,6 +59,15 @@ switch (_TypNumber) do
     _Unit_Pool_A = [];
   };
 //-------------------------------------------------------------------------------------------------
+// Gendarmerie (BLUFOR, A3)
+  case 5:
+  {
+    _Unit_Pool_S = ["B_GEN_Soldier_F","B_GEN_Soldier_F","B_GEN_Commander_F","B_GEN_Soldier_F"];
+    _Unit_Pool_V = ["B_GEN_Offroad_01_gen_F"];
+    _Unit_Pool_T = [];
+    _Unit_Pool_A = [];
+  };
+//-------------------------------------------------------------------------------------------------
   Default
   {
     if(DAC_Basic_Value != 5) then
