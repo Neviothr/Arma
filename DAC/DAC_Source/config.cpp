@@ -9,8 +9,6 @@ class CfgPatches
 								"A3_Soft_F","A3_Structures_F_Wrecks","A3_Structures_F_Mil","A3_Structures_F_Ind","A3_Structures_F_Households"
 							};
 		requiredVersion=0.1;
-		name = "DAC_Source.pbo";
-		mail = "silola@freenet.de";
 		versionStr = "3.1";
 		versionAr[] = {3,1};
 		author[] = {"Silola"};
