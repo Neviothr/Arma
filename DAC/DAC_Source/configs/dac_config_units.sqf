@@ -77,6 +77,15 @@ switch (_TypNumber) do
     _Unit_Pool_A = ["B_Heli_Light_01_armed_F","B_Heli_Attack_01_F","B_Heli_Transport_03_F","B_Heli_Transport_03_unarmed_F","B_Heli_Light_01_F","B_Heli_Transport_01_F","B_Heli_Transport_1_camo_F","B_Plane_CAS_01_F"];
   };
 //-------------------------------------------------------------------------------------------------
+// NATO Pacific (BLUFOR, A3)
+  case 7:
+  {
+    _Unit_Pool_S = ["B_T_Crew_F","B_T_Pilot_F","B_T_Soldier_SL_F","B_T_Soldier_AR_F","B_T_Soldier_F","B_T_Soldier_LAT_F"];
+    _Unit_Pool_V = ["B_MRAP_01_F","B_MRAP_01_gmg_F","B_MRAP_01_hmg_F","B_LSV_01_armed_F","B_LSV_01_unarmed_F"];
+    _Unit_Pool_T = ["B_APC_Tracked_01_AA_F","B_APC_Wheeled_01_cannon_F","B_APC_Tracked_01_CRV_F","B_APC_Tracked_01_rcws_F"];
+    _Unit_Pool_A = ["B_T_VTOL_01_armed_F"];
+  };
+//-------------------------------------------------------------------------------------------------
   Default
   {
     if(DAC_Basic_Value != 5) then
