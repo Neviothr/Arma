@@ -95,6 +95,15 @@ switch (_TypNumber) do
     _Unit_Pool_A = ["I_Heli_Transport_02_F","I_Heli_light_03_F","I_Heli_light_03_unarmed_F"];
   };
 //-------------------------------------------------------------------------------------------------
+// FIA (IND, A3)
+  case 9:
+  {
+    _Unit_Pool_S = ["I_G_Soldier_lite_F","I_G_officer_F","I_G_Soldier_SL_F","I_G_Soldier_AR_F","I_G_Soldier_F","I_G_Soldier_LAT_F"];
+    _Unit_Pool_V = ["I_G_Offroad_01_armed_F"];
+    _Unit_Pool_T = [];
+    _Unit_Pool_A = [];
+  };
+//-------------------------------------------------------------------------------------------------
   Default
   {
     if(DAC_Basic_Value != 5) then
