@@ -104,6 +104,15 @@ switch (_TypNumber) do
     _Unit_Pool_A = [];
   };
 //-------------------------------------------------------------------------------------------------
+// Syndikat (IND, A3)
+  case 10:
+  {
+    _Unit_Pool_S = ["I_C_Soldier_Bandit_7_F","I_C_Pilot_F","I_C_Soldier_Bandit_6_F","I_C_Soldier_3_F","I_C_Soldier_Bandit_2_F","I_C_Soldier_Bandit_5_F","I_C_Soldier_Bandit_1_F","I_C_Soldier_Bandit_8_F","I_C_Soldier_Bandit_4_F","I_C_Soldier_Para_7_F","I_C_Soldier_Para_2_F","I_C_Soldier_Para_3_F","I_C_Soldier_Para_4_F","I_C_Soldier_Para_6_F","I_C_Soldier_Para_8_F","I_C_Soldier_Para_1_F","I_C_Soldier_Para_5_F"];
+    _Unit_Pool_V = [];
+    _Unit_Pool_T = [];
+    _Unit_Pool_A = [];
+  };
+//-------------------------------------------------------------------------------------------------
   Default
   {
     if(DAC_Basic_Value != 5) then
