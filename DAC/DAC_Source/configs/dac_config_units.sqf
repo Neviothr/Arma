@@ -86,6 +86,15 @@ switch (_TypNumber) do
     _Unit_Pool_A = ["B_T_VTOL_01_armed_F"];
   };
 //-------------------------------------------------------------------------------------------------
+// AAF (IND, A3)
+  case 8:
+  {
+    _Unit_Pool_S = ["I_crew_F","I_pilot_F","I_Soldier_SL_F","I_Soldier_AR_F","I_Soldier_F","I_Soldier_LAT_F"];
+    _Unit_Pool_V = ["I_MRAP_03_F","I_MRAP_03_gmg_F","I_MRAP_03_hmg_F"];
+    _Unit_Pool_T = ["I_APC_Wheeled_03_cannon_F","I_APC_tracked_03_cannon_F","I_MBT_03_cannon_F"];
+    _Unit_Pool_A = ["I_Heli_Transport_02_F","I_Heli_light_03_F","I_Heli_light_03_unarmed_F"];
+  };
+//-------------------------------------------------------------------------------------------------
   Default
   {
     if(DAC_Basic_Value != 5) then
