@@ -1,0 +1,279 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters2",
+		"mbg_nam_c",
+		"CAAir_E_UH1H_EP1"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters2",
+		"CAAir_E_UH1H_EP1",
+		"mbg_nam_c"
+	};
+	randomSeed=4095284;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.25;
+		year=1969;
+		month=2;
+		day=3;
+		hour=9;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1804.2017,6.5433407,1682.5345};
+					azimut=36.51614;
+					id=0;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1082.4142,8.0004835,1043.672};
+					azimut=410.93289;
+					special="FLY";
+					id=1;
+					side="GUER";
+					vehicle="UH1H_TK_GUE_EP1";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={949.35376,4.7699323,961.67285};
+					azimut=410.93289;
+					special="FLY";
+					id=2;
+					side="GUER";
+					vehicle="UH1H_TK_GUE_EP1";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={794.49408,5.4410386,867.97266};
+					azimut=410.93289;
+					special="FLY";
+					id=3;
+					side="GUER";
+					vehicle="UH1H_TK_GUE_EP1";
+					skill=0.60000002;
+				};
+				class Item3
+				{
+					position[]={668.02466,5.8338518,797.95441};
+					azimut=410.93289;
+					special="FLY";
+					id=4;
+					side="GUER";
+					vehicle="UH1H_TK_GUE_EP1";
+					skill=0.60000002;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4499.9336,225.5139,3638.6296};
+					formation="FILE";
+					expActiv="this flyInHeight 200";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={1864.0171,14.280165,1636.6283};
+			angle=36.51614;
+			activationBy="ALPHA";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="player exec ""camera.sqs"";";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"mbg_nam_c",
+		"cacharacters2",
+		"CAAir_E_UH1H_EP1"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters2",
+		"CAAir_E_UH1H_EP1",
+		"mbg_nam_c"
+	};
+	randomSeed=412349;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.25;
+		year=1969;
+		month=2;
+		day=3;
+		hour=9;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2533.3684,68.680656,1520.5881};
+					id=0;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1386.8872,23.189758,1508.2101};
+					azimut=410.93289;
+					special="FLY";
+					id=1;
+					side="GUER";
+					vehicle="UH1H_TK_GUE_EP1";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={1253.8268,13.407244,1426.2108};
+					azimut=410.93289;
+					special="FLY";
+					id=2;
+					side="GUER";
+					vehicle="UH1H_TK_GUE_EP1";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={1098.9672,14.726861,1332.5106};
+					azimut=410.93289;
+					special="FLY";
+					id=3;
+					side="GUER";
+					vehicle="UH1H_TK_GUE_EP1";
+					skill=0.60000002;
+				};
+				class Item3
+				{
+					position[]={972.49768,13.663708,1262.4924};
+					azimut=410.93289;
+					special="FLY";
+					id=4;
+					side="GUER";
+					vehicle="UH1H_TK_GUE_EP1";
+					skill=0.60000002;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4895.1392,226.01512,2994.6978};
+					formation="FILE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"mbg_nam_c"
+	};
+	addOnsAuto[]=
+	{
+		"mbg_nam_c"
+	};
+	randomSeed=15408238;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.25;
+		year=1969;
+		month=2;
+		day=3;
+		hour=9;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"mbg_nam_c"
+	};
+	addOnsAuto[]=
+	{
+		"mbg_nam_c"
+	};
+	randomSeed=5288115;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.25;
+		year=1969;
+		month=2;
+		day=3;
+		hour=9;
+	};
+};

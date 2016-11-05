@@ -1,0 +1,10 @@
+class Cfgmusic
+{
+ sounds[] = {};   
+  class menu_red
+  {
+   name = "AAAADD";
+   sound[] = {"menured.ogg", db+10, 1};
+   titles[] = {};
+  };
+}; 
