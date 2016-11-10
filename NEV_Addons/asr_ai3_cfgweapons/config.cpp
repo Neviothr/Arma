@@ -31,7 +31,7 @@ class CfgAddons
 };
 class Mode_SemiAuto
 {
-	aiRateOfFire=0;
+	aiRateOfFire=0.1;
 	aiRateOfFireDistance=250;
 	aiRateOfFireDispersion=2;
 	minRange=0;
@@ -45,7 +45,7 @@ class Mode_SemiAuto
 };
 class Mode_Burst: Mode_SemiAuto
 {
-	aiRateOfFire=0;
+	aiRateOfFire=0.1;
 	aiRateOfFireDistance=100;
 	aiRateOfFireDispersion=2;
 	minRange=5;
@@ -59,7 +59,7 @@ class Mode_Burst: Mode_SemiAuto
 };
 class Mode_FullAuto: Mode_SemiAuto
 {
-	aiRateOfFire=0;
+	aiRateOfFire=0.1;
 	aiRateOfFireDistance=50;
 	aiRateOfFireDispersion=1;
 	minRange=0;
@@ -75,7 +75,7 @@ class CfgWeapons
 {
 	class Default
 	{
-		aiRateOfFire=0;
+		aiRateOfFire=0.1;
 		aiRateOfFireDistance=250;
 		aiRateOfFireDispersion=2;
 		minRange=0;
@@ -166,7 +166,7 @@ class CfgWeapons
 	};
 	class GrenadeLauncher: Default
 	{
-		aiRateOfFire=0;
+		aiRateOfFire=0.1;
 		aiRateOfFireDistance=50;
 		aiRateOfFireDispersion=2;
 		minRange=60;
@@ -182,7 +182,7 @@ class CfgWeapons
 	{
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=2;
 			minRange=60;
@@ -209,7 +209,7 @@ class CfgWeapons
 	};
 	class HandGunBase: Rifle
 	{
-		aiRateOfFire=0;
+		aiRateOfFire=0.1;
 		aiRateOfFireDistance=100;
 		aiRateOfFireDispersion=2;
 		minRange=0;
@@ -222,7 +222,7 @@ class CfgWeapons
 	class Pistol;
 	class Pistol_Base_F: Pistol
 	{
-		aiRateOfFire=0;
+		aiRateOfFire=0.1;
 		aiRateOfFireDistance=100;
 		aiRateOfFireDispersion=2;
 		minRange=0;
@@ -265,7 +265,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=2;
 			minRange=15;
@@ -279,7 +279,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -295,7 +295,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -314,7 +314,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=500;
 			aiRateOfFireDispersion=3;
 			minRange=15;
@@ -330,7 +330,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1200;
 			aiRateOfFireDispersion=4;
 			minRange=15;
@@ -344,7 +344,7 @@ class CfgWeapons
 		};
 		class ASR_SemiAuto: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -368,7 +368,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=2;
 			minRange=15;
@@ -382,7 +382,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -398,7 +398,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -417,7 +417,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=500;
 			aiRateOfFireDispersion=3;
 			minRange=15;
@@ -433,7 +433,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1200;
 			aiRateOfFireDispersion=4;
 			minRange=15;
@@ -447,7 +447,7 @@ class CfgWeapons
 		};
 		class ASR_SemiAuto: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -471,7 +471,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			minRange=1;
 			minRangeProbab=0.40000001;
@@ -486,7 +486,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=500;
 			minRange=150;
 			minRangeProbab=0.2;
@@ -501,7 +501,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1000;
 			minRange=250;
 			minRangeProbab=0.2;
@@ -516,7 +516,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1200;
 			minRange=500;
 			minRangeProbab=0.30000001;
@@ -539,7 +539,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			minRange=1;
 			minRangeProbab=0.40000001;
@@ -554,7 +554,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=500;
 			minRange=150;
 			minRangeProbab=0.2;
@@ -569,7 +569,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1000;
 			minRange=250;
 			minRangeProbab=0.2;
@@ -584,7 +584,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1200;
 			minRange=500;
 			minRangeProbab=0.30000001;
@@ -610,7 +610,7 @@ class CfgWeapons
 		};
 		class manual: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -626,7 +626,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=8;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=30;
@@ -639,7 +639,7 @@ class CfgWeapons
 		class ASR_AI_Burst_short: ASR_AI_Burst_close
 		{
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=2;
 			minRange=80;
@@ -652,7 +652,7 @@ class CfgWeapons
 		class ASR_AI_Burst_medium: ASR_AI_Burst_close
 		{
 			burst=6;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=3;
 			minRange=200;
@@ -665,7 +665,7 @@ class CfgWeapons
 		class ASR_AI_Burst_far: ASR_AI_Burst_close
 		{
 			burst=6;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1000;
 			aiRateOfFireDispersion=5;
 			minRange=400;
@@ -679,7 +679,7 @@ class CfgWeapons
 		{
 			requiredOpticType=1;
 			burst=4;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=800;
 			aiRateOfFireDispersion=4;
 			minRange=400;
@@ -695,7 +695,7 @@ class CfgWeapons
 		{
 			requiredOpticType=2;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=800;
 			aiRateOfFireDispersion=4;
 			minRange=400;
@@ -710,7 +710,7 @@ class CfgWeapons
 		class ASR_AI_Burst_far_optic2_MMG: ASR_AI_Burst_far_optic2
 		{
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1200;
 			aiRateOfFireDispersion=5;
 			minRange=800;
@@ -722,7 +722,7 @@ class CfgWeapons
 		};
 		class Single: manual
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=1;
 			minRange=200;
@@ -752,7 +752,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -768,7 +768,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=8;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=30;
@@ -781,7 +781,7 @@ class CfgWeapons
 		class ASR_AI_Burst_short: ASR_AI_Burst_close
 		{
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=2;
 			minRange=80;
@@ -794,7 +794,7 @@ class CfgWeapons
 		class ASR_AI_Burst_medium: ASR_AI_Burst_close
 		{
 			burst=6;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=3;
 			minRange=200;
@@ -807,7 +807,7 @@ class CfgWeapons
 		class ASR_AI_Burst_far: ASR_AI_Burst_close
 		{
 			burst=6;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1000;
 			aiRateOfFireDispersion=5;
 			minRange=400;
@@ -821,7 +821,7 @@ class CfgWeapons
 		{
 			requiredOpticType=1;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=800;
 			aiRateOfFireDispersion=4;
 			minRange=400;
@@ -837,7 +837,7 @@ class CfgWeapons
 		{
 			requiredOpticType=2;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=800;
 			aiRateOfFireDispersion=4;
 			minRange=400;
@@ -852,7 +852,7 @@ class CfgWeapons
 		class ASR_AI_Burst_far_optic2_MMG: ASR_AI_Burst_far_optic2
 		{
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1200;
 			aiRateOfFireDispersion=5;
 			minRange=800;
@@ -864,7 +864,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=1;
 			minRange=200;
@@ -883,7 +883,7 @@ class CfgWeapons
 	{
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -898,7 +898,7 @@ class CfgWeapons
 	{
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -913,7 +913,7 @@ class CfgWeapons
 	{
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -928,7 +928,7 @@ class CfgWeapons
 	{
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -943,7 +943,7 @@ class CfgWeapons
 	{
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -967,7 +967,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=2;
 			minRange=20;
@@ -981,7 +981,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -997,7 +997,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -1016,7 +1016,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=5;
 			minRange=400;
@@ -1030,7 +1030,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=3;
 			minRange=20;
@@ -1046,7 +1046,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=500;
 			aiRateOfFireDispersion=4;
 			minRange=20;
@@ -1063,7 +1063,7 @@ class CfgWeapons
 		};
 		class ASR_SemiAuto: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -1075,7 +1075,7 @@ class CfgWeapons
 		};
 		class ASR_Burst3: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -1116,7 +1116,7 @@ class CfgWeapons
 		};
 		class Single: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=20;
@@ -1130,7 +1130,7 @@ class CfgWeapons
 		};
 		class FullAuto: FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -1146,7 +1146,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -1165,7 +1165,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=5;
 			minRange=300;
@@ -1179,7 +1179,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=3;
 			minRange=20;
@@ -1195,7 +1195,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=3;
 			minRange=20;
@@ -1212,7 +1212,7 @@ class CfgWeapons
 		};
 		class ASR_SemiAuto: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=200;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -1224,7 +1224,7 @@ class CfgWeapons
 		};
 		class ASR_Burst3: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -1261,7 +1261,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=2;
 			minRange=20;
@@ -1275,7 +1275,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -1291,7 +1291,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -1310,7 +1310,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=5;
 			minRange=400;
@@ -1324,7 +1324,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=3;
 			minRange=20;
@@ -1340,7 +1340,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=500;
 			aiRateOfFireDispersion=4;
 			minRange=20;
@@ -1357,7 +1357,7 @@ class CfgWeapons
 		};
 		class ASR_SemiAuto: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -1369,7 +1369,7 @@ class CfgWeapons
 		};
 		class ASR_Burst3: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -1407,7 +1407,7 @@ class CfgWeapons
 		};
 		class Single: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=20;
@@ -1421,7 +1421,7 @@ class CfgWeapons
 		};
 		class FullAuto: FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -1437,7 +1437,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -1456,7 +1456,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=5;
 			minRange=300;
@@ -1470,7 +1470,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=3;
 			minRange=20;
@@ -1486,7 +1486,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=3;
 			minRange=20;
@@ -1503,7 +1503,7 @@ class CfgWeapons
 		};
 		class ASR_SemiAuto: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=200;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -1515,7 +1515,7 @@ class CfgWeapons
 		};
 		class ASR_Burst3: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -1550,7 +1550,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=2;
 			minRange=20;
@@ -1564,7 +1564,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -1580,7 +1580,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -1599,7 +1599,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=5;
 			minRange=400;
@@ -1613,7 +1613,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=3;
 			minRange=20;
@@ -1629,7 +1629,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=500;
 			aiRateOfFireDispersion=4;
 			minRange=20;
@@ -1646,7 +1646,7 @@ class CfgWeapons
 		};
 		class ASR_SemiAuto: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -1658,7 +1658,7 @@ class CfgWeapons
 		};
 		class ASR_Burst3: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -1696,7 +1696,7 @@ class CfgWeapons
 		};
 		class Single: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=20;
@@ -1710,7 +1710,7 @@ class CfgWeapons
 		};
 		class FullAuto: FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -1726,7 +1726,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -1745,7 +1745,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=5;
 			minRange=300;
@@ -1759,7 +1759,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=3;
 			minRange=20;
@@ -1775,7 +1775,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=3;
 			minRange=20;
@@ -1792,7 +1792,7 @@ class CfgWeapons
 		};
 		class ASR_SemiAuto: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=200;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -1804,7 +1804,7 @@ class CfgWeapons
 		};
 		class ASR_Burst3: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -1843,7 +1843,7 @@ class CfgWeapons
 		};
 		class manual: FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -1859,7 +1859,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=8;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=30;
@@ -1872,7 +1872,7 @@ class CfgWeapons
 		class ASR_AI_Burst_short: ASR_AI_Burst_close
 		{
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=2;
 			minRange=80;
@@ -1885,7 +1885,7 @@ class CfgWeapons
 		class ASR_AI_Burst_medium: ASR_AI_Burst_close
 		{
 			burst=6;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=3;
 			minRange=200;
@@ -1898,7 +1898,7 @@ class CfgWeapons
 		class ASR_AI_Burst_far: ASR_AI_Burst_close
 		{
 			burst=6;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1000;
 			aiRateOfFireDispersion=5;
 			minRange=400;
@@ -1912,7 +1912,7 @@ class CfgWeapons
 		{
 			requiredOpticType=1;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=800;
 			aiRateOfFireDispersion=4;
 			minRange=400;
@@ -1928,7 +1928,7 @@ class CfgWeapons
 		{
 			requiredOpticType=2;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=800;
 			aiRateOfFireDispersion=4;
 			minRange=400;
@@ -1943,7 +1943,7 @@ class CfgWeapons
 		class ASR_AI_Burst_far_optic2_MMG: ASR_AI_Burst_far_optic2
 		{
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1200;
 			aiRateOfFireDispersion=5;
 			minRange=800;
@@ -1955,7 +1955,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=1;
 			minRange=200;
@@ -1981,7 +1981,7 @@ class CfgWeapons
 		};
 		class Single: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=2;
 			minRange=20;
@@ -1995,7 +1995,7 @@ class CfgWeapons
 		};
 		class FullAuto: FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -2011,7 +2011,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -2030,7 +2030,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=5;
 			minRange=400;
@@ -2044,7 +2044,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=3;
 			minRange=20;
@@ -2060,7 +2060,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=500;
 			aiRateOfFireDispersion=4;
 			minRange=20;
@@ -2077,7 +2077,7 @@ class CfgWeapons
 		};
 		class ASR_SemiAuto: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -2089,7 +2089,7 @@ class CfgWeapons
 		};
 		class ASR_Burst3: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -2122,7 +2122,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=200;
 			aiRateOfFireDispersion=2;
 			minRange=50;
@@ -2134,7 +2134,7 @@ class CfgWeapons
 		};
 		class Burst: Mode_Burst
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=2;
 			minRange=20;
@@ -2146,7 +2146,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -2172,7 +2172,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=20;
@@ -2186,7 +2186,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -2202,7 +2202,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -2221,7 +2221,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=5;
 			minRange=300;
@@ -2235,7 +2235,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=3;
 			minRange=20;
@@ -2251,7 +2251,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=3;
 			minRange=20;
@@ -2268,7 +2268,7 @@ class CfgWeapons
 		};
 		class ASR_SemiAuto: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=200;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -2280,7 +2280,7 @@ class CfgWeapons
 		};
 		class ASR_Burst3: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -2317,7 +2317,7 @@ class CfgWeapons
 		};
 		class Single: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=2;
 			minRange=20;
@@ -2331,7 +2331,7 @@ class CfgWeapons
 		};
 		class FullAuto: FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -2347,7 +2347,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -2366,7 +2366,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=5;
 			minRange=400;
@@ -2380,7 +2380,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=3;
 			minRange=20;
@@ -2396,7 +2396,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=500;
 			aiRateOfFireDispersion=4;
 			minRange=20;
@@ -2413,7 +2413,7 @@ class CfgWeapons
 		};
 		class ASR_SemiAuto: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -2425,7 +2425,7 @@ class CfgWeapons
 		};
 		class ASR_Burst3: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -2458,7 +2458,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=200;
 			aiRateOfFireDispersion=2;
 			minRange=50;
@@ -2472,7 +2472,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=2;
 			minRange=20;
@@ -2484,7 +2484,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -2505,7 +2505,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=200;
 			aiRateOfFireDispersion=2;
 			minRange=50;
@@ -2518,7 +2518,7 @@ class CfgWeapons
 		class Burst: Mode_Burst
 		{
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=2;
 			minRange=20;
@@ -2530,7 +2530,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -2553,7 +2553,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=200;
 			aiRateOfFireDispersion=2;
 			minRange=50;
@@ -2565,7 +2565,7 @@ class CfgWeapons
 		};
 		class Burst: Mode_Burst
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=2;
 			minRange=20;
@@ -2577,7 +2577,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -2723,7 +2723,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			minRange=1;
 			minRangeProbab=0.40000001;
@@ -2738,7 +2738,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=500;
 			minRange=150;
 			minRangeProbab=0.2;
@@ -2753,7 +2753,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1000;
 			minRange=250;
 			minRangeProbab=0.2;
@@ -2778,7 +2778,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=2;
 			minRange=15;
@@ -2792,7 +2792,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -2808,7 +2808,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -2827,7 +2827,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=500;
 			aiRateOfFireDispersion=3;
 			minRange=15;
@@ -2843,7 +2843,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1200;
 			aiRateOfFireDispersion=4;
 			minRange=15;
@@ -2857,7 +2857,7 @@ class CfgWeapons
 		};
 		class ASR_SemiAuto: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -2891,7 +2891,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=2;
 			minRange=15;
@@ -2905,7 +2905,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -2921,7 +2921,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -2940,7 +2940,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=500;
 			aiRateOfFireDispersion=3;
 			minRange=15;
@@ -2956,7 +2956,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1200;
 			aiRateOfFireDispersion=4;
 			minRange=15;
@@ -2970,7 +2970,7 @@ class CfgWeapons
 		};
 		class ASR_SemiAuto: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -3000,7 +3000,7 @@ class CfgWeapons
 		};
 		class manual: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -3016,7 +3016,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=8;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=30;
@@ -3029,7 +3029,7 @@ class CfgWeapons
 		class ASR_AI_Burst_short: ASR_AI_Burst_close
 		{
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=2;
 			minRange=80;
@@ -3042,7 +3042,7 @@ class CfgWeapons
 		class ASR_AI_Burst_medium: ASR_AI_Burst_close
 		{
 			burst=6;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=3;
 			minRange=200;
@@ -3055,7 +3055,7 @@ class CfgWeapons
 		class ASR_AI_Burst_far: ASR_AI_Burst_close
 		{
 			burst=6;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1000;
 			aiRateOfFireDispersion=5;
 			minRange=400;
@@ -3069,7 +3069,7 @@ class CfgWeapons
 		{
 			requiredOpticType=1;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=800;
 			aiRateOfFireDispersion=4;
 			minRange=400;
@@ -3085,7 +3085,7 @@ class CfgWeapons
 		{
 			requiredOpticType=2;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=800;
 			aiRateOfFireDispersion=4;
 			minRange=400;
@@ -3100,7 +3100,7 @@ class CfgWeapons
 		class ASR_AI_Burst_far_optic2_MMG: ASR_AI_Burst_far_optic2
 		{
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1200;
 			aiRateOfFireDispersion=5;
 			minRange=800;
@@ -3112,7 +3112,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=1;
 			minRange=200;
@@ -3142,7 +3142,7 @@ class CfgWeapons
 		};
 		class manual: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -3158,7 +3158,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=8;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=30;
@@ -3171,7 +3171,7 @@ class CfgWeapons
 		class ASR_AI_Burst_short: ASR_AI_Burst_close
 		{
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=2;
 			minRange=80;
@@ -3184,7 +3184,7 @@ class CfgWeapons
 		class ASR_AI_Burst_medium: ASR_AI_Burst_close
 		{
 			burst=6;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=3;
 			minRange=200;
@@ -3197,7 +3197,7 @@ class CfgWeapons
 		class ASR_AI_Burst_far: ASR_AI_Burst_close
 		{
 			burst=6;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1000;
 			aiRateOfFireDispersion=5;
 			minRange=400;
@@ -3211,7 +3211,7 @@ class CfgWeapons
 		{
 			requiredOpticType=1;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=800;
 			aiRateOfFireDispersion=4;
 			minRange=400;
@@ -3227,7 +3227,7 @@ class CfgWeapons
 		{
 			requiredOpticType=2;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=800;
 			aiRateOfFireDispersion=4;
 			minRange=400;
@@ -3242,7 +3242,7 @@ class CfgWeapons
 		class ASR_AI_Burst_far_optic2_MMG: ASR_AI_Burst_far_optic2
 		{
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1200;
 			aiRateOfFireDispersion=5;
 			minRange=800;
@@ -3254,7 +3254,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=1;
 			minRange=200;
@@ -3277,7 +3277,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=2;
 			minRange=20;
@@ -3291,7 +3291,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -3307,7 +3307,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -3326,7 +3326,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=5;
 			minRange=400;
@@ -3340,7 +3340,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=3;
 			minRange=20;
@@ -3356,7 +3356,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=500;
 			aiRateOfFireDispersion=4;
 			minRange=20;
@@ -3373,7 +3373,7 @@ class CfgWeapons
 		};
 		class ASR_SemiAuto: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -3385,7 +3385,7 @@ class CfgWeapons
 		};
 		class ASR_Burst3: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -3419,7 +3419,7 @@ class CfgWeapons
 	{
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -3445,7 +3445,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=2;
 			minRange=20;
@@ -3459,7 +3459,7 @@ class CfgWeapons
 		};
 		class Burst: Mode_Burst
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -3473,7 +3473,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -3489,7 +3489,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -3508,7 +3508,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=5;
 			minRange=400;
@@ -3522,7 +3522,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=3;
 			minRange=20;
@@ -3538,7 +3538,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=500;
 			aiRateOfFireDispersion=4;
 			minRange=20;
@@ -3555,7 +3555,7 @@ class CfgWeapons
 		};
 		class ASR_SemiAuto: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -3567,7 +3567,7 @@ class CfgWeapons
 		};
 		class ASR_Burst3: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -3604,7 +3604,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=2;
 			minRange=20;
@@ -3618,7 +3618,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -3634,7 +3634,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -3653,7 +3653,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=5;
 			minRange=400;
@@ -3667,7 +3667,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=3;
 			minRange=20;
@@ -3683,7 +3683,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=500;
 			aiRateOfFireDispersion=4;
 			minRange=20;
@@ -3700,7 +3700,7 @@ class CfgWeapons
 		};
 		class ASR_SemiAuto: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -3712,7 +3712,7 @@ class CfgWeapons
 		};
 		class ASR_Burst3: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -3749,7 +3749,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=20;
@@ -3763,7 +3763,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -3779,7 +3779,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -3798,7 +3798,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=5;
 			minRange=300;
@@ -3812,7 +3812,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=3;
 			minRange=20;
@@ -3828,7 +3828,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=3;
 			minRange=20;
@@ -3845,7 +3845,7 @@ class CfgWeapons
 		};
 		class ASR_SemiAuto: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=200;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -3857,7 +3857,7 @@ class CfgWeapons
 		};
 		class ASR_Burst3: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -3892,7 +3892,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=2;
 			minRange=20;
@@ -3906,7 +3906,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -3922,7 +3922,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -3941,7 +3941,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=5;
 			minRange=400;
@@ -3955,7 +3955,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=3;
 			minRange=20;
@@ -3971,7 +3971,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=500;
 			aiRateOfFireDispersion=4;
 			minRange=20;
@@ -3988,7 +3988,7 @@ class CfgWeapons
 		};
 		class ASR_SemiAuto: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -4000,7 +4000,7 @@ class CfgWeapons
 		};
 		class ASR_Burst3: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -4041,7 +4041,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=2;
 			minRange=20;
@@ -4055,7 +4055,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -4071,7 +4071,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -4090,7 +4090,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=5;
 			minRange=400;
@@ -4104,7 +4104,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=3;
 			minRange=20;
@@ -4120,7 +4120,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=500;
 			aiRateOfFireDispersion=4;
 			minRange=20;
@@ -4137,7 +4137,7 @@ class CfgWeapons
 		};
 		class ASR_SemiAuto: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -4149,7 +4149,7 @@ class CfgWeapons
 		};
 		class ASR_Burst3: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -4192,7 +4192,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -4208,7 +4208,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=8;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=30;
@@ -4221,7 +4221,7 @@ class CfgWeapons
 		class ASR_AI_Burst_short: ASR_AI_Burst_close
 		{
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=2;
 			minRange=80;
@@ -4234,7 +4234,7 @@ class CfgWeapons
 		class ASR_AI_Burst_medium: ASR_AI_Burst_close
 		{
 			burst=6;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=3;
 			minRange=200;
@@ -4247,7 +4247,7 @@ class CfgWeapons
 		class ASR_AI_Burst_far: ASR_AI_Burst_close
 		{
 			burst=6;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1000;
 			aiRateOfFireDispersion=5;
 			minRange=400;
@@ -4261,7 +4261,7 @@ class CfgWeapons
 		{
 			requiredOpticType=1;
 			burst=4;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=800;
 			aiRateOfFireDispersion=4;
 			minRange=400;
@@ -4277,7 +4277,7 @@ class CfgWeapons
 		{
 			requiredOpticType=2;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=800;
 			aiRateOfFireDispersion=4;
 			minRange=400;
@@ -4292,7 +4292,7 @@ class CfgWeapons
 		class ASR_AI_Burst_far_optic2_MMG: ASR_AI_Burst_far_optic2
 		{
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1200;
 			aiRateOfFireDispersion=5;
 			minRange=800;
@@ -4304,7 +4304,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=1;
 			minRange=200;
@@ -4330,7 +4330,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=2;
 			minRange=20;
@@ -4344,7 +4344,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -4360,7 +4360,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -4379,7 +4379,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=5;
 			minRange=400;
@@ -4393,7 +4393,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=3;
 			minRange=20;
@@ -4409,7 +4409,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=500;
 			aiRateOfFireDispersion=4;
 			minRange=20;
@@ -4426,7 +4426,7 @@ class CfgWeapons
 		};
 		class ASR_SemiAuto: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -4438,7 +4438,7 @@ class CfgWeapons
 		};
 		class ASR_Burst3: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -4481,7 +4481,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -4497,7 +4497,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=8;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=30;
@@ -4510,7 +4510,7 @@ class CfgWeapons
 		class ASR_AI_Burst_short: ASR_AI_Burst_close
 		{
 			burst=7;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=450;
 			aiRateOfFireDispersion=2;
 			minRange=80;
@@ -4523,7 +4523,7 @@ class CfgWeapons
 		class ASR_AI_Burst_medium: ASR_AI_Burst_close
 		{
 			burst=6;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=600;
 			aiRateOfFireDispersion=3;
 			minRange=200;
@@ -4536,7 +4536,7 @@ class CfgWeapons
 		class ASR_AI_Burst_far: ASR_AI_Burst_close
 		{
 			burst=6;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1000;
 			aiRateOfFireDispersion=5;
 			minRange=400;
@@ -4550,7 +4550,7 @@ class CfgWeapons
 		{
 			requiredOpticType=1;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=800;
 			aiRateOfFireDispersion=4;
 			minRange=400;
@@ -4566,7 +4566,7 @@ class CfgWeapons
 		{
 			requiredOpticType=2;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=800;
 			aiRateOfFireDispersion=4;
 			minRange=400;
@@ -4581,7 +4581,7 @@ class CfgWeapons
 		class ASR_AI_Burst_far_optic2_MMG: ASR_AI_Burst_far_optic2
 		{
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1200;
 			aiRateOfFireDispersion=5;
 			minRange=800;
@@ -4593,7 +4593,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=1;
 			minRange=200;
@@ -4617,7 +4617,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=300;
 			aiRateOfFireDispersion=2;
 			minRange=15;
@@ -4631,7 +4631,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
@@ -4647,7 +4647,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			burst=5;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=100;
 			aiRateOfFireDispersion=2;
 			minRange=5;
@@ -4666,7 +4666,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=1;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=500;
 			aiRateOfFireDispersion=3;
 			minRange=15;
@@ -4682,7 +4682,7 @@ class CfgWeapons
 		{
 			showToPlayer=0;
 			requiredOpticType=2;
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=1200;
 			aiRateOfFireDispersion=4;
 			minRange=15;
@@ -4696,7 +4696,7 @@ class CfgWeapons
 		};
 		class ASR_SemiAuto: Single
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=250;
 			aiRateOfFireDispersion=2;
 			minRange=0;
@@ -4711,7 +4711,7 @@ class CfgWeapons
 	{
 		class Single: Mode_SemiAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=200;
 			aiRateOfFireDispersion=2;
 			minRange=50;
@@ -4723,7 +4723,7 @@ class CfgWeapons
 		};
 		class Burst: Mode_Burst
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=2;
 			minRange=20;
@@ -4735,7 +4735,7 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			aiRateOfFire=0;
+			aiRateOfFire=0.1;
 			aiRateOfFireDistance=50;
 			aiRateOfFireDispersion=1;
 			minRange=0;
