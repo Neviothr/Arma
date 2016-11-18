@@ -4,7 +4,6 @@ class NewArmAUI
 {
 	duration = 99999;
 	idd = 912631;
-	controls[] = {zeusButton,virtualArsenalButton};
 	class controls
 	{
 		class zeusButton: RscButton
@@ -16,6 +15,7 @@ class NewArmAUI
 			h = "(44.9999999999999 / 1080) * SafeZoneH";
 			type = CT_BUTTON;
 			style = ST_CENTER;
+			action = "hint ""Zeus opened.""";
 		};
 		class virtualArsenalButton: RscButton
 		{
@@ -24,6 +24,7 @@ class NewArmAUI
 			y = "SafeZoneY + (210 / 1080) * SafeZoneH";
 			w = "(90 / 1920) * SafeZoneW";
 			h = "(45.0000000000005 / 1080) * SafeZoneH";
+			action = "closeDialog 0; [""Open"",true] spawn BIS_fnc_arsenal";
 		};
 	};
 };
