@@ -1,3 +1,2 @@
-disableSerialization;
-
-findDisplay 46 createDisplay "NewArmAUI";
+_hndl = createDialog "NewArmAUI";
+waitUntil {!dialog};
