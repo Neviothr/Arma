@@ -48,6 +48,7 @@ class NewArmAUI
 			h = "(45.0000000000005 / 1080) * SafeZoneH";
 			type = CT_BUTTON;
 			style = ST_CENTER;
+			action = "closeDialog 0; createDialog ""RscDisplayDebugPublic""";
 		};
 		class roundTypeList: RscCombo
 		{
