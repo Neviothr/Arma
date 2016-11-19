@@ -15,7 +15,7 @@ class NewArmAUI
 			h = "(44.9999999999999 / 1080) * SafeZoneH";
 			type = CT_BUTTON;
 			style = ST_CENTER;
-			action = "hint ""Zeus opened.""";
+			action = "closeDialog 0; execVM ""NEV_fnc_openZeus.sqf""";
 		};
 		class virtualArsenalButton: RscButton
 		{
