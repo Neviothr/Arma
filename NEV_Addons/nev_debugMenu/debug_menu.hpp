@@ -16,7 +16,7 @@ class NewArmAUI
 			h = "(45 / 1080) * SafeZoneH";
 			type = CT_BUTTON;
 			style = ST_CENTER;
-			action = "closeDialog 0; execVM ""\f\NEV_fnc_openZeus.sqf""";
+			action = "closeDialog 0; execVM ""\nev_debugMenu\f\NEV_fnc_openZeus.sqf""";
 		};
 
 		// A button to open the virtual aresnal
@@ -42,7 +42,7 @@ class NewArmAUI
 			h = "(45 / 1080) * SafeZoneH";
 			type = CT_BUTTON;
 			style = ST_CENTER;
-			action = "closeDialog 0; execVM ""\f\NEV_fnc_teleport.sqf""";
+			action = "closeDialog 0; execVM ""\nev_debugMenu\f\NEV_fnc_teleport.sqf""";
 		};
 
 		// A button to open the BI debug console
@@ -68,7 +68,7 @@ class NewArmAUI
 			h = "(45 / 1080) * SafeZoneH";
 			type = CT_BUTTON;
 			style = ST_CENTER;
-			action = "closeDialog 0; execVM ""\f\NEV_fnc_addUnitsToZeus.sqf""";
+			action = "closeDialog 0; execVM ""\nev_debugMenu\f\NEV_fnc_addUnitsToZeus.sqf""";
 		};
 
 		// A slider to change time of day

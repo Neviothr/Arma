@@ -1,1 +1,1 @@
-player addAction ["<t color='#00b200'>Debug Menu</t>", "\f\NEV_fnc_openDebugMenu.sqf"];
+player addAction ["<t color='#00b200'>Debug Menu</t>", "\nev_debugMenu\f\NEV_fnc_openDebugMenu.sqf"];
