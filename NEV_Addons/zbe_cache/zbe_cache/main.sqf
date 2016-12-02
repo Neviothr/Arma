@@ -82,18 +82,18 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 			};
 		} forEach zbe_cached_boat;
 		zbe_allVehicles = (_assetscar + _assetsair + _assetsboat);
-		sleep 15;
+		sleep 1;
 	};
 };
 
 [] spawn {
 	if (zbe_debug) then {
 			while {true} do {
-				uiSleep 15;
+				uiSleep 20;
 				zbe_cachedUnits = (count allUnits - ({simulationEnabled _x} count allUnits));
 				zbe_cachedVehicles = (count zbe_allVehicles - ({simulationEnabled _x} count zbe_allVehicles));
 				zbe_allVehiclesCount = (count zbe_allVehicles);
-				systemChat format ["All units: %1 Cached: %2", count allUnits, zbe_cachedUnits];
+				systemChat format ["Cache: %1", zbe_cachedUnits];
 			};
 		};
 };

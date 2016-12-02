@@ -27,6 +27,6 @@ class CfgFunctions
 };
 
 class ZBE_Cache_Key_Setting
-	{
-		#include "\userconfig\zbe_cache\zbe_cache.hpp"
-	};
+{
+	#include "\userconfig\zbe_cache\zbe_cache.hpp"
+};
