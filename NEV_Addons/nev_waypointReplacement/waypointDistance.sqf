@@ -10,7 +10,7 @@ _mapControl ctrlAddEventHandler ["MouseMoving", {
     nev_mainMapMouseOverCustomMark = "customMark" in (ctrlMapMouseOver (_this select 0));
 }];
 
-["TRN", "onMapSingleClick", {
+["nev", "onMapSingleClick", {
     if (_shift) then {
         nev_customMarkLocation = _pos;
     };
