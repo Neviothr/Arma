@@ -80,6 +80,19 @@ class NewArmAUI
 			action = "closeDialog 0; execVM ""\nev_debugMenu\f\NEV_fnc_addUnitsToZeus.sqf""";
 		};
 
+		// A button to make all units aggressive
+		class makeUnitsAggressive: RscButton
+		{
+			text = "Aggressive AI";
+			x = "SafeZoneX + (315 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (450 / 1080) * SafeZoneH";
+			w = "(90 / 1920) * SafeZoneW";
+			h = "(45 / 1080) * SafeZoneH";
+			type = CT_BUTTON;
+			style = ST_CENTER;
+			action = "closeDialog 0; execVM ""\nev_debugMenu\f\NEV_fnc_aggressiveAI.sqf""";
+		};
+
 		// A slider to change time of day
 		class timeSlider: RscSlider
 		{
