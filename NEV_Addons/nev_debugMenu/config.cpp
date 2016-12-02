@@ -11,6 +11,9 @@ class CfgPatches
 	};
 };
 
+#include "base_defines.hpp"
+#include "debug_menu.hpp"
+
 class Extended_PostInit_EventHandlers
 {
 	nev_debugMenu_Post_Init = "nev_debugMenu_Post_Init_Var = [] execVM ""\nev_debugMenu\init.sqf""";
