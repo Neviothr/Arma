@@ -5,4 +5,5 @@
 	_x disableAI "AUTOCOMBAT";
 	_x setBehaviour "AWARE";
 	_x setSpeedMode "FULL";
+	_x setskill ["aimingAccuracy",0.03];
 } forEach allUnits;
