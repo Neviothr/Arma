@@ -16,7 +16,7 @@ Parameters:
     "Year",
     "Environmental Settings",
     [1982, 2050, 2035, 0],
-    nil,
+    false,
     {
         params ["_value","_month","_day","_hour","_minute"];
         _month = date select 1;
@@ -34,7 +34,7 @@ Parameters:
     "Month",
     "Environmental Settings",
     [1, 12, 5, 0],
-    nil,
+    false,
     {
         params ["_value","_year","_day","_hour","_minute"];
         _year = date select 0;
@@ -52,7 +52,7 @@ Parameters:
     "Day",
     "Environmental Settings",
     [1, 31, 28, 0],
-    nil,
+    false,
     {
         params ["_value","_year","_month","_hour","_minute"];
         _year = date select 0;
@@ -70,7 +70,7 @@ Parameters:
     "Hour",
     "Environmental Settings",
     [0, 23, 12, 0],
-    nil,
+    false,
     {
         params ["_value","_year","_month","_day","_minute"];
         _year = date select 0;
@@ -88,7 +88,7 @@ Parameters:
     "Minute",
     "Environmental Settings",
     [0, 59, 0, 0],
-    nil,
+    false,
     {
         params ["_value","_year","_month","_day","_hour"];
         _year = date select 0;
@@ -106,10 +106,14 @@ Parameters:
     "Overcast",
     "Environmental Settings",
     [0, 1, 0, 2],
-    nil,
+    false,
     {
         params ["_value"];
-        0 setOvercast _value;
+        skipTime -24;
+        86400 setOvercast _value;
+        skipTime 24;
+        simulWeatherSync;
+        forceWeatherChange;
     }
 ] call CBA_Settings_fnc_init;
 
@@ -120,9 +124,9 @@ Parameters:
     "Fog Value",
     "Environmental Settings",
     [0, 100, 0, 0],
-    nil,
+    false,
     {
-        params ["_value", "fogDecay", "fogBase"];
+        params ["_value"];
         _fogDecay = fogParams select 1;
         _fogBase = fogParams select 2;
         0 setFog [_value, _fogDecay, _fogBase];
@@ -136,9 +140,9 @@ Parameters:
     "Fog Decay",
     "Environmental Settings",
     [0, 10, 1, 0],
-    nil,
+    false,
     {
-        params ["_value", "fogValue", "fogBase"];
+        params ["_value"];
         _fogValue = fogParams select 0;
         _fogBase = fogParams select 2;
         0 setFog [_fogValue, _value, _fogBase];
@@ -152,9 +156,9 @@ Parameters:
     "Fog Value",
     "Environmental Settings",
     [-1000, 1000, 0, 0],
-    nil,
+    false,
     {
-        params ["_value", "fogDecay", "fogValue"];
+        params ["_value"];
         _fogValue = fogParams select 0;
         _fogDecay = fogParams select 1;
         0 setFog [_fogValue, _fogDecay, _value];
@@ -168,10 +172,11 @@ Parameters:
     "Rain",
     "Environmental Settings",
     [0, 100, 0, 0],
-    nil,
+    false,
     {
         params ["_value"];
         0 setRain _value;
+        forceWeatherChange;
     }
 ] call CBA_Settings_fnc_init;
 
@@ -182,10 +187,11 @@ Parameters:
     "Lightnings",
     "Environmental Settings",
     [0, 100, 0, 0],
-    nil,
+    false,
     {
         params ["_value"];
         0 setLightnings _value;
+        forceWeatherChange;
     }
 ] call CBA_Settings_fnc_init;
 
@@ -196,10 +202,11 @@ Parameters:
     "Waves",
     "Environmental Settings",
     [0, 100, 0, 0],
-    nil,
+    false,
     {
         params ["_value"];
         0 setWaves _value;
+        forceWeatherChange;
     }
 ] call CBA_Settings_fnc_init;
 
@@ -210,10 +217,10 @@ Parameters:
     "Wind",
     "Environmental Settings",
     [0, 100, 0, 0],
-    nil,
+    false,
     {
         params ["_value"];
-        0 setWind [_value, _value, true];
+        0 setWindStr _value;
     }
 ] call CBA_Settings_fnc_init;
 
@@ -224,7 +231,7 @@ Parameters:
     "Gusts",
     "Environmental Settings",
     [0, 100, 0, 0],
-    nil,
+    false,
     {
         params ["_value"];
         0 setGusts _value;
@@ -238,7 +245,7 @@ Parameters:
     "Wind Direction",
     "Environmental Settings",
     [0, 359, 0, 0],
-    nil,
+    false,
     {
         params ["_value"];
         0 setWindDir _value;
