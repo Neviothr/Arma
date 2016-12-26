@@ -1,13 +1,12 @@
-//Parameters
+// Parameters
 PublicScript = compileFinal "[] call (_this select 0);";
-ServerAsk = compileFinal "if (isServer) then {publicvariable (_this select 0);};";
+ServerAsk = compileFinal "if (isServer) then {
+	publicvariable (_this select 0);
+};";
 
-if (isServer) then
-{
-	if (isFilePatchingEnabled) then
-	{
-		KK_fnc_fileExists = 
-		{
+if (isServer) then {
+	if (isFilePatchingEnabled) then {
+		KK_fnc_fileExists = {
 			private ["_ctrl", "_fileExists"];
 			disableSerialization;
 			_ctrl = findDisplay 0 ctrlCreate ["RscHTML", -1];
@@ -18,36 +17,29 @@ if (isServer) then
 		};
 
 		_FileCheck = "\userconfig\VCOM_AI\AISettingsV2.hpp" call KK_fnc_fileExists;
-		if (_FileCheck) then
-		{
+		if (_FileCheck) then {
 			VCOMAI_Func = compile preprocessFileLineNumbers "\userconfig\VCOM_AI\AISettingsV2.hpp";
 			[] call VCOMAI_Func;
-			[VCOMAI_Func] remoteExec ["PublicScript",0,false];
-		}
-		else
-		{
+			[VCOMAI_Func] remoteExec ["PublicScript", 0, false];
+		} else {
 			VCOMAI_Func = compile preprocessFileLineNumbers "\vcomai\VCOMAI\Functions\VCOMAI_DefaultSettings.sqf";
 			[] call VCOMAI_Func;
-			[VCOMAI_Func] remoteExec ["PublicScript",0,false];
+			[VCOMAI_Func] remoteExec ["PublicScript", 0, false];
 		};
-	}
-	else
-	{
+	} else {
 			VCOMAI_Func = compile preprocessFileLineNumbers "\vcomai\VCOMAI\Functions\VCOMAI_DefaultSettings.sqf";
 			[] call VCOMAI_Func;
-			[VCOMAI_Func] remoteExec ["PublicScript",0,false];
+			[VCOMAI_Func] remoteExec ["PublicScript", 0, false];
 	};
-}
-else
-{
-	["VCOMAI_Func"] remoteExec ["ServerAsk",0,false];
+} else {
+	["VCOMAI_Func"] remoteExec ["ServerAsk", 0, false];
 	waitUntil {!(isNil "VCOMAI_Func")};
 	[] call VCOMAI_Func;
 };
 
 waitUntil {!(isNil "VCOM_SideBasedExecution")};
- 
-//Compile all scripts that might be used
+
+// Compile all scripts that might be used
 VcomAI_UnitInit = compile preprocessFileLineNumbers "\vcomai\VCOMAI\Functions\VcomAI_UnitInit.sqf";
 VCOMAI_DetermineLeader = compile preprocessFileLineNumbers "\vcomai\VCOMAI\Functions\VCOMAI_DetermineLeader.sqf";
 VcomAI_QueueHandle = compile preprocessFileLineNumbers "\vcomai\VCOMAI\Functions\VcomAI_QueueHandle.sqf";
@@ -105,7 +97,7 @@ VCOMAI_RearmSelf = compile preprocessFileLineNumbers "\vcomai\VCOMAI\Functions\V
 VCOMAI_RearmGo = compile preprocessFileLineNumbers "\vcomai\VCOMAI\Functions\VCOMAI_RearmGo.sqf";
 VCOMAI_SuppressedEffect = compile preprocessFileLineNumbers "\vcomai\VCOMAI\Functions\VCOMAI_SuppressedEffect.sqf";
 
-//Danger FSM
+// Danger FSM
 VCOMAI_RecentEnemyDetected = compile preprocessFileLineNumbers "\vcomai\VCOMAI\functions\DangerCauses\VCOMAI_RecentEnemyDetected.sqf";
 VCOMAI_CurrentStance = compile preprocessFileLineNumbers "\vcomai\VCOMAI\functions\DangerCauses\VCOMAI_CurrentStance.sqf";
 VCOMAI_SetCombatStance = compile preprocessFileLineNumbers "\vcomai\VCOMAI\functions\DangerCauses\VCOMAI_SetCombatStance.sqf";
@@ -116,45 +108,37 @@ VCOMAI_Explosiondetection = compile preprocessFileLineNumbers "\vcomai\VCOMAI\fu
 VCOMAI_VehicleHandleDanger = compile preprocessFileLineNumbers "\vcomai\VCOMAI\functions\DangerCauses\VCOMAI_VehicleHandle.sqf";
 
 
-//Global actions compiles
+// Global actions compiles
 playMoveEverywhere = compileFinal "(_this select 0) playMoveNow (_this select 1);";
 switchMoveEverywhere = compileFinal "(_this select 0) switchMove (_this select 1);";
 playActionNowEverywhere = compileFinal "(_this select 0) playActionNow (_this select 1);";
 DisableCollisionALL = compileFinal "(_this select 0) disableCollisionWith player";
-3DText = compile "[_this select 0,_this select 1,_this select 2,_this select 3] call VCOMAI_DebugText;";
+3DText = compile "[_this select 0, _this select 1, _this select 2, _this select 3] call VCOMAI_DebugText;";
 PSup = compile "[] spawn VCOMAI_SuppressedEffect;";
 
-//Below is loop to check for new AI spawning in to be added to the list
-if !(isDedicated) then 
-{
+// Below is loop to check for new AI spawning in to be added to the list
+if !(isDedicated) then {
 	waitUntil {!isNil "BIS_fnc_init"};
-	waitUntil {!(isnull (findDisplay 46))};
+	waitUntil {!(isNull (findDisplay 46))};
 };
 
-//Lets gets the queue handler going
+// Let's gets the queue handler going
 [] spawn VcomAI_QueueHandle;
-
 
 VcomAI_UnitQueue = [];
 VcomAI_ActiveList = [];
 Vcom_ActivateAI = true;
-while {true} do 
-{
-	if (Vcom_ActivateAI) then
-	{
+while {true} do {
+	if (Vcom_ActivateAI) then {
 		{
-			if (local _x && simulationEnabled _x) then 
-			{
-					if (!(_x in VcomAI_ActiveList) && {!(_x in VcomAI_UnitQueue)}) then
-					{
-						VcomAI_UnitQueue pushback _x;
-					};
+			if (local _x && simulationEnabled _x) then {
+				if (!(_x in VcomAI_ActiveList) && {!(_x in VcomAI_UnitQueue)}) then {
+					VcomAI_UnitQueue pushback _x;
+				};
 			};
 		} forEach allUnits;
 	};
 	sleep 10;
 };
 
-
-
-//null = [_x] execFSM "\VCOM_AI\AIBEHAVIORNEW.fsm";
+null = [_x] execFSM "\VCOM_AI\AIBEHAVIORNEW.fsm";

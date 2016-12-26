@@ -1,4 +1,4 @@
 {
 	deleteMarker _x;
-} foreach MarkerArray;
+} forEach MarkerArray;
 MarkerArray = [];
