@@ -6,62 +6,56 @@ class CfgPatches {
 		requiredAddons[] = {"A3_Data_F","A3_Weapons_F","RH_acc","asdg_jointrails"};
 	};
 };
-class cfgRecoils
-{
+
+class CfgRecoils {
 	class Default;
-	class RH_recoil_default: Default
-	{
-		muzzleOuter[]={0.30000001,1,0.30000001,0.2};
-		muzzleInner[]={0,0,0.1,0.1};
-		kickBack[]={0.029999999,0.059999999};
-		permanent=0.1;
-		temporary=0.0099999998;
+	class RH_recoil_default: Default {
+		muzzleOuter[] = {0.30000001,1,0.30000001,0.2};
+		muzzleInner[] = {0,0,0.1,0.1};
+		kickBack[] = {0.029999999,0.059999999};
+		permanent = 0.1;
+		temporary = 0.0099999998;
 	};
-	class RH_recoil_AR10: RH_recoil_default
-	{
-		muzzleOuter[]={0.40000001,1.5,0.60000002,0.40000001};
-		kickBack[]={0.039999999,0.07};
-		temporary=0.0099999998;
+	class RH_recoil_AR10: RH_recoil_default {
+		muzzleOuter[] = {0.40000001,1.5,0.60000002,0.40000001};
+		kickBack[] = {0.039999999,0.07};
+		temporary = 0.0099999998;
 	};
-	class RH_recoil_M4: RH_recoil_default
-	{
-		muzzleOuter[]={0.30000001,1,0.40000001,0.30000001};
-		kickBack[]={0.02,0.039999999};
-		temporary=0.0099999998;
+	class RH_recoil_M4: RH_recoil_default {
+		muzzleOuter[] = {0.30000001,1,0.40000001,0.30000001};
+		kickBack[] = {0.02,0.039999999};
+		temporary = 0.0099999998;
 	};
-	class RH_recoil_M16: RH_recoil_default
-	{
-		muzzleOuter[]={0.30000001,0.80000001,0.40000001,0.30000001};
-		kickBack[]={0.02,0.039999999};
-		temporary=0.0099999998;
+	class RH_recoil_M16: RH_recoil_default {
+		muzzleOuter[] = {0.30000001,0.80000001,0.40000001,0.30000001};
+		kickBack[] = {0.02,0.039999999};
+		temporary = 0.0099999998;
 	};
-	class RH_recoil_HB: RH_recoil_default
-	{
-		muzzleOuter[]={0.34999999,1.2,0.44999999,0.34999999};
-		kickBack[]={0.029999999,0.050000001};
-		temporary=0.0099999998;
+	class RH_recoil_HB: RH_recoil_default {
+		muzzleOuter[] = {0.34999999,1.2,0.44999999,0.34999999};
+		kickBack[] = {0.029999999,0.050000001};
+		temporary = 0.0099999998;
 	};
-	class RH_recoil_SBR9: RH_recoil_default
-	{
-		muzzleOuter[]={0.1,0.60000002,0.2,0.2};
-		kickBack[]={0.0099999998,0.02};
-		temporary=0.0099999998;
+	class RH_recoil_SBR9: RH_recoil_default {
+		muzzleOuter[] = {0.1,0.60000002,0.2,0.2};
+		kickBack[] = {0.0099999998,0.02};
+		temporary = 0.0099999998;
 	};
-	RH_AR10_Recoil[]={0,0.0089999996,0.017000001,0.02,0.0089999996,0.017000001,0.029999999,0.0070000002,0.023,0.16,0,0};
-	RH_AR10_RecoilProne[]={0,0.0070000002,0.0099999998,0.013,0.0070000002,0.0099999998,0.029999999,0.003,0,0.12,0,0};
-	RH_M4_Recoil[]={0,0.0049999999,0.0049999999,0.0049999999,0.0099999998,0.011,0.090000004,0.0049999999,-0.00039999999,0.13,0,0};
-	RH_M4_RecoilProne[]={0,0.0049999999,0.0049999999,0.0049999999,0.0099999998,0.0089999996,0.075000003,0.0049999999,-0.00030000001,0.13,0,0};
-	RH_M4_Recoil_Auto[]={0,0.0070000002,0.015,0.0070000002,0.0099999998,0.022,0.090000004,0.02,0.0099999998,0.13,0,0};
-	RH_M4_RecoilProneAuto[]={0,0.0049999999,0.0049999999,0.0049999999,0.0099999998,0.0089999996,0.075000003,0.0049999999,-0.00030000001,0.13,0,0};
-	RH_M4_Recoil_GLRecoil[]={0,0.0049999999,0,0.0099999998,0.0049999999,0,0.02,0.003,0.0060000001,0.12,0,0};
-	RH_M203GLBase[]={0,0.029999999,0.050000001,0.13,0.0099999998,-0.001,0.25999999,0,0};
-	RH_M249_Recoil[]={0,0.0060000001,-0.003,0.050000001,0.0060000001,0.0060000001,0.029999999,0.0060000001,0.0060000001,0.17,0,0};
-	RH_M249_RecoilProne[]={0,0.0049999999,0.0020000001,0.07,0.0049999999,-0.0015,0.12,0,0};
-	RH_Mk48_Recoil[]={0,0.0099999998,0.0020000001,0.050000001,0.0099999998,0.003,0.039999999,0.0060000001,0.02,0.17,0,0};
-	RH_Mk48_RecoilProne[]={0,0.0099999998,0.0012000001,0.090000004,0.0089999996,-0.001,0.15000001,0,0};
+	RH_AR10_Recoil[] = {0,0.0089999996,0.017000001,0.02,0.0089999996,0.017000001,0.029999999,0.0070000002,0.023,0.16,0,0};
+	RH_AR10_RecoilProne[] = {0,0.0070000002,0.0099999998,0.013,0.0070000002,0.0099999998,0.029999999,0.003,0,0.12,0,0};
+	RH_M4_Recoil[] = {0,0.0049999999,0.0049999999,0.0049999999,0.0099999998,0.011,0.090000004,0.0049999999,-0.00039999999,0.13,0,0};
+	RH_M4_RecoilProne[] = {0,0.0049999999,0.0049999999,0.0049999999,0.0099999998,0.0089999996,0.075000003,0.0049999999,-0.00030000001,0.13,0,0};
+	RH_M4_Recoil_Auto[] = {0,0.0070000002,0.015,0.0070000002,0.0099999998,0.022,0.090000004,0.02,0.0099999998,0.13,0,0};
+	RH_M4_RecoilProneAuto[] = {0,0.0049999999,0.0049999999,0.0049999999,0.0099999998,0.0089999996,0.075000003,0.0049999999,-0.00030000001,0.13,0,0};
+	RH_M4_Recoil_GLRecoil[] = {0,0.0049999999,0,0.0099999998,0.0049999999,0,0.02,0.003,0.0060000001,0.12,0,0};
+	RH_M203GLBase[] = {0,0.029999999,0.050000001,0.13,0.0099999998,-0.001,0.25999999,0,0};
+	RH_M249_Recoil[] = {0,0.0060000001,-0.003,0.050000001,0.0060000001,0.0060000001,0.029999999,0.0060000001,0.0060000001,0.17,0,0};
+	RH_M249_RecoilProne[] = {0,0.0049999999,0.0020000001,0.07,0.0049999999,-0.0015,0.12,0,0};
+	RH_Mk48_Recoil[] = {0,0.0099999998,0.0020000001,0.050000001,0.0099999998,0.003,0.039999999,0.0060000001,0.02,0.17,0,0};
+	RH_Mk48_RecoilProne[] = {0,0.0099999998,0.0012000001,0.090000004,0.0089999996,-0.001,0.15000001,0,0};
 };
-class CfgAmmo
-{
+
+class CfgAmmo {
 	class Default;
 	class BulletCore;
 	class BulletBase;
@@ -69,76 +63,69 @@ class CfgAmmo
 	class B_556x45_Ball;
 	class B_65x39_Caseless;
 	class B_762x51_Ball;
-	class RH_9x19_B_M822: B_9x21_Ball
-	{
-		hit=5.3592143;
-		typicalSpeed=423;
-		airFriction=-0.0023934371;
-		caliber=0.53100002;
-		deflecting=28;
-		cartridge="FxCartridge_65_caseless";
+	class RH_9x19_B_M822: B_9x21_Ball {
+		hit = 5.3592143;
+		typicalSpeed = 423;
+		airFriction = -0.0023934371;
+		caliber = 0.53100002;
+		deflecting = 28;
+		cartridge = "FxCartridge_65_caseless";
 	};
-	class RH_9x19_B_HP: B_9x21_Ball
-	{
-		hit=8.7903481;
-		typicalSpeed=416;
-		airFriction=-0.0024402351;
-		caliber=0.38499999;
-		deflecting=25;
-		cartridge="FxCartridge_65_caseless";
+	class RH_9x19_B_HP: B_9x21_Ball {
+		hit = 8.7903481;
+		typicalSpeed = 416;
+		airFriction = -0.0024402351;
+		caliber = 0.38499999;
+		deflecting = 25;
+		cartridge = "FxCartridge_65_caseless";
 	};
-	class RH_9x19_B_HPSB: B_9x21_Ball
-	{
-		hit=7.6707625;
-		typicalSpeed=333;
-		airFriction=-0.00145426;
-		caliber=0.33399999;
-		deflecting=21;
-		visibleFire=1;
-		audibleFire=2;
-		cartridge="FxCartridge_65_caseless";
+	class RH_9x19_B_HPSB: B_9x21_Ball {
+		hit = 7.6707625;
+		typicalSpeed = 333;
+		airFriction = -0.00145426;
+		caliber = 0.33399999;
+		deflecting = 21;
+		visibleFire = 1;
+		audibleFire = 2;
+		cartridge = "FxCartridge_65_caseless";
 	};
-	class RH_556x45_B_M855A1: B_556x45_Ball
-	{
-		hit=8.6063738;
-		typicalSpeed=960.12;
-		airFriction=-0.0011336141;
-		caliber=0.90100002;
-		deflecting=21;
-		visibleFire=3;
-		audibleFire=6;
-		cartridge="FxCartridge_65_caseless";
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
-		nvgOnly=0;
+	class RH_556x45_B_M855A1: B_556x45_Ball {
+		hit = 8.6063738;
+		typicalSpeed = 960.12;
+		airFriction = -0.0011336141;
+		caliber = 0.90100002;
+		deflecting = 21;
+		visibleFire = 3;
+		audibleFire = 6;
+		cartridge = "FxCartridge_65_caseless";
+		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
+		nvgOnly = 0;
 	};
-	class RH_556x45_B_Mk318: B_556x45_Ball
-	{
-		hit=10.073716;
-		typicalSpeed=955.24323;
-		airFriction=-0.0011487255;
-		caliber=0.73400003;
-		deflecting=18;
-		visibleFire=3;
-		audibleFire=5.5;
-		cartridge="FxCartridge_65_caseless";
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
-		nvgOnly=0;
+	class RH_556x45_B_Mk318: B_556x45_Ball {
+		hit = 10.073716;
+		typicalSpeed = 955.24323;
+		airFriction = -0.0011487255;
+		caliber = 0.73400003;
+		deflecting = 18;
+		visibleFire = 3;
+		audibleFire = 5.5;
+		cartridge = "FxCartridge_65_caseless";
+		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
+		nvgOnly = 0;
 	};
-	class RH_556x45_B_Mk262: B_556x45_Ball
-	{
-		hit=11.570251;
-		typicalSpeed=868.67999;
-		airFriction=-0.0010867938;
-		caliber=0.61500001;
-		deflecting=16;
-		visibleFire=2.5;
-		audibleFire=5;
-		cartridge="FxCartridge_65_caseless";
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
-		nvgOnly=0;
+	class RH_556x45_B_Mk262: B_556x45_Ball {
+		hit = 11.570251;
+		typicalSpeed = 868.67999;
+		airFriction = -0.0010867938;
+		caliber = 0.61500001;
+		deflecting = 16;
+		visibleFire = 2.5;
+		audibleFire = 5;
+		cartridge = "FxCartridge_65_caseless";
+		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
+		nvgOnly = 0;
 	};
-	class RH_68x43_B_FMJ: B_65x39_Caseless
-	{
+	class RH_68x43_B_FMJ: B_65x39_Caseless {
 		hit=9.8421144;
 		typicalSpeed=806.19598;
 		airFriction=-0.0013388559;
@@ -559,8 +546,8 @@ class CfgWeapons
 					opticsFlare=0;
 					opticsDisablePeripherialVision=0;
 					opticsZoomMin=0.25;
-					opticsZoomMax=1.1;
-					opticsZoomInit=0.5;
+					opticsZoomMax=1.25;
+					opticsZoomInit=0.75;
 					memoryPointCamera="eye";
 					visionMode[]={};
 					distanceZoomMin=100;
@@ -577,9 +564,9 @@ class CfgWeapons
 					};
 					opticsFlare=0;
 					opticsDisablePeripherialVision=0;
-					opticsZoomMin=0.0691;
-					opticsZoomMax=0.0691;
-					opticsZoomInit=0.0691;
+					opticsZoomMin=0.25;
+					opticsZoomMax=1.25;
+					opticsZoomInit=0.75;
 					memoryPointCamera="opticView";
 					visionMode[]={};
 					distanceZoomMin=300;
@@ -823,8 +810,8 @@ class CfgWeapons
 			{
 			};
 		};
-		opticsZoomMin=0.375;
-		opticsZoomMax=1.1;
+		opticsZoomMin=0.25;
+		opticsZoomMax=1.25;
 		opticsZoomInit=0.75;
 		distanceZoomMin=300;
 		distanceZoomMax=300;
@@ -1325,8 +1312,8 @@ class CfgWeapons
 				iconScale=0.25;
 			};
 		};
-		opticsZoomMin=0.375;
-		opticsZoomMax=1.1;
+		opticsZoomMin=0.25;
+		opticsZoomMax=1.25;
 		opticsZoomInit=0.75;
 		distanceZoomMin=300;
 		distanceZoomMax=300;
@@ -1621,8 +1608,8 @@ class CfgWeapons
 				iconPinpoint="center";
 			};
 		};
-		opticsZoomMin=0.375;
-		opticsZoomMax=1.1;
+		opticsZoomMin=0.25;
+		opticsZoomMax=1.25;
 		opticsZoomInit=0.75;
 		distanceZoomMin=300;
 		distanceZoomMax=300;
@@ -3141,8 +3128,8 @@ class CfgWeapons
 			"bullet12",
 			0.082999997
 		};
-		opticsZoomMin=0.375;
-		opticsZoomMax=1.1;
+		opticsZoomMin=0.25;
+		opticsZoomMax=1.25;
 		opticsZoomInit=0.75;
 		distanceZoomMin=100;
 		distanceZoomMax=100;
