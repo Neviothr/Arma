@@ -1,60 +1,60 @@
-//NOTE: line 651
+//NOTE: line 841
 
 class CfgPatches {
 	class RH_m4_cfg {
 		units[] = {"RH_m4m16ammobox"};
-		weapons[] = {"RH_hbsd", "RH_Delft", "RH_m4covers_s", "RH_m4covers_f", "RH_m16covers_s", "RH_m16covers_f", "RH_m4", "RH_m4_m203", "RH_m4_ris", "RH_m4_ris_m203", "RH_m4_ris_m203s", "RH_m4_ris_m", "RH_m4m", "RH_m4_moe", "RH_m4sbr", "RH_m4a6", "RH_hb", "RH_sbr9", "RH_m16a1", "RH_m16a1gl", "RH_m16a2", "RH_m16a2gl", "RH_m16a4", "RH_m16a4_m", "RH_m16a4gl", "RH_m16a6", "RH_hk416", "RH_hk416c", "RH_hk416s", "RH_m27iar", "RH_mk12mod1", "RH_samr", "RH_m110", "RH_mk11", "RH_sr25ec"};
+		weapons[] = {"RH_hbsd","RH_Delft","RH_m4covers_s","RH_m4covers_f","RH_m16covers_s","RH_m16covers_f","RH_m4","RH_m4_m203","RH_m4_ris","RH_m4_ris_m203","RH_m4_ris_m203s","RH_m4_ris_m","RH_m4m","RH_m4_moe","RH_m4sbr","RH_m4a6","RH_hb","RH_sbr9","RH_m16a1","RH_m16a1gl","RH_m16a2","RH_m16a2gl","RH_m16a4","RH_m16a4_m","RH_m16a4gl","RH_m16a6","RH_hk416","RH_hk416c","RH_hk416s","RH_m27iar","RH_mk12mod1","RH_samr","RH_m110","RH_mk11","RH_sr25ec"};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"A3_Data_F", "A3_Weapons_F", "RH_acc", "asdg_jointrails"};
+		requiredAddons[] = {"A3_Data_F","A3_Weapons_F","RH_acc","asdg_jointrails"};
 	};
 };
 
 class CfgRecoils {
 	class Default;
 	class RH_recoil_default: Default {
-		muzzleOuter[] = {0.30000001, 1, 0.30000001, 0.2};
-		muzzleInner[] = {0, 0, 0.1, 0.1};
-		kickBack[] = {0.029999999, 0.059999999};
+		muzzleOuter[] = {0.30000001,1,0.30000001,0.2};
+		muzzleInner[] = {0,0,0.1,0.1};
+		kickBack[] = {0.029999999,0.059999999};
 		permanent = 0.1;
 		temporary = 0.0099999998;
 	};
 	class RH_recoil_AR10: RH_recoil_default {
-		muzzleOuter[] = {0.40000001, 1.5, 0.60000002, 0.40000001};
-		kickBack[] = {0.039999999, 0.07};
+		muzzleOuter[] = {0.40000001,1.5,0.60000002,0.40000001};
+		kickBack[] = {0.039999999,0.07};
 		temporary = 0.0099999998;
 	};
 	class RH_recoil_M4: RH_recoil_default {
-		muzzleOuter[] = {0.30000001, 1, 0.40000001, 0.30000001};
-		kickBack[] = {0.02, 0.039999999};
+		muzzleOuter[] = {0.30000001,1,0.40000001,0.30000001};
+		kickBack[] = {0.02,0.039999999};
 		temporary = 0.0099999998;
 	};
 	class RH_recoil_M16: RH_recoil_default {
-		muzzleOuter[] = {0.30000001, 0.80000001, 0.40000001, 0.30000001};
-		kickBack[] = {0.02, 0.039999999};
+		muzzleOuter[] = {0.30000001,0.80000001,0.40000001,0.30000001};
+		kickBack[] = {0.02,0.039999999};
 		temporary = 0.0099999998;
 	};
 	class RH_recoil_HB: RH_recoil_default {
-		muzzleOuter[] = {0.34999999, 1.2, 0.44999999, 0.34999999};
-		kickBack[] = {0.029999999, 0.050000001};
+		muzzleOuter[] = {0.34999999,1.2,0.44999999,0.34999999};
+		kickBack[] = {0.029999999,0.050000001};
 		temporary = 0.0099999998;
 	};
 	class RH_recoil_SBR9: RH_recoil_default {
-		muzzleOuter[] = {0.1, 0.60000002, 0.2, 0.2};
-		kickBack[] = {0.0099999998, 0.02};
+		muzzleOuter[] = {0.1,0.60000002,0.2,0.2};
+		kickBack[] = {0.0099999998,0.02};
 		temporary = 0.0099999998;
 	};
-	RH_AR10_Recoil[] = {0, 0.0089999996, 0.017000001, 0.02, 0.0089999996, 0.017000001, 0.029999999, 0.0070000002, 0.023, 0.16, 0, 0};
-	RH_AR10_RecoilProne[] = {0, 0.0070000002, 0.0099999998, 0.013, 0.0070000002, 0.0099999998, 0.029999999, 0.003, 0, 0.12, 0, 0};
-	RH_M4_Recoil[] = {0, 0.0049999999, 0.0049999999, 0.0049999999, 0.0099999998, 0.011, 0.090000004, 0.0049999999, -0.00039999999, 0.13, 0, 0};
-	RH_M4_RecoilProne[] = {0, 0.0049999999, 0.0049999999, 0.0049999999, 0.0099999998, 0.0089999996, 0.075000003, 0.0049999999, -0.00030000001, 0.13, 0, 0};
-	RH_M4_Recoil_Auto[] = {0, 0.0070000002, 0.015, 0.0070000002, 0.0099999998, 0.022, 0.090000004, 0.02, 0.0099999998, 0.13, 0, 0};
-	RH_M4_RecoilProneAuto[] = {0, 0.0049999999, 0.0049999999, 0.0049999999, 0.0099999998, 0.0089999996, 0.075000003, 0.0049999999, -0.00030000001, 0.13, 0, 0};
-	RH_M4_Recoil_GLRecoil[] = {0, 0.0049999999, 0, 0.0099999998, 0.0049999999, 0, 0.02, 0.003, 0.0060000001, 0.12, 0, 0};
-	RH_M203GLBase[] = {0, 0.029999999, 0.050000001, 0.13, 0.0099999998, -0.001, 0.25999999, 0, 0};
-	RH_M249_Recoil[] = {0, 0.0060000001, -0.003, 0.050000001, 0.0060000001, 0.0060000001, 0.029999999, 0.0060000001, 0.0060000001, 0.17, 0, 0};
-	RH_M249_RecoilProne[] = {0, 0.0049999999, 0.0020000001, 0.07, 0.0049999999, -0.0015, 0.12, 0, 0};
-	RH_Mk48_Recoil[] = {0, 0.0099999998, 0.0020000001, 0.050000001, 0.0099999998, 0.003, 0.039999999, 0.0060000001, 0.02, 0.17, 0, 0};
-	RH_Mk48_RecoilProne[] = {0, 0.0099999998, 0.0012000001, 0.090000004, 0.0089999996, -0.001, 0.15000001, 0, 0};
+	RH_AR10_Recoil[] = {0,0.0089999996,0.017000001,0.02,0.0089999996,0.017000001,0.029999999,0.0070000002,0.023,0.16,0,0};
+	RH_AR10_RecoilProne[] = {0,0.0070000002,0.0099999998,0.013,0.0070000002,0.0099999998,0.029999999,0.003,0,0.12,0,0};
+	RH_M4_Recoil[] = {0,0.0049999999,0.0049999999,0.0049999999,0.0099999998,0.011,0.090000004,0.0049999999,-0.00039999999,0.13,0,0};
+	RH_M4_RecoilProne[] = {0,0.0049999999,0.0049999999,0.0049999999,0.0099999998,0.0089999996,0.075000003,0.0049999999,-0.00030000001,0.13,0,0};
+	RH_M4_Recoil_Auto[] = {0,0.0070000002,0.015,0.0070000002,0.0099999998,0.022,0.090000004,0.02,0.0099999998,0.13,0,0};
+	RH_M4_RecoilProneAuto[] = {0,0.0049999999,0.0049999999,0.0049999999,0.0099999998,0.0089999996,0.075000003,0.0049999999,-0.00030000001,0.13,0,0};
+	RH_M4_Recoil_GLRecoil[] = {0,0.0049999999,0,0.0099999998,0.0049999999,0,0.02,0.003,0.0060000001,0.12,0,0};
+	RH_M203GLBase[] = {0,0.029999999,0.050000001,0.13,0.0099999998,-0.001,0.25999999,0,0};
+	RH_M249_Recoil[] = {0,0.0060000001,-0.003,0.050000001,0.0060000001,0.0060000001,0.029999999,0.0060000001,0.0060000001,0.17,0,0};
+	RH_M249_RecoilProne[] = {0,0.0049999999,0.0020000001,0.07,0.0049999999,-0.0015,0.12,0,0};
+	RH_Mk48_Recoil[] = {0,0.0099999998,0.0020000001,0.050000001,0.0099999998,0.003,0.039999999,0.0060000001,0.02,0.17,0,0};
+	RH_Mk48_RecoilProne[] = {0,0.0099999998,0.0012000001,0.090000004,0.0089999996,-0.001,0.15000001,0,0};
 };
 
 class CfgAmmo {
@@ -515,7 +515,7 @@ class CfgWeapons {
 				class Delftscope {
 					opticsID = 2;
 					useModelOptics = 0;
-					opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
+					opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
 					opticsFlare = 0;
 					opticsDisablePeripherialVision = 0;
 					opticsZoomMin = 0.25;
@@ -578,21 +578,21 @@ class CfgWeapons {
 		scope = 2;
 		author = "RobertHammer";
 		cursor = "srifle";
-		bullet1[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_01", 0.39810717, 1, 15};
-		bullet2[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_02", 0.39810717, 1, 15};
-		bullet3[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_03", 0.39810717, 1, 15};
-		bullet4[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_04", 0.39810717, 1, 15};
-		bullet5[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_01", 0.2818383, 1, 15};
-		bullet6[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_02", 0.2818383, 1, 15};
-		bullet7[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_03", 0.2818383, 1, 15};
-		bullet8[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_04", 0.2818383, 1, 15};
-		bullet9[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_01", 0.2818383, 1, 15};
-		bullet10[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_02", 0.2818383, 1, 15};
-		bullet11[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_03", 0.2818383, 1, 15};
-		bullet12[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_04", 0.2818383, 1, 15};
-		soundBullet[] = {"bullet1", 0.082999997, "bullet2", 0.082999997, "bullet3", 0.082999997, "bullet4", 0.082999997, "bullet5", 0.082999997, "bullet6", 0.082999997, "bullet7", 0.082999997, "bullet8", 0.082999997, "bullet9", 0.082999997, "bullet10", 0.082999997, "bullet11", 0.082999997, "bullet12", 0.082999997};
-		changeFiremodeSound[] = {"\RH_m4\sound\m4_selector", 0.5, 1, 10};
-		drySound[] = {"\RH_m4\sound\dry", 0.80000001, 1, 15};
+		bullet1[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_01",0.39810717,1,15};
+		bullet2[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_02",0.39810717,1,15};
+		bullet3[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_03",0.39810717,1,15};
+		bullet4[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_04",0.39810717,1,15};
+		bullet5[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_01",0.2818383,1,15};
+		bullet6[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_02",0.2818383,1,15};
+		bullet7[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_03",0.2818383,1,15};
+		bullet8[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_04",0.2818383,1,15};
+		bullet9[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_01",0.2818383,1,15};
+		bullet10[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_02",0.2818383,1,15};
+		bullet11[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_03",0.2818383,1,15};
+		bullet12[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_04",0.2818383,1,15};
+		soundBullet[] = {"bullet1",0.082999997,"bullet2",0.082999997,"bullet3",0.082999997,"bullet4",0.082999997,"bullet5",0.082999997,"bullet6",0.082999997,"bullet7",0.082999997,"bullet8",0.082999997,"bullet9",0.082999997,"bullet10",0.082999997,"bullet11",0.082999997,"bullet12",0.082999997};
+		changeFiremodeSound[] = {"\RH_m4\sound\m4_selector",0.5,1,10};
+		drySound[] = {"\RH_m4\sound\dry",0.80000001,1,15};
 		displayNAme = "AR-10";
 		model = "\RH_m4\RH_AR10.p3d";
 		picture = "\RH_m4\inv\ar10_x_ca.paa";
@@ -634,44 +634,26 @@ class CfgWeapons {
 		opticsZoomInit = 0.75;
 		distanceZoomMin = 300;
 		distanceZoomMax = 300;
-		modes[] = {"Single", "FullAuto", "single_close_optics1","single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+		modes[] = {"Single","FullAuto","single_close_optics1","single_medium_optics1","single_far_optics1","fullauto_medium"};
 		class Single: Mode_SemiAuto {
-			sounds[] = {"StandardSound", "SilencedSound"};
+			sounds[] = {"StandardSound","SilencedSound"};
 			class BaseSoundModeType {
 				weaponSoundEffect = "DefaultRifle";
-				closure1[] = {"A3\sounds_f\weapons\closure\ebr-3", 0.5, 1.2, 10};
-				closure2[] = {"A3\sounds_f\weapons\closure\ebr-3", 0.5, 1, 10};
-				soundClosure[] = {"closure1", 0.5, "closure2", 0.5};
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-3",0.5,1.2,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-3",0.5,1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5};
 			};
 			class StandardSound: BaseSoundModeType {
-				begin1[] = {"RH_m4\sound\ar10_s1.wss", 1, 1, 1200};
-				begin2[] = {"RH_m4\sound\ar10_s2.wss", 1, 1, 1200};
-				begin3[] = {"RH_m4\sound\ar10_s3.wss", 1, 1, 1200};
-				begin4[] = {"RH_m4\sound\ar10_s4.wss", 1, 1, 1200};
-				soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+				begin1[] = {"RH_m4\sound\ar10_s1.wss",1,1,1200};
+				begin2[] = {"RH_m4\sound\ar10_s2.wss",1,1,1200};
+				begin3[] = {"RH_m4\sound\ar10_s3.wss",1,1,1200};
+				begin4[] = {"RH_m4\sound\ar10_s4.wss",1,1,1200};
+				soundBegin[] = {"begin1",0.25,"begin2",0.25,"begin3",0.25,"begin4",0.25};
 			};
 			class SilencedSound: BaseSoundModeType {
-				begin1[] =
-				{
-					"A3\sounds_f\weapons\silenced\silent-11",
-					1,
-					1,
-					200
-				};
-				begin2[] =
-				{
-					"A3\sounds_f\weapons\silenced\silent-12",
-					1,
-					1,
-					200
-				};
-				soundBegin[] =
-				{
-					"begin1",
-					0.5,
-					"begin2",
-					0.5
-				};
+				begin1[] = {"A3\sounds_f\weapons\silenced\silent-11",1,1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\silent-12",1,1,200};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5};
 			};
 			reloadTime = 0.085000001;
 			recoil = "RH_AR10_Recoil";
@@ -684,103 +666,25 @@ class CfgWeapons {
 			maxRange = 500;
 			maxRangeProbab = 0.050000001;
 		};
-		class FullAuto: Mode_FullAuto
-		{
-			sounds[] =
-			{
-				"StandardSound",
-				"SilencedSound"
-			};
-			class BaseSoundModeType
-			{
+		class FullAuto: Mode_FullAuto {
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType {
 				weaponSoundEffect = "DefaultRifle";
-				closure1[] =
-				{
-					"A3\sounds_f\weapons\closure\ebr-3",
-					0.5,
-					1.2,
-					10
-				};
-				closure2[] =
-				{
-					"A3\sounds_f\weapons\closure\ebr-3",
-					0.5,
-					1,
-					10
-				};
-				soundClosure[] =
-				{
-					"closure1",
-					0.5,
-					"closure2",
-					0.5
-				};
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-3",0.5,1.2,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-3",0.5,1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5};
 			};
-			class StandardSound: BaseSoundModeType
-			{
-				begin1[] =
-				{
-					"RH_m4\sound\ar10_s1.wss",
-					1,
-					1,
-					1200
-				};
-				begin2[] =
-				{
-					"RH_m4\sound\ar10_s2.wss",
-					1,
-					1,
-					1200
-				};
-				begin3[] =
-				{
-					"RH_m4\sound\ar10_s3.wss",
-					1,
-					1,
-					1200
-				};
-				begin4[] =
-				{
-					"RH_m4\sound\ar10_s4.wss",
-					1,
-					1,
-					1200
-				};
-				soundBegin[] =
-				{
-					"begin1",
-					0.25,
-					"begin2",
-					0.25,
-					"begin3",
-					0.25,
-					"begin4",
-					0.25
-				};
+			class StandardSound: BaseSoundModeType {
+				begin1[] = {"RH_m4\sound\ar10_s1.wss",1,1,1200};
+				begin2[] = {"RH_m4\sound\ar10_s2.wss",1,1,1200};
+				begin3[] = {"RH_m4\sound\ar10_s3.wss",1,1,1200};
+				begin4[] = {"RH_m4\sound\ar10_s4.wss",1,1,1200};
+				soundBegin[] = {"begin1",0.25,"begin2",0.25,"begin3",0.25,"begin4",0.25};
 			};
-			class SilencedSound: BaseSoundModeType
-			{
-				begin1[] =
-				{
-					"A3\sounds_f\weapons\silenced\silent-11",
-					1,
-					1,
-					200
-				};
-				begin2[] =
-				{
-					"A3\sounds_f\weapons\silenced\silent-12",
-					1,
-					1,
-					200
-				};
-				soundBegin[] =
-				{
-					"begin1",
-					0.5,
-					"begin2",
-					0.5
-				};
+			class SilencedSound: BaseSoundModeType {
+				begin1[] = {"A3\sounds_f\weapons\silenced\silent-11",1,1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\silent-12",1,1,200};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5};
 			};
 			reloadTime = 0.085000001;
 			recoil = "RH_AR10_Recoil";
@@ -794,8 +698,7 @@ class CfgWeapons {
 			maxRangeProbab = 0.050000001;
 			aiRateOfFire = 1e-006;
 		};
-		class single_close_optics1: Single
-		{
+		class single_close_optics1: Single {
 			requiredOpticType = 1;
 			showToPlayer = 0;
 			minRange = 2;
@@ -807,8 +710,7 @@ class CfgWeapons {
 			aiRateOfFire = 2;
 			aiRateOfFireDistance = 300;
 		};
-		class single_medium_optics1: single_close_optics1
-		{
+		class single_medium_optics1: single_close_optics1 {
 			minRange = 300;
 			minRangeProbab = 0.050000001;
 			midRange = 500;
@@ -818,8 +720,7 @@ class CfgWeapons {
 			aiRateOfFire = 2;
 			aiRateOfFireDistance = 500;
 		};
-		class single_far_optics1: single_medium_optics1
-		{
+		class single_far_optics1: single_medium_optics1 {
 			requiredOpticType = 2;
 			minRange = 300;
 			minRangeProbab = 0.050000001;
@@ -830,8 +731,7 @@ class CfgWeapons {
 			aiRateOfFire = 4;
 			aiRateOfFireDistance = 600;
 		};
-		class fullauto_medium: FullAuto
-		{
+		class fullauto_medium: FullAuto {
 			showToPlayer = 0;
 			burst = 3;
 			minRange = 2;
@@ -844,222 +744,82 @@ class CfgWeapons {
 		};
 		aiDispersionCoefY = 3;
 		aiDispersionCoefX = 2;
-		reloadMagazineSound[] =
-		{
-			"\RH_m4\sound\ar10_reload",
-			1,
-			1,
-			15
-		};
+		reloadMagazineSound[] = {"\RH_m4\sound\ar10_reload",1,1,15};
 	};
-	class RH_m110: Rifle_Base_F
-	{
+	class RH_m110: Rifle_Base_F {
 		scope = 2;
 		author = "RobertHammer";
 		cursor = "srifle";
-		bullet1[] =
-		{
-			"A3\sounds_f\weapons\shells\7_62\metal_762_01",
-			0.39810717,
-			1,
-			15
-		};
-		bullet2[] =
-		{
-			"A3\sounds_f\weapons\shells\7_62\metal_762_02",
-			0.39810717,
-			1,
-			15
-		};
-		bullet3[] =
-		{
-			"A3\sounds_f\weapons\shells\7_62\metal_762_03",
-			0.39810717,
-			1,
-			15
-		};
-		bullet4[] =
-		{
-			"A3\sounds_f\weapons\shells\7_62\metal_762_04",
-			0.39810717,
-			1,
-			15
-		};
-		bullet5[] =
-		{
-			"A3\sounds_f\weapons\shells\7_62\dirt_762_01",
-			0.2818383,
-			1,
-			15
-		};
-		bullet6[] =
-		{
-			"A3\sounds_f\weapons\shells\7_62\dirt_762_02",
-			0.2818383,
-			1,
-			15
-		};
-		bullet7[] =
-		{
-			"A3\sounds_f\weapons\shells\7_62\dirt_762_03",
-			0.2818383,
-			1,
-			15
-		};
-		bullet8[] =
-		{
-			"A3\sounds_f\weapons\shells\7_62\dirt_762_04",
-			0.2818383,
-			1,
-			15
-		};
-		bullet9[] =
-		{
-			"A3\sounds_f\weapons\shells\7_62\grass_762_01",
-			0.2818383,
-			1,
-			15
-		};
-		bullet10[] =
-		{
-			"A3\sounds_f\weapons\shells\7_62\grass_762_02",
-			0.2818383,
-			1,
-			15
-		};
-		bullet11[] =
-		{
-			"A3\sounds_f\weapons\shells\7_62\grass_762_03",
-			0.2818383,
-			1,
-			15
-		};
-		bullet12[] =
-		{
-			"A3\sounds_f\weapons\shells\7_62\grass_762_04",
-			0.2818383,
-			1,
-			15
-		};
-		soundBullet[] =
-		{
-			"bullet1",
-			0.082999997,
-			"bullet2",
-			0.082999997,
-			"bullet3",
-			0.082999997,
-			"bullet4",
-			0.082999997,
-			"bullet5",
-			0.082999997,
-			"bullet6",
-			0.082999997,
-			"bullet7",
-			0.082999997,
-			"bullet8",
-			0.082999997,
-			"bullet9",
-			0.082999997,
-			"bullet10",
-			0.082999997,
-			"bullet11",
-			0.082999997,
-			"bullet12",
-			0.082999997
-		};
-		changeFiremodeSound[] =
-		{
-			"\RH_m4\sound\m4_selector",
-			0.5,
-			1,
-			10
-		};
-		drySound[] =
-		{
-			"\RH_m4\sound\dry",
-			0.80000001,
-			1,
-			15
-		};
+		bullet1[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_01",0.39810717,1,15};
+		bullet2[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_02",0.39810717,1,15};
+		bullet3[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_03",0.39810717,1,15};
+		bullet4[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_04",0.39810717,1,15};
+		bullet5[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_01",0.2818383,1,15};
+		bullet6[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_02",0.2818383,1,15};
+		bullet7[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_03",0.2818383,1,15};
+		bullet8[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_04",0.2818383,1,15};
+		bullet9[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_01",0.2818383,1,15};
+		bullet10[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_02",0.2818383,1,15};
+		bullet11[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_03",0.2818383,1,15};
+		bullet12[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_04",0.2818383,1,15};
+		soundBullet[] = {"bullet1",0.082999997,"bullet2",0.082999997,"bullet3",0.082999997,"bullet4",0.082999997,"bullet5",0.082999997,"bullet6",0.082999997,"bullet7",0.082999997,"bullet8",0.082999997,"bullet9",0.082999997,"bullet10",0.082999997,"bullet11",0.082999997,"bullet12",0.082999997};
+		changeFiremodeSound[] = {"\RH_m4\sound\m4_selector",0.5,1,10};
+		drySound[] = {"\RH_m4\sound\dry",0.80000001,1,15};
 		displayNAme = "M110";
 		model = "\RH_m4\RH_M110.p3d";
 		picture = "\RH_m4\inv\m110_x_ca.paa";
-		magazines[] =
-		{
-			"RH_20Rnd_762x51_M80A1",
-			"RH_20Rnd_762x51_Mk316LR",
-			"RH_20Rnd_762x51_LFMJSB"
-		};
+		magazines[] = {"RH_20Rnd_762x51_M80A1","RH_20Rnd_762x51_Mk316LR","RH_20Rnd_762x51_LFMJSB"};
 		reloadAction = "GestureReloadSMG_02";
-		handAnim[] =
-		{
-			"OFP2_ManSkeleton",
-			"\RH_m4\anim\RH_m110.rtm"
-		};
+		handAnim[] = {"OFP2_ManSkeleton","\RH_m4\anim\RH_m110.rtm"};
 		inertia = 0.60000002;
 		maxZeroing = 1200;
 		recoil = "RH_recoil_AR10";
-		class GunParticles: GunParticles
-		{
-			class EjectEffect
-			{
+		class GunParticles: GunParticles {
+			class EjectEffect {
 				positionName = "Nabojnicestart";
 				directionName = "Nabojniceend";
 				effectName = "RH_Rifle762Cartridge";
 			};
-			class RifleAmmoCloud
-			{
+			class RifleAmmoCloud {
 				positionName = "Nabojnicestart";
 				directionName = "Nabojniceend";
 				effectName = "RH_RifleAmmoCloud";
 			};
-			class SmokeEffect
-			{
+			class SmokeEffect {
 				positionName = "usti hlavne";
 				directionName = "usti hlavne";
 				effectName = "RH_RifleSmokeTrail";
 			};
 		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
+		class WeaponSlotsInfo: WeaponSlotsInfo {
 			mass = 125;
-			class MuzzleSlot: MuzzleSlot
-			{
+			class MuzzleSlot: MuzzleSlot {
 				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-				compatibleItems[] =
-				{
-					"RH_m110sd",
-					"RH_m110sd_t"
-				};
-				iconPosition[] = {0.050000001, 0.43000001};
+				compatibleItems[] = {"RH_m110sd","RH_m110sd_t"};
+				iconPosition[] = {0.050000001,0.43000001};
 				conScale = 0.2;
 			};
-			class asdg_MuzzleSlot_762_M110: asdg_MuzzleSlot_762
-			{
-				iconPosition[] = {0.050000001, 0.43000001};
+			class asdg_MuzzleSlot_762_M110: asdg_MuzzleSlot_762 {
+				iconPosition[] = {0.050000001,0.43000001};
 				conScale = 0.2;
 			};
-			class PointerSlot: asdg_FrontSideRail
-			{
-				iconPosition[] = {0.30000001, 0.44999999};
+			class PointerSlot: asdg_FrontSideRail {
+				iconPosition[] = {0.30000001,0.44999999};
 				iconScale = 0.25;
 				iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
 				iconPinpoint = "center";
 			};
-			class CowsSlot: asdg_OpticRail1913
-			{
-				iconPosition[] = {0.55000001, 0.30000001};
+			class CowsSlot: asdg_OpticRail1913 {
+				iconPosition[] = {0.55000001,0.30000001};
 				iconScale = 0.2;
 				iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
 				iconPinpoint = "center";
 			};
-			class UnderBarrelSlot: asdg_UnderSlot
-			{
+			class UnderBarrelSlot: asdg_UnderSlot {
 				linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
 				iconPicture = "\A3\Weapons_F_Mark\Data\UI\attachment_under.paa";
 				iconPinpoint = "Bottom";
-				iconPosition[] = {0.30000001, 0.69999999};
+				iconPosition[] = {0.30000001,0.69999999};
 				iconScale = 0.25;
 			};
 		};
@@ -1068,47 +828,16 @@ class CfgWeapons {
 		opticsZoomInit = 0.75;
 		distanceZoomMin = 300;
 		distanceZoomMax = 300;
-		modes[] =
-		{
-			"Single",
-			"single_close_optics1",
-			"single_medium_optics1",
-			"single_far_optics1"
-		};
-		class Single: Mode_SemiAuto
-		{
-			sounds[] =
-			{
-				"StandardSound",
-				"SilencedSound"
-			};
-			class BaseSoundModeType
-			{
+		modes[] = {"Single","single_close_optics1","single_medium_optics1","single_far_optics1"};
+		class Single: Mode_SemiAuto {
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType {
 				weaponSoundEffect = "DefaultRifle";
-				closure1[] =
-				{
-					"A3\sounds_f\weapons\closure\ebr-3",
-					0.5,
-					1.2,
-					10
-				};
-				closure2[] =
-				{
-					"A3\sounds_f\weapons\closure\ebr-3",
-					0.5,
-					1,
-					10
-				};
-				soundClosure[] =
-				{
-					"closure1",
-					0.5,
-					"closure2",
-					0.5
-				};
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-3",0.5,1.2,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-3",0.5,1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5};
 			};
-			class StandardSound: BaseSoundModeType
-			{
+			class StandardSound: BaseSoundModeType {
 				begin1[] =
 				{
 					"RH_m4\sound\m110_s1.wss",
@@ -1348,12 +1077,12 @@ class CfgWeapons {
 			};
 			class MuzzleSlot: asdg_MuzzleSlot_556
 			{
-				iconPosition[] = {0, 0.37};
+				iconPosition[] = {0,0.37};
 				iconScale = 0.2;
 			};
 			class CowsSlot: asdg_OpticRail1913_short
 			{
-				iconPosition[] = {0.5, 0.2};
+				iconPosition[] = {0.5,0.2};
 				iconScale = 0.2;
 				iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
 				iconPinpoint = "center";
@@ -1368,7 +1097,7 @@ class CfgWeapons {
 		displayName = "M4";
 		model = "\RH_m4\RH_m4.p3d";
 		picture = "\RH_m4\inv\m4_x_ca.paa";
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 800};
+		discreteDistance[] = {100,200,300,400,500,600,800};
 		discreteDistanceInitIndex = 1;
 		weaponInfoType = "RscWeaponZeroing";
 		inertia = 0.40000001;
@@ -1837,7 +1566,7 @@ class CfgWeapons {
 				10
 			};
 			cameraDir = "OP_look";
-			discreteDistance[] = {50, 100, 150, 200, 250};
+			discreteDistance[] = {50,100,150,200,250};
 			discreteDistanceCameraPoint[] =
 			{
 				"OP_eye",
@@ -1916,7 +1645,7 @@ class CfgWeapons {
 					"RH_m4covers_s",
 					"RH_m4covers_f"
 				};
-				iconPosition[] = {0.30000001, 0.34999999};
+				iconPosition[] = {0.30000001,0.34999999};
 				iconScale = 0.25;
 				iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
 				iconPinpoint = "center";
@@ -1926,14 +1655,14 @@ class CfgWeapons {
 			};
 			class asdg_FrontSideRail_M4: asdg_FrontSideRail
 			{
-				iconPosition[] = {0.30000001, 0.34999999};
+				iconPosition[] = {0.30000001,0.34999999};
 				iconScale = 0.25;
 				iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
 				iconPinpoint = "center";
 			};
 			class CowsSlot: asdg_OpticRail1913
 			{
-				iconPosition[] = {0.5, 0.2};
+				iconPosition[] = {0.5,0.2};
 				iconScale = 0.2;
 				iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
 				iconPinpoint = "center";
@@ -1943,7 +1672,7 @@ class CfgWeapons {
 				linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
 				iconPicture = "\A3\Weapons_F_Mark\Data\UI\attachment_under.paa";
 				iconPinpoint = "Bottom";
-				iconPosition[] = {0.27000001, 0.69999999};
+				iconPosition[] = {0.27000001,0.69999999};
 				iconScale = 0.25;
 			};
 		};
@@ -2028,7 +1757,7 @@ class CfgWeapons {
 		model = "\RH_M4\RH_m4_ris_m.p3d";
 		displayName = "M4A1 RIS Matech";
 		picture = "\RH_m4\inv\m4_ris_m_x_ca.paa";
-		discreteDistance[] = {200, 300, 400, 450, 500, 550, 600};
+		discreteDistance[] = {200,300,400,450,500,550,600};
 		discreteDistanceInitIndex = 1;
 		weaponInfoType = "RscWeaponZeroing";
 	};
@@ -2146,19 +1875,19 @@ class CfgWeapons {
 			mass = 80;
 			class MuzzleSlot: MuzzleSlot
 			{
-				iconPosition[] = {-0.029999999, 0.34999999};
+				iconPosition[] = {-0.029999999,0.34999999};
 			};
 			class PointerSlot: PointerSlot
 			{
-				iconPosition[] = {0.15000001, 0.34999999};
+				iconPosition[] = {0.15000001,0.34999999};
 			};
 			class asdg_FrontSideRail_M4: asdg_FrontSideRail_M4
 			{
-				iconPosition[] = {0.15000001, 0.34999999};
+				iconPosition[] = {0.15000001,0.34999999};
 			};
 			class CowsSlot: CowsSlot
 			{
-				iconPosition[] = {0.40000001, 0.15000001};
+				iconPosition[] = {0.40000001,0.15000001};
 			};
 			class UnderBarrelSlot
 			{
@@ -2391,7 +2120,7 @@ class CfgWeapons {
 				{
 					"RH_hbsd"
 				};
-				iconPosition[] = {0, 0.37};
+				iconPosition[] = {0,0.37};
 				iconScale = 0.2;
 			};
 			class PointerSlot
@@ -2399,7 +2128,7 @@ class CfgWeapons {
 			};
 			class CowsSlot: asdg_OpticRail1913
 			{
-				iconPosition[] = {0.5, 0.2};
+				iconPosition[] = {0.5,0.2};
 				iconScale = 0.2;
 				iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
 				iconPinpoint = "center";
@@ -2708,7 +2437,7 @@ class CfgWeapons {
 		cursor = "smg";
 		picture = "\RH_m4\inv\sbr9_x_ca.paa";
 		UiPicture = "\A3\Weapons_F\data\UI\icon_regular_CA.paa";
-		discreteDistance[] = {100, 200};
+		discreteDistance[] = {100,200};
 		discreteDistanceInitIndex = 0;
 		aiDispersionCoefY = 8;
 		aiDispersionCoefX = 9;
@@ -2747,19 +2476,19 @@ class CfgWeapons {
 			mass = 75;
 			class MuzzleSlot: asdg_MuzzleSlot_9MM
 			{
-				iconPosition[] = {0, 0.30000001};
+				iconPosition[] = {0,0.30000001};
 				iconScale = 0.2;
 			};
 			class PointerSlot: asdg_FrontSideRail
 			{
-				iconPosition[] = {0.2, 0.30000001};
+				iconPosition[] = {0.2,0.30000001};
 				iconScale = 0.25;
 				iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
 				iconPinpoint = "center";
 			};
 			class CowsSlot: asdg_OpticRail1913
 			{
-				iconPosition[] = {0.40000001, 0.15000001};
+				iconPosition[] = {0.40000001,0.15000001};
 				iconScale = 0.2;
 				iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
 				iconPinpoint = "center";
@@ -4070,33 +3799,33 @@ class CfgWeapons {
 					"RH_m16covers_s",
 					"RH_m16covers_f"
 				};
-				iconPosition[] = {0.30000001, 0.40000001};
+				iconPosition[] = {0.30000001,0.40000001};
 				iconScale = 0.25;
 				iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
 				iconPinpoint = "center";
 			};
 			class MuzzleSlot: asdg_MuzzleSlot_556
 			{
-				iconPosition[] = {-0.050000001, 0.40000001};
+				iconPosition[] = {-0.050000001,0.40000001};
 				iconScale = 0.2;
 			};
 			class CowsSlot: asdg_OpticRail1913
 			{
-				iconPosition[] = {0.5, 0.25};
+				iconPosition[] = {0.5,0.25};
 				iconScale = 0.2;
 				iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
 				iconPinpoint = "center";
 			};
 			class asdg_FrontSideRail_M4: asdg_FrontSideRail
 			{
-				iconPosition[] = {0.30000001, 0.40000001};
+				iconPosition[] = {0.30000001,0.40000001};
 				iconScale = 0.25;
 				iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
 				iconPinpoint = "center";
 			};
 			class UnderBarrelSlot: asdg_UnderSlot
 			{
-				iconPosition[] = {0.30000001, 0.69999999};
+				iconPosition[] = {0.30000001,0.69999999};
 				iconScale = 0.25;
 			};
 		};
@@ -4514,7 +4243,7 @@ class CfgWeapons {
 		model = "\RH_M4\RH_m16a4_m.p3d";
 		displayName = "M16A4 Matech";
 		picture = "\RH_m4\inv\m16a4_m_x_ca.paa";
-		discreteDistance[] = {200, 300, 400, 450, 500, 550, 600};
+		discreteDistance[] = {200,300,400,450,500,550,600};
 		discreteDistanceInitIndex = 1;
 		weaponInfoType = "RscWeaponZeroing";
 	};
@@ -4859,7 +4588,7 @@ class CfgWeapons {
 		displayName = "Mk12 mod1";
 		picture = "\RH_m4\inv\mk12mod1_x_ca.paa";
 		handAnim[] = {};
-		discreteDistance[] = {100, 200, 300, 400, 500, 600};
+		discreteDistance[] = {100,200,300,400,500,600};
 		discreteDistanceInitIndex = 2;
 		weaponInfoType = "RscWeaponZeroing";
 		magazines[] =
@@ -5050,7 +4779,7 @@ class CfgWeapons {
 		model = "\RH_M4\RH_hk416.p3d";
 		displayName = "Hk416 D14.5RS";
 		picture = "\RH_m4\inv\hk416_x_ca.paa";
-		discreteDistance[] = {100, 200, 300, 400};
+		discreteDistance[] = {100,200,300,400};
 		discreteDistanceInitIndex = 2;
 		weaponInfoType = "RscWeaponZeroing";
 		initSpeed = -0.93000001;
@@ -5282,7 +5011,7 @@ class CfgWeapons {
 			"OFP2_ManSkeleton",
 			"\RH_m4\anim\RH_M4vg.rtm"
 		};
-		discreteDistance[] = {100, 200, 300, 400};
+		discreteDistance[] = {100,200,300,400};
 		discreteDistanceInitIndex = 2;
 		weaponInfoType = "RscWeaponZeroing";
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -5290,19 +5019,19 @@ class CfgWeapons {
 			mass = 80;
 			class MuzzleSlot: MuzzleSlot
 			{
-				iconPosition[] = {0.1, 0.37};
+				iconPosition[] = {0.1,0.37};
 			};
 			class CowsSlot: CowsSlot
 			{
-				iconPosition[] = {0.44999999, 0.2};
+				iconPosition[] = {0.44999999,0.2};
 			};
 			class PointerSlot: PointerSlot
 			{
-				iconPosition[] = {0.30000001, 0.34999999};
+				iconPosition[] = {0.30000001,0.34999999};
 			};
 			class asdg_FrontSideRail_M4: asdg_FrontSideRail_M4
 			{
-				iconPosition[] = {0.30000001, 0.34999999};
+				iconPosition[] = {0.30000001,0.34999999};
 			};
 		};
 		initSpeed = -0.86000001;
@@ -5534,7 +5263,7 @@ class CfgWeapons {
 			"OFP2_ManSkeleton",
 			"\RH_m4\anim\RH_M4vg.rtm"
 		};
-		discreteDistance[] = {100, 200, 300, 400};
+		discreteDistance[] = {100,200,300,400};
 		discreteDistanceInitIndex = 2;
 		weaponInfoType = "RscWeaponZeroing";
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -5542,19 +5271,19 @@ class CfgWeapons {
 			mass = 80;
 			class MuzzleSlot: MuzzleSlot
 			{
-				iconPosition[] = {0, 0.37};
+				iconPosition[] = {0,0.37};
 			};
 			class CowsSlot: CowsSlot
 			{
-				iconPosition[] = {0.44999999, 0.2};
+				iconPosition[] = {0.44999999,0.2};
 			};
 			class PointerSlot: PointerSlot
 			{
-				iconPosition[] = {0.2, 0.34999999};
+				iconPosition[] = {0.2,0.34999999};
 			};
 			class asdg_FrontSideRail_M4: asdg_FrontSideRail_M4
 			{
-				iconPosition[] = {0.2, 0.34999999};
+				iconPosition[] = {0.2,0.34999999};
 			};
 		};
 		initSpeed = -0.81;
@@ -5813,22 +5542,22 @@ class CfgWeapons {
 			mass = 140;
 			class MuzzleSlot: MuzzleSlot
 			{
-				iconPosition[] = {-0.050000001, 0.34999999};
+				iconPosition[] = {-0.050000001,0.34999999};
 				iconScale = 0.2;
 			};
 			class PointerSlot: PointerSlot
 			{
-				iconPosition[] = {0.30000001, 0.34999999};
+				iconPosition[] = {0.30000001,0.34999999};
 				iconScale = 0.25;
 			};
 			class CowsSlot: CowsSlot
 			{
-				iconPosition[] = {0.5, 0.2};
+				iconPosition[] = {0.5,0.2};
 				iconScale = 0.2;
 			};
 			class asdg_FrontSideRail_M4: asdg_FrontSideRail_M4
 			{
-				iconPosition[] = {0.30000001, 0.34999999};
+				iconPosition[] = {0.30000001,0.34999999};
 				iconScale = 0.25;
 			};
 		};
@@ -8157,7 +7886,7 @@ class CfgCloudlets
 	{
 		interval = 0.059500001;
 		circleRadius = 0;
-		circleVelocity[] = {0, 0, 0};
+		circleVelocity[] = {0,0,0};
 		particleShape = "\A3\weapons_f\ammo\cartridge_small.p3d";
 		particleFSNtieth = 1;
 		particleFSIndex = 0;
@@ -8181,7 +7910,7 @@ class CfgCloudlets
 		size[] = {1.1};
 		color[] =
 		{
-			{0.89999998, 0.89999998, 0.89999998, 1}
+			{0.89999998,0.89999998,0.89999998,1}
 		};
 		animationSpeed[] = {1000};
 		randomDirectionPeriod = 0.1;
@@ -8193,7 +7922,7 @@ class CfgCloudlets
 		bounceOnSurfaceVar = 0.2;
 		blockAIVisibility = 0;
 		sizeCoef = 1;
-		colorCoef[] = {1, 1, 1, 1};
+		colorCoef[] = {1,1,1,1};
 		animationSpeedCoef = 1;
 		position[] =
 		{
@@ -8202,11 +7931,11 @@ class CfgCloudlets
 			"positionZ"
 		};
 		lifeTimeVar = 0;
-		positionVar[] = {0, 0, 0};
-		MoveVelocityVar[] = {0.25, 0.25, 0.25};
+		positionVar[] = {0,0,0};
+		MoveVelocityVar[] = {0.25,0.25,0.25};
 		rotationVelocityVar = 5;
 		sizeVar = 0;
-		colorVar[] = {0, 0, 0, 0};
+		colorVar[] = {0,0,0,0};
 		randomDirectionPeriodVar = 0;
 		randomDirectionIntensityVar = 0;
 	};
@@ -8214,7 +7943,7 @@ class CfgCloudlets
 	{
 		interval = 0.059500001;
 		circleRadius = 0;
-		circleVelocity[] = {0, 0, 0};
+		circleVelocity[] = {0,0,0};
 		particleShape = "\A3\weapons_f\ammo\cartridge.p3d";
 		particleFSNtieth = 1;
 		particleFSIndex = 0;
@@ -8238,7 +7967,7 @@ class CfgCloudlets
 		size[] = {1.1};
 		color[] =
 		{
-			{0.89999998, 0.89999998, 0.89999998, 1}
+			{0.89999998,0.89999998,0.89999998,1}
 		};
 		animationSpeed[] = {1000};
 		randomDirectionPeriod = 0.1;
@@ -8250,7 +7979,7 @@ class CfgCloudlets
 		bounceOnSurfaceVar = 0.2;
 		blockAIVisibility = 0;
 		sizeCoef = 1;
-		colorCoef[] = {1, 1, 1, 1};
+		colorCoef[] = {1,1,1,1};
 		animationSpeedCoef = 1;
 		position[] =
 		{
@@ -8259,11 +7988,11 @@ class CfgCloudlets
 			"positionZ"
 		};
 		lifeTimeVar = 0;
-		positionVar[] = {0, 0, 0};
-		MoveVelocityVar[] = {0.25, 0.25, 0.25};
+		positionVar[] = {0,0,0};
+		MoveVelocityVar[] = {0.25,0.25,0.25};
 		rotationVelocityVar = 5;
 		sizeVar = 0;
-		colorVar[] = {0, 0, 0, 0};
+		colorVar[] = {0,0,0,0};
 		randomDirectionPeriodVar = 0;
 		randomDirectionIntensityVar = 0;
 	};
@@ -8271,7 +8000,7 @@ class CfgCloudlets
 	{
 		interval = 0.059500001;
 		circleRadius = 0;
-		circleVelocity[] = {0, 0, 0};
+		circleVelocity[] = {0,0,0};
 		particleShape = "\A3\weapons_f\ammo\cartridge_65.p3d";
 		particleFSNtieth = 1;
 		particleFSIndex = 0;
@@ -8295,7 +8024,7 @@ class CfgCloudlets
 		size[] = {1.1};
 		color[] =
 		{
-			{0.89999998, 0.89999998, 0.89999998, 1}
+			{0.89999998,0.89999998,0.89999998,1}
 		};
 		animationSpeed[] = {1000};
 		randomDirectionPeriod = 0.1;
@@ -8307,7 +8036,7 @@ class CfgCloudlets
 		bounceOnSurfaceVar = 0.2;
 		blockAIVisibility = 0;
 		sizeCoef = 1;
-		colorCoef[] = {1, 1, 1, 1};
+		colorCoef[] = {1,1,1,1};
 		animationSpeedCoef = 1;
 		position[] =
 		{
@@ -8316,11 +8045,11 @@ class CfgCloudlets
 			"positionZ"
 		};
 		lifeTimeVar = 0;
-		positionVar[] = {0, 0, 0};
-		MoveVelocityVar[] = {0.25, 0.25, 0.25};
+		positionVar[] = {0,0,0};
+		MoveVelocityVar[] = {0.25,0.25,0.25};
 		rotationVelocityVar = 5;
 		sizeVar = 0;
-		colorVar[] = {0, 0, 0, 0};
+		colorVar[] = {0,0,0,0};
 		randomDirectionPeriodVar = 0;
 		randomDirectionIntensityVar = 0;
 	};
@@ -8328,7 +8057,7 @@ class CfgCloudlets
 	{
 		interval = 0.059500001;
 		circleRadius = 0;
-		circleVelocity[] = {0, 0, 0};
+		circleVelocity[] = {0,0,0};
 		particleShape = "\A3\weapons_f\ammo\cartridge_762.p3d";
 		particleFSNtieth = 1;
 		particleFSIndex = 0;
@@ -8352,7 +8081,7 @@ class CfgCloudlets
 		size[] = {1.1};
 		color[] =
 		{
-			{0.89999998, 0.89999998, 0.89999998, 1}
+			{0.89999998,0.89999998,0.89999998,1}
 		};
 		animationSpeed[] = {1000};
 		randomDirectionPeriod = 0.1;
@@ -8364,7 +8093,7 @@ class CfgCloudlets
 		bounceOnSurfaceVar = 0.2;
 		blockAIVisibility = 0;
 		sizeCoef = 1;
-		colorCoef[] = {1, 1, 1, 1};
+		colorCoef[] = {1,1,1,1};
 		animationSpeedCoef = 1;
 		position[] =
 		{
@@ -8373,11 +8102,11 @@ class CfgCloudlets
 			"positionZ"
 		};
 		lifeTimeVar = 0;
-		positionVar[] = {0, 0, 0};
-		MoveVelocityVar[] = {0.25, 0.25, 0.25};
+		positionVar[] = {0,0,0};
+		MoveVelocityVar[] = {0.25,0.25,0.25};
 		rotationVelocityVar = 5;
 		sizeVar = 0;
-		colorVar[] = {0, 0, 0, 0};
+		colorVar[] = {0,0,0,0};
 		randomDirectionPeriodVar = 0;
 		randomDirectionIntensityVar = 0;
 	};
@@ -8385,7 +8114,7 @@ class CfgCloudlets
 	{
 		interval = 0.0049999999;
 		circleRadius = 0;
-		circleVelocity[] = {0, 0, 0};
+		circleVelocity[] = {0,0,0};
 		particleShape = "\A3\data_f\ParticleEffects\Universal\Universal";
 		particleFSNtieth = 16;
 		particleFSIndex = 12;
@@ -8406,13 +8135,13 @@ class CfgCloudlets
 		weight = 0.052999999;
 		volume = 0.039999999;
 		rubbing = 0.1;
-		size[] = {0.25, 0.5};
+		size[] = {0.25,0.5};
 		color[] =
 		{
-			{0.1, 0.1, 0.1, 0.30000001},
-			{0.1, 0.1, 0.1, 0.15000001},
-			{0.1, 0.1, 0.1, 0.059999999},
-			{0.1, 0.1, 0.1, 0.0099999998}
+			{0.1,0.1,0.1,0.30000001},
+			{0.1,0.1,0.1,0.15000001},
+			{0.1,0.1,0.1,0.059999999},
+			{0.1,0.1,0.1,0.0099999998}
 		};
 		animationSpeed[] = {1.2};
 		randomDirectionPeriod = 0.1;
@@ -8422,7 +8151,7 @@ class CfgCloudlets
 		destroyOnWaterSurface = 1;
 		blockAIVisibility = 0;
 		sizeCoef = 0.2;
-		colorCoef[] = {1, 1, 1, 0.60000002};
+		colorCoef[] = {1,1,1,0.60000002};
 		animationSpeedCoef = 1;
 		position[] =
 		{
@@ -8431,11 +8160,11 @@ class CfgCloudlets
 			"positionZ"
 		};
 		lifeTimeVar = 0;
-		positionVar[] = {0, 0, 0};
-		MoveVelocityVar[] = {0.029999999, 0.029999999, 0.029999999};
+		positionVar[] = {0,0,0};
+		MoveVelocityVar[] = {0.029999999,0.029999999,0.029999999};
 		rotationVelocityVar = 20;
 		sizeVar = 0;
-		colorVar[] = {0, 0, 0, 0};
+		colorVar[] = {0,0,0,0};
 		randomDirectionPeriodVar = 0;
 		randomDirectionIntensityVar = 0;
 	};
@@ -8443,7 +8172,7 @@ class CfgCloudlets
 	{
 		interval = 0.0049999999;
 		circleRadius = 0;
-		circleVelocity[] = {0, 0, 0};
+		circleVelocity[] = {0,0,0};
 		particleShape = "\A3\data_f\ParticleEffects\Universal\Refract";
 		particleFSNtieth = 1;
 		particleFSIndex = 0;
@@ -8464,17 +8193,17 @@ class CfgCloudlets
 		weight = 0.050000001;
 		volume = 0.5;
 		rubbing = 0.1;
-		size[] = {0.30000001, 0.5};
+		size[] = {0.30000001,0.5};
 		color[] =
 		{
-			{0.059999999, 0.059999999, 0.059999999, 0.31999999},
-			{0.30000001, 0.30000001, 0.30000001, 0.28},
-			{0.30000001, 0.30000001, 0.30000001, 0.25},
-			{0.30000001, 0.30000001, 0.30000001, 0.22},
-			{0.30000001, 0.30000001, 0.30000001, 0.1}
+			{0.059999999,0.059999999,0.059999999,0.31999999},
+			{0.30000001,0.30000001,0.30000001,0.28},
+			{0.30000001,0.30000001,0.30000001,0.25},
+			{0.30000001,0.30000001,0.30000001,0.22},
+			{0.30000001,0.30000001,0.30000001,0.1}
 		};
-		colorCoef[] = {1, 1, 1, 1};
-		animationSpeed[] = {2, 1};
+		colorCoef[] = {1,1,1,1};
+		animationSpeed[] = {2,1};
 		randomDirectionPeriod = 0.1;
 		randomDirectionIntensity = 0.079999998;
 		onTimerScript = "";
@@ -8490,11 +8219,11 @@ class CfgCloudlets
 			"positionZ"
 		};
 		lifeTimeVar = 0;
-		positionVar[] = {0, 0, 0};
-		MoveVelocityVar[] = {0.029999999, 0.029999999, 0.029999999};
+		positionVar[] = {0,0,0};
+		MoveVelocityVar[] = {0.029999999,0.029999999,0.029999999};
 		rotationVelocityVar = 20;
 		sizeVar = 0;
-		colorVar[] = {0, 0, 0, 0};
+		colorVar[] = {0,0,0,0};
 		randomDirectionPeriodVar = 0;
 		randomDirectionIntensityVar = 0;
 	};
@@ -8505,7 +8234,7 @@ class RH_Rifle9mmCartridge
 	{
 		simulation = "particles";
 		type = "RH_Rifle9mmCartridge";
-		position[] = {0, 0, 0};
+		position[] = {0,0,0};
 		intensity = 1;
 		interval = 1;
 		lifeTime = 0.050000001;
@@ -8517,7 +8246,7 @@ class RH_Rifle556Cartridge
 	{
 		simulation = "particles";
 		type = "RH_Rifle556Cartridge";
-		position[] = {0, 0, 0};
+		position[] = {0,0,0};
 		intensity = 1;
 		interval = 1;
 		lifeTime = 0.050000001;
@@ -8529,7 +8258,7 @@ class RH_Rifle65Cartridge
 	{
 		simulation = "particles";
 		type = "RH_Rifle65Cartridge";
-		position[] = {0, 0, 0};
+		position[] = {0,0,0};
 		intensity = 1;
 		interval = 1;
 		lifeTime = 0.050000001;
@@ -8541,7 +8270,7 @@ class RH_Rifle762Cartridge
 	{
 		simulation = "particles";
 		type = "RH_Rifle762Cartridge";
-		position[] = {0, 0, 0};
+		position[] = {0,0,0};
 		intensity = 1;
 		interval = 1;
 		lifeTime = 0.050000001;
@@ -8553,7 +8282,7 @@ class RH_RifleAmmoCloud
 	{
 		simulation = "particles";
 		type = "RH_RifleAmmoCloud";
-		position[] = {0, 0, 0};
+		position[] = {0,0,0};
 		intensity = 1;
 		interval = 1;
 		lifeTime = 0.050000001;
@@ -8565,7 +8294,7 @@ class RH_RifleSmokeTrail
 	{
 		simulation = "particles";
 		type = "RH_RifleSmokeTrail";
-		position[] = {0, 0, 0};
+		position[] = {0,0,0};
 		intensity = 1;
 		interval = 1;
 		lifeTime = 0.050000001;
