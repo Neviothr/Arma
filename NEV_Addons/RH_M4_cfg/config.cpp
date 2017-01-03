@@ -1,4 +1,4 @@
-//NOTE: line 841
+//NOTE: line 1335
 
 class CfgPatches {
 	class RH_m4_cfg {
@@ -838,87 +838,18 @@ class CfgWeapons {
 				soundClosure[] = {"closure1",0.5,"closure2",0.5};
 			};
 			class StandardSound: BaseSoundModeType {
-				begin1[] =
-				{
-					"RH_m4\sound\m110_s1.wss",
-					1,
-					1,
-					1200
-				};
-				begin2[] =
-				{
-					"RH_m4\sound\m110_s2.wss",
-					1,
-					1,
-					1200
-				};
-				begin3[] =
-				{
-					"RH_m4\sound\m110_s3.wss",
-					1,
-					1,
-					1200
-				};
-				begin4[] =
-				{
-					"RH_m4\sound\m110_s4.wss",
-					1,
-					1,
-					1200
-				};
-				soundBegin[] =
-				{
-					"begin1",
-					0.25,
-					"begin2",
-					0.25,
-					"begin3",
-					0.25,
-					"begin4",
-					0.25
-				};
+				begin1[] = {"RH_m4\sound\m110_s1.wss",1,1,1200};
+				begin2[] = {"RH_m4\sound\m110_s2.wss",1,1,1200};
+				begin3[] = {"RH_m4\sound\m110_s3.wss",1,1,1200};
+				begin4[] = {"RH_m4\sound\m110_s4.wss",1,1,1200};
+				soundBegin[] = {"begin1",0.25,"begin2",0.25,"begin3",0.25,"begin4",0.25};
 			};
-			class SilencedSound: BaseSoundModeType
-			{
-				begin1[] =
-				{
-					"RH_m4\sound\m110_sd_s1.wss",
-					1,
-					1,
-					200
-				};
-				begin2[] =
-				{
-					"RH_m4\sound\m110_sd_s2.wss",
-					1,
-					1,
-					200
-				};
-				begin3[] =
-				{
-					"RH_m4\sound\m110_sd_s3.wss",
-					1,
-					1,
-					200
-				};
-				begin4[] =
-				{
-					"RH_m4\sound\m110_sd_s4.wss",
-					1,
-					1,
-					200
-				};
-				soundBegin[] =
-				{
-					"begin1",
-					0.25,
-					"begin2",
-					0.25,
-					"begin3",
-					0.25,
-					"begin4",
-					0.25
-				};
+			class SilencedSound: BaseSoundModeType {
+				begin1[] = {"RH_m4\sound\m110_sd_s1.wss",1,1,200};
+				begin2[] = {"RH_m4\sound\m110_sd_s2.wss",1,1,200};
+				begin3[] = {"RH_m4\sound\m110_sd_s3.wss",1,1,200};
+				begin4[] = {"RH_m4\sound\m110_sd_s4.wss",1,1,200};
+				soundBegin[] = {"begin1",0.25,"begin2",0.25,"begin3",0.25,"begin4",0.25};
 			};
 			reloadTime = 0.085000001;
 			recoil = "RH_AR10_Recoil";
@@ -931,8 +862,7 @@ class CfgWeapons {
 			maxRange = 500;
 			maxRangeProbab = 0.050000001;
 		};
-		class single_close_optics1: Single
-		{
+		class single_close_optics1: Single {
 			requiredOpticType = 1;
 			showToPlayer = 0;
 			minRange = 2;
@@ -944,8 +874,7 @@ class CfgWeapons {
 			aiRateOfFire = 2;
 			aiRateOfFireDistance = 300;
 		};
-		class single_medium_optics1: single_close_optics1
-		{
+		class single_medium_optics1: single_close_optics1 {
 			minRange = 300;
 			minRangeProbab = 0.050000001;
 			midRange = 500;
@@ -955,8 +884,7 @@ class CfgWeapons {
 			aiRateOfFire = 2;
 			aiRateOfFireDistance = 500;
 		};
-		class single_far_optics1: single_medium_optics1
-		{
+		class single_far_optics1: single_medium_optics1 {
 			requiredOpticType = 2;
 			minRange = 300;
 			minRangeProbab = 0.050000001;
@@ -969,78 +897,39 @@ class CfgWeapons {
 		};
 		aiDispersionCoefY = 3;
 		aiDispersionCoefX = 2;
-		reloadMagazineSound[] =
-		{
-			"\RH_m4\sound\m4_reload",
-			1,
-			1,
-			15
-		};
+		reloadMagazineSound[] = {"\RH_m4\sound\m4_reload",1,1,15};
 	};
-	class RH_Mk11: RH_m110
-	{
+	class RH_Mk11: RH_m110 {
 		author = "RobertHammer";
 		model = "\RH_M4\RH_mk11.p3d";
 		displayName = "Mk11";
 		picture = "\RH_m4\inv\mk11_x_ca.paa";
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
+		class WeaponSlotsInfo: WeaponSlotsInfo {
 			mass = 125;
-			class MuzzleSlot: MuzzleSlot
-			{
+			class MuzzleSlot: MuzzleSlot {
 				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-				compatibleItems[] =
-				{
-					"RH_m110sd",
-					"RH_m110sd_t"
-				};
+				compatibleItems[] = {"RH_m110sd","RH_m110sd_t"};
 			};
-			class asdg_MuzzleSlot_762_M110
-			{
-			};
+			class asdg_MuzzleSlot_762_M110 {};
 		};
 	};
-	class RH_SR25EC: RH_m110
-	{
+	class RH_SR25EC: RH_m110 {
 		author = "RobertHammer";
 		model = "\RH_M4\RH_sr25ec.p3d";
 		displayName = "SR25EC";
 		picture = "\RH_m4\inv\sr25ec_x_ca.paa";
 		inertia = 0.5;
-		magazines[] =
-		{
-			"RH_20Rnd_762x51_M80A1",
-			"RH_20Rnd_762x51_Mk319",
-			"RH_20Rnd_762x51_LFMJSB"
-		};
+		magazines[] = {"RH_20Rnd_762x51_M80A1","RH_20Rnd_762x51_Mk319","RH_20Rnd_762x51_LFMJSB"};
 		initSpeed = -0.98000002;
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
+		class WeaponSlotsInfo: WeaponSlotsInfo {
 			mass = 100;
 		};
 	};
-	class RH_m4: Rifle_Base_F
-	{
+	class RH_m4: Rifle_Base_F {
 		scope = 2;
 		author = "RobertHammer";
-		magazines[] =
-		{
-			"RH_30Rnd_556x45_M855A1",
-			"RH_30Rnd_556x45_Mk262",
-			"RH_30Rnd_556x45_Mk318",
-			"RH_20Rnd_556x45_M855A1",
-			"RH_20Rnd_556x45_Mk262",
-			"RH_20Rnd_556x45_Mk318",
-			"RH_60Rnd_556x45_M855A1",
-			"RH_60Rnd_556x45_Mk262",
-			"RH_60Rnd_556x45_Mk318",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Green",
-			"30Rnd_556x45_Stanag_Tracer_Yellow"
-		};
-		class Library
-		{
+		magazines[] = {"RH_30Rnd_556x45_M855A1","RH_30Rnd_556x45_Mk262","RH_30Rnd_556x45_Mk318","RH_20Rnd_556x45_M855A1","RH_20Rnd_556x45_Mk262","RH_20Rnd_556x45_Mk318","RH_60Rnd_556x45_M855A1","RH_60Rnd_556x45_Mk262","RH_60Rnd_556x45_Mk318","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Green","30Rnd_556x45_Stanag_Tracer_Yellow"};
+		class Library {
 			libTextDesc = "Colt M4";
 		};
 		reloadAction = "GestureReloadSMG_02";
@@ -1048,40 +937,31 @@ class CfgWeapons {
 		swaydecayspeed = 0;
 		recoil = "RH_recoil_M4";
 		initSpeed = -0.93000001;
-		class GunParticles: GunParticles
-		{
-			class EjectEffect
-			{
+		class GunParticles: GunParticles {
+			class EjectEffect {
 				positionName = "Nabojnicestart";
 				directionName = "Nabojniceend";
 				effectName = "RH_Rifle556Cartridge";
 			};
-			class RifleAmmoCloud
-			{
+			class RifleAmmoCloud {
 				positionName = "Nabojnicestart";
 				directionName = "Nabojniceend";
 				effectName = "RH_RifleAmmoCloud";
 			};
-			class SmokeEffect
-			{
+			class SmokeEffect {
 				positionName = "usti hlavne";
 				directionName = "usti hlavne";
 				effectName = "RH_RifleSmokeTrail";
 			};
 		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
+		class WeaponSlotsInfo: WeaponSlotsInfo {
 			mass = 85;
-			class PointerSlot
-			{
-			};
-			class MuzzleSlot: asdg_MuzzleSlot_556
-			{
+			class PointerSlot {};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
 				iconPosition[] = {0,0.37};
 				iconScale = 0.2;
 			};
-			class CowsSlot: asdg_OpticRail1913_short
-			{
+			class CowsSlot: asdg_OpticRail1913_short {
 				iconPosition[] = {0.5,0.2};
 				iconScale = 0.2;
 				iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
@@ -1102,124 +982,28 @@ class CfgWeapons {
 		weaponInfoType = "RscWeaponZeroing";
 		inertia = 0.40000001;
 		maxZeroing = 1000;
-		handAnim[] =
-		{
-			"OFP2_ManSkeleton",
-			"\RH_m4\anim\RH_m16.rtm"
-		};
-		modes[] =
-		{
-			"Single",
-			"Burst",
-			"single_medium_optics1",
-			"single_far_optics2"
-		};
-		class Single: Mode_SemiAuto
-		{
-			sounds[] =
-			{
-				"StandardSound",
-				"SilencedSound"
-			};
-			class BaseSoundModeType
-			{
+		handAnim[] = {"OFP2_ManSkeleton","\RH_m4\anim\RH_m16.rtm"};
+		modes[] = {"Single","Burst","single_medium_optics1","single_far_optics2"};
+		class Single: Mode_SemiAuto {
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType {
 				weaponSoundEffect = "DefaultRifle";
-				closure1[] =
-				{
-					"A3\sounds_f\weapons\closure\closure_rifle_2",
-					0.56,
-					1,
-					10
-				};
-				closure2[] =
-				{
-					"A3\sounds_f\weapons\closure\closure_rifle_3",
-					0.56,
-					1,
-					10
-				};
-				soundClosure[] =
-				{
-					"closure1",
-					0.5,
-					"closure2",
-					0.5
-				};
+				closure1[] = {"A3\sounds_f\weapons\closure\closure_rifle_2",0.56,1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\closure_rifle_3",0.56,1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5};
 			};
-			class StandardSound: BaseSoundModeType
-			{
-				begin1[] =
-				{
-					"RH_m4\sound\m4_s1.wss",
-					1,
-					1,
-					1200
-				};
-				begin2[] =
-				{
-					"RH_m4\sound\m4_s2.wss",
-					1,
-					1,
-					1200
-				};
-				begin3[] =
-				{
-					"RH_m4\sound\m4_s3.wss",
-					1,
-					1,
-					1200
-				};
-				begin4[] =
-				{
-					"RH_m4\sound\m4_s4.wss",
-					1,
-					1,
-					1200
-				};
-				soundBegin[] =
-				{
-					"begin1",
-					0.25,
-					"begin2",
-					0.25,
-					"begin3",
-					0.25,
-					"begin4",
-					0.25
-				};
+			class StandardSound: BaseSoundModeType {
+				begin1[] = {"RH_m4\sound\m4_s1.wss",1,1,1200};
+				begin2[] = {"RH_m4\sound\m4_s2.wss",1,1,1200};
+				begin3[] = {"RH_m4\sound\m4_s3.wss",1,1,1200};
+				begin4[] = {"RH_m4\sound\m4_s4.wss",1,1,1200};
+				soundBegin[] = {"begin1",0.25,"begin2",0.25,"begin3",0.25,"begin4",0.25};
 			};
-			class SilencedSound: BaseSoundModeType
-			{
-				begin1[] =
-				{
-					"RH_m4\sound\m4sd_s1",
-					1,
-					1,
-					240
-				};
-				begin2[] =
-				{
-					"RH_m4\sound\m4sd_s2",
-					1,
-					1,
-					240
-				};
-				begin3[] =
-				{
-					"RH_m4\sound\m4sd_s3",
-					1,
-					1,
-					240
-				};
-				soundBegin[] =
-				{
-					"begin1",
-					0.333,
-					"begin2",
-					0.333,
-					"begin3",
-					0.333
-				};
+			class SilencedSound: BaseSoundModeType {
+				begin1[] = {"RH_m4\sound\m4sd_s1",1,1,240};
+				begin2[] = {"RH_m4\sound\m4sd_s2",1,1,240};
+				begin3[] = {"RH_m4\sound\m4sd_s3",1,1,240};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
 			};
 			reloadTime = 0.075000003;
 			recoil = "RH_M4_Recoil";
@@ -1232,112 +1016,26 @@ class CfgWeapons {
 			maxRange = 500;
 			maxRangeProbab = 0.2;
 		};
-		class Burst: Mode_Burst
-		{
-			sounds[] =
-			{
-				"StandardSound",
-				"SilencedSound"
-			};
-			class BaseSoundModeType
-			{
+		class Burst: Mode_Burst {
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType {
 				weaponSoundEffect = "DefaultRifle";
-				closure1[] =
-				{
-					"A3\sounds_f\weapons\closure\closure_rifle_2",
-					0.56,
-					1,
-					10
-				};
-				closure2[] =
-				{
-					"A3\sounds_f\weapons\closure\closure_rifle_3",
-					0.56,
-					1,
-					10
-				};
-				soundClosure[] =
-				{
-					"closure1",
-					0.5,
-					"closure2",
-					0.5
-				};
+				closure1[] = {"A3\sounds_f\weapons\closure\closure_rifle_2",0.56,1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\closure_rifle_3",0.56,1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5};
 			};
-			class StandardSound: BaseSoundModeType
-			{
-				begin1[] =
-				{
-					"RH_m4\sound\m4_s1.wss",
-					1,
-					1,
-					1200
-				};
-				begin2[] =
-				{
-					"RH_m4\sound\m4_s2.wss",
-					1,
-					1,
-					1200
-				};
-				begin3[] =
-				{
-					"RH_m4\sound\m4_s3.wss",
-					1,
-					1,
-					1200
-				};
-				begin4[] =
-				{
-					"RH_m4\sound\m4_s4.wss",
-					1,
-					1,
-					1200
-				};
-				soundBegin[] =
-				{
-					"begin1",
-					0.25,
-					"begin2",
-					0.25,
-					"begin3",
-					0.25,
-					"begin4",
-					0.25
-				};
+			class StandardSound: BaseSoundModeType {
+				begin1[] = {"RH_m4\sound\m4_s1.wss",1,1,1200};
+				begin2[] = {"RH_m4\sound\m4_s2.wss",1,1,1200};
+				begin3[] = {"RH_m4\sound\m4_s3.wss",1,1,1200};
+				begin4[] = {"RH_m4\sound\m4_s4.wss",1,1,1200};
+				soundBegin[] = {"begin1",0.25,"begin2",0.25,"begin3",0.25,"begin4",0.25};
 			};
-			class SilencedSound: BaseSoundModeType
-			{
-				begin1[] =
-				{
-					"RH_m4\sound\m4sd_s1",
-					1,
-					1,
-					240
-				};
-				begin2[] =
-				{
-					"RH_m4\sound\m4sd_s2",
-					1,
-					1,
-					240
-				};
-				begin3[] =
-				{
-					"RH_m4\sound\m4sd_s3",
-					1,
-					1,
-					240
-				};
-				soundBegin[] =
-				{
-					"begin1",
-					0.333,
-					"begin2",
-					0.333,
-					"begin3",
-					0.333
-				};
+			class SilencedSound: BaseSoundModeType {
+				begin1[] = {"RH_m4\sound\m4sd_s1",1,1,24};
+				begin2[] = {"RH_m4\sound\m4sd_s2",1,1,240};
+				begin3[] = {"RH_m4\sound\m4sd_s3",1,1,240};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
 			};
 			reloadtime = 0.075000003;
 			recoil = "RH_M4_Recoil_Auto";
@@ -1352,112 +1050,26 @@ class CfgWeapons {
 			maxRange = 120;
 			maxRangeProbab = 0.050000001;
 		};
-		class FullAuto: Mode_FullAuto
-		{
-			sounds[] =
-			{
-				"StandardSound",
-				"SilencedSound"
-			};
-			class BaseSoundModeType
-			{
+		class FullAuto: Mode_FullAuto {
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType {
 				weaponSoundEffect = "DefaultRifle";
-				closure1[] =
-				{
-					"A3\sounds_f\weapons\closure\closure_rifle_2",
-					0.56,
-					1,
-					10
-				};
-				closure2[] =
-				{
-					"A3\sounds_f\weapons\closure\closure_rifle_3",
-					0.56,
-					1,
-					10
-				};
-				soundClosure[] =
-				{
-					"closure1",
-					0.5,
-					"closure2",
-					0.5
-				};
+				closure1[] = {"A3\sounds_f\weapons\closure\closure_rifle_2",0.56,1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\closure_rifle_3",0.56,1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5};
 			};
-			class StandardSound: BaseSoundModeType
-			{
-				begin1[] =
-				{
-					"RH_m4\sound\m4_s1.wss",
-					1,
-					1,
-					1200
-				};
-				begin2[] =
-				{
-					"RH_m4\sound\m4_s2.wss",
-					1,
-					1,
-					1200
-				};
-				begin3[] =
-				{
-					"RH_m4\sound\m4_s3.wss",
-					1,
-					1,
-					1200
-				};
-				begin4[] =
-				{
-					"RH_m4\sound\m4_s4.wss",
-					1,
-					1,
-					1200
-				};
-				soundBegin[] =
-				{
-					"begin1",
-					0.25,
-					"begin2",
-					0.25,
-					"begin3",
-					0.25,
-					"begin4",
-					0.25
-				};
+			class StandardSound: BaseSoundModeType {
+				begin1[] = {"RH_m4\sound\m4_s1.wss",1,1,1200};
+				begin2[] = {"RH_m4\sound\m4_s2.wss",1,1,1200}
+				begin3[] = {"RH_m4\sound\m4_s3.wss",1,1,1200};
+				begin4[] = {"RH_m4\sound\m4_s4.wss",1,1,1200};
+				soundBegin[] = {"begin1",0.25,"begin2",0.25,"begin3",0.25,"begin4",0.25};
 			};
-			class SilencedSound: BaseSoundModeType
-			{
-				begin1[] =
-				{
-					"RH_m4\sound\m4sd_s1",
-					1,
-					1,
-					240
-				};
-				begin2[] =
-				{
-					"RH_m4\sound\m4sd_s2",
-					1,
-					1,
-					240
-				};
-				begin3[] =
-				{
-					"RH_m4\sound\m4sd_s3",
-					1,
-					1,
-					240
-				};
-				soundBegin[] =
-				{
-					"begin1",
-					0.333,
-					"begin2",
-					0.333,
-					"begin3",
-					0.333
-				};
+			class SilencedSound: BaseSoundModeType {
+				begin1[] = {"RH_m4\sound\m4sd_s1",1,1,240};
+				begin2[] = {"RH_m4\sound\m4sd_s2",1,1,240};
+				begin3[] = {"RH_m4\sound\m4sd_s3",1,1,240};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
 			};
 			reloadTime = 0.075000003;
 			recoil = "RH_M4_Recoil_Auto";
@@ -1471,8 +1083,7 @@ class CfgWeapons {
 			maxRangeProbab = 0.1;
 			aiRateOfFire = 1e-006;
 		};
-		class single_medium_optics1: Single
-		{
+		class single_medium_optics1: Single {
 			requiredOpticType = 1;
 			showToPlayer = 0;
 			minRange = 2;
@@ -1484,12 +1095,10 @@ class CfgWeapons {
 			aiRateOfFire = 6;
 			aiRateOfFireDistance = 600;
 		};
-		class single_far_optics2: single_medium_optics1
-		{
+		class single_far_optics2: single_medium_optics1 {
 			requiredOpticType = 2;
 		};
-		class fullauto_medium: FullAuto
-		{
+		class fullauto_medium: FullAuto {
 			showToPlayer = 0;
 			burst = 3;
 			minRange = 2;
@@ -1500,175 +1109,77 @@ class CfgWeapons {
 			maxRangeProbab = 0.050000001;
 			aiRateOfFire = 2;
 		};
-		class M203: UGL_F
-		{
+		class M203: UGL_F {
 			displayName = "M203";
 			descriptionShort = "$STR_A3_cfgweapons_3gl1";
 			useModelOptics = 0;
 			useExternalOptic = 0;
 			recoil = "RH_M203GLBase";
-			magazines[] =
-			{
-				"1Rnd_HE_Grenade_shell",
-				"UGL_FlareWhite_F",
-				"UGL_FlareGreen_F",
-				"UGL_FlareRed_F",
-				"UGL_FlareYellow_F",
-				"UGL_FlareCIR_F",
-				"1Rnd_Smoke_Grenade_shell",
-				"1Rnd_SmokeRed_Grenade_shell",
-				"1Rnd_SmokeGreen_Grenade_shell",
-				"1Rnd_SmokeYellow_Grenade_shell",
-				"1Rnd_SmokePurple_Grenade_shell",
-				"1Rnd_SmokeBlue_Grenade_shell",
-				"1Rnd_SmokeOrange_Grenade_shell"
+			magazines[] = {"1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell"};
+			sounds[] = {"StandardSound"};
+			class BaseSoundModeType {
+				closure1[] = {"A3\Sounds_F\arsenal\weapons\UGL\Closure_UGL",1,1,10};
+				soundClosure[] = {"closure1",1};
 			};
-			sounds[] =
-			{
-				"StandardSound"
-			};
-			class BaseSoundModeType
-			{
-				closure1[] =
-				{
-					"A3\Sounds_F\arsenal\weapons\UGL\Closure_UGL",
-					1,
-					1,
-					10
-				};
-				soundClosure[] =
-				{
-					"closure1",
-					1
-				};
-			};
-			class StandardSound
-			{
+			class StandardSound {
 				weaponSoundEffect = "DefaultRifle";
-				begin1[] =
-				{
-					"RH_m4\sound\m203",
-					1,
-					1,
-					200
-				};
-				soundBegin[] =
-				{
-					"begin1",
-					1
-				};
+				begin1[] = {"RH_m4\sound\m203",1,1,200};
+				soundBegin[] = {"begin1",1};
 			};
-			reloadMagazineSound[] =
-			{
-				"RH_m4\sound\m203_reload",
-				1,
-				1,
-				10
-			};
+			reloadMagazineSound[] = {"RH_m4\sound\m203_reload",1,1,10};
 			cameraDir = "OP_look";
 			discreteDistance[] = {50,100,150,200,250};
-			discreteDistanceCameraPoint[] =
-			{
-				"OP_eye",
-				"OP_eye2",
-				"OP_eye3",
-				"OP_eye4",
-				"OP_eye5"
-			};
+			discreteDistanceCameraPoint[] = {"OP_eye","OP_eye2","OP_eye3","OP_eye4","OP_eye5"};
 			discreteDistanceInitIndex = 1;
 		};
 		aiDispersionCoefY = 10;
 		aiDispersionCoefX = 8;
-		changeFiremodeSound[] =
-		{
-			"\RH_m4\sound\m4_selector",
-			0.5,
-			1,
-			10
-		};
-		drySound[] =
-		{
-			"\RH_m4\sound\dry",
-			0.80000001,
-			1,
-			15
-		};
-		reloadMagazineSound[] =
-		{
-			"RH_m4\sound\m4_reload",
-			1,
-			1,
-			15
-		};
+		changeFiremodeSound[] = {"\RH_m4\sound\m4_selector",0.5,1,10};
+		drySound[] = {"\RH_m4\sound\dry",0.80000001,1,15};
+		reloadMagazineSound[] = {"RH_m4\sound\m4_reload",1,1,15};
 	};
-	class RH_M4_M203: RH_m4
-	{
+	class RH_M4_M203: RH_m4 {
 		author = "RobertHammer";
-		handAnim[] =
-		{
-			"OFP2_ManSkeleton",
-			"\RH_m4\anim\RH_M4gl.rtm"
-		};
+		handAnim[] = {"OFP2_ManSkeleton","\RH_m4\anim\RH_M4gl.rtm"};
 		model = "\RH_M4\RH_m4_m203.p3d";
 		displayName = "M4 M203";
 		picture = "\RH_m4\inv\m4_m203_x_ca.paa";
 		inertia = 0.5;
-		muzzles[] =
-		{
-			"this",
-			"M203"
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
+		muzzles[] = {"this","M203"};
+		class WeaponSlotsInfo: WeaponSlotsInfo {
 			mass = 125;
 		};
 	};
-	class RH_M4_ris: RH_m4
-	{
+	class RH_M4_ris: RH_m4 {
 		author = "RobertHammer";
-		handAnim[] =
-		{
-			"OFP2_ManSkeleton",
-			"\RH_m4\anim\RH_M4vg.rtm"
-		};
+		handAnim[] = {"OFP2_ManSkeleton","\RH_m4\anim\RH_M4vg.rtm"};
 		model = "\RH_M4\RH_m4_ris.p3d";
 		displayName = "M4 RIS";
 		picture = "\RH_m4\inv\m4_ris_x_ca.paa";
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class PointerSlot: SlotInfo
-			{
+		class WeaponSlotsInfo: WeaponSlotsInfo {
+			class PointerSlot: SlotInfo {
 				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
 				displayName = "$STR_A3_PointerSlot0";
-				compatibleItems[] =
-				{
-					"RH_m4covers_s",
-					"RH_m4covers_f"
-				};
+				compatibleItems[] = {"RH_m4covers_s","RH_m4covers_f"};
 				iconPosition[] = {0.30000001,0.34999999};
 				iconScale = 0.25;
 				iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
 				iconPinpoint = "center";
 			};
-			class MuzzleSlot: MuzzleSlot
-			{
-			};
-			class asdg_FrontSideRail_M4: asdg_FrontSideRail
-			{
+			class MuzzleSlot: MuzzleSlot {};
+			class asdg_FrontSideRail_M4: asdg_FrontSideRail {
 				iconPosition[] = {0.30000001,0.34999999};
 				iconScale = 0.25;
 				iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
 				iconPinpoint = "center";
 			};
-			class CowsSlot: asdg_OpticRail1913
-			{
+			class CowsSlot: asdg_OpticRail1913 {
 				iconPosition[] = {0.5,0.2};
 				iconScale = 0.2;
 				iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
 				iconPinpoint = "center";
 			};
-			class UnderBarrelSlot: asdg_UnderSlot
-			{
+			class UnderBarrelSlot: asdg_UnderSlot {
 				linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
 				iconPicture = "\A3\Weapons_F_Mark\Data\UI\attachment_under.paa";
 				iconPinpoint = "Bottom";
@@ -1677,82 +1188,49 @@ class CfgWeapons {
 			};
 		};
 	};
-	class RH_M4_ris_M203: RH_M4_ris
-	{
+	class RH_M4_ris_M203: RH_M4_ris {
 		author = "RobertHammer";
-		handAnim[] =
-		{
-			"OFP2_ManSkeleton",
-			"\RH_m4\anim\RH_M4gl.rtm"
-		};
+		handAnim[] = {"OFP2_ManSkeleton","\RH_m4\anim\RH_M4gl.rtm"};
 		model = "\RH_M4\RH_m4_ris_m203.p3d";
 		displayName = "M4 RIS M203";
 		picture = "\RH_m4\inv\m4_ris_m203_x_ca.paa";
 		inertia = 0.5;
-		muzzles[] =
-		{
-			"this",
-			"M203"
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
+		muzzles[] = {"this","M203"};
+		class WeaponSlotsInfo: WeaponSlotsInfo {
 			mass = 125;
-			class PointerSlot: SlotInfo
-			{
+			class PointerSlot: SlotInfo {
 				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
 				displayName = "$STR_A3_PointerSlot0";
-				compatibleItems[] =
-				{
-					"RH_m4covers_s"
-				};
+				compatibleItems[] = {"RH_m4covers_s"};
 			};
-			class UnderBarrelSlot
-			{
-			};
+			class UnderBarrelSlot {};
 		};
 	};
-	class RH_M4_ris_M203s: RH_M4_ris_M203
-	{
+	class RH_M4_ris_M203s: RH_M4_ris_M203 {
 		author = "RobertHammer";
 		displayName = "M4 RIS M203S";
 		picture = "\RH_m4\inv\m4_ris_m203s_x_ca.paa";
 		model = "\RH_M4\RH_m4_ris_m203s.p3d";
 	};
-	class RH_M4A1_ris: RH_M4_ris
-	{
+	class RH_M4A1_ris: RH_M4_ris {
 		author = "RobertHammer";
 		displayName = "M4A1 RIS";
 		picture = "\RH_m4\inv\m4_ris_x_ca.paa";
-		modes[] =
-		{
-			"Single",
-			"FullAuto",
-			"single_medium_optics1",
-			"single_far_optics2"
-		};
+		modes[] = {"Single","FullAuto","single_medium_optics1","single_far_optics2"};
 	};
-	class RH_M4A1_ris_M203: RH_M4_ris_M203
-	{
+	class RH_M4A1_ris_M203: RH_M4_ris_M203 {
 		author = "RobertHammer";
 		displayName = "M4A1 RIS M203";
 		picture = "\RH_m4\inv\m4_ris_m203_x_ca.paa";
-		modes[] =
-		{
-			"Single",
-			"FullAuto",
-			"single_medium_optics1",
-			"single_far_optics2"
-		};
+		modes[] = {"Single","FullAuto","single_medium_optics1","single_far_optics2"};
 	};
-	class RH_M4A1_ris_M203s: RH_M4A1_ris_M203
-	{
+	class RH_M4A1_ris_M203s: RH_M4A1_ris_M203 {
 		author = "RobertHammer";
 		displayName = "M4A1 RIS M203S";
 		picture = "\RH_m4\inv\m4_ris_m203s_x_ca.paa";
 		model = "\RH_M4\RH_m4_ris_m203s.p3d";
 	};
-	class RH_M4_ris_m: RH_M4A1_ris
-	{
+	class RH_M4_ris_m: RH_M4A1_ris {
 		author = "RobertHammer";
 		model = "\RH_M4\RH_m4_ris_m.p3d";
 		displayName = "M4A1 RIS Matech";
@@ -1761,168 +1239,96 @@ class CfgWeapons {
 		discreteDistanceInitIndex = 1;
 		weaponInfoType = "RscWeaponZeroing";
 	};
-	class RH_M4m: RH_M4A1_ris
-	{
+	class RH_M4m: RH_M4A1_ris {
 		author = "RobertHammer";
 		displayName = "M4A1 Magpul";
 		picture = "\RH_m4\inv\m4m_x_ca.paa";
 		model = "\RH_M4\RH_m4m.p3d";
-		handAnim[] =
-		{
-			"OFP2_ManSkeleton",
-			"\RH_m4\anim\RH_m4m.rtm"
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class UnderBarrelSlot
-			{
-			};
+		handAnim[] = {"OFP2_ManSkeleton","\RH_m4\anim\RH_m4m.rtm"};
+		class WeaponSlotsInfo: WeaponSlotsInfo {
+			class UnderBarrelSlot {};
 		};
 	};
-	class RH_M4m_g: RH_M4m
-	{
+	class RH_M4m_g: RH_M4m {
 		author = "RobertHammer";
 		displayName = "M4A1 Magpul Green";
 		picture = "\RH_m4\inv\m4m_g_x_ca.paa";
-		hiddenSelections[] =
-		{
-			"camo",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"\RH_m4\data\ru_g_co.paa",
-			"\RH_m4\data\extras_g_co.paa"
-		};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"\RH_m4\data\ru_g_co.paa","\RH_m4\data\extras_g_co.paa"};
 	};
-	class RH_M4m_b: RH_M4m
-	{
+	class RH_M4m_b: RH_M4m {
 		author = "RobertHammer";
 		displayName = "M4A1 Magpul Black";
 		picture = "\RH_m4\inv\m4m_b_x_ca.paa";
-		hiddenSelections[] =
-		{
-			"camo",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"\RH_m4\data\ru_b_co.paa",
-			"\RH_m4\data\extras_b_co.paa"
-		};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"\RH_m4\data\ru_b_co.paa","\RH_m4\data\extras_b_co.paa"};
 	};
-	class RH_M4_moe: RH_M4A1_ris
-	{
+	class RH_M4_moe: RH_M4A1_ris {
 		author = "RobertHammer";
 		displayName = "M4A1 MOE Tan";
 		picture = "\RH_m4\inv\m4_moe_x_ca.paa";
 		model = "\RH_M4\RH_m4_moe.p3d";
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class UnderBarrelSlot
-			{
-			};
+		class WeaponSlotsInfo: WeaponSlotsInfo {
+			class UnderBarrelSlot {};
 		};
 	};
-	class RH_M4_moe_b: RH_M4_moe
-	{
+	class RH_M4_moe_b: RH_M4_moe {
 		author = "RobertHammer";
 		displayName = "M4A1 MOE Black";
 		picture = "\RH_m4\inv\m4_moe_b_x_ca.paa";
-		hiddenSelections[] =
-		{
-			"camo2"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"\RH_m4\data\mp_parts_b_co.paa"
-		};
+		hiddenSelections[] = {"camo2"};
+		hiddenSelectionsTextures[] = {"\RH_m4\data\mp_parts_b_co.paa"};
 	};
-	class RH_M4_moe_g: RH_M4_moe
-	{
+	class RH_M4_moe_g: RH_M4_moe {
 		author = "RobertHammer";
 		displayName = "M4A1 MOE Green";
 		picture = "\RH_m4\inv\m4_moe_g_x_ca.paa";
-		hiddenSelections[] =
-		{
-			"camo2"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"\RH_m4\data\mp_parts_g_co.paa"
-		};
+		hiddenSelections[] = {"camo2"};
+		hiddenSelectionsTextures[] = {"\RH_m4\data\mp_parts_g_co.paa"};
 	};
-	class RH_M4sbr: RH_M4A1_ris
-	{
+	class RH_M4sbr: RH_M4A1_ris {
 		author = "RobertHammer";
-		handAnim[] =
-		{
-			"OFP2_ManSkeleton",
-			"\RH_m4\anim\RH_M4sbr.rtm"
-		};
+		handAnim[] = {"OFP2_ManSkeleton","\RH_m4\anim\RH_M4sbr.rtm"};
 		model = "\RH_M4\RH_m4sbr.p3d";
 		displayName = "Vltor SBR Tan";
-		modes[] =
-		{
-			"Single",
-			"FullAuto",
-			"single_medium_optics1",
-			"single_far_optics2"
-		};
+		modes[] = {"Single","FullAuto","single_medium_optics1","single_far_optics2"};
 		picture = "\RH_m4\inv\m4sbr_x_ca.paa";
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
+		class WeaponSlotsInfo: WeaponSlotsInfo {
 			mass = 80;
-			class MuzzleSlot: MuzzleSlot
-			{
+			class MuzzleSlot: MuzzleSlot {
 				iconPosition[] = {-0.029999999,0.34999999};
 			};
-			class PointerSlot: PointerSlot
-			{
+			class PointerSlot: PointerSlot {
 				iconPosition[] = {0.15000001,0.34999999};
 			};
-			class asdg_FrontSideRail_M4: asdg_FrontSideRail_M4
-			{
+			class asdg_FrontSideRail_M4: asdg_FrontSideRail_M4 {
 				iconPosition[] = {0.15000001,0.34999999};
 			};
-			class CowsSlot: CowsSlot
-			{
+			class CowsSlot: CowsSlot {
 				iconPosition[] = {0.40000001,0.15000001};
 			};
-			class UnderBarrelSlot
-			{
-			};
+			class UnderBarrelSlot {};
 		};
 		initSpeed = -0.86000001;
 		inertia = 0.30000001;
 		descriptionShort = "CQB rifle<br/>Caliber: 5.56x45mm NATO";
-		class Single: Single
-		{
+		class Single: Single {
 			dispersion = 0.00275;
 			midRange = 100;
 			maxRange = 300;
 		};
-		class FullAuto: FullAuto
-		{
+		class FullAuto: FullAuto {
 			dispersion = 0.00275;
 		};
 	};
-	class RH_M4sbr_g: RH_M4sbr
-	{
+	class RH_M4sbr_g: RH_M4sbr {
 		author = "RobertHammer";
 		displayName = "Vltor SBR Green";
 		picture = "\RH_m4\inv\m4sbr_g_x_ca.paa";
-		hiddenSelections[] =
-		{
-			"camo"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"\RH_m4\data\sbr_g_co.paa"
-		};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\RH_m4\data\sbr_g_co.paa"};
 	};
-	class RH_M4sbr_b: RH_M4sbr
-	{
+	class RH_M4sbr_b: RH_M4sbr {
 		author = "RobertHammer";
 		displayName = "Vltor SBR Black";
 		picture = "\RH_m4\inv\m4sbr_b_x_ca.paa";
