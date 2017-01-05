@@ -1,0 +1,264 @@
+class CfgPatches
+{
+	class ace_sys_sight_adjustment_at
+	{
+		units[]={};
+		weapons[]={};
+		requiredVersion=1.62;
+		requiredAddons[]=
+		{
+			"CAWeapons",
+			"Extended_EventHandlers",
+			"ace_main",
+			"ace_c_weapon",
+			"ace_sys_rocket_ballistics"
+		};
+		version="1.14.0.597";
+	};
+};
+class CfgWeapons
+{
+	class Launcher;
+	class RPG7V: Launcher
+	{
+		ace_sa_enabled=1;
+		ace_sa_defaultelevation=0;
+		ace_sa_minrange=200;
+		ace_sa_maxrange=500;
+		ace_sa_steprange=100;
+		ace_sa_table_elev[]=
+		{
+			{0,0},
+			{200,27},
+			{300,33.799999},
+			{400,40.400002},
+			{500,50.599998}
+		};
+	};
+	class ACE_RPG7V_PGO7: RPG7V
+	{
+		ace_sa_enabled=1;
+	};
+	class RPG18: Launcher
+	{
+		ace_sa_enabled=1;
+		ace_sa_defaultelevation=0;
+		ace_sa_minrange=50;
+		ace_sa_maxrange=250;
+		ace_sa_steprange=100;
+		ace_sa_table_elev[]=
+		{
+			{0,0},
+			{50,13.6},
+			{150,40.200001},
+			{250,69.5}
+		};
+	};
+	class M136: Launcher
+	{
+		ace_sa_enabled=1;
+		ace_sa_defaultelevation=0;
+		ace_sa_minrange=100;
+		ace_sa_maxrange=500;
+		ace_sa_steprange=50;
+		ace_sa_table_elev[]=
+		{
+			{0,0},
+			{100,5.9000001},
+			{150,9.3000002},
+			{200,11.6},
+			{250,14.9},
+			{300,20},
+			{350,23.9},
+			{400,27.4},
+			{450,31.4},
+			{500,35.900002}
+		};
+	};
+	class SMAW: Launcher
+	{
+		ace_sa_enabled=1;
+		ace_sa_defaultelevation=0;
+		ace_sa_minrange=100;
+		ace_sa_maxrange=500;
+		ace_sa_steprange=50;
+		ace_sa_table_elev[]=
+		{
+			{0,0},
+			{100,4.5},
+			{150,7.0999999},
+			{200,9.6999998},
+			{250,12.4},
+			{300,15.2},
+			{350,18.200001},
+			{400,21.200001},
+			{450,24.299999},
+			{500,27.5}
+		};
+	};
+	class MAAWS: Launcher
+	{
+		ace_sa_enabled=1;
+		ace_sa_defaultelevation=0;
+		ace_sa_minrange=100;
+		ace_sa_maxrange=1200;
+		ace_sa_steprange=100;
+		ace_sa_table_elev[]=
+		{
+			{0,0},
+			{100,4.5},
+			{150,7.0999999},
+			{200,9.6999998},
+			{250,12.4},
+			{300,15.2},
+			{350,18.200001},
+			{400,21.200001},
+			{450,24.299999},
+			{500,27.5}
+		};
+	};
+};
+class cfgMagazines
+{
+	class CA_LauncherMagazine;
+	class PG7V: CA_LauncherMagazine
+	{
+		ace_sa_table_elev[]=
+		{
+			{0,0},
+			{100,18.299999},
+			{200,26.4},
+			{300,33.299999},
+			{400,41.049999},
+			{500,50.700001},
+			{600,62.700001},
+			{700,78.050003}
+		};
+	};
+	class ACE_PG7VM: PG7V
+	{
+		ace_sa_table_elev[]=
+		{
+			{0,0},
+			{100,18.299999},
+			{200,26.4},
+			{300,33.299999},
+			{400,41.049999},
+			{500,50.700001},
+			{600,62.700001},
+			{700,78.050003}
+		};
+	};
+	class PG7VL: PG7V
+	{
+		ace_sa_table_elev[]=
+		{
+			{0,0},
+			{100,24.25},
+			{200,36.200001},
+			{300,50.099998},
+			{400,66.75},
+			{500,86.300003},
+			{600,111.75}
+		};
+	};
+	class PG7VR: PG7V
+	{
+		ace_sa_table_elev[]=
+		{
+			{0,0},
+			{50,30},
+			{100,55.200001},
+			{150,79.099998},
+			{200,106.2},
+			{250,136},
+			{300,171},
+			{350,212.89999}
+		};
+	};
+	class ACE_TBG7V: PG7VR
+	{
+		ace_sa_table_elev[]=
+		{
+			{0,0},
+			{50,30},
+			{100,55.200001},
+			{150,79.099998},
+			{200,106.2},
+			{250,136},
+			{300,171},
+			{350,212.89999}
+		};
+	};
+	class OG7: CA_LauncherMagazine
+	{
+		ace_sa_table_elev[]=
+		{
+			{0,0},
+			{100,24.15},
+			{200,50},
+			{300,76.300003},
+			{400,102.4},
+			{500,130.89999},
+			{600,158.8}
+		};
+	};
+	class MAAWS_HEDP: CA_LauncherMagazine
+	{
+		ace_sa_table_elev[]=
+		{
+			{0,0},
+			{100,9},
+			{200,18.4},
+			{300,28.700001},
+			{400,38.5},
+			{500,49},
+			{600,60.400002},
+			{700,70.900002},
+			{800,82.300003},
+			{900,94.050003}
+		};
+	};
+	class ACE_MAAWS_HE: MAAWS_HEDP
+	{
+		ace_sa_table_elev[]=
+		{
+			{0,0},
+			{100,8.6000004},
+			{200,17.35},
+			{300,26.25},
+			{400,35.900002},
+			{500,45.099998},
+			{600,55.049999},
+			{700,65.099998},
+			{800,75.800003},
+			{900,86.400002},
+			{1000,97.300003},
+			{1100,109.05},
+			{1200,120.75}
+		};
+	};
+	class MAAWS_HEAT: MAAWS_HEDP
+	{
+		ace_sa_table_elev[]=
+		{
+			{0,0},
+			{100,6.0500002},
+			{200,10.7},
+			{300,15.6},
+			{400,19.549999},
+			{500,24.5},
+			{600,29.6},
+			{700,35.200001},
+			{800,41},
+			{900,47.75}
+		};
+	};
+};
+class Extended_PreInit_EventHandlers
+{
+	class ace_sys_sight_adjustment_at
+	{
+		clientInit="call ('\x\ace\addons\sys_sight_adjustment_at\XEH_preClientInit.sqf' call SLX_XEH_COMPILE)";
+	};
+};
