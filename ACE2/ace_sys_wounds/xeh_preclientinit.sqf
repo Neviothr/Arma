@@ -16,17 +16,12 @@ PREP(morphine);
 PREP(CATremove);
 PREP(cpr);
 PREP(drag);
-
 PREP(pullvec);
-
 PREP(stretcher);
 PREP(drop_stretcher);
-
 PREP(blackoutp);
-
 PREP(dragkeydown);
 PREP(mapunckeydown);
-
 PREP(effect);
 
 ADDON = true;
