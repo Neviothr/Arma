@@ -12,16 +12,19 @@ if (!isNil "ace_sys_wounds_medics_only") then {
 };
 if (_exit_it) exitWith {};
 
-
 _allowed = [player, player, MOR] call FUNC(takeItem);
 if !(_allowed) exitWith {};
 
 player setVariable ["ACE_PB_Result", 0];
-_delay = if ([player] call FUNC(isMedic)) then { 12 } else { 15 };
-[_delay,[localize "STR_ACE_UA_USEMORPHI"],true,true] spawn ace_progressbar;
+_delay = if ([player] call FUNC(isMedic)) then {
+	12
+} else {
+	15
+};
+[_delay, [localize "STR_ACE_UA_USEMORPHI"], true, true] spawn ace_progressbar;
 playSound "ACE_Injector";
-waitUntil { (player getVariable "ACE_PB_Result" != 0) };
+waitUntil {(player getVariable "ACE_PB_Result" != 0)};
 if (player getVariable "ACE_PB_Result" == 1) then {
-	[MOR,player] call FUNC(litter);
+	[MOR, player] call FUNC(litter);
 	player call FUNC(RemovePain);
 };
