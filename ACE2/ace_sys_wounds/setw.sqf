@@ -16,7 +16,7 @@
 
 private ["_dam", "_uncon", "_time", "_st", "_check", "_pd", "_fsm", "_dexit", "_isp", "_bdam", "_ndam"];
 
-PARAMS_2(_unit,_dam);
+PARAMS_2(_unit, _dam);
 
 if (!local _unit) exitWith {};
 
@@ -26,7 +26,10 @@ _dexit = false;
 if (!isNil "ace_wounds_prevtime" && {_isp}) then {
 	_dam = MAX_PMR_DAM min _dam;
 } else {
-	if (_dam >= 1) then {_unit setDamage 1;_dexit = true};
+	if (_dam >= 1) then {
+		_unit setDamage 1;
+		_dexit = true
+	};
 };
 if (_dexit) exitWith {};
 
@@ -34,12 +37,17 @@ _uncon = _this select 2;
 _time = _this select 3;
 
 _st = _unit getVariable "ace_w_state";
-if (isNil "_st") then {_unit setVariable ["ace_w_state", 0];_st = 0;};
+if (isNil "_st") then {
+	_unit setVariable ["ace_w_state", 0];
+	_st = 0;
+};
 
 if (isNil "ace_sys_wounds_enabled") exitWith {
 	[_unit, _dam] call FUNC(setDamage);
 	_st = _unit getVariable "ace_w_carry";
-	if (isNil "_st") then {_unit setVariable ["ace_w_carry", objNull]};
+	if (isNil "_st") then {
+		_unit setVariable ["ace_w_carry", objNull]
+	};
 	if (_uncon) then {
 		if (vehicle _unit == _unit) then {
 			[_unit, 100] call FUNC(animator2);
@@ -49,15 +57,19 @@ if (isNil "ace_sys_wounds_enabled") exitWith {
 		if (isPlayer _unit) then {
 			[true] spawn FUNC(blackoutp);
 		} else {
-			[_unit,true] spawn FUNC(blackoutai);
+			[_unit, true] spawn FUNC(blackoutai);
 		};
 	};
 };
 
 // TODO: Check overlapping code; blackoutall
-if (isNil {_unit getVariable "ace_w_initialized"}) then {_unit call FUNC(unitinit)};
+if (isNil {_unit getVariable "ace_w_initialized"}) then {
+	_unit call FUNC(unitinit)
+};
 _bdam = _unit getVariable (GVAR(parts) select 1);
-if (_dam > _bdam) then { _bdam = _dam };
+if (_dam > _bdam) then {
+	_bdam = _dam
+};
 
 // First setDamage, then setHit, so the visual wounds are okay.
 if (damage _unit < _bdam) then {
@@ -75,7 +87,7 @@ if (!alive _unit) exitWith {};
 {
 	private "_pd";
 	_pd = _unit getVariable (GVAR(parts) select _x);
-	TRACE_2("headbody",_unit,_pd);
+	TRACE_2("headbody", _unit, _pd);
 	if (_pd < _dam) then {
 		[_unit, _x, _dam] call FUNC(setHit);
 	};
@@ -83,7 +95,7 @@ if (!alive _unit) exitWith {};
 {
 	private "_pd";
 	_pd = _unit getVariable (GVAR(parts) select _x);
-	TRACE_2("handslegs",_unit,_pd);
+	TRACE_2("handslegs", _unit, _pd);
 	if (_pd < (_dam * 2)) then {
 		[_unit, _x, _dam * 2] call FUNC(setHit);
 	};
@@ -118,7 +130,7 @@ if (_st != 802) then {
 	};
 	_fsm = _unit getVariable ["ace_w_fsm", 0];
 	if (_fsm == 0) then {
-		_unit setVariable ["ace_w_fsm",1];
+		_unit setVariable ["ace_w_fsm", 1];
 		[_unit] spawn FUNC(statehandler);
 	};
 };
