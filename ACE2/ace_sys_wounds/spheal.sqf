@@ -2,7 +2,7 @@
 
 private ["_bandage", "_isMedic"];
 
-PARAMS_2(_unit,_caller);
+PARAMS_2(_unit, _caller);
 
 if (!alive _unit) exitWith {};
 if (!alive _caller) exitWith {};
