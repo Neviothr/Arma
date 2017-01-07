@@ -1,7 +1,5 @@
-class CfgPatches
-{
-	class nev_debugMenu
-	{
+class CfgPatches {
+	class nev_debugMenu {
  		name = "Mutipurpose Debug Menu";
  		author = "Neviothr";
   		units[] = {};
@@ -14,7 +12,6 @@ class CfgPatches
 #include "base_defines.hpp"
 #include "debug_menu.hpp"
 
-class Extended_PostInit_EventHandlers
-{
+class Extended_PostInit_EventHandlers {
 	nev_debugMenu_Post_Init = "nev_debugMenu_Post_Init_Var = [] execVM ""\nev_debugMenu\init.sqf""";
 };
