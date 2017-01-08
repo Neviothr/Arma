@@ -18,7 +18,11 @@ while {alive _unit && {_unit getVariable ["ace_w_state", 0] in [801, 802]} && {v
 	// Sort medics higher up the chain.
 	// TODO: Sort state > 0 units last?
 	_medics = [];
-	{ if ([_unit] call FUNC(isMedic)) then { PUSH(_medics,_x) } } forEach _units;
+	{
+		if ([_unit] call FUNC(isMedic)) then {
+			PUSH(_medics, _x)
+		}
+	} forEach _units;
 	_units = _units - _medics;
 	_units = _medics + _units;
 	{
@@ -36,17 +40,17 @@ while {alive _unit && {_unit getVariable ["ace_w_state", 0] in [801, 802]} && {v
 					} else {
 						_need = BND in (magazines _unit) || {BND in (magazines _x)};
 					};
-					if (_need) exitWith { _requested = _x };
+					if (_need) exitWith {_requested = _x};
 
 					if (_unit getVariable "ace_w_epi" > 0) then {
 						_need = EPI in (magazines _unit) || {EPI in (magazines _x)};
 					};
-					if (_need) exitWith { _requested = _x };
+					if (_need) exitWith {_requested = _x};
 
 					if (_unit getVariable "ace_w_pain" > 0) then {
 						_need = MOR in (magazines _unit) || {MOR in (magazines _x)};
 					};
-					if (_need) exitWith { _requested = _x };
+					if (_need) exitWith {_requested = _x};
 				};
 			};
 		};
@@ -58,7 +62,7 @@ while {alive _unit && {_unit getVariable ["ace_w_state", 0] in [801, 802]} && {v
 };
 
 if (alive _unit && {!isNull _requested}) then {
-	TRACE_3("Requested to help",_unit,_requested,local _requested);
+	TRACE_3("Requested to help", _unit, _requested, local _requested);
 	if (local _requested) then {
 		[QGVAR(help), [_unit, _requested]] call CBA_fnc_localEvent;
 	} else {

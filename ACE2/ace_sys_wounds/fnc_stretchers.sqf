@@ -4,5 +4,5 @@
 
 PARAMS_1(_stretcher);
 
-_stretcher setVariable ["ace_stretcher_front_grab",false,true];
-_stretcher setVariable ["ace_stretcher_back_grab",false,true];
+_stretcher setVariable ["ace_stretcher_front_grab", false, true];
+_stretcher setVariable ["ace_stretcher_back_grab", false, true];

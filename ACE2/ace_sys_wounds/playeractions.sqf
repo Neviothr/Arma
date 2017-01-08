@@ -9,7 +9,7 @@
 
 #define _state_blackingOut 801 // semi-lucid
 
-private ["_exitloop","_pain_action","_epi_action","_epi_and_morph", "_unit"];
+private ["_exitloop", "_pain_action", "_epi_action", "_epi_and_morph", "_unit"];
 sleep 5;
 if (isNil "ace_sys_wounds_enabled") exitWith {};
 
@@ -33,7 +33,7 @@ while {true} do {
 			// bandage
 			if ((_unit getVariable "ace_w_bleed") > 0 && {_bandage_action == -9999}) then {
 				if (BND in magazines _unit) then {
-					_bandage_action = _unit addAction [__STOPBLEED, QPATHTO_F(self_bandage), BND,-1];
+					_bandage_action = _unit addAction [__STOPBLEED, QPATHTO_F(self_bandage), BND, -1];
 				};
 			} else {
 				if ((_unit getVariable "ace_w_bleed") == 0 && {_bandage_action != -9999}) then {
@@ -46,7 +46,7 @@ while {true} do {
 				// morphine
 				if ((_unit getVariable "ace_w_pain") > 0 && {_pain_action == -9999}) then {
 					if (MOR in magazines _unit) then {
-						_pain_action = _unit addAction [__USEMORPHI, QPATHTO_F(self_morphine),"",-1];
+						_pain_action = _unit addAction [__USEMORPHI, QPATHTO_F(self_morphine), "", -1];
 					};
 				} else {
 					if ((_unit getVariable "ace_w_pain") == 0 && {_pain_action != -9999}) then {
@@ -58,7 +58,7 @@ while {true} do {
 				// epi
 				if ((_unit getVariable "ace_w_state") >= _state_blackingOut && {_epi_action == -9999}) then {
 					if (EPI in magazines _unit) then {
-						_epi_action = _unit addAction [__USEEPI, QPATHTO_F(self_epi),"",-1];
+						_epi_action = _unit addAction [__USEEPI, QPATHTO_F(self_epi), "", -1];
 					};
 				} else {
 					if ((_unit getVariable "ace_w_state") < _state_blackingOut && {_epi_action != -9999}) then {

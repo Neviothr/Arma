@@ -9,9 +9,11 @@ PARAMS_1(_unit);
 _nearMedicFacility = false;
 
 if (isNull _unit) then {
-	TRACE_1("Null Unit!",_unit);
+	TRACE_1("Null Unit!", _unit);
 } else {
-	{ if ([_x] call FUNC(isMedicalFacility)) exitWith { _nearMedicFacility = true; } } forEach nearestObjects [_unit, [VEH_TYPES], DISTANCE];
+	{
+		if ([_x] call FUNC(isMedicalFacility)) exitWith {_nearMedicFacility = true;}
+	} forEach nearestObjects [_unit, [VEH_TYPES], DISTANCE];
 };
 
 _nearMedicFacility;

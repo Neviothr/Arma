@@ -14,7 +14,9 @@ switch (_this getVariable "ace_w_state") do {
 			if (!isNil "ace_wounds_prevtime" && {_isp}) then {
 				_this setVariable ["ace_w_revive", -1];
 			};
-			if (_isp) then {[_this, 0] call FUNC(setStamina)};
+			if (_isp) then {
+				[_this, 0] call FUNC(setStamina)
+			};
 		} else {
 			// TODO: Do not artificially increase base values, those need to be treated by player
 			if ((_this getVariable "ace_w_bleed") > 0) then {
@@ -27,7 +29,9 @@ switch (_this getVariable "ace_w_state") do {
 			};
 			_this setVariable ["ace_w_state", 800];
 			_this setVariable [QGVAR(uncon), false, true];
-			if (_isp) then {[_this, 2] call FUNC(divStamina)};
+			if (_isp) then {
+				[_this, 2] call FUNC(divStamina)
+			};
 		};
 	};
 	case 802: {
@@ -37,7 +41,9 @@ switch (_this getVariable "ace_w_state") do {
 			if (!isNil "ace_wounds_prevtime" && {_isp}) then {
 				_this setVariable ["ace_w_revive", -1];
 			};
-			if (_isp) then {[_this, 0] call FUNC(setStamina)};
+			if (_isp) then {
+				[_this, 0] call FUNC(setStamina)
+			};
 		};
 	};
 };

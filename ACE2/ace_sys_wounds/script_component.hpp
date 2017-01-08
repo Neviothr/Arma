@@ -25,7 +25,6 @@
 #define CYCLE_TIME 0.15 // 0.15? Xeno: The 0.15 cycle time is to have a quite tight loop running. Afair some features need this.
 #define CYCLE_TIME_FACTOR 10
 
-
 // Legend
 // DIV = DIVIDER
 // COEF = COEFICIENT
@@ -38,7 +37,8 @@
 // TODO: Add constant for SH MAX_BLEED (before death) (currently: 1) - Also need to add the defines for the 0.99 ...
 // TODO: Improve constant naming consistency
 
-/* STATES
+/*
+	STATES
 	800 - Bleeding
 	801 - Blackouts every now and then
 	802 - Permanent unconscious
@@ -112,9 +112,8 @@
 // Used to ignore damage lower than floor for units inside vehicles
 // to workaround issue where non explosive projectile hitting the vehicle, cause damage to crew inside (without actual penetrating the vehicle)
 #define VEH_CREW_DAM_FLOOR 0.02
-// Used for "" part, checking for minimal damage when inside vehicle. Ignore lower.
+// Used for "" part, check for minimal damage when inside vehicle. Ignore lower.
 #define MIN_PART_DAM 0.15
-
 
 // Energy, Penetration, etc
 #define PENETRATION_CEIL 220
@@ -124,7 +123,6 @@
 #define ENERGY_COEF 0.00012 // 0.00012
 
 #define BASE_PENETRATION_COEF 36 // Will be * _penetrationMultiplier
-
 
 // Falling
 #define ALWAYS_FALL_THRESHOLD 875
@@ -151,9 +149,8 @@
 #define SH_STATE_801_MAX_BLEED 0.6 //0.75
 #define SH_STATE_801_MAX_PAIN 0.8 //0.95
 
-
 // Medication defines
-// CPR 
+// CPR
 #define __cardiactime1 	20 //TODO: Adjust
 #define __cardiactime2 	30 //TODO: Adjust
 // CAT PAIN DELAY

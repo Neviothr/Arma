@@ -10,11 +10,11 @@ while {true} do {
 	if (isNil "ace_sys_wounds_enabled") exitWith {};
 	sleep 1;
 	while {alive player} do {
-		waitUntil {sleep 0.123;(player getVariable "ace_w_pain") >= 0.1 || {!alive player} || {(player call FUNC(isUncon))}};
+		waitUntil {sleep 0.123; (player getVariable "ace_w_pain") >= 0.1 || {!alive player} || {(player call FUNC(isUncon))}};
 		if (!alive player || {(player call FUNC(isUncon))}) exitWith {};
 		while {(player getVariable "ace_w_pain" >= 0.1) && {alive player} && {(!(player call FUNC(isUncon)))}} do {
 			_st = time + 2.5;
-			waitUntil {sleep 0.123;time > _st || {!alive player} || {(player call FUNC(isUncon))}};
+			waitUntil {sleep 0.123; time > _st || {!alive player} || {(player call FUNC(isUncon))}};
 			if (!alive player || {(player call FUNC(isUncon))}) exitWith {};
 			_pain = player getVariable ["ace_w_pain", 0];
 			_sleep_time = 0;
@@ -51,10 +51,10 @@ while {true} do {
 				};
 			};
 			_st = time + _sleep_time;
-			waitUntil {sleep 0.123;time > _st || {!alive player} || {(player call FUNC(isUncon))}};
+			waitUntil {sleep 0.123; time > _st || {!alive player} || {(player call FUNC(isUncon))}};
 			GVAR(blur) ppEffectAdjust [0];
 			GVAR(blur) ppEffectCommit 1;
-			135869 cutRsc["ACE_Wound_Pain","PLAIN"];
+			135869 cutRsc["ACE_Wound_Pain", "PLAIN"];
 			sleep 1;
 			GVAR(blur) ppEffectEnable false;
 			if (!alive player || {(player call FUNC(isUncon))}) exitWith {};
@@ -68,7 +68,7 @@ while {true} do {
 			player setVariable ["ace_w_pain", 0];
 			sleep 1;
 		} else {
-			waitUntil {sleep 0.123;!(player call FUNC(isUncon)) || {!alive player}};
+			waitUntil {sleep 0.123; !(player call FUNC(isUncon)) || {!alive player}};
 			sleep 1;
 		};
 	};

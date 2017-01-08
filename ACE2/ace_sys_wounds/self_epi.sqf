@@ -17,11 +17,15 @@ _allowed = [player, player, EPI] call FUNC(takeItem);
 if !(_allowed) exitWith {};
 
 player setVariable ["ACE_PB_Result", 0];
-_delay = if ([player] call FUNC(isMedic)) then { 12 } else { 15 };
-[_delay,[localize "STR_ACE_UA_USEEPI"],true,true] spawn ace_progressbar;
+_delay = if ([player] call FUNC(isMedic)) then {
+	12
+} else {
+	15
+};
+[_delay, [localize "STR_ACE_UA_USEEPI"], true, true] spawn ace_progressbar;
 playSound "ACE_Injector";
-waitUntil { (player getVariable "ACE_PB_Result" != 0) };
+waitUntil {(player getVariable "ACE_PB_Result" != 0)};
 if (player getVariable "ACE_PB_Result" == 1) then {
-	[EPI,player] call FUNC(litter);
+	[EPI, player] call FUNC(litter);
 	player call FUNC(RemoveUncon);
 };

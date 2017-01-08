@@ -2,11 +2,11 @@
 
 #include "script_component.hpp"
 
-PARAMS_3(_stretcher,_pos,_unit);
+PARAMS_3(_stretcher, _pos, _unit);
 
 if (_pos == "DRIVER") then {
 	sleep 0.1;
 	_unit action ["getout", _stretcher];
 	sleep 0.05;
-	_unit setPos (getpos _stretcher);
+	_unit setPos (getPos _stretcher);
 };

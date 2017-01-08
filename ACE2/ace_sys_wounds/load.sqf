@@ -5,12 +5,13 @@ private ["_array", "_dragee", "_vec", "_unit"];
 _array = _this select 3;
 _dragee = _array select 0;
 _vec = _array select 1;
-
 _unit = player;
 
 GVAR(drag) = false;
-
-if (GVAR(dropAction) != -3333) then {player removeAction GVAR(dropAction);GVAR(dropAction) = -3333};
+if (GVAR(dropAction) != -3333) then {
+	player removeAction GVAR(dropAction);
+	GVAR(dropAction) = -3333
+};
 
 detach _unit;
 detach _dragee;

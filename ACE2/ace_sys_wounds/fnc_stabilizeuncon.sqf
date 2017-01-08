@@ -8,7 +8,7 @@ switch (_unit getVariable "ace_w_state") do {
 	case 800: {}; // Nothing
 	// Stabilize only in state 801:
 	// Prevent overdosage of Epinephrine
-	// If going uncon from time to time due to pain, we have the possibility to 'remove' player from that state by 
+	// If going uncon from time to time due to pain, we have the possibility to 'remove' player from that state by
 	// Stabilizing him
 	case 801: {
 		// If player is going unconscious due to bleeding - bad luck
@@ -23,7 +23,7 @@ switch (_unit getVariable "ace_w_state") do {
 			_unit setVariable ["ace_w_pain", _newPain];
 			_unit setVariable ["ace_w_pain_add", _newPainAdd];
 			// PMR
-			//if (!(isNil "ace_wounds_prevtime") && _isp) then {	
+			//if (!(isNil "ace_wounds_prevtime") && _isp) then {
 			//	_unit setVariable ["ace_w_revive", -1];
 			//};
 			// Push down to a previous state
@@ -33,8 +33,10 @@ switch (_unit getVariable "ace_w_state") do {
 				_unit setVariable [QGVAR(uncon), false, true];
 			};
 			// Remove the need for epinephrine, per time being
-			_unit setVariable ["ace_w_epi", 0];			
-			if (_isp) then {[_unit, 2] call FUNC(divStamina)};
+			_unit setVariable ["ace_w_epi", 0];
+			if (_isp) then {
+				[_unit, 2] call FUNC(divStamina)
+			};
 		};
 	};
 	case 802: {}; // Nothing, yet
