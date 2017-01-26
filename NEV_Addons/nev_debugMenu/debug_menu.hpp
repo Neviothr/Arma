@@ -98,8 +98,7 @@ class NewArmAUI {
 		};
 
 		// A button garrison all units
-		class MyRscButton4 : RscButton
-		{
+		class MyRscButton4 : RscButton {
 			text = "Garrison";
 			x = "SafeZoneX + (420 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (150 / 1080) * SafeZoneH";
