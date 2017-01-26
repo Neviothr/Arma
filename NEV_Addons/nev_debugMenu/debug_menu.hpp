@@ -97,16 +97,17 @@ class NewArmAUI {
 			action = "closeDialog 0; execVM ""\nev_debugMenu\f\NEV_fnc_removeDead.sqf""";
 		};
 
-		// A button to stop units in buildings from moving
-		class inBuildingButton: RscButton {
-			text = "Keep garrisoned";
-			x = "SafeZoneX + (375 / 1920) * SafeZoneW";
+		// A button garrison all units
+		class MyRscButton4 : RscButton
+		{
+			text = "Garrison";
+			x = "SafeZoneX + (420 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (150 / 1080) * SafeZoneH";
 			w = "(90 / 1920) * SafeZoneW";
 			h = "(45 / 1080) * SafeZoneH";
 			type = CT_BUTTON;
 			style = ST_CENTER;
-			action = "closeDialog 0; {[_x] execVM ""inBuilding.sqf""} forEach allUnits";
+			action = "closeDialog; {[_x, _x, 50, 2, false] call CBA_fnc_taskDefend} forEach allUnits"
 		};
 	};
 };
