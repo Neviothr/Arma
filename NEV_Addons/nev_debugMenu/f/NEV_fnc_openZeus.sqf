@@ -5,6 +5,6 @@ if (isNil "nev_sideCenter") then {
 	publicVariable "nev_sideCenter";
 };
 
-_curator = (createGroup nev_sideCenter) createUnit ["ModuleCurator_F",[0,0,0] , [], 0, ""];
+_curator = (createGroup nev_sideCenter) createUnit ["ModuleCurator_F", [0, 0, 0] , [], 0, ""];
 player assignCurator _curator;
 openCuratorInterface;

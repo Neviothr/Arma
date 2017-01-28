@@ -98,7 +98,7 @@ class NewArmAUI {
 		};
 
 		// A button garrison all units
-		class MyRscButton4 : RscButton {
+		class garrisonUnits: RscButton {
 			text = "Garrison";
 			x = "SafeZoneX + (420 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (150 / 1080) * SafeZoneH";
@@ -106,7 +106,19 @@ class NewArmAUI {
 			h = "(45 / 1080) * SafeZoneH";
 			type = CT_BUTTON;
 			style = ST_CENTER;
-			action = "closeDialog; {[_x, _x, 50, 2, false] call CBA_fnc_taskDefend} forEach allUnits"
+			action = "closeDialog 0; execVM ""\nev_debugMenu\f\NEV_fnc_garrison.sqf""";
+		};
+
+		// A button to spawn a group of set units
+		class spawnGroup: RscButton {
+			text = "Spawn group(s)";
+			x = "SafeZoneX + (420 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (210 / 1080) * SafeZoneH";
+			w = "(90 / 1920) * SafeZoneW";
+			h = "(45 / 1080) * SafeZoneH";
+			type = CT_BUTTON;
+			style = ST_CENTER;
+			action = "call NEV_fnc_spawnGroup";
 		};
 	};
 };
