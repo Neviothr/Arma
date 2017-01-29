@@ -17,3 +17,10 @@
 "rhsgref_cdf_b_ngd_rifleman"
 "rhsgref_cdf_b_ngd_grenadier"
 "rhsgref_cdf_b_ngd_squadleader"
+
+// RHS, Russia MSV, OPFOR
+"rhs_msv_at"
+"rhs_msv_machinegunner"
+"rhs_msv_rifleman"
+"rhs_msv_grenadier"
+"rhs_msv_sergeant"
