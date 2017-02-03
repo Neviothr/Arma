@@ -8,8 +8,9 @@ class RscButton;
 class RscStructuredText;
 class RscButtonMenu;
 class RscSlider;
+class IGUIBack;
 
-class NewArmAUI {
+class nevDebugMenu {
 	duration = 99999;
 	idd = 17000;
 	class controls {
@@ -22,7 +23,7 @@ class NewArmAUI {
 			h = "(45 / 1080) * SafeZoneH";
 			type = CT_BUTTON;
 			style = ST_CENTER;
-			action = "closeDialog 0; execVM ""\nev_debugMenu\f\NEV_fnc_openZeus.sqf""";
+			action = "closeDialog 0; call NEV_fnc_openZeus";
 		};
 
 		// A button to open the virtual aresnal
@@ -34,7 +35,7 @@ class NewArmAUI {
 			h = "(45 / 1080) * SafeZoneH";
 			type = CT_BUTTON;
 			style = ST_CENTER;
-			action = "closeDialog 0; [""Open"",true] spawn BIS_fnc_arsenal";
+			action = "closeDialog 0; [""Open"", true] spawn BIS_fnc_arsenal";
 		};
 
 		// A button to use a teleportion function
@@ -46,7 +47,7 @@ class NewArmAUI {
 			h = "(45 / 1080) * SafeZoneH";
 			type = CT_BUTTON;
 			style = ST_CENTER;
-			action = "closeDialog 0; execVM ""\nev_debugMenu\f\NEV_fnc_teleport.sqf""";
+			action = "closeDialog 0; call NEV_fnc_teleport";
 		};
 
 		// A button to open the BI debug console
@@ -70,10 +71,10 @@ class NewArmAUI {
 			h = "(45 / 1080) * SafeZoneH";
 			type = CT_BUTTON;
 			style = ST_CENTER;
-			action = "closeDialog 0; execVM ""\nev_debugMenu\f\NEV_fnc_addUnitsToZeus.sqf""";
+			action = "closeDialog 0; call NEV_fnc_addToZeus";
 		};
 
-		// A button to make all units aggressive
+		// A button to make units aggressive
 		class makeUnitsAggressive: RscButton {
 			text = "Aggressive AI";
 			x = "SafeZoneX + (315 / 1920) * SafeZoneW";
@@ -82,7 +83,7 @@ class NewArmAUI {
 			h = "(45 / 1080) * SafeZoneH";
 			type = CT_BUTTON;
 			style = ST_CENTER;
-			action = "closeDialog 0; execVM ""\nev_debugMenu\f\NEV_fnc_aggressiveAI.sqf""";
+			action = "closeDialog 0; call NEV_fnc_aggressiveAI";
 		};
 
 		// A button to remove add dead AI units and vehicles
@@ -94,7 +95,7 @@ class NewArmAUI {
 			h = "(45 / 1080) * SafeZoneH";
 			type = CT_BUTTON;
 			style = ST_CENTER;
-			action = "closeDialog 0; execVM ""\nev_debugMenu\f\NEV_fnc_removeDead.sqf""";
+			action = "closeDialog 0; call NEV_fnc_removeDead";
 		};
 
 		// A button garrison all units
@@ -106,7 +107,7 @@ class NewArmAUI {
 			h = "(45 / 1080) * SafeZoneH";
 			type = CT_BUTTON;
 			style = ST_CENTER;
-			action = "closeDialog 0; execVM ""\nev_debugMenu\f\NEV_fnc_garrison.sqf""";
+			action = "closeDialog 0; call NEV_fnc_garrison";
 		};
 
 		// A button to spawn a group of set units

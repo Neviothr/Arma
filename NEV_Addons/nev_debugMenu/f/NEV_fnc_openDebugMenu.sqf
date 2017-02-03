@@ -1,2 +1,4 @@
-_hndl = createDialog "NewArmAUI";
-waitUntil {!dialog};
+NEV_fnc_openDebugMenu = {
+	_hndl = createDialog "nevDebugMenu";
+	waitUntil {!dialog};
+}
