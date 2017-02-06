@@ -9,4 +9,4 @@ call compile preprocessFile "\nev_debugMenu\f\NEV_fnc_openZeus.sqf";
 call compile preprocessFile "\nev_debugMenu\f\NEV_fnc_removeDead.sqf";
 call compile preprocessFile "\nev_debugMenu\f\NEV_fnc_teleport.sqf";
 
-player addAction ["<t color='#23a425'>Debug Menu</t>", "call NEV_fnc_openDebugMenu"];
+player addAction ["<t color='#006400'>Debug Menu</t>", "call NEV_fnc_openDebugMenu"];
