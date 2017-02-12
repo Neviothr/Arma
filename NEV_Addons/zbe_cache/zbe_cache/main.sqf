@@ -1,21 +1,21 @@
-zbe_aiCacheDist				= _this select 0;
-zbe_minFrameRate			= _this select 1;
-zbe_debug					= _this select 2;
-zbe_vehicleCacheDistCar		= _this select 3;
-zbe_vehicleCacheDistAir		= _this select 4;
-zbe_vehicleCacheDistBoat	= _this select 5;
+zbe_aiCacheDist = _this select 0;
+zbe_minFrameRate = _this select 1;
+zbe_debug = _this select 2;
+zbe_vehicleCacheDistCar = _this select 3;
+zbe_vehicleCacheDistAir = _this select 4;
+zbe_vehicleCacheDistBoat = _this select 5;
 
-zbe_allGroups	   			= 0;
-zbe_cachedGroups   			= [];
-zbe_cachedUnits	   			= 0;
-zbe_allVehicles	   			= 0;
-zbe_cachedVehicles 			= 0;
-zbe_objectView	   			= 0;
-zbe_players					= [];
+zbe_allGroups = 0;
+zbe_cachedGroups = [];
+zbe_cachedUnits = 0;
+zbe_allVehicles = 0;
+zbe_cachedVehicles = 0;
+zbe_objectView = 0;
+zbe_players = [];
 
 call compileFinal preprocessFileLineNumbers "\zbe_cache\zbe_cache\zbe_functions.sqf";
 
-if (zbe_minFrameRate == -1) then {if (isDedicated) then {zbe_minFrameRate = 16} else {zbe_minFrameRate = 31};};
+zbe_minFrameRate = 31;
 
 zbe_mapsize = [] call bis_fnc_mapSize;
 zbe_mapside = zbe_mapsize / 2;
@@ -27,9 +27,11 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 		zbe_players = (switchableUnits + playableUnits);
 		{
 			_disable = _x getVariable "zbe_cacheDisabled";
-			_disable = if (isNil "_disable") then { false;
-				} else {_disable;
-				};
+			_disable = if (isNil "_disable") then {
+				false;
+			} else {
+				_disable;
+			};
 			if (!_disable && !(_x in zbe_cachedGroups)) then {
 					zbe_cachedGroups = zbe_cachedGroups + [_x];
 					[zbe_aiCacheDist, _x, zbe_minFrameRate, zbe_debug] execFSM "\zbe_cache\zbe_cache\zbe_aiCaching.fsm";
@@ -37,6 +39,7 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 		} forEach allGroups;
 	};
 };
+
 // Vehicle Caching Beta (for client FPS)
 [] spawn {
 	private ["_assetscar", "_assetsair", "_assetsboat"];
@@ -89,13 +92,13 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 [] spawn {
 	if (zbe_debug) then {
 			while {true} do {
-				uiSleep 20;
+				uiSleep 25;
 				zbe_cachedUnits = (count allUnits - ({simulationEnabled _x} count allUnits));
-				zbe_cachedVehicles = (count zbe_allVehicles - ({simulationEnabled _x} count zbe_allVehicles));
-				zbe_allVehiclesCount = (count zbe_allVehicles);
-				systemChat format ["Cache: %1", zbe_cachedUnits];
+				systemChat format ["C: %1", zbe_cachedUnits];
 			};
 		};
 };
 // Experimental, disabled for now
-// if (!isDedicated) then {execFSM "\zbe_cache\zbe_cache\zbe_clientObjectDrawAuto.fsm";};
+/* if (!isDedicated) then {
+	execFSM "\zbe_cache\zbe_cache\zbe_clientObjectDrawAuto.fsm";
+}; */
