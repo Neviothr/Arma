@@ -2,10 +2,12 @@ class CfgMarkers {
 	class armor_marker {
 		name = "Armor";
 		icon = "\A3\ui_f\data\igui\cfg\simpleTasks\types\armor_ca.paa";
-		color[] = {1, 0, 0, 1};
-		size = 32;
-		shadow = true;
-		scope = private;
+		color[] = {0, 0, 0, 1};
+		scope = 2;
+		scopeCurator = 2;
+		shadow = 0;
+		size = 29;
+		markerClass = "nev_markers";
 	};
 	class attack_marker: armor_marker {
 		name = "Attack";
