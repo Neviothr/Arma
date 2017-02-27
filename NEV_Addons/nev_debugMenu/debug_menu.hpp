@@ -9,6 +9,7 @@ class RscStructuredText;
 class RscButtonMenu;
 class RscSlider;
 class IGUIBack;
+class RscEdit;
 
 class nevDebugMenu {
 	duration = 99999;
@@ -135,7 +136,7 @@ class nevDebugMenu {
 		class backgroundImg: RscFrame {
 			x = "SafeZoneX + (495 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (255 / 1080) * SafeZoneH";
-			w = "(405 / 1920) * SafeZoneW";
+			w = "(435 / 1920) * SafeZoneW";
 			h = "(250 / 1080) * SafeZoneH";
 			type = CT_STATIC;
 			style = ST_FRAME;
@@ -154,6 +155,32 @@ class nevDebugMenu {
 			style = ST_CENTER;
 			action = "closeDialog 0; call NEV_fnc_repairVehicle";
 			tooltip = "Repair current vehicle";
+		};
+
+		// A box to write text that will be broadcasted
+		class textBox: RscEdit {
+			idc = 80001;
+			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
+			w = "(100 / 1920) * SafeZoneW";
+			h = "(30 / 1080) * SafeZoneH";
+			type = CT_EDIT;
+			style = ST_LEFT + ST_FRAME;
+			autocomplete = false;
+			tooltip = "Enter text";
+		};
+
+		// A button to execute broadcast
+		class broadcastText: RscButton {
+			text = "Broadcast";
+			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
+			w = "(100 / 1920) * SafeZoneW";
+			h = "(30 / 1080) * SafeZoneH";
+			type = CT_BUTTON;
+			style = ST_CENTER;
+			action = "call NEV_fnc_broadcast";
+			tooltip = "Broadcast entered text";
 		};
 	};
 };

@@ -9,5 +9,6 @@ call compile preprocessFile "\nev_debugMenu\f\NEV_fnc_openZeus.sqf";
 call compile preprocessFile "\nev_debugMenu\f\NEV_fnc_removeDead.sqf";
 call compile preprocessFile "\nev_debugMenu\f\NEV_fnc_teleport.sqf";
 call compile preprocessFile "\nev_debugMenu\f\NEV_fnc_repairVehicle.sqf";
+call compile preprocessFile "\nev_debugMenu\f\NEV_fnc_broadcast.sqf";
 
 player addAction ["<t color='#228B25'>Debug Menu</t>", "call NEV_fnc_openDebugMenu"];
