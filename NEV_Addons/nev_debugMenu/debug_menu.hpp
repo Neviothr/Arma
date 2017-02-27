@@ -142,5 +142,18 @@ class nevDebugMenu {
 			sizeEx = 0.05;
 			text = "Debug Menu";
 		};
+
+		// A button to repair the current vehicle
+		class repairVehicle: RscButton {
+			text = "Repair";
+			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
+			w = "(100 / 1920) * SafeZoneW";
+			h = "(30 / 1080) * SafeZoneH";
+			type = CT_BUTTON;
+			style = ST_CENTER;
+			action = "closeDialog 0; call NEV_fnc_repairVehicle";
+			tooltip = "Repair current vehicle";
+		};
 	};
 };
