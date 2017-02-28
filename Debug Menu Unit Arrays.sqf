@@ -24,3 +24,10 @@
 "rhs_msv_rifleman"
 "rhs_msv_grenadier"
 "rhs_msv_sergeant"
+
+// RHS, USMC, BLUFOR
+"rhsusf_usmc_marpat_wd_riflemanat"
+"rhsusf_usmc_marpat_wd_autorifleman_m249"
+"rhsusf_usmc_marpat_wd_rifleman"
+"rhsusf_usmc_marpat_wd_grenadier"
+"rhsusf_usmc_marpat_wd_squadleader"
