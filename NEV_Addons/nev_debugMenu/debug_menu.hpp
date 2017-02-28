@@ -157,8 +157,8 @@ class nevDebugMenu {
 			tooltip = "Repair current vehicle";
 		};
 
-		// A box to write text that will be broadcasted
-		class textBox: RscEdit {
+		// A box to write text that will be broadcasted (line 1, title)
+		class broadcastTitle: RscEdit {
 			idc = 80001;
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
@@ -167,20 +167,33 @@ class nevDebugMenu {
 			type = CT_EDIT;
 			style = ST_LEFT + ST_FRAME;
 			autocomplete = false;
-			tooltip = "Enter text";
+			tooltip = "Notification title";
+		};
+
+		// A box to write text that will be broadcasted (line 2, description)
+		class broadcastDesc: RscEdit {
+			idc = 80002;
+			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
+			w = "(100 / 1920) * SafeZoneW";
+			h = "(30 / 1080) * SafeZoneH";
+			type = CT_EDIT;
+			style = ST_LEFT + ST_FRAME;
+			autocomplete = false;
+			tooltip = "Notification description";
 		};
 
 		// A button to execute broadcast
 		class broadcastText: RscButton {
 			text = "Broadcast";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
+			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
 			w = "(100 / 1920) * SafeZoneW";
 			h = "(30 / 1080) * SafeZoneH";
 			type = CT_BUTTON;
 			style = ST_CENTER;
 			action = "call NEV_fnc_broadcast";
-			tooltip = "Broadcast entered text";
+			tooltip = "Broadcast notification";
 		};
 	};
 };
