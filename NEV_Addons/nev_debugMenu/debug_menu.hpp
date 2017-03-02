@@ -13,7 +13,8 @@ class RscEdit;
 
 class nevDebugMenu {
 	duration = 99999;
-	idd = 17000;
+	idd = 80000;
+	onLoad = "call NEV_fnc_onLoad";
 	class controls {
 		// A button to open Zeus
 		class zeusButton: RscButton {
@@ -197,3 +198,12 @@ class nevDebugMenu {
 		};
 	};
 };
+
+/* <--150-->
+*
+* /\
+* ||
+* 45
+* ||
+* \/
+*/
