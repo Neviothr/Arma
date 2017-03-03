@@ -196,6 +196,103 @@ class nevDebugMenu {
 			action = "call NEV_fnc_broadcast";
 			tooltip = "Broadcast notification";
 		};
+
+		// A slider to change the overcast value
+		class overcastSlider: RscSlider {
+		    idc = 80003;
+		   	x = "SafeZoneX + (960 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
+			w = "(200 / 1920) * SafeZoneW";
+			h = "(30 / 1080) * SafeZoneH";
+		    type = CT_SLIDER;
+		    style = SL_HORZ;
+		    tooltip = "Change overcast";
+		};
+
+		// A slider to change the lightning value
+		class lightningSlider: RscSlider {
+		    idc = 80004;
+		   	x = "SafeZoneX + (960 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
+			w = "(200 / 1920) * SafeZoneW";
+			h = "(30 / 1080) * SafeZoneH";
+		    type = CT_SLIDER;
+		    style = SL_HORZ;
+		    tooltip = "Change lightning";
+		};
+
+		// A slider to change the fog's value
+		class fogValueSlider: RscSlider {
+		    idc = 80005;
+		   	x = "SafeZoneX + (960 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
+			w = "(200 / 1920) * SafeZoneW";
+			h = "(30 / 1080) * SafeZoneH";
+		    type = CT_SLIDER;
+		    style = SL_HORZ;
+		    tooltip = "Change fog value";
+		};
+
+		// A slider to change the fog's decay value
+		class fogDecaySlider: RscSlider {
+		    idc = 80006;
+		   	x = "SafeZoneX + (960 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
+			w = "(200 / 1920) * SafeZoneW";
+			h = "(30 / 1080) * SafeZoneH";
+		    type = CT_SLIDER;
+		    style = SL_HORZ;
+		    tooltip = "Change fog decay";
+		};
+
+		// A slider to change the fog's base value
+		class fogBaseSlider: RscSlider {
+		    idc = 80007;
+		   	x = "SafeZoneX + (960 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
+			w = "(200 / 1920) * SafeZoneW";
+			h = "(30 / 1080) * SafeZoneH";
+		    type = CT_SLIDER;
+		    style = SL_HORZ;
+		    tooltip = "Change fog base";
+		};
+
+		// A slider to change the rain value
+		class rainSlider: RscSlider {
+		    idc = 80008;
+		   	x = "SafeZoneX + (960 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (510/ 1080) * SafeZoneH";
+			w = "(200 / 1920) * SafeZoneW";
+			h = "(30 / 1080) * SafeZoneH";
+		    type = CT_SLIDER;
+		    style = SL_HORZ;
+		    tooltip = "Change rain";
+		};
+
+		// A slider to change the wave value
+		class waveSlider: RscSlider {
+		    idc = 80009;
+		   	x = "SafeZoneX + (960 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
+			w = "(200 / 1920) * SafeZoneW";
+			h = "(30 / 1080) * SafeZoneH";
+		    type = CT_SLIDER;
+		    style = SL_HORZ;
+		    tooltip = "Change waves";
+		};
+
+		// A button to commit weather changes
+		class commitWeather: RscButton {
+			text = "Change Weather";
+			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
+			w = "(100 / 1920) * SafeZoneW";
+			h = "(30 / 1080) * SafeZoneH";
+			type = CT_BUTTON;
+			style = ST_CENTER;
+			action = "call NEV_fnc_commitWeather";
+			tooltip = "Commit weather changes";
+		};
 	};
 };
 
