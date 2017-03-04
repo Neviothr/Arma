@@ -1,7 +1,9 @@
 NEV_fnc_commitWeather = {
 	// Overcast
 	_overcast = sliderPosition 80003;
+	skipTime -24;
 	86400 setOvercast _overcast;
+	skipTime 24;
 
 	// Lightnings
 	_lightning = sliderPosition 80004;
@@ -21,5 +23,7 @@ NEV_fnc_commitWeather = {
 	_waves = sliderPosition 80009;
 	0 setWaves _waves;
 
+	// Sync
+	simulWeatherSync;
 	forceWeatherChange;
 }

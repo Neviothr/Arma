@@ -200,11 +200,18 @@ class nevDebugMenu {
 		// A slider to change the overcast value
 		class overcastSlider: RscSlider {
 		    idc = 80003;
+		    color[] = {1, 1, 1, 0.4};
+			colorActive[] = {1 ,1, 1, 1};
+			colorDisabled[] = {0.5, 0.5, 0.5, 0.2};
+			arrowEmpty = "\A3\ui_f\data\gui\cfg\slider\arrowEmpty_ca.paa";
+			arrowFull = "\A3\ui_f\data\gui\cfg\slider\arrowFull_ca.paa";
+			border = "\A3\ui_f\data\gui\cfg\slider\border_ca.paa";
+			thumb = "\A3\ui_f\data\gui\cfg\slider\thumb_ca.paa";
 		   	x = "SafeZoneX + (960 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
 			w = "(200 / 1920) * SafeZoneW";
 			h = "(30 / 1080) * SafeZoneH";
-		    type = CT_SLIDER;
+		    type = CT_XSLIDER;
 		    style = SL_HORZ;
 		    tooltip = "Change overcast";
 		};
@@ -212,11 +219,18 @@ class nevDebugMenu {
 		// A slider to change the lightning value
 		class lightningSlider: RscSlider {
 		    idc = 80004;
+		    color[] = {1, 1, 1, 0.4};
+			colorActive[] = {1 ,1, 1, 1};
+			colorDisabled[] = {0.5, 0.5, 0.5, 0.2};
+			arrowEmpty = "\A3\ui_f\data\gui\cfg\slider\arrowEmpty_ca.paa";
+			arrowFull = "\A3\ui_f\data\gui\cfg\slider\arrowFull_ca.paa";
+			border = "\A3\ui_f\data\gui\cfg\slider\border_ca.paa";
+			thumb = "\A3\ui_f\data\gui\cfg\slider\thumb_ca.paa";
 		   	x = "SafeZoneX + (960 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
 			w = "(200 / 1920) * SafeZoneW";
 			h = "(30 / 1080) * SafeZoneH";
-		    type = CT_SLIDER;
+		    type = CT_XSLIDER;
 		    style = SL_HORZ;
 		    tooltip = "Change lightning";
 		};
@@ -224,11 +238,18 @@ class nevDebugMenu {
 		// A slider to change the fog's value
 		class fogValueSlider: RscSlider {
 		    idc = 80005;
+		    color[] = {1, 1, 1, 0.4};
+			colorActive[] = {1 ,1, 1, 1};
+			colorDisabled[] = {0.5, 0.5, 0.5, 0.2};
+			arrowEmpty = "\A3\ui_f\data\gui\cfg\slider\arrowEmpty_ca.paa";
+			arrowFull = "\A3\ui_f\data\gui\cfg\slider\arrowFull_ca.paa";
+			border = "\A3\ui_f\data\gui\cfg\slider\border_ca.paa";
+			thumb = "\A3\ui_f\data\gui\cfg\slider\thumb_ca.paa";
 		   	x = "SafeZoneX + (960 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
 			w = "(200 / 1920) * SafeZoneW";
 			h = "(30 / 1080) * SafeZoneH";
-		    type = CT_SLIDER;
+		    type = CT_XSLIDER;
 		    style = SL_HORZ;
 		    tooltip = "Change fog value";
 		};
@@ -236,11 +257,18 @@ class nevDebugMenu {
 		// A slider to change the fog's decay value
 		class fogDecaySlider: RscSlider {
 		    idc = 80006;
+		    color[] = {1, 1, 1, 0.4};
+			colorActive[] = {1 ,1, 1, 1};
+			colorDisabled[] = {0.5, 0.5, 0.5, 0.2};
+			arrowEmpty = "\A3\ui_f\data\gui\cfg\slider\arrowEmpty_ca.paa";
+			arrowFull = "\A3\ui_f\data\gui\cfg\slider\arrowFull_ca.paa";
+			border = "\A3\ui_f\data\gui\cfg\slider\border_ca.paa";
+			thumb = "\A3\ui_f\data\gui\cfg\slider\thumb_ca.paa";
 		   	x = "SafeZoneX + (960 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
 			w = "(200 / 1920) * SafeZoneW";
 			h = "(30 / 1080) * SafeZoneH";
-		    type = CT_SLIDER;
+		    type = CT_XSLIDER;
 		    style = SL_HORZ;
 		    tooltip = "Change fog decay";
 		};
@@ -248,11 +276,18 @@ class nevDebugMenu {
 		// A slider to change the fog's base value
 		class fogBaseSlider: RscSlider {
 		    idc = 80007;
+		    color[] = {1, 1, 1, 0.4};
+			colorActive[] = {1 ,1, 1, 1};
+			colorDisabled[] = {0.5, 0.5, 0.5, 0.2};
+			arrowEmpty = "\A3\ui_f\data\gui\cfg\slider\arrowEmpty_ca.paa";
+			arrowFull = "\A3\ui_f\data\gui\cfg\slider\arrowFull_ca.paa";
+			border = "\A3\ui_f\data\gui\cfg\slider\border_ca.paa";
+			thumb = "\A3\ui_f\data\gui\cfg\slider\thumb_ca.paa";
 		   	x = "SafeZoneX + (960 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
 			w = "(200 / 1920) * SafeZoneW";
 			h = "(30 / 1080) * SafeZoneH";
-		    type = CT_SLIDER;
+		    type = CT_XSLIDER;
 		    style = SL_HORZ;
 		    tooltip = "Change fog base";
 		};
@@ -260,11 +295,18 @@ class nevDebugMenu {
 		// A slider to change the rain value
 		class rainSlider: RscSlider {
 		    idc = 80008;
+		    color[] = {1, 1, 1, 0.4};
+			colorActive[] = {1 ,1, 1, 1};
+			colorDisabled[] = {0.5, 0.5, 0.5, 0.2};
+			arrowEmpty = "\A3\ui_f\data\gui\cfg\slider\arrowEmpty_ca.paa";
+			arrowFull = "\A3\ui_f\data\gui\cfg\slider\arrowFull_ca.paa";
+			border = "\A3\ui_f\data\gui\cfg\slider\border_ca.paa";
+			thumb = "\A3\ui_f\data\gui\cfg\slider\thumb_ca.paa";
 		   	x = "SafeZoneX + (960 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510/ 1080) * SafeZoneH";
 			w = "(200 / 1920) * SafeZoneW";
 			h = "(30 / 1080) * SafeZoneH";
-		    type = CT_SLIDER;
+		    type = CT_XSLIDER;
 		    style = SL_HORZ;
 		    tooltip = "Change rain";
 		};
@@ -272,11 +314,18 @@ class nevDebugMenu {
 		// A slider to change the wave value
 		class waveSlider: RscSlider {
 		    idc = 80009;
+		    color[] = {1, 1, 1, 0.4};
+			colorActive[] = {1 ,1, 1, 1};
+			colorDisabled[] = {0.5, 0.5, 0.5, 0.2};
+			arrowEmpty = "\A3\ui_f\data\gui\cfg\slider\arrowEmpty_ca.paa";
+			arrowFull = "\A3\ui_f\data\gui\cfg\slider\arrowFull_ca.paa";
+			border = "\A3\ui_f\data\gui\cfg\slider\border_ca.paa";
+			thumb = "\A3\ui_f\data\gui\cfg\slider\thumb_ca.paa";
 		   	x = "SafeZoneX + (960 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
 			w = "(200 / 1920) * SafeZoneW";
 			h = "(30 / 1080) * SafeZoneH";
-		    type = CT_SLIDER;
+		    type = CT_XSLIDER;
 		    style = SL_HORZ;
 		    tooltip = "Change waves";
 		};
