@@ -133,12 +133,12 @@ class nevDebugMenu {
 			tooltip = "Spawn preset group(s)";
 		};
 
-		// A static background image
+		// Note: a static background image
 		class backgroundImg: RscFrame {
 			x = "SafeZoneX + (495 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (255 / 1080) * SafeZoneH";
-			w = "(435 / 1920) * SafeZoneW";
-			h = "(250 / 1080) * SafeZoneH";
+			w = "(680 / 1920) * SafeZoneW";
+			h = "(340 / 1080) * SafeZoneH";
 			type = CT_STATIC;
 			style = ST_FRAME;
 			sizeEx = 0.05;

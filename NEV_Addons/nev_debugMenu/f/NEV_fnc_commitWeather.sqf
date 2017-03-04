@@ -1,9 +1,7 @@
 NEV_fnc_commitWeather = {
-	// Todo, Commit!
 	// Overcast
 	_overcast = sliderPosition 80003;
 	86400 setOvercast _overcast;
-	skipTime 24;
 
 	// Lightnings
 	_lightning = sliderPosition 80004;
