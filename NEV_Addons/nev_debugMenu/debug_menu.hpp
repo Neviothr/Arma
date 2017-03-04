@@ -342,6 +342,74 @@ class nevDebugMenu {
 			action = "call NEV_fnc_commitWeather";
 			tooltip = "Commit weather changes";
 		};
+
+		// Year combo box
+		class yearBox: RscCombo {
+			idc = 80010;
+			x = "SafeZoneX + (1300 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
+			w = "(100 / 1920) * SafeZoneW";
+			h = "(30 / 1080) * SafeZoneH";
+			type = CT_COMBO;
+			style = ST_LEFT;
+		};
+
+		// Month combo box
+		class monthBox: RscCombo {
+			idc = 80011;
+			x = "SafeZoneX + (1300 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
+			w = "(100 / 1920) * SafeZoneW";
+			h = "(30 / 1080) * SafeZoneH";
+			type = CT_COMBO;
+			style = ST_LEFT;
+		};
+
+		// Day combo box
+		class dayBox: RscCombo {
+			idc = 80012;
+			x = "SafeZoneX + (1300 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
+			w = "(100 / 1920) * SafeZoneW";
+			h = "(30 / 1080) * SafeZoneH";
+			type = CT_COMBO;
+			style = ST_LEFT;
+		};
+
+		// Hour combo box
+		class hourBox: RscCombo {
+			idc = 80013;
+			x = "SafeZoneX + (1300 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
+			w = "(100 / 1920) * SafeZoneW";
+			h = "(30 / 1080) * SafeZoneH";
+			type = CT_COMBO;
+			style = ST_LEFT;
+		};
+
+		// Minute combo box
+		class minuteBox: RscCombo {
+			idc = 80014;
+			x = "SafeZoneX + (1300 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
+			w = "(100 / 1920) * SafeZoneW";
+			h = "(30 / 1080) * SafeZoneH";
+			type = CT_COMBO;
+			style = ST_LEFT;
+		};
+
+		// A button to commit time and date changes
+		class commitDate: RscButton {
+			text = "Change date";
+			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
+			w = "(100 / 1920) * SafeZoneW";
+			h = "(30 / 1080) * SafeZoneH";
+			type = CT_BUTTON;
+			style = ST_CENTER;
+			action = "call NEV_fnc_commitDate";
+			tooltip = "Commit time & date changes";
+		};
 	};
 };
 
