@@ -38,7 +38,7 @@ NEV_fnc_onLoad = {
 
 	// Year combo box
 	_yearBox = _dialog displayCtrl 80010;
-	for "_year" from 1982 to 2000 do {
+	for "_year" from 1982 to 2050 do {
 		_yearBox lbAdd str _year;
 	};
 	_yearBox lbSetSelected [(date select 0), true];
