@@ -1,7 +1,7 @@
 NEV_fnc_adminVisible = {
 	player hideObject false;
-	player allowDamage false;
-	player setCaptive true;
+	player allowDamage true;
+	player setCaptive false;
 };
 
 NEV_fnc_adminInvisible = {
