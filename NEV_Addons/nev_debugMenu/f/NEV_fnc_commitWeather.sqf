@@ -28,4 +28,4 @@ NEV_fnc_commitWeather = {
 	// Sync
 	simulWeatherSync;
 	forceWeatherChange;
-}
+};

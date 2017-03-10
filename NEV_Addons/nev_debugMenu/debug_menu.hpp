@@ -435,10 +435,10 @@ class nevDebugMenu {
 			x = "SafeZoneX + (1205 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
 			w = "(100 / 1920) * SafeZoneW";
-			h = "(105 / 1080) * SafeZoneH";
+			h = "(75 / 1080) * SafeZoneH";
 			type = CT_LISTBOX;
 			style = ST_LEFT;
-			tooltip = "Change player side";
+			tooltip = "Change player's side";
 			onLBSelChanged = "[_this select 0, _this select 1] call NEV_fnc_sideChange";
 		};
 	};

@@ -1,5 +1,5 @@
 NEV_fnc_onLoad = {
-	_dialog = _this select 0;
+	params ["_dialog"];
 
 	// Overcast slider
 	_overcastSlider = _dialog displayCtrl 80003;
@@ -86,7 +86,7 @@ NEV_fnc_onLoad = {
 	_sideList lbAdd "West";
 	_sideList lbAdd "Independent";
 	_sideList lbAdd "Civilian";
-	switch (playerSide) do {
+	switch (side group player) do {
 		case east: {
 			_sideList lbSetCurSel 0;
 		};
@@ -100,10 +100,4 @@ NEV_fnc_onLoad = {
 			_sideList lbSetCurSel 3;
 		};
 	};
-
-	// Dummy side HQs for side list box
-	_eastHQ = createCenter east;
-	_westHQ = createCenter west;
-	_indHQ = createCenter resistance;
-	_civHQ = createCenter civilian;
-}
+};

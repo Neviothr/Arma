@@ -6,4 +6,4 @@ NEV_fnc_commitDate = {
 	_minute = lbCurSel 80014;
 
 	setDate [_year, _month, _day, _hour, _minute];
-}
+};

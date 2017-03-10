@@ -7,4 +7,4 @@ NEV_fnc_spawnGroup = {
 	};
 	systemChat format ["Created %1 groups", _i];
 	call NEV_fnc_aggressiveAI;
-}
+};

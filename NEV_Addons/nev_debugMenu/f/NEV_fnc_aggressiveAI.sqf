@@ -9,4 +9,4 @@ NEV_fnc_aggressiveAI = {
 		_x setSkill ["aimingAccuracy", 0.03];
 		_x reveal player;
 	} forEach allUnits;
-}
+};

@@ -1,6 +1,6 @@
 NEV_fnc_sideChange = {
-	_control = _this select 0;
-	_index = _this select 1;
+	params ["_control", "_index"];
+	private ["_dummySide", "_dummyGroup"];
 
 	switch (_index) do {
 		case 0: {
@@ -19,4 +19,4 @@ NEV_fnc_sideChange = {
 
 	_dummyGroup = createGroup _dummySide;
 	[player] joinSilent _dummyGroup;
-}
+};
