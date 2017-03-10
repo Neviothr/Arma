@@ -171,6 +171,15 @@ class nevDebugMenu {
 			tooltip = "Notification title";
 		};
 
+		// "Title" text
+		class titleText: RscText {
+			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (266 / 1080) * SafeZoneH";
+			type = CT_STATIC;
+			style = ST_LEFT;
+			text = "Title:";
+		};
+
 		// A box to write text that will be broadcasted (line 2, description)
 		class broadcastDesc: RscEdit {
 			idc = 80002;
@@ -182,6 +191,15 @@ class nevDebugMenu {
 			style = ST_LEFT + ST_FRAME;
 			autocomplete = false;
 			tooltip = "Notification description";
+		};
+
+		// "Description" text
+		class descriptionText: RscText {
+			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (311 / 1080) * SafeZoneH";
+			type = CT_STATIC;
+			style = ST_LEFT;
+			text = "Description:";
 		};
 
 		// A button to execute broadcast
@@ -216,6 +234,15 @@ class nevDebugMenu {
 		    tooltip = "Change overcast";
 		};
 
+		// "Overcast" text
+		class overcastText: RscText {
+			x = "SafeZoneX + (960 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (241 / 1080) * SafeZoneH";
+			type = CT_STATIC;
+			style = ST_LEFT;
+			text = "Overcast:";
+		};
+
 		// A slider to change the lightning value
 		class lightningSlider: RscSlider {
 		    idc = 80004;
@@ -233,6 +260,15 @@ class nevDebugMenu {
 		    type = CT_XSLIDER;
 		    style = SL_HORZ;
 		    tooltip = "Change lightning";
+		};
+
+		// "Lightning" text
+		class lightningText: RscText {
+			x = "SafeZoneX + (960 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (311 / 1080) * SafeZoneH";
+			type = CT_STATIC;
+			style = ST_LEFT;
+			text = "Lightnings:";
 		};
 
 		// A slider to change the fog's value
@@ -254,6 +290,15 @@ class nevDebugMenu {
 		    tooltip = "Change fog value";
 		};
 
+		// "Fog value:" text
+		class fogValueText: RscText {
+			x = "SafeZoneX + (960 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (356 / 1080) * SafeZoneH";
+			type = CT_STATIC;
+			style = ST_LEFT;
+			text = "Fog value:";
+		};
+
 		// A slider to change the fog's decay value
 		class fogDecaySlider: RscSlider {
 		    idc = 80006;
@@ -271,6 +316,15 @@ class nevDebugMenu {
 		    type = CT_XSLIDER;
 		    style = SL_HORZ;
 		    tooltip = "Change fog decay";
+		};
+
+		// "Fog decay" text
+		class fogDecayText: RscText {
+			x = "SafeZoneX + (960 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (401 / 1080) * SafeZoneH";
+			type = CT_STATIC;
+			style = ST_LEFT;
+			text = "Fog decay:";
 		};
 
 		// A slider to change the fog's base value
@@ -292,6 +346,15 @@ class nevDebugMenu {
 		    tooltip = "Change fog base";
 		};
 
+		// "Fog base" text
+		class fogBaseText: RscText {
+			x = "SafeZoneX + (960 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (446 / 1080) * SafeZoneH";
+			type = CT_STATIC;
+			style = ST_LEFT;
+			text = "Fog base:";
+		};
+
 		// A slider to change the rain value
 		class rainSlider: RscSlider {
 		    idc = 80008;
@@ -311,6 +374,15 @@ class nevDebugMenu {
 		    tooltip = "Change rain";
 		};
 
+		// "Rain" text
+		class rainText: RscText {
+			x = "SafeZoneX + (960 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (491 / 1080) * SafeZoneH";
+			type = CT_STATIC;
+			style = ST_LEFT;
+			text = "Rain:";
+		};
+
 		// A slider to change the wave value
 		class waveSlider: RscSlider {
 		    idc = 80009;
@@ -328,6 +400,15 @@ class nevDebugMenu {
 		    type = CT_XSLIDER;
 		    style = SL_HORZ;
 		    tooltip = "Change waves";
+		};
+
+		// "Wave" text
+		class waveText: RscText {
+			x = "SafeZoneX + (960 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (536 / 1080) * SafeZoneH";
+			type = CT_STATIC;
+			style = ST_LEFT;
+			text = "Waves:";
 		};
 
 		// A button to commit weather changes
@@ -355,6 +436,15 @@ class nevDebugMenu {
 			tooltip = "Change year";
 		};
 
+		// "Year" text
+		class yearText: RscText {
+			x = "SafeZoneX + (1205 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (266 / 1080) * SafeZoneH";
+			type = CT_STATIC;
+			style = ST_LEFT;
+			text = "Year:";
+		};
+
 		// Month combo box
 		class monthBox: RscCombo {
 			idc = 80011;
@@ -365,6 +455,15 @@ class nevDebugMenu {
 			type = CT_COMBO;
 			style = ST_LEFT;
 			tooltip = "Change month";
+		};
+
+		// "Month" text
+		class monthText: RscText {
+			x = "SafeZoneX + (1205 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (311 / 1080) * SafeZoneH";
+			type = CT_STATIC;
+			style = ST_LEFT;
+			text = "Month:";
 		};
 
 		// Day combo box
@@ -379,6 +478,15 @@ class nevDebugMenu {
 			tooltip = "Change day";
 		};
 
+		// "Day" text
+		class dayText: RscText {
+			x = "SafeZoneX + (1205 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (356 / 1080) * SafeZoneH";
+			type = CT_STATIC;
+			style = ST_LEFT;
+			text = "Day:";
+		};
+
 		// Hour combo box
 		class hourBox: RscCombo {
 			idc = 80013;
@@ -391,6 +499,15 @@ class nevDebugMenu {
 			tooltip = "Change hour";
 		};
 
+		// "Hour" text
+		class hourText: RscText {
+			x = "SafeZoneX + (1205 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (401 / 1080) * SafeZoneH";
+			type = CT_STATIC;
+			style = ST_LEFT;
+			text = "Hour:";
+		};
+
 		// Minute combo box
 		class minuteBox: RscCombo {
 			idc = 80014;
@@ -401,6 +518,15 @@ class nevDebugMenu {
 			type = CT_COMBO;
 			style = ST_LEFT;
 			tooltip = "Change minute"
+		};
+
+		// "Minutes" text
+		class minutesText: RscText {
+			x = "SafeZoneX + (1205 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (446 / 1080) * SafeZoneH";
+			type = CT_STATIC;
+			style = ST_LEFT;
+			text = "Minutes:";
 		};
 
 		// A button to commit time and date changes
@@ -442,6 +568,15 @@ class nevDebugMenu {
 			onLBSelChanged = "[_this select 0, _this select 1] call NEV_fnc_sideChange";
 		};
 
+		// "Side" text
+		class sideText: RscText {
+			x = "SafeZoneX + (1205 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (491 / 1080) * SafeZoneH";
+			type = CT_STATIC;
+			style = ST_LEFT;
+			text = "Side:";
+		};
+
 		// A button to repair the current vehicle
 		class adminVisible: RscButton {
 			text = "Visible";
@@ -470,11 +605,15 @@ class nevDebugMenu {
 	};
 };
 
-/* <--150-->
+/* <--150--> Horizontal distance between elements
 *
 * /\
 * ||
-* 45
+* 45 Vertrical distance between elements
 * ||
 * \/
+*
+* /\
+* ||
+* 19 The y variable of text elements is -19 of the main element
 */
