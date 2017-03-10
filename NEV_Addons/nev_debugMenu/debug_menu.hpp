@@ -237,7 +237,7 @@ class nevDebugMenu {
 		// "Overcast" text
 		class overcastText: RscText {
 			x = "SafeZoneX + (960 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (241 / 1080) * SafeZoneH";
+			y = "SafeZoneY + (261 / 1080) * SafeZoneH";
 			type = CT_STATIC;
 			style = ST_LEFT;
 			text = "Overcast:";
