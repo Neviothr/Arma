@@ -15,5 +15,6 @@ call compile preprocessFile "\nev_debugMenu\f\NEV_fnc_commitWeather.sqf";
 call compile preprocessFile "\nev_debugMenu\f\NEV_fnc_commitDate.sqf";
 call compile preprocessFile "\nev_debugMenu\f\NEV_fnc_nearestObjects.sqf";
 call compile preprocessFile "\nev_debugMenu\f\NEV_fnc_sideChange.sqf";
+call compile preprocessFile "\nev_debugMenu\f\NEV_fnc_visibility.sqf";
 
 player addAction ["<t color='#228B25'>Debug Menu</t>", "call NEV_fnc_openDebugMenu"];

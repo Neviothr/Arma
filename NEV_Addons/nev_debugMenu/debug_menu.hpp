@@ -441,6 +441,32 @@ class nevDebugMenu {
 			tooltip = "Change player's side";
 			onLBSelChanged = "[_this select 0, _this select 1] call NEV_fnc_sideChange";
 		};
+
+		// A button to repair the current vehicle
+		class adminVisible: RscButton {
+			text = "Visible";
+			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
+			w = "(100 / 1920) * SafeZoneW";
+			h = "(30 / 1080) * SafeZoneH";
+			type = CT_BUTTON;
+			style = ST_CENTER;
+			action = "call NEV_fnc_adminVisible";
+			tooltip = "Make admin visible";
+		};
+
+		// A button to repair the current vehicle
+		class adminInvisible: RscButton {
+			text = "Invisible";
+			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
+			w = "(100 / 1920) * SafeZoneW";
+			h = "(30 / 1080) * SafeZoneH";
+			type = CT_BUTTON;
+			style = ST_CENTER;
+			action = "call NEV_fnc_adminInvisible";
+			tooltip = "Make admin invisible";
+		};
 	};
 };
 
