@@ -138,7 +138,7 @@ class nevDebugMenu {
 			x = "SafeZoneX + (495 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (255 / 1080) * SafeZoneH";
 			w = "(830 / 1920) * SafeZoneW";
-			h = "(340 / 1080) * SafeZoneH";
+			h = "(500 / 1080) * SafeZoneH";
 			type = CT_STATIC;
 			style = ST_FRAME;
 			sizeEx = 0.05;
@@ -414,6 +414,32 @@ class nevDebugMenu {
 			style = ST_CENTER;
 			action = "call NEV_fnc_commitDate";
 			tooltip = "Commit time & date changes";
+		};
+
+		// A button to return all objects within a radius of 50m
+		class nearestObjects: RscButton {
+			text = "Nearset Objs";
+			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
+			w = "(100 / 1920) * SafeZoneW";
+			h = "(30 / 1080) * SafeZoneH";
+			type = CT_BUTTON;
+			style = ST_CENTER;
+			action = "call NEV_fnc_nearestObjects";
+			tooltip = "Return a list of objects within 50m";
+		};
+
+		// Side list box
+		class sideList: RscListbox {
+			idc = 80015;
+			x = "SafeZoneX + (1205 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
+			w = "(100 / 1920) * SafeZoneW";
+			h = "(105 / 1080) * SafeZoneH";
+			type = CT_LISTBOX;
+			style = ST_LEFT;
+			tooltip = "Change player side";
+			onLBSelChanged = "[_this select 0, _this select 1] call NEV_fnc_sideChange";
 		};
 	};
 };

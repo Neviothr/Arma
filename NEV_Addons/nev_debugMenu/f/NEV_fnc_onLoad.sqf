@@ -79,4 +79,31 @@ NEV_fnc_onLoad = {
 		_minuteBox lbAdd str _minute;
 	};
 	_minuteBox lbSetSelected [(date select 4), true];
+
+	// Side list box
+	_sideList = _dialog displayCtrl 80015;
+	_sideList lbAdd "East";
+	_sideList lbAdd "West";
+	_sideList lbAdd "Independent";
+	_sideList lbAdd "Civilian";
+	switch (playerSide) do {
+		case east: {
+			_sideList lbSetCurSel 0;
+		};
+		case west: {
+			_sideList lbSetCurSel 1;
+		};
+		case resistance: {
+			_sideList lbSetCurSel 2;
+		};
+		case civilian: {
+			_sideList lbSetCurSel 3;
+		};
+	};
+
+	// Dummy side HQs for side list box
+	_eastHQ = createCenter east;
+	_westHQ = createCenter west;
+	_indHQ = createCenter resistance;
+	_civHQ = createCenter civilian;
 }

@@ -2,7 +2,9 @@ NEV_fnc_commitWeather = {
 	// Overcast
 	_overcast = sliderPosition 80003;
 	skipTime -24;
+	sleep 0.1;
 	86400 setOvercast _overcast;
+	sleep 0.1;
 	skipTime 24;
 
 	// Lightnings
