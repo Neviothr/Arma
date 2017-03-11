@@ -178,6 +178,7 @@ class nevDebugMenu {
 			type = CT_STATIC;
 			style = ST_LEFT;
 			text = "Title:";
+			sizeEx = 0.035;
 		};
 
 		// A box to write text that will be broadcasted (line 2, description)
@@ -200,6 +201,7 @@ class nevDebugMenu {
 			type = CT_STATIC;
 			style = ST_LEFT;
 			text = "Description:";
+			sizeEx = 0.035;
 		};
 
 		// A button to execute broadcast
@@ -241,6 +243,7 @@ class nevDebugMenu {
 			type = CT_STATIC;
 			style = ST_LEFT;
 			text = "Overcast:";
+			sizeEx = 0.035;
 		};
 
 		// A slider to change the lightning value
@@ -269,6 +272,7 @@ class nevDebugMenu {
 			type = CT_STATIC;
 			style = ST_LEFT;
 			text = "Lightnings:";
+			sizeEx = 0.035;
 		};
 
 		// A slider to change the fog's value
@@ -297,6 +301,7 @@ class nevDebugMenu {
 			type = CT_STATIC;
 			style = ST_LEFT;
 			text = "Fog value:";
+			sizeEx = 0.035;
 		};
 
 		// A slider to change the fog's decay value
@@ -325,6 +330,7 @@ class nevDebugMenu {
 			type = CT_STATIC;
 			style = ST_LEFT;
 			text = "Fog decay:";
+			sizeEx = 0.035;
 		};
 
 		// A slider to change the fog's base value
@@ -353,6 +359,7 @@ class nevDebugMenu {
 			type = CT_STATIC;
 			style = ST_LEFT;
 			text = "Fog base:";
+			sizeEx = 0.035;
 		};
 
 		// A slider to change the rain value
@@ -381,6 +388,7 @@ class nevDebugMenu {
 			type = CT_STATIC;
 			style = ST_LEFT;
 			text = "Rain:";
+			sizeEx = 0.035;
 		};
 
 		// A slider to change the wave value
@@ -409,6 +417,7 @@ class nevDebugMenu {
 			type = CT_STATIC;
 			style = ST_LEFT;
 			text = "Waves:";
+			sizeEx = 0.035;
 		};
 
 		// A button to commit weather changes
@@ -443,6 +452,7 @@ class nevDebugMenu {
 			type = CT_STATIC;
 			style = ST_LEFT;
 			text = "Year:";
+			sizeEx = 0.035;
 		};
 
 		// Month combo box
@@ -464,6 +474,7 @@ class nevDebugMenu {
 			type = CT_STATIC;
 			style = ST_LEFT;
 			text = "Month:";
+			sizeEx = 0.035;
 		};
 
 		// Day combo box
@@ -485,6 +496,7 @@ class nevDebugMenu {
 			type = CT_STATIC;
 			style = ST_LEFT;
 			text = "Day:";
+			sizeEx = 0.035;
 		};
 
 		// Hour combo box
@@ -506,6 +518,7 @@ class nevDebugMenu {
 			type = CT_STATIC;
 			style = ST_LEFT;
 			text = "Hour:";
+			sizeEx = 0.035;
 		};
 
 		// Minute combo box
@@ -527,6 +540,7 @@ class nevDebugMenu {
 			type = CT_STATIC;
 			style = ST_LEFT;
 			text = "Minutes:";
+			sizeEx = 0.035;
 		};
 
 		// A button to commit time and date changes
@@ -575,6 +589,7 @@ class nevDebugMenu {
 			type = CT_STATIC;
 			style = ST_LEFT;
 			text = "Side:";
+			sizeEx = 0.035;
 		};
 
 		// A button to repair the current vehicle
@@ -606,14 +621,14 @@ class nevDebugMenu {
 };
 
 /* <--150--> Horizontal distance between elements
-*
-* /\
-* ||
-* 45 Vertrical distance between elements
-* ||
-* \/
-*
-* /\
-* ||
-* 19 The y variable of text elements is -19 of the main element
+
+/\
+||
+45 Vertrical distance between elements
+||
+\/
+
+/\
+||
+19 The y variable of text elements is -19 of the main element
 */
