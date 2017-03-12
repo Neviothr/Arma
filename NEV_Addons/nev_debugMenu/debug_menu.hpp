@@ -540,6 +540,15 @@ class nevDebugMenu {
 			action = "call NEV_fnc_adminInvisible";
 			tooltip = "Make admin invisible";
 		};
+
+		// A button to open the virtual garage
+		class virtualGarage: NevRscButton {
+			text = "Virtual Garage";
+			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
+			action = "call NEV_fnc_openGarage";
+			tooltip = "Open the virtual garage";
+		};
 	};
 };
 
