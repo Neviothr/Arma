@@ -1,7 +1,3 @@
-///////////////////////////////////////////////////////////////////////////
-/// Styles
-///////////////////////////////////////////////////////////////////////////
-
 // Control types
 #define CT_STATIC           0
 #define CT_BUTTON           1
@@ -91,3 +87,25 @@
 #define MB_BUTTON_OK      1
 #define MB_BUTTON_CANCEL  2
 #define MB_BUTTON_USER    4
+
+// Rsc classes
+class RscPicture;
+class RscFrame;
+class RscText;
+class RscListbox;
+class RscControlsGroup;
+class RscCombo;
+class RscButton;
+class RscStructuredText;
+class RscButtonMenu;
+class RscSlider;
+class IGUIBack;
+class RscEdit;
+
+// Nev button
+class NevRscButton: RscButton {
+	type = CT_BUTTON;
+	style = ST_CENTER;
+	w = "(100 / 1920) * SafeZoneW";
+	h = "(30 / 1080) * SafeZoneH";
+};

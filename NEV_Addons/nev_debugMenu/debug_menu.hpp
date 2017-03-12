@@ -1,134 +1,85 @@
-class RscPicture;
-class RscFrame;
-class RscText;
-class RscListbox;
-class RscControlsGroup;
-class RscCombo;
-class RscButton;
-class RscStructuredText;
-class RscButtonMenu;
-class RscSlider;
-class IGUIBack;
-class RscEdit;
-
 class nevDebugMenu {
 	duration = 99999;
 	idd = 80000;
 	onLoad = "call NEV_fnc_onLoad";
 	class controls {
 		// A button to open Zeus
-		class zeusButton: RscButton {
+		class zeusButton: NevRscButton {
 			text = "Open Zeus";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
-			w = "(100 / 1920) * SafeZoneW";
-			h = "(30 / 1080) * SafeZoneH";
-			type = CT_BUTTON;
-			style = ST_CENTER;
 			action = "closeDialog 0; call NEV_fnc_openZeus";
 			tooltip = "Open the Zeus curator interface";
 		};
 
 		// A button to open the virtual aresnal
-		class virtualArsenalButton: RscButton {
+		class virtualArsenalButton: NevRscButton {
 			text = "Virtual arsenal";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-			w = "(100 / 1920) * SafeZoneW";
-			h = "(30 / 1080) * SafeZoneH";
-			type = CT_BUTTON;
-			style = ST_CENTER;
 			action = "closeDialog 0; [""Open"", true] spawn BIS_fnc_arsenal";
 			tooltip = "Open the BIS virtual aresnal";
 		};
 
 		// A button to use a teleportion function
-		class teleportButton: RscButton {
+		class teleportButton: NevRscButton {
 			text = "Teleport";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
-			w = "(100 / 1920) * SafeZoneW";
-			h = "(30 / 1080) * SafeZoneH";
-			type = CT_BUTTON;
-			style = ST_CENTER;
 			action = "closeDialog 0; call NEV_fnc_teleport";
 			tooltip = "Teleport on map click";
 		};
 
 		// A button to open the BI debug console
-		class debugConsoleButton: RscButton {
+		class debugConsoleButton: NevRscButton {
 			text = "Debug console";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
-			w = "(100 / 1920) * SafeZoneW";
-			h = "(30 / 1080) * SafeZoneH";
-			type = CT_BUTTON;
-			style = ST_CENTER;
 			action = "closeDialog 0; createDialog ""RscDisplayDebugPublic""";
 			tooltip = "Open the BIS debug console";
 		};
 
 		// A button to add all units and vehicles to Zeus
-		class addUnitsToZeusButton: RscButton {
+		class addUnitsToZeusButton: NevRscButton {
 			text = "Add to zeus";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
-			w = "(100 / 1920) * SafeZoneW";
-			h = "(30 / 1080) * SafeZoneH";
-			type = CT_BUTTON;
-			style = ST_CENTER;
 			action = "closeDialog 0; call NEV_fnc_addToZeus";
 			tooltip = "Make all units Zeus editable";
 		};
 
 		// A button to make units aggressive
-		class makeUnitsAggressive: RscButton {
+		class makeUnitsAggressive: NevRscButton {
 			text = "Aggressive AI";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
-			w = "(100 / 1920) * SafeZoneW";
-			h = "(30 / 1080) * SafeZoneH";
-			type = CT_BUTTON;
-			style = ST_CENTER;
 			action = "closeDialog 0; call NEV_fnc_aggressiveAI";
 			tooltip = "Give AI aggressive behavior";
 		};
 
 		// A button to remove add dead AI units and vehicles
-		class removeDead: RscButton {
+		class removeDead: NevRscButton {
 			text = "Remove dead";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-			w = "(100 / 1920) * SafeZoneW";
-			h = "(30 / 1080) * SafeZoneH";
-			type = CT_BUTTON;
-			style = ST_CENTER;
 			action = "closeDialog 0; call NEV_fnc_removeDead";
 			tooltip = "Delete all dead units and vehicles";
 		};
 
 		// A button garrison all units
-		class garrisonUnits: RscButton {
+		class garrisonUnits: NevRscButton {
 			text = "Garrison";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
-			w = "(100 / 1920) * SafeZoneW";
-			h = "(30 / 1080) * SafeZoneH";
-			type = CT_BUTTON;
-			style = ST_CENTER;
 			action = "closeDialog 0; call NEV_fnc_garrison";
 			tooltip = "Call CBA's garrison function on all present units";
 		};
 
 		// A button to spawn a group of set units
-		class spawnGroup: RscButton {
+		class spawnGroup: NevRscButton {
 			text = "Spawn group(s)";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
-			w = "(100 / 1920) * SafeZoneW";
-			h = "(30 / 1080) * SafeZoneH";
-			type = CT_BUTTON;
-			style = ST_CENTER;
 			action = "call NEV_fnc_spawnGroup";
 			tooltip = "Spawn preset group(s)";
 		};
@@ -146,14 +97,10 @@ class nevDebugMenu {
 		};
 
 		// A button to repair the current vehicle
-		class repairVehicle: RscButton {
+		class repairVehicle: NevRscButton {
 			text = "Repair";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
-			w = "(100 / 1920) * SafeZoneW";
-			h = "(30 / 1080) * SafeZoneH";
-			type = CT_BUTTON;
-			style = ST_CENTER;
 			action = "closeDialog 0; call NEV_fnc_repairVehicle";
 			tooltip = "Repair current vehicle";
 		};
@@ -205,14 +152,10 @@ class nevDebugMenu {
 		};
 
 		// A button to execute broadcast
-		class broadcastText: RscButton {
+		class broadcastText: NevRscButton {
 			text = "Broadcast";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-			w = "(100 / 1920) * SafeZoneW";
-			h = "(30 / 1080) * SafeZoneH";
-			type = CT_BUTTON;
-			style = ST_CENTER;
 			action = "call NEV_fnc_broadcast";
 			tooltip = "Broadcast notification";
 		};
@@ -421,14 +364,10 @@ class nevDebugMenu {
 		};
 
 		// A button to commit weather changes
-		class commitWeather: RscButton {
+		class commitWeather: NevRscButton {
 			text = "Change Weather";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
-			w = "(100 / 1920) * SafeZoneW";
-			h = "(30 / 1080) * SafeZoneH";
-			type = CT_BUTTON;
-			style = ST_CENTER;
 			action = "call NEV_fnc_commitWeather";
 			tooltip = "Commit weather changes";
 		};
@@ -544,27 +483,19 @@ class nevDebugMenu {
 		};
 
 		// A button to commit time and date changes
-		class commitDate: RscButton {
+		class commitDate: NevRscButton {
 			text = "Change date";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
-			w = "(100 / 1920) * SafeZoneW";
-			h = "(30 / 1080) * SafeZoneH";
-			type = CT_BUTTON;
-			style = ST_CENTER;
 			action = "call NEV_fnc_commitDate";
 			tooltip = "Commit time & date changes";
 		};
 
 		// A button to return all objects within a radius of 50m
-		class nearestObjects: RscButton {
+		class nearestObjects: NevRscButton {
 			text = "Nearset Objs";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
-			w = "(100 / 1920) * SafeZoneW";
-			h = "(30 / 1080) * SafeZoneH";
-			type = CT_BUTTON;
-			style = ST_CENTER;
 			action = "call NEV_fnc_nearestObjects";
 			tooltip = "Return a list of objects within 50m";
 		};
@@ -593,27 +524,19 @@ class nevDebugMenu {
 		};
 
 		// A button to repair the current vehicle
-		class adminVisible: RscButton {
+		class adminVisible: NevRscButton {
 			text = "Visible";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
-			w = "(100 / 1920) * SafeZoneW";
-			h = "(30 / 1080) * SafeZoneH";
-			type = CT_BUTTON;
-			style = ST_CENTER;
 			action = "call NEV_fnc_adminVisible";
 			tooltip = "Make admin visible";
 		};
 
 		// A button to repair the current vehicle
-		class adminInvisible: RscButton {
+		class adminInvisible: NevRscButton {
 			text = "Invisible";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
-			w = "(100 / 1920) * SafeZoneW";
-			h = "(30 / 1080) * SafeZoneH";
-			type = CT_BUTTON;
-			style = ST_CENTER;
 			action = "call NEV_fnc_adminInvisible";
 			tooltip = "Make admin invisible";
 		};
