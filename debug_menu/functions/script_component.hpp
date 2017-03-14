@@ -1,0 +1,1 @@
+#include "NEV_Addons\addons\debug_menu\script_component.hpp"
