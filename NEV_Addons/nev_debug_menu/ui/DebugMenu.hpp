@@ -390,7 +390,7 @@ class nev_debug_menu {
 			h = "(30 / 1080) * SafeZoneH";
 			type = CT_COMBO;
 			style = ST_LEFT;
-			tooltip = "Change minute"
+			tooltip = "Change minute";
 		};
 
 		// "Minutes" text
