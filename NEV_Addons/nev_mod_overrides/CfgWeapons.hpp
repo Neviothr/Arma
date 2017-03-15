@@ -653,7 +653,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				begin1[] = {"nev_mod_overrides\sound\m4_s1.wss",1,1,1200};
-				begin2[] = {"nev_mod_overrides\sound\m4_s2.wss",1,1,1200}
+				begin2[] = {"nev_mod_overrides\sound\m4_s2.wss",1,1,1200};
 				begin3[] = {"nev_mod_overrides\sound\m4_s3.wss",1,1,1200};
 				begin4[] = {"nev_mod_overrides\sound\m4_s4.wss",1,1,1200};
 				soundBegin[] = {"begin1",0.25,"begin2",0.25,"begin3",0.25,"begin4",0.25};
