@@ -289,7 +289,7 @@ class nev_debug_menu {
 			text = "Change Weather";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
-			action = "call NEV_fnc_commitWeather";
+			action = "call fnc_commitWeather";
 			tooltip = "Commit weather changes";
 		};
 
@@ -408,7 +408,7 @@ class nev_debug_menu {
 			text = "Change date";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
-			action = "call NEV_fnc_commitDate";
+			action = "call fnc_commitDate";
 			tooltip = "Commit time & date changes";
 		};
 
@@ -417,7 +417,7 @@ class nev_debug_menu {
 			text = "Nearset Objs";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
-			action = "call NEV_fnc_nearestObjects";
+			action = "call fnc_nearestObjects";
 			tooltip = "Return a list of objects within 50m";
 		};
 
@@ -431,7 +431,7 @@ class nev_debug_menu {
 			type = CT_LISTBOX;
 			style = ST_LEFT;
 			tooltip = "Change player's side";
-			onLBSelChanged = "[_this select 0, _this select 1] call NEV_fnc_sideChange";
+			onLBSelChanged = "[_this select 0, _this select 1] call fnc_sideChange";
 		};
 
 		// "Side" text
@@ -449,7 +449,7 @@ class nev_debug_menu {
 			text = "Visible";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
-			action = "call NEV_fnc_adminVisible";
+			action = "call fnc_adminVisible";
 			tooltip = "Make admin visible";
 		};
 
@@ -458,7 +458,7 @@ class nev_debug_menu {
 			text = "Invisible";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
-			action = "call NEV_fnc_adminInvisible";
+			action = "call fnc_adminInvisible";
 			tooltip = "Make admin invisible";
 		};
 
@@ -467,7 +467,7 @@ class nev_debug_menu {
 			text = "Virtual Garage";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
-			action = "call NEV_fnc_openGarage";
+			action = "call fnc_openGarage";
 			tooltip = "Open the virtual garage";
 		};
 	};

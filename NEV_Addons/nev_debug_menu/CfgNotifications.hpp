@@ -1,5 +1,5 @@
 class CfgNotifications {
-	class nevMessage {
+	class nev_notification {
 		title = "%1";
 		iconPicture = "";
 		iconText = "";

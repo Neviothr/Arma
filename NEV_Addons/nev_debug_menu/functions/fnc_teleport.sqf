@@ -1,6 +1,6 @@
 fnc_teleport = {
 
-	["nev_notification", ["MAP TELEPORT", "Click on the location to which you'd like to be teleported."], 10] call bis_fnc_showNotification;
+	["nev_notification", ["MAP TELEPORT", "Click on the location to which you'd like to be teleported."]] call bis_fnc_showNotification;
 
 	openMap true;
 	["nev_mapTeleport", "onMapSingleClick", {
