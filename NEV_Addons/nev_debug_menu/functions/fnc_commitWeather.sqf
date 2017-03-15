@@ -1,12 +1,10 @@
-NEV_fnc_commitWeather = {
+fnc_commitWeather = {
 	private ["_overcast", "_lightning", "_fogValue", "_fogDecay", "_fogBase", "_rain", "_waves"];
 
 	// Overcast
 	_overcast = sliderPosition 80003;
 	skipTime -24;
-	sleep 0.1;
 	86400 setOvercast _overcast;
-	sleep 0.1;
 	skipTime 24;
 
 	// Lightnings

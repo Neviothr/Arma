@@ -1,4 +1,4 @@
-NEV_fnc_nearestObjects = {
+fnc_nearestObjects = {
 	private _objList = [];
 
 	{
