@@ -289,7 +289,7 @@ class nev_debug_menu {
 			text = "Change Weather";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
-			action = "call fnc_commitWeather";
+			action = "[] spawn fnc_commitWeather";
 			tooltip = "Commit weather changes";
 		};
 
@@ -469,6 +469,24 @@ class nev_debug_menu {
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
 			action = "call fnc_openGarage";
 			tooltip = "Open the virtual garage";
+		};
+
+		// A button to turn on safe start
+		class safeStartOn: NevRscButton {
+			text = "SafeStart On";
+			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
+			action = "[] spawn fnc_safeStartOn";
+			tooltip = "Enable SafeStart";
+		};
+
+		// A button to turn off safe start
+		class safeStartOff: NevRscButton {
+			text = "SafeStart Off";
+			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
+			action = "[] spawn fnc_safeStartOff";
+			tooltip = "Disable SafeStart";
 		};
 	};
 };
