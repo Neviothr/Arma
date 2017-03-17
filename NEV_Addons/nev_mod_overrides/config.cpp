@@ -8,8 +8,12 @@ class CfgPatches {
 	};
 };
 
-// Ambient sound remover from MBG_Nam
-#include "CfgWorlds.hpp"
+// Ambient sound remover from MBG_Nam, if MBG_Nam_c is present - load modified config
+#ifdef MBG_Nam_C
+	#include "CfgWorlds.hpp"
+#endif
 
-// RH M4/M16 sound and zoom replacement
-#include "CfgWeapons.hpp"
+// RH M4/M16 sound and zoom replacement, if RH_m4_cfg is present - load modified config
+#ifdef RH_m4_cfg
+	#include "CfgWeapons.hpp"
+#endif
