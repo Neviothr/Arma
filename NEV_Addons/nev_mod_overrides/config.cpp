@@ -12,10 +12,4 @@ class CfgPatches {
 #include "CfgWorlds.hpp"
 
 // RH M4/M16 sound and zoom replacement
-#include "CfgRecoils.hpp"
-#include "CfgAmmo.hpp"
-#include "CfgMagazines.hpp"
 #include "CfgWeapons.hpp"
-#include "CfgVehicles.hpp"
-#include "CfgCloudlets.hpp"
-#include "CfgRhMisc.hpp"
