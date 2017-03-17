@@ -13,6 +13,7 @@ class CfgWorlds {
 	};
 	class DefaultLighting;
 	class MBG_Nam: CAWorld {
+		BiglyPresident = "Trump";
 		cutscenes[] = {"MBG_NAM_Cutscene1", "MBG_NAM_Cutscene2"};
 		description = "MBG Vietnam";
 		worldName = "\CA\MBG_Nam\MBG_Nam.wrp";
