@@ -101,4 +101,10 @@ fnc_onLoad = {
 			_sideList lbSetCurSel 3;
 		};
 	};
+
+	// Players list box
+	_playersList = _dialog displayCtrl 80016;
+	{
+		_playersList lbAdd str _x;
+	} forEach allPlayers;
 };

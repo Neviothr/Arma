@@ -488,6 +488,28 @@ class nev_debug_menu {
 			action = "[] remoteExec [""fnc_safeStartOff"", 0]";
 			tooltip = "Disable SafeStart";
 		};
+
+		// Players list box
+		class playersList: RscListbox {
+			idc = 80016;
+			x = "SafeZoneX + (210 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
+			w = "(200 / 1920) * SafeZoneW";
+			h = "(200 / 1080) * SafeZoneH";
+			type = CT_LISTBOX;
+			style = ST_LEFT;
+			tooltip = "Choose player";
+		};
+
+		// "Players:" text
+		class playersText: RscText {
+			x = "SafeZoneX + (210 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (266 / 1080) * SafeZoneH";
+			type = CT_STATIC;
+			style = ST_LEFT;
+			text = "Players:";
+			sizeEx = 0.035;
+		};
 	};
 };
 
