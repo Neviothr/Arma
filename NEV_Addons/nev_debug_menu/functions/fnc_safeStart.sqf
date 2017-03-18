@@ -4,7 +4,7 @@ fnc_safeStartOn = {
 
 	ssDelManProj = player addEventHandler ["Fired", {deleteVehicle (_this select 6);}];
 	if (vehicle player != player && {player in [gunner vehicle player, driver vehicle player, commander vehicle player]}) then {
-		ssDelVehProj = (vehicle player) addEventHandler ["Fired", {deleteVehicle (_this select 6);}];
+    	ssDelVehProj = [(vehicle player), (vehicle player) addEventHandler ["Fired", {deleteVehicle (_this select 6);}]];
 	};
 	player allowDamage false;
 
@@ -20,11 +20,12 @@ fnc_safeStartOff = {
 	isSafeStart = false;
 
 	hint "Weapons are live in 5 seconds.";
-	systemChat "[SafeStart] Weapons are live in 5 seconds.";
 	uisleep 5;
 
 	player removeEventHandler ["Fired", ssDelManProj];
-	player removeEventHandler ["Fired", ssDelVehProj];
+	if (!isNil "ssDelVehProj") then {
+    	(ssDelVehProj select 0) removeEventHandler ["Fired", (ssDelVehProj select 1)];
+	};
 	player allowDamage true;
 	titleText ["Game on!", "PLAIN"];
 };

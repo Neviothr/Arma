@@ -467,7 +467,7 @@ class nev_debug_menu {
 			text = "Virtual Garage";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
-			action = "call fnc_openGarage";
+			action = "closeDialog 0; call fnc_openGarage";
 			tooltip = "Open the virtual garage";
 		};
 
@@ -476,7 +476,7 @@ class nev_debug_menu {
 			text = "SafeStart On";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
-			action = "[] spawn fnc_safeStartOn";
+			action = "[] remoteExec [""fnc_safeStartOn"", 0]"
 			tooltip = "Enable SafeStart";
 		};
 
@@ -485,7 +485,7 @@ class nev_debug_menu {
 			text = "SafeStart Off";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
-			action = "[] spawn fnc_safeStartOff";
+			action = "[] remoteExec [""fnc_safeStartOff"", 0]";
 			tooltip = "Disable SafeStart";
 		};
 	};
