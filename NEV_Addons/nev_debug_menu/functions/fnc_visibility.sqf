@@ -1,11 +1,11 @@
 fnc_adminVisible = {
-	player hideObject false;
+	player hideObjectGlobal false;
 	player allowDamage true;
 	player setCaptive false;
 };
 
 fnc_adminInvisible = {
-	player hideObject true;
+	player hideObjectGlobal true;
 	player allowDamage false;
 	player setCaptive true;
 };

@@ -154,7 +154,7 @@ class nev_debug_menu {
 			text = "Broadcast";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-			action = "call fnc_broadcast";
+			action = "remoteExecCall [""fnc_broadcast"", 0]";
 			tooltip = "Broadcast notification";
 		};
 
