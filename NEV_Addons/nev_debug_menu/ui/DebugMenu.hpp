@@ -8,7 +8,7 @@ class nev_debug_menu {
 			text = "Open Zeus";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
-			action = "closeDialog 0; call fnc_openZeus";
+			action = "closeDialog 0; remoteExecCall [""fnc_openZeus"", 0]";
 			tooltip = "Open the Zeus curator interface";
 		};
 
@@ -44,7 +44,7 @@ class nev_debug_menu {
 			text = "Add to zeus";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
-			action = "closeDialog 0; call fnc_addToZeus";
+			action = "closeDialog 0; remoteExecCall [""fnc_addToZeus"", 0]";
 			tooltip = "Make all units Zeus editable";
 		};
 
@@ -289,7 +289,7 @@ class nev_debug_menu {
 			text = "Change Weather";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
-			action = "[] spawn fnc_commitWeather";
+			action = "[] remoteExec [""fnc_commitWeather"", 0]";
 			tooltip = "Commit weather changes";
 		};
 
@@ -408,7 +408,7 @@ class nev_debug_menu {
 			text = "Change date";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
-			action = "call fnc_commitDate";
+			action = "remoteExecCall [""fnc_commitDate"", 0]";
 			tooltip = "Commit time & date changes";
 		};
 
@@ -449,7 +449,7 @@ class nev_debug_menu {
 			text = "Visible";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
-			action = "call fnc_adminVisible";
+			action = "remoteExecCall [""fnc_adminVisible"", 0]";
 			tooltip = "Make admin visible";
 		};
 
@@ -458,7 +458,7 @@ class nev_debug_menu {
 			text = "Invisible";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
-			action = "call fnc_adminInvisible";
+			action = "remoteExecCall [""fnc_adminInvisible"", 0]";
 			tooltip = "Make admin invisible";
 		};
 
@@ -476,7 +476,7 @@ class nev_debug_menu {
 			text = "SafeStart On";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
-			action = "[] remoteExec [""fnc_safeStartOn"", 0]"
+			action = "[] remoteExec [""fnc_safeStartOn"", 0]";
 			tooltip = "Enable SafeStart";
 		};
 
