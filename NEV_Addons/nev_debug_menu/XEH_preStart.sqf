@@ -1,3 +1,3 @@
 #include "script_component.hpp"
 
-createDialog "nev_debug_menu";
+#include "XEH_PREP.hpp"

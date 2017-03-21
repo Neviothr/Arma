@@ -8,7 +8,7 @@ class nev_debug_menu {
 			text = "Open Zeus";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
-			action = "closeDialog 0; remoteExecCall [""fnc_openZeus"", 0]";
+			action = "closeDialog 0; remoteExecCall [QQFUNC(openZeus), 0]";
 			tooltip = "Open the Zeus curator interface";
 		};
 
@@ -26,7 +26,7 @@ class nev_debug_menu {
 			text = "Teleport";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
-			action = "closeDialog 0; call fnc_teleport";
+			action = "closeDialog 0; FUNC(teleport)";
 			tooltip = "Teleport on map click";
 		};
 
@@ -44,7 +44,7 @@ class nev_debug_menu {
 			text = "Add to zeus";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
-			action = "closeDialog 0; remoteExecCall [""fnc_addToZeus"", 0]";
+			action = "closeDialog 0; remoteExecCall [QQFUNC(addToZeus), 0]";
 			tooltip = "Make all units Zeus editable";
 		};
 
@@ -53,7 +53,7 @@ class nev_debug_menu {
 			text = "Aggressive AI";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
-			action = "closeDialog 0; call fnc_aggressiveAI";
+			action = "closeDialog 0; FUNC(aggressiveAI)";
 			tooltip = "Give AI aggressive behavior";
 		};
 
@@ -62,7 +62,7 @@ class nev_debug_menu {
 			text = "Remove dead";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-			action = "closeDialog 0; call fnc_removeDead";
+			action = "closeDialog 0; FUNC(removeDead)";
 			tooltip = "Delete all dead units and vehicles";
 		};
 
@@ -71,7 +71,7 @@ class nev_debug_menu {
 			text = "Garrison";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
-			action = "closeDialog 0; call fnc_garrison";
+			action = "closeDialog 0; FUNC(garrison)";
 			tooltip = "Call CBA's garrison function on all present units";
 		};
 
@@ -80,7 +80,7 @@ class nev_debug_menu {
 			text = "Spawn group(s)";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
-			action = "call fnc_spawnGroup";
+			action = "FUNC(spawnGroup)";
 			tooltip = "Spawn preset group(s)";
 		};
 
@@ -101,7 +101,7 @@ class nev_debug_menu {
 			text = "Repair";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
-			action = "closeDialog 0; call fnc_repairVehicle";
+			action = "closeDialog 0; FUNC(repairVehicle)";
 			tooltip = "Repair current vehicle";
 		};
 
@@ -154,7 +154,7 @@ class nev_debug_menu {
 			text = "Broadcast";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-			action = "remoteExecCall [""fnc_broadcast"", 0]";
+			action = "remoteExecCall [QQFUNC(broadcast), 0]";
 			tooltip = "Broadcast notification";
 		};
 
@@ -289,7 +289,7 @@ class nev_debug_menu {
 			text = "Change Weather";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
-			action = "[] remoteExec [""fnc_commitWeather"", 0]";
+			action = "[] remoteExec [QQFUNC(commitWeather), 0]";
 			tooltip = "Commit weather changes";
 		};
 
@@ -408,7 +408,7 @@ class nev_debug_menu {
 			text = "Change date";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
-			action = "remoteExecCall [""fnc_commitDate"", 0]";
+			action = "remoteExecCall [QQFUNC(commitDate), 0]";
 			tooltip = "Commit time & date changes";
 		};
 
@@ -417,7 +417,7 @@ class nev_debug_menu {
 			text = "Nearset Objs";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
-			action = "call fnc_nearestObjects";
+			action = "FUNC(nearestObjects)";
 			tooltip = "Return a list of objects within 50m";
 		};
 
@@ -431,7 +431,7 @@ class nev_debug_menu {
 			type = CT_LISTBOX;
 			style = ST_LEFT;
 			tooltip = "Change player's side";
-			onLBSelChanged = "[_this select 0, _this select 1] call fnc_sideChange";
+			onLBSelChanged = "[_this select 0, _this select 1] FUNC(sideChange)";
 		};
 
 		// "Side" text
@@ -449,7 +449,7 @@ class nev_debug_menu {
 			text = "Visible";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
-			action = "remoteExecCall [""fnc_adminVisible"", 0]";
+			action = "remoteExecCall [QQFUNC(adminVisible), 0]";
 			tooltip = "Make admin visible";
 		};
 
@@ -458,7 +458,7 @@ class nev_debug_menu {
 			text = "Invisible";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
-			action = "remoteExecCall [""fnc_adminInvisible"", 0]";
+			action = "remoteExecCall [QQFUNC(adminInvisible), 0]";
 			tooltip = "Make admin invisible";
 		};
 
@@ -467,7 +467,7 @@ class nev_debug_menu {
 			text = "Virtual Garage";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
-			action = "closeDialog 0; call fnc_openGarage";
+			action = "closeDialog 0; FUNC(openGarage)";
 			tooltip = "Open the virtual garage";
 		};
 
@@ -476,7 +476,7 @@ class nev_debug_menu {
 			text = "SafeStart On";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
-			action = "[] remoteExec [""fnc_safeStartOn"", 0]";
+			action = "[] remoteExec [QQFUNC(safeStartOn), 0]";
 			tooltip = "Enable SafeStart";
 		};
 
@@ -485,7 +485,7 @@ class nev_debug_menu {
 			text = "SafeStart Off";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
-			action = "[] remoteExec [""fnc_safeStartOff"", 0]";
+			action = "[] remoteExec [QQFUNC(safeStartOff), 0]";
 			tooltip = "Disable SafeStart";
 		};
 

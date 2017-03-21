@@ -1,5 +1,7 @@
+#include "script_component.hpp"
+
 class CfgPatches {
-	class nev_debugMenu {
+	class nev_debug_menu {
  		name = "Mutipurpose Debug Menu";
  		author = "Neviothr";
   		units[] = {};

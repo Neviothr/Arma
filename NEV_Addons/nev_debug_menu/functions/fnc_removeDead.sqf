@@ -1,5 +1,5 @@
-fnc_removeDead = {
-	{
-		deleteVehicle _x;
-	} forEach allDead;
-};
+#include "script_component.hpp"
+
+{
+	deleteVehicle _x;
+} forEach allDead;

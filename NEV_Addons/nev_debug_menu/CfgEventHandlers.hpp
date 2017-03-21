@@ -1,3 +1,17 @@
+class Extended_PreStart_EventHandlers {
+    class nev_debug_menu {
+        init = QUOTE(call COMPILE_FILE(XEH_preStart));
+    };
+};
+
+class Extended_PreInit_EventHandlers {
+    class nev_debug_menu {
+        init = QUOTE(call COMPILE_FILE(XEH_preInit));
+    };
+};
+
 class Extended_PostInit_EventHandlers {
-	nev_debug_menu = "nev_debug_menu_postInit = [] execVM ""\nev_debug_menu\init.sqf""";
+    class ADDON {
+       init = QUOTE(call COMPILE_FILE(XEH_postInit));
+    };
 };

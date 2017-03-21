@@ -1,33 +1,33 @@
-fnc_commitWeather = {
-	private ["_overcast", "_lightning", "_fogValue", "_fogDecay", "_fogBase", "_rain", "_waves"];
+#include "script_component.hpp"
 
-	// Overcast
-	_overcast = sliderPosition 80003;
-	skipTime -24;
-	sleep 0.1;
-	86400 setOvercast _overcast;
-	sleep 0.1;
-	skipTime 24;
+private ["_overcast", "_lightning", "_fogValue", "_fogDecay", "_fogBase", "_rain", "_waves"];
 
-	// Lightnings
-	_lightning = sliderPosition 80004;
-	0 setLightnings _lightning;
+// Overcast
+_overcast = sliderPosition 80003;
+skipTime -24;
+sleep 0.1;
+86400 setOvercast _overcast;
+sleep 0.1;
+skipTime 24;
 
-	// Fog
-	_fogValue = sliderPosition 80005;
-	_fogDecay = sliderPosition 80006;
-	_fogBase = sliderPosition 80007;
-	0 setFog [_fogValue, _fogDecay, _fogBase];
+// Lightnings
+_lightning = sliderPosition 80004;
+0 setLightnings _lightning;
 
-	// Rain
-	_rain = sliderPosition 80008;
-	0 setRain _rain;
+// Fog
+_fogValue = sliderPosition 80005;
+_fogDecay = sliderPosition 80006;
+_fogBase = sliderPosition 80007;
+0 setFog [_fogValue, _fogDecay, _fogBase];
 
-	// Waves
-	_waves = sliderPosition 80009;
-	0 setWaves _waves;
+// Rain
+_rain = sliderPosition 80008;
+0 setRain _rain;
 
-	// Sync
-	simulWeatherSync;
-	forceWeatherChange;
-};
+// Waves
+_waves = sliderPosition 80009;
+0 setWaves _waves;
+
+// Sync
+simulWeatherSync;
+forceWeatherChange;
