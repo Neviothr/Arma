@@ -5,8 +5,14 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredAddons[] = {"A3_Weapons_F"};
+		version = 2.2.0;
+		versionStr = "2.2.0";
+		versionAr[] = {2, 2, 0};
 	};
 };
+
+// CBA's versioning system
+#include "CfgSettings.hpp"
 
 // Ambient sound remover from MBG_Nam
 #include "CfgWorlds.hpp"
