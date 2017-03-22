@@ -8,7 +8,7 @@ class nev_debug_menu {
 			text = "Open Zeus";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; remoteExecCall [QFUNC(openZeus), 0]);
+			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(openZeus), 0)]);
 			tooltip = "Open the Zeus curator interface";
 		};
 
@@ -44,7 +44,7 @@ class nev_debug_menu {
 			text = "Add to zeus";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; remoteExecCall [QFUNC(addToZeus), 0]);
+			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(addToZeus), 0)]);
 			tooltip = "Make all units Zeus editable";
 		};
 
@@ -154,7 +154,7 @@ class nev_debug_menu {
 			text = "Broadcast";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-			action = QUOTE(remoteExecCall [QFUNC(broadcast), 0]);
+			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(broadcast), 0)]);
 			tooltip = "Broadcast notification";
 		};
 
@@ -289,7 +289,7 @@ class nev_debug_menu {
 			text = "Change Weather";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
-			action = QUOTE([] remoteExec [QFUNC(commitWeather), 0]);
+			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
 			tooltip = "Commit weather changes";
 		};
 
@@ -408,7 +408,7 @@ class nev_debug_menu {
 			text = "Change date";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
-			action = QUOTE(remoteExecCall [QQFUNC(commitDate), 0]);
+			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(commitDate), 0)]);
 			tooltip = "Commit time & date changes";
 		};
 
@@ -431,7 +431,7 @@ class nev_debug_menu {
 			type = CT_LISTBOX;
 			style = ST_LEFT;
 			tooltip = "Change player's side";
-			onLBSelChanged = QUOTE([_this select 0, _this select 1] call FUNC(sideChange));
+			onLBSelChanged = QUOTE(_this call FUNC(sideChange))
 		};
 
 		// "Side" text
@@ -444,21 +444,21 @@ class nev_debug_menu {
 			sizeEx = 0.035;
 		};
 
-		// A button to repair the current vehicle
+		// A button to make the admin visible
 		class adminVisible: NevRscButton {
 			text = "Visible";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
-			action = QUOTE(remoteExecCall [QFUNC(adminVisible), 0]);
+			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(adminVisible), 0)]);
 			tooltip = "Make admin visible";
 		};
 
-		// A button to repair the current vehicle
+		// A button to make the admin invisible
 		class adminInvisible: NevRscButton {
 			text = "Invisible";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
-			action = QUOTE(remoteExecCall [QQFUNC(adminInvisible), 0]);
+			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(adminInvisible), 0)]);
 			tooltip = "Make admin invisible";
 		};
 
@@ -476,7 +476,7 @@ class nev_debug_menu {
 			text = "SafeStart On";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
-			action = QUOTE([] remoteExec [QFUNC(safeStartOn), 0]);
+			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(safeStartOn), 0)]);
 			tooltip = "Enable SafeStart";
 		};
 
@@ -485,7 +485,7 @@ class nev_debug_menu {
 			text = "SafeStart Off";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
-			action = QUOTE([] remoteExec [QFUNC(safeStartOff), 0]);
+			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(safeStartOff), 0)]);
 			tooltip = "Disable SafeStart";
 		};
 
