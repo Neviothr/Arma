@@ -8,4 +8,4 @@ for [{_i = 0}, {_i <= 5}, {_i = _i + 1}] do {
 	[_aiPos, NEV_groupSide, NEV_group] call BIS_fnc_spawnGroup;
 };
 systemChat format ["Created %1 groups", _i];
-call fnc_aggressiveAI;
+call FUNC(aggressiveAI);
