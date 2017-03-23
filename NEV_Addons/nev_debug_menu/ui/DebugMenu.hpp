@@ -8,7 +8,7 @@ class nev_debug_menu {
 			text = "Open Zeus";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
-			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(openZeus), 0)]);
+			action = QUOTE(closeDialog 0; [] remoteExecCall [ARR_2(QQFUNC(openZeus), 0)]);
 			tooltip = "Open the Zeus curator interface";
 		};
 
@@ -17,7 +17,7 @@ class nev_debug_menu {
 			text = "Virtual arsenal";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-			action = "closeDialog 0; [""Open"", true] spawn BIS_fnc_arsenal";
+			action = QUOTE(closeDialog 0; [QUOTE(QUOTE(Open)), true] spawn BIS_fnc_arsenal);
 			tooltip = "Open the BIS virtual aresnal";
 		};
 
@@ -35,7 +35,7 @@ class nev_debug_menu {
 			text = "Debug console";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; createDialog ""RscDisplayDebugPublic"");
+			action = QUOTE(closeDialog 0; createDialog QUOTE(QUOTE(RscDisplayDebugPublic)));
 			tooltip = "Open the BIS debug console";
 		};
 
@@ -492,10 +492,10 @@ class nev_debug_menu {
 		// Players list box
 		class playersList: RscListbox {
 			idc = 80016;
-			x = "SafeZoneX + (210 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (220 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
-			w = "(200 / 1920) * SafeZoneW";
-			h = "(200 / 1080) * SafeZoneH";
+			w = "(230 / 1920) * SafeZoneW";
+			h = "(300 / 1080) * SafeZoneH";
 			type = CT_LISTBOX;
 			style = ST_LEFT;
 			tooltip = "Choose player";
@@ -503,7 +503,7 @@ class nev_debug_menu {
 
 		// "Players:" text
 		class playersText: RscText {
-			x = "SafeZoneX + (210 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (220 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (266 / 1080) * SafeZoneH";
 			type = CT_STATIC;
 			style = ST_LEFT;
