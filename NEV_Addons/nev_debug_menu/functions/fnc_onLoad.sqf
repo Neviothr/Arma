@@ -106,5 +106,5 @@ switch (side group player) do {
 // Players list box
 _playersList = _dialog displayCtrl 80016;
 {
-	_playersList lbAdd str _x;
+	_playersList lbAdd name _x;
 } forEach allPlayers;
