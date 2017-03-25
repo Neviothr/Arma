@@ -17,7 +17,7 @@ class nev_debug_menu {
 			text = "Virtual arsenal";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; [QUOTE(QUOTE(Open)), true] spawn BIS_fnc_arsenal);
+			action = "closeDialog 0; [""Open"", true] spawn BIS_fnc_arsenal";
 			tooltip = "Open the BIS virtual aresnal";
 		};
 
@@ -476,7 +476,7 @@ class nev_debug_menu {
 			text = "SafeStart On";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
-			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(safeStartOn), 0)]);
+			action = QUOTE([] remoteExec [ARR_2(QQFUNC(safeStartOn), 0)]);
 			tooltip = "Enable SafeStart";
 		};
 
@@ -485,7 +485,7 @@ class nev_debug_menu {
 			text = "SafeStart Off";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
-			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(safeStartOff), 0)]);
+			action = QUOTE([] remoteExec [ARR_2(QQFUNC(safeStartOff), 0)]);
 			tooltip = "Disable SafeStart";
 		};
 
