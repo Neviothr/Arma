@@ -4,6 +4,6 @@
 
 openMap true;
 ["nev_mapTeleport", "onMapSingleClick", {
-    vehicle player setPos _pos;
-    ["nev_mapTeleport", "onMapSingleClick"] call BIS_fnc_removeStackedEventHandler;
+	vehicle player setPos _pos;
+	["nev_mapTeleport", "onMapSingleClick"] call BIS_fnc_removeStackedEventHandler;
 }] call BIS_fnc_addStackedEventHandler;

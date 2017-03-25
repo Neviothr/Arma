@@ -7,7 +7,7 @@ if (hasInterface) then {
 
 	player removeEventHandler ["Fired", ssDelManProj];
 	if (!isNil "ssDelVehProj") then {
-	    (ssDelVehProj select 0) removeEventHandler ["Fired", (ssDelVehProj select 1)];
+		(ssDelVehProj select 0) removeEventHandler ["Fired", (ssDelVehProj select 1)];
 	};
 	player allowDamage true;
 

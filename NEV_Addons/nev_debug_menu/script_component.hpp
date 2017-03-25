@@ -4,23 +4,23 @@
 #define DEBUG_SYNCHRONOUS
 
 #ifndef SUBPREFIX
-    #define SUBPREFIX addons
+	#define SUBPREFIX addons
 #endif
 
 #ifndef MAINLOGIC
-    #define MAINLOGIC main
+	#define MAINLOGIC main
 #endif
 
 #ifndef VERSION
-    #define VERSION 0
+	#define VERSION 0
 #endif
 
 #ifndef VERSION_AR
-    #define VERSION_AR VERSION
+	#define VERSION_AR VERSION
 #endif
 
 #ifndef VERSION_CONFIG
-    #define VERSION_CONFIG version = VERSION; versionStr = QUOTE(VERSION); versionAr[] = {VERSION_AR}
+	#define VERSION_CONFIG version = VERSION; versionStr = QUOTE(VERSION); versionAr[] = {VERSION_AR}
 #endif
 
 #define ADDON DOUBLES(PREFIX,COMPONENT)
@@ -148,31 +148,31 @@
 #define RETNIL(VARIABLE) RETDEF(VARIABLE,nil)
 
 #define PFORMAT_1(MESSAGE,A) \
-    format ['%1: A=%2', MESSAGE, RETNIL(A)]
+	format ['%1: A=%2', MESSAGE, RETNIL(A)]
 
 #define PFORMAT_2(MESSAGE,A,B) \
-    format ['%1: A=%2, B=%3', MESSAGE, RETNIL(A), RETNIL(B)]
+	format ['%1: A=%2, B=%3', MESSAGE, RETNIL(A), RETNIL(B)]
 
 #define PFORMAT_3(MESSAGE,A,B,C) \
-    format ['%1: A=%2, B=%3, C=%4', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C)]
+	format ['%1: A=%2, B=%3, C=%4', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C)]
 
 #define PFORMAT_4(MESSAGE,A,B,C,D) \
-    format ['%1: A=%2, B=%3, C=%4, D=%5', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C), RETNIL(D)]
+	format ['%1: A=%2, B=%3, C=%4, D=%5', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C), RETNIL(D)]
 
 #define PFORMAT_5(MESSAGE,A,B,C,D,E) \
-    format ['%1: A=%2, B=%3, C=%4, D=%5, E=%6', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C), RETNIL(D), RETNIL(E)]
+	format ['%1: A=%2, B=%3, C=%4, D=%5, E=%6', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C), RETNIL(D), RETNIL(E)]
 
 #define PFORMAT_6(MESSAGE,A,B,C,D,E,F) \
-    format ['%1: A=%2, B=%3, C=%4, D=%5, E=%6, F=%7', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C), RETNIL(D), RETNIL(E), RETNIL(F)]
+	format ['%1: A=%2, B=%3, C=%4, D=%5, E=%6, F=%7', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C), RETNIL(D), RETNIL(E), RETNIL(F)]
 
 #define PFORMAT_7(MESSAGE,A,B,C,D,E,F,G) \
-    format ['%1: A=%2, B=%3, C=%4, D=%5, E=%6, F=%7, G=%8', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C), RETNIL(D), RETNIL(E), RETNIL(F), RETNIL(G)]
+	format ['%1: A=%2, B=%3, C=%4, D=%5, E=%6, F=%7, G=%8', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C), RETNIL(D), RETNIL(E), RETNIL(F), RETNIL(G)]
 
 #define PFORMAT_8(MESSAGE,A,B,C,D,E,F,G,H) \
-    format ['%1: A=%2, B=%3, C=%4, D=%5, E=%6, F=%7, G=%8, H=%9', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C), RETNIL(D), RETNIL(E), RETNIL(F), RETNIL(G), RETNIL(H)]
+	format ['%1: A=%2, B=%3, C=%4, D=%5, E=%6, F=%7, G=%8, H=%9', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C), RETNIL(D), RETNIL(E), RETNIL(F), RETNIL(G), RETNIL(H)]
 
 #define PFORMAT_9(MESSAGE,A,B,C,D,E,F,G,H,I) \
-    format ['%1: A=%2, B=%3, C=%4, D=%5, E=%6, F=%7, G=%8, H=%9, I=%10', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C), RETNIL(D), RETNIL(E), RETNIL(F), RETNIL(G), RETNIL(H), RETNIL(I)]
+	format ['%1: A=%2, B=%3, C=%4, D=%5, E=%6, F=%7, G=%8, H=%9, I=%10', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C), RETNIL(D), RETNIL(E), RETNIL(F), RETNIL(G), RETNIL(H), RETNIL(I)]
 
 
 #ifdef DEBUG_MODE_FULL
@@ -202,17 +202,17 @@
 #define QUOTE(var1) #var1
 
 #ifdef MODULAR
-    #define COMPONENT_T DOUBLES(t,COMPONENT)
-    #define COMPONENT_M DOUBLES(m,COMPONENT)
-    #define COMPONENT_S DOUBLES(s,COMPONENT)
-    #define COMPONENT_C DOUBLES(c,COMPONENT)
-    #define COMPONENT_F COMPONENT_C
+	#define COMPONENT_T DOUBLES(t,COMPONENT)
+	#define COMPONENT_M DOUBLES(m,COMPONENT)
+	#define COMPONENT_S DOUBLES(s,COMPONENT)
+	#define COMPONENT_C DOUBLES(c,COMPONENT)
+	#define COMPONENT_F COMPONENT_C
 #else
-    #define COMPONENT_T COMPONENT
-    #define COMPONENT_M COMPONENT
-    #define COMPONENT_S COMPONENT
-    #define COMPONENT_F COMPONENT
-    #define COMPONENT_C COMPONENT
+	#define COMPONENT_T COMPONENT
+	#define COMPONENT_M COMPONENT
+	#define COMPONENT_S COMPONENT
+	#define COMPONENT_F COMPONENT
+	#define COMPONENT_C COMPONENT
 #endif
 
 #define INC(var) var = (var) + 1
@@ -250,14 +250,14 @@
 #define GETVARMAINS(var1,var2) GETVARS(var1,MAINLOGIC,var2)
 
 #ifndef PATHTO_SYS
-    #define PATHTO_SYS(var1,var2,var3) \##var1\SUBPREFIX\##var2\##var3.sqf
+	#define PATHTO_SYS(var1,var2,var3) \##var1\SUBPREFIX\##var2\##var3.sqf
 #endif
 #ifndef PATHTOF_SYS
-    #define PATHTOF_SYS(var1,var2,var3) \##var1\SUBPREFIX\##var2\##var3
+	#define PATHTOF_SYS(var1,var2,var3) \##var1\SUBPREFIX\##var2\##var3
 #endif
 
 #ifndef PATHTOF2_SYS
-    #define PATHTOF2_SYS(var1,var2,var3) ##var1\SUBPREFIX\##var2\##var3
+	#define PATHTOF2_SYS(var1,var2,var3) ##var1\SUBPREFIX\##var2\##var3
 #endif
 
 #define PATHTO_R(var1) PATHTOF2_SYS(PREFIX,COMPONENT_C,var1)
@@ -292,7 +292,7 @@
 #define LSTR(var1) TRIPLES(ADDON,STR,var1)
 
 #ifndef DEBUG_SETTINGS
-    #define DEBUG_SETTINGS [false, true, false]
+	#define DEBUG_SETTINGS [false, true, false]
 #endif
 
 #define MSG_INIT QUOTE(Initializing: ADDON version: VERSION)
@@ -312,15 +312,15 @@
 
 #define VERSIONING_SYS(var1) class CfgSettings \
 { \
-    class CBA \
-    { \
-        class Versioning \
-        { \
-            class var1 \
-            { \
-            }; \
-        }; \
-    }; \
+	class CBA \
+	{ \
+		class Versioning \
+		{ \
+			class var1 \
+			{ \
+			}; \
+		}; \
+	}; \
 };
 
 #define VERSIONING VERSIONING_SYS(PREFIX)
@@ -348,23 +348,23 @@
 #define IFCOUNT(var1,var2,var3) if (count ##var1 > ##var2) then { ##var3 = ##var1 select ##var2 };
 
 #ifdef DISABLE_COMPILE_CACHE
-    #define PREP(var1) TRIPLES(ADDON,fnc,var1) = compile preProcessFileLineNumbers 'PATHTO_SYS(PREFIX,COMPONENT_F,DOUBLES(fnc,var1))'
-    #define PREPMAIN(var1) TRIPLES(PREFIX,fnc,var1) = compile preProcessFileLineNumbers 'PATHTO_SYS(PREFIX,COMPONENT_F,DOUBLES(fnc,var1))'
+	#define PREP(var1) TRIPLES(ADDON,fnc,var1) = compile preProcessFileLineNumbers 'PATHTO_SYS(PREFIX,COMPONENT_F,DOUBLES(fnc,var1))'
+	#define PREPMAIN(var1) TRIPLES(PREFIX,fnc,var1) = compile preProcessFileLineNumbers 'PATHTO_SYS(PREFIX,COMPONENT_F,DOUBLES(fnc,var1))'
 #else
-    #define PREP(var1) ['PATHTO_SYS(PREFIX,COMPONENT_F,DOUBLES(fnc,var1))', 'TRIPLES(ADDON,fnc,var1)'] call SLX_XEH_COMPILE_NEW
-    #define PREPMAIN(var1) ['PATHTO_SYS(PREFIX,COMPONENT_F,DOUBLES(fnc,var1))', 'TRIPLES(PREFIX,fnc,var1)'] call SLX_XEH_COMPILE_NEW
+	#define PREP(var1) ['PATHTO_SYS(PREFIX,COMPONENT_F,DOUBLES(fnc,var1))', 'TRIPLES(ADDON,fnc,var1)'] call SLX_XEH_COMPILE_NEW
+	#define PREPMAIN(var1) ['PATHTO_SYS(PREFIX,COMPONENT_F,DOUBLES(fnc,var1))', 'TRIPLES(PREFIX,fnc,var1)'] call SLX_XEH_COMPILE_NEW
 #endif
 
 #ifdef RECOMPILE
-    #undef RECOMPILE
-    #define RECOMPILE recompile = 1
+	#undef RECOMPILE
+	#define RECOMPILE recompile = 1
 #else
-    #define RECOMPILE recompile = 0
+	#define RECOMPILE recompile = 0
 #endif
 
 #define PATHTO_FNC(func) class func {\
-    file = QPATHTOF(DOUBLES(fnc,func).sqf);\
-    RECOMPILE;\
+	file = QPATHTOF(DOUBLES(fnc,func).sqf);\
+	RECOMPILE;\
 }
 
 #define FUNC(var1) TRIPLES(ADDON,fnc,var1)
@@ -381,15 +381,15 @@
 #define QQEFUNC(var1,var2) QUOTE(QEFUNC(var1,var2))
 
 #ifndef PRELOAD_ADDONS
-    #define PRELOAD_ADDONS class CfgAddons \
+	#define PRELOAD_ADDONS class CfgAddons \
 { \
-    class PreloadAddons \
-    { \
-        class ADDON \
-        { \
-            list[]={ QUOTE(ADDON) }; \
-        }; \
-    }; \
+	class PreloadAddons \
+	{ \
+		class ADDON \
+		{ \
+			list[]={ QUOTE(ADDON) }; \
+		}; \
+	}; \
 }
 #endif
 
@@ -447,7 +447,7 @@
 #define FLOAT_TO_STRING(num)    (str parseNumber (str (_this%_this) + str floor abs _this) + "." + (str (abs _this-floor abs _this) select [2]) + "0")
 
 #define SCRIPT(NAME) \
-    scriptName 'PREFIX\COMPONENT\NAME'
+	scriptName 'PREFIX\COMPONENT\NAME'
 
 #define EXPLODE_1_SYS(ARRAY,A) A = ARRAY param [0]
 #define EXPLODE_1(ARRAY,A) EXPLODE_1_SYS(ARRAY,A); TRACE_1("EXPLODE_1, " + QUOTE(ARRAY),A)
@@ -487,10 +487,10 @@
 
 #ifndef STRING_MACROS_GUARD
 #define STRING_MACROS_GUARD
-    #define LSTRING(var1) QUOTE(TRIPLES(STR,ADDON,var1))
-    #define ELSTRING(var1,var2) QUOTE(TRIPLES(STR,DOUBLES(PREFIX,var1),var2))
-    #define CSTRING(var1) QUOTE(TRIPLES($STR,ADDON,var1))
-    #define ECSTRING(var1,var2) QUOTE(TRIPLES($STR,DOUBLES(PREFIX,var1),var2))
+	#define LSTRING(var1) QUOTE(TRIPLES(STR,ADDON,var1))
+	#define ELSTRING(var1,var2) QUOTE(TRIPLES(STR,DOUBLES(PREFIX,var1),var2))
+	#define CSTRING(var1) QUOTE(TRIPLES($STR,ADDON,var1))
+	#define ECSTRING(var1,var2) QUOTE(TRIPLES($STR,DOUBLES(PREFIX,var1),var2))
 #endif
 
 #define PARAMS_1(A) EXPLODE_1_PVT(_this,A)
@@ -504,122 +504,122 @@
 #define PARAMS_9(A,B,C,D,E,F,G,H,I) EXPLODE_9_PVT(_this,A,B,C,D,E,F,G,H,I)
 
 #define DEFAULT_PARAM(INDEX,NAME,DEF_VALUE) \
-    private [#NAME,"_this"]; \
-    ISNILS(_this,[]); \
-    NAME = _this param [INDEX, DEF_VALUE]; \
-    TRACE_3("DEFAULT_PARAM",INDEX,NAME,DEF_VALUE)
+	private [#NAME,"_this"]; \
+	ISNILS(_this,[]); \
+	NAME = _this param [INDEX, DEF_VALUE]; \
+	TRACE_3("DEFAULT_PARAM",INDEX,NAME,DEF_VALUE)
 
 #define KEY_PARAM(KEY,NAME,DEF_VALUE) \
-    private #NAME; \
-    NAME = [toLower KEY, toUpper KEY, DEF_VALUE, RETNIL(_this)] call CBA_fnc_getArg; \
-    TRACE_3("KEY_PARAM",KEY,NAME,DEF_VALUE)
+	private #NAME; \
+	NAME = [toLower KEY, toUpper KEY, DEF_VALUE, RETNIL(_this)] call CBA_fnc_getArg; \
+	TRACE_3("KEY_PARAM",KEY,NAME,DEF_VALUE)
 
 #define ASSERTION_ERROR(MESSAGE) ERROR_WITH_TITLE("Assertion failed!",MESSAGE)
 
 #define ASSERT_TRUE(CONDITION,MESSAGE) \
-    if (not (CONDITION)) then \
-    { \
-        ASSERTION_ERROR('Assertion (CONDITION) failed!\n\n' + (MESSAGE)); \
-    }
+	if (not (CONDITION)) then \
+	{ \
+		ASSERTION_ERROR('Assertion (CONDITION) failed!\n\n' + (MESSAGE)); \
+	}
 
 #define ASSERT_FALSE(CONDITION,MESSAGE) \
-    if (CONDITION) then \
-    { \
-        ASSERTION_ERROR('Assertion (not (CONDITION)) failed!\n\n' + (MESSAGE)) \
-    }
+	if (CONDITION) then \
+	{ \
+		ASSERTION_ERROR('Assertion (not (CONDITION)) failed!\n\n' + (MESSAGE)) \
+	}
 
 #define ASSERT_OP(A,OPERATOR,B,MESSAGE) \
-    if (not ((A) OPERATOR (B))) then \
-    { \
-        ASSERTION_ERROR('Assertion (A OPERATOR B) failed!\n' + 'A: ' + (str (A)) + '\n' + 'B: ' + (str (B)) + "\n\n" + (MESSAGE)); \
-    }
+	if (not ((A) OPERATOR (B))) then \
+	{ \
+		ASSERTION_ERROR('Assertion (A OPERATOR B) failed!\n' + 'A: ' + (str (A)) + '\n' + 'B: ' + (str (B)) + "\n\n" + (MESSAGE)); \
+	}
 
 #define ASSERT_DEFINED(VARIABLE,MESSAGE) \
-    if (isNil VARIABLE) then \
-    { \
-        ASSERTION_ERROR('Assertion (VARIABLE is defined) failed!\n\n' + (MESSAGE)); \
-    }
+	if (isNil VARIABLE) then \
+	{ \
+		ASSERTION_ERROR('Assertion (VARIABLE is defined) failed!\n\n' + (MESSAGE)); \
+	}
 
 #define TEST_SUCCESS(MESSAGE) MESSAGE_WITH_TITLE("Test OK",MESSAGE)
 #define TEST_FAIL(MESSAGE) ERROR_WITH_TITLE("Test FAIL",MESSAGE)
 
 #define TEST_TRUE(CONDITION, MESSAGE) \
-    if (CONDITION) then \
-    { \
-        TEST_SUCCESS('(CONDITION)'); \
-    } \
-    else \
-    { \
-        TEST_FAIL('(CONDITION) ' + (MESSAGE)); \
-    }
+	if (CONDITION) then \
+	{ \
+		TEST_SUCCESS('(CONDITION)'); \
+	} \
+	else \
+	{ \
+		TEST_FAIL('(CONDITION) ' + (MESSAGE)); \
+	}
 
 #define TEST_FALSE(CONDITION, MESSAGE) \
-    if (not (CONDITION)) then \
-    { \
-        TEST_SUCCESS('(not (CONDITION))'); \
-    } \
-    else \
-    { \
-        TEST_FAIL('(not (CONDITION)) ' + (MESSAGE)); \
-    }
+	if (not (CONDITION)) then \
+	{ \
+		TEST_SUCCESS('(not (CONDITION))'); \
+	} \
+	else \
+	{ \
+		TEST_FAIL('(not (CONDITION)) ' + (MESSAGE)); \
+	}
 
 #define TEST_OP(A,OPERATOR,B,MESSAGE) \
-    if ((A) OPERATOR (B)) then \
-    { \
-        TEST_SUCCESS('(A OPERATOR B)') \
-    } \
-    else \
-    { \
-        TEST_FAIL('(A OPERATOR B)') \
-    };
+	if ((A) OPERATOR (B)) then \
+	{ \
+		TEST_SUCCESS('(A OPERATOR B)') \
+	} \
+	else \
+	{ \
+		TEST_FAIL('(A OPERATOR B)') \
+	};
 
 #define TEST_DEFINED_AND_OP(A,OPERATOR,B,MESSAGE) \
-    if (isNil #A) then { \
-        TEST_FAIL('(A is not defined) ' + (MESSAGE)); \
-    } else { \
-        if (isNil #B) then { \
-            TEST_FAIL('(B is not defined) ' + (MESSAGE)); \
-        } else { \
-            if ((A) OPERATOR (B)) then { \
-                TEST_SUCCESS('(A OPERATOR B) ' + (MESSAGE)) \
-            } else { \
-                TEST_FAIL('(A OPERATOR B) ' + (MESSAGE)) \
-    }; }; };
+	if (isNil #A) then { \
+		TEST_FAIL('(A is not defined) ' + (MESSAGE)); \
+	} else { \
+		if (isNil #B) then { \
+			TEST_FAIL('(B is not defined) ' + (MESSAGE)); \
+		} else { \
+			if ((A) OPERATOR (B)) then { \
+				TEST_SUCCESS('(A OPERATOR B) ' + (MESSAGE)) \
+			} else { \
+				TEST_FAIL('(A OPERATOR B) ' + (MESSAGE)) \
+	}; }; };
 
 #define TEST_DEFINED(VARIABLE,MESSAGE) \
-    if (not isNil VARIABLE) then \
-    { \
-        TEST_SUCCESS('(' + VARIABLE + ' is defined)'); \
-    } \
-    else \
-    { \
-        TEST_FAIL('(' + VARIABLE + ' is not defined)' + (MESSAGE)); \
-    }
+	if (not isNil VARIABLE) then \
+	{ \
+		TEST_SUCCESS('(' + VARIABLE + ' is defined)'); \
+	} \
+	else \
+	{ \
+		TEST_FAIL('(' + VARIABLE + ' is not defined)' + (MESSAGE)); \
+	}
 
 #define DEPRECATE_SYS(OLD_FUNCTION,NEW_FUNCTION) \
-    OLD_FUNCTION = { \
-        WARNING('Deprecated function used: OLD_FUNCTION (new: NEW_FUNCTION) in ADDON'); \
-        if (isNil "_this") then { call NEW_FUNCTION } else { _this call NEW_FUNCTION }; \
-    }
+	OLD_FUNCTION = { \
+		WARNING('Deprecated function used: OLD_FUNCTION (new: NEW_FUNCTION) in ADDON'); \
+		if (isNil "_this") then { call NEW_FUNCTION } else { _this call NEW_FUNCTION }; \
+	}
 
 #define DEPRECATE(OLD_FUNCTION,NEW_FUNCTION) \
-    DEPRECATE_SYS(DOUBLES(PREFIX,OLD_FUNCTION),DOUBLES(PREFIX,NEW_FUNCTION))
+	DEPRECATE_SYS(DOUBLES(PREFIX,OLD_FUNCTION),DOUBLES(PREFIX,NEW_FUNCTION))
 
 #define OBSOLETE_SYS(OLD_FUNCTION,COMMAND_CODE) \
-    OLD_FUNCTION = { \
-        WARNING('Obsolete function used: (use: OLD_FUNCTION) in ADDON'); \
-        if (isNil "_this") then { call COMMAND_CODE } else { _this call COMMAND_CODE }; \
-    }
+	OLD_FUNCTION = { \
+		WARNING('Obsolete function used: (use: OLD_FUNCTION) in ADDON'); \
+		if (isNil "_this") then { call COMMAND_CODE } else { _this call COMMAND_CODE }; \
+	}
 
 #define OBSOLETE(OLD_FUNCTION,COMMAND_CODE) \
-    OBSOLETE_SYS(DOUBLES(PREFIX,OLD_FUNCTION),COMMAND_CODE)
+	OBSOLETE_SYS(DOUBLES(PREFIX,OLD_FUNCTION),COMMAND_CODE)
 
 #define BWC_CONFIG(NAME) class NAME { \
-        units[] = {}; \
-        weapons[] = {}; \
-        requiredVersion = REQUIRED_VERSION; \
-        requiredAddons[] = {}; \
-        version = VERSION; \
+		units[] = {}; \
+		weapons[] = {}; \
+		requiredVersion = REQUIRED_VERSION; \
+		requiredAddons[] = {}; \
+		version = VERSION; \
 }
 
 #define XEH_CLASS CBA_Extended_EventHandlers
@@ -771,23 +771,23 @@ deleted = "";
 
 
 #define MACRO_ADDWEAPON(WEAPON,COUNT) class _xx_##WEAPON { \
-    weapon = #WEAPON; \
-    count = COUNT; \
+	weapon = #WEAPON; \
+	count = COUNT; \
 }
 
 #define MACRO_ADDITEM(ITEM,COUNT) class _xx_##ITEM { \
-    name = #ITEM; \
-    count = COUNT; \
+	name = #ITEM; \
+	count = COUNT; \
 }
 
 #define MACRO_ADDMAGAZINE(MAGAZINE,COUNT) class _xx_##MAGAZINE { \
-    magazine = #MAGAZINE; \
-    count = COUNT; \
+	magazine = #MAGAZINE; \
+	count = COUNT; \
 }
 
 #define MACRO_ADDBACKPACK(BACKPACK,COUNT) class _xx_##BACKPACK { \
-    backpack = #BACKPACK; \
-    count = COUNT; \
+	backpack = #BACKPACK; \
+	count = COUNT; \
 }
 
 #define TYPE_DEFAULT 0
@@ -814,11 +814,11 @@ deleted = "";
 #define TYPE_BACKPACK 901
 
 #ifdef DISABLE_COMPILE_CACHE
-    #undef PREP
-    #define PREP(fncName) DFUNC(fncName) = compile preprocessFileLineNumbers QPATHTOF(functions\DOUBLES(fnc,fncName).sqf)
+	#undef PREP
+	#define PREP(fncName) DFUNC(fncName) = compile preprocessFileLineNumbers QPATHTOF(functions\DOUBLES(fnc,fncName).sqf)
 #else
-    #undef PREP
-    #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
+	#undef PREP
+	#define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
 #endif
 
 #define PREP_MODULE(folder) [] call compile preprocessFileLineNumbers QPATHTOF(folder\__PREP__.sqf)
@@ -830,48 +830,48 @@ deleted = "";
 #define ACE_DEPRECATED(arg1,arg2,arg3) WARNING_3("%1 is deprecated. Support will be dropped in version %2. Replaced by: %3",arg1,arg2,arg3)
 
 #define PFORMAT_10(MESSAGE,A,B,C,D,E,F,G,H,I,J) \
-    format ['%1: A=%2, B=%3, C=%4, D=%5, E=%6, F=%7, G=%8, H=%9, I=%10 J=%11', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C), RETNIL(D), RETNIL(E), RETNIL(F), RETNIL(G), RETNIL(H), RETNIL(I), RETNIL(J)]
+	format ['%1: A=%2, B=%3, C=%4, D=%5, E=%6, F=%7, G=%8, H=%9, I=%10 J=%11', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C), RETNIL(D), RETNIL(E), RETNIL(F), RETNIL(G), RETNIL(H), RETNIL(I), RETNIL(J)]
 #ifdef DEBUG_MODE_FULL
 #define TRACE_10(MESSAGE,A,B,C,D,E,F,G,H,I,J) \
-    [THIS_FILE_, __LINE__, PFORMAT_10(MESSAGE,A,B,C,D,E,F,G,H,I,J)] call CBA_fnc_log
+	[THIS_FILE_, __LINE__, PFORMAT_10(MESSAGE,A,B,C,D,E,F,G,H,I,J)] call CBA_fnc_log
 #else
    #define TRACE_10(MESSAGE,A,B,C,D,E,F,G,H,I,J)
 #endif
 
 #ifdef DISABLE_COMPILE_CACHE
-    #define LINKFUNC(x) {_this call FUNC(x)}
-    #define PREP_RECOMPILE_START    if (isNil "ACE_PREP_RECOMPILE") then {ACE_RECOMPILES = []; ACE_PREP_RECOMPILE = {{call _x} forEach ACE_RECOMPILES;}}; private _recomp = {
-    #define PREP_RECOMPILE_END      }; call _recomp; ACE_RECOMPILES pushBack _recomp;
+	#define LINKFUNC(x) {_this call FUNC(x)}
+	#define PREP_RECOMPILE_START    if (isNil "ACE_PREP_RECOMPILE") then {ACE_RECOMPILES = []; ACE_PREP_RECOMPILE = {{call _x} forEach ACE_RECOMPILES;}}; private _recomp = {
+	#define PREP_RECOMPILE_END      }; call _recomp; ACE_RECOMPILES pushBack _recomp;
 #else
-    #define LINKFUNC(x) FUNC(x)
-    #define PREP_RECOMPILE_START /* */
-    #define PREP_RECOMPILE_END /* */
+	#define LINKFUNC(x) FUNC(x)
+	#define PREP_RECOMPILE_START /* */
+	#define PREP_RECOMPILE_END /* */
 #endif
 
 #ifdef ENABLE_CALLSTACK
-    #define CALLSTACK(function) {private ['_ret']; if(ACE_IS_ERRORED) then { ['AUTO','AUTO'] call ACE_DUMPSTACK_FNC; ACE_IS_ERRORED = false; }; ACE_IS_ERRORED = true; ACE_STACK_TRACE set [ACE_STACK_DEPTH, [diag_tickTime, __FILE__, __LINE__, ACE_CURRENT_FUNCTION, 'ANON', _this]]; ACE_STACK_DEPTH = ACE_STACK_DEPTH + 1; ACE_CURRENT_FUNCTION = 'ANON'; _ret = _this call ##function; ACE_STACK_DEPTH = ACE_STACK_DEPTH - 1; ACE_IS_ERRORED = false; _ret;}
-    #define CALLSTACK_NAMED(function, functionName) {private ['_ret']; if(ACE_IS_ERRORED) then { ['AUTO','AUTO'] call ACE_DUMPSTACK_FNC; ACE_IS_ERRORED = false; }; ACE_IS_ERRORED = true; ACE_STACK_TRACE set [ACE_STACK_DEPTH, [diag_tickTime, __FILE__, __LINE__, ACE_CURRENT_FUNCTION, functionName, _this]]; ACE_STACK_DEPTH = ACE_STACK_DEPTH + 1; ACE_CURRENT_FUNCTION = functionName; _ret = _this call ##function; ACE_STACK_DEPTH = ACE_STACK_DEPTH - 1; ACE_IS_ERRORED = false; _ret;}
-    #define DUMPSTACK ([__FILE__, __LINE__] call ACE_DUMPSTACK_FNC)
+	#define CALLSTACK(function) {private ['_ret']; if(ACE_IS_ERRORED) then { ['AUTO','AUTO'] call ACE_DUMPSTACK_FNC; ACE_IS_ERRORED = false; }; ACE_IS_ERRORED = true; ACE_STACK_TRACE set [ACE_STACK_DEPTH, [diag_tickTime, __FILE__, __LINE__, ACE_CURRENT_FUNCTION, 'ANON', _this]]; ACE_STACK_DEPTH = ACE_STACK_DEPTH + 1; ACE_CURRENT_FUNCTION = 'ANON'; _ret = _this call ##function; ACE_STACK_DEPTH = ACE_STACK_DEPTH - 1; ACE_IS_ERRORED = false; _ret;}
+	#define CALLSTACK_NAMED(function, functionName) {private ['_ret']; if(ACE_IS_ERRORED) then { ['AUTO','AUTO'] call ACE_DUMPSTACK_FNC; ACE_IS_ERRORED = false; }; ACE_IS_ERRORED = true; ACE_STACK_TRACE set [ACE_STACK_DEPTH, [diag_tickTime, __FILE__, __LINE__, ACE_CURRENT_FUNCTION, functionName, _this]]; ACE_STACK_DEPTH = ACE_STACK_DEPTH + 1; ACE_CURRENT_FUNCTION = functionName; _ret = _this call ##function; ACE_STACK_DEPTH = ACE_STACK_DEPTH - 1; ACE_IS_ERRORED = false; _ret;}
+	#define DUMPSTACK ([__FILE__, __LINE__] call ACE_DUMPSTACK_FNC)
 
-    #define FUNC(var1) {private ['_ret']; if(ACE_IS_ERRORED) then { ['AUTO','AUTO'] call ACE_DUMPSTACK_FNC; ACE_IS_ERRORED = false; }; ACE_IS_ERRORED = true; ACE_STACK_TRACE set [ACE_STACK_DEPTH, [diag_tickTime, __FILE__, __LINE__, ACE_CURRENT_FUNCTION, 'TRIPLES(ADDON,fnc,var1)', _this]]; ACE_STACK_DEPTH = ACE_STACK_DEPTH + 1; ACE_CURRENT_FUNCTION = 'TRIPLES(ADDON,fnc,var1)'; _ret = _this call TRIPLES(ADDON,fnc,var1); ACE_STACK_DEPTH = ACE_STACK_DEPTH - 1; ACE_IS_ERRORED = false; _ret;}
-    #define EFUNC(var1,var2) {private ['_ret']; if(ACE_IS_ERRORED) then { ['AUTO','AUTO'] call ACE_DUMPSTACK_FNC; ACE_IS_ERRORED = false; }; ACE_IS_ERRORED = true; ACE_STACK_TRACE set [ACE_STACK_DEPTH, [diag_tickTime, __FILE__, __LINE__, ACE_CURRENT_FUNCTION, 'TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)', _this]]; ACE_STACK_DEPTH = ACE_STACK_DEPTH + 1; ACE_CURRENT_FUNCTION = 'TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)'; _ret = _this call TRIPLES(DOUBLES(PREFIX,var1),fnc,var2); ACE_STACK_DEPTH = ACE_STACK_DEPTH - 1; ACE_IS_ERRORED = false; _ret;}
+	#define FUNC(var1) {private ['_ret']; if(ACE_IS_ERRORED) then { ['AUTO','AUTO'] call ACE_DUMPSTACK_FNC; ACE_IS_ERRORED = false; }; ACE_IS_ERRORED = true; ACE_STACK_TRACE set [ACE_STACK_DEPTH, [diag_tickTime, __FILE__, __LINE__, ACE_CURRENT_FUNCTION, 'TRIPLES(ADDON,fnc,var1)', _this]]; ACE_STACK_DEPTH = ACE_STACK_DEPTH + 1; ACE_CURRENT_FUNCTION = 'TRIPLES(ADDON,fnc,var1)'; _ret = _this call TRIPLES(ADDON,fnc,var1); ACE_STACK_DEPTH = ACE_STACK_DEPTH - 1; ACE_IS_ERRORED = false; _ret;}
+	#define EFUNC(var1,var2) {private ['_ret']; if(ACE_IS_ERRORED) then { ['AUTO','AUTO'] call ACE_DUMPSTACK_FNC; ACE_IS_ERRORED = false; }; ACE_IS_ERRORED = true; ACE_STACK_TRACE set [ACE_STACK_DEPTH, [diag_tickTime, __FILE__, __LINE__, ACE_CURRENT_FUNCTION, 'TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)', _this]]; ACE_STACK_DEPTH = ACE_STACK_DEPTH + 1; ACE_CURRENT_FUNCTION = 'TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)'; _ret = _this call TRIPLES(DOUBLES(PREFIX,var1),fnc,var2); ACE_STACK_DEPTH = ACE_STACK_DEPTH - 1; ACE_IS_ERRORED = false; _ret;}
 #else
-    #define CALLSTACK(function) function
-    #define CALLSTACK_NAMED(function, functionName) function
-    #define DUMPSTACK
+	#define CALLSTACK(function) function
+	#define CALLSTACK_NAMED(function, functionName) function
+	#define DUMPSTACK
 #endif
 
 #ifdef ENABLE_PERFORMANCE_COUNTERS
-    #define CBA_fnc_addPerFrameHandler { _ret = [(_this select 0), (_this select 1), (_this select 2), #function] call CBA_fnc_addPerFrameHandler; if(isNil "ACE_PFH_COUNTER" ) then { ACE_PFH_COUNTER=[]; }; ACE_PFH_COUNTER pushBack [[_ret, __FILE__, __LINE__], [(_this select 0), (_this select 1), (_this select 2)]];  _ret }
+	#define CBA_fnc_addPerFrameHandler { _ret = [(_this select 0), (_this select 1), (_this select 2), #function] call CBA_fnc_addPerFrameHandler; if(isNil "ACE_PFH_COUNTER" ) then { ACE_PFH_COUNTER=[]; }; ACE_PFH_COUNTER pushBack [[_ret, __FILE__, __LINE__], [(_this select 0), (_this select 1), (_this select 2)]];  _ret }
 
-    #define CREATE_COUNTER(x) if(isNil "ACE_COUNTERS" ) then { ACE_COUNTERS=[]; }; GVAR(DOUBLES(x,counter))=[]; GVAR(DOUBLES(x,counter)) set[0, QUOTE(GVAR(DOUBLES(x,counter)))];  GVAR(DOUBLES(x,counter)) set[1, diag_tickTime]; ACE_COUNTERS pushBack GVAR(DOUBLES(x,counter));
-    #define BEGIN_COUNTER(x) if(isNil QUOTE(GVAR(DOUBLES(x,counter)))) then { CREATE_COUNTER(x) }; GVAR(DOUBLES(x,counter)) set[2, diag_tickTime];
-    #define END_COUNTER(x) GVAR(DOUBLES(x,counter)) pushBack [(GVAR(DOUBLES(x,counter)) select 2), diag_tickTime];
+	#define CREATE_COUNTER(x) if(isNil "ACE_COUNTERS" ) then { ACE_COUNTERS=[]; }; GVAR(DOUBLES(x,counter))=[]; GVAR(DOUBLES(x,counter)) set[0, QUOTE(GVAR(DOUBLES(x,counter)))];  GVAR(DOUBLES(x,counter)) set[1, diag_tickTime]; ACE_COUNTERS pushBack GVAR(DOUBLES(x,counter));
+	#define BEGIN_COUNTER(x) if(isNil QUOTE(GVAR(DOUBLES(x,counter)))) then { CREATE_COUNTER(x) }; GVAR(DOUBLES(x,counter)) set[2, diag_tickTime];
+	#define END_COUNTER(x) GVAR(DOUBLES(x,counter)) pushBack [(GVAR(DOUBLES(x,counter)) select 2), diag_tickTime];
 
-    #define DUMP_COUNTERS ([__FILE__, __LINE__] call ACE_DUMPCOUNTERS_FNC)
+	#define DUMP_COUNTERS ([__FILE__, __LINE__] call ACE_DUMPCOUNTERS_FNC)
 #else
-    #define CREATE_COUNTER(x)
-    #define BEGIN_COUNTER(x)
-    #define END_COUNTER(x)
-    #define DUMP_COUNTERS
+	#define CREATE_COUNTER(x)
+	#define BEGIN_COUNTER(x)
+	#define END_COUNTER(x)
+	#define DUMP_COUNTERS
 #endif
