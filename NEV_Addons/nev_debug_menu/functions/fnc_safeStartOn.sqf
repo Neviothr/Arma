@@ -12,8 +12,11 @@ if (hasInterface) then {
 
 	while {isSafeStart} do {
 		uiSleep 60;
+		if !(isSafeStart) exitWith {};
+
 		hint format ["Weapons are cold, wait for admin to trigger start. (%1 minute(s) since briefing stage started)", _safeStartLoop];
 		systemChat format ["[SafeStart] Weapons are cold, wait for admin to trigger start. (%1 minute(s) since briefing stage started)", _safeStartLoop];
+
 		_safeStartLoop = _safeStartLoop + 1;
 	};
 };
