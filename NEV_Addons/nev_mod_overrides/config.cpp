@@ -1,13 +1,13 @@
 class CfgPatches {
-	class nev_a3_overrides {
+	class nev_mod_overrides {
 		name = "A3 Mod Overrides";
 		author = "Neviothr";
 		units[] = {};
 		weapons[] = {};
-		requiredAddons[] = {"A3_Weapons_F"};
-		version = 2.2.0;
-		versionStr = "2.2.0";
-		versionAr[] = {2, 2, 0};
+		requiredAddons[] = {"RH_acc"};
+		version = 2.2.1;
+		versionStr = "2.2.1";
+		versionAr[] = {2, 2, 1};
 	};
 };
 
