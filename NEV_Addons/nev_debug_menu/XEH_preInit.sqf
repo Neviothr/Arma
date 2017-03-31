@@ -4,6 +4,8 @@ ADDON = false;
 
 #include "XEH_PREP.hpp"
 
+// Add a keybind that only works if the player is an admin, gamemode is SP, or player is me
+// TODO: remove UID check after dedicated WP server is up
 [
 	"Debug Menu",
 	"debug_menu_key",

@@ -11,4 +11,4 @@ _fileExists = ctrlHTMLLoaded _ctrl;
 
 ctrlDelete _ctrl;
 
-_fileExists
+_fileExists // Return

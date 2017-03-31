@@ -3,6 +3,7 @@
 params ["_dialog"];
 private ["_overcastSlider", "_lightningSlider", "_fogValueSlider", "_fogDecaySlider", "_fogBaseSlider", "_rainSlider", "_wavesSlider", "_yearBox", "_year", "_monthBox", "_dayBox", "_day", "_hourBox", "_hour", "_minuteBox", "_minute", "_sideList"];
 
+// Find slider, set it's range, get current weather, set slider accordingly
 // Overcast slider
 _overcastSlider = _dialog displayCtrl 80003;
 _overcastSlider sliderSetRange [0, 1];
@@ -88,6 +89,8 @@ _sideList lbAdd "East";
 _sideList lbAdd "West";
 _sideList lbAdd "Independent";
 _sideList lbAdd "Civilian";
+
+// Select current player side
 switch (side group player) do {
 	case east: {
 		_sideList lbSetCurSel 0;

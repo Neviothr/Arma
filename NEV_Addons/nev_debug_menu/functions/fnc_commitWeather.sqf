@@ -2,6 +2,7 @@
 
 private ["_overcast", "_lightning", "_fogValue", "_fogDecay", "_fogBase", "_rain", "_waves"];
 
+// Get slider postions of all weather controls, apply weather accordingly
 // Overcast
 _overcast = sliderPosition 80003;
 sleep 0.1;
@@ -26,6 +27,6 @@ _rain = sliderPosition 80008;
 _waves = sliderPosition 80009;
 0 setWaves _waves;
 
-// Sync
+// Sync weather effects
 simulWeatherSync;
 forceWeatherChange;
