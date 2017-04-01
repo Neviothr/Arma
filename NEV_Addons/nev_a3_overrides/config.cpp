@@ -25,6 +25,3 @@ class CfgPatches {
 
 // Less explosive aircrafts
 #include "CfgVehicles.hpp"
-
-// Modified AI skills
-#include "CfgAISkill.hpp"
