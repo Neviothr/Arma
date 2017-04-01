@@ -7,6 +7,5 @@
 	_x disableAI "AUTOCOMBAT"; // Disable switch combat modes, thus making sure EI is always in combat mode
 	_x setBehaviour "AWARE"; // EI will keep their guard up
 	_x setSpeedMode "FULL"; // EI will move quickly
-	_x setSkill ["aimingAccuracy", 0.03]; // EI's default aimbot will be disabled to allow for a fairer firefight
 	_x reveal player; // So EI knows where friends are
 } forEach allUnits; // Apply to all units
