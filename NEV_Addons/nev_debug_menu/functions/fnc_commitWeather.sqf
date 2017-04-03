@@ -5,7 +5,6 @@ private ["_overcast", "_lightning", "_fogValue", "_fogDecay", "_fogBase", "_rain
 // Get slider postions of all weather controls, apply weather accordingly
 // Overcast
 _overcast = sliderPosition 80003;
-sleep 0.1;
 86400 setOvercast _overcast;
 skipTime 24;
 

@@ -18,6 +18,6 @@ if (isFilePatchingEnabled) then {
 
 // Add an `addAction` if player is admin, if gamemode is SP, or if it's me
 // TODO: remove UID check after dedicated WP server is up
-if (serverCommandAvailable "#logout" || !(isMultiplayer) || getPlayerUID player == "76561198141761169") then {
+if (serverCommandAvailable "#logout" || !(isMultiplayer)) then {
 	player addAction ["<t color='#228B25'>Debug Menu</t>", QUOTE(call FUNC(openDebugMenu))];
 };

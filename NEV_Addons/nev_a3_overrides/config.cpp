@@ -1,3 +1,5 @@
+#include "script_component.hpp"
+
 class CfgPatches {
 	class nev_a3_overrides {
 		name = "A3 Vanilla Overrides";
@@ -5,9 +7,9 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredAddons[] = {"A3_Weapons_F"};
-		version = 1.4.0;
-		versionStr = "1.4.0";
-		versionAr[] = {1 ,4, 0};
+		version = 1.4.1;
+		versionStr = "1.4.1";
+		versionAr[] = {1 ,4, 1};
 	};
 };
 
@@ -15,7 +17,7 @@ class CfgPatches {
 #include "CfgSettings.hpp"
 
 // Waypoint replacement
-#include "CfgEventhandlers.hpp"
+#include "CfgEventHandlers.hpp"
 
 // Brighter flares, reduce UGL round bounce
 #include "CfgAmmo.hpp"

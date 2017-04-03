@@ -1,3 +1,5 @@
+#include "script_component.hpp"
+
 disableSerialization;
 
 if (hasInterface) then {
