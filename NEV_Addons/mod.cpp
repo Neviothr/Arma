@@ -1,8 +1,4 @@
 name = "Neviothr's Mod Pack";
-picture = "\nev_debug_menu\data\logo.paa";
-logoSmall = "\nev_debug_menu\data\logo.paa";
-logo = "\nev_debug_menu\data\logo.paa";
-logoOver = "\nev_debug_menu\data\logo.paa";
 action = "https://github.com/Neviothr/ArmA";
 tooltipOwned = "NEV Addons";
 dlcColor[] = {1, 0.706, 0.075, 1};
