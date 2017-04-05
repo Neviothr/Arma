@@ -1,3 +1,5 @@
+#include "script_component.hpp"
+
 nev_allGroups = 0;
 nev_cachedGroups = [];
 nev_cachedUnits = 0;
@@ -22,7 +24,7 @@ nev_centerPOS = [nev_mapside, nev_mapside, 0];
 			};
 			if (!_disable && !(_x in nev_cachedGroups)) then {
 					nev_cachedGroups = nev_cachedGroups + [_x];
-					[_x] execFSM "fsm\nev_ai_caching.fsm";
+					[_x] execFSM "\NEV_Addons\addons\nev_cache\fsm\nev_ai_caching.fsm";
 				};
 		} forEach allGroups;
 	};
@@ -37,7 +39,7 @@ nev_centerPOS = [nev_mapside, nev_mapside, 0];
 		{
 			if !(_x in nev_cached_assets) then {
 				nev_cached_assets = nev_cached_assets + [_x];
-				[_x] execFSM "fsm\nev_vehicle_caching.fsm";
+				[_x] execFSM "\NEV_Addons\addons\nev_cache\fsm\nev_vehicle_caching.fsm";
 			};
 		} forEach _assets;
 
