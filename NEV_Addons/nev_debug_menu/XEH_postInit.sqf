@@ -16,8 +16,7 @@ if (isFilePatchingEnabled) then {
 	call compile preprocessFile "\@NEV_Addons\settings.hpp";
 };
 
-// Add an `addAction` if player is admin, if gamemode is SP, or if it's me
-// TODO: remove UID check after dedicated WP server is up
+// Add an `addAction` if admin or if SP
 if (serverCommandAvailable "#logout" || !(isMultiplayer)) then {
 	player addAction ["<t color='#228B25'>Debug Menu</t>", QUOTE(call FUNC(openDebugMenu))];
 };

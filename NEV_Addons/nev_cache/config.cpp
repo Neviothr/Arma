@@ -7,8 +7,11 @@ class CfgPatches {
 		requiredVersion = 1.0;
 		requiredAddons[] = {};
 		author[] = {"Neviothr"};
-
+		version = 1.0.0;
+		versionStr = "1.0.0";
+		versionAr[] = {1, 0, 0};
 	};
 };
 
 #include "CfgEventhandlers.hpp"
+#include "CfgSettings.hpp"
