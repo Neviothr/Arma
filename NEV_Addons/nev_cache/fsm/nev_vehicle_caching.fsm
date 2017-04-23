@@ -80,7 +80,7 @@ class FSM
           priority = 1.000000;
           to="Cache";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(count (crew _vehicle) == 0) && ({_x distance _vehicle < _nev_dist} count nev_players == 0)"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(count (crew _vehicle) == 0) && ({_x distance _vehicle < _nev_dist} count NEV_Addons_nev_cache_players == 0)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"call NEV_Addons_nev_cache_fnc_vehicleCache;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -111,7 +111,7 @@ class FSM
           priority = 1.000000;
           to="UnCache";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!(count (crew _vehicle) == 0) || ({_x distance _vehicle < _nev_dist} count nev_players > 0)"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(count (crew _vehicle) == 0) || ({_x distance _vehicle < _nev_dist} count NEV_Addons_nev_cache_players > 0)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"call NEV_Addons_nev_cache_fnc_vehicleUncache;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -152,7 +152,7 @@ class FSM
           priority = 1.000000;
           to="Cache";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(count (crew _vehicle) == 0) && ({_x distance _vehicle < _nev_dist} count nev_players == 0)"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(count (crew _vehicle) == 0) && ({_x distance _vehicle < _nev_dist} count NEV_Addons_nev_cache_players == 0)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"call NEV_Addons_nev_cache_fnc_vehicleCache;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/

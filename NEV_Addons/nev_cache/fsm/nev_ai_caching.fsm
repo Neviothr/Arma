@@ -6,7 +6,7 @@ item1[] = {"ready_",4,218,-191.749756,-19.800257,-101.749763,30.199743,0.000000,
 item2[] = {"begin",2,250,-195.216248,65.128845,-105.216232,115.128853,0.000000,"begin"};
 item3[] = {"cache_for_AI_",4,218,-306.548492,126.416489,-216.548492,176.416489,1.000000,"cache" \n "for AI?"};
 item4[] = {"cache",2,250,-305.433960,217.955521,-215.433945,267.955475,0.000000,"cache"};
-item5[] = {"unCache_for_AI_",4,4314,-193.956940,129.134674,-103.956940,179.134674,1.000000,"unCache" \n "for AI?"};
+item5[] = {"unCache_for_AI_",4,218,-193.956940,129.134674,-103.956940,179.134674,1.000000,"unCache" \n "for AI?"};
 item6[] = {"unCache",2,250,-193.956955,218.653885,-103.956940,268.653931,0.000000,"unCache"};
 item7[] = {"reSync_leader",4,218,-259.751007,291.135986,-150.551178,348.335876,2.000000,"reSync leader"};
 item8[] = {"allDead_",4,218,-396.858551,304.806641,-306.858551,354.806641,3.000000,"allDead?"};
@@ -21,7 +21,7 @@ item16[] = {"unit_died_",4,218,-396.614685,84.259239,-306.614685,134.259216,3.00
 item17[] = {"disabled_",4,218,-363.643097,367.045807,-273.643097,417.045837,3.000000,"disabled?"};
 item18[] = {"if_player_is_leader",4,218,-158.950836,-149.471191,-43.840740,-96.007736,1.000000,"if player is" \n "leader then" \n " exit"};
 item19[] = {"exitIsPlayer",1,250,-49.279797,-188.350754,40.720234,-138.350769,0.000000,"exitIsPlayer"};
-item20[] = {"grpNull_",4,218,-646.310730,185.444565,-556.310364,235.444412,2.000000,"grpNull?"};
+item20[] = {"grpNull_",4,4314,-646.310730,185.444565,-556.310364,235.444412,2.000000,"grpNull?"};
 link0[] = {0,1};
 link1[] = {0,18};
 link2[] = {0,20};
@@ -50,8 +50,8 @@ link24[] = {16,4};
 link25[] = {17,9};
 link26[] = {18,19};
 link27[] = {20,9};
-globals[] = {0.000000,0,0,0,0,640,480,1,39,6316128,1,-679.384766,105.851257,644.082214,-212.974701,820,895,1};
-window[] = {2,-1,-1,-1,-1,939,175,1289,175,3,838};
+globals[] = {0.000000,0,0,0,0,640,480,1,39,6316128,1,-660.289673,117.093933,608.511597,-239.974365,820,895,1};
+window[] = {2,-1,-1,-32000,-32000,914,150,1264,150,3,838};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -148,7 +148,7 @@ class FSM
                                         priority = 3.000000;
                                         to="end";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"(_group getVariable ""nev_cacheDisabled"")"/*%FSM</CONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(_group getVariable ""NEV_Addons_nev_cache_cacheDisabled"")"/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
@@ -262,8 +262,8 @@ class FSM
                 {
                         name = "end";
                         itemno = 9;
-                        init = /*%FSM<STATEINIT""">*/"nev_cachedGroups = nev_cachedGroups - [_group];" \n
-                         "_group setVariable [""nev_cacheDisabled"", true];"/*%FSM</STATEINIT""">*/;
+                        init = /*%FSM<STATEINIT""">*/"NEV_Addons_nev_cache_cachedGroups = NEV_Addons_nev_cache_cachedGroups - [_group];" \n
+                         "_group setVariable [""NEV_Addons_nev_cache_cacheDisabled"", true];"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
@@ -323,8 +323,8 @@ class FSM
                 {
                         name = "exitIsPlayer";
                         itemno = 19;
-                        init = /*%FSM<STATEINIT""">*/"nev_cachedGroups = nev_cachedGroups - [_group];" \n
-                         "_group setVariable [""nev_cacheDisabled"", true];"/*%FSM</STATEINIT""">*/;
+                        init = /*%FSM<STATEINIT""">*/"NEV_Addons_nev_cache_cachedGroups = NEV_Addons_nev_cache_cachedGroups - [_group];" \n
+                         "_group setVariable [""NEV_Addons_nev_cache_cacheDisabled"", true];"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {

@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 
 private ["_units", "_unit", "_dist", "_udist"];
 
