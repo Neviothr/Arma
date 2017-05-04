@@ -18,4 +18,3 @@ PREP(spawnGroup);
 PREP(teleport);
 PREP(adminInvisible);
 PREP(adminVisible);
-PREP(fileExists);

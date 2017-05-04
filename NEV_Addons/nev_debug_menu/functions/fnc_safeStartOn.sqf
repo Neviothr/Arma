@@ -3,6 +3,7 @@
 // Make sure the block is ran on an actual unit, not the server or a HC
 if (hasInterface) then {
 	GVAR(isSafeStart) = true; // Declare a var that is used as a loop condition
+	publicVariable QGVAR(isSafeStart);
 
 	// TODO: use `forspec` loop?
 	private _safeStartLoop = 1; // Declare a private var which indicates the current loop / minutes since SafeStart was enabled

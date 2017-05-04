@@ -5,6 +5,7 @@ if (hasInterface) then {
 
 	// Disable SafeStart loop
 	GVAR(isSafeStart) = false;
+	publicVariable QGVAR(isSafeStart);
 
 	// Notify players that game is about to begin
 	hint "Weapons are live in 5 seconds.";
