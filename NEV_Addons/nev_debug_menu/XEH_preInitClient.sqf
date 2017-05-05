@@ -8,7 +8,8 @@
 	"debug_menu_key",
 	"Open debug menu",
 	{
-		if (serverCommandAvailable "#logout" || !isMultiplayer || getPlayerUID player == "76561198141761169" && !dialog) then {
+		// Only if - player is an admin, game is in SP, player is Neviothr, player is host on a non-dedicated server
+		if (((serverCommandAvailable "#logout") || (!isMultiplayer) || (getPlayerUID player == "76561198141761169") || (isServer && hasInterface)) && !dialog) then {
 			call FUNC(openDebugMenu)
 		};
 	},
