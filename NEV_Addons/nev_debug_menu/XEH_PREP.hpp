@@ -18,3 +18,5 @@ PREP(spawnGroup);
 PREP(teleport);
 PREP(adminInvisible);
 PREP(adminVisible);
+PREP(randomEnvironment);
+PREP(fullMoonDates);

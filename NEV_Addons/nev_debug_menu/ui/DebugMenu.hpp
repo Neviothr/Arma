@@ -492,9 +492,9 @@ class nev_debug_menu {
 		// Players list box
 		class playersList: RscListbox {
 			idc = 80016;
-			x = "SafeZoneX + (220 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (360 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
-			w = "(230 / 1920) * SafeZoneW";
+			w = "(100 / 1920) * SafeZoneW";
 			h = "(300 / 1080) * SafeZoneH";
 			type = CT_LISTBOX;
 			style = ST_LEFT;
@@ -503,12 +503,21 @@ class nev_debug_menu {
 
 		// "Players:" text
 		class playersText: RscText {
-			x = "SafeZoneX + (220 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (360 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (266 / 1080) * SafeZoneH";
 			type = CT_STATIC;
 			style = ST_LEFT;
 			text = "Players:";
 			sizeEx = 0.035;
+		};
+
+		// A button to randomize the environment
+		class randomEnviButton: NevRscButton {
+			text = "Random Envi";
+			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
+			action = QUOTE(closeDialog 0; call FUNC(randomEnvironment));
+			tooltip = "Randomize environment";
 		};
 	};
 };
