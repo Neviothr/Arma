@@ -3,14 +3,14 @@
 class CfgPatches {
 	class nev_debug_menu {
 		name = "Mutipurpose Debug Menu";
-		author = "Neviothr";
+		author = "Neviothr & jameslkingsley"; // https://github.com/jameslkingsley
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.0;
 		requiredAddons[] = {"Extended_EventHandlers"};
-		version = 1.5.1;
-		versionStr = "1.5.1";
-		versionAr[] = {1, 5, 1};
+		version = 1.5.2;
+		versionStr = "1.5.2";
+		versionAr[] = {1, 5, 2};
 	};
 };
 

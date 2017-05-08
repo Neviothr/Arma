@@ -1,3 +1,5 @@
+// Config by jameslkingsley
+// https://github.com/ARCOMM/ARC_AI/blob/master/addons/arc_ai_client_launchers/config.cpp
 class CfgAmmo {
     PROTO(RocketBase);
     LAUNCHER(R_PG32V_F, RocketBase);

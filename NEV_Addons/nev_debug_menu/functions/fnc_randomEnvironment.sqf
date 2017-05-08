@@ -1,3 +1,6 @@
+// Script by jameslkingsley
+// https://github.com/ARCOMM/ARCMF/blob/master/ARCMF.VR/f/arc/misc/fn_randomEnvironment.sqf
+
 #include "script_component.hpp"
 
 if (!isServer) exitWith {};
