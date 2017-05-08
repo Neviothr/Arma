@@ -516,7 +516,7 @@ class nev_debug_menu {
 			text = "Random Envi";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; call FUNC(randomEnvironment));
+			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(randomEnvironment), 0)]);
 			tooltip = "Randomize environment";
 		};
 	};

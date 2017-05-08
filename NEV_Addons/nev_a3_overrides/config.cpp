@@ -7,9 +7,9 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredAddons[] = {"A3_Weapons_F"};
-		version = 1.4.1;
-		versionStr = "1.4.1";
-		versionAr[] = {1 ,4, 1};
+		version = 1.4.2;
+		versionStr = "1.4.2";
+		versionAr[] = {1 ,4, 2};
 	};
 };
 
@@ -27,6 +27,3 @@ class CfgPatches {
 
 // Less explosive aircrafts
 #include "CfgVehicles.hpp"
-
-// Modified AI skills
-#include "CfgAISkill.hpp"
