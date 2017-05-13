@@ -2,11 +2,12 @@
 
 disableSerialization;
 
-if (hasInterface) then {
-    waitUntil {!isNull (findDisplay 12)};
+diag_log format ["CAN SUSPEND TEST: %1", canSuspend];
 
+if (hasInterface) then {
     _mapDisplay = findDisplay 12;
     _mapControl = _mapDisplay displayCtrl 51;
+
     _mapControl ctrlAddEventHandler ["MouseMoving", {
         GVAR(map_custom_mark) = "custom_mark" in (ctrlMapMouseOver (_this select 0));
     }];
