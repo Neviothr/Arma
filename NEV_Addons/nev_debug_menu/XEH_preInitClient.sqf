@@ -8,17 +8,21 @@
 	"debug_menu_key",
 	"Open debug menu",
 	{
-		// Only if - player is an admin, game is in SP, player is Neviothr, player is host on a non-dedicated server
-		if (((serverCommandAvailable "#logout") || (!isMultiplayer) || (getPlayerUID player == "76561198141761169") || (isServer && hasInterface)) && !dialog) then {
-			call FUNC(openDebugMenu)
+		if (( 													// Open debug menu only if the following is true
+		    	(serverCommandAvailable "#logout") || 			// If the player is an admin
+		    	(!isMultiplayer) || 							// If gamemode is SP
+		    	(getPlayerUID player == "76561198141761169") || // If player is mod author
+		    	(isServer && hasInterface) 						// If player is host on a non-dedicated server
+			) && !dialog) then { 								// If no dialogs are open
+			createDialog "nev_debug_menu";
 		};
 	},
 	""
 ] call CBA_fnc_addKeybind;
 
-// NEV_maxDistance
+// Max distance
 [
-	"NEV_maxDistance",
+	QGVAR(maxDistance),
 	"SLIDER",
 	"Max spawn distance",
 	"Debug Menu Groups",
@@ -26,13 +30,13 @@
 	true,
 	{
 		params ["_value"];
-		NEV_maxDistance = _value;
+		GVAR(maxDistance) = _value;
 	}
 ] call CBA_Settings_fnc_init;
 
-// NEV_minDistance
+// Min distance
 [
-	"NEV_minDistance",
+	QGVAR(minDistance),
 	"SLIDER",
 	"Min spawn distance",
 	"Debug Menu Groups",
@@ -40,13 +44,13 @@
 	true,
 	{
 		params ["_value"];
-		NEV_minDistance = _value;
+		GVAR(minDistance) = _value;
 	}
 ] call CBA_Settings_fnc_init;
 
-// NEV_groupSide
+// Group side
 [
-	"NEV_groupSide",
+	QGVAR(groupSide),
 	"LIST",
 	"Unit side",
 	"Debug Menu Groups",
@@ -54,11 +58,11 @@
 	true,
 	{
 		params ["_value"];
-		NEV_groupSide = _value;
+		GVAR(groupSide) = _value;
 	}
 ] call CBA_Settings_fnc_init;
 
-// NEV_group
+// Group array
 [
 	"NEV_group",
 	"EDITBOX",
@@ -68,6 +72,6 @@
 	true,
 	{
 		params ["_value"];
-		NEV_group = _value splitString " "; // Turns editbox's `name1 name2` into ["name1", "name2"]
+		GVAR(groupArray) = _value splitString " "; // Turns editbox's `name1 name2` into ["name1", "name2"]
 	}
 ] call CBA_Settings_fnc_init;

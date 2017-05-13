@@ -6,7 +6,6 @@ PREP(commitWeather);
 PREP(garrison);
 PREP(nearestObjects);
 PREP(onLoad);
-PREP(openDebugMenu);
 PREP(openGarage);
 PREP(openZeus);
 PREP(removeDead);

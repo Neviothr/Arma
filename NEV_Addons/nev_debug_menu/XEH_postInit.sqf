@@ -1,7 +1,10 @@
 #include "script_component.hpp"
 
-// Add an `addAction`
-// Only if - player is an admin, game is in SP, player is Neviothr, player is host on a non-dedicated server
-if (((serverCommandAvailable "#logout") || (!isMultiplayer) || (getPlayerUID player == "76561198141761169") || (isServer && hasInterface)) && !dialog) then {
-	player addAction ["<t color='#228B25'>Debug Menu</t>", QUOTE(call FUNC(openDebugMenu))];
+if ( 													// Add an addAction only if the follow is true
+    	(serverCommandAvailable "#logout") || 			// If the player is an admin
+    	(!isMultiplayer) || 							// If gamemode is SP
+    	(getPlayerUID player == "76561198141761169") || // If player is mod author
+    	(isServer && hasInterface) 						// If player is host on a non-dedicated server
+	) then {
+	player addAction ["<t color='#228B25'>Debug Menu</t>", "createDialog ""nev_debug_menu"""];
 };
