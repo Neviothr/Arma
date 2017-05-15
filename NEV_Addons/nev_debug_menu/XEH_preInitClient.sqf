@@ -24,7 +24,7 @@
 [
 	QGVAR(maxDistance),
 	"SLIDER",
-	"Max spawn distance",
+	["Max spawn distance", "The max distance from the player at which units will be spawned."],
 	"Debug Menu Groups",
 	[0, 12000, 325, 0],
 	true,
@@ -38,7 +38,7 @@
 [
 	QGVAR(minDistance),
 	"SLIDER",
-	"Min spawn distance",
+	["Min spawn distance", "The min distance from the player at which units will be spawned."],
 	"Debug Menu Groups",
 	[0, 12000, 250, 0],
 	true,
@@ -52,7 +52,7 @@
 [
 	QGVAR(groupSide),
 	"LIST",
-	"Unit side",
+	["Unit side", "The side of spawned units."],
 	"Debug Menu Groups",
 	[[west, east, independent, civilian], ["West", "East", "Independent", "Civilian"], 0],
 	true,
@@ -66,12 +66,26 @@
 [
 	"NEV_group",
 	"EDITBOX",
-	"Unit array",
+	["Unit array", "Unit group array (class names sperated by a single space)."],
 	"Debug Menu Groups",
 	"",
 	true,
 	{
 		params ["_value"];
 		GVAR(groupArray) = _value splitString " "; // Turns editbox's `name1 name2` into ["name1", "name2"]
+	}
+] call CBA_Settings_fnc_init;
+
+// Code to run on spawned units
+[
+	"NEV_unitCode",
+	"EDITBOX",
+	["Unit code", "The code which will be ran on every spawned unit. Code will be ran though a forEach loop - _x, etc."],
+	"Debug Menu Groups",
+	"",
+	true,
+	{
+		params ["_value"];
+		GVAR(unitCode) = _value;
 	}
 ] call CBA_Settings_fnc_init;
