@@ -4,9 +4,20 @@
 
 if !is3DEN exitWith {};
 
+// Add mouseOver EH
+private _idx = missionNamespace getVariable [QGVAR(edenDrawIdx), -1];
+
+if !(_idx == -1) then {
+    removeMissionEventHandler ["Draw3D", _idx];
+};
+
+_idx = addMissionEventHandler ["Draw3D", FUNC(edenDraw)];
+GVAR(edenDrawIdx) = _idx;
+
+// Some stuff for hiding map objects
 {
     {
-    	_x hideObjectGlobal false
+        _x hideObjectGlobal false
     } forEach (_x getVariable [QGVAR(intersections), []]);
 
     private _ints = [];
@@ -20,16 +31,17 @@ if !is3DEN exitWith {};
 
     _x setVariable [QGVAR(intersections), _ints];
     {
-    	_x hideObjectGlobal true
+        _x hideObjectGlobal true
     } forEach _ints;
 } forEach ((all3DENEntities select 3) select {_x isKindOf QGVAR(hideMapObjects)});
 
 add3DENEventHandler ["OnMissionPreviewEnd", {
+    // Cheat to get OnMissionPreviewEnd working
     0 = [] spawn {
         uisleep 0.5;
         {
             {
-            	_x hideObjectGlobal false
+                _x hideObjectGlobal false
             } forEach (_x getVariable [QGVAR(intersections), []]);
 
             private _ints = [];
@@ -43,7 +55,7 @@ add3DENEventHandler ["OnMissionPreviewEnd", {
 
             _x setVariable [QGVAR(intersections), _ints];
             {
-            	_x hideObjectGlobal true
+                _x hideObjectGlobal true
             } forEach _ints;
         } forEach ((all3DENEntities select 3) select {_x isKindOf QGVAR(hideMapObjects)});
     };
