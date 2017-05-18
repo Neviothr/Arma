@@ -4,7 +4,7 @@ private _i = 0; // Private loop number var, so we can hint it later
 _spawnedGroups = [];
 _codeTargetUnits = [];
 
-// Froup spawning loop
+// Group spawning loop
 for [{_i = 0}, {_i <= 5}, {_i = _i + 1}] do {
 	// Select random pos at a max distance from player
 	_aiPos = [player, GVAR(maxDistance)] call CBA_fnc_randPos;
