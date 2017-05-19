@@ -1,30 +1,21 @@
 #include "script_component.hpp"
 
-private ["_overcast", "_lightning", "_fogValue", "_fogDecay", "_fogBase", "_rain", "_waves"];
-
 // Get slider postions of all weather controls, apply weather accordingly
 // Overcast
-_overcast = sliderPosition 80003;
-86400 setOvercast _overcast;
+86400 setOvercast sliderPosition 80003;
 skipTime 24;
 
 // Lightnings
-_lightning = sliderPosition 80004;
-0 setLightnings _lightning;
+0 setLightnings sliderPosition 80004;
 
 // Fog
-_fogValue = sliderPosition 80005;
-_fogDecay = sliderPosition 80006;
-_fogBase = sliderPosition 80007;
-0 setFog [_fogValue, _fogDecay, _fogBase];
+0 setFog [sliderPosition 80005, sliderPosition 80006, sliderPosition 80007];
 
 // Rain
-_rain = sliderPosition 80008;
-0 setRain _rain;
+0 setRain sliderPosition 80008;
 
 // Waves
-_waves = sliderPosition 80009;
-0 setWaves _waves;
+0 setWaves sliderPosition 80009;
 
 // Sync weather effects
 simulWeatherSync;

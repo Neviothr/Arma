@@ -5,7 +5,7 @@ class CfgNotifications {
 		iconText = "";
 		description = "%2";
 		color[] = {1, 1, 1, 1};
-		duration = 10;
+		duration = 5;
 		priority = 0;
 		difficulty[] = {};
 	};

@@ -19,3 +19,5 @@ PREP(adminInvisible);
 PREP(adminVisible);
 PREP(randomEnvironment);
 PREP(fullMoonDates);
+PREP(refuelVehicle);
+PREP(rearmVehicle);

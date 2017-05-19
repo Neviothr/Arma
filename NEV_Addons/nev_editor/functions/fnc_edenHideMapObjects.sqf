@@ -13,6 +13,7 @@
 #define Z1 [ARR_3(0, 0, -RANGE)]
 #define Z2 [ARR_3(0, 0, RANGE)]
 #define ICON "\a3\ui_f\data\map\Markers\Military\dot_ca.paa"
+
 {
     drawLine3D [_x modelToWorld X1, _x modelToWorld X2, COLX];
     drawLine3D [_x modelToWorld Y1, _x modelToWorld Y2, COLY];

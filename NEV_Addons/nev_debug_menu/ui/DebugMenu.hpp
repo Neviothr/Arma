@@ -49,7 +49,7 @@ class nev_debug_menu {
 		};
 
 		// A button to make units aggressive
-		class makeUnitsAggressive: NevRscButton {
+		class makeUnitsAggressiveButton: NevRscButton {
 			text = "Aggressive AI";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
@@ -58,7 +58,7 @@ class nev_debug_menu {
 		};
 
 		// A button to remove add dead AI units and vehicles
-		class removeDead: NevRscButton {
+		class removeDeadButton: NevRscButton {
 			text = "Remove dead";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
@@ -67,7 +67,7 @@ class nev_debug_menu {
 		};
 
 		// A button garrison all units
-		class garrisonUnits: NevRscButton {
+		class garrisonButton: NevRscButton {
 			text = "Garrison";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
@@ -76,7 +76,7 @@ class nev_debug_menu {
 		};
 
 		// A button to spawn a group of set units
-		class spawnGroup: NevRscButton {
+		class spawnGroupButton: NevRscButton {
 			text = "Spawn group(s)";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
@@ -97,7 +97,7 @@ class nev_debug_menu {
 		};
 
 		// A button to repair the current vehicle
-		class repairVehicle: NevRscButton {
+		class repairVehicleButton: NevRscButton {
 			text = "Repair";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
@@ -150,7 +150,7 @@ class nev_debug_menu {
 		};
 
 		// A button to execute broadcast
-		class broadcastText: NevRscButton {
+		class broadcastButton: NevRscButton {
 			text = "Broadcast";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
@@ -285,7 +285,7 @@ class nev_debug_menu {
 		};
 
 		// A button to commit weather changes
-		class commitWeather: NevRscButton {
+		class commitWeatherButton: NevRscButton {
 			text = "Change Weather";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
@@ -404,7 +404,7 @@ class nev_debug_menu {
 		};
 
 		// A button to commit time and date changes
-		class commitDate: NevRscButton {
+		class commitDateButton: NevRscButton {
 			text = "Change date";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
@@ -413,7 +413,7 @@ class nev_debug_menu {
 		};
 
 		// A button to return all objects within a radius of 50m
-		class nearestObjects: NevRscButton {
+		class nearestObjectsButton: NevRscButton {
 			text = "Nearset Objs";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
@@ -445,7 +445,7 @@ class nev_debug_menu {
 		};
 
 		// A button to make the admin visible
-		class adminVisible: NevRscButton {
+		class adminVisibleButton: NevRscButton {
 			text = "Visible";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
@@ -454,7 +454,7 @@ class nev_debug_menu {
 		};
 
 		// A button to make the admin invisible
-		class adminInvisible: NevRscButton {
+		class adminInvisibleButton: NevRscButton {
 			text = "Invisible";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
@@ -463,7 +463,7 @@ class nev_debug_menu {
 		};
 
 		// A button to open the virtual garage
-		class virtualGarage: NevRscButton {
+		class virtualGarageButton: NevRscButton {
 			text = "Virtual Garage";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
@@ -472,7 +472,7 @@ class nev_debug_menu {
 		};
 
 		// A button to turn on safe start
-		class safeStartOn: NevRscButton {
+		class safeStartOnButton: NevRscButton {
 			text = "SafeStart On";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
@@ -481,7 +481,7 @@ class nev_debug_menu {
 		};
 
 		// A button to turn off safe start
-		class safeStartOff: NevRscButton {
+		class safeStartOffButton: NevRscButton {
 			text = "SafeStart Off";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
@@ -518,6 +518,24 @@ class nev_debug_menu {
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
 			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(randomEnvironment), 0)]);
 			tooltip = "Randomize environment";
+		};
+
+		// A button to refuel the current vehicle
+		class refuelVehicleButton: NevRscButton {
+			text = "Refuel";
+			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
+			action = QUOTE(closeDialog 0; call FUNC(refuelVehicle));
+			tooltip = "Refuel the current vehicle";
+		};
+
+		// A button to rearm the current vehicle
+		class rearmVehicleButton: NevRscButton {
+			text = "Rearm";
+			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
+			action = QUOTE(closeDialog 0; call FUNC(rearmVehicle));
+			tooltip = "Rearm the current vehicle";
 		};
 	};
 };
