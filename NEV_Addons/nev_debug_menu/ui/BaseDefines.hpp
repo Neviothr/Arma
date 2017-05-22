@@ -101,6 +101,11 @@ class RscButtonMenu;
 class RscSlider;
 class IGUIBack;
 class RscEdit;
+class RscControlsGroupNoScrollbars;
+class RscTitle;
+class RscHTML;
+class RscButtonMenuOk;
+class RscButtonMenuCancel;
 
 // Button
 class NevRscButton: RscButton {

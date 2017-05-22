@@ -35,7 +35,7 @@ class nev_debug_menu {
 			text = "Debug console";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; createDialog QUOTE(QUOTE(RscDisplayDebugPublic)));
+			action = QUOTE(closeDialog 0; createDialog QUOTE(QUOTE(BisDisplayDebugPublic)));
 			tooltip = "Open the BIS debug console";
 		};
 
@@ -431,7 +431,7 @@ class nev_debug_menu {
 			type = CT_LISTBOX;
 			style = ST_LEFT;
 			tooltip = "Change player's side";
-			onLBSelChanged = QUOTE(_this call FUNC(sideChange))
+			onLBSelChanged = QUOTE(_this call FUNC(sideChange));
 		};
 
 		// "Side" text
