@@ -1,6 +1,20 @@
 #define COMPONENT nev_a3_overrides
 #define PREFIX NEV_Addons
 
+// Macro by jameslkingsley
+// https://github.com/ARCOMM/ARC_AI/blob/master/addons/arc_ai_client_launchers/macros.hpp
+#define PROTO(CNAME) \
+	class ##CNAME##
+
+#define LAUNCHER(CNAME, PNAME) \
+	class ##CNAME##: ##PNAME## {\
+		airLock = 1;\
+		allowAgainstInfantry = 1;\
+		soundFly[] = {"A3\Sounds_F\weapons\Rockets\rocket_fly_1", 12, 1.5, 400};\
+		whistleDist = 24;\
+		cost = 3;\
+	}
+
 #define DEBUG_SYNCHRONOUS
 
 #ifndef SUBPREFIX

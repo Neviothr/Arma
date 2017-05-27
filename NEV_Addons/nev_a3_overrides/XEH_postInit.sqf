@@ -2,8 +2,6 @@
 
 disableSerialization;
 
-diag_log format ["CAN SUSPEND TEST: %1", canSuspend];
-
 if (hasInterface) then {
     _mapDisplay = findDisplay 12;
     _mapControl = _mapDisplay displayCtrl 51;
