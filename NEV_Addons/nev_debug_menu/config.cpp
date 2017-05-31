@@ -8,9 +8,9 @@ class CfgPatches {
 		weapons[] = {};
 		requiredVersion = 1.0;
 		requiredAddons[] = {"Extended_EventHandlers"};
-		version = 1.5.6;
-		versionStr = "1.5.6";
-		versionAr[] = {1, 5, 6};
+		version = 1.5.7;
+		versionStr = "1.5.7";
+		versionAr[] = {1, 5, 7};
 	};
 };
 

@@ -86,10 +86,10 @@ class nev_debug_menu {
 
 		// Note: a static background image
 		class backgroundImg: RscFrame {
-			x = "SafeZoneX + (495 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (255 / 1080) * SafeZoneH";
-			w = "(830 / 1920) * SafeZoneW";
-			h = "(500 / 1080) * SafeZoneH";
+			x = "SafeZoneX + (350 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (245 / 1080) * SafeZoneH";
+			w = "(975 / 1920) * SafeZoneW";
+			h = "(510 / 1080) * SafeZoneH";
 			type = CT_STATIC;
 			style = ST_FRAME;
 			sizeEx = 0.05;

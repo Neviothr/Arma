@@ -90,6 +90,12 @@ _sideList lbAdd "West";
 _sideList lbAdd "Independent";
 _sideList lbAdd "Civilian";
 
+// Set the color for each of the side list box's entries
+_sideList lbSetColor [0, [0.5, 0.125, 0.125, 1]]; // East
+_sideList lbSetColor [1, [0.15, 0.40, 0.6, 1]]; // West
+_sideList lbSetColor [2, [0.125, 0.5, 0.125, 1]]; // Independent
+_sideList lbSetColor [3, [0.425, 0.125, 0.5, 1]]; // Civilian
+
 // Select current player side
 switch (side group player) do {
 	case east: {
