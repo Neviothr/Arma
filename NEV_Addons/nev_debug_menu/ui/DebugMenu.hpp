@@ -35,7 +35,7 @@ class nev_debug_menu {
 			text = "Debug console";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; createDialog QUOTE(QUOTE(BisDisplayDebugPublic)));
+			action = QUOTE(closeDialog 0; createDialog QUOTE(QUOTE(RscDisplayDebugPublic)));
 			tooltip = "Open the BIS debug console";
 		};
 
@@ -536,6 +536,59 @@ class nev_debug_menu {
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
 			action = QUOTE(closeDialog 0; call FUNC(rearmVehicle));
 			tooltip = "Rearm the current vehicle";
+		};
+
+		// "mission_name on map_name" text
+		class missionMapText: RscText {
+			idc = 80017;
+			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (266 / 1080) * SafeZoneH";
+			type = CT_STATIC;
+			style = ST_LEFT;
+			text = "";
+			sizeEx = 0.035;
+		};
+
+		// Debug Console's edit box
+		class debugConsole: RscEdit {
+			idc = 80018;
+			x = "SafeZoneX + (1355 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
+			w = "(435 / 1920) * SafeZoneW";
+			h = "(300 / 1080) * SafeZoneH";
+			type = CT_EDIT;
+			style = ST_MULTI;
+			tooltip = "Execute code";
+			autocomplete = "scripting";
+		};
+
+		// A button execute local code
+		class execLocalButton: NevRscButton {
+			text = "Local";
+			x = "SafeZoneX + (1355 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
+			action = QUOTE([ARR_1(0)] call FUNC(debugConsoleExec));
+			tooltip = "Execute local code";
+		};
+
+		// A button execute global code
+		class execGlobalButton: NevRscButton {
+			idc = 80019;
+			text = "Global";
+			x = "SafeZoneX + (1505 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
+			action = QUOTE([ARR_1(1)] call FUNC(debugConsoleExec));
+			tooltip = "Execute global code";
+		};
+
+		// A button execute server code
+		class execServerButton: NevRscButton {
+			idc = 80020;
+			text = "Server";
+			x = "SafeZoneX + (1655 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
+			action = QUOTE([ARR_1(2)] call FUNC(debugConsoleExec));
+			tooltip = "Execute server code";
 		};
 	};
 };

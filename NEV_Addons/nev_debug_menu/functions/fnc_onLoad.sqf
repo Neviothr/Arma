@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 params ["_dialog"];
-private ["_overcastSlider", "_lightningSlider", "_fogValueSlider", "_fogDecaySlider", "_fogBaseSlider", "_rainSlider", "_wavesSlider", "_yearBox", "_year", "_monthBox", "_dayBox", "_day", "_hourBox", "_hour", "_minuteBox", "_minute", "_sideList"];
+private ["_overcastSlider", "_lightningSlider", "_fogValueSlider", "_fogDecaySlider", "_fogBaseSlider", "_rainSlider", "_wavesSlider", "_yearBox", "_year", "_monthBox", "_dayBox", "_day", "_hourBox", "_hour", "_minuteBox", "_minute", "_sideList", "_missionName", "_mapName", "_execGlobalButton", "_execServerButton"];
 
 // Find slider, set it's range, get current weather, set slider accordingly
 // Overcast slider
@@ -117,3 +117,17 @@ _playersList = _dialog displayCtrl 80016;
 {
 	_playersList lbAdd name _x;
 } forEach allPlayers;
+
+// Mission and map name text
+_missionMapText = _dialog displayCtrl 80017;
+_missionName = briefingName;
+_mapName = worldName;
+_missionMapText ctrlSetText format ["%1 on %2", _missionName, _mapName];
+
+// Disable global and server code execution buttons is mode is SP
+if !(isMultiplayer) then {
+	_execGlobalButton = _dialog displayCtrl 80019;
+	_execServerButton = _dialog displayCtrl 80020;
+	_execGlobalButton ctrlEnable false;
+	_execServerButton ctrlEnable false;
+};

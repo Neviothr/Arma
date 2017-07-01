@@ -1,13 +1,24 @@
-params ["_target", "_code"];
+#include "script_component.hpp"
 
-if (!isMultiplayer) exitWith {[[], _code] remoteExec ["call", 0];};
+params ["_target"];
+_code = compile ctrlText 80018;
+systemChat format ["Target: %1. Code: %2.", _target, _code];
 
-if (_target isEqualTo 1) exitWith {[[], _code] remoteExec ["call", 0];};
-
-if (_target isEqualTo 0) exitWith {
-	[[], _code]  remoteExec ["call", remoteExecutedOwner];
+if (!isMultiplayer) exitWith {
+	[[], _code] remoteExec ["call", 0];
 };
 
+// Global execution
+if (_target isEqualTo 1) exitWith {
+	[[], _code] remoteExec ["call", 0];
+};
+
+// Local execution
+if (_target isEqualTo 0) exitWith {
+	[[], _code] remoteExec ["call", remoteExecutedOwner];
+};
+
+// Server execution
 if (_target isEqualTo 2) exitWith {
-	[[], _code]  remoteExec ["call", 2];
+	[[], _code] remoteExec ["call", 2];
 };

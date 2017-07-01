@@ -21,6 +21,4 @@ PREP(randomEnvironment);
 PREP(fullMoonDates);
 PREP(refuelVehicle);
 PREP(rearmVehicle);
-PREP(debugConsole);
 PREP(debugConsoleExec);
-PREP(debugConsoleAllowed);
