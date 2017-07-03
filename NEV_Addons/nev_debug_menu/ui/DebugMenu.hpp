@@ -1,6 +1,7 @@
 class nev_debug_menu {
 	duration = 999999;
 	idd = 80000;
+	movingEnable = true;
 	onLoad = QUOTE(call FUNC(onLoad));
 	class controls {
 		// A button to open Zeus
@@ -88,12 +89,13 @@ class nev_debug_menu {
 		class backgroundImg: RscFrame {
 			x = "SafeZoneX + (350 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (245 / 1080) * SafeZoneH";
-			w = "(975 / 1920) * SafeZoneW";
+			w = "(1475 / 1920) * SafeZoneW";
 			h = "(510 / 1080) * SafeZoneH";
 			type = CT_STATIC;
 			style = ST_FRAME;
 			sizeEx = 0.05;
 			text = "Debug Menu";
+			moving = 1;
 		};
 
 		// A button to repair the current vehicle
@@ -560,6 +562,7 @@ class nev_debug_menu {
 			style = ST_MULTI;
 			tooltip = "Execute code";
 			autocomplete = "scripting";
+			colorBackground[] = {0,0,0,0.5};
 		};
 
 		// A button execute local code
@@ -589,6 +592,15 @@ class nev_debug_menu {
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
 			action = QUOTE([ARR_1(2)] call FUNC(debugConsoleExec));
 			tooltip = "Execute server code";
+		};
+
+		// A button to create a square AO based on 2 points
+		class createAOButton: NevRscButton {
+			text = "Create AO";
+			x = "SafeZoneX + (960 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
+			action = QUOTE(closeDialog 0; [] spawn FUNC(createAO));
+			tooltip = "Create an AO based on 2 points";
 		};
 	};
 };

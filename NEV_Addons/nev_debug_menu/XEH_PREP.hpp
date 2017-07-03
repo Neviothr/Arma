@@ -22,3 +22,4 @@ PREP(fullMoonDates);
 PREP(refuelVehicle);
 PREP(rearmVehicle);
 PREP(debugConsoleExec);
+PREP(createAO);

@@ -2,7 +2,6 @@
 
 params ["_target"];
 _code = compile ctrlText 80018;
-systemChat format ["Target: %1. Code: %2.", _target, _code];
 
 if (!isMultiplayer) exitWith {
 	[[], _code] remoteExec ["call", 0];
