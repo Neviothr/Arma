@@ -6,7 +6,8 @@ GVAR(mapClicksNum) = 1; // Var for checking how many times the user has click on
 GVAR(isEHdone) = false; // Local var for checking if below EH is done
 
 // Add a map click EH
-[QGVAR(aoPointsEH), "onMapSingleClick", {
+addMissionEventHandler ["MapSingleClick", {
+	params ["_units", "_pos", "_alt", "_shift"]; // Thanks BIS
 	if (GVAR(mapClicksNum) == 1) then {
 		GVAR(aoPoint1) = _pos; // Assign 1st click pos to var
 		GVAR(mapClicksNum) = GVAR(mapClicksNum) + 1; // +1 var to case 2 is ran
@@ -15,12 +16,11 @@ GVAR(isEHdone) = false; // Local var for checking if below EH is done
 		GVAR(isEHdone) = true; // Mark EH as done
 
 		// Remove our EH to allow compatablity with custom waypoint in nev_a3_overrides
-		[QGVAR(aoPointsEH), "onMapSingleClick"] call BIS_fnc_removeStackedEventHandler;
+		removeMissionEventHandler ["MapSingleClick", _thisEventhandler];
 	};
-}] call BIS_fnc_addStackedEventHandler;
+}];
 
 waitUntil {GVAR(isEHdone)}; // Wait until EH is done. Suspention is only allowed when spawning a fucn!
-
 
 // Use a function to find the middle point between the GVAR(aoPoint1) and GVAR(aoPoint2)
 // Get X and Y of 1st point
@@ -34,9 +34,6 @@ _Y2 = GVAR(aoPoint2) select 1;
 // Calculate middle
 _Xm = (_X1 + _X2) / 2;
 _Ym = (_Y1 + _Y2) / 2;
-
-// Store middle point
-missionNamespace setVariable [QGVAR(aoMiddle), [_Xm, _Ym], true];
 
 // Choose a point and calculate X and Y distance from it to middle point
 _xDiff = _Xm - _X1;

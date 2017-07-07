@@ -6,10 +6,12 @@
 openMap true; // Open the map
 
 // Add a map click EH
-[QGVAR(mapTeleport), "onMapSingleClick", {
+addMissionEventHandler ["MapSingleClick", {
+	params ["_units", "_pos", "_alt", "_shift"]; // Thanks BIS
+
 	 // On click move player / player's vehicle to clicked pos
 	vehicle player setPos _pos;
 
 	// Remove our EH to allow compatablity with custom waypoint in nev_a3_overrides
-	[QGVAR(mapTeleport), "onMapSingleClick"] call BIS_fnc_removeStackedEventHandler;
-}] call BIS_fnc_addStackedEventHandler;
+	removeMissionEventHandler ["MapSingleClick", _thisEventhandler];
+}];
