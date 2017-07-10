@@ -166,6 +166,7 @@ class nev_debug_menu {
 		   	x = "SafeZoneX + (960 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
 		    tooltip = "Change overcast";
+		    onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
 		};
 
 		// "Overcast" text
@@ -184,6 +185,7 @@ class nev_debug_menu {
 		   	x = "SafeZoneX + (960 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
 		    tooltip = "Change lightning";
+		    onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
 		};
 
 		// "Lightning" text
@@ -202,6 +204,7 @@ class nev_debug_menu {
 		   	x = "SafeZoneX + (960 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
 		    tooltip = "Change fog value";
+		    onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
 		};
 
 		// "Fog value:" text
@@ -220,6 +223,7 @@ class nev_debug_menu {
 		   	x = "SafeZoneX + (960 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
 		    tooltip = "Change fog decay";
+		    onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
 		};
 
 		// "Fog decay" text
@@ -238,6 +242,7 @@ class nev_debug_menu {
 		   	x = "SafeZoneX + (960 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
 		    tooltip = "Change fog base";
+		    onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
 		};
 
 		// "Fog base" text
@@ -256,6 +261,7 @@ class nev_debug_menu {
 		   	x = "SafeZoneX + (960 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510/ 1080) * SafeZoneH";
 		    tooltip = "Change rain";
+		    onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
 		};
 
 		// "Rain" text
@@ -274,6 +280,7 @@ class nev_debug_menu {
 		   	x = "SafeZoneX + (960 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
 		    tooltip = "Change waves";
+		    onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
 		};
 
 		// "Wave" text
@@ -284,15 +291,6 @@ class nev_debug_menu {
 			style = ST_LEFT;
 			text = "Waves:";
 			sizeEx = 0.035;
-		};
-
-		// A button to commit weather changes
-		class commitWeatherButton: NevRscButton {
-			text = "Change Weather";
-			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
-			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
-			tooltip = "Commit weather changes";
 		};
 
 		// Year combo box
@@ -597,8 +595,8 @@ class nev_debug_menu {
 		// A button to create a square AO based on 2 points
 		class createAOButton: NevRscButton {
 			text = "Create AO";
-			x = "SafeZoneX + (960 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
+			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
 			action = QUOTE(closeDialog 0; [] spawn FUNC(createAO));
 			tooltip = "Create an AO based on 2 points";
 		};

@@ -1,21 +1,41 @@
 #include "script_component.hpp"
 
-// Get slider postions of all weather controls, apply weather accordingly
-// Overcast
-86400 setOvercast sliderPosition 80003;
-skipTime 24;
+// param [0] is _this select 0 but faster, said commy2
+param [0] params ["_control", "_value"];
 
-// Lightnings
-0 setLightnings sliderPosition 80004;
-
-// Fog
-0 setFog [sliderPosition 80005, sliderPosition 80006, sliderPosition 80007];
-
-// Rain
-0 setRain sliderPosition 80008;
-
-// Waves
-0 setWaves sliderPosition 80009;
+switch (str _control) do {
+	// Overcast
+	case "Control #80003": {
+		// To say on the same date
+		skipTime -24;
+		86400 setOvercast _value;
+		skipTime 24;
+	};
+	case "Control #80004": {
+		// Lightnings
+		0 setLightnings _value;
+	};
+	case "Control #80005": {
+		// Fog decay
+		0 setFog [_value, fogParams select 1, fogParams select 2];
+	};
+	case "Control #80006": {
+		// Fog decay
+		0 setFog [fogParams select 0, _value, fogParams select 2];
+	};
+	case "Control #80007": {
+		// Fog base
+		0 setFog [fogParams select 0, fogParams select 1, _value];
+	};
+	case "Control #80008": {
+		// Rain
+		0 setRain _value;
+	};
+	case "Control #80009": {
+		// Waves
+		0 setWaves _value;
+	}
+};
 
 // Sync weather effects
 simulWeatherSync;
