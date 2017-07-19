@@ -1,5 +1,5 @@
 class nev_debug_menu {
-	duration = 999999;
+	duration = 1e6;
 	idd = 80000;
 	movingEnable = true;
 	onLoad = QUOTE(call FUNC(onLoad));
