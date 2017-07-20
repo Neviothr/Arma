@@ -19,3 +19,4 @@ class CfgPatches {
 #include "CfgEventHandlers.hpp"
 #include "ui\BaseDefines.hpp"
 #include "ui\DebugMenu.hpp"
+#include "ui\AiCount.hpp"
