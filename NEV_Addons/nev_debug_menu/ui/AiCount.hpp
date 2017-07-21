@@ -2,7 +2,7 @@ class RscTitles {
 	class ai_count {
 		idd = 81000;
 		duration = 1e6;
-		onLoad = QUOTE(_this call FUNC(aiCountLoop));
+		onLoad = QUOTE(_this call FUNC(aiCountLoop); uiNamespace setVariable [ARR_2(QQGVAR(aiCountDisplay), _this select 0)]);
 		class controls {
 			class aiCountText: RscText {
 				idc = 81001;

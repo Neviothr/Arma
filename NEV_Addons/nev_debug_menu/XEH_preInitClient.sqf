@@ -11,10 +11,14 @@
 		if (( 													// Open debug menu only if the following is true
 		    	(serverCommandAvailable "#logout") || 			// If the player is an admin
 		    	(!isMultiplayer) || 							// If gamemode is SP
-		    	(getPlayerUID player == "76561198141761169") || // If player is mod author
 		    	(isServer && hasInterface) 						// If player is host on a non-dedicated server
 			) && !dialog) then { 								// If no dialogs are open
 			createDialog "nev_debug_menu";
+		};
+
+		// Check if the AI counter display is shown, if not - load it
+		if (isNull (uiNamespace getVariable [QGVAR(aiCountDisplay), displayNull])) then {
+			cutRsc ["ai_count", "PLAIN", -1, true];
 		};
 	},
 	""
