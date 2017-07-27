@@ -1,6 +1,5 @@
 #include "script_component.hpp"
 
-private _i = 0; // Private loop number var, so we can hint it later
 _spawnedGroups = [];
 _codeTargetUnits = [];
 
@@ -27,6 +26,3 @@ if (GVAR(unitCode) != "") then {
 		} forEach units _x;
 	} forEach _spawnedGroups;
 };
-
-// Hint how many groups were spawned based on number of loops, max is 5
-systemChat format ["Created %1 groups", _i];
