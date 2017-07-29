@@ -3,21 +3,21 @@
 hint "Click on 2 points on the map to create an AO. Said points will act as the corners of the AO."; // Notify user
 openMap true; // Open map
 GVAR(mapClicksNum) = 1; // Var for checking how many times the user has click on the map
-GVAR(isEHdone) = false; // Local var for checking if below EH is done
+GVAR(isEHdone) = false; // Var for checking if below EH is done
 
 // Add a map click EH
 addMissionEventHandler ["MapSingleClick", {
-	params ["_units", "_pos", "_alt", "_shift"]; // Thanks BIS
-	if (GVAR(mapClicksNum) == 1) then {
-		GVAR(aoPoint1) = _pos; // Assign 1st click pos to var
-		GVAR(mapClicksNum) = GVAR(mapClicksNum) + 1; // +1 var to case 2 is ran
-	} else {
-		GVAR(aoPoint2) = _pos; // Assign 2nd click pos to var
-		GVAR(isEHdone) = true; // Mark EH as done
+    params ["_units", "_pos", "_alt", "_shift"]; // Thanks BIS
+    if (GVAR(mapClicksNum) == 1) then {
+        GVAR(aoPoint1) = _pos; // Assign 1st click pos to var
+        GVAR(mapClicksNum) = GVAR(mapClicksNum) + 1; // +1 var to case 2 is ran
+    } else {
+        GVAR(aoPoint2) = _pos; // Assign 2nd click pos to var
+        GVAR(isEHdone) = true; // Mark EH as done
 
-		// Remove our EH to allow compatablity with custom waypoint in nev_a3_overrides
-		removeMissionEventHandler ["MapSingleClick", _thisEventhandler];
-	};
+        // Remove our EH to allow compatablity with custom waypoint in nev_a3_overrides
+        removeMissionEventHandler ["MapSingleClick", _thisEventhandler];
+    };
 }];
 
 waitUntil {GVAR(isEHdone)}; // Wait until EH is done. Suspention is only allowed when spawning a fucn!
@@ -43,11 +43,11 @@ _yDiff = _Ym - _Y1;
 _markerName = "AO" + str floor random 100000;
 
 if (!(_markerName in allMapMarkers)) then {
-	createMarker [_markerName, [_Xm, _Ym]];
-	_markerName setMarkerShape "RECTANGLE";
-	_markerName setMarkerBrush "Border";
-	_markerName setMarkerColor "ColorRed";
-	_markerName setMarkerSize [_xDiff, _yDiff];
+    createMarker [_markerName, [_Xm, _Ym]];
+    _markerName setMarkerShape "RECTANGLE";
+    _markerName setMarkerBrush "Border";
+    _markerName setMarkerColor "ColorRed";
+    _markerName setMarkerSize [_xDiff, _yDiff];
 } else {
-	systemChat "Random marker name creation failed: marker name already exists. Try creating AO again.";
-}
+    systemChat "Random marker name creation failed: marker name already exists. Try creating AO again.";
+};
