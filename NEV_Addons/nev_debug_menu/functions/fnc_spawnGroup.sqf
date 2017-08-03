@@ -4,15 +4,15 @@ _spawnedGroups = [];
 _codeTargetUnits = [];
 
 // Group spawning loop
-for "_i" from 0 to 50 step 1 do {
+for "_i" from 0 to 5 step 1 do {
 	// Select random pos
-	_aiPos = [player, GVAR(minDistance), GVAR(maxDistance), 0, 0, 0, 0, [], []] call BIS_fnc_findSafePos;
+	_aiPos = [player, GVAR(minDistance), GVAR(maxDistance), 20, 0, 0, 0, [], []] call BIS_fnc_findSafePos;
 
 	// Because lineIntercets needs ASL
-	_aiPos pushBack getTerrainHeightASL _aiPos;
+	_aiPos pushBack (getTerrainHeightASL _aiPos + 1.85);
 
 	// Check if the player sees the position
-	_intersections = lineIntersectsSurfaces [eyePos player, _aiPos vectorAdd [0, 0, 1.85], player, objNull];
+	_intersections = lineIntersectsSurfaces [eyePos player, _aiPos, player, objNull];
 
 	// Convert AGL
 	_aiPos = ASLToAGL _aiPos;

@@ -1,17 +1,17 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-	class nev_debug_menu {
-		name = "Mutipurpose Debug Menu";
-		author = "Neviothr & jameslkingsley"; // https://github.com/jameslkingsley
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = 1.0;
-		requiredAddons[] = {"Extended_EventHandlers"};
-		version = 1.6.1;
-		versionStr = "1.6.1";
-		versionAr[] = {1, 6, 1};
-	};
+    class nev_debug_menu {
+        name = "Mutipurpose Debug Menu";
+        author = "Neviothr & jameslkingsley"; // https://github.com/jameslkingsley
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 1.0;
+        requiredAddons[] = {"Extended_EventHandlers"};
+        version = 1.6.2;
+        versionStr = "1.6.2";
+        versionAr[] = {1, 6, 2};
+    };
 };
 
 #include "CfgSettings.hpp"

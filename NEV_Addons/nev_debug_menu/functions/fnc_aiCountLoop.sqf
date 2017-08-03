@@ -12,5 +12,5 @@ _control = _display displayCtrl 81001;
 	// 2nd part is there to report false to the waitUntil, which expect true
 	// Because of the above, the waitUntil block runs again on the next frame, updating our AI count, and returning false
 	// The last statement of a block is it's return
-	waitUntil {(_this select 0) ctrlSetText format ["AI: %1", str count (allUnits - allPlayers)]; false};
+	waitUntil {(_this select 0) ctrlSetText format ["AI %1", str count (allUnits - allPlayers)]; false};
 };
