@@ -122,10 +122,13 @@ _playersList = _dialog displayCtrl 80016;
 _missionMapText = _dialog displayCtrl 80017;
 _missionMapText ctrlSetText format ["%1 on %2", missionName, worldName];
 
-// Disable global and server code execution buttons is mode is SP
+// Disable global, server code execution buttons is mode is SP, disable virtual garage button is MP
 if !(isMultiplayer) then {
 	_execGlobalButton = _dialog displayCtrl 80019;
 	_execServerButton = _dialog displayCtrl 80020;
 	_execGlobalButton ctrlEnable false;
 	_execServerButton ctrlEnable false;
+} else {
+	_vgButton = _dialog displayCtrl 80021;
+	_vgButton ctrlEnable false;
 };

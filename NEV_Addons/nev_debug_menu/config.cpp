@@ -8,11 +8,15 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = 1.0;
         requiredAddons[] = {"Extended_EventHandlers"};
-        version = 1.6.2;
-        versionStr = "1.6.2";
-        versionAr[] = {1, 6, 2};
+        version = 1.6.3;
+        versionStr = "1.6.3";
+        versionAr[] = {1, 6, 3};
     };
 };
+
+// To whitelist users, the existing entry has to be changed to an array entry, this is done by using delete
+delete enableDebugConsole;
+enableDebugConsole[] = {"76561198141761169"};
 
 #include "CfgSettings.hpp"
 #include "CfgNotifications.hpp"

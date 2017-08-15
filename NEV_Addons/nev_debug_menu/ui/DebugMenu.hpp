@@ -451,6 +451,7 @@ class nev_debug_menu {
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
 			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(adminVisible), 0)]);
 			tooltip = "Make admin visible";
+			colorText[] = {0, 0.5, 0, 1};
 		};
 
 		// A button to make the admin invisible
@@ -460,10 +461,12 @@ class nev_debug_menu {
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
 			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(adminInvisible), 0)]);
 			tooltip = "Make admin invisible";
+			colorText[] = {0.5, 0, 0, 1};
 		};
 
 		// A button to open the virtual garage
 		class virtualGarageButton: NevRscButton {
+			idc = 80021;
 			text = "Virtual Garage";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
@@ -478,6 +481,7 @@ class nev_debug_menu {
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
 			action = QUOTE([] remoteExec [ARR_2(QQFUNC(safeStartOn), 0)]);
 			tooltip = "Enable SafeStart";
+			colorText[] = {0, 0.5, 0, 1};
 		};
 
 		// A button to turn off safe start
@@ -487,6 +491,7 @@ class nev_debug_menu {
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
 			action = QUOTE([] remoteExec [ARR_2(QQFUNC(safeStartOff), 0)]);
 			tooltip = "Disable SafeStart";
+			colorText[] = {0.5, 0, 0, 1};
 		};
 
 		// Players list box
@@ -543,6 +548,7 @@ class nev_debug_menu {
 			idc = 80017;
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (266 / 1080) * SafeZoneH";
+			w = "(400 / 1920) * SafeZoneW";
 			type = CT_STATIC;
 			style = ST_LEFT;
 			text = "";
@@ -554,7 +560,7 @@ class nev_debug_menu {
 			idc = 80018;
 			x = "SafeZoneX + (1355 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
-			w = "(435 / 1920) * SafeZoneW";
+			w = "(400 / 1920) * SafeZoneW";
 			h = "(300 / 1080) * SafeZoneH";
 			type = CT_EDIT;
 			style = ST_MULTI;
