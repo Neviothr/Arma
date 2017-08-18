@@ -6,7 +6,7 @@ class RscTitles {
 		class controls {
 			class aiCountText: RscText {
 				idc = 81001;
-				x = "0.967152 * safezoneW + safezoneX"
+				x = "0.967152 * safezoneW + safezoneX";
 				y = "0.951388 * safezoneH + safezoneY";
 				h = "0.0352567 * safezoneW";
 				w = "0.0470196 * safezoneH";

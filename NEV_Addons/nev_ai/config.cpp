@@ -7,9 +7,9 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredAddons[] = {"rhsgref_c_airweapons", "rhs_c_heavyweapons", "rhs_c_weapons", "rhsusf_c_heavyweapons", "rhs_c_troops", "rhsusf_c_airweapons", "rhs_c_rva", "rhsgref_c_weapons", "rhsusf_c_weapons", "rhs_cti_insurgents", "rhsgref_c_troops", "rhsusf_c_troops"};
-		version = 0.0.2;
-		versionStr = "0.0.2";
-		versionAr[] = {0, 0, 2};
+		version = 0.0.3;
+		versionStr = "0.0.3";
+		versionAr[] = {0, 0, 3};
 	};
 };
 
