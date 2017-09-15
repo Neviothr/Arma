@@ -6,7 +6,7 @@ class nev_debug_menu {
 	class controls {
 		// A button to open Zeus
 		class zeusButton: NevRscButton {
-			text = "Open Zeus";
+			text = "Open zeus";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
 			action = QUOTE(closeDialog 0; [] remoteExecCall [ARR_2(QQFUNC(openZeus), 0)]);
@@ -414,7 +414,7 @@ class nev_debug_menu {
 
 		// A button to return all objects within a radius of 50m
 		class nearestObjectsButton: NevRscButton {
-			text = "Nearset Objs";
+			text = "Nearset objs";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
 			action = QUOTE(call FUNC(nearestObjects));
@@ -467,7 +467,7 @@ class nev_debug_menu {
 		// A button to open the virtual garage
 		class virtualGarageButton: NevRscButton {
 			idc = 80021;
-			text = "Virtual Garage";
+			text = "Virtual garage";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
 			action = QUOTE(closeDialog 0; call FUNC(openGarage));
@@ -518,7 +518,7 @@ class nev_debug_menu {
 
 		// A button to randomize the environment
 		class randomEnviButton: NevRscButton {
-			text = "Random Envi";
+			text = "Random envi";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
 			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(randomEnvironment), 0)]);
