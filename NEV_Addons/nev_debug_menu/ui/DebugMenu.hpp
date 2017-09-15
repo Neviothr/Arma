@@ -40,24 +40,6 @@ class nev_debug_menu {
 			tooltip = "Open the BIS debug console";
 		};
 
-		// A button to add all units and vehicles to Zeus
-		class addUnitsToZeusButton: NevRscButton {
-			text = "Add to zeus";
-			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
-			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(addToZeus), 0)]);
-			tooltip = "Make all units Zeus editable";
-		};
-
-		// A button to make units aggressive
-		class makeUnitsAggressiveButton: NevRscButton {
-			text = "Aggressive AI";
-			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; call FUNC(aggressiveAI));
-			tooltip = "Give AI aggressive behavior";
-		};
-
 		// A button to remove add dead AI units and vehicles
 		class removeDeadButton: NevRscButton {
 			text = "Remove dead";
@@ -449,7 +431,7 @@ class nev_debug_menu {
 			text = "Visible";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
-			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(adminVisible), 0)]);
+			action = "player hideObjectGlobal false; player allowDamage true; player setCaptive false;";
 			tooltip = "Make admin visible";
 			colorText[] = {0, 0.5, 0, 1};
 		};
@@ -459,7 +441,7 @@ class nev_debug_menu {
 			text = "Invisible";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
-			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(adminInvisible), 0)]);
+			action = "player hideObjectGlobal true; player allowDamage false; player setCaptive true;";
 			tooltip = "Make admin invisible";
 			colorText[] = {0.5, 0, 0, 1};
 		};

@@ -1,5 +1,3 @@
-PREP(addToZeus);
-PREP(aggressiveAI);
 PREP(broadcast);
 PREP(commitDate);
 PREP(commitWeather);
@@ -15,7 +13,6 @@ PREP(safeStartOff);
 PREP(sideChange);
 PREP(spawnGroup);
 PREP(teleport);
-PREP(adminInvisible);
 PREP(adminVisible);
 PREP(randomEnvironment);
 PREP(fullMoonDates);

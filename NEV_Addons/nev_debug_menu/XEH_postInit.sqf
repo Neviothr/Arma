@@ -11,7 +11,7 @@ if ( 													// Add an addAction only if the follow is true
 	[
 		{!isNull (findDisplay 46)}, // Condition, wait for RscDisplayMission
 		{
-			10 cutRsc ["ai_count", "PLAIN", -1, true]; // Load the display, using layer 10 to aviod issues with mods that use cutRsct (STNVG, etc)
+			10 cutRsc ["ai_count", "PLAIN", -1, true]; // Load the display, using layer 10 to aviod issues with mods that use cutRsc (STNVG, etc)
 		}
 	] call CBA_fnc_waitUntilAndExecute;
 };
