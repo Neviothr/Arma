@@ -49,5 +49,5 @@ if (!(_markerName in allMapMarkers)) then {
     _markerName setMarkerColor "ColorRed";
     _markerName setMarkerSize [_xDiff, _yDiff];
 } else {
-    systemChat "Random marker name creation failed: marker name already exists. Try creating AO again.";
+    hint "Random marker name creation failed: marker name already exists. Try creating AO again.";
 };

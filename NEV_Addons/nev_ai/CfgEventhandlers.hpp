@@ -15,3 +15,11 @@ class Extended_PostInit_EventHandlers {
 		init = QUOTE(call COMPILE_FILE(XEH_postInit));
 	};
 };
+
+class Extended_InitPost_EventHandlers {
+	class Tank {
+		class tank_crew_in_tracked {
+			init = "(_this select 0) allowCrewInImmobile true;";
+		};
+	};
+};

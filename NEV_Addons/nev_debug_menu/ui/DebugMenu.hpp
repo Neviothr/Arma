@@ -45,7 +45,7 @@ class nev_debug_menu {
 			text = "Remove dead";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; call FUNC(removeDead));
+			action = "{deleteVehicle _x} forEach allDead";
 			tooltip = "Delete all dead units and vehicles";
 		};
 
@@ -85,7 +85,7 @@ class nev_debug_menu {
 			text = "Repair";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; call FUNC(repairVehicle));
+			action = "vehicle player setDamage 0; hint ""The current vehicle / player has been fully repaired / healed.""";
 			tooltip = "Repair current vehicle";
 		};
 
@@ -138,7 +138,7 @@ class nev_debug_menu {
 			text = "Broadcast";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(broadcast), 0)]);
+			action = "[""nev_notification"", [ctrlText 80001, ctrlText 80002]] call BIS_fnc_showNotification";
 			tooltip = "Broadcast notification";
 		};
 
@@ -390,7 +390,7 @@ class nev_debug_menu {
 			text = "Change date";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
-			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(commitDate), 0)]);
+			action = "setDate [lbCurSel 80010, lbCurSel 80011, lbCurSel 80012, lbCurSel 80013, lbCurSel 80014]";
 			tooltip = "Commit time & date changes";
 		};
 
@@ -512,7 +512,7 @@ class nev_debug_menu {
 			text = "Refuel";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; call FUNC(refuelVehicle));
+			action = "vehicle player setFuel 1; hint ""The current vehicle has been fully refueled.""";
 			tooltip = "Refuel the current vehicle";
 		};
 

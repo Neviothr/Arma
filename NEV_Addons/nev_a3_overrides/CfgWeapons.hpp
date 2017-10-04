@@ -5,9 +5,9 @@ class CfgWeapons {
 	class acc_flashlight: ItemCore {
 		class ItemInfo: InventoryFlashLightItem_Base_F {
 			class FlashLight {
-				color[] = {7000, 7500, 10000}; // colour of the light
+				color[] = {7000, 7500, 10000}; // Colour of the light
 				ambient[] = {6, 9, 9}; // I can't remember
-				intensity = 2.5; // brightness intensity
+				intensity = 3.5; // Brightness intensity
 				size = 1;
 				innerAngle = 20;
 				outerAngle = 80;

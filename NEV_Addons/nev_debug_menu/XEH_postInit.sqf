@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 if ( 													// Add an addAction only if the follow is true
-		(serverCommandAvailable "#logout") || 			// If the player is an admin
+		IS_ADMIN || 			// If the player is an admin
 		(!isMultiplayer) || 							// If gamemode is SP
 		(isServer && hasInterface) 						// If player is host on a non-dedicated server
 	) then {

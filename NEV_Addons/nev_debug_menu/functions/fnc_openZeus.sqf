@@ -11,4 +11,4 @@ player assignCurator _curator; // Assign a curator, the user in our case
 } forEach allCurators; // Run on all curators, in case there's more than 1
 
 // Notify the user
-["nev_notification", ["ZEUS", "Zeus has been created, all entities are editable"]] call BIS_fnc_showNotification;
+hint "Zeus has been created, all entities are editable.";

@@ -12,4 +12,4 @@ if !(_vehicle == player) then {
 };
 
 // Notifiy the user
-["nev_notification", ["REARM", "The current vehicle/unit has been fully rearmed."]] call BIS_fnc_showNotification;
+hint "The current vehicle/unit has been fully rearmed.";
