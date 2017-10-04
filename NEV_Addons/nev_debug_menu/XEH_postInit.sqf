@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 if ( 													// Add an addAction only if the follow is true
-		(serverCommandAvailable "#logout") || 			// If the player is an admin
+		IS_ADMIN || 			// If the player is an admin
 		(!isMultiplayer) || 							// If gamemode is SP
 		(isServer && hasInterface) 						// If player is host on a non-dedicated server
 	) then {
@@ -11,7 +11,7 @@ if ( 													// Add an addAction only if the follow is true
 	[
 		{!isNull (findDisplay 46)}, // Condition, wait for RscDisplayMission
 		{
-			10 cutRsc ["ai_count", "PLAIN", -1, true]; // Load the display, using layer 10 to aviod issues with mods that use cutRsct (STNVG, etc)
+			10 cutRsc ["ai_count", "PLAIN", -1, true]; // Load the display, using layer 10 to aviod issues with mods that use cutRsc (STNVG, etc)
 		}
 	] call CBA_fnc_waitUntilAndExecute;
 };

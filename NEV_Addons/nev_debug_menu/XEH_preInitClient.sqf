@@ -9,7 +9,7 @@
 	"Open debug menu",
 	{
 		if (( 													// Open debug menu only if the following is true
-		    	(serverCommandAvailable "#logout") || 			// If the player is an admin
+		    	IS_ADMIN || 			// If the player is an admin
 		    	(!isMultiplayer) || 							// If gamemode is SP
 		    	(isServer && hasInterface) 						// If player is host on a non-dedicated server
 			) && !dialog) then { 								// If no dialogs are open

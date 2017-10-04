@@ -5,4 +5,4 @@
 } forEach allUnits; // Run on all units
 
 // Notifiy the user
-["nev_notification", ["GARRISON", "All units have been applied with CBA_fnc_taskDefend."]] call BIS_fnc_showNotification;
+hint "All units have been applied with CBA_fnc_taskDefend.";

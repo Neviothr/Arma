@@ -7,9 +7,9 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredAddons[] = {"A3_Weapons_F"};
-		version = 1.4.6;
-		versionStr = "1.4.6";
-		versionAr[] = {1 ,4, 6};
+		version = 1.4.7;
+		versionStr = "1.4.7";
+		versionAr[] = {1 ,4, 7};
 	};
 };
 

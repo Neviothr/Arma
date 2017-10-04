@@ -4,4 +4,11 @@ private "_curator";
 
 _curator = (createGroup sideLogic) createUnit ["ModuleCurator_F", [0, 0, 0] , [], 0, ""]; // Create curator module, needed in order to assign a curator
 player assignCurator _curator; // Assign a curator, the user in our case
-openCuratorInterface; // Force open the curator interface
+
+// Add all units to zeus
+{
+	_x addCuratorEditableObjects [entities "", true]; // Better than doing `vehicles` and `allUnits` separately
+} forEach allCurators; // Run on all curators, in case there's more than 1
+
+// Notify the user
+hint "Zeus has been created, all entities are editable.";

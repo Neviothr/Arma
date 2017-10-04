@@ -1,11 +1,6 @@
 // Config by jameslkingsley
 // https://github.com/ARCOMM/ARC_AI/blob/master/addons/arc_ai_client_launchers/config.cpp
 class CfgAmmo {
-    class ShellCore;
-    class ShellBase: ShellCore {
-        soundFly[] = {"a3\data_f_curator\sound\cfgsounds\incoming2.wss", 2, 1, 1000};
-    };
-
     PROTO(RocketBase);
     LAUNCHER(R_PG32V_F, RocketBase);
     LAUNCHER(R_TBG32V_F, R_PG32V_F);

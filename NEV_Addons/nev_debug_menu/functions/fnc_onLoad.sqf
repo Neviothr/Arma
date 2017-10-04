@@ -96,22 +96,6 @@ _sideList lbSetColor [1, [0.15, 0.40, 0.6, 1]]; // West
 _sideList lbSetColor [2, [0.125, 0.5, 0.125, 1]]; // Independent
 _sideList lbSetColor [3, [0.425, 0.125, 0.5, 1]]; // Civilian
 
-// Select current player side
-switch (side group player) do {
-	case east: {
-		_sideList lbSetCurSel 0;
-	};
-	case west: {
-		_sideList lbSetCurSel 1;
-	};
-	case resistance: {
-		_sideList lbSetCurSel 2;
-	};
-	case civilian: {
-		_sideList lbSetCurSel 3;
-	};
-};
-
 // Players list box
 _playersList = _dialog displayCtrl 80016;
 {

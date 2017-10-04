@@ -6,9 +6,9 @@ class nev_debug_menu {
 	class controls {
 		// A button to open Zeus
 		class zeusButton: NevRscButton {
-			text = "Open Zeus";
+			text = "Open zeus";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
+			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
 			action = QUOTE(closeDialog 0; [] remoteExecCall [ARR_2(QQFUNC(openZeus), 0)]);
 			tooltip = "Open the Zeus curator interface";
 		};
@@ -40,30 +40,12 @@ class nev_debug_menu {
 			tooltip = "Open the BIS debug console";
 		};
 
-		// A button to add all units and vehicles to Zeus
-		class addUnitsToZeusButton: NevRscButton {
-			text = "Add to zeus";
-			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
-			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(addToZeus), 0)]);
-			tooltip = "Make all units Zeus editable";
-		};
-
-		// A button to make units aggressive
-		class makeUnitsAggressiveButton: NevRscButton {
-			text = "Aggressive AI";
-			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; call FUNC(aggressiveAI));
-			tooltip = "Give AI aggressive behavior";
-		};
-
 		// A button to remove add dead AI units and vehicles
 		class removeDeadButton: NevRscButton {
 			text = "Remove dead";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; call FUNC(removeDead));
+			action = "{deleteVehicle _x} forEach allDead";
 			tooltip = "Delete all dead units and vehicles";
 		};
 
@@ -103,7 +85,7 @@ class nev_debug_menu {
 			text = "Repair";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; call FUNC(repairVehicle));
+			action = "vehicle player setDamage 0; hint ""The current vehicle / player has been fully repaired / healed.""";
 			tooltip = "Repair current vehicle";
 		};
 
@@ -156,7 +138,7 @@ class nev_debug_menu {
 			text = "Broadcast";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(broadcast), 0)]);
+			action = "[""nev_notification"", [ctrlText 80001, ctrlText 80002]] call BIS_fnc_showNotification";
 			tooltip = "Broadcast notification";
 		};
 
@@ -408,13 +390,13 @@ class nev_debug_menu {
 			text = "Change date";
 			x = "SafeZoneX + (810 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
-			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(commitDate), 0)]);
+			action = "setDate [lbCurSel 80010, lbCurSel 80011, lbCurSel 80012, lbCurSel 80013, lbCurSel 80014]";
 			tooltip = "Commit time & date changes";
 		};
 
 		// A button to return all objects within a radius of 50m
 		class nearestObjectsButton: NevRscButton {
-			text = "Nearset Objs";
+			text = "Nearset objs";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
 			action = QUOTE(call FUNC(nearestObjects));
@@ -449,7 +431,7 @@ class nev_debug_menu {
 			text = "Visible";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
-			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(adminVisible), 0)]);
+			action = "player hideObjectGlobal false; player allowDamage true; player setCaptive false;";
 			tooltip = "Make admin visible";
 			colorText[] = {0, 0.5, 0, 1};
 		};
@@ -459,7 +441,7 @@ class nev_debug_menu {
 			text = "Invisible";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
-			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(adminInvisible), 0)]);
+			action = "player hideObjectGlobal true; player allowDamage false; player setCaptive true;";
 			tooltip = "Make admin invisible";
 			colorText[] = {0.5, 0, 0, 1};
 		};
@@ -467,7 +449,7 @@ class nev_debug_menu {
 		// A button to open the virtual garage
 		class virtualGarageButton: NevRscButton {
 			idc = 80021;
-			text = "Virtual Garage";
+			text = "Virtual garage";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
 			action = QUOTE(closeDialog 0; call FUNC(openGarage));
@@ -518,7 +500,7 @@ class nev_debug_menu {
 
 		// A button to randomize the environment
 		class randomEnviButton: NevRscButton {
-			text = "Random Envi";
+			text = "Random envi";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
 			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(randomEnvironment), 0)]);
@@ -530,7 +512,7 @@ class nev_debug_menu {
 			text = "Refuel";
 			x = "SafeZoneX + (660 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; call FUNC(refuelVehicle));
+			action = "vehicle player setFuel 1; hint ""The current vehicle has been fully refueled.""";
 			tooltip = "Refuel the current vehicle";
 		};
 
