@@ -8,7 +8,7 @@ class nev_debug_menu {
 		class zeusButton: NevRscButton {
 			text = "Open zeus";
 			x = "SafeZoneX + (510 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
+			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
 			action = QUOTE(closeDialog 0; [] remoteExecCall [ARR_2(QQFUNC(openZeus), 0)]);
 			tooltip = "Open the Zeus curator interface";
 		};
