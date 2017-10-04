@@ -116,3 +116,9 @@ if !(isMultiplayer) then {
 	_vgButton = _dialog displayCtrl 80021;
 	_vgButton ctrlEnable false;
 };
+
+// Active FSM and SQF text
+_activeSQFText = _dialog displayCtrl 80022;
+_activeFSMText = _dialog displayCtrl 80023;
+_activeSQFText ctrlSetText format ["Active SQF %1", (diag_activeScripts select 0) + (diag_activeScripts select 1) + (diag_activeScripts select 2)];
+_activeFSMText ctrlSetText format ["Active FSM %1", (diag_activeScripts select 3)];
