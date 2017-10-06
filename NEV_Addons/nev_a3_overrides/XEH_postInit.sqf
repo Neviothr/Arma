@@ -17,14 +17,8 @@ if (hasInterface) then {
 		};
 	}];
 
-	_mapDisplay displayAddEventHandler ["KeyDown", {
-		if (!isNil QGVAR(mapCustomMark) && {GVAR(mapCustomMark)} && {(_this select 1) == 211}) then {
-			GVAR(markerLocation) = nil;
-		};
-	}];
-
 	addMissionEventHandler ["Draw3D", {
-		if (!isNil QGVAR(markerLocation)) then {
+		if (GVAR(doWaypoint) && !isNil QGVAR(markerLocation)) then {
 			drawIcon3D [
 				"\A3\ui_f\data\igui\cfg\cursors\customMark_ca.paa",
 				[1, 1, 1, 0.6],
