@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 // Notify user that map tele has been enabled
-["nev_notification", ["MAP TELEPORT", "Click on the location to which you'd like to be teleported."]] call BIS_fnc_showNotification;
+hint "Click on the location to which you'd like to be teleported.";
 
 openMap true; // Open the map
 

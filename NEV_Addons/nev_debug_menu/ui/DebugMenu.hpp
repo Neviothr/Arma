@@ -70,7 +70,7 @@ class nev_debug_menu {
 		// Note: a static background image
 		class backgroundImg: RscFrame {
 			x = "SafeZoneX + (340 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (210 / 1080) * SafeZoneH";
+			y = "SafeZoneY + (180 / 1080) * SafeZoneH";
 			w = "(1275 / 1920) * SafeZoneW";
 			h = "(510 / 1080) * SafeZoneH";
 			type = CT_STATIC;
@@ -99,6 +99,7 @@ class nev_debug_menu {
 			type = CT_EDIT;
 			style = ST_LEFT + ST_FRAME;
 			tooltip = "Notification title";
+			colorBackground[] = {0,0,0,0.5};
 		};
 
 		// "Title" text
@@ -121,6 +122,7 @@ class nev_debug_menu {
 			type = CT_EDIT;
 			style = ST_LEFT + ST_FRAME;
 			tooltip = "Notification description";
+			colorBackground[] = {0,0,0,0.5};
 		};
 
 		// "Description" text
@@ -529,8 +531,8 @@ class nev_debug_menu {
 		class missionMapText: RscText {
 			idc = 80017;
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (260 / 1080) * SafeZoneH";
-			w = "(400 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (250 / 1080) * SafeZoneH";
+			w = "(500 / 1920) * SafeZoneW";
 			type = CT_STATIC;
 			style = ST_LEFT;
 			text = "";
@@ -593,7 +595,7 @@ class nev_debug_menu {
 		class activeSQFText: RscText {
 			idc = 80022;
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (245 / 1080) * SafeZoneH";
+			y = "SafeZoneY + (235 / 1080) * SafeZoneH";
 			w = "(100 / 1920) * SafeZoneW";
 			type = CT_STATIC;
 			style = ST_LEFT;
@@ -605,7 +607,7 @@ class nev_debug_menu {
 		class activeFSMText: RscText {
 			idc = 80023;
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (230 / 1080) * SafeZoneH";
+			y = "SafeZoneY + (220 / 1080) * SafeZoneH";
 			w = "(100 / 1920) * SafeZoneW";
 			type = CT_STATIC;
 			style = ST_LEFT;
