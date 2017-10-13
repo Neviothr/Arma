@@ -6,9 +6,9 @@ Delete:
 #endif
 
 Add, at top of file:
-#define magicVolumeValue 0.8
-
-#define COMPONENT nev_debug_menu
+#define vegetationMultiplier 5
+#define gearMultiplier 45
+#define COMPONENT nev_a3_overrides
 #define PREFIX NEV_Addons
 
 Replace:
@@ -27,7 +27,8 @@ Add, at buttom of file:
     #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
 #endif
 */
-#define magicVolumeValue 0.8
+#define vegetationMultiplier 5
+#define gearMultiplier 45
 
 #define COMPONENT nev_a3_overrides
 #define PREFIX NEV_Addons

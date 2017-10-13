@@ -13,17 +13,8 @@ class CfgPatches {
 	};
 };
 
-// CBA's versioning system
 #include "CfgSettings.hpp"
-
-// Waypoint replacement
 #include "CfgEventhandlers.hpp"
-
-// Brighter flares, reduce UGL round bounce
 #include "CfgAmmo.hpp"
-
-// Brighter flashlight
 #include "CfgWeapons.hpp"
-
-// Less explosive aircrafts
 #include "CfgVehicles.hpp"
