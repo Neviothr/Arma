@@ -3,8 +3,7 @@
 disableSerialization;
 
 if (hasInterface) then {
-	_mapDisplay = findDisplay 12;
-	_mapControl = _mapDisplay displayCtrl 51;
+	_mapControl = (findDisplay 12) displayCtrl 51;
 
 	_mapControl ctrlAddEventHandler ["MouseMoving", {
 		GVAR(mapCustomMark) = "custom_mark" in (ctrlMapMouseOver (_this select 0));

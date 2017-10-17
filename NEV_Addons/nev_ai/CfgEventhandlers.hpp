@@ -18,7 +18,7 @@ class Extended_PostInit_EventHandlers {
 
 class Extended_InitPost_EventHandlers {
 	class Tank {
-		class tank_crew_in_tracked {
+		class GVAR(tankCrewInTracked) {
 			init = "(_this select 0) allowCrewInImmobile true;";
 		};
 	};

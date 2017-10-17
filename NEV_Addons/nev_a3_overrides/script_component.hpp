@@ -27,8 +27,8 @@ Add, at buttom of file:
     #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
 #endif
 */
-#define vegetationMultiplier 5
-#define gearMultiplier 45
+#define VEGETATION_MULTIPLIER 5
+#define GEAR_MULTIPLIER 35
 
 #define COMPONENT nev_a3_overrides
 #define PREFIX NEV_Addons
