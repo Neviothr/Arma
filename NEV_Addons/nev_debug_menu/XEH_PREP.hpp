@@ -11,7 +11,6 @@ PREP(spawnGroup);
 PREP(teleport);
 PREP(randomEnvironment);
 PREP(fullMoonDates);
-PREP(rearmVehicle);
 PREP(debugConsoleExec);
 PREP(createAO);
 PREP(aiCountLoop);
