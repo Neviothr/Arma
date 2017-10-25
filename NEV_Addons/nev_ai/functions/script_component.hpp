@@ -6,8 +6,8 @@ Delete:
 #endif
 
 Add, at top of file:
-#define COMPONENT nev_debug_menu
-#define PREFIX NEV_Addons
+#define COMPONENT nev_ai
+#define PREFIX nev_addons
 
 // Macro by jameslkingsley
 // https://github.com/ARCOMM/ARC_AI/blob/master/addons/arc_ai_client_launchers/macros.hpp
@@ -21,7 +21,7 @@ Add, at top of file:
         aiAmmoUsageFlags = "64 + 128 + 256 + 512"; \
         soundFly[] = {"A3\Sounds_F\weapons\Rockets\rocket_fly_1", 6, 0.85, 500}; \
         whistleDist = 32; \
-        cost = 3; \
+        cost = 1; \
     }
 
 Replace:
@@ -40,6 +40,8 @@ Add, at buttom of file:
     #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
 #endif
 */
+#define COMPONENT nev_ai
+#define PREFIX nev_addons
 
 // Macro by jameslkingsley
 // https://github.com/ARCOMM/ARC_AI/blob/master/addons/arc_ai_client_launchers/macros.hpp
@@ -53,11 +55,8 @@ Add, at buttom of file:
         aiAmmoUsageFlags = "64 + 128 + 256 + 512"; \
         soundFly[] = {"A3\Sounds_F\weapons\Rockets\rocket_fly_1", 6, 0.85, 500}; \
         whistleDist = 32; \
-        cost = 3; \
+        cost = 1; \
     }
-
-#define COMPONENT nev_ai
-#define PREFIX NEV_Addons
 
 #ifndef SUBPREFIX
     #define SUBPREFIX addons

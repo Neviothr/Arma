@@ -27,7 +27,7 @@ Add, at buttom of file:
 */
 
 #define COMPONENT nev_debug_menu
-#define PREFIX NEV_Addons
+#define PREFIX nev_addons
 
 #ifndef SUBPREFIX
     #define SUBPREFIX addons
