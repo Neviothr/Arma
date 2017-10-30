@@ -23,15 +23,6 @@ class nev_debug_menu {
 			tooltip = "Open the BIS virtual aresnal";
 		};
 
-		// A button to use a teleportion function
-		class GVAR(teleButton): NevRscButton {
-			text = "Teleport";
-			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; call FUNC(teleport));
-			tooltip = "Teleport on map click";
-		};
-
 		// A button to open the BI debug console
 		class GVAR(debugConsoleButton): NevRscButton {
 			text = "Debug console";
@@ -51,15 +42,6 @@ class nev_debug_menu {
 					 	deleteVehicle _x;\
 					  } forEach allDead";
 			tooltip = "Delete all dead units and vehicle wrecks";
-		};
-
-		// A button garrison all units
-		class GVAR(garrisonButton): NevRscButton {
-			text = "Garrison";
-			x = "SafeZoneX + (610 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; call FUNC(garrison));
-			tooltip = "Call CBA's garrison function on all present units";
 		};
 
 		// A button to spawn a group of set units
