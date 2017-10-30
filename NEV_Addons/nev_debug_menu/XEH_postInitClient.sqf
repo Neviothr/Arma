@@ -3,7 +3,7 @@
 if (!hasInterface) exitWith {};
 
 if (IS_ADMIN || (!isMultiplayer) || (isServer && hasInterface) ) then {
-	player addAction ["<t color='#228B25'>Debug Menu</t>", {createDialog "nev_debug_menu"}];
+	player addAction ["<t color='#228B25'>Debug Menu</font>", {createDialog "nev_debug_menu"}];
 
 	// Using CBA_fnc_waitUntilAndExecute because we can't suspend this script
 	[
@@ -17,27 +17,41 @@ if (IS_ADMIN || (!isMultiplayer) || (isServer && hasInterface) ) then {
 // Debug info diary record
 player createDiarySubject [QGVAR(docs), "Debug Menu"];
 player createDiaryRecord [QGVAR(docs), ["RHS Debug Info", "
-	<font face='RobotoCondensedBold' size='16'>Decal Debug</font>
+	<font face='RobotoCondensedBold' size='14'>Decal Debug</font>
 	<br/>
-		To enable decal debug mode, `RHSDecalsDebugMode = true`.
+		To enable decal debug mode - <font color='#ffa500'>RHSDecalsDebugMode = true</font>
 		<br/>
-		To disable, `RHSDecalsDebugMode = false`.
+		To disable - <font color='#ffa500'>RHSDecalsDebugMode = false</font>
 	<br/><br/>
-	<font face='RobotoCondensedBold' size='16'>Engine Startup Script</font>
+	<font face='RobotoCondensedBold' size='14'>Engine Startup Script</font>
 	<br/>
-		To enable engine startup script, `RHS_ENGINE_STARTUP_OFF = true`.
+		To enable engine startup script - <font color='#ffa500'>RHS_ENGINE_STARTUP_OFF = true</font>
 		<br/>
-		To disable, `RHS_ENGINE_STARTUP_OFF = nil`.
+		To disable - <font color='#ffa500'>RHS_ENGINE_STARTUP_OFF = nil</font>
 	<br/><br/>
-	<font face='RobotoCondensedBold' size='16'>HEAT Simulation</font>
+	<font face='RobotoCondensedBold' size='14'>HEAT Simulation</font>
 	<br/>
-		To enable HEAT simulation, `RHS_HEAT_ENABLED = true`.
+		To enable HEAT simulation - <font color='#ffa500'>RHS_HEAT_ENABLED = true</font>
 		<br/>
-		To disable, `RHS_HEAT_ENABLED = false`.
+		To disable - <font color='#ffa500'>RHS_HEAT_ENABLED = false</font>
 	<br/><br/>
-	<font face='RobotoCondensedBold' size='16'>Spall Simulation</font>
+	<font face='RobotoCondensedBold' size='14'>Spall Simulation</font>
 	<br/>
-		To enable spall simulation, `RHS_SPALL_ENABLED= true`.
+		To enable spall simulation - <font color='#ffa500'>RHS_SPALL_ENABLED= true</font>
 		<br/>
-		To disable, `RHS_SPALL_ENABLED = false`.
+		To disable - <font color='#ffa500'>RHS_SPALL_ENABLED = false</font>
+	<br/><br/>
+	<font face='RobotoCondensedBold' size='14'>Radar</font>
+	<br/>
+		To disable - <font color='#ffa500'>RHS_Radar_Enabled = false</font>
+		<br/>
+		or - <font color='#ffa500'>missionNamespace setVariable [""RHS_Radar_Enabled"", false, true]</font>
+		<br/>
+		To enable - <font color='#ffa500'>RHS_Radar_Enabled = true</font>
+	<br/><br/>
+	<font face='RobotoCondensedBold' size='14'>Decals</font>
+	<br/>
+		To disable - <font color='#ffa500'>RHSDecalsOff = true</font>
+		<br/>
+		To enable - <font color='#ffa500'>RHSDecalsOff = false</font>
 "]];
