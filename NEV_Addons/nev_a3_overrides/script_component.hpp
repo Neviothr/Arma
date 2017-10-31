@@ -6,8 +6,11 @@ Delete:
 #endif
 
 Add, at top of file:
-#define COMPONENT nev_debug_menu
-#define PREFIX NEV_Addons
+#define VEGETATION_MULTIPLIER 5
+#define GEAR_MULTIPLIER 35
+
+#define COMPONENT nev_a3_overrides
+#define PREFIX nev_addons
 
 Replace:
 #define PATHTO_SYS(var1,var2,var3) \MAINPREFIX\##var1\SUBPREFIX\##var2\##var3.sqf --> #define PATHTO_SYS(var1,var2,var3) \##var1\SUBPREFIX\##var2\##var3.sqf
@@ -25,9 +28,11 @@ Add, at buttom of file:
     #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
 #endif
 */
+#define VEGETATION_MULTIPLIER 5
+#define GEAR_MULTIPLIER 35
 
 #define COMPONENT nev_a3_overrides
-#define PREFIX NEV_Addons
+#define PREFIX nev_addons
 
 #ifndef SUBPREFIX
     #define SUBPREFIX addons

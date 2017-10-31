@@ -2,12 +2,12 @@
 Everytime CBA updates -
 Delete:
 #ifndef MAINPREFIX
-	#define MAINPREFIX x
+    #define MAINPREFIX x
 #endif
 
 Add, at top of file:
 #define COMPONENT nev_debug_menu
-#define PREFIX nev_addons
+#define PREFIX NEV_Addons
 
 Replace:
 #define PATHTO_SYS(var1,var2,var3) \MAINPREFIX\##var1\SUBPREFIX\##var2\##var3.sqf --> #define PATHTO_SYS(var1,var2,var3) \##var1\SUBPREFIX\##var2\##var3.sqf
@@ -26,8 +26,8 @@ Add, at buttom of file:
 #endif
 */
 
-#define COMPONENT nev_debug_menu
-#define PREFIX nev_addons
+#define COMPONENT nev_editor
+#define PREFIX NEV_Addons
 
 #ifndef SUBPREFIX
     #define SUBPREFIX addons

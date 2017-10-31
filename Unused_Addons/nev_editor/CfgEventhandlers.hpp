@@ -16,10 +16,11 @@ class Extended_PostInit_EventHandlers {
 	};
 };
 
-class Extended_InitPost_EventHandlers {
-	class Tank {
-		class GVAR(tankCrewInTracked) {
-			init = "(_this select 0) allowCrewInImmobile true;";
+// https://github.com/TMF3/TMF/blob/0038a0ac3e743ef8adb0df66e6e314b1dd5d4360/addons/common/CfgEventHandlers.hpp
+class Extended_Init_EventHandlers {
+	class GVAR(hideMapObjects) {
+		class ADDON {
+			init = QUOTE(_this call FUNC(hideMapObjectsInit));
 		};
 	};
 };

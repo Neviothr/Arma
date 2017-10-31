@@ -5,72 +5,58 @@ class nev_debug_menu {
 	onLoad = QUOTE(call FUNC(onLoad));
 	class controls {
 		// A button to open Zeus
-		class zeusButton: NevRscButton {
+		class GVAR(zeusButton): NevRscButton {
 			text = "Open zeus";
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
+			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
 			action = QUOTE(closeDialog 0; [] remoteExecCall [ARR_2(QQFUNC(openZeus), 0)]);
 			tooltip = "Open the Zeus curator interface";
 		};
 
 		// A button to open the virtual aresnal
-		class virtualArsenalButton: NevRscButton {
+		class GVAR(vaButton): NevRscButton {
 			text = "Virtual arsenal";
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-			action = "closeDialog 0; [""Open"", true] spawn BIS_fnc_arsenal";
+			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
+			action = "closeDialog 0;\
+					 [""Open"", true] spawn BIS_fnc_arsenal";
 			tooltip = "Open the BIS virtual aresnal";
 		};
 
-		// A button to use a teleportion function
-		class teleportButton: NevRscButton {
-			text = "Teleport";
-			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; call FUNC(teleport));
-			tooltip = "Teleport on map click";
-		};
-
 		// A button to open the BI debug console
-		class debugConsoleButton: NevRscButton {
+		class GVAR(debugConsoleButton): NevRscButton {
 			text = "Debug console";
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
-			action = "closeDialog 0; createDialog ""RscDisplayDebugPublic""";
+			action = "closeDialog 0;\
+					 createDialog ""RscDisplayDebugPublic""";
 			tooltip = "Open the BIS debug console";
 		};
 
 		// A button to remove add dead AI units and vehicles
-		class removeDeadButton: NevRscButton {
+		class GVAR(delDeadButton): NevRscButton {
 			text = "Remove dead";
 			x = "SafeZoneX + (610 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-			action = "{deleteVehicle _x} forEach allDead";
-			tooltip = "Delete all dead units and vehicles";
-		};
-
-		// A button garrison all units
-		class garrisonButton: NevRscButton {
-			text = "Garrison";
-			x = "SafeZoneX + (610 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; call FUNC(garrison));
-			tooltip = "Call CBA's garrison function on all present units";
+			action = "{\
+					 	deleteVehicle _x;\
+					  } forEach allDead";
+			tooltip = "Delete all dead units and vehicle wrecks";
 		};
 
 		// A button to spawn a group of set units
-		class spawnGroupButton: NevRscButton {
+		class GVAR(spawnGroupButton): NevRscButton {
 			text = "Spawn group(s)";
 			x = "SafeZoneX + (610 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
-			action = QUOTE(call FUNC(spawnGroup));
+			action = QUOTE([ARR_5(GVAR(minDistance), GVAR(maxDistance), GVAR(groupSide), GVAR(groupArray), GVAR(unitCode))] call FUNC(spawnGroup));
 			tooltip = "Spawn preset group(s)";
 		};
 
 		// Note: a static background image
-		class backgroundImg: RscFrame {
+		class GVAR(backgroundImage): RscFrame {
 			x = "SafeZoneX + (340 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (210 / 1080) * SafeZoneH";
+			y = "SafeZoneY + (180 / 1080) * SafeZoneH";
 			w = "(1275 / 1920) * SafeZoneW";
 			h = "(510 / 1080) * SafeZoneH";
 			type = CT_STATIC;
@@ -81,16 +67,18 @@ class nev_debug_menu {
 		};
 
 		// A button to repair the current vehicle
-		class repairVehicleButton: NevRscButton {
+		class GVAR(repairVehButton): NevRscButton {
 			text = "Repair";
 			x = "SafeZoneX + (610 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
-			action = "vehicle player setDamage 0; hint ""The current vehicle / player has been fully repaired / healed.""";
-			tooltip = "Repair current vehicle";
+			action = "_target = [cursorTarget, vehicle player] select isNull cursorTarget;\
+					 [_target, 0] remoteExec [""setDamage"", _target];\
+					 hint ""The vehicle / unit has been repaired / healed""";
+			tooltip = "Repair / heal current vehicle / unit";
 		};
 
 		// A box to write text that will be broadcasted (line 1, title)
-		class broadcastTitle: RscEdit {
+		class GVAR(broadcastTitle): RscEdit {
 			idc = 80001;
 			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
@@ -99,10 +87,11 @@ class nev_debug_menu {
 			type = CT_EDIT;
 			style = ST_LEFT + ST_FRAME;
 			tooltip = "Notification title";
+			colorBackground[] = {0, 0, 0, 0.5};
 		};
 
 		// "Title" text
-		class titleText: RscText {
+		class GVAR(titleText): RscText {
 			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (266 / 1080) * SafeZoneH";
 			type = CT_STATIC;
@@ -112,7 +101,7 @@ class nev_debug_menu {
 		};
 
 		// A box to write text that will be broadcasted (line 2, description)
-		class broadcastDesc: RscEdit {
+		class GVAR(broadcastDesc): RscEdit {
 			idc = 80002;
 			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
@@ -121,10 +110,11 @@ class nev_debug_menu {
 			type = CT_EDIT;
 			style = ST_LEFT + ST_FRAME;
 			tooltip = "Notification description";
+			colorBackground[] = {0,0,0,0.5};
 		};
 
 		// "Description" text
-		class descriptionText: RscText {
+		class GVAR(descText): RscText {
 			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (311 / 1080) * SafeZoneH";
 			type = CT_STATIC;
@@ -134,16 +124,16 @@ class nev_debug_menu {
 		};
 
 		// A button to execute broadcast
-		class broadcastButton: NevRscButton {
+		class GVAR(broadcastButton): NevRscButton {
 			text = "Broadcast";
 			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-			action = "[""nev_notification"", [ctrlText 80001, ctrlText 80002]] call BIS_fnc_showNotification";
+			action = "[""nev_addons_nev_debug_menu_notification"", [ctrlText 80001, ctrlText 80002]] call BIS_fnc_showNotification";
 			tooltip = "Broadcast notification";
 		};
 
 		// A slider to change the overcast value
-		class overcastSlider: NevRscSlider {
+		class GVAR(overcastSlider): NevRscSlider {
 		    idc = 80003;
 		   	x = "SafeZoneX + (860 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
@@ -152,7 +142,7 @@ class nev_debug_menu {
 		};
 
 		// "Overcast" text
-		class overcastText: RscText {
+		class GVAR(overcastText): RscText {
 			x = "SafeZoneX + (860 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (266 / 1080) * SafeZoneH";
 			type = CT_STATIC;
@@ -162,7 +152,7 @@ class nev_debug_menu {
 		};
 
 		// A slider to change the lightning value
-		class lightningSlider: NevRscSlider {
+		class GVAR(lightningSlider): NevRscSlider {
 		    idc = 80004;
 		   	x = "SafeZoneX + (860 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
@@ -171,7 +161,7 @@ class nev_debug_menu {
 		};
 
 		// "Lightning" text
-		class lightningText: RscText {
+		class GVAR(lightningText): RscText {
 			x = "SafeZoneX + (860 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (311 / 1080) * SafeZoneH";
 			type = CT_STATIC;
@@ -181,7 +171,7 @@ class nev_debug_menu {
 		};
 
 		// A slider to change the fog's value
-		class fogValueSlider: NevRscSlider {
+		class GVAR(fogValueSlider): NevRscSlider {
 		    idc = 80005;
 		   	x = "SafeZoneX + (860 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
@@ -190,7 +180,7 @@ class nev_debug_menu {
 		};
 
 		// "Fog value:" text
-		class fogValueText: RscText {
+		class GVAR(fogValueText): RscText {
 			x = "SafeZoneX + (860 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (356 / 1080) * SafeZoneH";
 			type = CT_STATIC;
@@ -200,7 +190,7 @@ class nev_debug_menu {
 		};
 
 		// A slider to change the fog's decay value
-		class fogDecaySlider: NevRscSlider {
+		class GVAR(fogDecaySlider): NevRscSlider {
 		    idc = 80006;
 		   	x = "SafeZoneX + (860 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
@@ -209,7 +199,7 @@ class nev_debug_menu {
 		};
 
 		// "Fog decay" text
-		class fogDecayText: RscText {
+		class GVAR(fogDecayText): RscText {
 			x = "SafeZoneX + (860 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (401 / 1080) * SafeZoneH";
 			type = CT_STATIC;
@@ -219,7 +209,7 @@ class nev_debug_menu {
 		};
 
 		// A slider to change the fog's base value
-		class fogBaseSlider: NevRscSlider {
+		class GVAR(fogBaseSlider): NevRscSlider {
 		    idc = 80007;
 		   	x = "SafeZoneX + (860 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
@@ -228,7 +218,7 @@ class nev_debug_menu {
 		};
 
 		// "Fog base" text
-		class fogBaseText: RscText {
+		class GVAR(fogBaseText): RscText {
 			x = "SafeZoneX + (860 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (446 / 1080) * SafeZoneH";
 			type = CT_STATIC;
@@ -238,7 +228,7 @@ class nev_debug_menu {
 		};
 
 		// A slider to change the rain value
-		class rainSlider: NevRscSlider {
+		class GVAR(rainSlider): NevRscSlider {
 		    idc = 80008;
 		   	x = "SafeZoneX + (860 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510/ 1080) * SafeZoneH";
@@ -247,7 +237,7 @@ class nev_debug_menu {
 		};
 
 		// "Rain" text
-		class rainText: RscText {
+		class GVAR(rainText): RscText {
 			x = "SafeZoneX + (860 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (491 / 1080) * SafeZoneH";
 			type = CT_STATIC;
@@ -257,7 +247,7 @@ class nev_debug_menu {
 		};
 
 		// A slider to change the wave value
-		class waveSlider: NevRscSlider {
+		class GVAR(waveSlider): NevRscSlider {
 		    idc = 80009;
 		   	x = "SafeZoneX + (860 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
@@ -266,7 +256,7 @@ class nev_debug_menu {
 		};
 
 		// "Wave" text
-		class waveText: RscText {
+		class GVAR(waveText): RscText {
 			x = "SafeZoneX + (860 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (536 / 1080) * SafeZoneH";
 			type = CT_STATIC;
@@ -276,7 +266,7 @@ class nev_debug_menu {
 		};
 
 		// Year combo box
-		class yearBox: RscCombo {
+		class GVAR(yearBox): RscCombo {
 			idc = 80010;
 			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
@@ -288,7 +278,7 @@ class nev_debug_menu {
 		};
 
 		// "Year" text
-		class yearText: RscText {
+		class GVAR(yearText): RscText {
 			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (266 / 1080) * SafeZoneH";
 			type = CT_STATIC;
@@ -298,7 +288,7 @@ class nev_debug_menu {
 		};
 
 		// Month combo box
-		class monthBox: RscCombo {
+		class GVAR(monthBox): RscCombo {
 			idc = 80011;
 			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
@@ -310,7 +300,7 @@ class nev_debug_menu {
 		};
 
 		// "Month" text
-		class monthText: RscText {
+		class GVAR(monthText): RscText {
 			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (311 / 1080) * SafeZoneH";
 			type = CT_STATIC;
@@ -320,7 +310,7 @@ class nev_debug_menu {
 		};
 
 		// Day combo box
-		class dayBox: RscCombo {
+		class GVAR(dayBox): RscCombo {
 			idc = 80012;
 			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
@@ -332,7 +322,7 @@ class nev_debug_menu {
 		};
 
 		// "Day" text
-		class dayText: RscText {
+		class GVAR(dayText): RscText {
 			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (356 / 1080) * SafeZoneH";
 			type = CT_STATIC;
@@ -342,7 +332,7 @@ class nev_debug_menu {
 		};
 
 		// Hour combo box
-		class hourBox: RscCombo {
+		class GVAR(hourBox): RscCombo {
 			idc = 80013;
 			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
@@ -354,7 +344,7 @@ class nev_debug_menu {
 		};
 
 		// "Hour" text
-		class hourText: RscText {
+		class GVAR(hourText): RscText {
 			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (401 / 1080) * SafeZoneH";
 			type = CT_STATIC;
@@ -364,7 +354,7 @@ class nev_debug_menu {
 		};
 
 		// Minute combo box
-		class minuteBox: RscCombo {
+		class GVAR(minuteBox): RscCombo {
 			idc = 80014;
 			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
@@ -376,7 +366,7 @@ class nev_debug_menu {
 		};
 
 		// "Minutes" text
-		class minutesText: RscText {
+		class GVAR(minutesText): RscText {
 			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (446 / 1080) * SafeZoneH";
 			type = CT_STATIC;
@@ -386,7 +376,7 @@ class nev_debug_menu {
 		};
 
 		// A button to commit time and date changes
-		class commitDateButton: NevRscButton {
+		class GVAR(commitDateButton): NevRscButton {
 			text = "Change date";
 			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
@@ -395,7 +385,7 @@ class nev_debug_menu {
 		};
 
 		// A button to return all objects within a radius of 50m
-		class nearestObjectsButton: NevRscButton {
+		class GVAR(nearestObjsButton): NevRscButton {
 			text = "Nearset objs";
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
@@ -404,7 +394,7 @@ class nev_debug_menu {
 		};
 
 		// Side list box
-		class sideList: RscListbox {
+		class GVAR(sideList): RscListbox {
 			idc = 80015;
 			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
@@ -417,7 +407,7 @@ class nev_debug_menu {
 		};
 
 		// "Side" text
-		class sideText: RscText {
+		class GVAR(sideText): RscText {
 			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (491 / 1080) * SafeZoneH";
 			type = CT_STATIC;
@@ -427,27 +417,31 @@ class nev_debug_menu {
 		};
 
 		// A button to make the admin visible
-		class adminVisibleButton: NevRscButton {
+		class GVAR(adminVisibleButton): NevRscButton {
 			text = "Visible";
 			x = "SafeZoneX + (610 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
-			action = "player hideObjectGlobal false; player allowDamage true; player setCaptive false;";
+			action = "player hideObjectGlobal false;\
+					  player allowDamage true;\
+					  player setCaptive false;";
 			tooltip = "Make admin visible";
 			colorText[] = {0, 0.5, 0, 1};
 		};
 
 		// A button to make the admin invisible
-		class adminInvisibleButton: NevRscButton {
+		class GVAR(adminInvisibleButton): NevRscButton {
 			text = "Invisible";
 			x = "SafeZoneX + (610 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
-			action = "player hideObjectGlobal true; player allowDamage false; player setCaptive true;";
+			action = "player hideObjectGlobal true;\
+					  player allowDamage false;\
+					  player setCaptive true;";
 			tooltip = "Make admin invisible";
 			colorText[] = {0.5, 0, 0, 1};
 		};
 
 		// A button to open the virtual garage
-		class virtualGarageButton: NevRscButton {
+		class GVAR(virtualGarageButton): NevRscButton {
 			idc = 80021;
 			text = "Virtual garage";
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
@@ -457,7 +451,7 @@ class nev_debug_menu {
 		};
 
 		// A button to turn on safe start
-		class safeStartOnButton: NevRscButton {
+		class GVAR(safeStartOnButton): NevRscButton {
 			text = "SafeStart On";
 			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
@@ -467,7 +461,7 @@ class nev_debug_menu {
 		};
 
 		// A button to turn off safe start
-		class safeStartOffButton: NevRscButton {
+		class GVAR(safeStartOffButton): NevRscButton {
 			text = "SafeStart Off";
 			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
@@ -477,7 +471,7 @@ class nev_debug_menu {
 		};
 
 		// Players list box
-		class playersList: RscListbox {
+		class GVAR(playersList): RscListbox {
 			idc = 80016;
 			x = "SafeZoneX + (360 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
@@ -489,7 +483,7 @@ class nev_debug_menu {
 		};
 
 		// "Players:" text
-		class playersText: RscText {
+		class GVAR(playersText): RscText {
 			x = "SafeZoneX + (360 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (266 / 1080) * SafeZoneH";
 			type = CT_STATIC;
@@ -499,7 +493,7 @@ class nev_debug_menu {
 		};
 
 		// A button to randomize the environment
-		class randomEnviButton: NevRscButton {
+		class GVAR(randomEnviButton): NevRscButton {
 			text = "Random envi";
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
@@ -508,29 +502,33 @@ class nev_debug_menu {
 		};
 
 		// A button to refuel the current vehicle
-		class refuelVehicleButton: NevRscButton {
+		class GVAR(refuelVehButton): NevRscButton {
 			text = "Refuel";
 			x = "SafeZoneX + (610 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
-			action = "vehicle player setFuel 1; hint ""The current vehicle has been fully refueled.""";
+			action = "_target = [cursorTarget, vehicle player] select isNull cursorTarget;\
+					 [_target, 1] remoteExec [""setFuel"", _target];\
+					 hint ""The vehicle has been refuled""";
 			tooltip = "Refuel the current vehicle";
 		};
 
 		// A button to rearm the current vehicle
-		class rearmVehicleButton: NevRscButton {
+		class GVAR(rearmVehButton): NevRscButton {
 			text = "Rearm";
 			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; call FUNC(rearmVehicle));
+			action = "_target = [cursorTarget, vehicle player] select isNull cursorTarget;\
+					 [_target, 1] remoteExec [""setVehicleAmmoDef"", _target];\
+					 hint ""The vehicle has been rearmed"""; // TODO: find alternetive for setVehicleAmmoDef as it's broken.
 			tooltip = "Rearm the current vehicle";
 		};
 
 		// "mission_name on map_name" text
-		class missionMapText: RscText {
+		class GVAR(missionMapText): RscText {
 			idc = 80017;
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (260 / 1080) * SafeZoneH";
-			w = "(400 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (250 / 1080) * SafeZoneH";
+			w = "(500 / 1920) * SafeZoneW";
 			type = CT_STATIC;
 			style = ST_LEFT;
 			text = "";
@@ -538,7 +536,7 @@ class nev_debug_menu {
 		};
 
 		// Debug Console's edit box
-		class debugConsole: RscEdit {
+		class GVAR(debugConsole): RscEdit {
 			idc = 80018;
 			x = "SafeZoneX + (1210 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
@@ -552,7 +550,7 @@ class nev_debug_menu {
 		};
 
 		// A button execute local code
-		class execLocalButton: NevRscButton {
+		class GVAR(execLocalButton): NevRscButton {
 			text = "Local";
 			x = "SafeZoneX + (1210 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
@@ -561,7 +559,7 @@ class nev_debug_menu {
 		};
 
 		// A button execute global code
-		class execGlobalButton: NevRscButton {
+		class GVAR(execGlobalButton): NevRscButton {
 			idc = 80019;
 			text = "Global";
 			x = "SafeZoneX + (1335 / 1920) * SafeZoneW";
@@ -571,7 +569,7 @@ class nev_debug_menu {
 		};
 
 		// A button execute server code
-		class execServerButton: NevRscButton {
+		class GVAR(execServerButton): NevRscButton {
 			idc = 80020;
 			text = "Server";
 			x = "SafeZoneX + (1460 / 1920) * SafeZoneW";
@@ -581,7 +579,7 @@ class nev_debug_menu {
 		};
 
 		// A button to create a square AO based on 2 points
-		class createAOButton: NevRscButton {
+		class GVAR(createAOButton): NevRscButton {
 			text = "Create AO";
 			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
@@ -590,10 +588,10 @@ class nev_debug_menu {
 		};
 
 		// Active SQF text
-		class activeSQFText: RscText {
+		class GVAR(activeSQFText): RscText {
 			idc = 80022;
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (245 / 1080) * SafeZoneH";
+			y = "SafeZoneY + (235 / 1080) * SafeZoneH";
 			w = "(100 / 1920) * SafeZoneW";
 			type = CT_STATIC;
 			style = ST_LEFT;
@@ -602,10 +600,10 @@ class nev_debug_menu {
 		};
 
 		// Active FSM text
-		class activeFSMText: RscText {
+		class GVAR(activeFSMText): RscText {
 			idc = 80023;
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (230 / 1080) * SafeZoneH";
+			y = "SafeZoneY + (220 / 1080) * SafeZoneH";
 			w = "(100 / 1920) * SafeZoneW";
 			type = CT_STATIC;
 			style = ST_LEFT;

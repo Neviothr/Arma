@@ -18,7 +18,7 @@
 
 		// Check if the AI counter display is shown, if not - load it
 		if (isNull (uiNamespace getVariable [QGVAR(aiCountDisplay), displayNull])) then {
-			10 cutRsc ["ai_count", "PLAIN", -1, true];
+			10 cutRsc [QGVAR(aiCount), "PLAIN", -1, true];
 		};
 	},
 	""

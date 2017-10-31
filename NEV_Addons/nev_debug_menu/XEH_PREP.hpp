@@ -1,5 +1,4 @@
 PREP(commitWeather);
-PREP(garrison);
 PREP(nearestObjects);
 PREP(onLoad);
 PREP(openGarage);
@@ -8,10 +7,8 @@ PREP(safeStartOn);
 PREP(safeStartOff);
 PREP(sideChange);
 PREP(spawnGroup);
-PREP(teleport);
 PREP(randomEnvironment);
 PREP(fullMoonDates);
-PREP(rearmVehicle);
 PREP(debugConsoleExec);
 PREP(createAO);
 PREP(aiCountLoop);
