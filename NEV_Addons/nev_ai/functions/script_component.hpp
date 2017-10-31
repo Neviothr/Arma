@@ -7,7 +7,7 @@ Delete:
 
 Add, at top of file:
 #define COMPONENT nev_ai
-#define PREFIX nev_addons
+#define PREFIX nev
 
 // Macro by jameslkingsley
 // https://github.com/ARCOMM/ARC_AI/blob/master/addons/arc_ai_client_launchers/macros.hpp
@@ -41,7 +41,7 @@ Add, at buttom of file:
 #endif
 */
 #define COMPONENT nev_ai
-#define PREFIX nev_addons
+#define PREFIX nev
 
 // Macro by jameslkingsley
 // https://github.com/ARCOMM/ARC_AI/blob/master/addons/arc_ai_client_launchers/macros.hpp

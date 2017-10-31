@@ -10,7 +10,7 @@ Add, at top of file:
 #define GEAR_MULTIPLIER 35
 
 #define COMPONENT nev_a3_overrides
-#define PREFIX nev_addons
+#define PREFIX nev
 
 Replace:
 #define PATHTO_SYS(var1,var2,var3) \MAINPREFIX\##var1\SUBPREFIX\##var2\##var3.sqf --> #define PATHTO_SYS(var1,var2,var3) \##var1\SUBPREFIX\##var2\##var3.sqf
@@ -32,7 +32,7 @@ Add, at buttom of file:
 #define GEAR_MULTIPLIER 35
 
 #define COMPONENT nev_a3_overrides
-#define PREFIX nev_addons
+#define PREFIX nev
 
 #ifndef SUBPREFIX
     #define SUBPREFIX addons

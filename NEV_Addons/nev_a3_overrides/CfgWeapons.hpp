@@ -7,10 +7,10 @@ class CfgWeapons {
 			class FlashLight {
 				color[] = {7000, 7500, 10000}; // Colour of the light
 				ambient[] = {6, 9, 9}; // I can't remember
-				intensity = 3.5; // Brightness intensity
+				intensity = 2.5; // Brightness intensity
 				size = 1;
-				innerAngle = 20;
-				outerAngle = 80;
+				innerAngle = 40;
+				outerAngle = 120;
 				coneFadeCoef = 10;
 				position = "flash dir";
 				direction = "flash";
