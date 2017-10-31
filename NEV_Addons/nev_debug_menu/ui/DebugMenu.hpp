@@ -8,7 +8,7 @@ class nev_debug_menu {
 		class GVAR(zeusButton): NevRscButton {
 			text = "Open zeus";
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
+			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
 			action = QUOTE(closeDialog 0; [] remoteExecCall [ARR_2(QQFUNC(openZeus), 0)]);
 			tooltip = "Open the Zeus curator interface";
 		};
@@ -17,7 +17,7 @@ class nev_debug_menu {
 		class GVAR(vaButton): NevRscButton {
 			text = "Virtual arsenal";
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
+			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
 			action = "closeDialog 0;\
 					 [""Open"", true] spawn BIS_fnc_arsenal";
 			tooltip = "Open the BIS virtual aresnal";
@@ -49,7 +49,7 @@ class nev_debug_menu {
 			text = "Spawn group(s)";
 			x = "SafeZoneX + (610 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
-			action = QUOTE(call FUNC(spawnGroup));
+			action = QUOTE([ARR_5(GVAR(minDistance), GVAR(maxDistance), GVAR(groupSide), GVAR(groupArray), GVAR(unitCode))] call FUNC(spawnGroup));
 			tooltip = "Spawn preset group(s)";
 		};
 

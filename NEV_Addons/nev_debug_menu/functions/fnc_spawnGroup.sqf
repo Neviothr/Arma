@@ -1,12 +1,20 @@
 #include "script_component.hpp"
 
+params [
+	["_minDistance", 250, [0]],
+	["_maxDistance", 325, [0]],
+	["_groupSide", civilian, [civilian]],
+	["_groupArray", [], [[]]],
+	["_unitCode", "", [""]]
+];
+
 _spawnedGroups = [];
 _codeTargetUnits = [];
 
 // Group spawning loop
 for "_i" from 0 to 5 step 1 do {
 	// Select random pos
-	_aiPos = [player, GVAR(minDistance), GVAR(maxDistance), 20, 0, 0, 0, [], []] call BIS_fnc_findSafePos;
+	_aiPos = [player, _minDistance, _maxDistance, 20, 0, 0, 0, [], []] call BIS_fnc_findSafePos;
 
 	// Because lineIntercets needs ASL
 	_aiPos pushBack (getTerrainHeightASL _aiPos + 1.85);
@@ -19,7 +27,7 @@ for "_i" from 0 to 5 step 1 do {
 
 	// Spawn defined groups if there are intersections
 	if !(_intersections isEqualTo []) then {
-		_dummyGroup = [_aiPos, GVAR(groupSide), GVAR(groupArray)] call BIS_fnc_spawnGroup;
+		_dummyGroup = [_aiPos, _groupSide, _groupArray] call BIS_fnc_spawnGroup;
 
 		// Move spawned group into array, for which code will be ran on each element
 		_spawnedGroups pushBack _dummyGroup;
@@ -27,10 +35,10 @@ for "_i" from 0 to 5 step 1 do {
 };
 
 // Apply code to spawned units
-if (GVAR(unitCode) != "") then {
+if (_unitCode != "") then {
 	{
 		{
-			call compile GVAR(unitCode);
+			call compile _unitCode; // Unstring the string
 		} forEach units _x;
 	} forEach _spawnedGroups;
 };
