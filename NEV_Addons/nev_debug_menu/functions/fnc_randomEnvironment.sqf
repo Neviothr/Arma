@@ -25,4 +25,6 @@ skipTime 24;
 
 0 setFog [random [0, 0.033, 0.1], random [0, 0.0066, 0.015], random [0, 10, 200]];
 0 setWaves random 1;
+
+simulWeatherSync;
 forceWeatherChange;

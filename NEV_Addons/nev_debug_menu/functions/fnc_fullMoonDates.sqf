@@ -1,9 +1,11 @@
+// Script by jameslkingsley
+
 #include "script_component.hpp"
 
 params [["_year", 2016, [0]]];
 
 private _fullMoonPhase = 1;
-private _day = 1 / 365;
+private _day = 0.00273972602; // 1 / 365;
 private _waxing = false;
 private _fullMoonDates = [];
 

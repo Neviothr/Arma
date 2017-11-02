@@ -128,7 +128,7 @@ class nev_debug_menu {
 			text = "Broadcast";
 			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-			action = "[""nev_nev_debug_menu_notification"", [ctrlText 80001, ctrlText 80002]] call BIS_fnc_showNotification";
+			action = "[""nev_addons_nev_debug_menu_notification"", [ctrlText 80001, ctrlText 80002]] call BIS_fnc_showNotification";
 			tooltip = "Broadcast notification";
 		};
 

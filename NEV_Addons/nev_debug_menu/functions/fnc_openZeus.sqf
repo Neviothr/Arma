@@ -2,9 +2,8 @@
 
 private "_curator";
 
-// Create curator module, needed in order to assign a curator
+// Create curator module, needed to assign curator
 _curator = (createGroup sideLogic) createUnit ["ModuleCurator_F", [0, 0, 0] , [], 0, ""];
-player assignCurator _curator; // Assign curator
+player assignCurator _curator;
 
-// Notify the user
 hint "Zeus has been created.";

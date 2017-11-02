@@ -1,10 +1,9 @@
 #include "script_component.hpp"
 
-private _objList = []; // Create empty array
+private _objList = [];
 
 {
-	_objList pushBack _x; // Insert currect element into above array
-} forEach nearestObjects [player, ["Tank", "Car", "Ship", "Helicopter", "Plane", "StaticWeapon", "CAManBase"], 100]; // Should be all needed object types within 50m
+	_objList pushBack _x;
+} forEach nearestObjects [player, ["Tank", "Car", "Ship", "Helicopter", "Plane", "StaticWeapon", "CAManBase"], 100];
 
-// Return
 hint format ["%1", _objList];

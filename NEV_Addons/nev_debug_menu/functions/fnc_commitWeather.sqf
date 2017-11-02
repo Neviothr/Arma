@@ -1,7 +1,6 @@
 #include "script_component.hpp"
 
-// param [0] is _this select 0 but faster, said commy2
-param [0] params ["_control", "_value"];
+(_this select 0) params ["_control", "_value"];
 
 switch (str _control) do {
 	// Overcast

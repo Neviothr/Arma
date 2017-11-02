@@ -7,7 +7,7 @@ Delete:
 
 Add, at top of file:
 #define COMPONENT nev_a3_overrides
-#define PREFIX nev
+#define PREFIX nev_addons
 
 Replace:
 #define PATHTO_SYS(var1,var2,var3) \MAINPREFIX\##var1\SUBPREFIX\##var2\##var3.sqf --> #define PATHTO_SYS(var1,var2,var3) \##var1\SUBPREFIX\##var2\##var3.sqf
