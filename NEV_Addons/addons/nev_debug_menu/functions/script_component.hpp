@@ -1,0 +1,1 @@
+#include "\x\nev_addons\addons\nev_debug_menu\script_component.hpp"
