@@ -2,13 +2,13 @@
 
 hint "Click on 2 points on the map to create an AO. Points will be the corners of the AO."; // Notify user
 openMap true; // Open map
-GVAR(mapClickCount) = 0; // Var for checking how many times the user has click on the map
+GVAR(mapClickCount) = 0c; // Var for checking how many times the user has click on the map
 GVAR(isAoEhDone) = false; // Var for checking if below EH is done
 
 // Add a map click EH
 addMissionEventHandler ["MapSingleClick", {
     params ["_units", "_pos", "_alt", "_shift"]; // Thanks BIS
-    if (GVAR(mapClickCount) == 0) then {
+    if (GVAR(mapClickCount) == 1) then {
         GVAR(aoPoint1) = _pos; // Assign 1st click pos to var
         GVAR(mapClickCount) = GVAR(mapClickCount) + 1; // +1 var to case 2 is ran
     } else {

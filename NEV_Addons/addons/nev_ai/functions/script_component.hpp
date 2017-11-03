@@ -1,1 +1,0 @@
-#include "\x\nev_addons\addons\nev_ai\script_component.hpp"

@@ -19,7 +19,7 @@ class nev_debug_menu {
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
 			action = "closeDialog 0;\
-					 ['Open', true] spawn BIS_fnc_arsenal";
+					 [""Open"", true] spawn BIS_fnc_arsenal";
 			tooltip = "Open the BIS virtual aresnal";
 		};
 
@@ -29,7 +29,7 @@ class nev_debug_menu {
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
 			action = "closeDialog 0;\
-					 createDialog 'RscDisplayDebugPublic'";
+					 createDialog ""RscDisplayDebugPublic""";
 			tooltip = "Open the BIS debug console";
 		};
 
@@ -72,8 +72,8 @@ class nev_debug_menu {
 			x = "SafeZoneX + (610 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
 			action = "_target = [cursorTarget, vehicle player] select isNull cursorTarget;\
-					 [_target, 0] remoteExec ['setDamage', _target];\
-					 hint 'The vehicle / unit has been repaired / healed'";
+					 [_target, 0] remoteExec [""setDamage"", _target];\
+					 hint ""The vehicle / unit has been repaired / healed""";
 			tooltip = "Repair / heal current vehicle / unit";
 		};
 
@@ -128,7 +128,7 @@ class nev_debug_menu {
 			text = "Broadcast";
 			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-			action = "['nev_addons_nev_debug_menu_notification', [ctrlText 80001, ctrlText 80002]] call BIS_fnc_showNotification";
+			action = "[""nev_addons_nev_debug_menu_notification"", [ctrlText 80001, ctrlText 80002]] call BIS_fnc_showNotification";
 			tooltip = "Broadcast notification";
 		};
 
@@ -507,8 +507,8 @@ class nev_debug_menu {
 			x = "SafeZoneX + (610 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
 			action = "_target = [cursorTarget, vehicle player] select isNull cursorTarget;\
-					 [_target, 1] remoteExec ['setFuel', _target];\
-					 hint 'The vehicle has been refuled'";
+					 [_target, 1] remoteExec [""setFuel"", _target];\
+					 hint ""The vehicle has been refuled""";
 			tooltip = "Refuel the current vehicle";
 		};
 
@@ -518,8 +518,8 @@ class nev_debug_menu {
 			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
 			action = "_target = [cursorTarget, vehicle player] select isNull cursorTarget;\
-					 [_target, 1] remoteExec ['setVehicleAmmoDef', _target];\
-					 hint 'The vehicle has been rearmed'"; // TODO: find alternetive for setVehicleAmmoDef as it's broken
+					 [_target, 1] remoteExec [""setVehicleAmmoDef"", _target];\
+					 hint ""The vehicle has been rearmed"""; // TODO: find alternetive for setVehicleAmmoDef as it's broken.
 			tooltip = "Rearm the current vehicle";
 		};
 
@@ -546,7 +546,7 @@ class nev_debug_menu {
 			style = ST_MULTI;
 			tooltip = "Execute code";
 			autocomplete = "scripting";
-			colorBackground[] = {0, 0, 0, 0.5};
+			colorBackground[] = {0,0,0,0.5};
 		};
 
 		// A button execute local code
