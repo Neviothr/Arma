@@ -1,15 +1,14 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-	class ai {
+	class ADDON {
 		name = "A3 AI overrides";
 		author = "Neviothr";
 		units[] = {};
 		weapons[] = {};
-		requiredAddons[] = {"main"};
-		version = 0.0.6;
-		versionStr = "0.0.6";
-		versionAr[] = {0, 0, 6};
+		requiredVersion = REQUIRED_VERSION;
+		requiredAddons[] = {"nev_main"};
+		VERSION_CONFIG;
 	};
 };
 

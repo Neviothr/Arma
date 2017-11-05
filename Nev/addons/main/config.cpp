@@ -1,11 +1,12 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-	class main {
+	class ADDON {
 		name = "Nev main component";
 		author = "Neviothr";
 		units[] = {};
 		weapons[] = {};
+		requiredVersion = REQUIRED_VERSION;
 		requiredAddons[] = {
 			"A3_UiFonts_F",
 			"asdg_jointmuzzles",
@@ -55,8 +56,6 @@ class CfgPatches {
 			"rhsusf_c_airweapons",
 			"rhs_servicemenu"
 		};
-		version = 0.0.1;
-		versionStr = "0.0.1";
-		versionAr[] = {0 ,0, 1};
+		VERSION_CONFIG;
 	};
 };

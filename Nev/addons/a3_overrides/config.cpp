@@ -1,15 +1,14 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-	class a3_overrides {
+	class ADDON {
 		name = "A3 Vanilla Overrides";
 		author = "Neviothr";
 		units[] = {};
 		weapons[] = {};
-		requiredAddons[] = {"main"};
-		version = 1.5.0;
-		versionStr = "1.5.0";
-		versionAr[] = {1 ,5, 0};
+		requiredVersion = REQUIRED_VERSION;
+		requiredAddons[] = {"nev_main"};
+		VERSION_CONFIG;
 	};
 };
 

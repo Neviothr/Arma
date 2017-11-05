@@ -1,16 +1,14 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class debug_menu {
+    class ADDON {
         name = "Mutipurpose Debug Menu";
         author = "Neviothr";
         units[] = {};
         weapons[] = {};
-        requiredVersion = 1.0;
-        requiredAddons[] = {"main"};
-        version = 1.6.7;
-        versionStr = "1.6.7";
-        versionAr[] = {1, 6, 7};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {"nev_main"};
+        VERSION_CONFIG;
     };
 };
 
