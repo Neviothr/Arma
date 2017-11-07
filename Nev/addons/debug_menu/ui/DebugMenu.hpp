@@ -4,7 +4,7 @@ class GVAR(debugMenuDisplay) {
 	movingEnable = true;
 	onLoad = QUOTE(call FUNC(onLoad));
 	class controls {
-		// A button to open Zeus
+		// Open Zeus
 		class GVAR(zeusButton): NevRscButton {
 			text = "Open zeus";
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
@@ -13,7 +13,7 @@ class GVAR(debugMenuDisplay) {
 			tooltip = "Open the Zeus curator interface";
 		};
 
-		// A button to open the virtual aresnal
+		// VA
 		class GVAR(vaButton): NevRscButton {
 			text = "Virtual arsenal";
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
@@ -23,7 +23,16 @@ class GVAR(debugMenuDisplay) {
 			tooltip = "Open the BIS virtual aresnal";
 		};
 
-		// A button to open the BI debug console
+		// Teleport
+		class GVAR(teleButton): NevRscButton {
+			text = "Teleport";
+			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
+			action = QUOTE(closeDialog 0; call FUNC(teleport));
+			tooltip = "Teleport on map click";
+		};
+
+		// BI debug console
 		class GVAR(debugConsoleButton): NevRscButton {
 			text = "Debug console";
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
@@ -33,18 +42,16 @@ class GVAR(debugMenuDisplay) {
 			tooltip = "Open the BIS debug console";
 		};
 
-		// A button to remove add dead AI units and vehicles
+		// Remove dead units and vehicle wreaks
 		class GVAR(delDeadButton): NevRscButton {
 			text = "Remove dead";
 			x = "SafeZoneX + (610 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-			action = "{\
-					 	deleteVehicle _x;\
-					  } forEach allDead";
+			action = QUOTE({deleteVehicle _x} forEach allDead - GVAR(deadOnStart));
 			tooltip = "Delete all dead units and vehicle wrecks";
 		};
 
-		// A button to spawn a group of set units
+		// Spawn a group of set units
 		class GVAR(spawnGroupButton): NevRscButton {
 			text = "Spawn group(s)";
 			x = "SafeZoneX + (610 / 1920) * SafeZoneW";
@@ -53,7 +60,7 @@ class GVAR(debugMenuDisplay) {
 			tooltip = "Spawn preset group(s)";
 		};
 
-		// Note: a static background image
+		// Background image
 		class GVAR(backgroundImage): RscFrame {
 			x = "SafeZoneX + (340 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (180 / 1080) * SafeZoneH";
@@ -66,7 +73,7 @@ class GVAR(debugMenuDisplay) {
 			moving = 1;
 		};
 
-		// A button to repair the current vehicle
+		// Repair the vehicle / heal
 		class GVAR(repairVehButton): NevRscButton {
 			text = "Repair";
 			x = "SafeZoneX + (610 / 1920) * SafeZoneW";
@@ -123,7 +130,7 @@ class GVAR(debugMenuDisplay) {
 			sizeEx = 0.035;
 		};
 
-		// A button to execute broadcast
+		// Execute broadcast
 		class GVAR(broadcastButton): NevRscButton {
 			text = "Broadcast";
 			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
@@ -132,7 +139,7 @@ class GVAR(debugMenuDisplay) {
 			tooltip = "Broadcast notification";
 		};
 
-		// A slider to change the overcast value
+		// Slider to change the overcast value
 		class GVAR(overcastSlider): NevRscSlider {
 		    idc = 80003;
 		   	x = "SafeZoneX + (860 / 1920) * SafeZoneW";
@@ -151,7 +158,7 @@ class GVAR(debugMenuDisplay) {
 			sizeEx = 0.035;
 		};
 
-		// A slider to change the lightning value
+		// Slider to change the lightning value
 		class GVAR(lightningSlider): NevRscSlider {
 		    idc = 80004;
 		   	x = "SafeZoneX + (860 / 1920) * SafeZoneW";
@@ -170,7 +177,7 @@ class GVAR(debugMenuDisplay) {
 			sizeEx = 0.035;
 		};
 
-		// A slider to change the fog's value
+		// Slider to change the fog's value
 		class GVAR(fogValueSlider): NevRscSlider {
 		    idc = 80005;
 		   	x = "SafeZoneX + (860 / 1920) * SafeZoneW";
@@ -189,7 +196,7 @@ class GVAR(debugMenuDisplay) {
 			sizeEx = 0.035;
 		};
 
-		// A slider to change the fog's decay value
+		// Slider to change the fog's decay value
 		class GVAR(fogDecaySlider): NevRscSlider {
 		    idc = 80006;
 		   	x = "SafeZoneX + (860 / 1920) * SafeZoneW";
@@ -208,7 +215,7 @@ class GVAR(debugMenuDisplay) {
 			sizeEx = 0.035;
 		};
 
-		// A slider to change the fog's base value
+		// Slider to change the fog's base value
 		class GVAR(fogBaseSlider): NevRscSlider {
 		    idc = 80007;
 		   	x = "SafeZoneX + (860 / 1920) * SafeZoneW";
@@ -227,7 +234,7 @@ class GVAR(debugMenuDisplay) {
 			sizeEx = 0.035;
 		};
 
-		// A slider to change the rain value
+		// Slider to change the rain value
 		class GVAR(rainSlider): NevRscSlider {
 		    idc = 80008;
 		   	x = "SafeZoneX + (860 / 1920) * SafeZoneW";
@@ -246,7 +253,7 @@ class GVAR(debugMenuDisplay) {
 			sizeEx = 0.035;
 		};
 
-		// A slider to change the wave value
+		// Slider to change the wave value
 		class GVAR(waveSlider): NevRscSlider {
 		    idc = 80009;
 		   	x = "SafeZoneX + (860 / 1920) * SafeZoneW";
@@ -384,7 +391,7 @@ class GVAR(debugMenuDisplay) {
 			tooltip = "Commit time & date changes";
 		};
 
-		// A button to return all objects within a radius of 50m
+		// Return all objects within a radius of 50m
 		class GVAR(nearestObjsButton): NevRscButton {
 			text = "Nearset objs";
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
@@ -416,7 +423,7 @@ class GVAR(debugMenuDisplay) {
 			sizeEx = 0.035;
 		};
 
-		// A button to make the admin visible
+		// Admin visible
 		class GVAR(adminVisibleButton): NevRscButton {
 			text = "Visible";
 			x = "SafeZoneX + (610 / 1920) * SafeZoneW";
@@ -428,7 +435,7 @@ class GVAR(debugMenuDisplay) {
 			colorText[] = {0, 0.5, 0, 1};
 		};
 
-		// A button to make the admin invisible
+		// Admin invisible
 		class GVAR(adminInvisibleButton): NevRscButton {
 			text = "Invisible";
 			x = "SafeZoneX + (610 / 1920) * SafeZoneW";
@@ -440,7 +447,7 @@ class GVAR(debugMenuDisplay) {
 			colorText[] = {0.5, 0, 0, 1};
 		};
 
-		// A button to open the virtual garage
+		// VG
 		class GVAR(virtualGarageButton): NevRscButton {
 			idc = 80021;
 			text = "Virtual garage";
@@ -450,7 +457,7 @@ class GVAR(debugMenuDisplay) {
 			tooltip = "Open the virtual garage";
 		};
 
-		// A button to turn on safe start
+		// Safe start on
 		class GVAR(safeStartOnButton): NevRscButton {
 			text = "SafeStart On";
 			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
@@ -460,7 +467,7 @@ class GVAR(debugMenuDisplay) {
 			colorText[] = {0, 0.5, 0, 1};
 		};
 
-		// A button to turn off safe start
+		// Safe start off
 		class GVAR(safeStartOffButton): NevRscButton {
 			text = "SafeStart Off";
 			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
@@ -492,7 +499,7 @@ class GVAR(debugMenuDisplay) {
 			sizeEx = 0.035;
 		};
 
-		// A button to randomize the environment
+		// Randomize the environment
 		class GVAR(randomEnviButton): NevRscButton {
 			text = "Random envi";
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
@@ -501,7 +508,7 @@ class GVAR(debugMenuDisplay) {
 			tooltip = "Randomize environment";
 		};
 
-		// A button to refuel the current vehicle
+		// Refuel the vehicle
 		class GVAR(refuelVehButton): NevRscButton {
 			text = "Refuel";
 			x = "SafeZoneX + (610 / 1920) * SafeZoneW";
@@ -512,7 +519,7 @@ class GVAR(debugMenuDisplay) {
 			tooltip = "Refuel the current vehicle";
 		};
 
-		// A button to rearm the current vehicle
+		// Rearm the current vehicle
 		class GVAR(rearmVehButton): NevRscButton {
 			text = "Rearm";
 			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
@@ -549,7 +556,7 @@ class GVAR(debugMenuDisplay) {
 			colorBackground[] = {0, 0, 0, 0.5};
 		};
 
-		// A button execute local code
+		// Execute local code
 		class GVAR(execLocalButton): NevRscButton {
 			text = "Local";
 			x = "SafeZoneX + (1210 / 1920) * SafeZoneW";
@@ -558,7 +565,7 @@ class GVAR(debugMenuDisplay) {
 			tooltip = "Execute local code";
 		};
 
-		// A button execute global code
+		// Execute global code
 		class GVAR(execGlobalButton): NevRscButton {
 			idc = 80019;
 			text = "Global";
@@ -568,7 +575,7 @@ class GVAR(debugMenuDisplay) {
 			tooltip = "Execute global code";
 		};
 
-		// A button execute server code
+		// Execute server code
 		class GVAR(execServerButton): NevRscButton {
 			idc = 80020;
 			text = "Server";
@@ -578,7 +585,7 @@ class GVAR(debugMenuDisplay) {
 			tooltip = "Execute server code";
 		};
 
-		// A button to create a square AO based on 2 points
+		// Create a square AO based on 2 points
 		class GVAR(createAOButton): NevRscButton {
 			text = "Create AO";
 			x = "SafeZoneX + (735 / 1920) * SafeZoneW";

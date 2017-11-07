@@ -1,8 +1,8 @@
 class CfgSettings {
 	class CBA {
 		class Versioning {
-			class debug_menu {
-				main_addon = "debug_menu";
+			class ADDON {
+				main_addon = "nev_debug_menu";
 			};
 		};
 	};

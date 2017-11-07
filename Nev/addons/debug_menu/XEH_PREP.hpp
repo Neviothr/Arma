@@ -12,3 +12,4 @@ PREP(fullMoonDates);
 PREP(debugConsoleExec);
 PREP(createAO);
 PREP(aiCountLoop);
+PREP(teleport);

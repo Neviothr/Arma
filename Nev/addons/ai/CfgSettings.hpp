@@ -1,8 +1,8 @@
 class CfgSettings {
 	class CBA {
 		class Versioning {
-			class ai {
-			   main_addon = "ai";
+			class ADDON {
+			   main_addon = "nev_ai";
 			};
 		};
 	};
