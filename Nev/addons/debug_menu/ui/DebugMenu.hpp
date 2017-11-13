@@ -462,7 +462,7 @@ class GVAR(debugMenuDisplay) {
 			text = "SafeStart On";
 			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
-			action = QUOTE([] remoteExec [ARR_2(QQFUNC(safeStartOn), 0)]);
+			action = QUOTE([] remoteExec [ARR_2(QQFUNC(safeStart), 0)]);
 			tooltip = "Enable SafeStart";
 			colorText[] = {0, 0.5, 0, 1};
 		};
@@ -472,7 +472,7 @@ class GVAR(debugMenuDisplay) {
 			text = "SafeStart Off";
 			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
-			action = QUOTE([] remoteExec [ARR_2(QQFUNC(safeStartOff), 0)]);
+			action = QUOTE(GVAR(isSafeStart) = false; publicVariable QGVAR(isSafeStart));
 			tooltip = "Disable SafeStart";
 			colorText[] = {0.5, 0, 0, 1};
 		};
