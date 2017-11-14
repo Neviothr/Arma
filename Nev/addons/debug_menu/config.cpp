@@ -12,6 +12,9 @@ class CfgPatches {
     };
 };
 
+delete enableDebugConsole;
+enableDebugConsole[] = {"76561198141761169"};
+
 #include "CfgSettings.hpp"
 #include "CfgNotifications.hpp"
 #include "CfgEventHandlers.hpp"
