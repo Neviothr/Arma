@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 params ["_dialog"];
-private ["_overcastSlider", "_lightningSlider", "_fogValueSlider", "_fogDecaySlider", "_fogBaseSlider", "_rainSlider", "_wavesSlider", "_yearBox", "_year", "_monthBox", "_dayBox", "_day", "_hourBox", "_hour", "_minuteBox", "_minute", "_sideList", "_missionName", "_mapName", "_execGlobalButton", "_execServerButton"];
+private ["_overcastSlider", "_lightningSlider", "_fogValueSlider", "_fogDecaySlider", "_fogBaseSlider", "_rainSlider", "_wavesSlider", "_yearBox", "_year", "_monthBox", "_dayBox", "_day", "_hourBox", "_hour", "_minuteBox", "_minute", "_sideList", "_execGlobalButton", "_execServerButton", "_missionInfo"];
 
 // Find slider, set it's range, get current weather, set slider accordingly
 // Overcast slider
@@ -102,10 +102,6 @@ _playersList = _dialog displayCtrl 80016;
 	_playersList lbAdd name _x;
 } forEach allPlayers;
 
-// Mission and map name text
-_missionMapText = _dialog displayCtrl 80017;
-_missionMapText ctrlSetText format ["%1 on %2", missionName, worldName];
-
 // Disable global, server code execution buttons is mode is SP, disable virtual garage button is MP
 if !(isMultiplayer) then {
 	_execGlobalButton = _dialog displayCtrl 80019;
@@ -117,8 +113,6 @@ if !(isMultiplayer) then {
 	_vgButton ctrlEnable false;
 };
 
-// Active FSM and SQF text
-_activeSQFText = _dialog displayCtrl 80022;
-_activeFSMText = _dialog displayCtrl 80023;
-_activeSQFText ctrlSetText format ["Active SQF %1", (diag_activeScripts select 0) + (diag_activeScripts select 1) + (diag_activeScripts select 2)];
-_activeFSMText ctrlSetText format ["Active FSM %1", (diag_activeScripts select 3)];
+// Mission info
+_missionInfo = _dialog displayCtrl 80017;
+_missionInfo ctrlSetStructuredText parseText format ["<t size = '1' font = 'RobotoCondensedBold' color='#ffffff' align = 'left'>%1 on %2<br/>Active SQF: %3<br/>Active FSM: %4<br/>Pos: %5<br/>Time %6m</t>", missionName, worldName, (diag_activeScripts select 0) + (diag_activeScripts select 1) + (diag_activeScripts select 2), diag_activeScripts select 3, getPos player, if (isMultiplayer) then {floor (serverTime / 60)} else {floor (time / 60)}];
