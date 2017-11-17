@@ -63,9 +63,9 @@ class GVAR(debugMenuDisplay) {
 		// Background image
 		class GVAR(backgroundImage): RscFrame {
 			x = "SafeZoneX + (340 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (180 / 1080) * SafeZoneH";
+			y = "SafeZoneY + (130 / 1080) * SafeZoneH";
 			w = "(1275 / 1920) * SafeZoneW";
-			h = "(510 / 1080) * SafeZoneH";
+			h = "(550 / 1080) * SafeZoneH";
 			type = CT_STATIC;
 			style = ST_FRAME;
 			sizeEx = 0.05;
@@ -428,10 +428,10 @@ class GVAR(debugMenuDisplay) {
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (155 / 1080) * SafeZoneH";
 			w = "(350 / 1920) * SafeZoneW";
-			h = "(154 / 1920) * SafeZoneW";
+			h = "(153 / 1920) * SafeZoneW";
 			type = CT_STRUCTURED_TEXT;
 			style = ST_MULTI;
-			size = 0.040;
+			size = 0.045;
 			colorBackground[] = {0, 0, 0, 0.5};
 		};
 
