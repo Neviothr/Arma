@@ -124,7 +124,7 @@ class NevRscSlider: RscSlider {
 	arrowFull = "\A3\ui_f\data\gui\cfg\slider\arrowFull_ca.paa";
 	border = "\A3\ui_f\data\gui\cfg\slider\border_ca.paa";
 	thumb = "\A3\ui_f\data\gui\cfg\slider\thumb_ca.paa";
-	w = "(200 / 1920) * SafeZoneW";
+	w = "(225 / 1920) * SafeZoneW";
 	h = "(30 / 1080) * SafeZoneH";
 	type = CT_XSLIDER;
 	style = SL_HORZ;

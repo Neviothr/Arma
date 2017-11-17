@@ -185,7 +185,7 @@ class GVAR(debugMenuDisplay) {
 		// Year combo box
 		class GVAR(yearBox): RscCombo {
 			idc = 80010;
-			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (1110 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
 			w = "(100 / 1920) * SafeZoneW";
 			h = "(30 / 1080) * SafeZoneH";
@@ -197,7 +197,7 @@ class GVAR(debugMenuDisplay) {
 		// Month combo box
 		class GVAR(monthBox): RscCombo {
 			idc = 80011;
-			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (1110 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
 			w = "(100 / 1920) * SafeZoneW";
 			h = "(30 / 1080) * SafeZoneH";
@@ -209,7 +209,7 @@ class GVAR(debugMenuDisplay) {
 		// Day combo box
 		class GVAR(dayBox): RscCombo {
 			idc = 80012;
-			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (1110 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
 			w = "(100 / 1920) * SafeZoneW";
 			h = "(30 / 1080) * SafeZoneH";
@@ -221,7 +221,7 @@ class GVAR(debugMenuDisplay) {
 		// Hour combo box
 		class GVAR(hourBox): RscCombo {
 			idc = 80013;
-			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (1110 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
 			w = "(100 / 1920) * SafeZoneW";
 			h = "(30 / 1080) * SafeZoneH";
@@ -233,7 +233,7 @@ class GVAR(debugMenuDisplay) {
 		// Minute combo box
 		class GVAR(minuteBox): RscCombo {
 			idc = 80014;
-			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (1110 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
 			w = "(100 / 1920) * SafeZoneW";
 			h = "(30 / 1080) * SafeZoneH";
@@ -263,7 +263,7 @@ class GVAR(debugMenuDisplay) {
 		// Side list box
 		class GVAR(sideList): RscListbox {
 			idc = 80015;
-			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (1110 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
 			w = "(100 / 1920) * SafeZoneW";
 			h = "(75 / 1080) * SafeZoneH";
@@ -373,7 +373,7 @@ class GVAR(debugMenuDisplay) {
 		// Debug Console's edit box
 		class GVAR(debugConsole): RscEdit {
 			idc = 80018;
-			x = "SafeZoneX + (1210 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (1235 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
 			w = "(350 / 1920) * SafeZoneW";
 			h = "(300 / 1080) * SafeZoneH";
@@ -387,7 +387,7 @@ class GVAR(debugMenuDisplay) {
 		// Execute local code
 		class GVAR(execLocalButton): NevRscButton {
 			text = "Local";
-			x = "SafeZoneX + (1210 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (1235 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
 			action = QUOTE([ARR_1(0)] call FUNC(debugConsoleExec));
 			tooltip = "Execute local code";
@@ -397,7 +397,7 @@ class GVAR(debugMenuDisplay) {
 		class GVAR(execGlobalButton): NevRscButton {
 			idc = 80019;
 			text = "Global";
-			x = "SafeZoneX + (1335 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (1360 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
 			action = QUOTE([ARR_1(1)] call FUNC(debugConsoleExec));
 			tooltip = "Execute global code";
@@ -407,7 +407,7 @@ class GVAR(debugMenuDisplay) {
 		class GVAR(execServerButton): NevRscButton {
 			idc = 80020;
 			text = "Server";
-			x = "SafeZoneX + (1460 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (1485 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
 			action = QUOTE([ARR_1(2)] call FUNC(debugConsoleExec));
 			tooltip = "Execute server code";
@@ -426,12 +426,12 @@ class GVAR(debugMenuDisplay) {
 		class GVAR(missionInfo): RscStructuredText {
 			idc = 80017;
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (75 / 1080) * SafeZoneH";
+			y = "SafeZoneY + (155 / 1080) * SafeZoneH";
 			w = "(350 / 1920) * SafeZoneW";
-			h = "(125 / 1920) * SafeZoneW";
+			h = "(154 / 1920) * SafeZoneW";
 			type = CT_STRUCTURED_TEXT;
 			style = ST_MULTI;
-			size = 0.035;
+			size = 0.040;
 			colorBackground[] = {0, 0, 0, 0.5};
 		};
 
