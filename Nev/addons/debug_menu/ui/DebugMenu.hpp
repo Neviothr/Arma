@@ -431,7 +431,7 @@ class GVAR(debugMenuDisplay) {
 			h = "(153 / 1920) * SafeZoneW";
 			type = CT_STRUCTURED_TEXT;
 			style = ST_MULTI;
-			size = 0.045;
+			size = 0.035;
 			colorBackground[] = {0, 0, 0, 0.5};
 		};
 
