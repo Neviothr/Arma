@@ -1,10 +1,10 @@
 /*
 	currentMagazine vehicle player
-	
+
 	configFile >> CfgMagazines >> currentMagazine vehicle player >> ammo
-	
+
 	getText (configFile >> CfgMagazines >> currentMagazine vehicle player >> ammo)
-	
+
 	vehicle player getCompatiblePylonMagazines 0
 
 	_arr apply {getText (configFile >> CfgMagazines >> _x >> ammo)}
@@ -649,6 +649,8 @@ class CfgAmmo {
 	class CUP_R_TOW_AT: M_Titan_AT {
 		ENHANCED_LAUNCHER
 	};
+	class BulletCore;
+	class BulletBase: BulletCore {};
 	class CUP_Sh_PG9_AT: BulletBase {
 		ENHANCED_LAUNCHER
 	};
