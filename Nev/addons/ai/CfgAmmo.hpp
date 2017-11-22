@@ -1,12 +1,13 @@
 /*
-	configFile >> "CfgMagazines" >> currentMagazine player >> "ammo"
-	vehicle player getCompatiblePylonMagazines 0;
+	currentMagazine vehicle player
+	
+	configFile >> CfgMagazines >> currentMagazine vehicle player >> ammo
+	
+	getText (configFile >> CfgMagazines >> currentMagazine vehicle player >> ammo)
+	
+	vehicle player getCompatiblePylonMagazines 0
 
-	{
-		configFile >> "CfgMagazines" >> _x >> "ammo"
-	} forEach _arr
-
-	_arr apply {getText (configFile >> "CfgMagazines" >> _x >> "ammo")}
+	_arr apply {getText (configFile >> CfgMagazines >> _x >> ammo)}
 */
 
 class CfgAmmo {
@@ -574,6 +575,161 @@ class CfgAmmo {
 		ENHANCED_LAUNCHER
 	};
 	class rhs_ammo_rbk500_spbed: rhs_ammo_rbk500_ao25 {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_M_Javelin_AT: MissileBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_M_Stinger_AA: MissileBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_M_9K38_Igla_AA: M_Titan_AA {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_M136_AT: RocketBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_M_47_AT_EP1: MissileBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_M72A6_AT: RocketBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_MEEWS_HEDP: RocketBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_MEEWS_HEAT: CUP_R_MEEWS_HEDP {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_M_9K115_2_AT13_Saxhorn_2_AT: M_Titan_AT {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_SMAW_HEDP_N: RocketBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_SMAW_HEAA_N: CUP_R_SMAW_HEDP_N {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_SMAW_Spotting: RocketBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_M_NLAW_AT: MissileBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_PG7V_AT: RocketBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_PG7VM_AT: RocketBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_PG7VL_AT: RocketBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_PG7VR_AT: RocketBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_OG7_AT: RocketBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_TBG7V_AT: RocketBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_RPG18_AT: RocketBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_M_9K32_Strela_2_AA: M_Titan_AA {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_GRAD_HE: R_230mm_HE {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_M_9M113_AT5_Spandrel_AT: MissileBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_TOW_AT: M_Titan_AT {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_Sh_PG9_AT: BulletBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_TOW2_AT: CUP_R_TOW_AT {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_M_9M311_Tunguska_AA: M_Titan_AA {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_M_9K11_AT3_Sagger_AT: MissileBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_M_9K116_1_Bastion_AT10_Stabber_AT: MissileBase {
+		ENHANCED_LAUNCHER
+	};
+	class ShellCore;
+	class ShellBase: ShellCore {};
+	class R_230mm_fly: ShellBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_MLRS_HE: R_230mm_fly {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_M_9M119M_Bastion_AT11_Sniper_AT: MissileBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_M_RBS70_AA: MissileBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_M_AGM_114L_Hellfire_II_AT: MissileBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_M_9K121_Vikhr_AT16_Scallion_AT: MissileBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_M_Ataka_V_9M120_AT9_Spiral_2_AT: MissileBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_M_3M11_AT2_Falanga_AT: MissileBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_M_Shturm_9K114_AT6_Spiral_AT: MissileBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_70mm_Hydra_HE: RocketBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_CRV7_C18_HE: CUP_R_70mm_Hydra_HE {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_CRV7_FAT: CUP_R_CRV7_C18_HE {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_R_CRV7_C18_KEP: CUP_R_CRV7_C18_HE {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_M_AIM_9L_Sidewinder_AA: MissileBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_M_AGM_114K_Hellfire_II_AT: MissileBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_AGM65pod_AT: MissileBase {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_Mk_82: Bo_Mk82 {
+		ENHANCED_LAUNCHER
+	};
+	class Bo_GBU12_LGB: LaserBombCore {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_Bo_GBU12_LGB: Bo_GBU12_LGB {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_FAB250: Bo_Mk82 {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_Bo_KAB250_LGB: Bo_GBU12_LGB {
+		ENHANCED_LAUNCHER
+	};
+	class CUP_M_KH29L_AT: M_Scalpel_AT {
 		ENHANCED_LAUNCHER
 	};
 };
