@@ -17,8 +17,8 @@ while {GVAR(isSafeStart)} do {
 	uisleep 60;
 
 	// Formatted messages telling the players how many minutes have passed since briefing stage was started
-	[format ["Weapons are cold, wait for admin to trigger start. (%1 minute(s) since briefing stage started)", GVAR(safeStartLoop)]] remoteExec ["hint", [0, -2] select isMultiplayer];
-	[format ["[SafeStart] Weapons are cold, wait for admin to trigger start. (%1 minute(s) since briefing stage started)", GVAR(safeStartLoop)]] remoteExec ["systemChat", [0, -2] select isMultiplayer];
+	format ["Weapons are cold, wait for admin to trigger start. (%1 minute%2 since briefing stage started)", GVAR(safeStartLoop), ["", "s"] select (GVAR(safeStartLoop) > 1)] remoteExec ["hint", [0, -2] select isMultiplayer];
+	format ["[SafeStart] Weapons are cold, wait for admin to trigger start. (%1 minute%2 since briefing stage started)", GVAR(safeStartLoop), ["", "s"] select (GVAR(safeStartLoop) > 1)] remoteExec ["systemChat", [0, -2] select isMultiplayer];
 
 	// Increase the timer by one
 	GVAR(safeStartLoop) = GVAR(safeStartLoop) + 1;

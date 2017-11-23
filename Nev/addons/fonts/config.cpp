@@ -2,7 +2,7 @@
 
 class CfgPatches {
 	class ADDON {
-		name = "A3 Vanilla Overrides";
+		name = "Nev Movement";
 		author = "Neviothr";
 		units[] = {};
 		weapons[] = {};
@@ -13,8 +13,4 @@ class CfgPatches {
 };
 
 #include "CfgSettings.hpp"
-#include "CfgEventhandlers.hpp"
-#include "CfgAmmo.hpp"
-#include "CfgWeapons.hpp"
-#include "CfgVehicles.hpp"
 #include "CfgFontFamilies.hpp"

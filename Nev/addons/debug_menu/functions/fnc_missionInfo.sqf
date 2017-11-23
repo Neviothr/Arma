@@ -24,16 +24,20 @@ _time = format ["%1:%2", _hour, _minute];
 
 // Get current location text
 private _neareastLocations = nearestLocations [getPos player, ["NameCity", "NameCityCapital", "NameLocal", "NameMarine", "NameVillage"], 10000];
-private _locationText = [format ["NEAR %1", toUpper text (_neareastLocations select 0)], "In the middle of nowhere"] select (_neareastLocations isEqualTo []);
+private _locationText = if (_neareastLocations isEqualTo []) then {
+	"In the middle of nowhere";
+} else {
+	format ["NEAR %1", toUpper text (_neareastLocations select 0)];
+};
 
 // Output
 [
 	[
-		[_missionName, "align = 'right' shadow = '1' size = '0.7' font='PuristaBold'", "#0086f4"],
+		[_missionName, "align = 'right' shadow = '1' size = '0.7' font='PuristaBold'"],
 		["", "<br/>"],
 		[_date, "align = 'right' shadow = '1' size = '0.7' font = 'PuristaLight'"],
 		[_time, "align = 'right' shadow = '1' size = '0.7' font = 'PuristaMedium'"],
 		["", "<br/>"],
 		[_locationText, "align = 'right' shadow = '1' size = '0.7' font = 'PuristaLight'"]
-	], -1, 1.5
+	], -1.1, 1.1
 ] spawn BIS_fnc_typeText2;

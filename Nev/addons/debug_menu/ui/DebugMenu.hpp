@@ -63,9 +63,9 @@ class GVAR(debugMenuDisplay) {
 		// Background image
 		class GVAR(backgroundImage): RscFrame {
 			x = "SafeZoneX + (340 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (180 / 1080) * SafeZoneH";
+			y = "SafeZoneY + (130 / 1080) * SafeZoneH";
 			w = "(1275 / 1920) * SafeZoneW";
-			h = "(510 / 1080) * SafeZoneH";
+			h = "(550 / 1080) * SafeZoneH";
 			type = CT_STATIC;
 			style = ST_FRAME;
 			sizeEx = 0.05;
@@ -97,16 +97,6 @@ class GVAR(debugMenuDisplay) {
 			colorBackground[] = {0, 0, 0, 0.5};
 		};
 
-		// "Title" text
-		class GVAR(titleText): RscText {
-			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (266 / 1080) * SafeZoneH";
-			type = CT_STATIC;
-			style = ST_LEFT;
-			text = "Title:";
-			sizeEx = 0.035;
-		};
-
 		// A box to write text that will be broadcasted (line 2, description)
 		class GVAR(broadcastDesc): RscEdit {
 			idc = 80002;
@@ -120,16 +110,6 @@ class GVAR(debugMenuDisplay) {
 			colorBackground[] = {0,0,0,0.5};
 		};
 
-		// "Description" text
-		class GVAR(descText): RscText {
-			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (311 / 1080) * SafeZoneH";
-			type = CT_STATIC;
-			style = ST_LEFT;
-			text = "Description:";
-			sizeEx = 0.035;
-		};
-
 		// Execute broadcast
 		class GVAR(broadcastButton): NevRscButton {
 			text = "Broadcast";
@@ -141,141 +121,71 @@ class GVAR(debugMenuDisplay) {
 
 		// Slider to change the overcast value
 		class GVAR(overcastSlider): NevRscSlider {
-		    idc = 80003;
-		   	x = "SafeZoneX + (860 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
-		    tooltip = "Change overcast";
-		    onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
-		};
-
-		// "Overcast" text
-		class GVAR(overcastText): RscText {
+			idc = 80003;
 			x = "SafeZoneX + (860 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (266 / 1080) * SafeZoneH";
-			type = CT_STATIC;
-			style = ST_LEFT;
-			text = "Overcast:";
-			sizeEx = 0.035;
+			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
+			tooltip = "Change overcast";
+			onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
 		};
 
 		// Slider to change the lightning value
 		class GVAR(lightningSlider): NevRscSlider {
-		    idc = 80004;
-		   	x = "SafeZoneX + (860 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
-		    tooltip = "Change lightning";
-		    onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
-		};
-
-		// "Lightning" text
-		class GVAR(lightningText): RscText {
+			idc = 80004;
 			x = "SafeZoneX + (860 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (311 / 1080) * SafeZoneH";
-			type = CT_STATIC;
-			style = ST_LEFT;
-			text = "Lightnings:";
-			sizeEx = 0.035;
+			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
+			tooltip = "Change lightning";
+			onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
 		};
 
 		// Slider to change the fog's value
 		class GVAR(fogValueSlider): NevRscSlider {
-		    idc = 80005;
-		   	x = "SafeZoneX + (860 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-		    tooltip = "Change fog value";
-		    onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
-		};
-
-		// "Fog value:" text
-		class GVAR(fogValueText): RscText {
+			idc = 80005;
 			x = "SafeZoneX + (860 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (356 / 1080) * SafeZoneH";
-			type = CT_STATIC;
-			style = ST_LEFT;
-			text = "Fog value:";
-			sizeEx = 0.035;
+			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
+			tooltip = "Change fog value";
+			onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
 		};
 
 		// Slider to change the fog's decay value
 		class GVAR(fogDecaySlider): NevRscSlider {
-		    idc = 80006;
-		   	x = "SafeZoneX + (860 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
-		    tooltip = "Change fog decay";
-		    onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
-		};
-
-		// "Fog decay" text
-		class GVAR(fogDecayText): RscText {
+			idc = 80006;
 			x = "SafeZoneX + (860 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (401 / 1080) * SafeZoneH";
-			type = CT_STATIC;
-			style = ST_LEFT;
-			text = "Fog decay:";
-			sizeEx = 0.035;
+			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
+			tooltip = "Change fog decay";
+			onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
 		};
 
 		// Slider to change the fog's base value
 		class GVAR(fogBaseSlider): NevRscSlider {
-		    idc = 80007;
-		   	x = "SafeZoneX + (860 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
-		    tooltip = "Change fog base";
-		    onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
-		};
-
-		// "Fog base" text
-		class GVAR(fogBaseText): RscText {
+			idc = 80007;
 			x = "SafeZoneX + (860 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (446 / 1080) * SafeZoneH";
-			type = CT_STATIC;
-			style = ST_LEFT;
-			text = "Fog base:";
-			sizeEx = 0.035;
+			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
+			tooltip = "Change fog base";
+			onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
 		};
 
 		// Slider to change the rain value
 		class GVAR(rainSlider): NevRscSlider {
-		    idc = 80008;
-		   	x = "SafeZoneX + (860 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (510/ 1080) * SafeZoneH";
-		    tooltip = "Change rain";
-		    onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
-		};
-
-		// "Rain" text
-		class GVAR(rainText): RscText {
+			idc = 80008;
 			x = "SafeZoneX + (860 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (491 / 1080) * SafeZoneH";
-			type = CT_STATIC;
-			style = ST_LEFT;
-			text = "Rain:";
-			sizeEx = 0.035;
+			y = "SafeZoneY + (510/ 1080) * SafeZoneH";
+			tooltip = "Change rain";
+			onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
 		};
 
 		// Slider to change the wave value
 		class GVAR(waveSlider): NevRscSlider {
-		    idc = 80009;
-		   	x = "SafeZoneX + (860 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
-		    tooltip = "Change waves";
-		    onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
-		};
-
-		// "Wave" text
-		class GVAR(waveText): RscText {
+			idc = 80009;
 			x = "SafeZoneX + (860 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (536 / 1080) * SafeZoneH";
-			type = CT_STATIC;
-			style = ST_LEFT;
-			text = "Waves:";
-			sizeEx = 0.035;
+			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
+			tooltip = "Change waves";
+			onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(commitWeather), 0)]);
 		};
 
 		// Year combo box
 		class GVAR(yearBox): RscCombo {
 			idc = 80010;
-			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (1110 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
 			w = "(100 / 1920) * SafeZoneW";
 			h = "(30 / 1080) * SafeZoneH";
@@ -284,20 +194,10 @@ class GVAR(debugMenuDisplay) {
 			tooltip = "Change year";
 		};
 
-		// "Year" text
-		class GVAR(yearText): RscText {
-			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (266 / 1080) * SafeZoneH";
-			type = CT_STATIC;
-			style = ST_LEFT;
-			text = "Year:";
-			sizeEx = 0.035;
-		};
-
 		// Month combo box
 		class GVAR(monthBox): RscCombo {
 			idc = 80011;
-			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (1110 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
 			w = "(100 / 1920) * SafeZoneW";
 			h = "(30 / 1080) * SafeZoneH";
@@ -306,20 +206,10 @@ class GVAR(debugMenuDisplay) {
 			tooltip = "Change month";
 		};
 
-		// "Month" text
-		class GVAR(monthText): RscText {
-			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (311 / 1080) * SafeZoneH";
-			type = CT_STATIC;
-			style = ST_LEFT;
-			text = "Month:";
-			sizeEx = 0.035;
-		};
-
 		// Day combo box
 		class GVAR(dayBox): RscCombo {
 			idc = 80012;
-			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (1110 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
 			w = "(100 / 1920) * SafeZoneW";
 			h = "(30 / 1080) * SafeZoneH";
@@ -328,20 +218,10 @@ class GVAR(debugMenuDisplay) {
 			tooltip = "Change day";
 		};
 
-		// "Day" text
-		class GVAR(dayText): RscText {
-			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (356 / 1080) * SafeZoneH";
-			type = CT_STATIC;
-			style = ST_LEFT;
-			text = "Day:";
-			sizeEx = 0.035;
-		};
-
 		// Hour combo box
 		class GVAR(hourBox): RscCombo {
 			idc = 80013;
-			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (1110 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
 			w = "(100 / 1920) * SafeZoneW";
 			h = "(30 / 1080) * SafeZoneH";
@@ -350,36 +230,16 @@ class GVAR(debugMenuDisplay) {
 			tooltip = "Change hour";
 		};
 
-		// "Hour" text
-		class GVAR(hourText): RscText {
-			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (401 / 1080) * SafeZoneH";
-			type = CT_STATIC;
-			style = ST_LEFT;
-			text = "Hour:";
-			sizeEx = 0.035;
-		};
-
 		// Minute combo box
 		class GVAR(minuteBox): RscCombo {
 			idc = 80014;
-			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (1110 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
 			w = "(100 / 1920) * SafeZoneW";
 			h = "(30 / 1080) * SafeZoneH";
 			type = CT_COMBO;
 			style = ST_LEFT;
 			tooltip = "Change minute";
-		};
-
-		// "Minutes" text
-		class GVAR(minutesText): RscText {
-			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (446 / 1080) * SafeZoneH";
-			type = CT_STATIC;
-			style = ST_LEFT;
-			text = "Minutes:";
-			sizeEx = 0.035;
 		};
 
 		// A button to commit time and date changes
@@ -403,7 +263,7 @@ class GVAR(debugMenuDisplay) {
 		// Side list box
 		class GVAR(sideList): RscListbox {
 			idc = 80015;
-			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (1110 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
 			w = "(100 / 1920) * SafeZoneW";
 			h = "(75 / 1080) * SafeZoneH";
@@ -411,16 +271,6 @@ class GVAR(debugMenuDisplay) {
 			style = ST_LEFT;
 			tooltip = "Change player's side";
 			onLBSelChanged = QUOTE(_this call FUNC(sideChange));
-		};
-
-		// "Side" text
-		class GVAR(sideText): RscText {
-			x = "SafeZoneX + (1085 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (491 / 1080) * SafeZoneH";
-			type = CT_STATIC;
-			style = ST_LEFT;
-			text = "Side:";
-			sizeEx = 0.035;
 		};
 
 		// Admin visible
@@ -489,16 +339,6 @@ class GVAR(debugMenuDisplay) {
 			tooltip = "Choose player";
 		};
 
-		// "Players:" text
-		class GVAR(playersText): RscText {
-			x = "SafeZoneX + (360 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (266 / 1080) * SafeZoneH";
-			type = CT_STATIC;
-			style = ST_LEFT;
-			text = "Players:";
-			sizeEx = 0.035;
-		};
-
 		// Randomize the environment
 		class GVAR(randomEnviButton): NevRscButton {
 			text = "Random envi";
@@ -530,22 +370,10 @@ class GVAR(debugMenuDisplay) {
 			tooltip = "Rearm the current vehicle";
 		};
 
-		// "mission_name on map_name" text
-		class GVAR(missionMapText): RscText {
-			idc = 80017;
-			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (250 / 1080) * SafeZoneH";
-			w = "(500 / 1920) * SafeZoneW";
-			type = CT_STATIC;
-			style = ST_LEFT;
-			text = "";
-			sizeEx = 0.035;
-		};
-
 		// Debug Console's edit box
 		class GVAR(debugConsole): RscEdit {
 			idc = 80018;
-			x = "SafeZoneX + (1210 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (1235 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
 			w = "(350 / 1920) * SafeZoneW";
 			h = "(300 / 1080) * SafeZoneH";
@@ -559,7 +387,7 @@ class GVAR(debugMenuDisplay) {
 		// Execute local code
 		class GVAR(execLocalButton): NevRscButton {
 			text = "Local";
-			x = "SafeZoneX + (1210 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (1235 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
 			action = QUOTE([ARR_1(0)] call FUNC(debugConsoleExec));
 			tooltip = "Execute local code";
@@ -569,7 +397,7 @@ class GVAR(debugMenuDisplay) {
 		class GVAR(execGlobalButton): NevRscButton {
 			idc = 80019;
 			text = "Global";
-			x = "SafeZoneX + (1335 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (1360 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
 			action = QUOTE([ARR_1(1)] call FUNC(debugConsoleExec));
 			tooltip = "Execute global code";
@@ -579,7 +407,7 @@ class GVAR(debugMenuDisplay) {
 		class GVAR(execServerButton): NevRscButton {
 			idc = 80020;
 			text = "Server";
-			x = "SafeZoneX + (1460 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (1485 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
 			action = QUOTE([ARR_1(2)] call FUNC(debugConsoleExec));
 			tooltip = "Execute server code";
@@ -594,28 +422,44 @@ class GVAR(debugMenuDisplay) {
 			tooltip = "Create an AO based on 2 points";
 		};
 
-		// Active SQF text
-		class GVAR(activeSQFText): RscText {
-			idc = 80022;
+		// Various mission info
+		class GVAR(missionInfo): RscStructuredText {
+			idc = 80017;
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (235 / 1080) * SafeZoneH";
-			w = "(100 / 1920) * SafeZoneW";
-			type = CT_STATIC;
-			style = ST_LEFT;
-			text = "";
-			sizeEx = 0.035;
+			y = "SafeZoneY + (155 / 1080) * SafeZoneH";
+			w = "(350 / 1920) * SafeZoneW";
+			h = "(153 / 1920) * SafeZoneW";
+			type = CT_STRUCTURED_TEXT;
+			style = ST_MULTI;
+			size = 0.035;
+			colorBackground[] = {0, 0, 0, 0.5};
 		};
 
-		// Active FSM text
-		class GVAR(activeFSMText): RscText {
-			idc = 80023;
+		// BIS camera
+		class GVAR(bisCameraButton): NevRscButton {
+			text = "Camera";
+			x = "SafeZoneX + (610 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (330 / 1080) * SafeZoneH";
+			action = "closeDialog 0; [] spawn BIS_fnc_camera";
+			tooltip = "Open BIS' splendid camera";
+		};
+
+		// Config viewer
+		class GVAR(bisCfgViewerButton): NevRscButton {
+			text = "Config viewer";
+			x = "SafeZoneX + (610 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
+			action = "closeDialog 0; [] call BIS_fnc_configViewer";
+			tooltip = "Open BIS' config viewer";
+		};
+
+		// Function viewer
+		class GVAR(bisFncViewerButton): NevRscButton {
+			text = "Fnc viewer";
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (220 / 1080) * SafeZoneH";
-			w = "(100 / 1920) * SafeZoneW";
-			type = CT_STATIC;
-			style = ST_LEFT;
-			text = "";
-			sizeEx = 0.035;
+			y = "SafeZoneY + (285 / 1080) * SafeZoneH";
+			action = "closeDialog 0; [] call BIS_fnc_help";
+			tooltip = "Open BIS' functions viewer";
 		};
 	};
 };
