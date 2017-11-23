@@ -2,7 +2,7 @@
 
 class CfgPatches {
 	class ADDON {
-		name = "Nev AI";
+		name = "Nev Sounds";
 		author = "Neviothr";
 		units[] = {};
 		weapons[] = {};
@@ -13,6 +13,4 @@ class CfgPatches {
 };
 
 #include "CfgSettings.hpp"
-#include "CfgAmmo.hpp"
-#include "CfgAISkill.hpp"
-#include "CfgSurfaces.hpp"
+#include "CfgVehicles.hpp"

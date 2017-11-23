@@ -25,9 +25,4 @@ class CfgAmmo {
 		intensity  = 5000000;
 		coefGravity = 0.25;
 	};
-	class SmokeShell;
-    class G_40mm_Smoke: SmokeShell {
-        simulation = "shotSmoke";
-        deflectionSlowDown = 0.3;
-    };
 };
