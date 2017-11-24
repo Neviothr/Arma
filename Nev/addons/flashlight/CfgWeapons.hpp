@@ -7,7 +7,7 @@ class CfgWeapons {
 			class FlashLight {
 				color[] = {7000, 7500, 10000}; // Colour of the light
 				ambient[] = {6, 9, 9}; // I can't remember
-				intensity = 2.5; // Brightness intensity
+				intensity = 3; // Brightness intensity
 				size = 1;
 				innerAngle = 40;
 				outerAngle = 120;
@@ -15,16 +15,16 @@ class CfgWeapons {
 				position = "flash dir";
 				direction = "flash";
 				useFlare = 1;
-				flareSize = 1.5;
-				flareMaxDistance = "600.0f";
+				flareSize = 1.4;
+				flareMaxDistance = 100;
 				dayLight = 1;
 				class Attenuation {
-					start = 0.5;
+					start = 0;
 					constant = 0;
 					linear = 0;
 					quadratic = 1;
-					hardLimitStart = 200;
-					hardLimitEnd = 300;
+					hardLimitStart = 250;
+					hardLimitEnd = 350;
 				};
 				scale[] = {0};
 			};
