@@ -13,8 +13,8 @@ publicVariable QGVAR(safeStartLoop);
 while {GVAR(isSafeStart)} do {
 	// If safeStart has been terminated by admin, simply exit
 	if (!GVAR(isSafeStart)) exitWith {};
-
 	uisleep 60;
+	if (!GVAR(isSafeStart)) exitWith {};
 
 	// Formatted messages telling the players how many minutes have passed since briefing stage was started
 	format ["Weapons are cold, wait for admin to trigger start. (%1 minute%2 since briefing stage started)", GVAR(safeStartLoop), ["", "s"] select (GVAR(safeStartLoop) > 1)] remoteExec ["hint", [0, -2] select isMultiplayer];
