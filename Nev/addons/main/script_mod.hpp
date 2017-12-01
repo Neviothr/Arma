@@ -9,12 +9,12 @@
 	PATCH version when a release contains only bug fixes
 */
 #define MAJOR 0
-#define MINOR 0
-#define PATCHLVL 1
-#define BUILD 171130 // Use the DATE for the BUILD in the format YYMMDD
+#define MINOR 1
+#define PATCHLVL 0
+#define BUILD 171201 // Use the DATE for the BUILD in the format YYMMDD
 
 #define VERSION MAJOR.MINOR.PATCHLVL.BUILD
 #define VERSION_AR MAJOR,MINOR,PATCHLVL,BUILD
 
 // Minimal required version for the mod, components can specify otherwise
-#define REQUIRED_VERSION 1.76
+#define REQUIRED_VERSION 1.78

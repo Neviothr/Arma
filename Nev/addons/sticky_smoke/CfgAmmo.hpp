@@ -1,8 +1,9 @@
 class CfgAmmo {
-	class SmokeShell;
-    class G_40mm_Smoke: SmokeShell {
-        simulation = "shotSmoke";
-        deflectionSlowDown = 0.3;
-    };
-    //TODO add smoke grenades
+	class Grenade;
+	class GrenadeHand: Grenade {};
+	class SmokeShell: GrenadeHand {
+		simulation = "shotSmoke";
+		deflecting = 0;
+		deflectionSlowDown = 0;
+	};
 };
