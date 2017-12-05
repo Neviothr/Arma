@@ -115,4 +115,25 @@ if !(isMultiplayer) then {
 
 // Mission info
 _missionInfo = _dialog displayCtrl 80017;
-_missionInfo ctrlSetStructuredText parseText format ["<t size = '1' font = 'RobotoCondensedBold' color='#ffffff' align = 'left'>%1 on %2<br/>Active SQF: %3<br/>Active FSM: %4<br/>Pos: %5<br/>Time %6m</t>",missionName, worldName, (diag_activeScripts select 0) + (diag_activeScripts select 1) + (diag_activeScripts select 2), diag_activeScripts select 3, getPos player apply {floor _x}, floor ([time / 60, serverTime / 60] select isMultiplayer)];
+_missionInfo ctrlSetStructuredText parseText format [
+	"<t size = '1' font = 'RobotoCondensedBold' color='#ffffff' align = 'left'>
+	%1 on %2
+	<br/>
+	Active SQF: %3
+	<br/>
+	Active FSM: %4
+	<br/>
+	Pos: %5
+	<br/>
+	Time: %6m
+	<br/>
+	CursorObj: %7
+	</t>",
+	missionName,
+	worldName,
+	(diag_activeScripts select 0) + (diag_activeScripts select 1) + (diag_activeScripts select 2),
+	diag_activeScripts select 3,
+	getPos player apply {floor _x},
+	floor ([time / 60, serverTime / 60] select isMultiplayer),
+	cursorObject
+];

@@ -64,7 +64,7 @@
 
 // Group array
 [
-	"NEV_group",
+	QGVAR(groupArray),
 	"EDITBOX",
 	["Unit array", "Unit group array (class names sperated by a single space)."],
 	"Debug Menu Groups",
@@ -78,7 +78,7 @@
 
 // Code to run on spawned units
 [
-	"NEV_unitCode",
+	QGVAR(unitCode),
 	"EDITBOX",
 	["Unit code", "The code which will be ran on every spawned unit. Code will be ran though a forEach loop - _x, etc."],
 	"Debug Menu Groups",

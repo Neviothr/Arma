@@ -9,9 +9,9 @@
 	PATCH version when a release contains only bug fixes
 */
 #define MAJOR 0
-#define MINOR 1
+#define MINOR 3
 #define PATCHLVL 0
-#define BUILD 171201 // Use the DATE for the BUILD in the format YYMMDD
+#define BUILD 171205 // Use the DATE for the BUILD in the format YYMMDD
 
 #define VERSION MAJOR.MINOR.PATCHLVL.BUILD
 #define VERSION_AR MAJOR,MINOR,PATCHLVL,BUILD

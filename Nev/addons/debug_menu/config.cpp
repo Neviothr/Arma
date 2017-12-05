@@ -12,8 +12,8 @@ class CfgPatches {
     };
 };
 
-delete enableDebugConsole;
-enableDebugConsole[] = {"76561198141761169"};
+enableDebugConsole = 2;
+enableTargetDebug = 1;
 
 #include "CfgSettings.hpp"
 #include "CfgNotifications.hpp"
