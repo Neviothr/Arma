@@ -3,7 +3,7 @@
 if (!hasInterface) exitWith {};
 
 if (IS_ADMIN || (!isMultiplayer) || (isServer && hasInterface)) then {
-	player addAction ["<t color='#228B25'>Debug Menu</font>", {createDialog QGVAR(debugMenuDisplay)}];
+	player addAction ["<t color = '#228B25'>Debug Menu</font>", {createDialog QGVAR(debugMenuDisplay)}];
 
 	// Using CBA_fnc_waitUntilAndExecute because we can't suspend this script
 	[

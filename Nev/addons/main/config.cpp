@@ -926,7 +926,14 @@ class CfgPatches {
 			"rhs_servicemenu",
 
                   // CUP Weapons
-                  "CUP_Weapons_Ammunition"
+                  "CUP_Weapons_Ammunition",
+
+                  // ACE3
+                  "ace_interaction",
+                  "ace_interact_menu",
+                  "ace_common",
+                  "ace_main",
+                  "ace_modules"
 		};
 		VERSION_CONFIG;
 	};
