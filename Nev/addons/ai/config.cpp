@@ -16,4 +16,3 @@ class CfgPatches {
 #include "CfgAmmo.hpp"
 #include "CfgAISkill.hpp"
 #include "CfgSurfaces.hpp"
-#include "CfgWeapons.hpp"
