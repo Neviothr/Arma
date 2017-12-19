@@ -322,7 +322,7 @@ class GVAR(debugMenuDisplay) {
 			text = "SafeStart Off";
 			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
-			action = QUOTE(GVAR(isSafeStart) = false; publicVariable QGVAR(isSafeStart));
+			action = QUOTE(GVAR(isSafeStart) = false; publicVariable QQGVAR(isSafeStart));
 			tooltip = "Disable SafeStart";
 			colorText[] = {0.5, 0, 0, 1};
 		};
