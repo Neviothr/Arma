@@ -4,6 +4,15 @@ class GVAR(debugMenuDisplay) {
 	movingEnable = true;
 	onLoad = QUOTE(call FUNC(onLoad));
 	class controls {
+		// Remove dead units and vehicle wreaks
+		class GVAR(delDeadButton): NevRscButton {
+			text = "Remove dead";
+			x = "SafeZoneX + (610 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
+			action = QUOTE({deleteVehicle _x} forEach allDead - GVAR(deadOnStart));
+			tooltip = "Delete all dead units and vehicle wrecks";
+		};
+
 		// Open Zeus
 		class GVAR(zeusButton): NevRscButton {
 			text = "Open zeus";
@@ -13,14 +22,24 @@ class GVAR(debugMenuDisplay) {
 			tooltip = "Open the Zeus curator interface";
 		};
 
-		// VA
-		class GVAR(vaButton): NevRscButton {
-			text = "Virtual arsenal";
+		// BI VA
+		class GVAR(biVaButton): NevRscButton {
+			text = "BI VA";
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
 			action = "closeDialog 0;\
 					 ['Open', true] spawn BIS_fnc_arsenal";
-			tooltip = "Open the BIS virtual aresnal";
+			tooltip = "Open the BI virtual aresnal";
+		};
+
+		// ACE VA
+		class GVAR(aceVaButton): NevRscButton {
+			text = "ACE VA";
+			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (645 / 1080) * SafeZoneH";
+			action = "closeDialog 0;\
+					 [player, player, true] call ace_arsenal_fnc_openBox";
+			tooltip = "Open the ACE virtual aresnal";
 		};
 
 		// Teleport
@@ -40,15 +59,6 @@ class GVAR(debugMenuDisplay) {
 			action = "closeDialog 0;\
 					 createDialog 'RscDisplayDebugPublic'";
 			tooltip = "Open the BIS debug console";
-		};
-
-		// Remove dead units and vehicle wreaks
-		class GVAR(delDeadButton): NevRscButton {
-			text = "Remove dead";
-			x = "SafeZoneX + (610 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-			action = QUOTE({deleteVehicle _x} forEach allDead - GVAR(deadOnStart));
-			tooltip = "Delete all dead units and vehicle wrecks";
 		};
 
 		// Spawn a group of set units
@@ -425,9 +435,9 @@ class GVAR(debugMenuDisplay) {
 		// Various mission info
 		class GVAR(missionInfo): RscStructuredText {
 			idc = 80017;
-			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
+			x = "SafeZoneX + (360 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (155 / 1080) * SafeZoneH";
-			w = "(350 / 1920) * SafeZoneW";
+			w = "(473 / 1920) * SafeZoneW";
 			h = "(153 / 1920) * SafeZoneW";
 			type = CT_STRUCTURED_TEXT;
 			style = ST_MULTI;
