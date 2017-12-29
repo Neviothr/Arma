@@ -1,27 +1,20 @@
-// https://github.com/Cyruz143/ark_inhouse/blob/c4dbf8d547e6d4bc5d4062157c452b34a10938e5/ark_ai_dispersion/CfgWeapons.hpp
+// https://github.com/Cyruz143/ark_inhouse/blob/b518abcd442a589f789d4c1272aeea486224be80/addons/ark_ai_dispersion/CfgWeapons.hpp
 class CfgWeapons {
     class Default;
     class RifleCore;
     class Launcher;
-    class GrenadeLauncher: Default {
-        aiDispersionCoefX = 15;
-        aiDispersionCoefY = 16;
+    class Rifle: RifleCore {
+        AI_DISPERSION
     };
-
+    class Launcher_Base_F: Launcher {
+        AI_DISPERSION
+    };
+    class GrenadeLauncher: Default {
+        AI_DISPERSION
+    };
     class Throw: GrenadeLauncher {
         class ThrowMuzzle: GrenadeLauncher {
-            aiDispersionCoefX = 15;
-            aiDispersionCoefY = 16;
+            AI_DISPERSION
         };
-    };
-
-    class Rifle: RifleCore {
-        aiDispersionCoefX = 15;
-        aiDispersionCoefY = 16;
-    };
-
-    class Launcher_Base_F: Launcher {
-        aiDispersionCoefX = 15;
-        aiDispersionCoefY = 16;
     };
 };

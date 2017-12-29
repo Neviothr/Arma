@@ -2,7 +2,7 @@
 
 class CfgPatches {
     class ADDON {
-        name = "Nev Debug Menu";
+        name = "NEV Component - Debug Menu";
         author = "Neviothr";
         units[] = {};
         weapons[] = {};

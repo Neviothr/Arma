@@ -2,7 +2,7 @@
 
 class CfgPatches {
 	class ADDON {
-		name = "Nev Brighter Flares";
+		name = "NEV Component - Brighter Flares";
 		author = "Neviothr";
 		units[] = {};
 		weapons[] = {};

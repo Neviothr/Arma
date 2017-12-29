@@ -10,8 +10,8 @@
 */
 #define MAJOR 0
 #define MINOR 6
-#define PATCHLVL 0
-#define BUILD 171221 // Use the DATE for the BUILD in the format YYMMDD
+#define PATCHLVL 3
+#define BUILD 171229 // Use the DATE for the BUILD in the format YYMMDD
 
 #define VERSION MAJOR.MINOR.PATCHLVL.BUILD
 #define VERSION_AR MAJOR,MINOR,PATCHLVL,BUILD

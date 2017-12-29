@@ -2,7 +2,7 @@
 
 class CfgPatches {
 	class ADDON {
-		name = "Nev Waypoint";
+		name = "NEV Component - Waypoint";
 		author = "Neviothr";
 		units[] = {};
 		weapons[] = {};

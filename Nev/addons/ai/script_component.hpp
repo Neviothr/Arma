@@ -8,3 +8,7 @@
 	allowAgainstInfantry = 1; \
 	aiAmmoUsageFlags = "64 + 128 + 256 + 512"; \
 	cost = 1;
+
+#define AI_DISPERSION \
+    aiDispersionCoefX = 15; \
+    aiDispersionCoefY = 16;

@@ -2,7 +2,7 @@
 
 class CfgPatches {
 	class ADDON {
-		name = "Nev Main";
+		name = "NEV Component - Main";
 		author = "Neviothr";
 		units[] = {};
 		weapons[] = {};
@@ -933,7 +933,8 @@ class CfgPatches {
                   "ace_interact_menu",
                   "ace_common",
                   "ace_main",
-                  "ace_modules"
+                  "ace_modules",
+                  "ace_arsenal"
 		};
 		VERSION_CONFIG;
 	};

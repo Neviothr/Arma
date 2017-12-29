@@ -2,7 +2,7 @@
 
 class CfgPatches {
 	class ADDON {
-		name = "Nev Sticky Smoke";
+		name = "NEV Component - Sticky Smoke";
 		author = "Neviothr";
 		units[] = {};
 		weapons[] = {};

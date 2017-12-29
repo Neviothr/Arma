@@ -437,7 +437,7 @@ class GVAR(debugMenuDisplay) {
 			idc = 80017;
 			x = "SafeZoneX + (360 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (155 / 1080) * SafeZoneH";
-			w = "(473 / 1920) * SafeZoneW";
+			w = "(475 / 1920) * SafeZoneW";
 			h = "(153 / 1920) * SafeZoneW";
 			type = CT_STRUCTURED_TEXT;
 			style = ST_MULTI;

@@ -2,7 +2,7 @@
 
 class CfgPatches {
 	class ADDON {
-		name = "Nev Aircraft";
+		name = "NEV Component - Aircraft";
 		author = "Neviothr";
 		units[] = {};
 		weapons[] = {};
