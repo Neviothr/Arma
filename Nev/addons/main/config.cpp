@@ -924,6 +924,7 @@ class CfgPatches {
 			"rhs_c_airweapons",
 			"rhsusf_c_airweapons",
 			"rhs_servicemenu",
+                  "rhsusf_c_mrzr",
 
                   // CUP Weapons
                   "CUP_Weapons_Ammunition",
