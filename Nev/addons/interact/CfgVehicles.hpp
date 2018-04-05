@@ -10,7 +10,6 @@ class CfgVehicles {
 					distance = 5;
 					icon = "\A3\Ui_f\data\GUI\Rsc\RscDisplayArsenal\Backpack_ca.paa";
 				};
-
 				class GVAR(gearAction) {
 					displayName = "Gear";
 					condition = "_target isKindOf 'CAManBase' && {!alive _target}";
