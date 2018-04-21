@@ -8,7 +8,6 @@ class CfgPatches {
 		weapons[] = {};
 		requiredVersion = REQUIRED_VERSION;
 		requiredAddons[] = {
-			// Vanilla
 			"A3_Data_F_Loadorder",
                   "A3_Data_F_Curator_Loadorder",
                   "A3_Data_F_Kart_Loadorder",
@@ -22,6 +21,9 @@ class CfgPatches {
                   "A3_Data_F_Argo_Loadorder",
                   "A3_Data_F_Patrol_Loadorder",
                   "A3_Data_F_Orange_Loadorder",
+                  "A3_Data_F_Tank_Loadorder",
+
+                  // Vanilla
                   "a3_3den",
                   "a3_3den_language",
                   "a3_air_f",

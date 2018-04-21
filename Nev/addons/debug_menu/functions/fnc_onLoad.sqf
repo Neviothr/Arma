@@ -125,15 +125,18 @@ _missionInfo ctrlSetStructuredText parseText format [
 	<br/>
 	Pos: %5
 	<br/>
-	Time: %6m
+	Time: %6m | Server Time: %7 | CBA Mission Time: %8
 	<br/>
-	CursorObj: %7
+	Cursor Object: %9 (%10)
 	</t>",
 	missionName,
 	worldName,
 	(diag_activeScripts select 0) + (diag_activeScripts select 1) + (diag_activeScripts select 2),
 	diag_activeScripts select 3,
 	getPos player apply {floor _x},
-	floor ([time / 60, serverTime / 60] select isMultiplayer),
+	floor (time / 60),
+	floor (serverTime / 60),
+	floor (CBA_missionTime / 60),
+	typeOf cursorObject,
 	cursorObject
 ];

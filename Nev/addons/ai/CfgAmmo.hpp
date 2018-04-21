@@ -734,4 +734,32 @@ class CfgAmmo {
 	class CUP_M_KH29L_AT: M_Scalpel_AT {
 		ENHANCED_LAUNCHER
 	};
+	class M_127mm_Firefist_AT: MissileBase {
+		ENHANCED_LAUNCHER
+	};
+	class M_70mm_SAAMI: MissileBase {
+		ENHANCED_LAUNCHER
+	};
+	class ammo_Missile_CannonLaunchedBase: MissileBase {};
+	class M_120mm_cannon_ATGM: ammo_Missile_CannonLaunchedBase {
+		ENHANCED_LAUNCHER
+	};
+	class M_120mm_cannon_ATGM_LG: M_120mm_cannon_ATGM {
+		ENHANCED_LAUNCHER
+	};
+	class M_Vorona_HEAT: MissileBase {
+		ENHANCED_LAUNCHER
+	};
+	class M_Vorona_HE: M_Vorona_HEAT {
+		ENHANCED_LAUNCHER
+	};
+	class R_MRAAWS_HEAT_F: RocketBase {
+		ENHANCED_LAUNCHER
+	};
+	class R_MRAAWS_HE_F: R_MRAAWS_HEAT_F {
+		ENHANCED_LAUNCHER
+	};
+	class M_SPG9_HEAT: RocketBase {
+		ENHANCED_LAUNCHER
+	};
 };
