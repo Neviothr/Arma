@@ -11,16 +11,14 @@
 */
 
 class CfgAmmo {
-	class RocketCore;
-	class RocketBase: RocketCore {};
+	class RocketBase;
 	class R_PG32V_F: RocketBase {
 		ENHANCED_LAUNCHER
 	};
 	class R_TBG32V_F: R_PG32V_F {
 		ENHANCED_LAUNCHER
 	};
-	class MissileCore;
-	class MissileBase: MissileCore {};
+	class MissileBase;
 	class M_NLAW_AT_F: MissileBase {
 		ENHANCED_LAUNCHER
 	};
@@ -81,15 +79,14 @@ class CfgAmmo {
 	class Missile_AGM_02_F: MissileBase {
 		ENHANCED_LAUNCHER
 	};
-	class BombCore;
-	class LaserBombCore: BombCore {};
-	class ammo_Bomb_LaserGuidedBase: LaserBombCore {};
+	class ammo_Bomb_LaserGuidedBase;
 	class Bomb_04_F: ammo_Bomb_LaserGuidedBase {
 		ENHANCED_LAUNCHER
 	};
 	class Rocket_04_AP_F: Rocket_04_HE_F {
 		ENHANCED_LAUNCHER
 	};
+	class BombCore;
 	class Bo_Mk82: BombCore {
 		ENHANCED_LAUNCHER
 	};
@@ -99,11 +96,11 @@ class CfgAmmo {
 	class BombCluster_03_Ammo_F: BombCluster_01_Ammo_F {
 		ENHANCED_LAUNCHER
 	};
-	class ammo_Missile_MediumRangeAABase: MissileBase {};
+	class ammo_Missile_MediumRangeAABase;
 	class ammo_Missile_AMRAAM_D: ammo_Missile_MediumRangeAABase {
 		ENHANCED_LAUNCHER
 	};
-	class ammo_Missile_ShortRangeAABase: MissileBase {};
+	class ammo_Missile_ShortRangeAABase;
 	class ammo_Missile_BIM9X: ammo_Missile_ShortRangeAABase {
 		ENHANCED_LAUNCHER
 	};
@@ -203,27 +200,26 @@ class CfgAmmo {
 	class rhs_ammo_ch29: Missile_AGM_02_F {
 		ENHANCED_LAUNCHER
 	};
-	class rhs_ammo_kh29_base: Missile_AGM_02_F {};
+	class rhs_ammo_kh29_base;
 	class RHS_9M79_1_F: rhs_ammo_kh29_base {
 		ENHANCED_LAUNCHER
 	};
-	class SubmunitionCore;
-	class SubmunitionBase: SubmunitionCore {};
+	class SubmunitionBase;
 	class R_230mm_HE: SubmunitionBase {
 		ENHANCED_LAUNCHER
 	};
 	class rhs_ammo_m21OF_HE: R_230mm_HE {
 		ENHANCED_LAUNCHER
 	};
-	class rhs_ammo_atgmCore_base: M_Titan_AT {};
-	class rhs_ammo_atgmBase_base: M_Titan_AT {};
+	class rhs_ammo_atgmBase_base;
 	class rhs_ammo_9m113: rhs_ammo_atgmBase_base {
 		ENHANCED_LAUNCHER
 	};
-	class rhs_ammo_rpgShell_base: RocketBase {};
+	class rhs_ammo_rpgShell_base;
 	class rhs_ammo_pg9v: rhs_ammo_rpgShell_base {
 		ENHANCED_LAUNCHER
 	};
+	class rhs_ammo_atgmCore_base;
 	class rhs_ammo_9m119: rhs_ammo_atgmCore_base {
 		ENHANCED_LAUNCHER
 	};
@@ -347,7 +343,7 @@ class CfgAmmo {
 	class rhs_ammo_mk82: Bo_Mk82 {
 		ENHANCED_LAUNCHER
 	};
-	class rhs_ammo_cbu_base: rhs_ammo_mk82 {};
+	class rhs_ammo_cbu_base;
 	class rhs_ammo_cbu87: rhs_ammo_cbu_base {
 		ENHANCED_LAUNCHER
 	};
@@ -396,7 +392,7 @@ class CfgAmmo {
 	class rhs_ammo_kh29d: rhs_ammo_kh29_base {
 		ENHANCED_LAUNCHER
 	};
-	class rhs_ammo_kh25_base: Missile_AGM_01_F {};
+	class rhs_ammo_kh25_base;
 	class rhs_ammo_kh25ma: rhs_ammo_kh25_base {
 		ENHANCED_LAUNCHER
 	};
@@ -469,8 +465,7 @@ class CfgAmmo {
 	class rhs_ammo_s13b: rhs_ammo_s8 {
 		ENHANCED_LAUNCHER
 	};
-	class rhs_ammo_s24_base: rhs_ammo_s13b {};
-	class rhs_ammo_s25_base: rhs_ammo_s24_base {};
+	class rhs_ammo_s25_base;
 	class rhs_ammo_s25of: rhs_ammo_s25_base {
 		ENHANCED_LAUNCHER
 	};
@@ -483,7 +478,7 @@ class CfgAmmo {
 	class rhs_ammo_s5: rhs_ammo_s8 {
 		ENHANCED_LAUNCHER
 	};
-	class rhs_ammo_r60_base: Missile_AA_04_F {};
+	class rhs_ammo_r60_base;
 	class rhs_ammo_r60m: rhs_ammo_r60_base {
 		ENHANCED_LAUNCHER
 	};
@@ -493,6 +488,7 @@ class CfgAmmo {
 	class rhs_ammo_s5m1: rhs_ammo_s5 {
 		ENHANCED_LAUNCHER
 	};
+	class rhs_ammo_s24_base;
 	class rhs_ammo_s24: rhs_ammo_s24_base {
 		ENHANCED_LAUNCHER
 	};
@@ -535,7 +531,7 @@ class CfgAmmo {
 	class rhs_ammo_s25ld: rhs_ammo_s25l {
 		ENHANCED_LAUNCHER
 	};
-	class rhs_ammo_r27_base: Missile_AA_04_F {};
+	class rhs_ammo_r27_base;
 	class rhs_ammo_r27r: rhs_ammo_r27_base {
 		ENHANCED_LAUNCHER
 	};
@@ -650,8 +646,7 @@ class CfgAmmo {
 	class CUP_R_TOW_AT: M_Titan_AT {
 		ENHANCED_LAUNCHER
 	};
-	class BulletCore;
-	class BulletBase: BulletCore {};
+	class BulletBase;
 	class CUP_Sh_PG9_AT: BulletBase {
 		ENHANCED_LAUNCHER
 	};
@@ -667,8 +662,7 @@ class CfgAmmo {
 	class CUP_M_9K116_1_Bastion_AT10_Stabber_AT: MissileBase {
 		ENHANCED_LAUNCHER
 	};
-	class ShellCore;
-	class ShellBase: ShellCore {};
+	class ShellBase;
 	class R_230mm_fly: ShellBase {
 		ENHANCED_LAUNCHER
 	};
@@ -741,7 +735,7 @@ class CfgAmmo {
 	class M_70mm_SAAMI: MissileBase {
 		ENHANCED_LAUNCHER
 	};
-	class ammo_Missile_CannonLaunchedBase: MissileBase {};
+	class ammo_Missile_CannonLaunchedBase;
 	class M_120mm_cannon_ATGM: ammo_Missile_CannonLaunchedBase {
 		ENHANCED_LAUNCHER
 	};
