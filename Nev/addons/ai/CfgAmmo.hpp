@@ -83,7 +83,8 @@ class CfgAmmo {
 	};
 	class BombCore;
 	class LaserBombCore: BombCore {};
-	class Bomb_04_F: LaserBombCore {
+	class ammo_Bomb_LaserGuidedBase: LaserBombCore {};
+	class Bomb_04_F: ammo_Bomb_LaserGuidedBase {
 		ENHANCED_LAUNCHER
 	};
 	class Rocket_04_AP_F: Rocket_04_HE_F {
@@ -115,7 +116,7 @@ class CfgAmmo {
 	class Rocket_03_HE_F: Rocket_04_HE_F {
 		ENHANCED_LAUNCHER
 	};
-	class Bomb_03_F: Bomb_04_F {
+	class Bomb_03_F: ammo_Bomb_LaserGuidedBase {
 		ENHANCED_LAUNCHER
 	};
 	class Rocket_03_AP_F: Rocket_04_AP_F {
@@ -643,7 +644,7 @@ class CfgAmmo {
 	class CUP_R_GRAD_HE: R_230mm_HE {
 		ENHANCED_LAUNCHER
 	};
-	class CUP_M_9M113_AT5_Spandrel_AT: MissileBase {
+	class CUP_M_9M113_AT5_Spandrel_AT: M_Titan_AT {
 		ENHANCED_LAUNCHER
 	};
 	class CUP_R_TOW_AT: M_Titan_AT {
@@ -719,7 +720,7 @@ class CfgAmmo {
 	class CUP_Mk_82: Bo_Mk82 {
 		ENHANCED_LAUNCHER
 	};
-	class Bo_GBU12_LGB: LaserBombCore {
+	class Bo_GBU12_LGB: ammo_Bomb_LaserGuidedBase {
 		ENHANCED_LAUNCHER
 	};
 	class CUP_Bo_GBU12_LGB: Bo_GBU12_LGB {

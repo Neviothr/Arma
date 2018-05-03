@@ -127,7 +127,7 @@ _missionInfo ctrlSetStructuredText parseText format [
 	<br/>
 	Time: %6m | Server Time: %7 | CBA Mission Time: %8
 	<br/>
-	Cursor Object: %9 (%10)
+	Cursor Object: %9
 	</t>",
 	missionName,
 	worldName,
@@ -137,6 +137,5 @@ _missionInfo ctrlSetStructuredText parseText format [
 	floor (time / 60),
 	floor (serverTime / 60),
 	floor (CBA_missionTime / 60),
-	typeOf cursorObject,
-	cursorObject
+	["NULL-Object", format ["%1 (%2)", typeOf cursorObject, cursorObject]] select (!isNull cursorObject)
 ];
