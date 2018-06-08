@@ -8,21 +8,8 @@ class CfgPatches {
 		weapons[] = {};
 		requiredVersion = REQUIRED_VERSION;
 		requiredAddons[] = {
-                  // Vanilla
-			"A3_Data_F_Loadorder",
-                  "A3_Data_F_Curator_Loadorder",
-                  "A3_Data_F_Kart_Loadorder",
-                  "A3_Data_F_Bootcamp_Loadorder",
-                  "A3_Data_F_Heli_Loadorder",
-                  "A3_Data_F_Mark_Loadorder",
-                  "A3_Data_F_Exp_A_Loadorder",
-                  "A3_Data_F_Exp_B_Loadorder",
-                  "A3_Data_F_Exp_Loadorder",
-                  "A3_Data_F_Jets_Loadorder",
-                  "A3_Data_F_Argo_Loadorder",
-                  "A3_Data_F_Patrol_Loadorder",
-                  "A3_Data_F_Orange_Loadorder",
-                  "A3_Data_F_Tank_Loadorder",
+			// Vanilla
+			"A3_Data_F_Tank_Loadorder",
 
 			// CBA
 			"asdg_jointmuzzles",
@@ -69,18 +56,18 @@ class CfgPatches {
 			"rhs_c_airweapons",
 			"rhsusf_c_airweapons",
 			"rhs_servicemenu",
-                  "rhsusf_c_mrzr",
+			"rhsusf_c_mrzr",
 
-                  // CUP Weapons
-                  "CUP_Weapons_Ammunition",
+			// CUP Weapons
+			"CUP_Weapons_Ammunition",
 
-                  // ACE3
-                  "ace_interaction",
-                  "ace_interact_menu",
-                  "ace_common",
-                  "ace_main",
-                  "ace_modules",
-                  "ace_arsenal"
+			// ACE3
+			"ace_interaction",
+			"ace_interact_menu",
+			"ace_common",
+			"ace_main",
+			"ace_modules",
+			"ace_arsenal"
 		};
 		VERSION_CONFIG;
 	};

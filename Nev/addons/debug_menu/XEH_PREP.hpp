@@ -2,7 +2,6 @@ PREP(commitWeather);
 PREP(nearestObjects);
 PREP(onLoad);
 PREP(openGarage);
-PREP(openZeus);
 PREP(sideChange);
 PREP(spawnGroup);
 PREP(randomEnvironment);

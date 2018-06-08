@@ -15,11 +15,11 @@ class GVAR(debugMenuDisplay) {
 
 		// Open Zeus
 		class GVAR(zeusButton): NevRscButton {
-			text = "Open zeus";
+			text = "Reg	. Curator";
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (375 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; [] remoteExecCall [ARR_2(QQFUNC(openZeus), 0)]);
-			tooltip = "Open the Zeus curator interface";
+			action = QUOTE(closeDialog 0; [ARR_2(QQGVAR(registerCurator), player)] call CBA_fnc_serverEvent);
+			tooltip = "Register Curator";
 		};
 
 		// BI VA
