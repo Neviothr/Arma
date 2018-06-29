@@ -2,8 +2,12 @@
 class CfgWeapons {
     class Default;
     class RifleCore;
+    class Launcher;
     class Rifle: RifleCore {
-        RIFLE_DISPERSION
+        AI_DISPERSION
+    };
+    class Launcher_Base_F: Launcher {
+        AI_DISPERSION
     };
     class MGunCore: Default {
         MGUN_DISPERSION

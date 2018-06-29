@@ -36,7 +36,7 @@ class GVAR(debugMenuDisplay) {
 		class GVAR(aceVaButton): NevRscButton {
 			text = "ACE VA";
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (645 / 1080) * SafeZoneH";
+			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
 			action = "closeDialog 0;\
 					 [player, player, true] call ace_arsenal_fnc_openBox";
 			tooltip = "Open the ACE virtual aresnal";
@@ -90,7 +90,7 @@ class GVAR(debugMenuDisplay) {
 			y = "SafeZoneY + (465 / 1080) * SafeZoneH";
 			action = "_target = [cursorTarget, vehicle player] select isNull cursorTarget;\
 					 [_target, 0] remoteExec ['setDamage', _target];\
-					 hint 'The vehicle / unit has been repaired / healed'";
+					 systemChat 'The vehicle / unit has been repaired / healed'";
 			tooltip = "Repair / heal current vehicle / unit";
 		};
 
@@ -261,15 +261,6 @@ class GVAR(debugMenuDisplay) {
 			tooltip = "Commit time & date changes";
 		};
 
-		// Return all objects within a radius of 50m
-		class GVAR(nearestObjsButton): NevRscButton {
-			text = "Nearset objs";
-			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
-			action = QUOTE(call FUNC(nearestObjects));
-			tooltip = "Return a list of objects within 50m";
-		};
-
 		// Side list box
 		class GVAR(sideList): RscListbox {
 			idc = 80015;
@@ -305,16 +296,6 @@ class GVAR(debugMenuDisplay) {
 					  setUnitTrait ['camouflageCoef', 0];";
 			tooltip = "Make admin invisible";
 			colorText[] = {0.5, 0, 0, 1};
-		};
-
-		// VG
-		class GVAR(virtualGarageButton): NevRscButton {
-			idc = 80021;
-			text = "Virtual garage";
-			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; call FUNC(openGarage));
-			tooltip = "Open the virtual garage";
 		};
 
 		// Safe start on
@@ -353,7 +334,7 @@ class GVAR(debugMenuDisplay) {
 		class GVAR(randomEnviButton): NevRscButton {
 			text = "Random envi";
 			x = "SafeZoneX + (485 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
+			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
 			action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(randomEnvironment), 0)]);
 			tooltip = "Randomize environment";
 		};
@@ -365,7 +346,7 @@ class GVAR(debugMenuDisplay) {
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
 			action = "_target = [cursorTarget, vehicle player] select isNull cursorTarget;\
 					 [_target, 1] remoteExec ['setFuel', _target];\
-					 hint 'The vehicle has been refuled'";
+					 systemChat 'The vehicle has been refuled'";
 			tooltip = "Refuel the current vehicle";
 		};
 
@@ -376,7 +357,7 @@ class GVAR(debugMenuDisplay) {
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
 			action = "_target = [cursorTarget, vehicle player] select isNull cursorTarget;\
 					 [_target, 1] remoteExec ['setVehicleAmmoDef', _target];\
-					 hint 'The vehicle has been rearmed'"; // TODO: find alternetive for setVehicleAmmoDef as it's broken
+					 systemChat 'The vehicle has been rearmed'"; // TODO: find alternetive for setVehicleAmmoDef as it's somewhat broken
 			tooltip = "Rearm the current vehicle";
 		};
 
@@ -421,15 +402,6 @@ class GVAR(debugMenuDisplay) {
 			y = "SafeZoneY + (600 / 1080) * SafeZoneH";
 			action = QUOTE([ARR_1(2)] call FUNC(debugConsoleExec));
 			tooltip = "Execute server code";
-		};
-
-		// Create a square AO based on 2 points
-		class GVAR(createAOButton): NevRscButton {
-			text = "Create AO";
-			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
-			action = QUOTE(closeDialog 0; [] spawn FUNC(createAO));
-			tooltip = "Create an AO based on 2 points";
 		};
 
 		// Various mission info
