@@ -2,7 +2,7 @@
 
 params ["_display"];
 
-_control = _display displayCtrl 81001;
+private _control = _display displayCtrl 81001;
 
 // AI count loop
 [_control] spawn { // Passing _control as array because we can't serialize _control

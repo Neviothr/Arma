@@ -281,7 +281,7 @@ class GVAR(debugMenuDisplay) {
 			y = "SafeZoneY + (510 / 1080) * SafeZoneH";
 			action = "player hideObjectGlobal false;\
 					  player allowDamage true;\
-					  setUnitTrait ['camouflageCoef', 1];";
+					  player setUnitTrait ['camouflageCoef', 1];";
 			tooltip = "Make admin visible";
 			colorText[] = {0, 0.5, 0, 1};
 		};
@@ -293,7 +293,7 @@ class GVAR(debugMenuDisplay) {
 			y = "SafeZoneY + (555 / 1080) * SafeZoneH";
 			action = "player hideObjectGlobal true;\
 					  player allowDamage false;\
-					  setUnitTrait ['camouflageCoef', 0];";
+					  player setUnitTrait ['camouflageCoef', 0];";
 			tooltip = "Make admin invisible";
 			colorText[] = {0.5, 0, 0, 1};
 		};

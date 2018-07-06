@@ -3,7 +3,7 @@
 params ["_unit"];
 if (!local _unit) exitWith{};
 
-_pain = damage _unit;
+private _pain = damage _unit;
 
 // Lock if the unit is already playing a sound.
 if ((_unit getVariable [QGVAR(playingInjuredSound), false])) exitWith {};

@@ -10,7 +10,7 @@ switch (_isSafety) do {
 	case true: {
 		// Delete bullets from fired weapons
 		if (isNil QGVAR(ehSafetyMan)) then {
-			GVAR(ehSafetyMan) = player addEventHandler ["Fired", {deletevehicle (_this select 6);}];
+			GVAR(ehSafetyMan) = player addEventHandler ["Fired", {deleteVehicle (_this select 6);}];
 		};
 
 		// Disable guns and damage for vehicles if player is crewing a vehicle

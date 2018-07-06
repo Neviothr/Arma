@@ -55,3 +55,21 @@ player createDiaryRecord [QGVAR(docs), ["RHS Debug Info", "
 		<br/>
 		To enable - <font color='#ffa500'>RHSDecalsOff = false</font>
 "]];
+
+player createDiaryRecord [QGVAR(docs), ["FHQ Debug Info", "
+	<font face='RobotoCondensedBold' size='14'>Weather Effects</font>
+	<br/>
+		To disable -
+		<br/>
+			Sand -
+			<br/>
+				<font color='#ffa500'>[FHQ_SandHandle, 'sandInterval', 1000] call FHQ_fnc_setWeatherEffect</font>
+				<br/><br/>
+			Snow -
+			<br/>
+				<font color='#ffa500'>[FHQ_SnowHandle, 'snowInterval', 1000] call FHQ_fnc_setWeatherEffect</font>
+				<br/><br/>
+			Fog -
+			<br/>
+			<font color='#ffa500'>[FHQ_FogHandle, 'fogInterval', 1000] call FHQ_fnc_setWeatherEffect</font>
+"]];
