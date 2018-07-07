@@ -3,7 +3,7 @@
 if (!hasInterface) exitWith {};
 
 if (IS_ADMIN || (!isMultiplayer) || (isServer && hasInterface)) then {
-	player addAction ["<t color = '#228B25'>Debug Menu</font>", {createDialog QGVAR(debugMenuDisplay)}];
+	player addAction ["<t color = '#228B25'>Debug Menu", {createDialog QGVAR(debugMenuDisplay)}];
 
 	// Using CBA_fnc_waitUntilAndExecute because we can't suspend this script
 	[
@@ -17,53 +17,56 @@ if (IS_ADMIN || (!isMultiplayer) || (isServer && hasInterface)) then {
 // Debug info diary record
 player createDiarySubject [QGVAR(docs), "Debug Menu"];
 player createDiaryRecord [QGVAR(docs), ["RHS Debug Info", "
-	<font face='RobotoCondensedBold' size='14'>Decal Debug</font>
+	<font face='RobotoCondensedBold' size='14'>Decal Debug
 	<br/>
-		<font color='#ffa500'><execute expression=""RHSDecalsDebugMode = true"">Enable decal debug mode</execute>
+		<execute expression=""RHSDecalsDebugMode = true"">Enable decal debug mode</execute>
 		<br/>
-		<execute expression=""RHSDecalsDebugMode = false"">Disable decal debug mode</execute></font>
+		<execute expression=""RHSDecalsDebugMode = false"">Disable decal debug mode</execute>
 	<br/><br/>
-	<font face='RobotoCondensedBold' size='14'>Engine Startup Script</font>
+
+	<font face='RobotoCondensedBold' size='14'>Engine Startup Script
 	<br/>
-		<font color='#ffa500'><execute expression=""RHS_ENGINE_STARTUP_OFF = true"">Enable engine startup script</execute>
+		<execute expression=""RHS_ENGINE_STARTUP_OFF = true"">Enable engine startup script</execute>
 		<br/>
-		<execute expression=""RHS_ENGINE_STARTUP_OFF = nil"">Disable engine startup script</execute></font>
+		<execute expression=""RHS_ENGINE_STARTUP_OFF = nil"">Disable engine startup script</execute>
 	<br/><br/>
-	<font face='RobotoCondensedBold' size='14'>HEAT Simulation</font>
+
+	<font face='RobotoCondensedBold' size='14'>HEAT Simulation
 	<br/>
-		<font color='#ffa500'><execute expression=""RHS_HEAT_ENABLED = true"">Enable HEAT simulation</execute>
+		<execute expression=""RHS_HEAT_ENABLED = true"">Enable HEAT simulation</execute>
 		<br/>
-		<execute expression=""RHS_HEAT_ENABLED = false"">Disable HEAT simulation</execute></font>
+		<execute expression=""RHS_HEAT_ENABLED = false"">Disable HEAT simulation</execute>
 	<br/><br/>
-	<font face='RobotoCondensedBold' size='14'>Spall Simulation</font>
+
+	<font face='RobotoCondensedBold' size='14'>Spall Simulation
 	<br/>
-		<font color='#ffa500'><execute expression=""RHS_SPALL_ENABLED= true"">Enable spall simulation</execute>
+		<execute expression=""RHS_SPALL_ENABLED= true"">Enable spall simulation</execute>
 		<br/>
-		<execute expression=""RHS_SPALL_ENABLED = false"">Disable spall simulation</execute></font>
+		<execute expression=""RHS_SPALL_ENABLED = false"">Disable spall simulation</execute>
 	<br/><br/>
-	<font face='RobotoCondensedBold' size='14'>Radar</font>
+
+	<font face='RobotoCondensedBold' size='14'>Radar
 	<br/>
-		<execute expression=""RHS_Radar_Enabled = true"">Enable radar simulation</execute></font>
+		<execute expression=""RHS_Radar_Enabled = true"">Enable radar simulation</execute>
 		<br/>
-		<font color='#ffa500'><execute expression=""RHS_Radar_Enabled = false"">Disable radar simulation</execute>
+		<execute expression=""RHS_Radar_Enabled = false"">Disable radar simulation</execute>
 		<br/>
-		<execute expression=""missionNamespace setVariable [""RHS_Radar_Enabled"", false, true]"">Disable radar simulation V2</execute></font>
+		<execute expression=""missionNamespace setVariable ['RHS_Radar_Enabled', false, true]"">Disable radar simulation V2</execute>
 	<br/><br/>
-	<font face='RobotoCondensedBold' size='14'>Decals</font>
+
+	<font face='RobotoCondensedBold' size='14'>Decals
 	<br/>
-		<execute expression=""RHSDecalsOff = false"">Enable decals</execute></font>
+		<execute expression=""RHSDecalsOff = false"">Enable decals</execute>
 		<br/>
-		<font color='#ffa500'><execute expression=""RHSDecalsOff = true"">Disable decals</execute>
+		<execute expression=""RHSDecalsOff = true"">Disable decals</execute>
 "]];
 
 player createDiaryRecord [QGVAR(docs), ["FHQ Debug Info", "
-	<font face='RobotoCondensedBold' size='14'>Weather Effects</font>
+	<font face='RobotoCondensedBold' size='14'>Weather Effects
 	<br/>
-		To disable -
+		<execute expression=""[FHQ_SandHandle, 'sandInterval', 1000] call FHQ_fnc_setWeatherEffect"">Disable sand</execute>
 		<br/>
-			<font color='#ffa500'><execute expression=""[FHQ_SandHandle, 'sandInterval', 1000] call FHQ_fnc_setWeatherEffect"">Disable sand</execute>
-			<br/>
-			<execute expression=""[FHQ_SnowHandle, 'snowInterval', 1000] call FHQ_fnc_setWeatherEffect"">Disable snow</execute>
-			<br/>
-			<execute expression=""[FHQ_FogHandle, 'fogInterval', 1000] call FHQ_fnc_setWeatherEffect"">Disable fog</execute></font>
+		<execute expression=""[FHQ_SnowHandle, 'snowInterval', 1000] call FHQ_fnc_setWeatherEffect"">Disable snow</execute>
+		<br/>
+		<execute expression=""[FHQ_FogHandle, 'fogInterval', 1000] call FHQ_fnc_setWeatherEffect"">Disable fog</execute>
 "]];
