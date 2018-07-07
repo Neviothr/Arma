@@ -443,6 +443,14 @@ class GVAR(debugMenuDisplay) {
 			action = "closeDialog 0; [] call BIS_fnc_help";
 			tooltip = "Open BIS' functions viewer";
 		};
+
+		class GVAR(deleteSmokeModules): NevRscButton {
+			text = "Del. smoke mod.";
+			x = "SafeZoneX + (735 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (420 / 1080) * SafeZoneH";
+			action = QUOTE(call FUNC(deleteSmokeModules));
+			tooltip = "Delete smoke modules";
+		};
 	};
 };
 

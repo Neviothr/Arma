@@ -11,3 +11,4 @@ PREP(safeStart);
 PREP(safeStartLoop);
 PREP(safety);
 PREP(missionInfo);
+PREP(deleteSmokeModules);
