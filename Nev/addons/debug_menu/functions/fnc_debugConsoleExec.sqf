@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 params ["_target"];
-_code = compile ctrlText 80018;
+_code = compile ctrlText IDC_debugConsole;
 
 if (!isMultiplayer) exitWith {
 	[[], _code] remoteExec ["call", 0];

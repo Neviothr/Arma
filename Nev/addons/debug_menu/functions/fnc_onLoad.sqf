@@ -4,49 +4,49 @@ params ["_dialog"];
 
 // Find slider, set it's range, get current weather, set slider accordingly
 // Overcast slider
-private _overcastSlider = _dialog displayCtrl 80003;
+private _overcastSlider = _dialog displayCtrl IDC_overcastSlider;
 _overcastSlider sliderSetRange [0, 1];
 _overcastSlider sliderSetPosition overcast;
 
 // Lightnings slider
-private _lightningSlider = _dialog displayCtrl 80004;
+private _lightningSlider = _dialog displayCtrl IDC_lightningSlider;
 _lightningSlider sliderSetRange [0, 1];
 _lightningSlider sliderSetPosition lightnings;
 
 // Fog value slider
-private _fogValueSlider = _dialog displayCtrl 80005;
+private _fogValueSlider = _dialog displayCtrl IDC_fogValueSlider;
 _fogValueSlider sliderSetRange [0, 1];
 _fogValueSlider sliderSetPosition (fogParams select 0);
 
 // Fog decay slider
-private _fogDecaySlider = _dialog displayCtrl 80006;
+private _fogDecaySlider = _dialog displayCtrl IDC_fogDecaySlider;
 _fogDecaySlider sliderSetRange [0, 1];
 _fogDecaySlider sliderSetPosition (fogParams select 1);
 
 // Fog base slider
-private _fogBaseSlider = _dialog displayCtrl 80007;
+private _fogBaseSlider = _dialog displayCtrl IDC_fogBaseSlider;
 _fogBaseSlider sliderSetRange [0, 1];
 _fogBaseSlider sliderSetPosition (fogParams select 2);
 
 // Rain slider
-private _rainSlider = _dialog displayCtrl 80008;
+private _rainSlider = _dialog displayCtrl IDC_rainSlider;
 _rainSlider sliderSetRange [0, 1];
 _rainSlider sliderSetPosition rain;
 
 // Waves slider
-private _wavesSlider = _dialog displayCtrl 80009;
+private _wavesSlider = _dialog displayCtrl IDC_waveSlider;
 _wavesSlider sliderSetRange [0, 1];
 _wavesSlider sliderSetPosition waves;
 
 // Year combo box
-private _yearBox = _dialog displayCtrl 80010;
+private _yearBox = _dialog displayCtrl IDC_yearBox;
 for "_year" from 1982 to 2050 do {
 	_yearBox lbAdd str _year;
 };
 _yearBox lbSetSelected [(date select 0), true];
 
 // Month combo box
-private _monthBox = _dialog displayCtrl 80011;
+private _monthBox = _dialog displayCtrl IDC_monthBox;
 _monthBox lbAdd "January";
 _monthBox lbAdd "February";
 _monthBox lbAdd "March";
@@ -62,28 +62,28 @@ _monthBox lbAdd "December";
 _monthBox lbSetSelected [(date select 1), true];
 
 // Day combo box
-private _dayBox = _dialog displayCtrl 80012;
+private _dayBox = _dialog displayCtrl IDC_dayBox;
 for "_day" from 1 to 31 do {
 	_dayBox lbAdd str _day;
 };
 _dayBox lbSetSelected [(date select 2), true];
 
 // Hour combo box
-private _hourBox = _dialog displayCtrl 80013;
+private _hourBox = _dialog displayCtrl IDC_hourBox;
 for "_hour" from 0 to 23 do {
 	_hourBox lbAdd str _hour;
 };
 _hourBox lbSetSelected [(date select 3), true];
 
 // Minute combo box
-private _minuteBox = _dialog displayCtrl 80014;
+private _minuteBox = _dialog displayCtrl IDC_minuteBox;
 for "_minute" from 0 to 59 do {
 	_minuteBox lbAdd str _minute;
 };
 _minuteBox lbSetSelected [(date select 4), true];
 
 // Side list box
-private _sideList = _dialog displayCtrl 80015;
+private _sideList = _dialog displayCtrl IDC_sideList;
 _sideList lbAdd "East";
 _sideList lbAdd "West";
 _sideList lbAdd "Independent";
@@ -95,22 +95,16 @@ _sideList lbSetColor [1, [0.15, 0.40, 0.6, 1]]; // West
 _sideList lbSetColor [2, [0.125, 0.5, 0.125, 1]]; // Independent
 _sideList lbSetColor [3, [0.425, 0.125, 0.5, 1]]; // Civilian
 
-// Players list box
-private _playersList = _dialog displayCtrl 80016;
-{
-	_playersList lbAdd name _x;
-} forEach allPlayers;
-
 // Disable global, server code execution buttons if mode is SP
 if !(isMultiplayer) then {
-	private _execGlobalButton = _dialog displayCtrl 80019;
-	private _execServerButton = _dialog displayCtrl 80020;
+	private _execGlobalButton = _dialog displayCtrl IDC_execGlobalButton;
+	private _execServerButton = _dialog displayCtrl IDC_execServerButton;
 	_execGlobalButton ctrlEnable false;
 	_execServerButton ctrlEnable false;
 };
 
 // Mission info
-private _missionInfo = _dialog displayCtrl 80017;
+private _missionInfo = _dialog displayCtrl IDC_missionInfo;
 _missionInfo ctrlSetStructuredText parseText format [
 	"<t size = '1' font = 'RobotoCondensedBold' color='#ffffff' align = 'left'>
 	%1 on %2
