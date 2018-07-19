@@ -4,7 +4,7 @@ _insertChildren = {
     params ["_target", "_player", "_params"];
 
     // Create a list of boxes and vehicles within 20m of _target
-    private _vehicles = (nearestObjects [_target, ["LandVehicle", "ThingX"], 20]) select {_x != _target};
+    private _vehicles = (nearestObjects [_target, ["Tank", "Car", "Ship", "Helicopter", "Plane", "ReammoBox_F"], 20]) select {_x != _target};
 
     // Add children to this action
     private _actions = [];
@@ -56,5 +56,9 @@ _action = [
     _insertChildren
 ] call ace_interact_menu_fnc_createAction;
 
-["LandVehicle", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
-["ThingX", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
+["Tank", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
+["Car", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
+["Ship", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
+["Helicopter", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
+["Plane", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
+["ReammoBox_F", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
