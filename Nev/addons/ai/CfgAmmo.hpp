@@ -1,13 +1,7 @@
 /*
-	currentMagazine vehicle player
-
-	configFile >> CfgMagazines >> currentMagazine vehicle player >> ammo
-
 	getText (configFile >> CfgMagazines >> currentMagazine vehicle player >> ammo)
 
 	vehicle player getCompatiblePylonMagazines 0
-
-	_arr apply {getText (configFile >> CfgMagazines >> _x >> ammo)}
 */
 
 class CfgAmmo {
@@ -755,6 +749,17 @@ class CfgAmmo {
 		ENHANCED_LAUNCHER
 	};
 	class M_SPG9_HEAT: RocketBase {
+		ENHANCED_LAUNCHER
+	};
+	class ammo_Missile_AntiRadiationBase: MissileBase {};
+	class ammo_Missile_HARM: ammo_Missile_AntiRadiationBase {
+		ENHANCED_LAUNCHER
+	};
+	class ammo_Missile_KH58: ammo_Missile_AntiRadiationBase {
+		ENHANCED_LAUNCHER
+	};
+	class ammo_Bomb_SmallDiameterBase: ammo_Bomb_LaserGuidedBase {};
+	class ammo_Bomb_SDB: ammo_Bomb_SmallDiameterBase {
 		ENHANCED_LAUNCHER
 	};
 };

@@ -2,7 +2,7 @@
 
 class CfgPatches {
 	class ADDON {
-		name = "NEV Component - Movement";
+		name = "NEV Component - Reload";
 		author = "Neviothr";
 		units[] = {};
 		weapons[] = {};
@@ -13,5 +13,4 @@ class CfgPatches {
 };
 
 #include "CfgSettings.hpp"
-#include "CfgMoves.hpp"
-#include "CfgVehicles.hpp"
+#include "CfgActions.hpp"

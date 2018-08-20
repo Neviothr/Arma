@@ -2,7 +2,7 @@ class CfgSettings {
 	class CBA {
 		class Versioning {
 			class ADDON {
-			   main_addon = "nev_fonts";
+			   main_addon = "nev_reduced_haze";
 			};
 		};
 	};

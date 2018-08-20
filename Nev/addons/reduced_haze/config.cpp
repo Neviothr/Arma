@@ -2,7 +2,7 @@
 
 class CfgPatches {
 	class ADDON {
-		name = "NEV Component - Fonts";
+		name = "NEV Component - Reduced Haze";
 		author = "Neviothr";
 		units[] = {};
 		weapons[] = {};
@@ -13,4 +13,4 @@ class CfgPatches {
 };
 
 #include "CfgSettings.hpp"
-#include "CfgFontFamilies.hpp"
+#include "CfgWorlds.hpp"

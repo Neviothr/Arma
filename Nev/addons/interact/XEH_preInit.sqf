@@ -1,5 +1,7 @@
 #include "script_component.hpp"
 
+#include "XEH_PREP.hpp"
+
 _insertChildren = {
     params ["_target", "_player", "_params"];
 
@@ -13,41 +15,27 @@ _insertChildren = {
         private _childStatement = {
             params ["_target", "_player", "_vehicle"];
 
-            private _items = [];
-            private _backpacks = [];
-
-            _items = magazineCargo _target;
-            _items append weaponCargo _target;
-            _backpacks = backpackCargo _target;
-
-            clearWeaponCargoGlobal _target;
-            clearMagazineCargoGlobal _target;
-            clearBackpackCargoGlobal _target;
-
-            {
-                _vehicle addItemCargoGlobal [_x, 1];
-            } forEach _items;
-
-            {
-                _vehicle addBackpackCargoGlobal [_x, 1];
-            } forEach _backpacks;
+            [_target] call FUNC(transferCargo);
         };
 
         // Get display name of _x
         private _actionText = getText (configfile >> "CfgVehicles" >> typeOf _x >> "displayName");
 
+        // Get display icon of _x
+        private _actionIcon = getText (configfile >> "CfgVehicles" >> typeOf _x >> "icon");
+
         // Create our action
-        private _action = ["TransferCargoChildAcion", _actionText, "", _childStatement, {true}, {}, _x] call ace_interact_menu_fnc_createAction;
+        private _childAction = ["TransferCargoChildAcion", _actionText, _actionIcon, _childStatement, {true}, {}, _x] call ace_interact_menu_fnc_createAction;
 
         // Push above action to _actions array
-        _actions pushBack [_action, [], _target]; // New action, it's children, and the action's target
+        _actions pushBack [_childAction, [], _target]; // New action, it's children, and the action's target
     } forEach _vehicles;
 
     // Return _actions array
     _actions
 };
 
-_action = [
+_cargoAction = [
     "TransferCargo",
     "Transfer Cargo",
     "a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa",
@@ -56,9 +44,6 @@ _action = [
     _insertChildren
 ] call ace_interact_menu_fnc_createAction;
 
-["Tank", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
-["Car", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
-["Ship", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
-["Helicopter", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
-["Plane", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
-["ReammoBox_F", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
+{
+    [_x, 0, ["ACE_MainActions"], _cargoAction, true] call ace_interact_menu_fnc_addActionToClass;
+} forEach ["Tank", "Car", "Ship","Helicopter", "Plane", "ReammoBox_F"];
