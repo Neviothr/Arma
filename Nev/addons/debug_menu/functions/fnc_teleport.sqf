@@ -2,9 +2,9 @@
 
 private _assignedItems = assignedItems player;
 
-if (["ItemMap", "ItemGPS", "I_UavTerminal", "C_UavTerminal", "O_UavTerminal", "B_UavTerminal"] findIf {_x in _assignedItems} == -1) exitWith {systemChat "Teleportion requires map, GPS or UAV terminal. You have none."};
+if (["ItemMap", "ItemGPS", "I_UavTerminal", "C_UavTerminal", "O_UavTerminal", "B_UavTerminal"] findIf {_x in _assignedItems} == -1) exitWith {systemChat "[Debug Menu] Teleportion function requires map, GPS or UAV terminal. You have none."};
 
-systemChat "Click on the location to which you'd like to be teleported.";
+systemChat "[Debug Menu] Click on the location to which you'd like to be teleported.";
 openMap [true, true];
 
 addMissionEventHandler ["MapSingleClick", {

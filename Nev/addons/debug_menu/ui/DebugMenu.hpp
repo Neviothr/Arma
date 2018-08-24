@@ -90,7 +90,7 @@ class GVAR(debugMenuDisplay) {
 			y = "SafeZoneY + (275 / 1080) * SafeZoneH";
 			action = "_target = [cursorTarget, vehicle player] select isNull cursorTarget;\
 					 [_target, 0] remoteExec ['setDamage', _target];\
-					 systemChat 'The vehicle / unit has been repaired / healed'";
+					 systemChat '[Debug Menu] The vehicle / unit has been repaired / healed'";
 			tooltip = "Repair / heal current vehicle / unit";
 		};
 
@@ -336,7 +336,7 @@ class GVAR(debugMenuDisplay) {
 			y = "SafeZoneY + (310 / 1080) * SafeZoneH";
 			action = "_target = [cursorTarget, vehicle player] select isNull cursorTarget;\
 					 [_target, 1] remoteExec ['setFuel', _target];\
-					 systemChat 'The vehicle has been refuled'";
+					 systemChat '[Debug Menu] The vehicle has been refuled'";
 			tooltip = "Refuel the current vehicle";
 		};
 
@@ -347,7 +347,7 @@ class GVAR(debugMenuDisplay) {
 			y = "SafeZoneY + (345 / 1080) * SafeZoneH";
 			action = "_target = [cursorTarget, vehicle player] select isNull cursorTarget;\
 					 [_target, 1] remoteExec ['setVehicleAmmoDef', _target];\
-					 systemChat 'The vehicle has been rearmed'"; // TODO: find alternetive for setVehicleAmmoDef as it's somewhat broken
+					 systemChat '[Debug Menu] The vehicle has been rearmed'"; // TODO: find alternetive for setVehicleAmmoDef as it's somewhat broken
 			tooltip = "Rearm the current vehicle";
 		};
 

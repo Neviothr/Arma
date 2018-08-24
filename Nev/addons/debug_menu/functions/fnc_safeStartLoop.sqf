@@ -8,7 +8,7 @@ sleep 2;
 
 GVAR(safeStartLoop) = 1;
 publicVariable QGVAR(safeStartLoop);
-"SafeStart has been enabled by admin!" remoteExec ["systemChat", [0, -2] select isMultiplayer];
+"[SafeStart] SafeStart has been enabled by admin!" remoteExec ["systemChat", [0, -2] select isMultiplayer];
 
 while {GVAR(isSafeStart)} do {
 	// If safeStart has been terminated by admin, simply exit
@@ -27,7 +27,7 @@ while {GVAR(isSafeStart)} do {
 // Once safeStart has been terminated by admin, disable the safeties
 if (!GVAR(isSafeStart)) then {
 	// Broadcast message to players
-	"Weapons are live in 5 seconds." remoteExec ["systemChat", [0, -2] select isMultiplayer];
+	"[SafeStart] Weapons are live in 5 seconds." remoteExec ["systemChat", [0, -2] select isMultiplayer];
 	uisleep 5;
 	[["Game on!", "PLAIN"]] remoteExec ["titleText", [0, -2] select isMultiplayer];
 

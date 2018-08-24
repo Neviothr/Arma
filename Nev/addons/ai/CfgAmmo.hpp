@@ -1,7 +1,26 @@
 /*
-	getText (configFile >> CfgMagazines >> currentMagazine vehicle player >> ammo)
+	// Aircraft
+	_vehicle = vehicle player;
+	_aircraftPylons = _vehicle getCompatiblePylonMagazines 0;
+	_aircraftPylons = parseSimpleArray ("[" + (((str _aircraftPylons) splitString "[],") joinString ",") + "]");
+	_aircraftAmmo = _aircraftPylons apply {getText (configFile >> "CfgMagazines" >> _x >> "ammo")};
+	_return = _aircraftAmmo arrayIntersect _aircraftAmmo;
+	_return;
 
-	vehicle player getCompatiblePylonMagazines 0
+	// Land vehicle, in case of tank / APC fired ATGMs
+	_vehicle = vehicle player;
+	_vehicleWeapons = (_vehicle weaponsTurret ((assignedVehicleRole player) select 1));
+	_vehicleMagazines = _vehicleWeapons apply {getArray (configFile >> "CfgWeapons" >> _x >> "magazines")};
+	_vehicleMagazines = parseSimpleArray ("[" + (((str _vehicleMagazines) splitString "[],") joinString ",") + "]");
+	_vehicleMagazines arrayIntersect _vehicleMagazines;
+	_return = _vehicleMagazines apply {getText (configfile >> "CfgMagazines" >> _x >> "ammo")};
+	_return;
+
+
+	// Protable launcher
+	_weaponMagazines = getArray (configFile >> "CfgWeapons" >> currentWeapon player >> "magazines");
+	_return = _weaponMagazines apply {getText (configfile >> "CfgMagazines" >> _x >> "ammo")};
+	_return;
 */
 
 class CfgAmmo {
