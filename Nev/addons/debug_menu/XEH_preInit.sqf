@@ -5,8 +5,6 @@
 [QGVAR(registerCurator), {
     params ["_unit"];
 
-    if !(isNull (getAssignedCuratorLogic _unit)) exitWith {systemChat "[Debug Menu] You already have curator access."};
-
     private _curator = createGroup sideLogic createUnit ["ModuleCurator_F", [0, 0, 0], [], 0, "CAN_COLLIDE"];
 
     _curator setVariable ["Addons", 3, true];
