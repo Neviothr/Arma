@@ -2,7 +2,7 @@
 
 class CfgPatches {
     class ADDON {
-        name = "NEV Component - Debug Menu";
+        name = "NEV Component - AI Counter";
         author = "Neviothr";
         units[] = {};
         weapons[] = {};
@@ -13,7 +13,6 @@ class CfgPatches {
 };
 
 #include "CfgSettings.hpp"
-#include "CfgNotifications.hpp"
 #include "CfgEventHandlers.hpp"
 #include "\x\nev\addons\main\ui\BaseDefines.hpp"
-#include "\x\nev\addons\debug_menu\ui\DebugMenu.hpp"
+#include "\x\nev\addons\ai_counter\ui\AiCounter.hpp"

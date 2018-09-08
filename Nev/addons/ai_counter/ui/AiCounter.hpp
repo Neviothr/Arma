@@ -1,11 +1,11 @@
 class RscTitles {
-	class GVAR(aiCount) {
-		idd = IDD_aiCount;
+	class GVAR(aiCounter) {
+		idd = IDD_aiCounter;
 		duration = 1e6;
-		onLoad = QUOTE(_this call FUNC(aiCountLoop); uiNamespace setVariable [ARR_2(QQGVAR(aiCountDisplay), _this select 0)]);
+		onLoad = QUOTE(_this call FUNC(aiCounterLoop); uiNamespace setVariable [ARR_2(QQGVAR(aiCounterDisplay), _this select 0)]);
 		class controls {
-			class GVAR(aiCountText): RscText {
-				idc = IDC_aiCountText;
+			class GVAR(aiCounterText): RscText {
+				idc = IDC_aiCounterText;
 				x = "0.967152 * safezoneW + safezoneX";
 				y = "0.951388 * safezoneH + safezoneY";
 				h = "0.0352567 * safezoneW";

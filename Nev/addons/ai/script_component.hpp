@@ -3,7 +3,7 @@
 #include "\x\nev\addons\main\script_mod.hpp"
 #include "\x\nev\addons\main\script_macros.hpp"
 
-#define ENHANCED_LAUNCHER \
+#define ENHANCED_ROCKET \
 	airLock = 1; \
 	allowAgainstInfantry = 1; \
 	aiAmmoUsageFlags = "64 + 128 + 256 + 512"; \

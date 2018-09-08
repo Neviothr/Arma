@@ -1,21 +1,3 @@
-// Keybind
-[
-	"Debug Menu",
-	"debug_menu_key",
-	"Open debug menu",
-	{
-		if ((IS_ADMIN || (!isMultiplayer) || (isServer && hasInterface)) && !dialog) then {
-			createDialog QGVAR(debugMenuDisplay);
-		};
-
-		// Check if the AI counter display is shown, if not - load it
-		if (isNull (uiNamespace getVariable [QGVAR(aiCountDisplay), displayNull])) then {
-			10 cutRsc [QGVAR(aiCount), "PLAIN", -1, true];
-		};
-	},
-	""
-] call CBA_fnc_addKeybind;
-
 // Max distance
 [
 	QGVAR(maxDistance),

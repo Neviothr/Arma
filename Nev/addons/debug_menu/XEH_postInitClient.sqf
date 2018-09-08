@@ -4,14 +4,6 @@ if (!hasInterface) exitWith {};
 
 if (IS_ADMIN || (!isMultiplayer) || (isServer && hasInterface)) then {
 	player addAction ["<t color = '#228B25'>Debug Menu", {createDialog QGVAR(debugMenuDisplay)}];
-
-	// Using CBA_fnc_waitUntilAndExecute because we can't suspend this script
-	[
-		{!isNull (findDisplay 46)}, // Condition, wait for RscDisplayMission
-		{
-			10 cutRsc [QGVAR(aiCount), "PLAIN", -1, true]; // Load the display, using layer 10 to aviod issues with mods that use cutRsc (STNVG, etc)
-		}
-	] call CBA_fnc_waitUntilAndExecute;
 };
 
 // Debug info diary record

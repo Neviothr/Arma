@@ -23,6 +23,3 @@
 #define IDC_debugConsole 80017
 #define IDC_execGlobalButton 80018
 #define IDC_execServerButton 80019
-
-#define IDD_aiCount 81000
-#define	IDC_aiCountText 81001

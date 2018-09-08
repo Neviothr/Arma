@@ -5,7 +5,6 @@ PREP(spawnGroup);
 PREP(randomEnvironment);
 PREP(fullMoonDates);
 PREP(debugConsoleExec);
-PREP(aiCountLoop);
 PREP(teleport);
 PREP(safeStart);
 PREP(safeStartLoop);

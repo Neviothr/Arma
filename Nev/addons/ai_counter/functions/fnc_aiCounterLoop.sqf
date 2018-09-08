@@ -2,7 +2,7 @@
 
 params ["_display"];
 
-private _control = _display displayCtrl IDC_aiCountText;
+private _control = _display displayCtrl IDC_aiCounterText;
 
 // AI count loop
 [_control] spawn { // Passing _control as array because we can't serialize _control
