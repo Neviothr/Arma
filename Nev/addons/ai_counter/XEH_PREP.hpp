@@ -1,1 +1,1 @@
-PREP(aiCounterLoop);
+PREP(onLoad);

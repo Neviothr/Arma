@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 
 (_this select 0) params ["_control", "_value"];
+(fogParams) params ["_fogValue", "_fogDecay", "_fogBase"];
 
 switch (str _control) do {
 	// Overcast
@@ -15,16 +16,16 @@ switch (str _control) do {
 		0 setLightnings _value;
 	};
 	case "Control #80005": {
-		// Fog decay
-		0 setFog [_value, fogParams select 1, fogParams select 2];
+		// Fog value
+		0 setFog [_value, _fogDecay, _fogBase];
 	};
 	case "Control #80006": {
 		// Fog decay
-		0 setFog [fogParams select 0, _value, fogParams select 2];
+		0 setFog [_fogValue, _value, _fogBase];
 	};
 	case "Control #80007": {
 		// Fog base
-		0 setFog [fogParams select 0, fogParams select 1, _value];
+		0 setFog [_fogValue, _fogDecay, _value];
 	};
 	case "Control #80008": {
 		// Rain
