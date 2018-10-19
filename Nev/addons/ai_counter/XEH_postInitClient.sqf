@@ -6,6 +6,6 @@ if (IS_ADMIN || (!isMultiplayer) || (isServer && hasInterface)) then {
 	// Using CBA_fnc_waitUntilAndExecute because we can't suspend this script
 	[
 		{!isNull (findDisplay 46)}, // Condition, wait for RscDisplayMission
-		{10 cutRsc [QGVAR(aiCounter), "PLAIN", -1, true]}
+		{QGVAR(aiCounterLayer) cutRsc [QGVAR(aiCounter), "PLAIN", -1, true]}
 	] call CBA_fnc_waitUntilAndExecute;
 };

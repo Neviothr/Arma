@@ -3,7 +3,6 @@ class RscTitles {
 		idd = IDD_aiCounter;
 		duration = 1e6;
 		onLoad = QUOTE(_this call FUNC(onLoad); uiNamespace setVariable [ARR_2(QQGVAR(aiCounterDisplay), _this select 0)]);
-		onUnload = QUOTE([ARR_1(GVAR(counterDisplayPFEH))] call CBA_fnc_removePerFrameHandler; GVAR(counterDisplayPFEH) = nil);
 		class controls {
 			class GVAR(aiCounterText): RscText {
 				idc = IDC_aiCounterText;
