@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-private = _effectModules = ["ModuleEffectsSmoke_F", "ModuleEffectsFire_F"];
+private _effectModules = ["ModuleEffectsSmoke_F", "ModuleEffectsFire_F"];
 
 {
 	if (_x in _effectModules) then {

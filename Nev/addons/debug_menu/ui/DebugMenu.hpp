@@ -435,12 +435,12 @@ class GVAR(debugMenuDisplay) {
 		};
 
 		// Delete editor placed smoke modules are their effect
-		class GVAR(deleteSmokeModules): NevRscButton {
-			text = "Delete smoke modules";
+		class GVAR(deleteEffectModules): NevRscButton {
+			text = "Delete effect modules";
 			x = "SafeZoneX + (640 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (415 / 1080) * SafeZoneH";
-			action = QUOTE(call FUNC(deleteSmokeModules));
-			tooltip = "Delete smoke modules";
+			action = QUOTE(call FUNC(deleteEffectModules));
+			tooltip = "Delete effect modules";
 		};
 	};
 };
