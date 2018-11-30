@@ -6,8 +6,3 @@ PREP(randomEnvironment);
 PREP(fullMoonDates);
 PREP(debugConsoleExec);
 PREP(teleport);
-PREP(safeStart);
-PREP(safeStartLoop);
-PREP(safety);
-PREP(missionInfo);
-PREP(deleteEffectModules);

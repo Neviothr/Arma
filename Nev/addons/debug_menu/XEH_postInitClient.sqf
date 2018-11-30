@@ -18,51 +18,6 @@ if (IS_ADMIN || (!isMultiplayer) || (isServer && hasInterface)) then {
 
 // Debug info diary record
 player createDiarySubject [QGVAR(docs), "Debug Menu"];
-player createDiaryRecord [QGVAR(docs), ["RHS Debug Info", "
-	<font face='RobotoCondensedBold' size='14'>Decal Debug
-	<br/>
-		<execute expression=""RHSDecalsDebugMode = true"">Enable decal debug mode</execute>
-		<br/>
-		<execute expression=""RHSDecalsDebugMode = false"">Disable decal debug mode</execute>
-	<br/><br/>
-
-	<font face='RobotoCondensedBold' size='14'>Engine Startup Script
-	<br/>
-		<execute expression=""RHS_ENGINE_STARTUP_OFF = true"">Enable engine startup script</execute>
-		<br/>
-		<execute expression=""RHS_ENGINE_STARTUP_OFF = nil"">Disable engine startup script</execute>
-	<br/><br/>
-
-	<font face='RobotoCondensedBold' size='14'>HEAT Simulation
-	<br/>
-		<execute expression=""RHS_HEAT_ENABLED = true"">Enable HEAT simulation</execute>
-		<br/>
-		<execute expression=""RHS_HEAT_ENABLED = false"">Disable HEAT simulation</execute>
-	<br/><br/>
-
-	<font face='RobotoCondensedBold' size='14'>Spall Simulation
-	<br/>
-		<execute expression=""RHS_SPALL_ENABLED= true"">Enable spall simulation</execute>
-		<br/>
-		<execute expression=""RHS_SPALL_ENABLED = false"">Disable spall simulation</execute>
-	<br/><br/>
-
-	<font face='RobotoCondensedBold' size='14'>Radar
-	<br/>
-		<execute expression=""RHS_Radar_Enabled = true"">Enable radar simulation</execute>
-		<br/>
-		<execute expression=""RHS_Radar_Enabled = false"">Disable radar simulation</execute>
-		<br/>
-		<execute expression=""missionNamespace setVariable ['RHS_Radar_Enabled', false, true]"">Disable radar simulation V2</execute>
-	<br/><br/>
-
-	<font face='RobotoCondensedBold' size='14'>Decals
-	<br/>
-		<execute expression=""RHSDecalsOff = false"">Enable decals</execute>
-		<br/>
-		<execute expression=""RHSDecalsOff = true"">Disable decals</execute>
-"]];
-
 player createDiaryRecord [QGVAR(docs), ["FHQ Debug Info", "
 	<font face='RobotoCondensedBold' size='14'>Weather Effects
 	<br/>

@@ -13,7 +13,6 @@ class CfgPatches {
 };
 
 #include "CfgSettings.hpp"
-#include "CfgNotifications.hpp"
 #include "CfgEventHandlers.hpp"
 #include "\x\nev\addons\main\ui\BaseDefines.hpp"
 #include "\x\nev\addons\debug_menu\ui\DebugMenu.hpp"
