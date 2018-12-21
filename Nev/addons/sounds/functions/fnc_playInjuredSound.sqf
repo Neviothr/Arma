@@ -1,9 +1,12 @@
 #include "script_component.hpp"
 
 params ["_unit"];
+
 if (!local _unit) exitWith {};
 
 private _pain = damage _unit;
+
+if (_pain >= 1) exitWith {};
 
 // Lock if the unit is already playing a sound.
 if ((_unit getVariable [QGVAR(playingInjuredSound), false])) exitWith {};

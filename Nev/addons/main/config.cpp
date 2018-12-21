@@ -10,6 +10,7 @@ class CfgPatches {
 		requiredAddons[] = {
 			// Vanilla
 			"A3_Data_F_Tank_Loadorder",
+			"A3_Data_F_Mod_Loadorder",
 
 			// CBA
 			"cba_main",
