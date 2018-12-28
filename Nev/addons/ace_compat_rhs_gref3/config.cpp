@@ -2,14 +2,11 @@
 
 class CfgPatches {
     class ADDON {
-        name = "Nev Component - Custom ACE RHS GREF Compact";
+        name = "Nev Component - Custom ACE RHS GREF Compat";
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {
-            "rhsgref_main",
-            "rhsgref_c_weapons"
-        };
+        requiredAddons[] = {"nev_main"};
         author = "ACE Team, Neviothr";
         VERSION_CONFIG;
     };
