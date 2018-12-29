@@ -1,7 +1,6 @@
 class cfgMagazines {
     class VehicleMagazine;
     class rhs_30Rnd_545x39_7N6_AK;
-
     class rhs_100Rnd_762x54mmR: rhs_30Rnd_545x39_7N6_AK {
         ace_isbelt = 1;
     };

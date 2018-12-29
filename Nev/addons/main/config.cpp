@@ -38,6 +38,15 @@ class CfgPatches {
 			"ace_modules",
 			"ace_arsenal",
 			"ace_explosives",
+
+			// RHS
+			"rhs_c_weapons",
+			"rhs_c_heavyweapons",
+			"rhs_c_troops",
+			"rhsgref_c_weapons",
+			"rhsusf_c_weapons",
+			"rhsusf_c_statics",
+			"rhsusf_c_troops"
 		};
 		VERSION_CONFIG;
 	};
