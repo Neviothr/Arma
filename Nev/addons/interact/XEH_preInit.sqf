@@ -22,7 +22,7 @@ _insertChildren = {
         private _actionText = getText (configfile >> "CfgVehicles" >> typeOf _x >> "displayName");
 
         // Get display icon of _x
-        private _actionIcon = getText (configfile >> "CfgVehicles" >> typeOf _x >> "icon");
+        private _actionIcon = _x call FUNC(getIcon);
 
         // Create our action
         private _childAction = ["TransferCargoChildAcion", _actionText, _actionIcon, _childStatement, {true}, {}, _x] call ace_interact_menu_fnc_createAction;
