@@ -9,8 +9,8 @@ class CfgPatches {
 		requiredVersion = REQUIRED_VERSION;
 		requiredAddons[] = { // TODO - add RHS requred addons entries
 			// Vanilla
-			"A3_Data_F_Tank_Loadorder",
-			"A3_Data_F_Mod_Loadorder",
+			"A3_Data_F_Enoch_Loadorder",
+            "A3_Data_F_Mod_Loadorder",
 
 			// CBA
 			"cba_main",

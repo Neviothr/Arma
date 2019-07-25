@@ -11,10 +11,10 @@
 #define MAJOR 0
 #define MINOR 0
 #define PATCHLVL 1
-#define BUILD 181130 // Use the DATE for the BUILD in the format YYMMDD
+#define BUILD 190725 // Use the DATE for the BUILD in the format YYMMDD
 
 #define VERSION MAJOR.MINOR.PATCHLVL.BUILD
 #define VERSION_AR MAJOR,MINOR,PATCHLVL,BUILD
 
 // Minimal required version for the mod, components can specify otherwise
-#define REQUIRED_VERSION 1.84
+#define REQUIRED_VERSION 1.94
