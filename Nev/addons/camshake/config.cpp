@@ -2,7 +2,7 @@
 
 class CfgPatches {
 	class ADDON {
-		name = "NEV Component - AI";
+		name = "NEV Component - Camshake";
 		author = "Neviothr";
 		units[] = {};
 		weapons[] = {};
@@ -12,9 +12,5 @@ class CfgPatches {
 	};
 };
 
+#include "CfgEventHandlers.hpp"
 #include "CfgSettings.hpp"
-#include "CfgAmmo.hpp"
-#include "CfgSurfaces.hpp"
-#include "CfgWeapons.hpp"
-#include "CfgEventhandlers.hpp"
-#include "CfgFSMs.hpp"
