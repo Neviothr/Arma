@@ -2,7 +2,7 @@
 
 class CfgPatches {
 	class ADDON {
-		name = "NEV Component - Blood";
+		name = "NEV Component - AI Tanks";
 		author = "Neviothr";
 		units[] = {};
 		weapons[] = {};
@@ -12,7 +12,7 @@ class CfgPatches {
 	};
 };
 
-#include "CfgCloudlets.hpp"
+#include "CfgAmmo.hpp"
 #include "CfgEventhandlers.hpp"
 #include "CfgSettings.hpp"
-#include "ImpactEffectsBlood.hpp"
+#include "CfgWeapons.hpp"

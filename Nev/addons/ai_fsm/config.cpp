@@ -2,7 +2,7 @@
 
 class CfgPatches {
 	class ADDON {
-		name = "NEV Component - Blood";
+		name = "NEV Component - AI FSM";
 		author = "Neviothr";
 		units[] = {};
 		weapons[] = {};
@@ -12,7 +12,6 @@ class CfgPatches {
 	};
 };
 
-#include "CfgCloudlets.hpp"
-#include "CfgEventhandlers.hpp"
+#include "CfgFSMs.hpp"
 #include "CfgSettings.hpp"
-#include "ImpactEffectsBlood.hpp"
+#include "CfgVehicles.hpp"

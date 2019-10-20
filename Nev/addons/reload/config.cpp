@@ -12,5 +12,5 @@ class CfgPatches {
 	};
 };
 
-#include "CfgSettings.hpp"
 #include "CfgActions.hpp"
+#include "CfgSettings.hpp"

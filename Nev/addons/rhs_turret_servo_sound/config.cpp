@@ -2,7 +2,7 @@
 
 class CfgPatches {
 	class ADDON {
-		name = "NEV Component - Blood";
+		name = "NEV Component - RHS Turret Servo Sound";
 		author = "Neviothr";
 		units[] = {};
 		weapons[] = {};
@@ -12,7 +12,5 @@ class CfgPatches {
 	};
 };
 
-#include "CfgCloudlets.hpp"
-#include "CfgEventhandlers.hpp"
 #include "CfgSettings.hpp"
-#include "ImpactEffectsBlood.hpp"
+#include "CfgVehicles.hpp"

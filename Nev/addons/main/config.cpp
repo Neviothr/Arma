@@ -29,6 +29,7 @@ class CfgPatches {
 			"CUP_Weapons_NLAW",
 			"CUP_Weapons_NVG",
 			"CUP_Weapons_Strela_2",
+			"CUP_Weapons_VehicleWeapons",
 
 			// ACE3
 			"ace_interaction",
@@ -74,5 +75,5 @@ class CfgPatches {
 	};
 };
 
-#include "CfgSettings.hpp"
 #include "CfgMods.hpp"
+#include "CfgSettings.hpp"

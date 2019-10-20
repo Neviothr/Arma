@@ -2,7 +2,7 @@
 
 class CfgPatches {
 	class ADDON {
-		name = "NEV Component - Blood";
+		name = "NEV Component - Injured Sounds";
 		author = "Neviothr";
 		units[] = {};
 		weapons[] = {};
@@ -12,7 +12,7 @@ class CfgPatches {
 	};
 };
 
-#include "CfgCloudlets.hpp"
-#include "CfgEventhandlers.hpp"
+#include "CfgEventHandlers.hpp"
 #include "CfgSettings.hpp"
-#include "ImpactEffectsBlood.hpp"
+#include "CfgSounds.hpp"
+#include "CfgVehicles.hpp"

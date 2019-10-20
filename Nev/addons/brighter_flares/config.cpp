@@ -12,5 +12,5 @@ class CfgPatches {
 	};
 };
 
-#include "CfgSettings.hpp"
 #include "CfgAmmo.hpp"
+#include "CfgSettings.hpp"

@@ -2,7 +2,7 @@
 
 class CfgPatches {
 	class ADDON {
-		name = "NEV Component - Blood";
+		name = "NEV Component - Difficulty";
 		author = "Neviothr";
 		units[] = {};
 		weapons[] = {};
@@ -12,7 +12,6 @@ class CfgPatches {
 	};
 };
 
-#include "CfgCloudlets.hpp"
-#include "CfgEventhandlers.hpp"
+#include "CfgAISkill.hpp"
 #include "CfgSettings.hpp"
-#include "ImpactEffectsBlood.hpp"
+#include "CfgSurfaces.hpp"
