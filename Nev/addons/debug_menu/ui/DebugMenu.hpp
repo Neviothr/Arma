@@ -321,6 +321,13 @@ class GVAR(debugMenuDisplay) {
 			size = 0.037;
 			colorBackground[] = {0, 0, 0, 0.5};
 		};
+
+		class GVAR(supplyDrop): NevRscButton {
+			text = "Supply Drop";
+			x = "SafeZoneX + (920 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (450 / 1080) * SafeZoneH";
+			action = QUOTE([ARR_1(player)] call FUNC(supplyDrop));
+		};
 	};
 };
 

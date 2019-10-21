@@ -9,3 +9,24 @@ GVAR(bloodEffectModels) = [
 ];
 
 addMissionEventHandler ["EntityKilled", {call FUNC(createBlood)}];
+
+if (isServer) then {
+    GVAR(bloodDrops) = [];
+
+    [QGVAR(bloodDropCreated), {
+        params ["_bloodDrop"];
+
+        // Add to created queue with format: [expire time, blood object]
+        private _index = GVAR(bloodDrops) pushBack [CBA_missionTime + 4050, _bloodDrop];
+
+        if (count GVAR(bloodDrops) >= 1505) then {
+            (GVAR(bloodDrops) deleteAt 0) params ["", "_deletedBloodDrop"];
+            deleteVehicle _deletedBloodDrop;
+        };
+
+        // Start the cleanup loop
+        if (_index == 0) then {
+            [FUNC(cleanupLoop), [], 4050] call CBA_fnc_waitAndExecute;
+        };
+    }] call CBA_fnc_addEventHandler;
+};

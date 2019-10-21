@@ -6,3 +6,5 @@ PREP(randomEnvironment);
 PREP(fullMoonDates);
 PREP(debugConsoleExec);
 PREP(teleport);
+PREP(supplyDrop);
+PREP(detachCrate);
