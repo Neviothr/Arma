@@ -4,6 +4,9 @@ params ["_player"];
 
 _player setVariable [QGVAR(paradropInProgress), true];
 
+// Randomize wind
+[] remoteExec ["setWind [random 359, random 359, false]; 3 setWindDir random 359; 3 setWindStr random 1; 3 setWindForce random 1", 2];
+
 private _position = getPos _player;
 _position set [2, 75];
 
