@@ -19,3 +19,5 @@
 
     "[Debug Menu] Registered as Curator." remoteExec ["systemChat", _unit];
 }] call CBA_fnc_addEventHandler;
+
+["Debug Menu", QGVAR(debugMenuDisplay)] call CBA_fnc_addPauseMenuOption;
