@@ -19,7 +19,7 @@ if (isServer) then {
         // Add to created queue with format: [expire time, blood object]
         private _index = GVAR(bloodDrops) pushBack [CBA_missionTime + 4050, _bloodDrop];
 
-        if (count GVAR(bloodDrops) >= 1505) then {
+        if (count GVAR(bloodDrops) >= 50) then {
             (GVAR(bloodDrops) deleteAt 0) params ["", "_deletedBloodDrop"];
             deleteVehicle _deletedBloodDrop;
         };
