@@ -9,8 +9,6 @@ if (isPlayer _unit) then {
 		{
 			params ["_unit", "_healingFactor"];
 
-			systemChat format ["%1", _healingFactor];
-
 			if (_healingFactor <= 0.25) then {
 				_unit setDamage 0;
 			} else {

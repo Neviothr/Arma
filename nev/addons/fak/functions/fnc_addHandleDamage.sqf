@@ -3,6 +3,12 @@
 params ["_unit"];
 
 if (isPlayer _unit) then {
+	// Added FAKs to inventory
+
+	for "_i" from 1 to 10 step 1 do {
+		_unit addItemToUniform "FirstAidKit";
+	};
+
 	_unit addEventHandler ["HandleDamage", {
 		params ["_unit", "", "_damage"];
 
