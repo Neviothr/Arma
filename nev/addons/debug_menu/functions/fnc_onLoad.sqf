@@ -119,7 +119,7 @@ _missionInfo ctrlSetStructuredText parseText format [
 	<br/>
 	Cursor Object: %7
 	</t>",
-	(missionName call CBA_fnc_decodeURL) splitString " " joinString "_",
+	missionName call CBA_fnc_decodeURL,
 	worldName,
 	(diag_activeScripts select 0) + (diag_activeScripts select 1) + (diag_activeScripts select 2),
 	diag_activeScripts select 3,
