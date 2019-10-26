@@ -7,11 +7,11 @@ _player setVariable [QGVAR(paradropInProgress), true];
 // Randomize wind
 [] remoteExec ["setWind [random 359, random 359, false]; 3 setWindDir random 359; 3 setWindStr random 1; 3 setWindForce random 1", 2];
 
-private _position = getPos _player;
+private _position = player getPos [50 * sqrt random 1, random 360];
 _position set [2, 75];
 
 private _parachute = createVehicle ["NonSteerable_Parachute_F", _position, [], 0, "FLY"];
-private _ammoBox = createVehicle ["B_supplyCrate_F", [0,0,0], [], 0, "NONE"];
+private _ammoBox = createVehicle ["C_IDAP_supplyCrate_F", [0,0,0], [], 0, "NONE"];
 
 // Make sure our supply crate is empty
 clearItemCargoGlobal _ammoBox;
@@ -81,8 +81,8 @@ _smoke attachTo [_parachute, [0, 0, 0]];
 
 [
 	{getPos (_this #0) #2 < 1.5},
-	{[(_this #0),(_this #1),(_this #2),(_this #3)] call FUNC(detachCrate);},
-	[_ammoBox, _parachute,_smoke, _player],
+	{[(_this #0),(_this #1),(_this #2)] call FUNC(detachCrate);},
+	[_ammoBox, _parachute, _player],
 	45,
-	{[(_this #0),(_this #1),(_this #2),(_this #3)] call FUNC(detachCrate);}
+	{[(_this #0),(_this #1),(_this #2)] call FUNC(detachCrate);}
 ] call CBA_fnc_waitUntilAndExecute;
