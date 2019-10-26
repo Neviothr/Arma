@@ -1,0 +1,2 @@
+PREP(addHandleDamage);
+PREP(handleHeal);
