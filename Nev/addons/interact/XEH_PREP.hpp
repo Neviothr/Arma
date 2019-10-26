@@ -1,2 +1,0 @@
-PREP(transferCargo);
-PREP(getIcon);

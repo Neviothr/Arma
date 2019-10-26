@@ -1,2 +1,0 @@
-PREP(addHandleDamage);
-PREP(handleHeal);
