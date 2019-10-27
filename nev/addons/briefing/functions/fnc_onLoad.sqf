@@ -36,3 +36,12 @@ GVAR(camera) camSetPos [getPos _orb select 0, (getPos _orb select 1) - 3, (getPo
 GVAR(camera) camCommit 0;
 cameraEffectEnableHUD true;
 showCinemaBorder false;
+
+private _sides = call FUNC(getSides);
+private _sideBox = _dialog displayCtrl IDC_iffSideCombo;
+
+for "_i" from 0 to ((count _sides) - 1) step 1 do {
+	_sideBox lbAdd str (_sides select _i);
+};
+
+_sideBox lbSetCurSel 0;

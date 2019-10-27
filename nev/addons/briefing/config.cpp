@@ -43,12 +43,13 @@ class IFF {
 			h = "(20 / 1080) * SafeZoneH";
 			type = CT_COMBO;
 			style = ST_LEFT + LB_TEXTURES;
+			onLBSelChanged = QUOTE(ARR_2([_this select 0, _this select 1]) call FUNC(updateFactions));
 		};
 
 		class GVAR(changeFactionCombo): RscCombo {
 			idc = IDC_iffFactionCombo;
-			x = "SafeZoneX + (100 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (25 / 1080) * SafeZoneH";
+			x = "SafeZoneX + (50 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (150 / 1080) * SafeZoneH";
 			w = "(135 / 1920) * SafeZoneW";
 			h = "(20 / 1080) * SafeZoneH";
 			type = CT_COMBO;
