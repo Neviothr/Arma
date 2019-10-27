@@ -334,6 +334,7 @@ class GVAR(debugMenuDisplay) {
 			x = "SafeZoneX + (920 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (485 / 1080) * SafeZoneH";
 			action = "closeDialog 1; createDialog 'IFF'";
+			colorText[] = {0.85, 0.4, 0, 1};
 		};
 	};
 };

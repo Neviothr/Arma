@@ -21,7 +21,7 @@ class IFF {
 	movingEnable = 0;
 	enableSimulation = 1;
 	onLoad = QUOTE(call FUNC(onLoad));
-	onUnload = "hint 'ON UNLOAD!!!'";
+	onUnload = QUOTE(call FUNC(exitIFF));
 	duration = 1e6;
 
 	class Controls {
@@ -29,9 +29,30 @@ class IFF {
 		class GVAR(exitButton): NevRscButton {
 			text = "Exit";
 			x = "SafeZoneX + (1700 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (900/ 1080) * SafeZoneH";
+			y = "SafeZoneY + (1000/ 1080) * SafeZoneH";
 			action = QUOTE(closeDialog 1; call FUNC(exitIFF));
+			colorText[] = {0.9, 0, 0, 1};
+		};
+
+		// Side list box
+		class GVAR(changeSideCombo): RscCombo {
+			idc = IDC_iffSideCombo;
+			x = "SafeZoneX + (50 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (25 / 1080) * SafeZoneH";
+			w = "(135 / 1920) * SafeZoneW";
+			h = "(20 / 1080) * SafeZoneH";
+			type = CT_COMBO;
+			style = ST_LEFT + LB_TEXTURES;
+		};
+
+		class GVAR(changeFactionCombo): RscCombo {
+			idc = IDC_iffFactionCombo;
+			x = "SafeZoneX + (100 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (25 / 1080) * SafeZoneH";
+			w = "(135 / 1920) * SafeZoneW";
+			h = "(20 / 1080) * SafeZoneH";
+			type = CT_COMBO;
+			style = ST_LEFT + LB_TEXTURES;
 		};
 	};
 };
-
