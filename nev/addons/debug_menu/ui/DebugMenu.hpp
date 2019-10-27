@@ -3,7 +3,7 @@ class GVAR(debugMenuDisplay) {
 	idd = IDD_debugMenuDisplay;
 	movingEnable = true;
 	onLoad = QUOTE(call FUNC(onLoad));
-	class controls {
+	class Controls {
 		// Remove dead units and vehicle wreaks
 		class GVAR(delDeadButton): NevRscButton {
 			text = "Remove dead";
@@ -327,6 +327,13 @@ class GVAR(debugMenuDisplay) {
 			x = "SafeZoneX + (920 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (450 / 1080) * SafeZoneH";
 			action = QUOTE([ARR_1(player)] call FUNC(supplyDrop));
+		};
+
+		class GVAR(IFF): NevRscButton {
+			text = "IFF";
+			x = "SafeZoneX + (920 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (485 / 1080) * SafeZoneH";
+			action = QUOTE(createDialog QGVAR(IFF));
 		};
 	};
 };
