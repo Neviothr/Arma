@@ -5,3 +5,9 @@ GVAR(camera) cameraEffect ["terminate", "back"];
 camDestroy GVAR(camera);
 
 GVAR(logicCenter) = nil;
+
+{
+	deleteVehicle _x;
+} forEach GVAR(iffUnits);
+
+GVAR(iffUnits) = nil;

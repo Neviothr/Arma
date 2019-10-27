@@ -333,7 +333,7 @@ class GVAR(debugMenuDisplay) {
 			text = "IFF";
 			x = "SafeZoneX + (920 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (485 / 1080) * SafeZoneH";
-			action = QUOTE(createDialog QGVAR(IFF));
+			action = "closeDialog 1; createDialog 'IFF'";
 		};
 	};
 };

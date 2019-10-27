@@ -2,10 +2,12 @@
 
 params ["_dialog"];
 
+GVAR(iffUnits) = [];
+
 // Logic
 private _logicCenterPos = [1000, 1000, 10000];
 
-private GVAR(logicCenter) = createAgent ["Logic", _logicCenterPos, [], 0, "none"];
+GVAR(logicCenter) = createAgent ["Logic", _logicCenterPos, [], 0, "none"];
 GVAR(logicCenter) setPos _logicCenterPos;
 GVAR(logicCenter) setDir 180;
 

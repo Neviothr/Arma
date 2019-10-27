@@ -28,6 +28,8 @@ switch (_unitNumber) do {
 	};
 };
 
+GVAR(iffUnit) pushBack _unit;
+
 {
 	_unit disableAI _x;
 } forEach ["TARGET", "AUTOTARGET", "MOVE", "ANIM", "TEAMSWITCH", "FSM", "WEAPONAIM", "COVER", "AUTOCOMBAT", "PATH", "MINEDETECTION", "NVG", "LIGHTS", "RADIOPROTOCOL"];
