@@ -2,10 +2,11 @@
 
 params ["_control", "_selectedIndex"];
 
-private _factions = (_control lbText _selectedIndex) call FUNC(getFactions);
+private _side = _control lbText _selectedIndex;
+private _factions = [_side] call FUNC(getFactions);
 
-for "_i" from 0 to ((count _factions) - 1) step 1 do {
-	_control lbAdd str (_factions select _i);
-};
+private _factionBox = (findDisplay IDD_IFFDisplay) displayCtrl IDC_iffFactionCombo;
 
-_control lbSetCurSel 0;
+{
+	_factionBox lbAdd _x;
+} forEach _factions;

@@ -40,8 +40,6 @@ showCinemaBorder false;
 private _sides = call FUNC(getSides);
 private _sideBox = _dialog displayCtrl IDC_iffSideCombo;
 
-for "_i" from 0 to ((count _sides) - 1) step 1 do {
-	_sideBox lbAdd str (_sides select _i);
-};
-
-_sideBox lbSetCurSel 0;
+{
+	_sideBox lbAdd str _x;
+} forEach _sides;

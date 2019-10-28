@@ -43,7 +43,7 @@ class IFF {
 			h = "(20 / 1080) * SafeZoneH";
 			type = CT_COMBO;
 			style = ST_LEFT + LB_TEXTURES;
-			onLBSelChanged = QUOTE(ARR_2([_this select 0, _this select 1]) call FUNC(updateFactions));
+			onLBSelChanged = QUOTE(_this call FUNC(updateFactions));
 		};
 
 		class GVAR(changeFactionCombo): RscCombo {
@@ -54,6 +54,7 @@ class IFF {
 			h = "(20 / 1080) * SafeZoneH";
 			type = CT_COMBO;
 			style = ST_LEFT + LB_TEXTURES;
+			onLBSelChanged = QUOTE(_this call FUNC(updateUnits));
 		};
 	};
 };
