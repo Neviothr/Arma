@@ -34,14 +34,6 @@ showCinemaBorder false;
 private _sides = call FUNC(getSides);
 private _sideBox = _dialog displayCtrl IDC_iffSideCombo;
 
-_sideBox lbAdd "<side>";
-
 {
 	_sideBox lbAdd str _x;
 } forEach _sides;
-
-private _factionBox = _dialog displayCtrl IDC_iffFactionCombo;
-_factionBox lbAdd "<faction>";
-
-_sideBox lbSetCurSel 0;
-_factionBox lbSetCurSel 0;
