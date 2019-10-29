@@ -19,12 +19,6 @@ private _orb = createVehicle ["Sign_Arrow_Blue_F", getPos GVAR(logicCenter), [],
 _orb attachTo [GVAR(logicCenter), [0, 0, 1]];
 _orb hideObject true;
 
-// Create default units
-["B_Soldier_F", 1] call FUNC(createUnit);
-["B_Soldier_F", 2] call FUNC(createUnit);
-["B_Soldier_F", 3] call FUNC(createUnit);
-["B_Soldier_F", 4] call FUNC(createUnit);
-
 // Camera
 setViewDistance 1;
 GVAR(camera) = "camera" camCreate getPos GVAR(logicCenter);
@@ -40,6 +34,14 @@ showCinemaBorder false;
 private _sides = call FUNC(getSides);
 private _sideBox = _dialog displayCtrl IDC_iffSideCombo;
 
+_sideBox lbAdd "<side>";
+
 {
 	_sideBox lbAdd str _x;
 } forEach _sides;
+
+private _factionBox = _dialog displayCtrl IDC_iffFactionCombo;
+_factionBox lbAdd "<faction>";
+
+_sideBox lbSetCurSel 0;
+_factionBox lbSetCurSel 0;

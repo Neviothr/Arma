@@ -4,27 +4,34 @@ params ["_unitCfg", "_unitNumber"];
 
 if ((_unitCfg == "") || (typeName _unitNumber != "SCALAR"))  exitWith {diag_log "ERROR: either _unitCfg or _unitNumber are unvalid."};
 
-private _unit = createVehicle [_unitCfg, getPos GVAR(logicCenter), [], 0, "none"];
+deleteVehicle QGVAR(unit0);
+deleteVehicle QGVAR(unit1);
+deleteVehicle QGVAR(unit2);
+deleteVehicle QGVAR(unit3);
 
 switch (_unitNumber) do {
 	case 1: {
-		_unit attachTo [GVAR(logicCenter), [1.5, 0, 0]];
-		_unit setDir -25;
+		QGVAR(unit0) = createVehicle [_unitCfg, getPos GVAR(logicCenter), [], 0, "none"];
+		QGVAR(unit0) attachTo [GVAR(logicCenter), [1.5, 0, 0]];
+		QGVAR(unit0) setDir -25;
 	};
 
 	case 2: {
-		_unit attachTo [GVAR(logicCenter), [0.5, 0, 0]];
-		_unit setDir -15;
+		QGVAR(unit1) = createVehicle [_unitCfg, getPos GVAR(logicCenter), [], 0, "none"];
+		QGVAR(unit1) attachTo [GVAR(logicCenter), [0.5, 0, 0]];
+		QGVAR(unit1) setDir -15;
 	};
 
 	case 3: {
-		_unit attachTo [GVAR(logicCenter), [-0.5, 0, 0]];
-		_unit setDir 15;
+		QGVAR(unit2) = createVehicle [_unitCfg, getPos GVAR(logicCenter), [], 0, "none"];
+		QGVAR(unit2) attachTo [GVAR(logicCenter), [-0.5, 0, 0]];
+		QGVAR(unit2) setDir 15;
 	};
 
 	case 4: {
-		_unit attachTo [GVAR(logicCenter), [-1.5, 0, 0]];
-		_unit setDir 25;
+		QGVAR(unit3) = createVehicle [_unitCfg, getPos GVAR(logicCenter), [], 0, "none"];
+		QGVAR(unit3) attachTo [GVAR(logicCenter), [-1.5, 0, 0]];
+		QGVAR(unit3) setDir 25;
 	};
 };
 

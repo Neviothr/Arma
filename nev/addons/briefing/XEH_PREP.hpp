@@ -4,3 +4,4 @@ PREP(exitIFF);
 PREP(getFactions);
 PREP(getSides);
 PREP(updateFactions);
+PREP(updateUnits);
