@@ -2,10 +2,6 @@
 
 params ["_unitCfg", "_unitNumber"];
 
-diag_log "Running fnc_createUnit";
-diag_log format ["_unitCfg %1", _unitCfg];
-diag_log format ["_unitNumber %1", _unitNumber];
-
 if ((_unitCfg == "") || (typeName _unitNumber != "SCALAR"))  exitWith {diag_log "ERROR: either _unitCfg or _unitNumber are unvalid."};
 
 private _unit = createVehicle [_unitCfg, getPos GVAR(logicCenter), [], 0, "none"];

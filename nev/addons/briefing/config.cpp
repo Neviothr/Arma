@@ -25,7 +25,7 @@ class IFF {
 	duration = 1e6;
 
 	class Controls {
-		// Remove dead units and vehicle wreaks
+		// Close IFF viewer
 		class GVAR(exitButton): NevRscButton {
 			text = "Exit";
 			x = "SafeZoneX + (1700 / 1920) * SafeZoneW";
@@ -38,7 +38,7 @@ class IFF {
 		class GVAR(changeSideCombo): RscCombo {
 			idc = IDC_iffSideCombo;
 			x = "SafeZoneX + (50 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (25 / 1080) * SafeZoneH";
+			y = "SafeZoneY + (55 / 1080) * SafeZoneH";
 			w = "(250 / 1920) * SafeZoneW";
 			h = "(25 / 1080) * SafeZoneH";
 			type = CT_COMBO;
@@ -46,15 +46,41 @@ class IFF {
 			onLBSelChanged = QUOTE(_this call FUNC(updateFactions));
 		};
 
+		// Faction list box
 		class GVAR(changeFactionCombo): RscCombo {
 			idc = IDC_iffFactionCombo;
 			x = "SafeZoneX + (50 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (150 / 1080) * SafeZoneH";
+			y = "SafeZoneY + (275 / 1080) * SafeZoneH";
 			w = "(250 / 1920) * SafeZoneW";
 			h = "(25 / 1080) * SafeZoneH";
 			type = CT_COMBO;
 			style = ST_LEFT + LB_TEXTURES;
 			onLBSelChanged = QUOTE(_this call FUNC(updateUnits));
 		};
+
+		class GVAR(sideText): RscText {
+			x = "SafeZoneX + (50 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (25 / 1080) * SafeZoneH";
+			type = CT_STATIC;
+			style = ST_LEFT;
+			size = 0.037;
+			w = 0.1;
+			h = 0.05;
+			colorText[] = {1,1,1,1};
+			text = "SIDE:"
+		};
+
+		class GVAR(factionText): RscText {
+			x = "SafeZoneX + (50 / 1920) * SafeZoneW";
+			y = "SafeZoneY + (245 / 1080) * SafeZoneH";
+			type = CT_STATIC;
+			style = ST_LEFT;
+			size = 0.037;
+			w = 0.1;
+			h = 0.05;
+			colorText[] = {1,1,1,1};
+			text = "FACTION:"
+		};
+
 	};
 };
