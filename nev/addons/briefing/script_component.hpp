@@ -4,6 +4,7 @@
 #include "\x\nev\addons\main\script_macros.hpp"
 
 #define GET_FACTION_NUM(var) getNumber (configFile >> "CfgFactionClasses" >> var >> "side");
+#define FACTION_BLACKLIST ["rhs_faction_usaf", "rhs_faction_socom", "BLU_GEN_F", "BLU_G_F", "rhs_faction_usn", "rhsgref_faction_cdf_air_b", "rhsgref_faction_cdf_ng_b", "rhsgref_faction_cdf_ground_b", "rhs_faction_vvs", "rhs_faction_vv", "rhssaf_faction_airforce_opfor", "rhs_faction_rva", "rhs_faction_tv", "rhsgref_faction_cdf_air", "rhsgref_faction_un", "rhssaf_faction_airforce"]
 
 #define IDD_IFFDisplay 81000
 #define IDC_iffSideCombo 81001

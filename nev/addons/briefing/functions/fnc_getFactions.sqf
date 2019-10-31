@@ -6,10 +6,15 @@ private _allFactions = [];
 private _opforFactions = [];
 private _bluFactions = [];
 private _indFactions = [];
-private _civFactions = [];
 
 {
-	_allFactions pushBackUnique faction _x;
+	private _faction = faction _x;
+
+	if (_faction in FACTION_BLACKLIST) then {
+		diag_log format ["UNABLE TO ADD %1 TO FACTION LIST, IS BLACKLISTED", _faction];
+	} else {
+		_allFactions pushBackUnique _faction;
+	};
 } forEach allUnits;
 
 {
@@ -27,10 +32,6 @@ private _civFactions = [];
 		case 2: {
 			_indFactions pushBackUnique _x;
 		};
-
-		case 3: {
-			_civFactions pushBackUnique _x;
-		};
 	};
 } forEach _allFactions;
 
@@ -43,11 +44,7 @@ switch (_side) do {
 		_bluFactions
 	};
 
-	case "RESISTANCE": {
+	case "GUER": {
 		_indFactions
-	};
-
-	case "CIVILIAN": {
-		_civFactions
 	};
 };

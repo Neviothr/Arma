@@ -39,8 +39,8 @@ class IFF {
 			idc = IDC_iffSideCombo;
 			x = "SafeZoneX + (50 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (25 / 1080) * SafeZoneH";
-			w = "(135 / 1920) * SafeZoneW";
-			h = "(20 / 1080) * SafeZoneH";
+			w = "(250 / 1920) * SafeZoneW";
+			h = "(25 / 1080) * SafeZoneH";
 			type = CT_COMBO;
 			style = ST_LEFT + LB_TEXTURES;
 			onLBSelChanged = QUOTE(_this call FUNC(updateFactions));
@@ -50,8 +50,8 @@ class IFF {
 			idc = IDC_iffFactionCombo;
 			x = "SafeZoneX + (50 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (150 / 1080) * SafeZoneH";
-			w = "(135 / 1920) * SafeZoneW";
-			h = "(20 / 1080) * SafeZoneH";
+			w = "(250 / 1920) * SafeZoneW";
+			h = "(25 / 1080) * SafeZoneH";
 			type = CT_COMBO;
 			style = ST_LEFT + LB_TEXTURES;
 			onLBSelChanged = QUOTE(_this call FUNC(updateUnits));
