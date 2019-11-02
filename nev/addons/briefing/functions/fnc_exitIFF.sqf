@@ -11,3 +11,5 @@ GVAR(logicCenter) = nil;
 } forEach GVAR(iffUnits);
 
 GVAR(iffUnits) = nil;
+deleteVehicle GVAR(light);
+deleteVehicle GVAR(orb);

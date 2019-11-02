@@ -4,7 +4,7 @@ params ["_unitCfg", "_unitNumber"];
 
 if ((_unitCfg == "") || (typeName _unitNumber != "SCALAR"))  exitWith {diag_log "ERROR: either _unitCfg or _unitNumber are unvalid."};
 
-private _unit = createVehicle [_unitCfg, getPos GVAR(logicCenter), [], 0, "none"];
+private _unit = _unitCfg createVehicleLocal getPos GVAR(logicCenter);
 
 switch (_unitNumber) do {
 	case 1: {

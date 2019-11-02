@@ -3,9 +3,9 @@
 private _sides = [];
 
 {
-	private _side = side _x;
+	private _side = side group _x;
 
-	if ((str _side != "civ") || (str _side != "logic")) then {
+	if (str _side in ["WEST", "EAST", "GUER"]) then {
 		_sides pushBackUnique _side;
 	};
 } forEach allUnits;
