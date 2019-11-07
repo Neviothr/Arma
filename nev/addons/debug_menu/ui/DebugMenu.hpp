@@ -12,16 +12,6 @@ class GVAR(debugMenuDisplay) {
 			action = QUOTE({deleteVehicle _x} forEach allDead - GVAR(deadOnStart));
 		};
 
-		// Register Zeus
-		class GVAR(zeusButton): NevRscButton {
-			text = "Curator";
-			x = "SafeZoneX + (640 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (380 / 1080) * SafeZoneH";
-			action = QUOTE(\
-					 closeDialog 0;\
-					 [ARR_2(QQGVAR(registerCurator), player)] call CBA_fnc_serverEvent);
-		};
-
 		// BI VA
 		class GVAR(biVaButton): NevRscButton {
 			text = "BIS VA";
