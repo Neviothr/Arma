@@ -15,15 +15,3 @@ if (IS_ADMIN || (!isMultiplayer) || (isServer && hasInterface)) then {
 		}
 	];
 };
-
-// Debug info diary record
-player createDiarySubject [QGVAR(docs), "Debug Menu"];
-player createDiaryRecord [QGVAR(docs), ["FHQ Debug Info", "
-	<font face='RobotoCondensedBold' size='14'>Weather Effects
-	<br/>
-		<execute expression=""[FHQ_SandHandle, 'sandInterval', 1000] call FHQ_fnc_setWeatherEffect"">Disable sand</execute>
-		<br/>
-		<execute expression=""[FHQ_SnowHandle, 'snowInterval', 1000] call FHQ_fnc_setWeatherEffect"">Disable snow</execute>
-		<br/>
-		<execute expression=""[FHQ_FogHandle, 'fogInterval', 1000] call FHQ_fnc_setWeatherEffect"">Disable fog</execute>
-"]];

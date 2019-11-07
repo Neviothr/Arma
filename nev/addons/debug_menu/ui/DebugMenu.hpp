@@ -5,7 +5,7 @@ class GVAR(debugMenuDisplay) {
 	onLoad = QUOTE(call FUNC(onLoad));
 	class Controls {
 		// Remove dead units and vehicle wreaks
-		class GVAR(delDeadButton): NevRscButton {
+		class GVAR(removeDeadButton): NevRscButton {
 			text = "Remove dead";
 			x = "SafeZoneX + (640 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (310 / 1080) * SafeZoneH";
@@ -13,7 +13,7 @@ class GVAR(debugMenuDisplay) {
 		};
 
 		// BI VA
-		class GVAR(biVaButton): NevRscButton {
+		class GVAR(bisVaButton): NevRscButton {
 			text = "BIS VA";
 			x = "SafeZoneX + (360 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (275 / 1080) * SafeZoneH";
@@ -31,7 +31,7 @@ class GVAR(debugMenuDisplay) {
 		};
 
 		// Teleport
-		class GVAR(teleButton): NevRscButton {
+		class GVAR(teleportButton): NevRscButton {
 			text = "Teleport";
 			x = "SafeZoneX + (640 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (275 / 1080) * SafeZoneH";
@@ -41,7 +41,7 @@ class GVAR(debugMenuDisplay) {
 		};
 
 		// Spawn a group of set units
-		class GVAR(spawnGroupButton): NevRscButton {
+		class GVAR(spawnGroupsButton): NevRscButton {
 			text = "Spawn group(s)";
 			x = "SafeZoneX + (640 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (345 / 1080) * SafeZoneH";
@@ -63,13 +63,13 @@ class GVAR(debugMenuDisplay) {
 		};
 
 		// Repair the vehicle / heal
-		class GVAR(repairVehButton): NevRscButton {
+		class GVAR(repairVehicleButton): NevRscButton {
 			text = "Repair";
 			x = "SafeZoneX + (500 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (275 / 1080) * SafeZoneH";
 			action = "_target = [cursorTarget, vehicle player] select isNull cursorTarget;\
 					 [_target, 0] remoteExec ['setDamage', _target];\
-					 systemChat '[Debug Menu] The vehicle / unit has been repaired / healed'";
+					 systemChat '[Debug Menu] Object damage set to 0.'";
 			tooltip = "Repair / heal current vehicle / unit";
 		};
 
@@ -183,7 +183,7 @@ class GVAR(debugMenuDisplay) {
 			text = "Change date";
 			x = "SafeZoneX + (780 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (450 / 1080) * SafeZoneH";
-			action = "setDate [lbCurSel IDC_yearBox, lbCurSel IDC_monthBox, lbCurSel IDC_dayBox, lbCurSel IDC_hourBox, lbCurSel IDC_minuteBox]";
+			action = "[[lbCurSel IDC_yearBox, lbCurSel IDC_monthBox, lbCurSel IDC_dayBox, lbCurSel IDC_hourBox, lbCurSel IDC_minuteBox]] remoteExec ['setDate']";
 		};
 
 		// Side list box
@@ -226,7 +226,7 @@ class GVAR(debugMenuDisplay) {
 		};
 
 		// Randomize the environment
-		class GVAR(randomEnviButton): NevRscButton {
+		class GVAR(randomEnvironmentButton): NevRscButton {
 			text = "Random environment";
 			x = "SafeZoneX + (500 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (380 / 1080) * SafeZoneH";
@@ -235,7 +235,7 @@ class GVAR(debugMenuDisplay) {
 		};
 
 		// Refuel the vehicle
-		class GVAR(refuelVehButton): NevRscButton {
+		class GVAR(refuelVehicleButton): NevRscButton {
 			text = "Refuel";
 			x = "SafeZoneX + (500 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (310 / 1080) * SafeZoneH";
@@ -246,13 +246,13 @@ class GVAR(debugMenuDisplay) {
 		};
 
 		// Rearm the current vehicle
-		class GVAR(rearmVehButton): NevRscButton {
+		class GVAR(rearmVehicleButton): NevRscButton {
 			text = "Rearm";
 			x = "SafeZoneX + (500 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (345 / 1080) * SafeZoneH";
 			action = "_target = [cursorTarget, vehicle player] select isNull cursorTarget;\
 					 [_target, 1] remoteExec ['setVehicleAmmoDef', _target];\
-					 systemChat '[Debug Menu] The vehicle has been rearmed'"; // TODO: find alternetive for setVehicleAmmoDef as it's somewhat broken
+					 systemChat '[Debug Menu] The vehicle has been rearmed'";
 			tooltip = "Rearm the current vehicle";
 		};
 

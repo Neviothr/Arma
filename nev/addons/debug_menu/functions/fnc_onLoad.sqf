@@ -43,7 +43,7 @@ private _yearBox = _dialog displayCtrl IDC_yearBox;
 for "_year" from 1982 to 2050 do {
 	_yearBox lbAdd str _year;
 };
-_yearBox lbSetSelected [(date select 0), true];
+_yearBox lbSetCurSel (date select 0) - 1982;
 
 // Month combo box
 private _monthBox = _dialog displayCtrl IDC_monthBox;
@@ -59,28 +59,28 @@ _monthBox lbAdd "September";
 _monthBox lbAdd "October";
 _monthBox lbAdd "November";
 _monthBox lbAdd "December";
-_monthBox lbSetSelected [(date select 1), true];
+_monthBox lbSetCurSel ((date select 1) - 1);
 
 // Day combo box
 private _dayBox = _dialog displayCtrl IDC_dayBox;
 for "_day" from 1 to 31 do {
 	_dayBox lbAdd str _day;
 };
-_dayBox lbSetSelected [(date select 2), true];
+_dayBox lbSetCurSel ((date select 2) - 1);
 
 // Hour combo box
 private _hourBox = _dialog displayCtrl IDC_hourBox;
 for "_hour" from 0 to 23 do {
 	_hourBox lbAdd str _hour;
 };
-_hourBox lbSetSelected [(date select 3), true];
+_hourBox lbSetCurSel (date select 3);
 
 // Minute combo box
 private _minuteBox = _dialog displayCtrl IDC_minuteBox;
 for "_minute" from 0 to 59 do {
 	_minuteBox lbAdd str _minute;
 };
-_minuteBox lbSetSelected [(date select 4), true];
+_minuteBox lbSetCurSel (date select 4);
 
 // Side list box
 private _sideList = _dialog displayCtrl IDC_sideList;
