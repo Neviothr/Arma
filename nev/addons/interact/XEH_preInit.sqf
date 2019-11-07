@@ -1,6 +1,10 @@
 #include "script_component.hpp"
 
+ADDON = false;
+
+PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
+PREP_RECOMPILE_END;
 
 _insertChildren = {
     params ["_target", "_player", "_params"];
@@ -47,3 +51,5 @@ _cargoAction = [
 {
     [_x, 0, ["ACE_MainActions"], _cargoAction, true] call ace_interact_menu_fnc_addActionToClass;
 } forEach ["Tank", "Car", "Ship","Helicopter", "Plane", "ReammoBox_F"];
+
+ADDON = true;
