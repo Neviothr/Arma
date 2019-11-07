@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 set armakeEXE="C:\Users\Admin\Desktop\armake2.exe"
-set privateKey="E:\Steam\SteamApps\common\Arma 3 Tools\DSSignFile\nev.biprivatekey"
+set privateKey="E:\x\nev\keys\nev.biprivatekey"
 
 for /d %%f in (E:\x\nev\addons\*) do (
 
