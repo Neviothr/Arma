@@ -9,8 +9,7 @@ if (_side == "GUER") then {
     _side = "INDEP";
 };
 
-diag_log format ["_sideBox %1", _sideBox];
-diag_log format ["_side %1", _side];
+INFO_2("_sideBox - %1, _side - %2", _sideBox, _side);
 
 private _faction = _control lbText _selectedIndex;
 private _factionTypeCfg = str (configProperties [configFile >> "CfgGroups" >> _side >> _faction, "isClass _x"]);
@@ -18,21 +17,14 @@ private _factionTypesList = _factionTypeCfg splitString "\/,[]";
 private _factionType = "";
 
 _factionType = _factionTypesList select (_factionTypesList findIf {("infantry" in toLower _x) || ("spec" in toLower _x)});
-
-diag_log format ["_faction %1", _faction];
-diag_log format ["_factionTypeCfg %1", _factionTypeCfg];
-diag_log format ["_factionTypesList %1", _factionTypesList];
-diag_log format ["_factionType %1", _factionType];
+INFO_4("_faction - %1, _factionTypeCfg - %2, _factionTypesList - %3, _factionType - %4", _faction, _factionTypeCfg, _factionTypesList, _factionType);
 
 private _groupsCfg = str (configProperties [configFile >> "CfgGroups" >> _side >> _faction >> _factionType, "isClass _x"]);
 private _groupsList = _groupsCfg splitString "\/,[]";
 private _group = "";
 
 _group = _groupsList select (_groupsList findIf {(("inf" in toLower _x) || ("team" in toLower _x) || ("squad" in toLower _x) || ("cell" in toLower _x) || ("patrol" in toLower _x) || ("gang" in toLower _x)) && ("infantry" != toLower _x) && (_factionType != _x)});
-
-diag_log format ["_groupsCfg %1", _groupsCfg];
-diag_log format ["_groupsList %1", _groupsList];
-diag_log format ["_group %1", _group];
+INFO_3("_groupsCfg - %1, _groupsList - %2, _group - %3", _groupsCfg, _groupsList, _group);
 
 private _unitsToDelete = nearestObjects [GVAR(logicCenter), ["Man"], 10];
 

@@ -2,7 +2,7 @@
 
 params ["_unitCfg", "_unitNumber"];
 
-if ((_unitCfg == "") || (typeName _unitNumber != "SCALAR"))  exitWith {diag_log "ERROR: either _unitCfg or _unitNumber are unvalid."};
+if ((_unitCfg == "") || (typeName _unitNumber != "SCALAR"))  exitWith {INFO_2("Unable to create unit(s). _unitCfg - %1, _unitNumber - %2", _unitCfg, _unitNumber)};
 
 private _unit = _unitCfg createVehicleLocal getPos GVAR(logicCenter);
 
