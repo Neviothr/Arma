@@ -2,8 +2,6 @@
 
 params ["_control", "_selectedIndex"];
 
-diag_log "Running... fnc_updateUnits";
-
 private _sideBox = (findDisplay IDD_IFFDisplay) displayCtrl IDC_iffSideCombo;
 private _side = _sideBox lbText (lbCurSel _sideBox);
 
@@ -19,9 +17,7 @@ private _factionTypeCfg = str (configProperties [configFile >> "CfgGroups" >> _s
 private _factionTypesList = _factionTypeCfg splitString "\/,[]";
 private _factionType = "";
 
-{
-    if (("infantry" in toLower _x) || ("spec" in toLower _x)) exitWith {_factionType = _x};
-} ForEach _factionTypesList;
+_factionType = _factionTypesList select (_factionTypesList findIf {("infantry" in toLower _x) || ("spec" in toLower _x)});
 
 diag_log format ["_faction %1", _faction];
 diag_log format ["_factionTypeCfg %1", _factionTypeCfg];
@@ -30,17 +26,9 @@ diag_log format ["_factionType %1", _factionType];
 
 private _groupsCfg = str (configProperties [configFile >> "CfgGroups" >> _side >> _faction >> _factionType, "isClass _x"]);
 private _groupsList = _groupsCfg splitString "\/,[]";
-private _group = "ERROR";
+private _group = "";
 
-{
-    private _lowered = toLower _x;
-
-    if (
-        (("inf" in _lowered) || ("team" in _lowered) || ("squad" in _lowered) || ("cell" in _lowered) || ("patrol" in _lowered) || ("gang" in _lowered)) &&
-        ("infantry" != _lowered) &&
-        (_factionType != _x)
-    ) exitWith {_group = _x};
-} forEach _groupsList;
+_group = _groupsList select (_groupsList findIf {(("inf" in toLower _x) || ("team" in toLower _x) || ("squad" in toLower _x) || ("cell" in toLower _x) || ("patrol" in toLower _x) || ("gang" in toLower _x)) && ("infantry" != toLower _x) && (_factionType != _x)});
 
 diag_log format ["_groupsCfg %1", _groupsCfg];
 diag_log format ["_groupsList %1", _groupsList];
