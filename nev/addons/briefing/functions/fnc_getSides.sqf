@@ -10,4 +10,4 @@ private _sides = [];
     };
 } forEach allUnits;
 
-_sides
+_sides;

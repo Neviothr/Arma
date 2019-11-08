@@ -10,12 +10,14 @@ private _factions = [];
     if (_unitSide == _side) then {
         private _faction = faction _x;
 
-        if ((toLower _faction) in FACTION_BLACKLIST) then {
+        if (_faction in FACTION_BLACKLIST) then {
             INFO_1("Unable to add %1 to faction list, is blacklisted.", _faction);
         } else {
             _factions pushBackUnique _faction;
         };
     };
 } forEach allUnits;
+
+INFO_1("_factions - %1", _factions);
 
 _factions;
