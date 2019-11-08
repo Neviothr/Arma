@@ -5,6 +5,7 @@ class CfgVehicles {
             class ACE_MainActions;
         };
     };
+
     class StaticMortar: StaticWeapon {};
     class RHS_M252_Base: StaticMortar {
         class ACE_Actions: ACE_Actions {

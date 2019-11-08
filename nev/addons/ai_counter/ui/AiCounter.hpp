@@ -3,6 +3,7 @@ class RscTitles {
 		idd = IDD_aiCounter;
 		duration = 1e6;
 		onLoad = QUOTE(_this call FUNC(onLoad); uiNamespace setVariable [ARR_2(QQGVAR(aiCounterDisplay), _this select 0)]);
+
 		class controls {
 			class GVAR(aiCounterText): RscText {
 				idc = IDC_aiCounterText;

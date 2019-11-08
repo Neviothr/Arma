@@ -11,7 +11,7 @@ private _position = player getPos [50 * sqrt random 1, random 360];
 _position set [2, 75];
 
 private _parachute = createVehicle ["NonSteerable_Parachute_F", _position, [], 0, "FLY"];
-private _ammoBox = createVehicle ["C_IDAP_supplyCrate_F", [0,0,0], [], 0, "NONE"];
+private _ammoBox = createVehicle ["Box_Syndicate_Ammo_F", [0, 0, 0], [], 0, "NONE"];
 
 // Make sure our supply crate is empty
 clearItemCargoGlobal _ammoBox;

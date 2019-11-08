@@ -8,6 +8,7 @@ class Mode_SemiAuto {
     maxRange = 500;
     maxRangeProbab = 0.1;
 };
+
 class Mode_Burst: Mode_SemiAuto {
     aiRateOfFire = 1;
     aiRateOfFireDistance = 200;
@@ -18,6 +19,7 @@ class Mode_Burst: Mode_SemiAuto {
     maxRange = 250;
     maxRangeProbab = 0.1;
 };
+
 class Mode_FullAuto: Mode_SemiAuto {
     aiRateOfFire = 0.1;
     aiRateOfFireDistance = 50;
