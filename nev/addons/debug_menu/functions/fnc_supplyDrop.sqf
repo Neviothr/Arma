@@ -30,7 +30,7 @@ if (primaryWeapon _player != "") then {
 	private _primaryMags = [_primaryWpn, true] call CBA_fnc_compatibleMagazines;
 
 	{
-		_ammoBox addItemCargoGlobal [_x, 10];
+		_ammoBox addItemCargoGlobal [_x, 5];
 	} forEach _primaryMags;
 };
 
@@ -71,8 +71,7 @@ if !(handgunWeapon _player in _blacklistedHandguns) then {
 // Misc items
 _ammoBox addItemCargoGlobal ["FirstAidKit", 10];
 _ammoBox addItemCargoGlobal ["Medikit", 1];
-_ammoBox addItemCargoGlobal ["MiniGrenade", 5];
-_ammoBox addItemCargoGlobal ["HandGrenade", 5];
+_ammoBox addItemCargoGlobal ["HandGrenade", 10];
 
 private _smokeShell = selectRandom ["SmokeShellYellow", "SmokeShellRed", "SmokeShellBlue", "SmokeShellGreen", "SmokeShellOrange"];
 private _smoke = createVehicle [_smokeShell, [0, 0, 0], [], 0, "NONE"];

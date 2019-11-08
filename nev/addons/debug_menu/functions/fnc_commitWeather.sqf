@@ -4,31 +4,29 @@
 (fogParams) params ["_fogValue", "_fogDecay", "_fogBase"];
 
 switch (str _control) do {
-	// Overcast
 	case "Control #80001": {
-		// To say on the same date
 		skipTime -24;
 		86400 setOvercast _value;
 		skipTime 24;
+
+		simulWeatherSync;
+		forceWeatherChange;
 	};
-	case "Control #80002": {
-		// Fog value
-		0 setFog [_value, _fogDecay, _fogBase];
+
+	case "Control #80002": { // Fog value
+		[0, [_value, _fogDecay, _fogBase]] remoteExec ["setFog", 2];
 	};
-	case "Control #80003": {
-		// Fog decay
-		0 setFog [_fogValue, _value, _fogBase];
+
+	case "Control #80003": { // Fog decay
+		[0, [_fogValue, _value, _fogBase]] remoteExec ["setFog", 2];
 	};
-	case "Control #80004": {
-		// Fog base
-		0 setFog [_fogValue, _fogDecay, _value];
+
+	case "Control #80004": { // Fog base
+		[0, [_fogValue, _fogDecay, _value]] remoteExec ["setFog", 2];
 	};
+
 	case "Control #80005": {
-		// Rain
-		0 setRain _value;
+		[0, _value] remoteExec ["setRain", 2];
+		[] remoteExec ["forceWeatherChange", 2];
 	};
 };
-
-// Sync weather effects
-simulWeatherSync;
-forceWeatherChange;
