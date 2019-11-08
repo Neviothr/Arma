@@ -1,9 +1,9 @@
 class CfgSettings {
-	class CBA {
-		class Versioning {
-			class ADDON {
-			   main_addon = "nev_enhanced_launchers";
-			};
-		};
-	};
+    class CBA {
+        class Versioning {
+            class ADDON {
+               main_addon = "nev_enhanced_launchers";
+            };
+        };
+    };
 };

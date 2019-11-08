@@ -6,7 +6,7 @@ PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
-_insertChildren = {
+private _insertChildren = {
     params ["_target", "_player", "_params"];
 
     // Create a list of boxes and vehicles within 20m of _target
@@ -39,7 +39,7 @@ _insertChildren = {
     _actions
 };
 
-_cargoAction = [
+private _cargoAction = [
     "TransferCargo",
     "Transfer Cargo",
     "a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa",

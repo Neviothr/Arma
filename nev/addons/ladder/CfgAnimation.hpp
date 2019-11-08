@@ -1,3 +1,3 @@
 class CfgAnimation {
-	ladderSpeed="0.5 * 2";
+    ladderSpeed = "0.5 * 2";
 };

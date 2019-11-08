@@ -41,7 +41,7 @@ _wavesSlider sliderSetPosition waves;
 // Year combo box
 private _yearBox = _dialog displayCtrl IDC_yearBox;
 for "_year" from 1982 to 2050 do {
-	_yearBox lbAdd str _year;
+    _yearBox lbAdd str _year;
 };
 _yearBox lbSetCurSel (date select 0) - 1982;
 
@@ -64,21 +64,21 @@ _monthBox lbSetCurSel ((date select 1) - 1);
 // Day combo box
 private _dayBox = _dialog displayCtrl IDC_dayBox;
 for "_day" from 1 to 31 do {
-	_dayBox lbAdd str _day;
+    _dayBox lbAdd str _day;
 };
 _dayBox lbSetCurSel ((date select 2) - 1);
 
 // Hour combo box
 private _hourBox = _dialog displayCtrl IDC_hourBox;
 for "_hour" from 0 to 23 do {
-	_hourBox lbAdd str _hour;
+    _hourBox lbAdd str _hour;
 };
 _hourBox lbSetCurSel (date select 3);
 
 // Minute combo box
 private _minuteBox = _dialog displayCtrl IDC_minuteBox;
 for "_minute" from 0 to 59 do {
-	_minuteBox lbAdd str _minute;
+    _minuteBox lbAdd str _minute;
 };
 _minuteBox lbSetCurSel (date select 4);
 
@@ -97,33 +97,33 @@ _sideList lbSetColor [3, [0.425, 0.125, 0.5, 1]]; // Civilian
 
 // Disable global, server code execution buttons if mode is SP
 if !(isMultiplayer) then {
-	private _execGlobalButton = _dialog displayCtrl IDC_execGlobalButton;
-	private _execServerButton = _dialog displayCtrl IDC_execServerButton;
-	_execGlobalButton ctrlEnable false;
-	_execServerButton ctrlEnable false;
+    private _execGlobalButton = _dialog displayCtrl IDC_execGlobalButton;
+    private _execServerButton = _dialog displayCtrl IDC_execServerButton;
+    _execGlobalButton ctrlEnable false;
+    _execServerButton ctrlEnable false;
 };
 
 // Mission info
 private _missionInfo = _dialog displayCtrl IDC_missionInfo;
 _missionInfo ctrlSetStructuredText parseText format [
-	"<t size = '1' font = 'RobotoCondensedBold' color='#ffffff' align = 'left'>
-	%1 on %2
-	<br/>
-	Active SQF: %3
-	<br/>
-	Active FSM: %4
-	<br/>
-	Pos: %5
-	<br/>
-	Time: %6m
-	<br/>
-	Cursor Object: %7
-	</t>",
-	missionName call CBA_fnc_decodeURL,
-	worldName,
-	(diag_activeScripts select 0) + (diag_activeScripts select 1) + (diag_activeScripts select 2),
-	diag_activeScripts select 3,
-	getPos player apply {floor _x},
-	floor (time / 60),
-	["NULL-Object", format ["%1 (%2)", typeOf cursorObject, cursorObject]] select (!isNull cursorObject)
+    "<t size = '1' font = 'RobotoCondensedBold' color='#ffffff' align = 'left'>
+    %1 on %2
+    <br/>
+    Active SQF: %3
+    <br/>
+    Active FSM: %4
+    <br/>
+    Pos: %5
+    <br/>
+    Time: %6m
+    <br/>
+    Cursor Object: %7
+    </t>",
+    missionName call CBA_fnc_decodeURL,
+    worldName,
+    (diag_activeScripts select 0) + (diag_activeScripts select 1) + (diag_activeScripts select 2),
+    diag_activeScripts select 3,
+    getPos player apply {floor _x},
+    floor (time / 60),
+    ["NULL-Object", format ["%1 (%2)", typeOf cursorObject, cursorObject]] select (!isNull cursorObject)
 ];

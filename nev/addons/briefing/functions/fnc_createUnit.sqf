@@ -7,29 +7,29 @@ if ((_unitCfg == "") || (typeName _unitNumber != "SCALAR"))  exitWith {diag_log 
 private _unit = _unitCfg createVehicleLocal getPos GVAR(logicCenter);
 
 switch (_unitNumber) do {
-	case 1: {
-		_unit attachTo [GVAR(logicCenter), [1.5, 0, 0]];
-		_unit setDir -25;
-	};
+    case 1: {
+        _unit attachTo [GVAR(logicCenter), [1.5, 0, 0]];
+        _unit setDir -25;
+    };
 
-	case 2: {
-		_unit attachTo [GVAR(logicCenter), [0.5, 0, 0]];
-		_unit setDir -15;
-	};
+    case 2: {
+        _unit attachTo [GVAR(logicCenter), [0.5, 0, 0]];
+        _unit setDir -15;
+    };
 
-	case 3: {
-		_unit attachTo [GVAR(logicCenter), [-0.5, 0, 0]];
-		_unit setDir 15;
-	};
+    case 3: {
+        _unit attachTo [GVAR(logicCenter), [-0.5, 0, 0]];
+        _unit setDir 15;
+    };
 
-	case 4: {
-		_unit attachTo [GVAR(logicCenter), [-1.5, 0, 0]];
-		_unit setDir 25;
-	};
+    case 4: {
+        _unit attachTo [GVAR(logicCenter), [-1.5, 0, 0]];
+        _unit setDir 25;
+    };
 };
 
 GVAR(iffUnits) pushBack _unit;
 
 {
-	_unit disableAI _x;
+    _unit disableAI _x;
 } forEach ["TARGET", "AUTOTARGET", "MOVE", "ANIM", "TEAMSWITCH", "FSM", "WEAPONAIM", "COVER", "AUTOCOMBAT", "PATH", "MINEDETECTION", "NVG", "LIGHTS", "RADIOPROTOCOL"];

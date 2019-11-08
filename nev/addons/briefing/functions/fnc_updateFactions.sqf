@@ -9,5 +9,5 @@ private _factionBox = (findDisplay IDD_IFFDisplay) displayCtrl IDC_iffFactionCom
 lbClear _factionBox;
 
 {
-	_factionBox lbAdd _x;
+    _factionBox lbAdd _x;
 } forEach _factions;

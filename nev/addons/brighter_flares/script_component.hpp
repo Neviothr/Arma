@@ -7,7 +7,7 @@
 #include "\x\nev\addons\main\script_macros.hpp"
 
 #define BRIGHTER_FLARE_CONFIG \
-	timeToLive = 40; \
-	brightness = 4000; \
-	intensity  = 5000000; \
-	coefGravity = 0.25;
+    timeToLive = 40; \
+    brightness = 4000; \
+    intensity  = 5000000; \
+    coefGravity = 0.25;

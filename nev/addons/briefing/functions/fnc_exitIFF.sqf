@@ -7,7 +7,7 @@ camDestroy GVAR(camera);
 GVAR(logicCenter) = nil;
 
 {
-	deleteVehicle _x;
+    deleteVehicle _x;
 } forEach GVAR(iffUnits);
 
 GVAR(iffUnits) = nil;

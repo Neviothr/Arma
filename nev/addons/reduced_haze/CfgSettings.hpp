@@ -1,9 +1,9 @@
 class CfgSettings {
-	class CBA {
-		class Versioning {
-			class ADDON {
-			   main_addon = "nev_reduced_haze";
-			};
-		};
-	};
+    class CBA {
+        class Versioning {
+            class ADDON {
+               main_addon = "nev_reduced_haze";
+            };
+        };
+    };
 };

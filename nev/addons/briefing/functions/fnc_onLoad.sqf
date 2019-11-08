@@ -40,5 +40,5 @@ private _sides = call FUNC(getSides);
 private _sideBox = _dialog displayCtrl IDC_iffSideCombo;
 
 {
-	_sideBox lbAdd str _x;
+    _sideBox lbAdd str _x;
 } forEach _sides;

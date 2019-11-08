@@ -1,6 +1,6 @@
 class CfgVehicles {
-	class LandVehicle;
-	class StaticWeapon: LandVehicle {
+    class LandVehicle;
+    class StaticWeapon: LandVehicle {
         class ACE_Actions {
             class ACE_MainActions;
         };
