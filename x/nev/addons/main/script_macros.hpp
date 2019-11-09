@@ -1,5 +1,5 @@
-#include "\z\cba\addons\main\script_macros_common.hpp"
-#include "\z\cba\addons\xeh\script_xeh.hpp"
+#include "script_macros_common.hpp"
+#include "script_xeh.hpp"
 
 #define DFUNC(var1) TRIPLES(ADDON,fnc,var1)
 #ifdef DISABLE_COMPILE_CACHE
@@ -10,4 +10,4 @@
     #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
 #endif
 
-#include "\z\ace\addons\main\script_debug.hpp"
+#include "script_debug.hpp"
