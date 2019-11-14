@@ -2,7 +2,7 @@
 
 params ["_unit"];
 
-if !(isDamageAllowed _unit) exitWith {};
+if (!(isDamageAllowed _unit) || !(local _unit)) exitWith {};
 
 private _pain = damage _unit;
 

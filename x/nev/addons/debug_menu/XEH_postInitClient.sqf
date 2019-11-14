@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-if (hasInterface) then {
+if (IS_ADMIN || (isServer && hasInterface)) then {
     player addAction [
         "<t color = '#228B25'>Debug Menu",
         {

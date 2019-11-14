@@ -8,7 +8,7 @@
     "debug_menu_key",
     "Open debug menu",
     {
-        if (hasInterface && !dialog) then {
+        if ((IS_ADMIN || (isServer && hasInterface)) && !dialog) then {
             createDialog QGVAR(debugMenuDisplay);
         };
 
