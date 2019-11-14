@@ -1,4 +1,4 @@
-#define COMPONENT rhs_turret_servo_sound
+#define COMPONENT rhs_tanks
 
 #include "\x\nev\addons\main\script_mod.hpp"
 
