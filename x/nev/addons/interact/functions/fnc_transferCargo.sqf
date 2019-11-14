@@ -20,7 +20,3 @@ clearBackpackCargoGlobal _target;
 {
     _vehicle addBackpackCargoGlobal [_x, 1];
 } forEach _backpacks;
-
-private _notificationText = format ["Transfering cargo from %1 to %2", _vehicle, _target];
-
-[["\a3\ui_f\data\igui\cfg\simpletasks\types\rearm_ca.paa"], [_notificationText]] call CBA_fnc_notify;
