@@ -12,5 +12,4 @@ class CfgPatches {
     };
 };
 
-#include "CfgSettings.hpp"
 #include "CfgSurfaces.hpp"

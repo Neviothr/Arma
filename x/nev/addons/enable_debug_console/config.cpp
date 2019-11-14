@@ -14,5 +14,3 @@ class CfgPatches {
 
 enableDebugConsole = 2;
 enableTargetDebug = 1;
-
-#include "CfgSettings.hpp"

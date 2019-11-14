@@ -13,4 +13,3 @@ class CfgPatches {
 };
 
 #include "CfgAmmo.hpp"
-#include "CfgSettings.hpp"

@@ -2,9 +2,6 @@
 
 params ["_unit"];
 
-if !(isDamageAllowed _unit) exitWith {};
-if !(local _unit) exitWith {};
-
 private _pain = damage _unit;
 
 // Lock if the unit is already playing a sound.

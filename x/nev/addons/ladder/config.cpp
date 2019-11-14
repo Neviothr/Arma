@@ -12,6 +12,5 @@ class CfgPatches {
     };
 };
 
-#include "CfgSettings.hpp"
 #include "CfgMovesBasic.hpp"
 #include "CfgAnimation.hpp"

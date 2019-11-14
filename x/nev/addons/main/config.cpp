@@ -76,4 +76,3 @@ class CfgPatches {
 };
 
 #include "CfgMods.hpp"
-#include "CfgSettings.hpp"

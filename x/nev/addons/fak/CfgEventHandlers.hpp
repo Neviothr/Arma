@@ -4,6 +4,7 @@ class Extended_PreInit_EventHandlers {
     };
 };
 
+// HandleDamage XEH is not supported by CBA
 class Extended_InitPost_EventHandlers {
     class CAManBase {
         class GVAR(addHandleDamage) {

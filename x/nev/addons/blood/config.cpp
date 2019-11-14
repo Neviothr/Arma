@@ -14,5 +14,4 @@ class CfgPatches {
 
 #include "CfgCloudlets.hpp"
 #include "CfgEventhandlers.hpp"
-#include "CfgSettings.hpp"
 #include "ImpactEffectsBlood.hpp"

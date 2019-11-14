@@ -13,4 +13,3 @@ class CfgPatches {
 };
 
 #include "CfgBrains.hpp"
-#include "CfgSettings.hpp"
