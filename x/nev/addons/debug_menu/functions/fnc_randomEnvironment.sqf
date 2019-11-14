@@ -28,5 +28,3 @@ skipTime 24;
 
 simulWeatherSync;
 forceWeatherChange;
-
-[["\a3\modules_f_curator\data\portraitweather_ca.paa"], ["Randomizing environment."]] call CBA_fnc_notify;

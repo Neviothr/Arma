@@ -1,8 +1,6 @@
 #include "script_component.hpp"
 
-if (!hasInterface) exitWith {};
-
-if (IS_ADMIN || (!isMultiplayer) || (isServer && hasInterface)) then {
+if (hasInterface) then {
     player addAction [
         "<t color = '#228B25'>Debug Menu",
         {

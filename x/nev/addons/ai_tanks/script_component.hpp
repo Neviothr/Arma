@@ -9,12 +9,12 @@
 #define ENHANCED_IFV \
     allowAgainstInfantry = 1; \
     aiAmmoUsageFlags = "64 + 128 + 256 + 512"; \
-    cost = 1;
+    cost = 1
 
 #define ENHANCED_TANK \
     allowAgainstInfantry = 1; \
     aiAmmoUsageFlags = "64 + 128 + 256 + 512"; \
-    cost = 1;
+    cost = 1
 
 #define ENHANCED_MODES \
     class player; \
@@ -26,4 +26,4 @@
     }; \
     class medium: close { \
         minRangeProbab = 0.85; \
-    };
+    }

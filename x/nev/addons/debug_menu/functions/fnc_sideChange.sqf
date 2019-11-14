@@ -22,5 +22,3 @@ private _dummyGroup = createGroup _dummySide; // Create an empty group on choose
 
 // Join the player to created group, with any message
 [player] joinSilent _dummyGroup;
-
-systemChat format ["[Debug Menu] Changing side to %1.", _dummySide];

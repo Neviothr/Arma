@@ -12,6 +12,6 @@ class CfgPatches {
     };
 };
 
-#include "CfgEventhandlers.hpp"
+#include "CfgEventHandlers.hpp"
 #include "\x\nev\addons\main\ui\BaseDefines.hpp"
 #include "\x\nev\addons\briefing\ui\IFF.hpp"

@@ -12,5 +12,3 @@ if (count _safePos == 3) exitWith {
     _safePos set [2, 0];
     _unit setPosATL _safePos;
 };
-
-[["\a3\modules_f\data\portraitrespawn_ca.paa"], ["Resetting position."]] call CBA_fnc_notify;

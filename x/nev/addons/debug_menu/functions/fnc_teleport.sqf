@@ -12,5 +12,5 @@ addMissionEventHandler ["MapSingleClick", {
 
     vehicle player setPos _pos;
     openMap [false, false];
-    removeMissionEventHandler ["MapSingleClick", _thisEventhandler]; // Remove EH to allow compatablity with custom waypoint in a3_overrides
+    removeMissionEventHandler ["MapSingleClick", _thisEventhandler];
 }];

@@ -1,19 +1,4 @@
 #include "script_component.hpp"
-/*
- * Author: PabstMirror
- * Handles cleaning up blood objects that have reached the end of their lifetime.
- *
- * Arguments:
- * None
- *
- * Return Value:
- * None
- *
- * Example:
- * [] call ace_medical_blood_fnc_cleanupLoop
- *
- * Public: No
- */
 
 (GVAR(bloodDrops) deleteAt 0) params ["", "_deletedBloodDrop"];
 deleteVehicle _deletedBloodDrop;

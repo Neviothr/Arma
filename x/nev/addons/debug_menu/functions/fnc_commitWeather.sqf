@@ -14,19 +14,19 @@ switch (str _control) do {
     };
 
     case "Control #80002": { // Fog value
-        [0, [_value, _fogDecay, _fogBase]] remoteExec ["setFog", 2];
+        0 setFog [_value, _fogDecay, _fogBase];
     };
 
     case "Control #80003": { // Fog decay
-        [0, [_fogValue, _value, _fogBase]] remoteExec ["setFog", 2];
+        0 setFog [_fogValue, _value, _fogBase];
     };
 
     case "Control #80004": { // Fog base
-        [0, [_fogValue, _fogDecay, _value]] remoteExec ["setFog", 2];
+        0 setFog [_fogValue, _fogDecay, _value];
     };
 
     case "Control #80005": {
-        [0, _value] remoteExec ["setRain", 2];
-        [] remoteExec ["forceWeatherChange", 2];
+        0 setRain;
+        forceWeatherChange;
     };
 };

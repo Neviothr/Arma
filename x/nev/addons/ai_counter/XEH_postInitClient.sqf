@@ -2,7 +2,7 @@
 
 if (!hasInterface) exitWith {};
 
-if (IS_ADMIN || (!isMultiplayer) || (isServer && hasInterface)) then {
+if (hasInterface) then {
     // Using CBA_fnc_waitUntilAndExecute because we can't suspend this script
     [
         {!isNull (findDisplay 46)}, // Condition, wait for RscDisplayMission
