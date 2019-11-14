@@ -10,4 +10,4 @@
     class MainTurret: MainTurret { \
         soundServo[] = {"A3\Sounds_F\vehicles\armor\noises\servo_armor_gunner", 0.31622776, 1.0, 30}; \
     }; \
-};
+}

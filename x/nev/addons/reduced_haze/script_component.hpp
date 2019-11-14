@@ -8,4 +8,4 @@
 
 #define REDUCED_HAZE \
     hazeBaseBeta0 = 2.9999998e-005; \
-    HazeDensityDecay = 0.000125;
+    HazeDensityDecay = 0.000125

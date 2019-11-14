@@ -107,7 +107,6 @@ class RscHTML;
 class RscButtonMenuOk;
 class RscButtonMenuCancel;
 
-// Button
 class NevRscButton: RscButton {
 	type = CT_BUTTON;
 	style = ST_CENTER;
@@ -115,7 +114,6 @@ class NevRscButton: RscButton {
 	h = "(30 / 1080) * SafeZoneH";
 };
 
-// Slider
 class NevRscSlider: RscSlider {
 	color[] = {1, 1, 1, 0.4};
 	colorActive[] = {1 ,1, 1, 1};
