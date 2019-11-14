@@ -26,7 +26,7 @@ switch (str _control) do {
     };
 
     case "Control #80005": {
-        0 setRain;
+        0 setRain _value;
         forceWeatherChange;
     };
 };
