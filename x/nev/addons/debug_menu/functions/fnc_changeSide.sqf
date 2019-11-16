@@ -1,26 +1,10 @@
 #include "script_component.hpp"
 
-params ["_control", "_index"];
+params ["", "_index"];
 
-// Pick dummy side based on listbox's index
-switch (_index) do {
-    case 0: {
-        private _dummySide = east;
-    };
-    case 1: {
-        private _dummySide = west;
-    };
-    case 2: {
-        private _dummySide = resistance;
-    };
-    case 3: {
-        private _dummySide = civilian;
-    };
-};
+private _side = [east, west, independent, civilian] select _index;
+private _group = createGroup _side;
 
-private _dummyGroup = createGroup _dummySide; // Create an empty group on choosen side
+[player] joinSilent _group;
 
-// Join the player to created group, with any message
-[player] joinSilent _dummyGroup;
-
-systemChat format ["Changing side to %1", _dummySide];
+systemChat format ["Changing side to %1.", _side];
