@@ -11,7 +11,7 @@ private _isFullMoon = false;
 
 if (_hour > 18 || _hour < 6) then {
     _isFullMoon = true;
-    _date = selectRandom ([_date select 0] call FUNC(fullMoonDates));
+    _date = selectRandom ([_date select 0] call FUNC(getFullMoonDates));
 };
 
 setDate _date;

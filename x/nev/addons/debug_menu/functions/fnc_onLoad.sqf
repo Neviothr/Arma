@@ -2,40 +2,35 @@
 
 params ["_dialog"];
 
-// Find slider, set it's range, get current weather, set slider accordingly
-// Overcast slider
+// Find slider, set its value according to weather
 private _overcastSlider = _dialog displayCtrl IDC_overcastSlider;
-_overcastSlider sliderSetRange [0, 1];
 _overcastSlider sliderSetPosition overcast;
 
-// Lightnings slider
-private _lightningSlider = _dialog displayCtrl IDC_lightningSlider;
-_lightningSlider sliderSetRange [0, 1];
-_lightningSlider sliderSetPosition lightnings;
-
-// Fog value slider
 private _fogValueSlider = _dialog displayCtrl IDC_fogValueSlider;
-_fogValueSlider sliderSetRange [0, 1];
 _fogValueSlider sliderSetPosition (fogParams select 0);
 
-// Fog decay slider
 private _fogDecaySlider = _dialog displayCtrl IDC_fogDecaySlider;
-_fogDecaySlider sliderSetRange [0, 1];
 _fogDecaySlider sliderSetPosition (fogParams select 1);
 
-// Fog base slider
 private _fogBaseSlider = _dialog displayCtrl IDC_fogBaseSlider;
-_fogBaseSlider sliderSetRange [0, 1];
 _fogBaseSlider sliderSetPosition (fogParams select 2);
 
-// Rain slider
 private _rainSlider = _dialog displayCtrl IDC_rainSlider;
-_rainSlider sliderSetRange [0, 1];
 _rainSlider sliderSetPosition rain;
 
-// Waves slider
-private _wavesSlider = _dialog displayCtrl IDC_waveSlider;
-_wavesSlider sliderSetRange [0, 1];
+private _gustsSlider = _dialog displayCtrl IDC_gustsSlider;
+_gustsSlider sliderSetPosition gusts;
+
+private _windDirSlider = _dialog displayCtrl IDC_windDirSlider;
+_windDirSlider sliderSetPosition windDir;
+
+private _windStrSlider = _dialog displayCtrl IDC_windStrSlider;
+_windStrSlider sliderSetPosition windStr;
+
+private _lightningsSlider = _dialog displayCtrl IDC_lightningsSlider;
+_lightningsSlider sliderSetPosition lightnings;
+
+private _wavesSlider = _dialog displayCtrl IDC_wavesSlider;
 _wavesSlider sliderSetPosition waves;
 
 // Year combo box
