@@ -8,7 +8,7 @@ systemChat "[Debug Menu] Choose location...";
 openMap [true, true];
 
 addMissionEventHandler ["MapSingleClick", {
-    params ["_units", "_pos", "_alt", "_shift"];
+    params ["", "_pos"];
 
     {
 		_x setPos _pos;

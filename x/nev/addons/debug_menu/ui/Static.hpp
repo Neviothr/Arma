@@ -2,7 +2,7 @@
     x = "SafeZoneX + (355 / 1920) * SafeZoneW";
     y = "SafeZoneY + (130 / 1080) * SafeZoneH";
     w = "(850 / 1920) * SafeZoneW";
-    h = "(565 / 1080) * SafeZoneH";
+    h = "(580 / 1080) * SafeZoneH";
     type = CT_STATIC;
     style = ST_FRAME;
     sizeEx = 0.05;

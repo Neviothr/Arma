@@ -17,7 +17,7 @@ class GVAR(debugMenuDisplay) {
             x = "SafeZoneX + (640 / 1920) * SafeZoneW";
             y = "SafeZoneY + (345 / 1080) * SafeZoneH";
             action = QUOTE([ARR_5(GVAR(minDistance), GVAR(maxDistance), GVAR(groupSide), GVAR(groupArray), GVAR(unitCode))] call FUNC(spawnGroup));
-            tooltip = "Spawn preset group(s)";
+            tooltip = "Spawn preset group(s).";
         };
 
         class GVAR(sideList): RscCombo {
@@ -36,27 +36,21 @@ class GVAR(debugMenuDisplay) {
             text = "Repair / Heal";
             x = "SafeZoneX + (500 / 1920) * SafeZoneW";
             y = "SafeZoneY + (275 / 1080) * SafeZoneH";
-            action = "_target = [cursorTarget, vehicle player] select isNull cursorTarget; [_target, 0] remoteExec ['setDamage', _target]; systemChat '[Debug Menu] Object damage set to 0.'";
+            action = QUOTE(_this call FUNC(repair));
         };
 
         class GVAR(refuelButton): NevRscButton {
             text = "Refuel";
             x = "SafeZoneX + (500 / 1920) * SafeZoneW";
             y = "SafeZoneY + (310 / 1080) * SafeZoneH";
-            action = "_target = [cursorTarget, vehicle player] select isNull cursorTarget;\
-                     [_target, 1] remoteExec ['setFuel', _target];\
-                     systemChat '[Debug Menu] The vehicle has been refuled'";
-            tooltip = "Refuel the current vehicle";
+            action = QUOTE(_this call FUNC(refuel));
         };
 
         class GVAR(rearmButton): NevRscButton {
             text = "Rearm";
             x = "SafeZoneX + (500 / 1920) * SafeZoneW";
             y = "SafeZoneY + (345 / 1080) * SafeZoneH";
-            action = "_target = [cursorTarget, vehicle player] select isNull cursorTarget;\
-                     [_target, 1] remoteExec ['setVehicleAmmoDef', _target];\
-                     systemChat '[Debug Menu] The vehicle has been rearmed'";
-            tooltip = "Rearm the current vehicle";
+            action = QUOTE(_this call FUNC(rearm));
         };
 
         class GVAR(supplyDropButton): NevRscButton {
