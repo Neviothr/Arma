@@ -3,4 +3,4 @@
 private _target = [cursorTarget, vehicle player] select isNull cursorTarget;
 
 [_target, 1] remoteExec ["setVehicleAmmoDef", _target];\
-systemChat "[Debug Menu] The vehicle has been rearmed.;
+systemChat "[Debug Menu] The vehicle has been rearmed.";
