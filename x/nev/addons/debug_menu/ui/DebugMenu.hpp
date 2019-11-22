@@ -7,9 +7,10 @@ class GVAR(debugMenuDisplay) {
     class Controls {
         #include "Date.hpp"
         #include "DebugConsole.hpp"
-        #include "Misc.hpp"
+        #include "Mission.hpp"
         #include "Static.hpp"
         #include "Teleportation.hpp"
+        #include "Tools.hpp"
         #include "Vehicle.hpp"
         #include "VirtualArsenal.hpp"
         #include "Visability.hpp"
