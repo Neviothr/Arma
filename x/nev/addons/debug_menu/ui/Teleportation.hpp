@@ -11,3 +11,10 @@ class GVAR(groupTeleportButton): NevRscButton {
     y = "SafeZoneY + (310 / 1080) * SafeZoneH";
     action = QUOTE(closeDialog 0; call FUNC(groupTeleport));
 };
+
+class GVAR(resetPosButton): NevRscButton {
+    text = "Reset Pos";
+    x = "SafeZoneX + (640 / 1920) * SafeZoneW";
+    y = "SafeZoneY + (380 / 1080) * SafeZoneH";
+    action = QUOTE(ARR_1([player]) call FUNC(resetPosition));
+};

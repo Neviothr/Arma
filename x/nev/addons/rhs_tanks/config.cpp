@@ -12,5 +12,4 @@ class CfgPatches {
     };
 };
 
-#include "CfgSoundShaders.hpp"
 #include "CfgVehicles.hpp"

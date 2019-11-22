@@ -20,15 +20,8 @@ class GVAR(rearmButton): NevRscButton {
 };
 
 class GVAR(deleteButton): NevRscButton {
-    text = "Delte";
+    text = "Delete";
     x = "SafeZoneX + (780 / 1920) * SafeZoneW";
     y = "SafeZoneY + (590 / 1080) * SafeZoneH";
     action = "deleteVehicle cursorObject";
-};
-
-class GVAR(utlisButton): NevRscButton {
-    text = "Utils";
-    x = "SafeZoneX + (780 / 1920) * SafeZoneW";
-    y = "SafeZoneY + (625 / 1080) * SafeZoneH";
-    action = "utils";
 };
