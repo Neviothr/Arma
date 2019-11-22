@@ -44,12 +44,12 @@ class GVAR(createAceZeusButton): NevRscButton {
     text = "Create ACE Zeus";
     x = "SafeZoneX + (780 / 1920) * SafeZoneW";
     y = "SafeZoneY + (625 / 1080) * SafeZoneH";
-    action = "ace_zeus_zeus = objNull; [""ace_zeus_createZeus"", player] call CBA_fnc_serverEvent";
+    action = "ace_zeus_zeus = objNull; ['ace_zeus_createZeus', player] call CBA_fnc_serverEvent";
 };
 
 class GVAR(utilsButton): NevRscButton {
     text = "Utils";
     x = "SafeZoneX + (780 / 1920) * SafeZoneW";
     y = "SafeZoneY + (660 / 1080) * SafeZoneH";
-    action = "[] execVM ""A3\functions_f\debug\utilities\lib\index.sqf""";
+    action = "[] execVM 'A3\functions_f\debug\utilities\lib\index.sqf'";
 };
