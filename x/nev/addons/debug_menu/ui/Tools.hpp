@@ -38,3 +38,17 @@ class GVAR(createAceZeusButton): NevRscButton {
     y = "SafeZoneY + (625 / 1080) * SafeZoneH";
     action = "ace_zeus_zeus = objNull; ['ace_zeus_createZeus', player] call CBA_fnc_serverEvent";
 };
+
+class GVAR(setMedicButton): NevRscButton {
+    text = "Set Medic";
+    x = "SafeZoneX + (1200 / 1920) * SafeZoneW";
+    y = "SafeZoneY + (310 / 1080) * SafeZoneH";
+    action = QUOTE(call FUNC(setMedic));
+};
+
+class GVAR(setEngineerButton): NevRscButton {
+    text = "Set Engineer";
+    x = "SafeZoneX + (1200 / 1920) * SafeZoneW";
+    y = "SafeZoneY + (345 / 1080) * SafeZoneH";
+    action = QUOTE(call FUNC(setEngineer));
+};

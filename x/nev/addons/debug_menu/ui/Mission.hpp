@@ -15,7 +15,7 @@ class GVAR(supplyDropButton): NevRscButton {
 
 class GVAR(enableSavingButton): NevRscButton {
     text = "Enable Saving";
-    x = "SafeZoneX + (120 / 1920) * SafeZoneW";
+    x = "SafeZoneX + (1200 / 1920) * SafeZoneW";
     y = "SafeZoneY + (275 / 1080) * SafeZoneH";
     action = "enableSaving [true, true]";
 };

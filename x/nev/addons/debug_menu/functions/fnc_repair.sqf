@@ -3,4 +3,4 @@
 private _target = [cursorTarget, vehicle player] select isNull cursorTarget;
 
 [_target, 0] remoteExec ["setDamage", _target];
-systemChat "[Debug Menu] Object damage set to 0.";
+systemChat format ["[Debug Menu] %1 damage set to 0.", _target];
