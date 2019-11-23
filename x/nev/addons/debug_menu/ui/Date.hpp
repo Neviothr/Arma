@@ -57,5 +57,5 @@ class GVAR(commitDateButton): NevRscButton {
     text = "Change Date";
     x = "SafeZoneX + (780 / 1920) * SafeZoneW";
     y = "SafeZoneY + (450 / 1080) * SafeZoneH";
-    action = "[[lbCurSel IDC_yearBox, lbCurSel IDC_monthBox, lbCurSel IDC_dayBox, lbCurSel IDC_hourBox, lbCurSel IDC_minuteBox]] remoteExec ['setDate']";
+    action = QUOTE(call FUNC(setDate));
 };

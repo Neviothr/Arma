@@ -93,5 +93,4 @@ class GVAR(randomEnvironmentButton): NevRscButton {
     x = "SafeZoneX + (500 / 1920) * SafeZoneW";
     y = "SafeZoneY + (380 / 1080) * SafeZoneH";
     action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(randomEnvironment), 0)]);
-    tooltip = "Randomize environment";
 };

@@ -10,6 +10,7 @@ PREP(rearm);
 PREP(refuel);
 PREP(repair);
 PREP(resetPosition);
+PREP(setDate);
 PREP(setEngineer);
 PREP(setMedic);
 PREP(spawnGroup);
