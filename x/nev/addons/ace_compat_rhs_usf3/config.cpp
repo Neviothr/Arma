@@ -2,7 +2,7 @@
 
 class CfgPatches {
     class ADDON {
-        name = "Nev Component - Custom ACE RHS USF Compat";
+        name = "NEV Component - Custom ACE RHS USF Compat";
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;

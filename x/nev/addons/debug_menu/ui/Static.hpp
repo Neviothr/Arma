@@ -1,7 +1,7 @@
  class GVAR(backgroundImage): RscFrame {
     x = "SafeZoneX + (355 / 1920) * SafeZoneW";
     y = "SafeZoneY + (130 / 1080) * SafeZoneH";
-    w = "(1000 / 1920) * SafeZoneW";
+    w = "(990 / 1920) * SafeZoneW";
     h = "(600 / 1080) * SafeZoneH";
     type = CT_STATIC;
     style = ST_FRAME;
