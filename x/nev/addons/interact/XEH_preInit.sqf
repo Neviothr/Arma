@@ -29,7 +29,7 @@ private _insertChildren = {
         private _actionIcon = _x call FUNC(getIcon);
 
         // Create our action
-        private _childAction = ["TransferCargoChildAcion", _actionText, _actionIcon, _childStatement, {true}, {}, _x] call ace_interact_menu_fnc_createAction;
+        private _childAction = [QGVAR(caroActionChild), _actionText, _actionIcon, _childStatement, {true}, {}, _x] call ace_interact_menu_fnc_createAction;
 
         // Push above action to _actions array
         _actions pushBack [_childAction, [], _target]; // New action, it's children, and the action's target
