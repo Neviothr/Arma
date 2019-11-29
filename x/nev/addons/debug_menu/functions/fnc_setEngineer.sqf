@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-private _target = [cursorTarget, vehicle player] select (cursorTarget isKindOf "AllVehicles");
+private _target = [vehicle player, cursorTarget] select (cursorTarget isKindOf "AllVehicles");
 
 [_target, ["engineer", true]] remoteExec ["setUnitTrait", _target];
 [_target, ["explosiveSpecialist", true]] remoteExec ["setUnitTrait", _target];
