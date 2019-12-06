@@ -10,7 +10,7 @@ add3DENEventHandler ["onMissionNew", {
     set3DENMissionAttributes [
         ["Intel", "IntelRainIsForced", true],
         ["Intel", "IntelLightningIsForced", true],
-		["Intel", "IntelWavesIsForced", true],
-		["Intel", "IntelWindIsForced", true]
+        ["Intel", "IntelWavesIsForced", true],
+        ["Intel", "IntelWindIsForced", true]
     ];
 }];

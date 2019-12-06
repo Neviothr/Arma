@@ -108,22 +108,22 @@ class RscButtonMenuOk;
 class RscButtonMenuCancel;
 
 class NevRscButton: RscButton {
-	type = CT_BUTTON;
-	style = ST_CENTER;
-	w = "(135 / 1920) * SafeZoneW";
-	h = "(30 / 1080) * SafeZoneH";
+    type = CT_BUTTON;
+    style = ST_CENTER;
+    w = "(135 / 1920) * SafeZoneW";
+    h = "(30 / 1080) * SafeZoneH";
 };
 
 class NevRscSlider: RscSlider {
-	color[] = {1, 1, 1, 0.4};
-	colorActive[] = {1 ,1, 1, 1};
-	colorDisabled[] = {0.5, 0.5, 0.5, 0.2};
-	arrowEmpty = "\A3\ui_f\data\gui\cfg\slider\arrowEmpty_ca.paa";
-	arrowFull = "\A3\ui_f\data\gui\cfg\slider\arrowFull_ca.paa";
-	border = "\A3\ui_f\data\gui\cfg\slider\border_ca.paa";
-	thumb = "\A3\ui_f\data\gui\cfg\slider\thumb_ca.paa";
-	w = "(275 / 1920) * SafeZoneW";
-	h = "(30 / 1080) * SafeZoneH";
-	type = CT_XSLIDER;
-	style = SL_HORZ;
+    color[] = {1, 1, 1, 0.4};
+    colorActive[] = {1 ,1, 1, 1};
+    colorDisabled[] = {0.5, 0.5, 0.5, 0.2};
+    arrowEmpty = "\A3\ui_f\data\gui\cfg\slider\arrowEmpty_ca.paa";
+    arrowFull = "\A3\ui_f\data\gui\cfg\slider\arrowFull_ca.paa";
+    border = "\A3\ui_f\data\gui\cfg\slider\border_ca.paa";
+    thumb = "\A3\ui_f\data\gui\cfg\slider\thumb_ca.paa";
+    w = "(275 / 1920) * SafeZoneW";
+    h = "(30 / 1080) * SafeZoneH";
+    type = CT_XSLIDER;
+    style = SL_HORZ;
 };

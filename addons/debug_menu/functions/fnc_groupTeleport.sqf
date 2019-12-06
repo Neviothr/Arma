@@ -11,8 +11,8 @@ addMissionEventHandler ["MapSingleClick", {
     params ["", "_pos"];
 
     {
-		_x setPos _pos;
-	} forEach units group player;
+        _x setPos _pos;
+    } forEach units group player;
 
     openMap [false, false];
     removeMissionEventHandler ["MapSingleClick", _thisEventhandler];
