@@ -2,10 +2,7 @@
 
 ADDON = false;
 
-PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
-PREP_RECOMPILE_END;
-
 private _insertChildren = {
     params ["_target", "_player", "_params"];
 
@@ -73,6 +70,5 @@ private _cargoAction = [
 
 	[_this select 0, 0, ["ACE_MainActions"], _takeWeaponAction, true] call ace_interact_menu_fnc_addActionToObject;
 }] call CBA_fnc_addClassEventHandler;
-
 
 ADDON = true;
