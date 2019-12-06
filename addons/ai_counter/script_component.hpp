@@ -8,4 +8,3 @@
 
 #define IDD_aiCounter 81000
 #define	IDC_aiCounterText 81001
-
