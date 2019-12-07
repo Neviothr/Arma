@@ -3,6 +3,8 @@
 ADDON = false;
 
 #include "XEH_PREP.hpp"
+
+// Transfer cargo action
 private _insertChildren = {
     params ["_target", "_player", "_params"];
 
@@ -49,6 +51,7 @@ private _cargoAction = [
     [_x, 0, ["ACE_MainActions"], _cargoAction, true] call ace_interact_menu_fnc_addActionToClass;
 } forEach ["Tank", "Car", "Ship","Helicopter", "Plane", "ReammoBox_F"];
 
+// Take ground weapon action
 ["WeaponHolderSimulated", "InitPost", {
     private _takeWeaponAction = [
         QGVAR(takeWeapon),
