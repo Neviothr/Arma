@@ -4,7 +4,7 @@ params ["_unitCfg", "_unitNumber"];
 
 if ((_unitCfg == "") || (typeName _unitNumber != "SCALAR"))  exitWith {INFO_2("Unable to create unit(s). _unitCfg - %1, _unitNumber - %2", _unitCfg, _unitNumber)};
 
-private _unit =  createSimpleObject [_unitCfg, getPos GVAR(logicCenter), true];
+private _unit = _unitCfg createVehicleLocal getPos GVAR(logicCenter);
 
 switch (_unitNumber) do {
     case 1: {

@@ -2,20 +2,20 @@
 
 params ["_unit"];
 
-if (isPlayer _unit) then {
-    for "_i" from 1 to 10 step 1 do {
-        _unit addItemToUniform "FirstAidKit";
+if !(isPlayer _unit) exitWith {};
+
+for "_i" from 1 to 10 step 1 do {
+    _unit addItemToUniform "FirstAidKit";
+};
+
+ _unit addEventHandler ["HandleDamage", {
+    params ["_unit", "", "_damage"];
+
+    _damage = damage _unit;
+
+    if (_damage > 0.9) then {
+        _damage = 0.9;
     };
 
-    _unit addEventHandler ["HandleDamage", {
-        params ["_unit", "", "_damage"];
-
-        _damage = damage _unit;
-
-        if (_damage > 0.9) then {
-            _damage = 0.9;
-        };
-
-        _unit setDamage _damage;
-    }];
-};
+    _unit setDamage _damage;
+}];
