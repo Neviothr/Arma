@@ -16,10 +16,10 @@
             midRangeProbab = 1; \
             maxRange = 1000; \
             maxRangeProbab = 1; \
-            burst = 10; \
-            burstRangeMax = 15; \
+            burst = 5; \
+            burstRangeMax = 10; \
             showToPlayer = false; \
-            aiDispersionCoefX = 20.0; \
-            aiDispersionCoefY = 20.0 ;\
+            aiDispersionCoefX = 30.0; \
+            aiDispersionCoefY = 30.0 ;\
             aiRateOfFireDispersion = 1; \
         }

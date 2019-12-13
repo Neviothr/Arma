@@ -18,6 +18,7 @@ class CfgWeapons {
     class CUP_arifle_M16_Base;
     class CUP_arifle_SCAR_L_Base;
     class CUP_arifle_xm8_sharpshooter;
+    class CUP_arifle_AKS_Base;
 
     class DMR_01_base_F: Rifle_Long_Base_F {
         AI_ROF(FullAuto);
