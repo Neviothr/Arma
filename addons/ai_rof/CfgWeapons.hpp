@@ -14,6 +14,10 @@ class CfgWeapons {
     class rhs_weap_pkp;
     class rhs_weap_m4_Base;
     class Pistol_Base_F;
+    class CUP_arifle_G36_Base_CarryhandleOptics;
+    class CUP_arifle_M16_Base;
+    class CUP_arifle_SCAR_L_Base;
+    class CUP_arifle_xm8_sharpshooter;
 
     class DMR_01_base_F: Rifle_Long_Base_F {
         AI_ROF(FullAuto);
@@ -230,5 +234,167 @@ class CfgWeapons {
     };
     class CUP_arifle_AK74M_GL: CUP_arifle_AK_Base {
         AI_ROF(FullAuto);
+    };
+    class CUP_arifle_AK102: CUP_arifle_AK_Base {
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_AK104: CUP_arifle_AK_Base {
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_AK105: CUP_arifle_AK_Base {
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_RPK74: CUP_arifle_AK_Base {
+        AI_ROF(manual);
+    };
+    class CUP_smg_bizon: Rifle_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class CUP_smg_vityaz: CUP_smg_bizon {
+        AI_ROF(FullAuto);
+    };
+    class CUP_smg_EVO: Rifle_Short_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_FNFAL: Rifle_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_G36_Base: Rifle_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_G36K: CUP_arifle_G36_Base_CarryhandleOptics {
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_G36C: CUP_arifle_G36_Base {
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_MG36: CUP_arifle_G36C {
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_HK416_145_Base: Rifle_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_HK416_11_Base: CUP_arifle_HK416_145_Base {
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_HK417_Base: CUP_arifle_HK416_145_Base {
+        AI_ROF(FullAuto);
+    };
+    class CUP_l85a2_base: Rifle_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class CUP_srifle_M14: Rifle_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_M4_Base: CUP_arifle_M16_Base {
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_XM16E1: CUP_arifle_M16_Base {
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_Colt727: CUP_arifle_M16_Base {
+        AI_ROF(FullAuto);
+    };
+    class CUP_lmg_M240: Rifle_Long_Base_F {
+        AI_ROF(manual);
+    };
+    class CUP_saw_base: Rifle_Long_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class CUP_M60E4_base: Rifle_Long_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class CUP_lmg_MG3: Rifle_Long_Base_F {
+        AI_ROF(manual);
+    };
+    class CUP_lmg_Mk48_Base: Rifle_Long_Base_F {
+        AI_ROF(manual);
+    };
+    class CUP_smg_MP7: Rifle_Short_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class CUP_hgun_MP7: Pistol_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class CUP_lmg_PKM: Rifle_Long_Base_F {
+        AI_ROF(manual);
+    };
+    class CUP_lmg_Pecheneg: CUP_lmg_PKM {
+        AI_ROF(manual);
+    };
+    class CUP_arifle_Sa58_base: Rifle_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class CUP_hgun_SA61: Pistol_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class CUP_smg_SA61: Rifle_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_SCAR_Base: Rifle_Base_F {
+        AI_ROF(SCAR_L_FullLAuto);
+    };
+    class CUP_arifle_Mk17_Base: CUP_arifle_SCAR_Base {
+        AI_ROF(SCAR_H_FullLAuto);
+    };
+    class CUP_arifle_Mk16_STD: CUP_arifle_SCAR_L_Base {
+        AI_ROF(SCAR_L_FullLAuto);
+    };
+    class CUP_arifle_Mk16_SV: CUP_arifle_SCAR_L_Base {
+        AI_ROF(SCAR_L_FullLAuto);
+    };
+    class CUP_arifle_Mk16_CQC: CUP_arifle_SCAR_L_Base {
+        AI_ROF(SCAR_L_FullLAuto);
+    };
+    class CUP_arifle_XM8_Base: Rifle_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_XM8_Railed_Base: Rifle_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_xm8_SAW: CUP_arifle_xm8_sharpshooter {
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_savz61: SMG_01_F {
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_savz58_base: Rifle_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_vhs2_base: Rifle_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_stgw57_base: Rifle_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m3a1_base: Rifle_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_MP44_base: Rifle_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_mg42_base: Rifle_Base_F{
+        AI_ROF(manual);
+    };
+    class rhs_weap_fnfal_base: Rifle_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_scorpion: SMG_01_F {
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_g36_base: Rifle_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_g36c: rhs_weap_g36_base {
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_g36kv: rhs_weap_g36_base {
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m84: Rifle_Long_Base_F {
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_SCAR_Base: Rifle_Base_F {
+        AI_ROF(SCAR_L_FullLAuto);
     };
 };
