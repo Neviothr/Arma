@@ -1,4 +1,4 @@
-#define COMPONENT ai_tanks
+#define COMPONENT ai_rof
 
 #include "\x\nev\addons\main\script_mod.hpp"
 
@@ -9,7 +9,7 @@
         modes[] += {"NEV_FullAuto"}; \
         class NEV_FullAuto: ##baseMode { \
             aiRateOfFire = 0.1; \
-            aiRateOfFireDistance = 1000; \
+            aiRateOfFireDistance = 5000; \
             minRange = 0; \
             minRangeProbab = 1; \
             midRange = 500; \
@@ -19,7 +19,7 @@
             burst = 10; \
             burstRangeMax = 15; \
             showToPlayer = false; \
-            aiDispersionCoefX = 10.0; \
-            aiDispersionCoefY = 10.0 ;\
-            aiRateOfFireDispersion = 0; \
+            aiDispersionCoefX = 20.0; \
+            aiDispersionCoefY = 20.0 ;\
+            aiRateOfFireDispersion = 1; \
         }
