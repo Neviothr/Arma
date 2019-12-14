@@ -18,7 +18,7 @@
             maxRangeProbab = 1; \
             burst = 5; \
             burstRangeMax = 10; \
-            showToPlayer = false; \
+            showToPlayer = 0; \
             aiDispersionCoefX = 30.0; \
             aiDispersionCoefY = 30.0 ;\
             aiRateOfFireDispersion = 1; \
