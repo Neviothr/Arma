@@ -6,7 +6,6 @@
 
 # define AI_ROF(baseMode) \
         class baseMode; \
-        modes[] += {"NEV_FullAuto"}; \
         class NEV_FullAuto: ##baseMode { \
             aiRateOfFire = 0.1; \
             aiRateOfFireDistance = 5000; \
