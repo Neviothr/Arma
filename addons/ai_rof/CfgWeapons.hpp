@@ -21,6 +21,7 @@ class CfgWeapons {
     class CUP_arifle_AKS_Base;
     class CUP_arifle_AK_Base;
 
+    // Manually add the "NEV_FullAuto" firemode to modes[] array because += operator doesn't work reliably.
     class DMR_01_base_F: Rifle_Long_Base_F {
         modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);

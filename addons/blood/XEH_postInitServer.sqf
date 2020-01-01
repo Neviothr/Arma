@@ -26,7 +26,7 @@ if (isServer) then {
 
         // Start the cleanup loop
         if (_index == 0) then {
-            [FUNC(cleanupLoop), [], 4050] call CBA_fnc_waitAndExecute;
+            [FUNC(cleanupLoop), [], 2025] call CBA_fnc_waitAndExecute;
         };
     }] call CBA_fnc_addEventHandler;
 };
