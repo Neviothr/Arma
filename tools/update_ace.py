@@ -65,4 +65,3 @@ for dir_path in directories:
 
 # pause after program is done to review output
 os.system("pause")
-s
