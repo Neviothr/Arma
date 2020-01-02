@@ -12,12 +12,16 @@ class CfgWeapons {
         ace_nightvision_bluRadius = 0.15;
     };
 
-    class Launcher_Base_F;
+    class Launcher;
+    class Launcher_Base_F: Launcher {
+        class WeaponSlotsInfo;
+    };
+
     class rhs_weap_smaw: Launcher_Base_F {
         ace_reloadlaunchers_enabled = 1;
         ace_overpressure_angle = 45;
     };
-    
+
     class rhs_weap_maaws: Launcher_Base_F {
         ace_reloadlaunchers_enabled = 1;
         ace_overpressure_range = 15;

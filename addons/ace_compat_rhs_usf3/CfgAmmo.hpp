@@ -43,9 +43,28 @@ class CfgAmmo {
         ace_frag_metal = 330;
         ace_frag_charge = 280;
         ace_frag_gurney_c = 2800;
-        ace_frag_gurney_k = "3 / 5";
+        ace_frag_gurney_k = "3/5";
         ace_frag_classes[] = {"ACE_frag_medium_HD"};
         ace_frag_skip = 0;
         ace_frag_force = 1;
+    };
+
+    class PipeBombBase;
+    class rhsusf_m112_ammo: PipeBombBase {
+        ace_explosives_magazine = "rhsusf_m112_mag";
+        ace_explosives_Explosive = "rhsusf_m112_ammo_scripted";
+        ace_explosives_size = 0;
+        ace_explosives_defuseObjectPosition[] = {-0.155,0,0.01};
+        soundActivation[] = {"", 0, 0, 0};
+        soundDeactivation[] = {"", 0, 0, 0};
+    };
+
+    class rhsusf_m112x4_ammo: PipeBombBase {
+        ace_explosives_magazine = "rhsusf_m112x4_mag";
+        ace_explosives_Explosive = "rhsusf_m112x4_ammo_scripted";
+        ace_explosives_size = 0;
+        ace_explosives_defuseObjectPosition[] = {-0.155,0.025,0.01};
+        soundActivation[] = {"", 0, 0, 0};
+        soundDeactivation[] = {"", 0, 0, 0};
     };
 };

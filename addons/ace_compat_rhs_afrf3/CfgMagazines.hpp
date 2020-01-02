@@ -1,4 +1,4 @@
-class CfgMagazines {
+class cfgMagazines {
     class VehicleMagazine;
     class rhs_30Rnd_545x39_7N6_AK;
     class rhs_100Rnd_762x54mmR: rhs_30Rnd_545x39_7N6_AK {
@@ -15,5 +15,9 @@ class CfgMagazines {
 
     class rhs_mag_127x108mm_1470 : rhs_mag_127x108mm_50 {
         ace_isbelt = 0;
+    };
+
+    class RHS_mag_VOG30_30: VehicleMagazine {
+        ace_isbelt = 1;
     };
 };
