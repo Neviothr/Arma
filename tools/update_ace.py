@@ -11,7 +11,7 @@ desktop_dir = "C:\\Users\\Admin\\Desktop\\"
 root = tk.Tk()
 root.withdraw()
 
-ace3_zip = filedialog.askopenfiAdminme()
+ace3_zip = filedialog.askopenfilename()
 
 # extract zip file
 ace3_zip_ref = zipfile.ZipFile(ace3_zip, "r")
@@ -41,7 +41,7 @@ print("Deleting unused PBOs and BISIGNs:")
 
 for r, d, f in os.walk(extracted_ace3_zip):
     for file in f:
-        if ".bisign" not in file and file not in used_pbos:
+        if ".bisign" not in file and ".dll" not in file and ".md" not in file and ".bikey" not in file and file not in used_pbos:
             os.remove(r + "\\" + file)  # delte pbo
             os.remove(r + "\\" + file + bisign_ext)  # delete bisign
 
@@ -65,3 +65,4 @@ for dir_path in directories:
 
 # pause after program is done to review output
 os.system("pause")
+s
