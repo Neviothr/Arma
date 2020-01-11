@@ -24,11 +24,11 @@ class CfgWeapons {
     class MGunCore;
     class GMG_F;
     class CannonCore;
-    class HMG_M2;
     class gatling_30mm;
     class GMG_20mm;
     class autocannon_30mm_CTWS;
     class rhs_weap_m134_minigun_1;
+    class HMG_M2;
     class HMG_127;
 
     // Manually add the "NEV_FullAuto" firemode to modes[] array because += operator doesn't work reliably.
@@ -602,10 +602,6 @@ class CfgWeapons {
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
     };
-    class CUP_Vlmg_MG3_veh: MGun {
-        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
-        AI_VEHICLE_ROF(manual);
-    };
     class CUP_Vhmg_PKT_veh: MGun {
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
@@ -778,23 +774,7 @@ class CfgWeapons {
         modes[] = {"manual", "manual_low", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
     };
-    class LMG_65mm_body: LMG_RCWS {
-        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
-        AI_VEHICLE_ROF(manual);
-    };
-    class LMG_M200: LMG_RCWS {
-        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
-        AI_VEHICLE_ROF(manual);
-    };
-    class LMG_M200_body: LMG_M200 {
-        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
-        AI_VEHICLE_ROF(manual);
-    };
-    class LMG_Minigun: LMG_RCWS {
-        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
-        AI_VEHICLE_ROF(manual);
-    };
-    class LMG_Minigun_heli: LMG_Minigun {
+    class CUP_Vlmg_MG3_veh: MGun {
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
     };
