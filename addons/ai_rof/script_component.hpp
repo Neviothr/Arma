@@ -41,7 +41,7 @@
             showToPlayer = 0; \
             aiRateOfFireDispersion = 5; \
             aiBurstTerminable = false; \
-            dispersion = 0.016; \
+            dispersion = 0.004; \
         }; \
-        aiDispersionCoefX = 50.0; \
-        aiDispersionCoefY = 50.0
+        aiDispersionCoefX = 30.0; \
+        aiDispersionCoefY = 30.0

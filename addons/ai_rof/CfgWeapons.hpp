@@ -30,6 +30,7 @@ class CfgWeapons {
     class rhs_weap_m134_minigun_1;
     class HMG_M2;
     class HMG_127;
+    class SMG_01_F;
 
     // Manually add the "NEV_FullAuto" firemode to modes[] array because += operator doesn't work reliably.
     class DMR_01_base_F: Rifle_Long_Base_F {
