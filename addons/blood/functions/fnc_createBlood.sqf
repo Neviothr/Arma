@@ -10,3 +10,5 @@ private _blood = createSimpleObject [(selectRandom GVAR(bloodEffectModels)), _po
 
 _blood setDir random 360;
 _blood setVectorUp surfaceNormal position _blood;
+
+GVAR(bloodDrops) pushBack _blood;

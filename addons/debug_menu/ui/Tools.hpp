@@ -17,13 +17,6 @@ class GVAR(utilsButton): NevRscButton {
     action = "[] execVM 'A3\functions_f\debug\utilities\lib\index.sqf'";
 };
 
-class GVAR(removeDeadButton): NevRscButton {
-    text = "Remove Dead";
-    x = "SafeZoneX + (780 / 1920) * SafeZoneW";
-    y = "SafeZoneY + (555 / 1080) * SafeZoneH";
-    action = QUOTE({deleteVehicle _x} forEach allDead - GVAR(deadOnStart));
-};
-
 class GVAR(iffButton): NevRscButton {
     text = "IFF";
     x = "SafeZoneX + (780 / 1920) * SafeZoneW";

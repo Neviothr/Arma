@@ -5,6 +5,14 @@ class GVAR(debugMenuDisplay) {
     onLoad = QUOTE(call FUNC(onLoad));
 
     class Controls {
+        // Keep button out of Tools.hpp and as the top class to insure it as the default selection
+        class GVAR(removeDeadButton): NevRscButton {
+            text = "Remove Dead";
+            x = "SafeZoneX + (780 / 1920) * SafeZoneW";
+            y = "SafeZoneY + (555 / 1080) * SafeZoneH";
+            action = QUOTE({deleteVehicle _x} forEach allDead - GVAR(deadOnStart) + nev_blood_bloodDrops);
+        };
+
         #include "Date.hpp"
         #include "DebugConsole.hpp"
         #include "Mission.hpp"
@@ -15,7 +23,7 @@ class GVAR(debugMenuDisplay) {
         #include "VirtualArsenal.hpp"
         #include "Visability.hpp"
         #include "Weather.hpp"
-    }; 
+    };
 };
 
 /*
