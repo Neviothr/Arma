@@ -1,32 +1,89 @@
 class CfgVehicles {
     class LandVehicle;
     class Car: LandVehicle {
-        UNFLIP_ACTION;
-    };
-    
-    class Motorcycle: LandVehicle {
-        UNFLIP_ACTION;
-    };
-
-    class StaticWeapon: LandVehicle {
-        UNFLIP_ACTION;
+        class ACE_Actions {
+            class ACE_MainActions {
+                class GVAR(cargoAction) {
+                    displayName = "Transfer Cargo";
+                    condition = "true";
+                    statement = "";
+                    icon = "a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa";
+                    insertChildren = QUOTE(_this call DFUNC(addCargoActions));
+                };
+            };
+        };
     };
 
     class Tank: LandVehicle {
-        UNFLIP_ACTION;
-    };
-
-    class Air;
-    class Helicopter: Air {
-        UNFLIP_ACTION;
-    };
-
-    class Plane: Air {
-        UNFLIP_ACTION;
+        class ACE_Actions {
+            class ACE_MainActions {
+                class GVAR(cargoAction) {
+                    displayName = "Transfer Cargo";
+                    condition = "true";
+                    statement = "";
+                    icon = "a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa";
+                    insertChildren = QUOTE(_this call DFUNC(addCargoActions));
+                };
+            };
+        };
     };
 
     class Ship;
     class Ship_F: Ship {
-        UNFLIP_ACTION;
+        class ACE_Actions {
+            class ACE_MainActions {
+                class GVAR(cargoAction) {
+                    displayName = "Transfer Cargo";
+                    condition = "true";
+                    statement = "";
+                    icon = "a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa";
+                    insertChildren = QUOTE(_this call DFUNC(addCargoActions));
+                };
+            };
+        };
+    };
+
+    class Air;
+    class Helicopter: Air {
+        class ACE_Actions {
+            class ACE_MainActions {
+                class GVAR(cargoAction) {
+                    displayName = "Transfer Cargo";
+                    condition = "true";
+                    statement = "";
+                    icon = "a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa";
+                    insertChildren = QUOTE(_this call DFUNC(addCargoActions));
+                };
+            };
+        };
+    };
+
+    class Plane: Air {
+        class ACE_Actions {
+            class ACE_MainActions {
+                class GVAR(cargoAction) {
+                    displayName = "Transfer Cargo";
+                    condition = "true";
+                    statement = "";
+                    icon = "a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa";
+                    insertChildren = QUOTE(_this call DFUNC(addCargoActions));
+                };
+            };
+        };
+    };
+
+    class ThingX;
+    class ReammoBox_F: ThingX {
+        class ACE_Actions {
+            class ACE_MainActions {
+                class GVAR(cargoAction) {
+                    displayName = "Transfer Cargo";
+                    condition = "true";
+                    statement = "";
+                    icon = "a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa";
+                    insertChildren = QUOTE(_this call DFUNC(addCargoActions));
+                };
+            };
+        };
     };
 };
