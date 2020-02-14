@@ -5,6 +5,7 @@ PREP(detachCrate);
 PREP(getFullMoonDates);
 PREP(groupTeleport);
 PREP(onLoad);
+PREP(propagateKit);
 PREP(randomEnvironment);
 PREP(rearm);
 PREP(refuel);

@@ -45,3 +45,10 @@ class GVAR(setEngineerButton): NevRscButton {
     y = "SafeZoneY + (345 / 1080) * SafeZoneH";
     action = QUOTE(call FUNC(setEngineer));
 };
+
+class GVAR(propagateKit): NevRscButton {
+    text = "Propagate Kit";
+    x = "SafeZoneX + (1200 / 1920) * SafeZoneW";
+    y = "SafeZoneY + (380 / 1080) * SafeZoneH";
+    action = QUOTE(call FUNC(propagateKit));
+};
