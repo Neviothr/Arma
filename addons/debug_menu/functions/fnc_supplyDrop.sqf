@@ -30,7 +30,7 @@ if (primaryWeapon _player != "") then {
     private _primaryMags = [_primaryWpn, true] call CBA_fnc_compatibleMagazines;
 
     {
-        _ammoBox addItemCargoGlobal [_x, 5];
+        _ammoBox addItemCargoGlobal [_x, 10];
     } forEach _primaryMags;
 };
 
@@ -43,7 +43,7 @@ if !(_secondaryWpn in _blackSecondaries) then {
     private _secondaryMags = [_secondaryWpn] call CBA_fnc_compatibleMagazines;
 
     {
-        _ammoBox addItemCargoGlobal [_x, 5];
+        _ammoBox addItemCargoGlobal [_x, 10];
     } forEach _secondaryMags;
 } else {
     if (_secondaryWpn != "") then {
@@ -60,7 +60,7 @@ if !(handgunWeapon _player in _blacklistedHandguns) then {
     private _handgunMagazines = [_handgunWeapon] call CBA_fnc_compatibleMagazines;
 
     {
-        _ammoBox addItemCargoGlobal [_x, 5];
+        _ammoBox addItemCargoGlobal [_x, 10];
     } forEach _handgunMagazines;
 } else {
     if (_handgunWeapon != "") then {
@@ -69,9 +69,21 @@ if !(handgunWeapon _player in _blacklistedHandguns) then {
 };
 
 // Misc items
-_ammoBox addItemCargoGlobal ["FirstAidKit", 10];
-_ammoBox addItemCargoGlobal ["Medikit", 1];
-_ammoBox addItemCargoGlobal ["HandGrenade", 10];
+_ammoBox addItemCargoGlobal ["FirstAidKit", 30];
+_ammoBox addItemCargoGlobal ["HandGrenade", 30];
+_ammoBox addItemCargoGlobal ["MiniGrenade", 30];
+_ammoBox addItemCargoGlobal ["rhs_weap_rpg26", 30];
+_ammoBox addItemCargoGlobal ["rhs_weap_M136", 30];
+_ammoBox addItemCargoGlobal ["Chemlight_blue", 30];
+_ammoBox addItemCargoGlobal ["Chemlight_green", 30];
+_ammoBox addItemCargoGlobal ["Chemlight_red", 30];
+_ammoBox addItemCargoGlobal ["Chemlight_yellow", 30];
+_ammoBox addItemCargoGlobal ["SmokeShell", 30];
+_ammoBox addItemCargoGlobal ["DemoCharge_Remote_Mag", 30];
+_ammoBox addItemCargoGlobal ["SatchelCharge_Remote_Mag", 30];
+_ammoBox addItemCargoGlobal ["ACE_DefusalKit", 30];
+_ammoBox addItemCargoGlobal ["ACE_M26_Clacker", 30];
+_ammoBox addItemCargoGlobal ["ACE_Clacker", 30];
 
 private _smokeShell = selectRandom ["SmokeShellYellow", "SmokeShellRed", "SmokeShellBlue", "SmokeShellGreen", "SmokeShellOrange"];
 private _smoke = createVehicle [_smokeShell, [0, 0, 0], [], 0, "NONE"];

@@ -103,44 +103,4 @@ class CfgWorlds {
     class Noe: CAWorld {
         REDUCED_HAZE;
     };
-
-    class DYA: CAWorld {
-        REDUCED_HAZE;
-    };
-
-    class Napf: CAWorld {
-        REDUCED_HAZE;
-    };
-
-    class NapfWinter: CAWorld {
-        REDUCED_HAZE;
-    };
-
-    class FDF_Isle1_a: CAWorld {
-        REDUCED_HAZE;
-    };
-
-    class clafghan: CAWorld {
-        REDUCED_HAZE;
-    };
-
-    class mbg_celle2: CAWorld {
-        REDUCED_HAZE;
-    };
-
-    class prei_khmaoch_luong: CAWorld {
-        REDUCED_HAZE;
-    };
-
-    class hellanmaa: CAWorld {
-        REDUCED_HAZE;
-    };
-
-    class ruha: CAWorld {
-        REDUCED_HAZE;
-    };
-    
-    class WL_Rosche: CAWorld {
-        REDUCED_HAZE;
-    };
 };
