@@ -47,3 +47,7 @@
 #define AI_VEHICLE_DISPERSION \
     aiDispersionCoefX = 75.0; \
     aiDispersionCoefY = 75.0
+
+#define AI_RIFLE_DISPERSION \
+    aiDispersionCoefX = 50.0; \
+    aiDispersionCoefY = 50.0

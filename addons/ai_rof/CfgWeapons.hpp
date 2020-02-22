@@ -32,11 +32,125 @@ class CfgWeapons {
         modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
         AI_RIFLE_ROF(FullAuto);
     };
+    class srifle_DMR_01_F: DMR_01_base_F {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class srifle_DMR_01_ACO_F: srifle_DMR_01_F {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class srifle_DMR_01_MRCO_F: srifle_DMR_01_F {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class srifle_DMR_01_SOS_F: srifle_DMR_01_F {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class srifle_DMR_01_DMS_F: srifle_DMR_01_F {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class srifle_DMR_01_DMS_snds_F: srifle_DMR_01_F {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class srifle_DMR_01_ARCO_F: srifle_DMR_01_F {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
     class EBR_base_F: Rifle_Long_Base_F {
         modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
         AI_RIFLE_ROF(FullAuto);
     };
+    class srifle_EBR_F: EBR_base_F {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class srifle_EBR_ACO_F: srifle_EBR_F {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class srifle_EBR_MRCO_pointer_F: srifle_EBR_F {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class srifle_EBR_ARCO_pointer_F: srifle_EBR_F {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class srifle_EBR_SOS_F: srifle_EBR_F {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class srifle_EBR_ARCO_pointer_snds_F: srifle_EBR_F {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class srifle_EBR_DMS_F: srifle_EBR_F {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class srifle_EBR_Hamr_pointer_F: srifle_EBR_F {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class srifle_EBR_DMS_pointer_snds_F: srifle_EBR_F {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class GM6_base_F: Rifle_Long_Base_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class srifle_GM6_F: GM6_base_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class srifle_GM6_SOS_F: srifle_GM6_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class srifle_GM6_LRPS_F: srifle_GM6_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class srifle_GM6_camo_F: srifle_GM6_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class srifle_GM6_camo_SOS_F: srifle_GM6_camo_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class srifle_GM6_camo_LRPS_F: srifle_GM6_camo_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class LRR_base_F: Rifle_Long_Base_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class srifle_LRR_F: LRR_base_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class srifle_LRR_SOS_F: srifle_LRR_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class srifle_LRR_LRPS_F: srifle_LRR_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class srifle_LRR_camo_F: srifle_LRR_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class srifle_LRR_camo_SOS_F: srifle_LRR_camo_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class srifle_LRR_camo_LRPS_F: srifle_LRR_camo_F {
+        AI_RIFLE_DISPERSION;
+    };
     class LMG_Mk200_F: Rifle_Long_Base_F {
+        modes[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class LMG_Mk200_MRCO_F: LMG_Mk200_F {
+        modes[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class LMG_Mk200_pointer_F: LMG_Mk200_F {
         modes[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_RIFLE_ROF(manual);
     };
@@ -44,9 +158,50 @@ class CfgWeapons {
         modes[] = {"FullAuto", "Single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_RIFLE_ROF(FullAuto);
     };
+    class LMG_Zafir_pointer_F: LMG_Zafir_F {
+        modes[] = {"FullAuto", "Single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class LMG_Zafir_ARCO_F: LMG_Zafir_F {
+        modes[] = {"FullAuto", "Single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
     class arifle_Katiba_Base_F: Rifle_Base_F {
         modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_RIFLE_ROF(FullAuto);
+    };
+    class hgun_ACPC2_F: Pistol_Base_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class hgun_ACPC2_snds_F: hgun_ACPC2_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class hgun_P07_F: Pistol_Base_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class hgun_P07_snds_F: hgun_P07_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class hgun_Pistol_heavy_01_F: Pistol_Base_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class hgun_Pistol_heavy_01_snds_F: hgun_Pistol_heavy_01_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class hgun_Pistol_heavy_01_MRD_F: hgun_Pistol_heavy_01_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class hgun_Pistol_heavy_02_F: Pistol_Base_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class hgun_Pistol_heavy_02_Yorris_F: hgun_Pistol_heavy_02_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class hgun_Rook40_F: Pistol_Base_F {
+        AI_RIFLE_DISPERSION;
+    };
+    class hgun_Rook40_snds_F: hgun_Rook40_F {
+        AI_RIFLE_DISPERSION;
     };
     class arifle_Katiba_F: arifle_Katiba_Base_F {
         modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
@@ -56,7 +211,139 @@ class CfgWeapons {
         modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_RIFLE_ROF(FullAuto);
     };
+    class arifle_Katiba_GL_F: arifle_Katiba_Base_F {
+        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Katiba_C_ACO_pointer_F: arifle_Katiba_C_F {
+        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Katiba_C_ACO_F: arifle_Katiba_C_F {
+        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Katiba_ACO_F: arifle_Katiba_F {
+        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Katiba_pointer_F: arifle_Katiba_F {
+        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Katiba_ACO_pointer_F: arifle_Katiba_F {
+        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Katiba_ARCO_F: arifle_Katiba_F {
+        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Katiba_ARCO_pointer_F: arifle_Katiba_F {
+        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Katiba_GL_ACO_F: arifle_Katiba_GL_F {
+        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Katiba_GL_ARCO_pointer_F: arifle_Katiba_GL_F {
+        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Katiba_GL_ACO_pointer_F: arifle_Katiba_GL_F {
+        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Katiba_GL_Nstalker_pointer_F: arifle_Katiba_GL_F {
+        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Katiba_GL_ACO_pointer_snds_F: arifle_Katiba_GL_F {
+        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Katiba_C_ACO_pointer_snds_F: arifle_Katiba_C_F {
+        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Katiba_ACO_pointer_snds_F: arifle_Katiba_F {
+        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Katiba_ARCO_pointer_snds_F: arifle_Katiba_F {
+        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
     class mk20_base_F: Rifle_Base_F {
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Mk20_F: mk20_base_F {
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Mk20_plain_F: arifle_Mk20_F {
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Mk20C_F: mk20_base_F {
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Mk20C_plain_F: arifle_Mk20C_F {
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Mk20_GL_F: mk20_base_F {
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Mk20_GL_plain_F: arifle_Mk20_GL_F {
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Mk20C_ACO_F: arifle_Mk20C_F {
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Mk20C_ACO_pointer_F: arifle_Mk20C_F {
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Mk20_pointer_F: arifle_Mk20_F {
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Mk20_Holo_F: arifle_Mk20_F {
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Mk20_ACO_F: arifle_Mk20_F {
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Mk20_ACO_pointer_F: arifle_Mk20_F {
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Mk20_MRCO_F: arifle_Mk20_F {
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Mk20_MRCO_plain_F: arifle_Mk20_plain_F {
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Mk20_MRCO_pointer_F: arifle_Mk20_F {
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Mk20_GL_MRCO_pointer_F: arifle_Mk20_GL_F {
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Mk20_GL_ACO_F: arifle_Mk20_GL_F {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_RIFLE_ROF(FullAuto);
     };
@@ -64,7 +351,151 @@ class CfgWeapons {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_RIFLE_ROF(FullAuto);
     };
+    class arifle_MXC_F: arifle_MX_Base_F {
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_MX_F: arifle_MX_Base_F {
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_MX_GL_F: arifle_MX_Base_F {
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
     class arifle_MX_SW_F: arifle_MX_Base_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MXM_F: arifle_MX_Base_F{
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MX_pointer_F: arifle_MX_F{
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MX_Holo_pointer_F: arifle_MX_F{
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MX_Hamr_pointer_F: arifle_MX_F{
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MX_ACO_pointer_F: arifle_MX_F{
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MX_ACO_F: arifle_MX_F{
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MX_GL_ACO_F: arifle_MX_GL_F{
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MX_GL_ACO_pointer_F: arifle_MX_GL_F{
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MX_GL_Hamr_pointer_F: arifle_MX_GL_F{
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MXC_Holo_F: arifle_MXC_F{
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MXC_Holo_pointer_F: arifle_MXC_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MX_SW_pointer_F: arifle_MX_SW_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MX_SW_Hamr_pointer_F: arifle_MX_SW_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MXM_Hamr_pointer_F: arifle_MXM_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MXC_ACO_F: arifle_MXC_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MXC_Holo_pointer_snds_F: arifle_MXC_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MXC_SOS_point_snds_F: arifle_MXC_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MXC_ACO_pointer_snds_F: arifle_MXC_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MXC_ACO_pointer_F: arifle_MXC_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MX_ACO_pointer_snds_F: arifle_MX_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MX_RCO_pointer_snds_F: arifle_MX_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MX_GL_Holo_pointer_snds_F: arifle_MX_GL_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MXM_SOS_pointer_F: arifle_MXM_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MXM_RCO_pointer_snds_F: arifle_MXM_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MXM_DMS_F: arifle_MXM_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MXC_Black_F: arifle_MXC_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MX_Black_F: arifle_MX_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MX_GL_Black_F: arifle_MX_GL_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MX_SW_Black_F: arifle_MX_SW_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MXM_Black_F: arifle_MXM_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MX_GL_Black_Hamr_pointer_F: arifle_MX_GL_Black_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MX_Black_Hamr_pointer_F: arifle_MX_Black_F {
+        modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
+        AI_RIFLE_ROF(manual);
+    };
+    class arifle_MX_SW_Black_Hamr_pointer_F: arifle_MX_SW_Black_F {
         modes[] = {"manual", "single", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_RIFLE_ROF(manual);
     };
@@ -889,8 +1320,6 @@ class CfgWeapons {
         AI_VEHICLE_ROF(manual);
     };
     class UGL_F: GrenadeLauncher {
-        AI_VEHICLE_DISPERSION;
+        AI_RIFLE_DISPERSION;
     };
 };
-
-// stopped at UGL_F
