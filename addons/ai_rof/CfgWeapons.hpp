@@ -25,6 +25,7 @@ class CfgWeapons {
     class CannonCore;
     class rhs_weap_m134_minigun_1;
     class SMG_01_F;
+    class GrenadeLauncher;
 
     // Manually add the "NEV_FullAuto" firemode to modes[] array because += operator doesn't work reliably.
     class DMR_01_base_F: Rifle_Long_Base_F {
@@ -44,6 +45,14 @@ class CfgWeapons {
         AI_RIFLE_ROF(FullAuto);
     };
     class arifle_Katiba_Base_F: Rifle_Base_F {
+        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Katiba_F: arifle_Katiba_Base_F {
+        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_RIFLE_ROF(FullAuto);
+    };
+    class arifle_Katiba_C_F: arifle_Katiba_Base_F {
         modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_RIFLE_ROF(FullAuto);
     };
@@ -587,11 +596,15 @@ class CfgWeapons {
         modes[] = {"HighROF", "LowROF", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(HighROF);
     };
-    class GMG_20mm: GMG_F {
+    class GMG_F: MGun {
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
     };
     class GMG_40mm: GMG_F {
+        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
+        AI_VEHICLE_ROF(manual);
+    };
+    class GMG_20mm: GMG_F {
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
     };
@@ -839,10 +852,6 @@ class CfgWeapons {
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
     };
-    class GMG_F: MGun {
-        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
-        AI_VEHICLE_ROF(manual);
-    };
     class autocannon_40mm_CTWS: autocannon_Base_F {
         modes[] = {"player", "close", "short", "medium", "far"};
         AI_VEHICLE_ROF(player);
@@ -850,4 +859,38 @@ class CfgWeapons {
     class cannon_120mm: CannonCore {
         AI_VEHICLE_DISPERSION;
     };
+    class cannon_125mm: CannonCore {
+        AI_VEHICLE_DISPERSION;
+    };
+    class cannon_105mm: CannonCore {
+        AI_VEHICLE_DISPERSION;
+    };
+    class LMG_coax: LMG_RCWS {
+        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
+        AI_VEHICLE_ROF(manual);
+    };
+    class LMG_coax_ext: LMG_coax {
+        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
+        AI_VEHICLE_ROF(manual);
+    };
+    class autocannon_30mm: autocannon_30mm_CTWS {
+        modes[] = {"player", "close", "short", "medium", "far"};
+        AI_VEHICLE_ROF(player);
+    };
+    class cannon_120mm_long: cannon_120mm {
+        AI_VEHICLE_DISPERSION;
+    };
+    class Twin_Cannon_20mm: gatling_20mm {
+        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
+        AI_VEHICLE_ROF(manual);
+    };
+    class HMG_127_MBT: HMG_127_APC {
+        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
+        AI_VEHICLE_ROF(manual);
+    };
+    class UGL_F: GrenadeLauncher {
+        AI_VEHICLE_DISPERSION;
+    };
 };
+
+// stopped at UGL_F
