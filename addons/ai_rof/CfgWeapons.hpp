@@ -22,14 +22,8 @@ class CfgWeapons {
     class CUP_arifle_AK_Base;
     class MGun;
     class MGunCore;
-    class GMG_F;
     class CannonCore;
-    class gatling_30mm;
-    class GMG_20mm;
-    class autocannon_30mm_CTWS;
     class rhs_weap_m134_minigun_1;
-    class HMG_M2;
-    class HMG_127;
     class SMG_01_F;
 
     // Manually add the "NEV_FullAuto" firemode to modes[] array because += operator doesn't work reliably.
@@ -569,6 +563,18 @@ class CfgWeapons {
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
     };
+    class LMG_Minigun_Transport: LMG_Minigun {
+        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
+        AI_VEHICLE_ROF(manual);
+    };
+    class LMG_Minigun_Transport2: LMG_Minigun_Transport {
+        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
+        AI_VEHICLE_ROF(manual);
+    };
+    class LMG_Minigun2: LMG_Minigun {
+        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
+        AI_VEHICLE_ROF(manual);
+    };
     class LMG_Minigun_heli: LMG_Minigun {
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
@@ -753,6 +759,10 @@ class CfgWeapons {
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
     };
+    class gatling_30mm: gatling_30mm_base {
+        modes[] = {"LowROF", "close", "short", "medium", "far", "NEV_FullAuto"};
+        AI_VEHICLE_ROF(LowROF);
+    };
     class rhs_weap_yakB: gatling_30mm {
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
@@ -764,6 +774,14 @@ class CfgWeapons {
     class rhs_weap_pkm_tigr: rhs_weap_pkt {
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
+    };
+    class autocannon_Base_F: CannonCore {
+        modes[] = {"player", "close", "short", "medium", "far"};
+        AI_VEHICLE_ROF(player);
+    };
+    class autocannon_30mm_CTWS: autocannon_Base_F {
+        modes[] = {"player", "close", "short", "medium", "far"};
+        AI_VEHICLE_ROF(player);
     };
     class rhs_weap_2a42_base: autocannon_30mm_CTWS {
         modes[] = {"LowROFBMD2", "HighROFBMD2", "closeBMD2", "shortBMD2", "mediumBMD2", "farBMD2", "NEV_FullAuto"};
@@ -820,5 +838,16 @@ class CfgWeapons {
     class CUP_Vlmg_MG3_veh: MGun {
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
+    };
+    class GMG_F: MGun {
+        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
+        AI_VEHICLE_ROF(manual);
+    };
+    class autocannon_40mm_CTWS: autocannon_Base_F {
+        modes[] = {"player", "close", "short", "medium", "far"};
+        AI_VEHICLE_ROF(player);
+    };
+    class cannon_120mm: CannonCore {
+        AI_VEHICLE_DISPERSION;
     };
 };
