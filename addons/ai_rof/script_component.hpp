@@ -4,7 +4,7 @@
 
 #include "\x\nev\addons\main\script_macros.hpp"
 
-# define AI_ROF(baseMode) \
+# define AI_RIFLE_ROF(baseMode) \
         class baseMode; \
         class NEV_FullAuto: ##baseMode { \
             aiRateOfFire = 0.5; \
