@@ -31,6 +31,8 @@ class CfgWeapons {
     class HMG_M2;
     class HMG_127;
     class SMG_01_F;
+    class GrenadeLauncher;
+    class Launcher_Base_F;
 
     // Manually add the "NEV_FullAuto" firemode to modes[] array because += operator doesn't work reliably.
     class DMR_01_base_F: Rifle_Long_Base_F {
@@ -779,4 +781,60 @@ class CfgWeapons {
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
     };
+    class UGL_F: GrenadeLauncher {
+        AI_DISPERSION;
+    };
+    class launch_NLAW_F: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+    class launch_RPG32_F: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+    class launch_Titan_base: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+    class GM6_base_F: Rifle_Long_Base_F {
+        AI_DISPERSION;
+    };
+    class LRR_base_F: Rifle_Long_Base_F {
+        AI_DISPERSION;
+    };
+    class hgun_ACPC2_F: Pistol_Base_F {
+        AI_DISPERSION;
+    };
+    class hgun_P07_F: Pistol_Base_F {
+        AI_DISPERSION;
+    };
+    class hgun_Pistol_heavy_01_F: Pistol_Base_F {
+        AI_DISPERSION;
+    };
+    class hgun_Rook40_F: Pistol_Base_F {
+        AI_DISPERSION;
+    };
+    class arifle_Katiba_C_F: arifle_Katiba_Base_F {
+        AI_DISPERSION;
+    };
+    class arifle_MXC_F: arifle_MX_Base_F {
+        AI_DISPERSION;
+    };
+    class CUP_launch_M72A6_Loaded: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+    class hgun_Pistol_Signal_F: Pistol_Base_F {
+        AI_DISPERSION;
+    };
+    class CUP_hgun_Compact: Pistol_Base_F {
+        AI_DISPERSION;
+    };
+    class CUP_srifle_CZ750_Base: Rifle_Long_Base_F {
+        AI_DISPERSION;
+    };
+    class hgun_Pistol_heavy_02_F: Pistol_Base_F {
+        AI_DISPERSION;
+    };
+    class CUP_hgun_Duty: Pistol_Base_F {
+        AI_DISPERSION;
+    };
 };
+
+

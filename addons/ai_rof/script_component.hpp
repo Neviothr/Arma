@@ -18,11 +18,11 @@
             burst = 3; \
             burstRangeMax = 5; \
             showToPlayer = 0; \
-            aiDispersionCoefX = 50.0; \
-            aiDispersionCoefY = 50.0; \
             aiRateOfFireDispersion = 0; \
             aiBurstTerminable = false; \
-        }
+        }; \
+        aiDispersionCoefX = 50.0; \
+        aiDispersionCoefY = 50.0
 
 # define AI_VEHICLE_ROF(baseMode) \
         class baseMode; \
@@ -43,3 +43,7 @@
         }; \
         aiDispersionCoefX = 75.0; \
         aiDispersionCoefY = 75.0
+
+# define AI_DISPERSION \
+    aiDispersionCoefX = 50.0; \
+    aiDispersionCoefY = 50.0
