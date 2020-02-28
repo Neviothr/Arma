@@ -1378,14 +1378,17 @@ rhs_weap_tt33
 rhs_weap_type94_new
 */
     // Vehicle Weapons
+    class MGun;
     class LMG_RCWS: MGun {
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
     };
+    class MGunCore;
     class M134_minigun: MGunCore {
         modes[] = {"HighROF", "LowROF", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(HighROF);
     };
+    class GMG_F;
     class GMG_20mm: GMG_F {
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
@@ -1394,6 +1397,7 @@ rhs_weap_type94_new
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
     };
+    class CannonCore;
     class gatling_20mm: CannonCore {
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
@@ -1426,6 +1430,7 @@ rhs_weap_type94_new
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
     };
+    class HMG_M2;
     class CUP_Vhmg_M2_veh: HMG_M2 {
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
@@ -1530,6 +1535,7 @@ rhs_weap_type94_new
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
     };
+    class LMG_RCWS;
     class MMG_02_vehicle: LMG_RCWS {
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
@@ -1558,6 +1564,7 @@ rhs_weap_type94_new
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
     };
+    class gatling_30mm;
     class rhs_weap_yakB: gatling_30mm {
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
@@ -1566,10 +1573,12 @@ rhs_weap_type94_new
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
     };
+    class rhs_weap_pkt;
     class rhs_weap_pkm_tigr: rhs_weap_pkt {
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
     };
+    class autocannon_30mm_CTWS;
     class rhs_weap_2a42_base: autocannon_30mm_CTWS {
         modes[] = {"LowROFBMD2", "HighROFBMD2", "closeBMD2", "shortBMD2", "mediumBMD2", "farBMD2", "NEV_FullAuto"};
         AI_VEHICLE_ROF(HighROFBMD2);
@@ -1594,6 +1603,7 @@ rhs_weap_type94_new
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(manual);
     };
+    class rhs_weap_m134_minigun_1;
     class RHS_weap_m134_pylon: rhs_weap_m134_minigun_1 {
         modes[] = {"LowROF", "HighROF", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(HighROF);
@@ -1614,6 +1624,7 @@ rhs_weap_type94_new
         modes[] = {"LowROF", "HighROF", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(HighROF);
     };
+    class HMG_127;
     class RHS_weap_gau19: HMG_127 {
         modes[] = {"LowROF", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_VEHICLE_ROF(LowROF);

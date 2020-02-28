@@ -29,9 +29,11 @@ private _primaryWpn = primaryWeapon _player;
 if (primaryWeapon _player != "") then {
     private _primaryMags = [_primaryWpn, true] call CBA_fnc_compatibleMagazines;
 
-    {
-        _ammoBox addItemCargoGlobal [_x, 10];
-    } forEach _primaryMags;
+    for "_i" from 0 to 5 do {
+        private _selectedPrimaryMag = _primaryMags select (floor (random ((count _primaryMags) - 1)));
+
+        _ammoBox addItemCargoGlobal [_selectedPrimaryMag, 10];
+    };
 };
 
 // Secondary magazines
@@ -42,9 +44,11 @@ private _blackSecondaries = ["", "CUP_launch_M136", "CUP_launch_NLAW", "CUP_laun
 if !(_secondaryWpn in _blackSecondaries) then {
     private _secondaryMags = [_secondaryWpn] call CBA_fnc_compatibleMagazines;
 
-    {
-        _ammoBox addItemCargoGlobal [_x, 10];
-    } forEach _secondaryMags;
+    for "_i" from 0 to 5 do {
+        private _selectedSecondaryMag = _secondaryMags select (floor (random ((count _secondaryMags) - 1)));
+
+        _ammoBox addItemCargoGlobal [_selectedSecondaryMag, 10];
+    };
 } else {
     if (_secondaryWpn != "") then {
         _ammoBox addItemCargoGlobal [_secondaryWpn, 5];
@@ -59,9 +63,11 @@ private _blacklistedHandguns = ["", "rhs_weap_rsp30_white", "rhs_weap_rsp30_gree
 if !(handgunWeapon _player in _blacklistedHandguns) then {
     private _handgunMagazines = [_handgunWeapon] call CBA_fnc_compatibleMagazines;
 
-    {
-        _ammoBox addItemCargoGlobal [_x, 10];
-    } forEach _handgunMagazines;
+    for "_i" from 0 to 5 do {
+        private _selectedhandgunMag = _handgunMagazines select (floor (random ((count _handgunMagazines) - 1)));
+
+        _ammoBox addItemCargoGlobal [_selectedhandgunMag, 5];
+    };
 } else {
     if (_handgunWeapon != "") then {
         _ammoBox addItemCargoGlobal [_handgunWeapon, 5];
