@@ -472,19 +472,64 @@ class CfgWeapons {
         modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
         AI_ROF(FullAuto);
     };
-arifle_SPAR_01_blk_F
-arifle_SPAR_01_khk_F
-arifle_SPAR_01_snd_F
-arifle_SPAR_01_GL_blk_F
-arifle_SPAR_01_GL_khk_F
-arifle_SPAR_01_GL_snd_F
-arifle_SPAR_02_blk_F
-arifle_SPAR_02_khk_F
-arifle_SPAR_02_snd_F
-arifle_SPAR_03_blk_F
-arifle_SPAR_03_khk_F
-arifle_SPAR_03_snd_F
-SMG_05_F
+    class arifle_SPAR_01_base_F;
+    class arifle_SPAR_01_blk_F: arifle_SPAR_01_base_F {
+        __modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_medium_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class arifle_SPAR_01_khk_F: arifle_SPAR_01_base_F {
+        __modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_medium_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class arifle_SPAR_01_snd_F: arifle_SPAR_01_base_F {
+        __modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_medium_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class arifle_SPAR_01_GL_base_F;
+    class arifle_SPAR_01_GL_blk_F: arifle_SPAR_01_GL_base_F {
+        __modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_medium_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class arifle_SPAR_01_GL_khk_F: arifle_SPAR_01_GL_base_F {
+        __modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_medium_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class arifle_SPAR_01_GL_snd_F: arifle_SPAR_01_GL_base_F {
+        __modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_medium_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class arifle_SPAR_02_base_F;
+    class arifle_SPAR_02_blk_F: arifle_SPAR_02_base_F {
+        __modes__[] = {"FullAuto", "Single", "single_medium_optics1", "single_medium_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class arifle_SPAR_02_khk_F: arifle_SPAR_02_base_F {
+        __modes__[] = {"FullAuto", "Single", "single_medium_optics1", "single_medium_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class arifle_SPAR_02_snd_F: arifle_SPAR_02_base_F {
+        __modes__[] = {"FullAuto", "Single", "single_medium_optics1", "single_medium_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class arifle_SPAR_03_base_F;
+    class arifle_SPAR_03_blk_F: arifle_SPAR_03_base_F {
+        __modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class arifle_SPAR_03_khk_F: arifle_SPAR_03_base_F {
+        __modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class arifle_SPAR_03_snd_F: arifle_SPAR_03_base_F {
+        __modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class SMG_05_base_F;
+    class SMG_05_F: SMG_05_base_F {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+
 srifle_DMR_06_hunter_F
 LMG_Mk200_black_F
 arifle_AK12_lush_F
