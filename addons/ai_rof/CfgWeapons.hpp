@@ -186,26 +186,180 @@ class CfgWeapons {
     class CUP_srifle_CZ550_rail: CUP_srifle_CZ550_base {
         AI_DISPERSION;
     };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    class Rifle_Base_F;
+    class CUP_srifle_LeeEnfield: Rifle_Base_F {
+        AI_DISPERSION;
+    };
+    class CUP_srifle_LeeEnfield_rail: CUP_srifle_LeeEnfield {
+        AI_DISPERSION;
+    };
+    class CUP_srifle_M14_DMR: Rifle_Base_F {
+        AI_DISPERSION;
+    };
+    class CUP_srifle_M24_des: Rifle_Base_F {
+        AI_DISPERSION;
+    };
+    class CUP_srifle_M24_wdl: CUP_srifle_M24_des {
+        AI_DISPERSION;
+    };
+    class CUP_srifle_M24_blk: CUP_srifle_M24_des {
+        AI_DISPERSION;
+    };
+    class CUP_srifle_M40A3: CUP_srifle_M24_des {
+        AI_DISPERSION;
+    };
+    class DMR_02_base_F;
+    class srifle_DMR_02_F: DMR_02_base_F {
+        AI_DISPERSION;
+    };
+    class srifle_DMR_02_camo_F: srifle_DMR_02_F {
+        AI_DISPERSION;
+    };
+    class srifle_DMR_02_sniper_F: srifle_DMR_02_F {
+        AI_DISPERSION;
+    };
+    class DMR_03_base_F;
+    class srifle_DMR_03_F: DMR_03_base_F {
+        __modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class srifle_DMR_03_khaki_F: srifle_DMR_03_F {
+        __modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class srifle_DMR_03_tan_F: srifle_DMR_03_F {
+        __modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class srifle_DMR_03_multicam_F: srifle_DMR_03_F {
+        __modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class srifle_DMR_03_woodland_F: srifle_DMR_03_F {
+        __modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class DMR_04_base_F;
+    class srifle_DMR_04_F: DMR_04_base_F {
+        AI_DISPERSION;
+    };
+    class srifle_DMR_04_Tan_F: srifle_DMR_04_F {
+        AI_DISPERSION;
+    };
+    class DMR_05_base_F;
+    class srifle_DMR_05_blk_F: DMR_05_base_F {
+        __modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class srifle_DMR_05_hex_F: srifle_DMR_05_blk_F {
+        __modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class srifle_DMR_05_tan_f: srifle_DMR_05_blk_F {
+        __modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class DMR_06_base_F;
+    class srifle_DMR_06_camo_F: DMR_06_base_F {
+        __modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class srifle_DMR_06_olive_F: srifle_DMR_06_camo_F {
+        __modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class MMG_01_base_F;
+    class MMG_01_hex_F: MMG_01_base_F {
+        __modes__[] = {"manual", "burst", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(manual);
+    };
+    class MMG_01_tan_F: MMG_01_hex_F {
+        __modes__[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(manual);
+    };
+    class MMG_02_base_F;
+    class MMG_02_camo_F: MMG_02_base_F {
+        __modes__[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(manual);
+    };
+    class MMG_02_black_F: MMG_02_camo_F {
+        __modes__[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(manual);
+    };
+    class MMG_02_sand_F: MMG_02_camo_F {
+        __modes__[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(manual);
+    };
+    class CUP_sgun_AA12: Rifle_Base_F {
+        __modes__[] = {"FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class SMG_03_TR_BASE;
+    class SMG_03_TR_black: SMG_03_TR_BASE {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class SMG_03_TR_camo: SMG_03_TR_black {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class SMG_03_TR_khaki: SMG_03_TR_black {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class SMG_03_TR_hex: SMG_03_TR_BASE {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class SMG_03C_BASE;
+    class SMG_03C_TR_black: SMG_03C_BASE {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class SMG_03C_TR_camo: SMG_03C_TR_black {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class SMG_03C_TR_khaki: SMG_03C_TR_black {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class SMG_03C_TR_hex: SMG_03C_TR_black {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class SMG_03_black: SMG_03_TR_BASE {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class SMG_03_camo: SMG_03_black {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class SMG_03_khaki: SMG_03_black {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class SMG_03_hex: SMG_03_black {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class SMG_03C_black: SMG_03C_BASE {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class SMG_03C_camo: SMG_03C_black {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class SMG_03C_khaki: SMG_03C_black {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class SMG_03C_hex: SMG_03C_black {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
 
 
 
