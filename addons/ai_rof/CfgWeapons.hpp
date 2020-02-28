@@ -33,6 +33,7 @@ class CfgWeapons {
     class SMG_01_F;
     class GrenadeLauncher;
     class Launcher_Base_F;
+    class CUP_arifle_AK_Base;
 
     // Manually add the "NEV_FullAuto" firemode to modes[] array because += operator doesn't work reliably.
     class DMR_01_base_F: Rifle_Long_Base_F {
@@ -110,10 +111,6 @@ class CfgWeapons {
     class MMG_02_base_F: Rifle_Long_Base_F {
         modes[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(manual);
-    };
-    class CUP_sgun_AA12: Rifle_Base_F {
-        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
-        AI_ROF(FullAuto);
     };
     class SMG_03_TR_BASE: Rifle_Base_F {
         modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
@@ -287,10 +284,6 @@ class CfgWeapons {
         modes[] = {"Single", "Full", "NEV_FullAuto"};
         AI_ROF(Full);
     };
-    class CUP_arifle_AK107_Base: CUP_arifle_AK_Base {
-        modes[] = {"FullAuto", "Burst", "Single", "Burst_medium", "single_medium_optics1", "single_medium_optics2", "NEV_FullAuto"};
-        AI_ROF(FullAuto);
-    };
     class CUP_arifle_AK74: CUP_arifle_AK_Base {
         modes[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
@@ -445,22 +438,6 @@ class CfgWeapons {
     };
     class CUP_arifle_SCAR_Base: Rifle_Base_F {
         modes[] = {"SCAR_L_Single", "SCAR_L_FullLAuto", "NEV_FullAuto"};
-        AI_ROF(SCAR_L_FullLAuto);
-    };
-    class CUP_arifle_Mk17_Base: CUP_arifle_SCAR_Base {
-        modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
-        AI_ROF(SCAR_H_FullLAuto);
-    };
-    class CUP_arifle_Mk16_STD: CUP_arifle_SCAR_L_Base {
-        modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
-        AI_ROF(SCAR_L_FullLAuto);
-    };
-    class CUP_arifle_Mk16_SV: CUP_arifle_SCAR_L_Base {
-        modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
-        AI_ROF(SCAR_L_FullLAuto);
-    };
-    class CUP_arifle_Mk16_CQC: CUP_arifle_SCAR_L_Base {
-        modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullLAuto);
     };
     class CUP_arifle_XM8_Base: Rifle_Base_F {
@@ -833,6 +810,33 @@ class CfgWeapons {
         AI_DISPERSION;
     };
     class CUP_hgun_Duty: Pistol_Base_F {
+        AI_DISPERSION;
+    };
+    class CUP_srifle_CZ550_base: Rifle_Base_F {
+        AI_DISPERSION;
+    };
+    class CUP_launch_Igla_Loaded: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+    class DMR_02_base_F: Rifle_Long_Base_F {
+        AI_DISPERSION;
+    };
+    class DMR_04_base_F: Rifle_Long_Base_F {
+        AI_DISPERSION;
+    };
+    class DMR_07_base_F: Rifle_Long_Base_F {
+        AI_DISPERSION;
+    };
+    class arifle_CTAR_GL_base_F: arifle_CTAR_base_F {
+        AI_DISPERSION;
+    };
+    class arifle_SPAR_01_GL_base_F: arifle_SPAR_01_base_F {
+        AI_DISPERSION;
+    };
+    class launch_MRAWS_base_F: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+    class rhs_weap_nsvt: rhs_weap_DSHKM {
         AI_DISPERSION;
     };
 };
