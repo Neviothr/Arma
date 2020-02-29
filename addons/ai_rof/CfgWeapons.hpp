@@ -805,38 +805,129 @@ class CfgWeapons {
         modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
         AI_ROF(FullAuto);
     };
+    class rhs_weap_ak103_npz: rhs_weap_ak103 {
+        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_ak103_zenitco01: rhs_weap_ak103 {
+        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_ak103_zenitco01_b33: rhs_weap_ak103_zenitco01 {
+        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_ak103_1: rhs_weap_ak103_base {
+        AI_DISPERSION;
+    };
+    class rhs_weap_ak103_1_npz: rhs_weap_ak103_1 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_ak103_2: rhs_weap_ak103_base {
+        modes[] = {"Single", "Burst", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(Burst);
+    };
+    class rhs_weap_ak103_2_npz: rhs_weap_ak103_2 {
+        modes[] = {"Single", "Burst", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(Burst);
+    };
+    class rhs_weap_ak103_gp25: rhs_weap_ak103_base{
+        modes[] = {"Single", "Burst", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(Burst);
+    };
+    class rhs_weap_ak103_gp25_npz: rhs_weap_ak103_base{
+        modes[] = {"Single", "Burst", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(Burst);
+    };
+    class rhs_weap_ak74: rhs_weap_ak74m {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_ak74_gp25: rhs_weap_ak74 {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_ak74n: rhs_weap_ak74 {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_ak74n_gp25: rhs_weap_ak74_gp25 {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_ak74n_npz: rhs_weap_ak74 {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_ak74n_gp25_npz: rhs_weap_ak74_gp25 {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_ak74_2: rhs_weap_ak74 {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_ak74n_2: rhs_weap_ak74 {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_ak74n_2_npz: rhs_weap_ak74 {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_ak74n_2_gp25: rhs_weap_ak74_gp25 {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_ak74n_2_gp25_npz: rhs_weap_ak74_gp25 {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_ak74_3: rhs_weap_ak74 {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_aks74: rhs_weap_ak74 {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_aks74_2: rhs_weap_aks74 {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_aks74_gp25: rhs_weap_aks74 {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_aks74n: rhs_weap_aks74 {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_aks74n_npz: rhs_weap_aks74n {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_aks74n_2: rhs_weap_aks74n {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_aks74n_2_npz: rhs_weap_aks74n {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_aks74n_gp25: rhs_weap_aks74_gp25 {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_aks74n_gp25_npz: rhs_weap_aks74n_gp25 {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_aks74u: rhs_weap_aks74 {
+        __modes__[] = {"FullAuto", "Single", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
 /*
-rhs_weap_ak103_npz
-rhs_weap_ak103_zenitco01
-rhs_weap_ak103_zenitco01_b33
-rhs_weap_ak103_1
-rhs_weap_ak103_1_npz
-rhs_weap_ak103_2
-rhs_weap_ak103_2_npz
-rhs_weap_ak103_gp25
-rhs_weap_ak103_gp25_npz
-rhs_weap_ak74
-rhs_weap_ak74_gp25
-rhs_weap_ak74n
-rhs_weap_ak74n_gp25
-rhs_weap_ak74n_npz
-rhs_weap_ak74n_gp25_npz
-rhs_weap_ak74_2
-rhs_weap_ak74n_2
-rhs_weap_ak74n_2_npz
-rhs_weap_ak74n_2_gp25
-rhs_weap_ak74n_2_gp25_npz
-rhs_weap_ak74_3
-rhs_weap_aks74
-rhs_weap_aks74_2
-rhs_weap_aks74_gp25
-rhs_weap_aks74n
-rhs_weap_aks74n_npz
-rhs_weap_aks74n_2
-rhs_weap_aks74n_2_npz
-rhs_weap_aks74n_gp25
-rhs_weap_aks74n_gp25_npz
-rhs_weap_aks74u
 rhs_weap_aks74un
 rhs_weap_asval
 rhs_weap_asval_grip
