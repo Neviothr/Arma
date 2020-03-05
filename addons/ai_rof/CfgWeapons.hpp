@@ -1519,34 +1519,109 @@ class CfgWeapons {
 	class CUP_hgun_BallisticShield_Armed: Rifle_Base_F {
         AI_DISPERSION;
     };
+    class CUP_arifle_AUG_Base;
+	class CUP_arifle_AUG_A1: CUP_arifle_AUG_Base {
+        __modes__[] = {"FullAuto", "Single", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_srifle_SVD: Rifle_Base_F {
+        AI_DISPERSION;
+    };
+	class CUP_srifle_SVD_top_rail: CUP_srifle_SVD {
+        AI_DISPERSION;
+    };
+	class CUP_srifle_SVD_des: CUP_srifle_SVD {
+        AI_DISPERSION;
+    };
+	class CUP_srifle_SVD_wdl: CUP_srifle_SVD {
+        AI_DISPERSION;
+    };
+	class CUP_srifle_SVD_des_top_rail: CUP_srifle_SVD_top_rail {
+        AI_DISPERSION;
+    };
+	class CUP_srifle_SVD_wdl_top_rail: CUP_srifle_SVD_top_rail {
+        AI_DISPERSION;
+    };
+	class CUP_lmg_UK59: Rifle_Long_Base_F {
+        __modes__[] = {"manual", "close", "short", "medium", "far"};
+        AI_ROF(manual);
+    };
+	class CUP_srifle_VSSVintorez: Rifle_Base_F {
+        __modes__[] = {"Single", "Full"};
+        AI_ROF(Full);
+    };
+	class CUP_srifle_VSSVintorez_top_rail: CUP_srifle_VSSVintorez {
+        __modes__[] = {"Single", "Full"};
+        AI_ROF(Full);
+    };
+	class CUP_srifle_VSSVintorez_VFG: CUP_srifle_VSSVintorez {
+        __modes__[] = {"Single", "Full"};
+        AI_ROF(Full);
+    };
+	class CUP_srifle_VSSVintorez_VFG_top_rail: CUP_srifle_VSSVintorez_top_rail {
+        __modes__[] = {"Single", "Full"};
+        AI_ROF(Full);
+    };
+	class CUP_srifle_VSSVintorez_flash: CUP_srifle_VSSVintorez {
+        __modes__[] = {"Single", "Full"};
+        AI_ROF(Full);
+    };
+	class CUP_srifle_VSSVintorez_flash_top: CUP_srifle_VSSVintorez_top_rail {
+        __modes__[] = {"Single", "Full"};
+        AI_ROF(Full);
+    };
+	class CUP_arifle_AS_VAL: CUP_srifle_VSSVintorez {
+        __modes__[] = {"Single", "Full"};
+        AI_ROF(Full);
+    };
+    class CUP_arifle_AS_VAL_top_rail;
+	class CUP_arifle_AS_VAL_VFG_top_rail: CUP_arifle_AS_VAL_top_rail {
+        __modes__[] = {"Single", "Full"};
+        AI_ROF(Full);
+    };
+	class CUP_arifle_AS_VAL_VFG: CUP_arifle_AS_VAL {
+        __modes__[] = {"Single", "Full"};
+        AI_ROF(Full);
+    };
+	class CUP_arifle_AS_VAL_VFG_top_rail: CUP_arifle_AS_VAL_top_rail {
+        __modes__[] = {"Single", "Full"};
+        AI_ROF(Full);
+    };
+	class CUP_arifle_AS_VAL_flash: CUP_arifle_AS_VAL {
+        __modes__[] = {"Single", "Full"};
+        AI_ROF(Full);
+    };
+	class CUP_arifle_AS_VAL_flash_top: CUP_arifle_AS_VAL_top_rail {
+        __modes__[] = {"Single", "Full"};
+        AI_ROF(Full);
+    };
+	class CUP_arifle_SR3M_Vikhr: Rifle_Base_F {
+        __modes__[] = {"Single", "Full"};
+        AI_ROF(Full);
+    };
+	class CUP_arifle_SR3M_Vikhr_top_rail: CUP_arifle_SR3M_Vikhr {
+        __modes__[] = {"Single", "Full"};
+        AI_ROF(Full);
+    };
+	class CUP_arifle_SR3M_Vikhr_VFG: CUP_arifle_SR3M_Vikhr {
+        __modes__[] = {"Single", "Full"};
+        AI_ROF(Full);
+    };
+	class CUP_arifle_SR3M_Vikhr_VFG_top_rail: CUP_arifle_SR3M_Vikhr_top_rail {
+        __modes__[] = {"Single", "Full"};
+        AI_ROF(Full);
+    };
+    class Tavor_base_F;
+	class CUP_arifle_X95: Tavor_base_F {
+        __modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_medium_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_X95_Grippod: CUP_arifle_X95 {
+        __modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_medium_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
 /*
 AI_DISPERSION;
-CUP_arifle_AUG_A1
-CUP_srifle_SVD
-CUP_srifle_SVD_top_rail
-CUP_srifle_SVD_des
-CUP_srifle_SVD_wdl
-CUP_srifle_SVD_des_top_rail
-CUP_srifle_SVD_wdl_top_rail
-CUP_lmg_UK59
-CUP_srifle_VSSVintorez
-CUP_srifle_VSSVintorez_top_rail
-CUP_srifle_VSSVintorez_VFG
-CUP_srifle_VSSVintorez_VFG_top_rail
-CUP_srifle_VSSVintorez_flash
-CUP_srifle_VSSVintorez_flash_top
-CUP_arifle_AS_VAL
-CUP_arifle_AS_VAL_top_rail
-CUP_arifle_AS_VAL_VFG
-CUP_arifle_AS_VAL_VFG_top_rail
-CUP_arifle_AS_VAL_flash
-CUP_arifle_AS_VAL_flash_top
-CUP_arifle_SR3M_Vikhr
-CUP_arifle_SR3M_Vikhr_top_rail
-CUP_arifle_SR3M_Vikhr_VFG
-CUP_arifle_SR3M_Vikhr_VFG_top_rail
-CUP_arifle_X95
-CUP_arifle_X95_Grippod
 CUP_arifle_Fort224
 CUP_arifle_Fort224_Grippod
 CUP_arifle_Fort221
