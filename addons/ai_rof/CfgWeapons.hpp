@@ -963,52 +963,172 @@ class CfgWeapons {
         __modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
+    class rhs_weap_svd;
+    class rhs_weap_svdp: rhs_weap_svd {
+        AI_DISPERSION
+    };
+    class rhs_weap_svdp_npz: rhs_weap_svdp {
+        AI_DISPERSION
+    };
+    class rhs_weap_svdp_wd: rhs_weap_svdp {
+        AI_DISPERSION
+    };
+    class rhs_weap_svdp_wd_npz: rhs_weap_svdp_wd {
+        AI_DISPERSION
+    };
+    class rhs_weap_svds: rhs_weap_svdp {
+        AI_DISPERSION
+    };
+    class rhs_weap_svds_npz: rhs_weap_svds {
+        AI_DISPERSION
+    };
+    class rhs_weap_orsis_Base_F;
+    class rhs_weap_t5000: rhs_weap_orsis_Base_F {
+        AI_DISPERSION
+    };
+    class rhs_weap_pp2000: hgun_PDW2000_F {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_pkp_base;
+    class rhs_weap_pkp: rhs_pkp_base {
+        __modes__[] = {"FullAuto", "Single", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_pkm: rhs_weap_pkp {
+        __modes__[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(manual);
+    };
+    class rhs_weap_XM2010_Base_F;
+    class rhs_weap_XM2010: rhs_weap_XM2010_Base_F {
+        AI_DISPERSION
+    };
+    class rhs_weap_XM2010_d: rhs_weap_XM2010 {
+        AI_DISPERSION
+    };
+    class rhs_weap_XM2010_wd: rhs_weap_XM2010 {
+        AI_DISPERSION
+    };
+    class rhs_weap_XM2010_sa: rhs_weap_XM2010 {
+        AI_DISPERSION
+    };
+    class rhs_weap_m24sws: rhs_weap_XM2010_Base_F {
+        AI_DISPERSION
+    };
+    class rhs_weap_m24sws_d: rhs_weap_m24sws {
+        AI_DISPERSION
+    };
+    class rhs_weap_m24sws_wd: rhs_weap_m24sws {
+        AI_DISPERSION
+    };
+    class rhs_weap_m40a5: rhs_weap_XM2010_Base_F {
+        AI_DISPERSION
+    };
+    class rhs_weap_m40a5_d: rhs_weap_m40a5 {
+        AI_DISPERSION
+    };
+    class rhs_weap_m40a5_wd: rhs_weap_m40a5 {
+        AI_DISPERSION
+    };
+    class rhs_weap_m4_Base;
+    class rhs_weap_m4: rhs_weap_m4_Base {
+        __modes__[] = {"Single", "Single_AI", "Burst", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(Burst);
+    };
+    class rhs_weap_m4_mstock: rhs_weap_m4 {
+        __modes__[] = {"Single", "Single_AI", "Burst", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(Burst);
+    };
+    class rhs_weap_m4_carryhandle: rhs_weap_m4 {
+        __modes__[] = {"Single", "Single_AI", "Burst", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(Burst);
+    };
+    class rhs_weap_m4_carryhandle_mstock: rhs_weap_m4_carryhandle {
+        __modes__[] = {"Single", "Single_AI", "Burst", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(Burst);
+    };
+    class rhs_weap_m4_m320: rhs_weap_m4 {
+        __modes__[] = {"Single", "Single_AI", "Burst", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(Burst);
+    };
+    class rhs_weap_m4_m203: rhs_weap_m4_m320 {
+        __modes__[] = {"Single", "Single_AI", "Burst", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(Burst);
+    };
+    class rhs_weap_m4_m203S: rhs_weap_m4_m203 {
+        __modes__[] = {"Single", "Single_AI", "Burst", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(Burst);
+    };
+    class rhs_weap_m4_carryhandle_m203: rhs_weap_m4_m203 {
+        __modes__[] = {"Single", "Single_AI", "Burst", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(Burst);
+    };
+    class rhs_weap_m4_carryhandle_m203S: rhs_weap_m4_carryhandle_m203 {
+        __modes__[] = {"Single", "Single_AI", "Burst", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(Burst);
+    };
+    class rhs_weap_m4a1: rhs_weap_m4_Base {
+        __modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m4a1_d: rhs_weap_m4a1 {
+        __modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m4a1_wd: rhs_weap_m4a1 {
+        __modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m4a1_mstock: rhs_weap_m4a1 {
+        __modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m4a1_d_mstock: rhs_weap_m4a1_d {
+        __modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m4a1_wd_mstock: rhs_weap_m4a1_wd {
+        __modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m4a1_carryhandle: rhs_weap_m4a1 {
+        __modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m4a1_carryhandle_mstock: rhs_weap_m4a1_carryhandle {
+        __modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_m4a1_m203: rhs_weap_m4a1 {
+        __modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_m4a1_m203s: rhs_weap_m4a1_m203 {
+        __modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_m4a1_m203s_d: rhs_weap_m4a1_m203s {
+        __modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_m4a1_carryhandle_m203: rhs_weap_m4a1_m203 {
+        __modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_m4a1_carryhandle_m203S: rhs_weap_m4a1_carryhandle_m203 {
+        __modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_m4a1_m320: rhs_weap_m4a1 {
+        __modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_m4a1_m203s_wd: rhs_weap_m4a1_m203s {
+        __modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
 /*
-rhs_weap_svdp
-rhs_weap_svdp_npz
-rhs_weap_svdp_wd
-rhs_weap_svdp_wd_npz
-rhs_weap_svds
-rhs_weap_svds_npz
-rhs_weap_t5000
-rhs_weap_pp2000
-rhs_weap_pkp
-rhs_weap_pkm
-rhs_weap_XM2010
-rhs_weap_XM2010_d
-rhs_weap_XM2010_wd
-rhs_weap_XM2010_sa
-rhs_weap_m24sws
-rhs_weap_m24sws_d
-rhs_weap_m24sws_wd
-rhs_weap_m40a5
-rhs_weap_m40a5_d
-rhs_weap_m40a5_wd
-rhs_weap_m4
-rhs_weap_m4_mstock
-rhs_weap_m4_carryhandle
-rhs_weap_m4_carryhandle_mstock
-rhs_weap_m4_m320
-rhs_weap_m4_m203
-rhs_weap_m4_m203S
-rhs_weap_m4_carryhandle_m203
-rhs_weap_m4_carryhandle_m203S
-rhs_weap_m4a1
-rhs_weap_m4a1_d
-rhs_weap_m4a1_wd
-rhs_weap_m4a1_mstock
-rhs_weap_m4a1_d_mstock
-rhs_weap_m4a1_wd_mstock
-rhs_weap_m4a1_carryhandle
-rhs_weap_m4a1_carryhandle_mstock
-rhs_weap_m4a1_m203
-rhs_weap_m4a1_m203s
-rhs_weap_m4a1_m203s_wd
-rhs_weap_m4a1_m203s_d
-rhs_weap_m4a1_carryhandle_m203
-rhs_weap_m4a1_carryhandle_m203S
-rhs_weap_m4a1_m320
-rhs_weap_m4a1_blockII
+AI_DISPERSION
 rhs_weap_m4a1_blockII_bk
 rhs_weap_m4a1_blockII_wd
 rhs_weap_m4a1_blockII_d
