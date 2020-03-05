@@ -1620,112 +1620,426 @@ class CfgWeapons {
         __modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_medium_optics2", "fullauto_medium"};
         AI_ROF(FullAuto);
     };
+	class CUP_arifle_Fort224: CUP_arifle_X95 {
+        __modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_medium_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Fort224_Grippod: CUP_arifle_X95_Grippod {
+        __modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_medium_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Fort221: arifle_TRG20_F {
+        __modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_medium_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Fort222: arifle_TRG21_F {
+        __modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_medium_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_AK_Base;
+	class CUP_arifle_AKM: CUP_arifle_AK_Base {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKM_GL: CUP_arifle_AKM {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKM_top_rail: CUP_arifle_AKM {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKM_GL_top_rail: CUP_arifle_AKM_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKM_Early: CUP_arifle_AKM {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKM_GL_Early: CUP_arifle_AKM_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKMN_railed: CUP_arifle_AKM {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKMN_railed_afg: CUP_arifle_AKM {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKMN_railed_desert: CUP_arifle_AKMN_railed {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKMN_railed_afg_desert: CUP_arifle_AKMN_railed_afg {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKMS: CUP_arifle_AKM {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKMS_top_rail: CUP_arifle_AKMS {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKMS_GL: CUP_arifle_AKM_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKMS_GL_top_rail: CUP_arifle_AKMS_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKMS_Early: CUP_arifle_AKMS {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKMS_GL_Early: CUP_arifle_AKMS_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_AKS_Base;
+	class CUP_arifle_AKS74U: CUP_arifle_AKS_Base {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKS74U_top_rail: CUP_arifle_AKS74U {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKS74U_railed: CUP_arifle_AKS74U {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK47: CUP_arifle_AK_Base {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK47_GL: CUP_arifle_AK47 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK47_top_rail: CUP_arifle_AK47 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK47_GL_top_rail: CUP_arifle_AK47_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK47_Early: CUP_arifle_AK47 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK47_GL_Early: CUP_arifle_AK47_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKS: CUP_arifle_AKM {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKS_Gold: CUP_arifle_AKS {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKS_top_rail: CUP_arifle_AKS {
+        __modes__[] = {"FullAuto", "Single", "Burst", "FullAuto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74: CUP_arifle_AK_Base {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74_GL: CUP_arifle_AK_Base {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74_top_rail: CUP_arifle_AK74 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74_GL_top_rail: CUP_arifle_AK74_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74_Early: CUP_arifle_AK74 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74_GL_Early: CUP_arifle_AK74_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKS74: CUP_arifle_AKS_Base {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKS74_GL: CUP_arifle_AK74_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKS74_top_rail: CUP_arifle_AKS74 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKS74_GL_top_rail: CUP_arifle_AKS74_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKS74_Early: CUP_arifle_AKS74 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AKS74_GL_Early: CUP_arifle_AKS74_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74M: CUP_arifle_AK_Base {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74M_GL: CUP_arifle_AK_Base {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74M_top_rail: CUP_arifle_AK74M {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74M_GL_top_rail: CUP_arifle_AK74M_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74M_railed: CUP_arifle_AK74M {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74M_GL_railed: CUP_arifle_AK74M_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74M_railed_afg: CUP_arifle_AK74M_railed {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74M_desert: CUP_arifle_AK74M {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74M_top_rail_desert: CUP_arifle_AK74M_desert {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74M_railed_desert: CUP_arifle_AK74M_desert {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74M_GL_desert: CUP_arifle_AK74M_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74M_GL_top_rail_desert: CUP_arifle_AK74M_GL_desert {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74M_GL_railed_desert: CUP_arifle_AK74M_GL_desert {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74M_railed_afg_desert: CUP_arifle_AK74M_railed_desert {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74M_camo: CUP_arifle_AK74M {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74M_top_rail_camo: CUP_arifle_AK74M_camo {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74M_railed_camo: CUP_arifle_AK74M_camo {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74M_GL_camo: CUP_arifle_AK74M_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74M_GL_top_rail_camo: CUP_arifle_AK74M_GL_camo {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74M_GL_railed_camo: CUP_arifle_AK74M_GL_camo {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK74M_railed_afg_camo: CUP_arifle_AK74M_railed_camo {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK101: CUP_arifle_AK74M {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK101_GL: CUP_arifle_AK74M_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK101_top_rail: CUP_arifle_AK101 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK101_GL_top_rail: CUP_arifle_AK101_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK101_railed: CUP_arifle_AK101 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK101_GL_railed: CUP_arifle_AK101_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK103: CUP_arifle_AK74M {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK103_GL: CUP_arifle_AK74M_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK103_top_rail: CUP_arifle_AK103 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK103_GL_top_rail: CUP_arifle_AK103_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK103_railed: CUP_arifle_AK103 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK103_GL_railed: CUP_arifle_AK103_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK107: CUP_arifle_AK107_Base {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK107_GL: CUP_arifle_AK107_Base {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK107_top_rail: CUP_arifle_AK107 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK107_GL_top_rail: CUP_arifle_AK107_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK107_railed: CUP_arifle_AK107 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK107_GL_railed: CUP_arifle_AK107_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK108: CUP_arifle_AK107 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK108_GL: CUP_arifle_AK107_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK108_top_rail: CUP_arifle_AK108 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK108_GL_top_rail: CUP_arifle_AK108_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK108_railed: CUP_arifle_AK108 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK108_GL_railed: CUP_arifle_AK108_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK109: CUP_arifle_AK107 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK109_GL: CUP_arifle_AK107_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK109_top_rail: CUP_arifle_AK109 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK109_GL_top_rail: CUP_arifle_AK109_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK109_railed: CUP_arifle_AK109 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK109_GL_railed: CUP_arifle_AK109_GL {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK102: CUP_arifle_AK_Base {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK102_top_rail: CUP_arifle_AK102 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK102_railed: CUP_arifle_AK102 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK104: CUP_arifle_AK_Base {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK104_top_rail: CUP_arifle_AK104 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK104_railed: CUP_arifle_AK104 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK105: CUP_arifle_AK_Base {
+        __modes__[] = {"FullAuto", "Single", "Burst", "Burst_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK105_top_rail: CUP_arifle_AK105 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "Burst_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AK105_railed: CUP_arifle_AK105 {
+        __modes__[] = {"FullAuto", "Single", "Burst", "Burst_medium", "single_medium_optics1", "single_medium_optics2"};
+        AI_ROF(FullAuto);
+    };
 /*
 AI_DISPERSION;
-CUP_arifle_Fort224
-CUP_arifle_Fort224_Grippod
-CUP_arifle_Fort221
-CUP_arifle_Fort222
-CUP_arifle_AKM
-CUP_arifle_AKM_GL
-CUP_arifle_AKM_top_rail
-CUP_arifle_AKM_GL_top_rail
-CUP_arifle_AKM_Early
-CUP_arifle_AKM_GL_Early
-CUP_arifle_AKMN_railed
-CUP_arifle_AKMN_railed_afg
-CUP_arifle_AKMN_railed_desert
-CUP_arifle_AKMN_railed_afg_desert
-CUP_arifle_AKMS
-CUP_arifle_AKMS_top_rail
-CUP_arifle_AKMS_GL
-CUP_arifle_AKMS_GL_top_rail
-CUP_arifle_AKMS_Early
-CUP_arifle_AKMS_GL_Early
-CUP_arifle_AKS74U
-CUP_arifle_AKS74U_top_rail
-CUP_arifle_AKS74U_railed
-CUP_arifle_AK47
-CUP_arifle_AK47_GL
-CUP_arifle_AK47_top_rail
-CUP_arifle_AK47_GL_top_rail
-CUP_arifle_AK47_Early
-CUP_arifle_AK47_GL_Early
-CUP_arifle_AKS
-CUP_arifle_AKS_Gold
-CUP_arifle_AKS_top_rail
-CUP_arifle_AK74
-CUP_arifle_AK74_GL
-CUP_arifle_AK74_top_rail
-CUP_arifle_AK74_GL_top_rail
-CUP_arifle_AK74_Early
-CUP_arifle_AK74_GL_Early
-CUP_arifle_AKS74
-CUP_arifle_AKS74_GL
-CUP_arifle_AKS74_top_rail
-CUP_arifle_AKS74_GL_top_rail
-CUP_arifle_AKS74_Early
-CUP_arifle_AKS74_GL_Early
-CUP_arifle_AK74M
-CUP_arifle_AK74M_GL
-CUP_arifle_AK74M_top_rail
-CUP_arifle_AK74M_GL_top_rail
-CUP_arifle_AK74M_railed
-CUP_arifle_AK74M_GL_railed
-CUP_arifle_AK74M_railed_afg
-CUP_arifle_AK74M_desert
-CUP_arifle_AK74M_top_rail_desert
-CUP_arifle_AK74M_railed_desert
-CUP_arifle_AK74M_GL_desert
-CUP_arifle_AK74M_GL_top_rail_desert
-CUP_arifle_AK74M_GL_railed_desert
-CUP_arifle_AK74M_railed_afg_desert
-CUP_arifle_AK74M_camo
-CUP_arifle_AK74M_top_rail_camo
-CUP_arifle_AK74M_railed_camo
-CUP_arifle_AK74M_GL_camo
-CUP_arifle_AK74M_GL_top_rail_camo
-CUP_arifle_AK74M_GL_railed_camo
-CUP_arifle_AK74M_railed_afg_camo
-CUP_arifle_AK101
-CUP_arifle_AK101_GL
-CUP_arifle_AK101_top_rail
-CUP_arifle_AK101_GL_top_rail
-CUP_arifle_AK101_railed
-CUP_arifle_AK101_GL_railed
-CUP_arifle_AK103
-CUP_arifle_AK103_GL
-CUP_arifle_AK103_top_rail
-CUP_arifle_AK103_GL_top_rail
-CUP_arifle_AK103_railed
-CUP_arifle_AK103_GL_railed
-CUP_arifle_AK107
-CUP_arifle_AK107_GL
-CUP_arifle_AK107_top_rail
-CUP_arifle_AK107_GL_top_rail
-CUP_arifle_AK107_railed
-CUP_arifle_AK107_GL_railed
-CUP_arifle_AK108
-CUP_arifle_AK108_GL
-CUP_arifle_AK108_top_rail
-CUP_arifle_AK108_GL_top_rail
-CUP_arifle_AK108_railed
-CUP_arifle_AK108_GL_railed
-CUP_arifle_AK109
-CUP_arifle_AK109_GL
-CUP_arifle_AK109_top_rail
-CUP_arifle_AK109_GL_top_rail
-CUP_arifle_AK109_railed
-CUP_arifle_AK109_GL_railed
-CUP_arifle_AK102
-CUP_arifle_AK102_top_rail
-CUP_arifle_AK102_railed
-CUP_arifle_AK104
-CUP_arifle_AK104_top_rail
-CUP_arifle_AK104_railed
-CUP_arifle_AK105
-CUP_arifle_AK105_top_rail
-CUP_arifle_AK105_railed
 CUP_arifle_RPK74
 CUP_arifle_RPK74_top_rail
 CUP_arifle_RPK74_45
