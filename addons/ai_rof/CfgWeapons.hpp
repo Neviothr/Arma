@@ -1350,32 +1350,106 @@ class CfgWeapons {
     class rhs_weap_sr25_ec_d: rhs_weap_sr25_d {
         AI_DISPERSION;
     };
+    class rhs_weap_M107_Base_F;
+    class rhs_weap_M107: rhs_weap_M107_Base_F {
+        AI_DISPERSION;
+    };
+    class rhs_weap_M107_d: rhs_weap_M107 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_M107_w: rhs_weap_M107 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_M590_5RD: Rifle_Base_F {
+        AI_DISPERSION;
+    };
+    class rhs_weap_M590_8RD: rhs_weap_M590_5RD {
+        AI_DISPERSION;
+    };
+    class rhs_weap_m32_Base_F;
+	class rhs_weap_m32: rhs_weap_m32_Base_F {
+        AI_DISPERSION;
+    };
+    class rhsusf_weap_MP7A1_base_f;
+	class rhsusf_weap_MP7A2: rhsusf_weap_MP7A1_base_f {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class rhsusf_weap_MP7A2_winter: rhsusf_weap_MP7A2 {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class rhsusf_weap_MP7A2_desert: rhsusf_weap_MP7A2 {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class rhsusf_weap_MP7A2_aor1: rhsusf_weap_MP7A2 {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_SCAR_H_CQC_Base;
+	class rhs_weap_mk17_CQC: rhs_weap_SCAR_H_CQC_Base {
+        __modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_SCAR_H_STD_Base;
+	class rhs_weap_mk17_STD: rhs_weap_SCAR_H_STD_Base {
+        __modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_SCAR_H_LB_Base;
+	class rhs_weap_mk17_LB: rhs_weap_SCAR_H_LB_Base {
+        __modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_SCARH_USA_CQC: rhs_weap_mk17_CQC {
+        __modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_SCARH_USA_STD: rhs_weap_mk17_STD {
+        __modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_SCARH_USA_LB: rhs_weap_mk17_LB {
+        __modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+    class CUP_CZ_BREN2_Base;
+	class CUP_CZ_BREN2_556_14: CUP_CZ_BREN2_Base {
+        __modes__[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+    class CUP_CZ_BREN2_GL_Base;
+	class CUP_CZ_BREN2_556_14_GL: CUP_CZ_BREN2_GL_Base {
+        __modes__[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_CZ_BREN2_556_11: CUP_CZ_BREN2_Base {
+        __modes__[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_CZ_BREN2_556_11_GL: CUP_CZ_BREN2_GL_Base {
+        __modes__[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_CZ_BREN2_556_8: CUP_CZ_BREN2_Base {
+        __modes__[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_CZ_BREN2_762_14: CUP_CZ_BREN2_762_Base {
+        __modes__[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_CZ_BREN2_762_14_GL: CUP_CZ_BREN2_762_GL_Base {
+        __modes__[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_CZ_BREN2_762_8: CUP_CZ_BREN2_762_Base {
+        __modes__[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
 /*
 AI_DISPERSION;
-rhs_weap_M107
-rhs_weap_M107_d
-rhs_weap_M107_w
-rhs_weap_M590_5RD
-rhs_weap_M590_8RD
-rhs_weap_m32
-rhsusf_weap_MP7A2
-rhsusf_weap_MP7A2_winter
-rhsusf_weap_MP7A2_desert
-rhsusf_weap_MP7A2_aor1
-rhs_weap_mk17_CQC
-rhs_weap_mk17_STD
-rhs_weap_mk17_LB
-rhs_weap_SCARH_USA_CQC
-rhs_weap_SCARH_USA_STD
-rhs_weap_SCARH_USA_LB
-CUP_CZ_BREN2_556_14
-CUP_CZ_BREN2_556_14_GL
-CUP_CZ_BREN2_556_11
-CUP_CZ_BREN2_556_11_GL
-CUP_CZ_BREN2_556_8
-CUP_CZ_BREN2_762_14
-CUP_CZ_BREN2_762_14_GL
-CUP_CZ_BREN2_762_8
 CUP_glaunch_M32
 CUP_glaunch_M79
 CUP_glaunch_Mk13
