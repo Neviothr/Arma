@@ -1448,26 +1448,75 @@ class CfgWeapons {
         __modes__[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2"};
         AI_ROF(FullAuto);
     };
+    class CUP_glaunch_Base;
+	class CUP_glaunch_M32: CUP_glaunch_Base {
+        AI_DISPERSION;
+    };
+	class CUP_glaunch_M79: CUP_glaunch_Base {
+        AI_DISPERSION;
+    };
+	class CUP_glaunch_Mk13: CUP_glaunch_Base {
+        AI_DISPERSION;
+    };
+	class CUP_glaunch_6G30: CUP_glaunch_M32 {
+        AI_DISPERSION;
+    };
+    class CUP_arifle_OTS14_GROZA_Base;
+	class CUP_arifle_OTS14_GROZA_GL: CUP_arifle_OTS14_GROZA_Base {
+        __modes__[] = {"Single", "Full", "FullAuto_medium"};
+        AI_ROF(Full);
+    };
+	class CUP_arifle_OTS14_GROZA_Grip: CUP_arifle_OTS14_GROZA_Base {
+        __modes__[] = {"Single", "Full", "FullAuto_medium"};
+        AI_ROF(Full);
+    };
+	class CUP_arifle_OTS14_GROZA: CUP_arifle_OTS14_GROZA_Base {
+        __modes__[] = {"Single", "Full", "FullAuto_medium"};
+        AI_ROF(Full);
+    };
+	class CUP_arifle_OTS14_GROZA_762_Grip: CUP_arifle_OTS14_GROZA_762_base {
+        __modes__[] = {"Single", "Full", "FullAuto_medium"};
+        AI_ROF(Full);
+    };
+	class CUP_arifle_OTS14_GROZA_762: CUP_arifle_OTS14_GROZA_762_base {
+        __modes__[] = {"Single", "Full", "FullAuto_medium"};
+        AI_ROF(Full);
+    };
+	class CUP_arifle_OTS14_GROZA_762_GL: CUP_arifle_OTS14_GROZA_762_base {
+        __modes__[] = {"Single", "Full", "FullAuto_medium"};
+        AI_ROF(Full);
+    };
+	class CUP_srifle_ksvk: Rifle_Base_F {
+        AI_DISPERSION;
+    };
+    class CUP_Mac10_Base;
+	class CUP_smg_Mac10: CUP_Mac10_Base {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_smg_MP5SD6: Rifle_Base_F {
+        __modes__[] = {"Single", "Burst", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_smg_MP5A5: CUP_smg_MP5SD6 {
+        __modes__[] = {"Single", "Burst", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_smg_MP5A5_flashlight: CUP_smg_MP5A5 {
+        __modes__[] = {"Single", "Burst", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_sgun_Saiga12K: Rifle_Base_F {
+        AI_DISPERSION;
+    };
+	class CUP_sgun_Saiga12K_top_rail: CUP_sgun_Saiga12K {
+        AI_DISPERSION;
+    };
+	class CUP_hgun_BallisticShield_Armed: Rifle_Base_F {
+        AI_DISPERSION;
+    };
 /*
 AI_DISPERSION;
-CUP_glaunch_M32
-CUP_glaunch_M79
-CUP_glaunch_Mk13
-CUP_glaunch_6G30
-CUP_arifle_OTS14_GROZA_GL
-CUP_arifle_OTS14_GROZA_Grip
-CUP_arifle_OTS14_GROZA
-CUP_arifle_OTS14_GROZA_762_Grip
-CUP_arifle_OTS14_GROZA_762
-CUP_arifle_OTS14_GROZA_762_GL
-CUP_srifle_ksvk
-CUP_smg_Mac10
-CUP_smg_MP5SD6
-CUP_smg_MP5A5
-CUP_smg_MP5A5_flashlight
-CUP_sgun_Saiga12K
-CUP_sgun_Saiga12K_top_rail
-CUP_hgun_BallisticShield_Armed
 CUP_arifle_AUG_A1
 CUP_srifle_SVD
 CUP_srifle_SVD_top_rail
