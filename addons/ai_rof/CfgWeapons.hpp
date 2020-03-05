@@ -460,6 +460,7 @@ class CfgWeapons {
         modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
+    class arifle_CTARS_base_F;
     class arifle_CTARS_blk_F: arifle_CTARS_base_F {
         modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
@@ -1436,10 +1437,12 @@ class CfgWeapons {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
+    class CUP_CZ_BREN2_762_Base;
 	class CUP_CZ_BREN2_762_14: CUP_CZ_BREN2_762_Base {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
+    class CUP_CZ_BREN2_762_GL_Base;
 	class CUP_CZ_BREN2_762_14_GL: CUP_CZ_BREN2_762_GL_Base {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
@@ -1474,6 +1477,7 @@ class CfgWeapons {
         modes[] = {"Single", "Full", "FullAuto_medium", "NEV_FullAuto"};
         AI_ROF(Full);
     };
+    class CUP_arifle_OTS14_GROZA_762_base;
 	class CUP_arifle_OTS14_GROZA_762_Grip: CUP_arifle_OTS14_GROZA_762_base {
         modes[] = {"Single", "Full", "FullAuto_medium", "NEV_FullAuto"};
         AI_ROF(Full);
