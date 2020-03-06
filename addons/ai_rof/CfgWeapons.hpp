@@ -3472,64 +3472,190 @@ class CfgWeapons {
         modes[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-/*AI_DISPERSION;
-launch_NLAW_F
-launch_RPG32_F
-launch_B_Titan_F
-launch_I_Titan_F
-launch_O_Titan_F
-launch_B_Titan_short_F
-launch_I_Titan_short_F
-launch_O_Titan_short_F
-CUP_launch_M72A6
-CUP_launch_M72A6_Special
-CUP_launch_Igla
-CUP_launch_Javelin
-CUP_launch_M136
-CUP_launch_M47
-CUP_launch_MAAWS
-CUP_launch_Metis
-CUP_launch_NLAW
-CUP_launch_RPG18
-CUP_launch_Mk153Mod0
-CUP_launch_Mk153Mod0_blk
-CUP_launch_FIM92Stinger
-CUP_launch_9K32Strela
-launch_RPG32_ghex_F
-launch_RPG7_F
-launch_B_Titan_tna_F
-launch_B_Titan_short_tna_F
-launch_O_Titan_ghex_F
-launch_O_Titan_short_ghex_F
-launch_MRAWS_olive_F
-launch_MRAWS_olive_rail_F
-launch_MRAWS_green_F
-launch_MRAWS_green_rail_F
-launch_MRAWS_sand_F
-launch_MRAWS_sand_rail_F
-launch_O_Vorona_brown_F
-launch_O_Vorona_green_F
-launch_RPG32_green_F
-launch_I_Titan_eaf_F
-launch_B_Titan_olive_F
-rhs_weap_rpg26
-rhs_weap_rshg2
-rhs_weap_rpg7
-rhs_weap_igla
-rhs_weap_smaw
-rhs_weap_smaw_green
-rhs_weap_maaws
-rhs_weap_M136
-rhs_weap_M136_hedp
-rhs_weap_M136_hp
-rhs_weap_m72a7
-rhs_weap_fim92
-rhs_weap_fgm148
-CUP_launch_RPG7V
-rhs_weap_rpg75
-rhs_weap_panzerfaust60
-rhs_weap_m80
-
+    class Launcher_Base_F;
+	class launch_NLAW_F: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+	class launch_RPG32_F: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+    class launch_Titan_base;
+	class launch_B_Titan_F: launch_Titan_base {
+        AI_DISPERSION;
+    };
+	class launch_I_Titan_F: launch_Titan_base {
+        AI_DISPERSION;
+    };
+	class launch_O_Titan_F: launch_Titan_base {
+        AI_DISPERSION;
+    };
+    class launch_Titan_short_base;
+	class launch_B_Titan_short_F: launch_Titan_short_base {
+        AI_DISPERSION;
+    };
+	class launch_I_Titan_short_F: launch_Titan_short_base {
+        AI_DISPERSION;
+    };
+	class launch_O_Titan_short_F: launch_Titan_short_base {
+        AI_DISPERSION;
+    };
+    class CUP_launch_M72A6_Loaded;
+	class CUP_launch_M72A6: CUP_launch_M72A6_Loaded {
+        AI_DISPERSION;
+    };
+    class CUP_launch_M72A6_Special_Loaded;
+	class CUP_launch_M72A6_Special: CUP_launch_M72A6_Special_Loaded {
+        AI_DISPERSION;
+    };
+    class CUP_launch_Igla_Loaded;
+	class CUP_launch_Igla: CUP_launch_Igla_Loaded {
+        AI_DISPERSION;
+    };
+	class CUP_launch_Javelin: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+    class CUP_launch_M136_Loaded;
+	class CUP_launch_M136: CUP_launch_M136_Loaded {
+        AI_DISPERSION;
+    };
+	class CUP_launch_M47: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+	class CUP_launch_MAAWS: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+	class CUP_launch_Metis: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+    class CUP_launch_NLAW_Loaded;
+	class CUP_launch_NLAW: CUP_launch_NLAW_Loaded {
+        AI_DISPERSION;
+    };
+    class CUP_launch_RPG18_Loaded;
+	class CUP_launch_RPG18: CUP_launch_RPG18_Loaded {
+        AI_DISPERSION;
+    };
+	class CUP_launch_Mk153Mod0: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+	class CUP_launch_Mk153Mod0_blk: CUP_launch_Mk153Mod0 {
+        AI_DISPERSION;
+    };
+    class CUP_launch_FIM92Stinger_Loaded;
+	class CUP_launch_FIM92Stinger: CUP_launch_FIM92Stinger_Loaded {
+        AI_DISPERSION;
+    };
+    class CUP_launch_9K32Strela_Loaded;
+	class CUP_launch_9K32Strela: CUP_launch_9K32Strela_Loaded {
+        AI_DISPERSION;
+    };
+	class launch_RPG32_ghex_F: launch_RPG32_F {
+        AI_DISPERSION;
+    };
+	class launch_RPG7_F: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+	class launch_B_Titan_tna_F: launch_B_Titan_F {
+        AI_DISPERSION;
+    };
+	class launch_B_Titan_short_tna_F: launch_B_Titan_short_F {
+        AI_DISPERSION;
+    };
+	class launch_O_Titan_ghex_F: launch_O_Titan_F {
+        AI_DISPERSION;
+    };
+	class launch_O_Titan_short_ghex_F: launch_O_Titan_short_F {
+        AI_DISPERSION;
+    };
+    class launch_MRAWS_base_F;
+	class launch_MRAWS_olive_F: launch_MRAWS_base_F {
+        AI_DISPERSION;
+    };
+	class launch_MRAWS_olive_rail_F: launch_MRAWS_olive_F {
+        AI_DISPERSION;
+    };
+	class launch_MRAWS_green_F: launch_MRAWS_base_F {
+        AI_DISPERSION;
+    };
+	class launch_MRAWS_green_rail_F: launch_MRAWS_olive_rail_F {
+        AI_DISPERSION;
+    };
+	class launch_MRAWS_sand_F: launch_MRAWS_base_F {
+        AI_DISPERSION;
+    };
+	class launch_MRAWS_sand_rail_F: launch_MRAWS_olive_rail_F {
+        AI_DISPERSION;
+    };
+    class launch_Vorona_base_F;
+	class launch_O_Vorona_brown_F: launch_Vorona_base_F {
+        AI_DISPERSION;
+    };
+	class launch_O_Vorona_green_F: launch_Vorona_base_F {
+        AI_DISPERSION;
+    };
+	class launch_RPG32_green_F: launch_RPG32_F {
+        AI_DISPERSION;
+    };
+	class launch_I_Titan_eaf_F: launch_I_Titan_F {
+        AI_DISPERSION;
+    };
+	class launch_B_Titan_olive_F: launch_B_Titan_F {
+        AI_DISPERSION;
+    };
+	class rhs_weap_rpg26: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+	class rhs_weap_rshg2: rhs_weap_rpg26 {
+        AI_DISPERSION;
+    };
+	class rhs_weap_rpg7: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+    class rhs_weap_strela;
+	class rhs_weap_igla: rhs_weap_strela {
+        AI_DISPERSION;
+    };
+	class rhs_weap_smaw: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+	class rhs_weap_smaw_green: rhs_weap_smaw {
+        AI_DISPERSION;
+    };
+	class rhs_weap_maaws: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+	class rhs_weap_M136: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+	class rhs_weap_M136_hedp: rhs_weap_M136 {
+        AI_DISPERSION;
+    };
+	class rhs_weap_M136_hp: rhs_weap_M136 {
+        AI_DISPERSION;
+    };
+	class rhs_weap_m72a7: rhs_weap_M136 {
+        AI_DISPERSION;
+    };
+	class rhs_weap_fim92: launch_O_Titan_F {
+        AI_DISPERSION;
+    };
+	class rhs_weap_fgm148: launch_O_Titan_F {
+        AI_DISPERSION;
+    };
+	class CUP_launch_RPG7V: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+	class rhs_weap_rpg75: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+	class rhs_weap_panzerfaust60: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+	class rhs_weap_m80: Launcher_Base_F {
+        AI_DISPERSION;
+    };
+/*
+AI_DISPERSION;
 hgun_ACPC2_F
 hgun_P07_F
 hgun_Pistol_heavy_01_F
