@@ -2217,52 +2217,186 @@ class CfgWeapons {
         __modes__[] = {"Fullauto", "Single"};
         AI_ROF(FullAuto);
     };
+    class CUP_arifle_G36_Base_CarryhandleOptics;
+	class CUP_arifle_G36A: CUP_arifle_G36_Base_CarryhandleOptics {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36A_camo: CUP_arifle_G36A {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36A_wdl: CUP_arifle_G36A {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_G36_Base;
+	class CUP_arifle_G36A_RIS: CUP_arifle_G36_Base {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36A_RIS_camo: CUP_arifle_G36A_RIS {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36A_RIS_wdl: CUP_arifle_G36A_RIS {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AG36: CUP_arifle_G36A {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AG36_camo: CUP_arifle_AG36 {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_AG36_wdl: CUP_arifle_AG36 {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36A_AG36_RIS: CUP_arifle_G36A_RIS {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36A_AG36_RIS_camo: CUP_arifle_G36A_AG36_RIS {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36A_AG36_RIS_wdl: CUP_arifle_G36A_AG36_RIS {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K: CUP_arifle_G36_Base_CarryhandleOptics {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_camo: CUP_arifle_G36K {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_wdl: CUP_arifle_G36K {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_VFG: CUP_arifle_G36K {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_VFG_camo: CUP_arifle_G36K_VFG {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_VFG_wdl: CUP_arifle_G36K_VFG {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_RIS: CUP_arifle_G36_Base {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_RIS_camo: CUP_arifle_G36K_RIS {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_RIS_wdl: CUP_arifle_G36K_RIS {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_RIS_hex: CUP_arifle_G36K_RIS {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_AG36: CUP_arifle_G36K {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_AG36_camo: CUP_arifle_G36K_AG36 {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_AG36_wdl: CUP_arifle_G36K_AG36 {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_RIS_AG36: CUP_arifle_G36K_RIS {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_RIS_AG36_camo: CUP_arifle_G36K_RIS_AG36 {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_RIS_AG36_wdl: CUP_arifle_G36K_RIS_AG36 {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_RIS_AG36_hex: CUP_arifle_G36K_RIS_AG36 {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_KSK: CUP_arifle_G36K_RIS {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_KSK_camo: CUP_arifle_G36K_KSK {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_KSK_hex: CUP_arifle_G36K_KSK {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_KSK_VFG: CUP_arifle_G36K_RIS {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_KSK_VFG_camo: CUP_arifle_G36K_KSK_VFG {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36K_KSK_VFG_hex: CUP_arifle_G36K_KSK_VFG {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36C: CUP_arifle_G36_Base {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36C_camo: CUP_arifle_G36C {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36C_wdl: CUP_arifle_G36C {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36C_hex: CUP_arifle_G36C {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36C_VFG: CUP_arifle_G36C {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36C_VFG_camo: CUP_arifle_G36C_VFG {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36C_VFG_wdl: CUP_arifle_G36C_VFG {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36C_VFG_hex: CUP_arifle_G36C_VFG {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36C_VFG_Carry: CUP_arifle_G36_Base_CarryhandleOptics {
+        __modes__[] = {"Single", "Fullauto"};
+        AI_ROF(FullAuto);
+    };
 /*
 AI_DISPERSION;
-CUP_arifle_G36A
-CUP_arifle_G36A_camo
-CUP_arifle_G36A_wdl
-CUP_arifle_G36A_RIS
-CUP_arifle_G36A_RIS_camo
-CUP_arifle_G36A_RIS_wdl
-CUP_arifle_AG36
-CUP_arifle_AG36_camo
-CUP_arifle_AG36_wdl
-CUP_arifle_G36A_AG36_RIS
-CUP_arifle_G36A_AG36_RIS_camo
-CUP_arifle_G36A_AG36_RIS_wdl
-CUP_arifle_G36K
-CUP_arifle_G36K_camo
-CUP_arifle_G36K_wdl
-CUP_arifle_G36K_VFG
-CUP_arifle_G36K_VFG_camo
-CUP_arifle_G36K_VFG_wdl
-CUP_arifle_G36K_RIS
-CUP_arifle_G36K_RIS_camo
-CUP_arifle_G36K_RIS_wdl
-CUP_arifle_G36K_RIS_hex
-CUP_arifle_G36K_AG36
-CUP_arifle_G36K_AG36_camo
-CUP_arifle_G36K_AG36_wdl
-CUP_arifle_G36K_RIS_AG36
-CUP_arifle_G36K_RIS_AG36_camo
-CUP_arifle_G36K_RIS_AG36_wdl
-CUP_arifle_G36K_RIS_AG36_hex
-CUP_arifle_G36K_KSK
-CUP_arifle_G36K_KSK_camo
-CUP_arifle_G36K_KSK_hex
-CUP_arifle_G36K_KSK_VFG
-CUP_arifle_G36K_KSK_VFG_camo
-CUP_arifle_G36K_KSK_VFG_hex
-CUP_arifle_G36C
-CUP_arifle_G36C_camo
-CUP_arifle_G36C_wdl
-CUP_arifle_G36C_hex
-CUP_arifle_G36C_VFG
-CUP_arifle_G36C_VFG_camo
-CUP_arifle_G36C_VFG_wdl
-CUP_arifle_G36C_VFG_hex
-CUP_arifle_G36C_VFG_Carry
 CUP_arifle_MG36
 CUP_arifle_MG36_camo
 CUP_arifle_MG36_wdl
