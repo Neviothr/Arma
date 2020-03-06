@@ -2161,22 +2161,64 @@ class CfgWeapons {
 	class CUP_arifle_CZ805_GL_coyote: CUP_arifle_CZ805_GL {
         AI_DISPERSION;
     };
+	class CUP_smg_EVO: Rifle_Short_Base_F {
+        __modes__[] = {"Single", "Burst", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_FNFAL: Rifle_Base_F {
+        __modes__[] = {"Fullauto", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_FNFAL_railed: CUP_arifle_FNFAL {
+        __modes__[] = {"Fullauto", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_FNFAL_desert: CUP_arifle_FNFAL {
+        __modes__[] = {"Fullauto", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_FNFAL_railed_desert: CUP_arifle_FNFAL_railed {
+        __modes__[] = {"Fullauto", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_FNFAL_sand: CUP_arifle_FNFAL {
+        __modes__[] = {"Fullauto", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_FNFAL_railed_sand: CUP_arifle_FNFAL_railed {
+        __modes__[] = {"Fullauto", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_FNFAL_woodland: CUP_arifle_FNFAL {
+        __modes__[] = {"Fullauto", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_FNFAL_railed_woodland: CUP_arifle_FNFAL_railed {
+        __modes__[] = {"Fullauto", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_FNFAL5061: CUP_arifle_FNFAL {
+        __modes__[] = {"Fullauto", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_FNFAL5061_rhodesian: CUP_arifle_FNFAL5061 {
+        __modes__[] = {"Fullauto", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_FNFAL5061_wooden: CUP_arifle_FNFAL5061 {
+        __modes__[] = {"Fullauto", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_FNFAL5062: CUP_arifle_FNFAL {
+        __modes__[] = {"Fullauto", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_FNFAL_OSW: CUP_arifle_FNFAL {
+        __modes__[] = {"Fullauto", "Single"};
+        AI_ROF(FullAuto);
+    };
 /*
 AI_DISPERSION;
-CUP_smg_EVO
-CUP_arifle_FNFAL
-CUP_arifle_FNFAL_railed
-CUP_arifle_FNFAL_desert
-CUP_arifle_FNFAL_railed_desert
-CUP_arifle_FNFAL_sand
-CUP_arifle_FNFAL_railed_sand
-CUP_arifle_FNFAL_woodland
-CUP_arifle_FNFAL_railed_woodland
-CUP_arifle_FNFAL5061
-CUP_arifle_FNFAL5061_rhodesian
-CUP_arifle_FNFAL5061_wooden
-CUP_arifle_FNFAL5062
-CUP_arifle_FNFAL_OSW
 CUP_arifle_G36A
 CUP_arifle_G36A_camo
 CUP_arifle_G36A_wdl
