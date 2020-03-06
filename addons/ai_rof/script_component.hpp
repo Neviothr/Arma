@@ -21,8 +21,8 @@
             aiRateOfFireDispersion = 0; \
             aiBurstTerminable = false; \
         }; \
-        aiDispersionCoefX = 50.0; \
-        aiDispersionCoefY = 50.0
+        aiDispersionCoefX = 40.0; \
+        aiDispersionCoefY = 40.0
 
 # define AI_VEHICLE_ROF(baseMode) \
         class baseMode; \
@@ -45,5 +45,5 @@
         aiDispersionCoefY = 75.0
 
 # define AI_DISPERSION \
-    aiDispersionCoefX = 50.0; \
-    aiDispersionCoefY = 50.0
+    aiDispersionCoefX = 40.0; \
+    aiDispersionCoefY = 40.0
