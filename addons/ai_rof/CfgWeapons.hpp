@@ -2039,519 +2039,519 @@ class CfgWeapons {
         modes[] = {"FullAuto", "Single", "Burst", "Burst_medium", "single_medium_optics1", "single_medium_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_RPK74: CUP_arifle_AK_Base {
+    class CUP_arifle_RPK74: CUP_arifle_AK_Base {
         modes[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_RPK74_top_rail: CUP_arifle_RPK74 {
+    class CUP_arifle_RPK74_top_rail: CUP_arifle_RPK74 {
         modes[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_RPK74_45: CUP_arifle_RPK74 {
+    class CUP_arifle_RPK74_45: CUP_arifle_RPK74 {
         modes[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_RPK74_45_top_rail: CUP_arifle_RPK74_45 {
+    class CUP_arifle_RPK74_45_top_rail: CUP_arifle_RPK74_45 {
         modes[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_RPK74M: CUP_arifle_RPK74 {
+    class CUP_arifle_RPK74M: CUP_arifle_RPK74 {
         modes[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_RPK74M_top_rail: CUP_arifle_RPK74M {
-        modes[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2", "Single", "NEV_FullAuto"};
-        AI_ROF(manual);
-    };
-	class CUP_arifle_RPK74M_railed: CUP_arifle_RPK74M_top_rail {
+    class CUP_arifle_RPK74M_top_rail: CUP_arifle_RPK74M {
         modes[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2", "Single", "NEV_FullAuto"};
         AI_ROF(manual);
     };
-	class CUP_arifle_SAIGA_MK03: CUP_arifle_AK104 {
+    class CUP_arifle_RPK74M_railed: CUP_arifle_RPK74M_top_rail {
+        modes[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2", "Single", "NEV_FullAuto"};
+        AI_ROF(manual);
+    };
+    class CUP_arifle_SAIGA_MK03: CUP_arifle_AK104 {
         AI_DISPERSION;
     };
-	class CUP_arifle_SAIGA_MK03_top_rail: CUP_arifle_SAIGA_MK03 {
+    class CUP_arifle_SAIGA_MK03_top_rail: CUP_arifle_SAIGA_MK03 {
         AI_DISPERSION;
     };
-	class CUP_arifle_SAIGA_MK03_Wood: CUP_arifle_SAIGA_MK03 {
+    class CUP_arifle_SAIGA_MK03_Wood: CUP_arifle_SAIGA_MK03 {
         AI_DISPERSION;
     };
-	class CUP_arifle_SIAGE_MK03_Wood_top_rail: CUP_arifle_SAIGA_MK03_Wood {
+    class CUP_arifle_SIAGE_MK03_Wood_top_rail: CUP_arifle_SAIGA_MK03_Wood {
         AI_DISPERSION;
     };
-	class CUP_arifle_TYPE_56_2: CUP_arifle_AKM {
+    class CUP_arifle_TYPE_56_2: CUP_arifle_AKM {
         modes[] = {"FullAuto", "Single", "Burst", "FullAuto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_TYPE_56_2_top_rail: CUP_arifle_TYPE_56_2 {
+    class CUP_arifle_TYPE_56_2_top_rail: CUP_arifle_TYPE_56_2 {
         modes[] = {"FullAuto", "Single", "Burst", "FullAuto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_TYPE_56_2_Early: CUP_arifle_TYPE_56_2 {
+    class CUP_arifle_TYPE_56_2_Early: CUP_arifle_TYPE_56_2 {
         modes[] = {"FullAuto", "Single", "Burst", "FullAuto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_srifle_AS50: Rifle_Long_Base_F {
+    class CUP_srifle_AS50: Rifle_Long_Base_F {
         AI_DISPERSION;
     };
     class CUP_srifle_AWM_Base;
-	class CUP_srifle_AWM_des: CUP_srifle_AWM_Base {
+    class CUP_srifle_AWM_des: CUP_srifle_AWM_Base {
         AI_DISPERSION;
     };
-	class CUP_srifle_AWM_wdl: CUP_srifle_AWM_Base {
+    class CUP_srifle_AWM_wdl: CUP_srifle_AWM_Base {
         AI_DISPERSION;
     };
-	class CUP_srifle_G22_des: CUP_srifle_AWM_des {
+    class CUP_srifle_G22_des: CUP_srifle_AWM_des {
         AI_DISPERSION;
     };
-	class CUP_srifle_G22_wdl: CUP_srifle_AWM_wdl {
+    class CUP_srifle_G22_wdl: CUP_srifle_AWM_wdl {
         AI_DISPERSION;
     };
-	class CUP_smg_bizon: Rifle_Base_F {
+    class CUP_smg_bizon: Rifle_Base_F {
         modes[] = {"FullAuto", "Single", "Burst", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_smg_vityaz: CUP_smg_bizon {
+    class CUP_smg_vityaz: CUP_smg_bizon {
         modes[] = {"FullAuto", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_smg_vityaz_vfg: CUP_smg_vityaz {
+    class CUP_smg_vityaz_vfg: CUP_smg_vityaz {
         modes[] = {"FullAuto", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_smg_vityaz_top_rail: CUP_smg_vityaz {
+    class CUP_smg_vityaz_top_rail: CUP_smg_vityaz {
         modes[] = {"FullAuto", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_smg_vityaz_vfg_top_rail: CUP_smg_vityaz_top_rail {
+    class CUP_smg_vityaz_vfg_top_rail: CUP_smg_vityaz_top_rail {
         modes[] = {"FullAuto", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_smg_vityaz_vfg_front_rail: CUP_smg_vityaz_top_rail {
+    class CUP_smg_vityaz_vfg_front_rail: CUP_smg_vityaz_top_rail {
         modes[] = {"FullAuto", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_smg_saiga9: CUP_smg_vityaz_top_rail {
+    class CUP_smg_saiga9: CUP_smg_vityaz_top_rail {
         AI_DISPERSION;
     };
     class CUP_arifle_CZ805_Base;
-	class CUP_arifle_CZ805_A2: CUP_arifle_CZ805_Base {
+    class CUP_arifle_CZ805_A2: CUP_arifle_CZ805_Base {
         AI_DISPERSION;
     };
-	class CUP_arifle_CZ805_A1: CUP_arifle_CZ805_Base {
+    class CUP_arifle_CZ805_A1: CUP_arifle_CZ805_Base {
         AI_DISPERSION;
     };
-	class CUP_arifle_CZ805_GL: CUP_arifle_CZ805_Base {
+    class CUP_arifle_CZ805_GL: CUP_arifle_CZ805_Base {
         AI_DISPERSION;
     };
-	class CUP_arifle_CZ805_A2_blk: CUP_arifle_CZ805_A2 {
+    class CUP_arifle_CZ805_A2_blk: CUP_arifle_CZ805_A2 {
         AI_DISPERSION;
     };
-	class CUP_arifle_CZ805_A2_coyote: CUP_arifle_CZ805_A2 {
+    class CUP_arifle_CZ805_A2_coyote: CUP_arifle_CZ805_A2 {
         AI_DISPERSION;
     };
-	class CUP_arifle_CZ805_A1_blk: CUP_arifle_CZ805_A1 {
+    class CUP_arifle_CZ805_A1_blk: CUP_arifle_CZ805_A1 {
         AI_DISPERSION;
     };
-	class CUP_arifle_CZ805_A1_coyote: CUP_arifle_CZ805_A1 {
+    class CUP_arifle_CZ805_A1_coyote: CUP_arifle_CZ805_A1 {
         AI_DISPERSION;
     };
-	class CUP_arifle_CZ805_GL_blk: CUP_arifle_CZ805_GL {
+    class CUP_arifle_CZ805_GL_blk: CUP_arifle_CZ805_GL {
         AI_DISPERSION;
     };
-	class CUP_arifle_CZ805_GL_coyote: CUP_arifle_CZ805_GL {
+    class CUP_arifle_CZ805_GL_coyote: CUP_arifle_CZ805_GL {
         AI_DISPERSION;
     };
     class Rifle_Short_Base_F;
-	class CUP_smg_EVO: Rifle_Short_Base_F {
+    class CUP_smg_EVO: Rifle_Short_Base_F {
         modes[] = {"Single", "Burst", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_FNFAL: Rifle_Base_F {
+    class CUP_arifle_FNFAL: Rifle_Base_F {
         modes[] = {"Fullauto", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_FNFAL_railed: CUP_arifle_FNFAL {
+    class CUP_arifle_FNFAL_railed: CUP_arifle_FNFAL {
         modes[] = {"Fullauto", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_FNFAL_desert: CUP_arifle_FNFAL {
+    class CUP_arifle_FNFAL_desert: CUP_arifle_FNFAL {
         modes[] = {"Fullauto", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_FNFAL_railed_desert: CUP_arifle_FNFAL_railed {
+    class CUP_arifle_FNFAL_railed_desert: CUP_arifle_FNFAL_railed {
         modes[] = {"Fullauto", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_FNFAL_sand: CUP_arifle_FNFAL {
+    class CUP_arifle_FNFAL_sand: CUP_arifle_FNFAL {
         modes[] = {"Fullauto", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_FNFAL_railed_sand: CUP_arifle_FNFAL_railed {
+    class CUP_arifle_FNFAL_railed_sand: CUP_arifle_FNFAL_railed {
         modes[] = {"Fullauto", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_FNFAL_woodland: CUP_arifle_FNFAL {
+    class CUP_arifle_FNFAL_woodland: CUP_arifle_FNFAL {
         modes[] = {"Fullauto", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_FNFAL_railed_woodland: CUP_arifle_FNFAL_railed {
+    class CUP_arifle_FNFAL_railed_woodland: CUP_arifle_FNFAL_railed {
         modes[] = {"Fullauto", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_FNFAL5061: CUP_arifle_FNFAL {
+    class CUP_arifle_FNFAL5061: CUP_arifle_FNFAL {
         modes[] = {"Fullauto", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_FNFAL5061_rhodesian: CUP_arifle_FNFAL5061 {
+    class CUP_arifle_FNFAL5061_rhodesian: CUP_arifle_FNFAL5061 {
         modes[] = {"Fullauto", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_FNFAL5061_wooden: CUP_arifle_FNFAL5061 {
+    class CUP_arifle_FNFAL5061_wooden: CUP_arifle_FNFAL5061 {
         modes[] = {"Fullauto", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_FNFAL5062: CUP_arifle_FNFAL {
+    class CUP_arifle_FNFAL5062: CUP_arifle_FNFAL {
         modes[] = {"Fullauto", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_FNFAL_OSW: CUP_arifle_FNFAL {
+    class CUP_arifle_FNFAL_OSW: CUP_arifle_FNFAL {
         modes[] = {"Fullauto", "Single", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
     class CUP_arifle_G36_Base_CarryhandleOptics;
-	class CUP_arifle_G36A: CUP_arifle_G36_Base_CarryhandleOptics {
+    class CUP_arifle_G36A: CUP_arifle_G36_Base_CarryhandleOptics {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36A_camo: CUP_arifle_G36A {
+    class CUP_arifle_G36A_camo: CUP_arifle_G36A {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36A_wdl: CUP_arifle_G36A {
+    class CUP_arifle_G36A_wdl: CUP_arifle_G36A {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
     class CUP_arifle_G36_Base;
-	class CUP_arifle_G36A_RIS: CUP_arifle_G36_Base {
+    class CUP_arifle_G36A_RIS: CUP_arifle_G36_Base {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36A_RIS_camo: CUP_arifle_G36A_RIS {
+    class CUP_arifle_G36A_RIS_camo: CUP_arifle_G36A_RIS {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36A_RIS_wdl: CUP_arifle_G36A_RIS {
+    class CUP_arifle_G36A_RIS_wdl: CUP_arifle_G36A_RIS {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_AG36: CUP_arifle_G36A {
+    class CUP_arifle_AG36: CUP_arifle_G36A {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_AG36_camo: CUP_arifle_AG36 {
+    class CUP_arifle_AG36_camo: CUP_arifle_AG36 {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_AG36_wdl: CUP_arifle_AG36 {
+    class CUP_arifle_AG36_wdl: CUP_arifle_AG36 {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36A_AG36_RIS: CUP_arifle_G36A_RIS {
+    class CUP_arifle_G36A_AG36_RIS: CUP_arifle_G36A_RIS {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36A_AG36_RIS_camo: CUP_arifle_G36A_AG36_RIS {
+    class CUP_arifle_G36A_AG36_RIS_camo: CUP_arifle_G36A_AG36_RIS {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36A_AG36_RIS_wdl: CUP_arifle_G36A_AG36_RIS {
+    class CUP_arifle_G36A_AG36_RIS_wdl: CUP_arifle_G36A_AG36_RIS {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K: CUP_arifle_G36_Base_CarryhandleOptics {
+    class CUP_arifle_G36K: CUP_arifle_G36_Base_CarryhandleOptics {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_camo: CUP_arifle_G36K {
+    class CUP_arifle_G36K_camo: CUP_arifle_G36K {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_wdl: CUP_arifle_G36K {
+    class CUP_arifle_G36K_wdl: CUP_arifle_G36K {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_VFG: CUP_arifle_G36K {
+    class CUP_arifle_G36K_VFG: CUP_arifle_G36K {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_VFG_camo: CUP_arifle_G36K_VFG {
+    class CUP_arifle_G36K_VFG_camo: CUP_arifle_G36K_VFG {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_VFG_wdl: CUP_arifle_G36K_VFG {
+    class CUP_arifle_G36K_VFG_wdl: CUP_arifle_G36K_VFG {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_RIS: CUP_arifle_G36_Base {
+    class CUP_arifle_G36K_RIS: CUP_arifle_G36_Base {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_RIS_camo: CUP_arifle_G36K_RIS {
+    class CUP_arifle_G36K_RIS_camo: CUP_arifle_G36K_RIS {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_RIS_wdl: CUP_arifle_G36K_RIS {
+    class CUP_arifle_G36K_RIS_wdl: CUP_arifle_G36K_RIS {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_RIS_hex: CUP_arifle_G36K_RIS {
+    class CUP_arifle_G36K_RIS_hex: CUP_arifle_G36K_RIS {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_AG36: CUP_arifle_G36K {
+    class CUP_arifle_G36K_AG36: CUP_arifle_G36K {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_AG36_camo: CUP_arifle_G36K_AG36 {
+    class CUP_arifle_G36K_AG36_camo: CUP_arifle_G36K_AG36 {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_AG36_wdl: CUP_arifle_G36K_AG36 {
+    class CUP_arifle_G36K_AG36_wdl: CUP_arifle_G36K_AG36 {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_RIS_AG36: CUP_arifle_G36K_RIS {
+    class CUP_arifle_G36K_RIS_AG36: CUP_arifle_G36K_RIS {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_RIS_AG36_camo: CUP_arifle_G36K_RIS_AG36 {
+    class CUP_arifle_G36K_RIS_AG36_camo: CUP_arifle_G36K_RIS_AG36 {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_RIS_AG36_wdl: CUP_arifle_G36K_RIS_AG36 {
+    class CUP_arifle_G36K_RIS_AG36_wdl: CUP_arifle_G36K_RIS_AG36 {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_RIS_AG36_hex: CUP_arifle_G36K_RIS_AG36 {
+    class CUP_arifle_G36K_RIS_AG36_hex: CUP_arifle_G36K_RIS_AG36 {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_KSK: CUP_arifle_G36K_RIS {
+    class CUP_arifle_G36K_KSK: CUP_arifle_G36K_RIS {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_KSK_camo: CUP_arifle_G36K_KSK {
+    class CUP_arifle_G36K_KSK_camo: CUP_arifle_G36K_KSK {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_KSK_hex: CUP_arifle_G36K_KSK {
+    class CUP_arifle_G36K_KSK_hex: CUP_arifle_G36K_KSK {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_KSK_VFG: CUP_arifle_G36K_RIS {
+    class CUP_arifle_G36K_KSK_VFG: CUP_arifle_G36K_RIS {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_KSK_VFG_camo: CUP_arifle_G36K_KSK_VFG {
+    class CUP_arifle_G36K_KSK_VFG_camo: CUP_arifle_G36K_KSK_VFG {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36K_KSK_VFG_hex: CUP_arifle_G36K_KSK_VFG {
+    class CUP_arifle_G36K_KSK_VFG_hex: CUP_arifle_G36K_KSK_VFG {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36C: CUP_arifle_G36_Base {
+    class CUP_arifle_G36C: CUP_arifle_G36_Base {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36C_camo: CUP_arifle_G36C {
+    class CUP_arifle_G36C_camo: CUP_arifle_G36C {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36C_wdl: CUP_arifle_G36C {
+    class CUP_arifle_G36C_wdl: CUP_arifle_G36C {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36C_hex: CUP_arifle_G36C {
+    class CUP_arifle_G36C_hex: CUP_arifle_G36C {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36C_VFG: CUP_arifle_G36C {
+    class CUP_arifle_G36C_VFG: CUP_arifle_G36C {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36C_VFG_camo: CUP_arifle_G36C_VFG {
+    class CUP_arifle_G36C_VFG_camo: CUP_arifle_G36C_VFG {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36C_VFG_wdl: CUP_arifle_G36C_VFG {
+    class CUP_arifle_G36C_VFG_wdl: CUP_arifle_G36C_VFG {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36C_VFG_hex: CUP_arifle_G36C_VFG {
+    class CUP_arifle_G36C_VFG_hex: CUP_arifle_G36C_VFG {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_G36C_VFG_Carry: CUP_arifle_G36_Base_CarryhandleOptics {
+    class CUP_arifle_G36C_VFG_Carry: CUP_arifle_G36_Base_CarryhandleOptics {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_MG36: CUP_arifle_G36C {
+    class CUP_arifle_MG36: CUP_arifle_G36C {
         modes[] = {"Single", "Fullauto", "close", "medium", "far", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_MG36_camo: CUP_arifle_MG36 {
+    class CUP_arifle_MG36_camo: CUP_arifle_MG36 {
         modes[] = {"Single", "Fullauto", "close", "medium", "far", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_MG36_wdl: CUP_arifle_MG36 {
+    class CUP_arifle_MG36_wdl: CUP_arifle_MG36 {
         modes[] = {"Single", "Fullauto", "close", "medium", "far", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_MG36_hex: CUP_arifle_MG36 {
+    class CUP_arifle_MG36_hex: CUP_arifle_MG36 {
         modes[] = {"Single", "Fullauto", "close", "medium", "far", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
     class CUP_arifle_HK416_11_Base;
-	class CUP_arifle_HK416_CQB_Black: CUP_arifle_HK416_11_Base {
+    class CUP_arifle_HK416_CQB_Black: CUP_arifle_HK416_11_Base {
         modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK416_CQB_Desert: CUP_arifle_HK416_CQB_Black {
+    class CUP_arifle_HK416_CQB_Desert: CUP_arifle_HK416_CQB_Black {
         modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK416_CQB_Wood: CUP_arifle_HK416_CQB_Black {
+    class CUP_arifle_HK416_CQB_Wood: CUP_arifle_HK416_CQB_Black {
         modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
     class CUP_arifle_HK416_145_Base;
-	class CUP_arifle_HK416_Black: CUP_arifle_HK416_145_Base {
+    class CUP_arifle_HK416_Black: CUP_arifle_HK416_145_Base {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK416_Desert: CUP_arifle_HK416_Black {
+    class CUP_arifle_HK416_Desert: CUP_arifle_HK416_Black {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK416_Wood: CUP_arifle_HK416_Black {
+    class CUP_arifle_HK416_Wood: CUP_arifle_HK416_Black {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK_M27: CUP_arifle_HK416_Black {
+    class CUP_arifle_HK_M27: CUP_arifle_HK416_Black {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK_M27_VFG: CUP_arifle_HK_M27 {
+    class CUP_arifle_HK_M27_VFG: CUP_arifle_HK_M27 {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK416_M203_Black: CUP_arifle_HK416_Black {
+    class CUP_arifle_HK416_M203_Black: CUP_arifle_HK416_Black {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK416_M203_Desert: CUP_arifle_HK416_M203_Black {
+    class CUP_arifle_HK416_M203_Desert: CUP_arifle_HK416_M203_Black {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK416_M203_Wood: CUP_arifle_HK416_M203_Black {
+    class CUP_arifle_HK416_M203_Wood: CUP_arifle_HK416_M203_Black {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK416_CQB_M203_Black: CUP_arifle_HK416_CQB_Black {
+    class CUP_arifle_HK416_CQB_M203_Black: CUP_arifle_HK416_CQB_Black {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK416_CQB_M203_Desert: CUP_arifle_HK416_CQB_M203_Black {
+    class CUP_arifle_HK416_CQB_M203_Desert: CUP_arifle_HK416_CQB_M203_Black {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK416_CQB_M203_Wood: CUP_arifle_HK416_CQB_M203_Black {
+    class CUP_arifle_HK416_CQB_M203_Wood: CUP_arifle_HK416_CQB_M203_Black {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK416_AGL_Black: CUP_arifle_HK416_Black {
+    class CUP_arifle_HK416_AGL_Black: CUP_arifle_HK416_Black {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK416_AGL_Desert: CUP_arifle_HK416_AGL_Black {
+    class CUP_arifle_HK416_AGL_Desert: CUP_arifle_HK416_AGL_Black {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK416_AGL_Wood: CUP_arifle_HK416_AGL_Black {
+    class CUP_arifle_HK416_AGL_Wood: CUP_arifle_HK416_AGL_Black {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK416_CQB_AG36: CUP_arifle_HK416_CQB_Black {
+    class CUP_arifle_HK416_CQB_AG36: CUP_arifle_HK416_CQB_Black {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK416_CQB_AG36_Desert: CUP_arifle_HK416_CQB_AG36 {
+    class CUP_arifle_HK416_CQB_AG36_Desert: CUP_arifle_HK416_CQB_AG36 {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK416_CQB_AG36_Wood: CUP_arifle_HK416_CQB_AG36 {
+    class CUP_arifle_HK416_CQB_AG36_Wood: CUP_arifle_HK416_CQB_AG36 {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK_M27_AG36: CUP_arifle_HK416_Black {
+    class CUP_arifle_HK_M27_AG36: CUP_arifle_HK416_Black {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
     class CUP_arifle_HK417_Base;
-	class CUP_arifle_HK417_20: CUP_arifle_HK417_Base {
+    class CUP_arifle_HK417_20: CUP_arifle_HK417_Base {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK417_20_Wood: CUP_arifle_HK417_20 {
+    class CUP_arifle_HK417_20_Wood: CUP_arifle_HK417_20 {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK417_20_Desert: CUP_arifle_HK417_20 {
+    class CUP_arifle_HK417_20_Desert: CUP_arifle_HK417_20 {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK417_12: CUP_arifle_HK417_20 {
+    class CUP_arifle_HK417_12: CUP_arifle_HK417_20 {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK417_12_Wood: CUP_arifle_HK417_12 {
+    class CUP_arifle_HK417_12_Wood: CUP_arifle_HK417_12 {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK417_12_Desert: CUP_arifle_HK417_12 {
+    class CUP_arifle_HK417_12_Desert: CUP_arifle_HK417_12 {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK417_12_M203: CUP_arifle_HK417_12 {
+    class CUP_arifle_HK417_12_M203: CUP_arifle_HK417_12 {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK417_12_M203_Wood: CUP_arifle_HK417_12_M203 {
+    class CUP_arifle_HK417_12_M203_Wood: CUP_arifle_HK417_12_M203 {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK417_12_M203_Desert: CUP_arifle_HK417_12_M203 {
+    class CUP_arifle_HK417_12_M203_Desert: CUP_arifle_HK417_12_M203 {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK417_12_AG36: CUP_arifle_HK417_12 {
+    class CUP_arifle_HK417_12_AG36: CUP_arifle_HK417_12 {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK417_12_AG36_Wood: CUP_arifle_HK417_12_AG36 {
+    class CUP_arifle_HK417_12_AG36_Wood: CUP_arifle_HK417_12_AG36 {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_arifle_HK417_12_AG36_Desert: CUP_arifle_HK417_12_AG36 {
+    class CUP_arifle_HK417_12_AG36_Desert: CUP_arifle_HK417_12_AG36 {
         modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-	class CUP_sgun_CZ584: Rifle_Base_F {
+    class CUP_sgun_CZ584: Rifle_Base_F {
         AI_DISPERSION;
     };
-	class CUP_sgun_CZ584_RIS: CUP_sgun_CZ584 {
+    class CUP_sgun_CZ584_RIS: CUP_sgun_CZ584 {
         AI_DISPERSION;
     };
 /*
