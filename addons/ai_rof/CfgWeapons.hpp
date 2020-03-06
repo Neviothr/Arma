@@ -2633,62 +2633,227 @@ class CfgWeapons {
 	class CUP_srifle_m110_kac_woodland: CUP_srifle_m110_kac {
         AI_DISPERSION;
     };
+	class CUP_srifle_M14: Rifle_Base_F {
+        __modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1"};
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_M16_Base;
+	class CUP_arifle_M16A2: CUP_arifle_M16_Base {
+        __modes__[] = {"Single", "Burst"};
+        AI_ROF(Burst);
+    };
+	class CUP_arifle_M16A2_GL: CUP_arifle_M16_Base {
+        __modes__[] = {"Single", "Burst"};
+        AI_ROF(Burst);
+    };
+	class CUP_arifle_M16A4_Base: CUP_arifle_M16_Base {
+        __modes__[] = {"Single", "Burst"};
+        AI_ROF(Burst);
+    };
+	class CUP_arifle_M16A4_Grip: CUP_arifle_M16A4_Base {
+        __modes__[] = {"Single", "Burst"};
+        AI_ROF(Burst);
+    };
+	class CUP_arifle_M16A4_GL: CUP_arifle_M16_Base {
+        __modes__[] = {"Single", "Burst"};
+        AI_ROF(Burst);
+    };
+	class CUP_arifle_XM16E1: CUP_arifle_M16_Base {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M16A1: CUP_arifle_XM16E1 {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M16A1GL: CUP_arifle_XM16E1 {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M16A1GL_USA: CUP_arifle_M16A1GL {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M16A1GL_FS: CUP_arifle_M16A1GL {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Colt727: CUP_arifle_M16_Base {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Colt727_M203: CUP_arifle_Colt727 {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_M4_Base;
+	class CUP_srifle_Mk12SPR: CUP_arifle_M4_Base {
+        AI_DISPERSION;
+    };
+	class CUP_arifle_M4A1: CUP_arifle_M4_Base {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A1_desert_carryhandle: CUP_arifle_M4_Base {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A1_camo_carryhandle: CUP_arifle_M4_Base {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A1_GL_carryhandle: CUP_arifle_M4A1 {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A1_GL_carryhandle_camo: CUP_arifle_M4A1_GL_carryhandle {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A1_GL_carryhandle_desert: CUP_arifle_M4A1_GL_carryhandle {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_M4A1_BUIS_Base;
+	class CUP_arifle_M4A1_black: CUP_arifle_M4A1_BUIS_Base {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A1_camo: CUP_arifle_M4A1_black {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A1_desert: CUP_arifle_M4A1_black {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A1_BUIS_GL: CUP_arifle_M4A1_BUIS_Base {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A1_BUIS_camo_GL: CUP_arifle_M4A1_BUIS_GL {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A1_BUIS_desert_GL: CUP_arifle_M4A1_BUIS_GL {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A3_black: CUP_arifle_M4A1_BUIS_Base {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A3_desert: CUP_arifle_M4A3_black {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A3_camo: CUP_arifle_M4A3_black {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_mk18_black: CUP_arifle_M4A1_BUIS_Base {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_mk18_m203_black: CUP_arifle_mk18_black {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_SBR_black: CUP_arifle_M4A1_BUIS_Base {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_SBR_od: CUP_arifle_SBR_black {
+        __modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_lmg_M240: Rifle_Long_Base_F {
+        __modes__[] = {"manual", "close", "short", "medium", "far"};
+        AI_ROF(manual);
+    };
+	class CUP_lmg_L7A2: CUP_lmg_M240 {
+        __modes__[] = {"manual", "close", "short", "medium", "far"};
+        AI_ROF(manual);
+    };
+	class CUP_lmg_L7A2_Flat: CUP_lmg_L7A2 {
+        __modes__[] = {"manual", "close", "short", "medium", "far"};
+        AI_ROF(manual);
+    };
+	class CUP_lmg_FNMAG: CUP_lmg_L7A2_Flat {
+        __modes__[] = {"manual", "close", "short", "medium", "far"};
+        AI_ROF(manual);
+    };
+	class CUP_lmg_FNMAG_RIS: CUP_lmg_M240 {
+        __modes__[] = {"manual", "close", "short", "medium", "far"};
+        AI_ROF(manual);
+    };
+    class CUP_saw_base;
+	class CUP_lmg_minimipara: CUP_saw_base {
+        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_lmg_minimi: CUP_lmg_minimipara {
+        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_lmg_m249_para: CUP_lmg_minimipara {
+        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_lmg_M249_E2: CUP_lmg_minimipara {
+        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_lmg_minimi_railed: CUP_lmg_minimipara {
+        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_lmg_m249_pip1: CUP_lmg_minimi_railed {
+        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_lmg_m249_pip2: CUP_lmg_minimi_railed {
+        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_lmg_m249_pip3: CUP_lmg_minimi_railed {
+        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_lmg_m249_pip4: CUP_lmg_minimi_railed {
+        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_lmg_m249_SQuantoon: CUP_lmg_m249_pip4 {
+        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_lmg_L110A1: CUP_lmg_m249_pip4 {
+        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_M60E4_base;
+	class CUP_lmg_M60E4: CUP_M60E4_base {
+        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_lmg_M60E4_norail: CUP_M60E4_base {
+        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_lmg_M60: CUP_M60E4_base {
+        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_lmg_MG3: Rifle_Long_Base_F {
+        __modes__[] = {"manual", "close", "short", "medium", "far"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_lmg_MG3_rail: CUP_lmg_MG3 {
+        __modes__[] = {"manual", "close", "short", "medium", "far"};
+        AI_ROF(FullAuto);
+    };
 /*AI_DISPERSION;
-CUP_srifle_M14
-CUP_arifle_M16A2
-CUP_arifle_M16A2_GL
-CUP_arifle_M16A4_Base
-CUP_arifle_M16A4_Grip
-CUP_arifle_M16A4_GL
-CUP_arifle_XM16E1
-CUP_arifle_M16A1
-CUP_arifle_M16A1GL
-CUP_arifle_M16A1GL_USA
-CUP_arifle_M16A1GL_FS
-CUP_arifle_Colt727
-CUP_arifle_Colt727_M203
-CUP_srifle_Mk12SPR
-CUP_arifle_M4A1
-CUP_arifle_M4A1_desert_carryhandle
-CUP_arifle_M4A1_camo_carryhandle
-CUP_arifle_M4A1_GL_carryhandle
-CUP_arifle_M4A1_GL_carryhandle_camo
-CUP_arifle_M4A1_GL_carryhandle_desert
-CUP_arifle_M4A1_black
-CUP_arifle_M4A1_camo
-CUP_arifle_M4A1_desert
-CUP_arifle_M4A1_BUIS_GL
-CUP_arifle_M4A1_BUIS_camo_GL
-CUP_arifle_M4A1_BUIS_desert_GL
-CUP_arifle_M4A3_black
-CUP_arifle_M4A3_desert
-CUP_arifle_M4A3_camo
-CUP_arifle_mk18_black
-CUP_arifle_mk18_m203_black
-CUP_arifle_SBR_black
-CUP_arifle_SBR_od
-CUP_lmg_M240
-CUP_lmg_L7A2
-CUP_lmg_L7A2_Flat
-CUP_lmg_FNMAG
-CUP_lmg_FNMAG_RIS
-CUP_lmg_minimipara
-CUP_lmg_minimi
-CUP_lmg_m249_para
-CUP_lmg_m249_para_gl
-CUP_lmg_M249_E2
-CUP_lmg_minimi_railed
-CUP_lmg_m249_pip1
-CUP_lmg_m249_pip2
-CUP_lmg_m249_pip3
-CUP_lmg_m249_pip4
-CUP_lmg_m249_SQuantoon
-CUP_lmg_L110A1
-CUP_lmg_M60E4
-CUP_lmg_M60E4_norail
-CUP_lmg_M60
-CUP_lmg_MG3
-CUP_lmg_MG3_rail
 CUP_lmg_Mk48
 CUP_lmg_Mk48_des
 CUP_lmg_Mk48_wdl
