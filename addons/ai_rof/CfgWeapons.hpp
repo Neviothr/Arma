@@ -2847,30 +2847,82 @@ class CfgWeapons {
     };
 	class CUP_lmg_MG3: Rifle_Long_Base_F {
         __modes__[] = {"manual", "close", "short", "medium", "far"};
-        AI_ROF(FullAuto);
+        AI_ROF(manual);
     };
 	class CUP_lmg_MG3_rail: CUP_lmg_MG3 {
         __modes__[] = {"manual", "close", "short", "medium", "far"};
+        AI_ROF(manual);
+    };
+    class CUP_lmg_Mk48_Base;
+	class CUP_lmg_Mk48: CUP_lmg_Mk48_Base {
+		__modes__[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2"};
+        AI_ROF(manual);
+    };
+	class CUP_lmg_Mk48_des: CUP_lmg_Mk48 {
+		__modes__[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2"};
+        AI_ROF(manual);
+    };
+	class CUP_lmg_Mk48_wdl: CUP_lmg_Mk48 {
+		__modes__[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2"};
+        AI_ROF(manual);
+    };
+	class CUP_lmg_Mk48_tan: CUP_lmg_Mk48 {
+		__modes__[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2"};
+        AI_ROF(manual);
+    };
+	class CUP_lmg_Mk48_od: CUP_lmg_Mk48 {
+		__modes__[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2"};
+        AI_ROF(manual);
+    };
+	class CUP_lmg_Mk48_nohg: CUP_lmg_Mk48 {
+		__modes__[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2"};
+        AI_ROF(manual);
+    };
+	class CUP_lmg_Mk48_nohg_des: CUP_lmg_Mk48_nohg {
+		__modes__[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2"};
+        AI_ROF(manual);
+    };
+	class CUP_lmg_Mk48_nohg_wdl: CUP_lmg_Mk48_nohg {
+		__modes__[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2"};
+        AI_ROF(manual);
+    };
+	class CUP_lmg_Mk48_nohg_tan: CUP_lmg_Mk48_nohg {
+		__modes__[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2"};
+        AI_ROF(manual);
+    };
+	class CUP_lmg_Mk48_nohg_od: CUP_lmg_Mk48_nohg {
+		__modes__[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2"};
+        AI_ROF(manual);
+    };
+	class CUP_smg_MP7: Rifle_Short_Base_F {
+		__modes__[] = {"Single", "FullAuto"};
         AI_ROF(FullAuto);
     };
+	class CUP_smg_MP7_desert: CUP_smg_MP7 {
+		__modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_smg_MP7_woodland: CUP_smg_MP7 {
+		__modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_lmg_PKM: Rifle_Long_Base_F {
+		__modes__[] = {"manual", "close", "short", "medium", "far"};
+        AI_ROF(manual);
+    };
+	class CUP_lmg_Pecheneg: CUP_lmg_PKM {
+		__modes__[] = {"manual", "close", "short", "medium", "far"};
+        AI_ROF(manual);
+    };
+	class CUP_lmg_Pecheneg_desert: CUP_lmg_Pecheneg {
+		__modes__[] = {"manual", "close", "short", "medium", "far"};
+        AI_ROF(manual);
+    };
+	class CUP_lmg_Pecheneg_woodland: CUP_lmg_Pecheneg {
+		__modes__[] = {"manual", "close", "short", "medium", "far"};
+        AI_ROF(manual);
+    };
 /*AI_DISPERSION;
-CUP_lmg_Mk48
-CUP_lmg_Mk48_des
-CUP_lmg_Mk48_wdl
-CUP_lmg_Mk48_tan
-CUP_lmg_Mk48_od
-CUP_lmg_Mk48_nohg
-CUP_lmg_Mk48_nohg_des
-CUP_lmg_Mk48_nohg_wdl
-CUP_lmg_Mk48_nohg_tan
-CUP_lmg_Mk48_nohg_od
-CUP_smg_MP7
-CUP_smg_MP7_desert
-CUP_smg_MP7_woodland
-CUP_lmg_PKM
-CUP_lmg_Pecheneg
-CUP_lmg_Pecheneg_desert
-CUP_lmg_Pecheneg_woodland
 CUP_arifle_Sa58P
 CUP_arifle_Sa58P_des
 CUP_arifle_Sa58P_woodland
