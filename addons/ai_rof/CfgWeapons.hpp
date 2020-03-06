@@ -2922,26 +2922,84 @@ class CfgWeapons {
 		__modes__[] = {"manual", "close", "short", "medium", "far"};
         AI_ROF(manual);
     };
+    class CUP_arifle_Sa58_base;
+	class CUP_arifle_Sa58P: CUP_arifle_Sa58_base {
+		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Sa58P_des: CUP_arifle_Sa58P {
+		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Sa58P_woodland: CUP_arifle_Sa58P {
+		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Sa58V: CUP_arifle_Sa58P {
+		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Sa58V_camo: CUP_arifle_Sa58V {
+		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Sa58V_woodland: CUP_arifle_Sa58V {
+		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Sa58RIS1: CUP_arifle_Sa58_base {
+		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Sa58RIS1_des: CUP_arifle_Sa58RIS1 {
+		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Sa58RIS1_woodland: CUP_arifle_Sa58RIS1 {
+		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Sa58RIS2_gl: CUP_arifle_Sa58RIS1 {
+		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Sa58RIS2_gl_desert: CUP_arifle_Sa58RIS2_gl {
+		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Sa58RIS2_gl_woodland: CUP_arifle_Sa58RIS2_gl {
+		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Sa58RIS2: CUP_arifle_Sa58RIS1 {
+		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Sa58RIS2_camo: CUP_arifle_Sa58RIS2 {
+		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Sa58RIS2_woodland: CUP_arifle_Sa58RIS2 {
+		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Sa58P_frontris: CUP_arifle_Sa58_base {
+		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Sa58P_frontris_desert: CUP_arifle_Sa58P_frontris {
+		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Sa58P_frontris_woodland: CUP_arifle_Sa58P_frontris {
+		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_smg_SA61: Rifle_Base_F {
+		__modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
 /*AI_DISPERSION;
-CUP_arifle_Sa58P
-CUP_arifle_Sa58P_des
-CUP_arifle_Sa58P_woodland
-CUP_arifle_Sa58V
-CUP_arifle_Sa58V_camo
-CUP_arifle_Sa58V_woodland
-CUP_arifle_Sa58RIS1
-CUP_arifle_Sa58RIS1_des
-CUP_arifle_Sa58RIS1_woodland
-CUP_arifle_Sa58RIS2_gl
-CUP_arifle_Sa58RIS2_gl_desert
-CUP_arifle_Sa58RIS2_gl_woodland
-CUP_arifle_Sa58RIS2
-CUP_arifle_Sa58RIS2_camo
-CUP_arifle_Sa58RIS2_woodland
-CUP_arifle_Sa58P_frontris
-CUP_arifle_Sa58P_frontris_desert
-CUP_arifle_Sa58P_frontris_woodland
-CUP_smg_SA61
 CUP_arifle_Mk16_STD
 CUP_arifle_Mk16_STD_FG
 CUP_arifle_Mk16_STD_SFG
