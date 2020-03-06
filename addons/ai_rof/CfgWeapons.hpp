@@ -1930,6 +1930,7 @@ class CfgWeapons {
         modes[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
+    class CUP_arifle_AK107_Base;
     class CUP_arifle_AK107: CUP_arifle_AK107_Base {
         modes[] = {"FullAuto", "Single", "Burst", "fullauto_medium", "single_medium_optics1", "single_medium_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
@@ -2161,6 +2162,7 @@ class CfgWeapons {
 	class CUP_arifle_CZ805_GL_coyote: CUP_arifle_CZ805_GL {
         AI_DISPERSION;
     };
+    class Rifle_Short_Base_F;
 	class CUP_smg_EVO: Rifle_Short_Base_F {
         modes[] = {"Single", "Burst", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
