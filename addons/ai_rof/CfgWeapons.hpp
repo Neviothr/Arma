@@ -2562,26 +2562,26 @@ class CfgWeapons {
     };
     class CUP_l85a2;
 	class CUP_arifle_L85A2: CUP_l85a2 {
-        __modes__[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2"};
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
     class CUP_l85a2_ris;
 	class CUP_arifle_L85A2_G: CUP_l85a2_ris {
-        __modes__[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2"};
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
     class CUP_l85a2_ris_ng;
 	class CUP_arifle_L85A2_NG: CUP_l85a2_ris_ng {
-        __modes__[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2"};
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
     class CUP_l85a2_ugl;
 	class CUP_arifle_L85A2_GL: CUP_l85a2_ugl {
-        __modes__[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2"};
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_L86A2: CUP_l85a2 {
-        __modes__[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2"};
+        modes[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
     class CUP_sgun_M1014_base;
@@ -2634,56 +2634,56 @@ class CfgWeapons {
         AI_DISPERSION;
     };
 	class CUP_srifle_M14: Rifle_Base_F {
-        __modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1"};
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
     class CUP_arifle_M16_Base;
 	class CUP_arifle_M16A2: CUP_arifle_M16_Base {
-        __modes__[] = {"Single", "Burst"};
+        modes[] = {"Single", "Burst", "NEV_FullAuto"};
         AI_ROF(Burst);
     };
 	class CUP_arifle_M16A2_GL: CUP_arifle_M16_Base {
-        __modes__[] = {"Single", "Burst"};
+        modes[] = {"Single", "Burst", "NEV_FullAuto"};
         AI_ROF(Burst);
     };
 	class CUP_arifle_M16A4_Base: CUP_arifle_M16_Base {
-        __modes__[] = {"Single", "Burst"};
+        modes[] = {"Single", "Burst", "NEV_FullAuto"};
         AI_ROF(Burst);
     };
 	class CUP_arifle_M16A4_Grip: CUP_arifle_M16A4_Base {
-        __modes__[] = {"Single", "Burst"};
+        modes[] = {"Single", "Burst", "NEV_FullAuto"};
         AI_ROF(Burst);
     };
 	class CUP_arifle_M16A4_GL: CUP_arifle_M16_Base {
-        __modes__[] = {"Single", "Burst"};
+        modes[] = {"Single", "Burst", "NEV_FullAuto"};
         AI_ROF(Burst);
     };
 	class CUP_arifle_XM16E1: CUP_arifle_M16_Base {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_M16A1: CUP_arifle_XM16E1 {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_M16A1GL: CUP_arifle_XM16E1 {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_M16A1GL_USA: CUP_arifle_M16A1GL {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_M16A1GL_FS: CUP_arifle_M16A1GL {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_Colt727: CUP_arifle_M16_Base {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_Colt727_M203: CUP_arifle_Colt727 {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
     class CUP_arifle_M4_Base;
@@ -2691,565 +2691,565 @@ class CfgWeapons {
         AI_DISPERSION;
     };
 	class CUP_arifle_M4A1: CUP_arifle_M4_Base {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_M4A1_desert_carryhandle: CUP_arifle_M4_Base {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_M4A1_camo_carryhandle: CUP_arifle_M4_Base {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_M4A1_GL_carryhandle: CUP_arifle_M4A1 {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_M4A1_GL_carryhandle_camo: CUP_arifle_M4A1_GL_carryhandle {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_M4A1_GL_carryhandle_desert: CUP_arifle_M4A1_GL_carryhandle {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
     class CUP_arifle_M4A1_BUIS_Base;
 	class CUP_arifle_M4A1_black: CUP_arifle_M4A1_BUIS_Base {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_M4A1_camo: CUP_arifle_M4A1_black {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_M4A1_desert: CUP_arifle_M4A1_black {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_M4A1_BUIS_GL: CUP_arifle_M4A1_BUIS_Base {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_M4A1_BUIS_camo_GL: CUP_arifle_M4A1_BUIS_GL {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_M4A1_BUIS_desert_GL: CUP_arifle_M4A1_BUIS_GL {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_M4A3_black: CUP_arifle_M4A1_BUIS_Base {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_M4A3_desert: CUP_arifle_M4A3_black {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_M4A3_camo: CUP_arifle_M4A3_black {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_mk18_black: CUP_arifle_M4A1_BUIS_Base {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_mk18_m203_black: CUP_arifle_mk18_black {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_SBR_black: CUP_arifle_M4A1_BUIS_Base {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_SBR_od: CUP_arifle_SBR_black {
-        __modes__[] = {"Single", "FullAuto"};
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_lmg_M240: Rifle_Long_Base_F {
-        __modes__[] = {"manual", "close", "short", "medium", "far"};
+        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_ROF(manual);
     };
 	class CUP_lmg_L7A2: CUP_lmg_M240 {
-        __modes__[] = {"manual", "close", "short", "medium", "far"};
+        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_ROF(manual);
     };
 	class CUP_lmg_L7A2_Flat: CUP_lmg_L7A2 {
-        __modes__[] = {"manual", "close", "short", "medium", "far"};
+        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_ROF(manual);
     };
 	class CUP_lmg_FNMAG: CUP_lmg_L7A2_Flat {
-        __modes__[] = {"manual", "close", "short", "medium", "far"};
+        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_ROF(manual);
     };
 	class CUP_lmg_FNMAG_RIS: CUP_lmg_M240 {
-        __modes__[] = {"manual", "close", "short", "medium", "far"};
+        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_ROF(manual);
     };
     class CUP_saw_base;
 	class CUP_lmg_minimipara: CUP_saw_base {
-        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        modes[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_lmg_minimi: CUP_lmg_minimipara {
-        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        modes[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_lmg_m249_para: CUP_lmg_minimipara {
-        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        modes[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_lmg_M249_E2: CUP_lmg_minimipara {
-        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        modes[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_lmg_minimi_railed: CUP_lmg_minimipara {
-        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        modes[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_lmg_m249_pip1: CUP_lmg_minimi_railed {
-        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        modes[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_lmg_m249_pip2: CUP_lmg_minimi_railed {
-        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        modes[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_lmg_m249_pip3: CUP_lmg_minimi_railed {
-        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        modes[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_lmg_m249_pip4: CUP_lmg_minimi_railed {
-        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        modes[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_lmg_m249_SQuantoon: CUP_lmg_m249_pip4 {
-        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        modes[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_lmg_L110A1: CUP_lmg_m249_pip4 {
-        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        modes[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_M60E4_base;
 	class CUP_lmg_M60E4: CUP_M60E4_base {
-        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        modes[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_lmg_M60E4_norail: CUP_M60E4_base {
-        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        modes[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_lmg_M60: CUP_M60E4_base {
-        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        modes[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_lmg_MG3: Rifle_Long_Base_F {
-        __modes__[] = {"manual", "close", "short", "medium", "far"};
+        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_ROF(manual);
     };
 	class CUP_lmg_MG3_rail: CUP_lmg_MG3 {
-        __modes__[] = {"manual", "close", "short", "medium", "far"};
+        modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_ROF(manual);
     };
     class CUP_lmg_Mk48_Base;
 	class CUP_lmg_Mk48: CUP_lmg_Mk48_Base {
-		__modes__[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2"};
+		modes[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(manual);
     };
 	class CUP_lmg_Mk48_des: CUP_lmg_Mk48 {
-		__modes__[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2"};
+		modes[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(manual);
     };
 	class CUP_lmg_Mk48_wdl: CUP_lmg_Mk48 {
-		__modes__[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2"};
+		modes[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(manual);
     };
 	class CUP_lmg_Mk48_tan: CUP_lmg_Mk48 {
-		__modes__[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2"};
+		modes[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(manual);
     };
 	class CUP_lmg_Mk48_od: CUP_lmg_Mk48 {
-		__modes__[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2"};
+		modes[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(manual);
     };
 	class CUP_lmg_Mk48_nohg: CUP_lmg_Mk48 {
-		__modes__[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2"};
+		modes[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(manual);
     };
 	class CUP_lmg_Mk48_nohg_des: CUP_lmg_Mk48_nohg {
-		__modes__[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2"};
+		modes[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(manual);
     };
 	class CUP_lmg_Mk48_nohg_wdl: CUP_lmg_Mk48_nohg {
-		__modes__[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2"};
+		modes[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(manual);
     };
 	class CUP_lmg_Mk48_nohg_tan: CUP_lmg_Mk48_nohg {
-		__modes__[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2"};
+		modes[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(manual);
     };
 	class CUP_lmg_Mk48_nohg_od: CUP_lmg_Mk48_nohg {
-		__modes__[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2"};
+		modes[] = {"manual", "close", "short", "medium", "far", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(manual);
     };
 	class CUP_smg_MP7: Rifle_Short_Base_F {
-		__modes__[] = {"Single", "FullAuto"};
+		modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_smg_MP7_desert: CUP_smg_MP7 {
-		__modes__[] = {"Single", "FullAuto"};
+		modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_smg_MP7_woodland: CUP_smg_MP7 {
-		__modes__[] = {"Single", "FullAuto"};
+		modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_lmg_PKM: Rifle_Long_Base_F {
-		__modes__[] = {"manual", "close", "short", "medium", "far"};
+		modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_ROF(manual);
     };
 	class CUP_lmg_Pecheneg: CUP_lmg_PKM {
-		__modes__[] = {"manual", "close", "short", "medium", "far"};
+		modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_ROF(manual);
     };
 	class CUP_lmg_Pecheneg_desert: CUP_lmg_Pecheneg {
-		__modes__[] = {"manual", "close", "short", "medium", "far"};
+		modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_ROF(manual);
     };
 	class CUP_lmg_Pecheneg_woodland: CUP_lmg_Pecheneg {
-		__modes__[] = {"manual", "close", "short", "medium", "far"};
+		modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_ROF(manual);
     };
     class CUP_arifle_Sa58_base;
 	class CUP_arifle_Sa58P: CUP_arifle_Sa58_base {
-		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_Sa58P_des: CUP_arifle_Sa58P {
-		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_Sa58P_woodland: CUP_arifle_Sa58P {
-		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_Sa58V: CUP_arifle_Sa58P {
-		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_Sa58V_camo: CUP_arifle_Sa58V {
-		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_Sa58V_woodland: CUP_arifle_Sa58V {
-		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_Sa58RIS1: CUP_arifle_Sa58_base {
-		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_Sa58RIS1_des: CUP_arifle_Sa58RIS1 {
-		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_Sa58RIS1_woodland: CUP_arifle_Sa58RIS1 {
-		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_Sa58RIS2_gl: CUP_arifle_Sa58RIS1 {
-		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_Sa58RIS2_gl_desert: CUP_arifle_Sa58RIS2_gl {
-		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_Sa58RIS2_gl_woodland: CUP_arifle_Sa58RIS2_gl {
-		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_Sa58RIS2: CUP_arifle_Sa58RIS1 {
-		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_Sa58RIS2_camo: CUP_arifle_Sa58RIS2 {
-		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_Sa58RIS2_woodland: CUP_arifle_Sa58RIS2 {
-		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_Sa58P_frontris: CUP_arifle_Sa58_base {
-		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_Sa58P_frontris_desert: CUP_arifle_Sa58P_frontris {
-		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_arifle_Sa58P_frontris_woodland: CUP_arifle_Sa58P_frontris {
-		__modes__[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class CUP_smg_SA61: Rifle_Base_F {
-		__modes__[] = {"Single", "FullAuto"};
+		modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
     class CUP_arifle_SCAR_L_Base;
 	class CUP_arifle_Mk16_STD: CUP_arifle_SCAR_L_Base {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_STD_FG: CUP_arifle_Mk16_STD {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_STD_SFG: CUP_arifle_Mk16_STD {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_STD_EGLM: CUP_arifle_Mk16_STD {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
     class CUP_arifle_SCAR_L_Base;
 	class CUP_arifle_Mk16_SV: CUP_arifle_SCAR_L_Base {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_CQC: CUP_arifle_SCAR_L_Base {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_CQC_FG: CUP_arifle_Mk16_CQC {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_CQC_SFG: CUP_arifle_Mk16_CQC {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_CQC_EGLM: CUP_arifle_Mk16_CQC {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_CQC_black: CUP_arifle_Mk16_CQC {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_CQC_FG_black: CUP_arifle_Mk16_CQC_FG {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_CQC_SFG_black: CUP_arifle_Mk16_CQC_SFG {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_CQC_EGLM_black: CUP_arifle_Mk16_CQC_EGLM {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_STD_black: CUP_arifle_Mk16_STD {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_STD_FG_black: CUP_arifle_Mk16_STD_FG {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_STD_SFG_black: CUP_arifle_Mk16_STD_SFG {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_STD_EGLM_black: CUP_arifle_Mk16_STD_EGLM {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_SV_black: CUP_arifle_Mk16_SV {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_CQC_woodland: CUP_arifle_Mk16_CQC {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_CQC_FG_woodland: CUP_arifle_Mk16_CQC_FG {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_CQC_SFG_woodland: CUP_arifle_Mk16_CQC_SFG {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_CQC_EGLM_woodland: CUP_arifle_Mk16_CQC_EGLM {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_STD_woodland: CUP_arifle_Mk16_STD {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_STD_FG_woodland: CUP_arifle_Mk16_STD_FG {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_STD_SFG_woodland: CUP_arifle_Mk16_STD_SFG {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_STD_EGLM_woodland: CUP_arifle_Mk16_STD_EGLM {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
 	class CUP_arifle_Mk16_SV_woodland: CUP_arifle_Mk16_SV {
-		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+		modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
     class CUP_arifle_Mk17_Base;
 	class CUP_arifle_Mk17_CQC: CUP_arifle_Mk17_Base {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_CQC_FG: CUP_arifle_Mk17_CQC {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_CQC_SFG: CUP_arifle_Mk17_CQC_FG {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_CQC_EGLM: CUP_arifle_Mk17_CQC {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_STD: CUP_arifle_Mk17_Base {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_STD_FG: CUP_arifle_Mk17_STD {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_STD_SFG: CUP_arifle_Mk17_STD_FG {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_STD_EGLM: CUP_arifle_Mk17_STD {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk20: CUP_arifle_Mk17_Base {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_CQC_Black: CUP_arifle_Mk17_CQC {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_CQC_FG_black: CUP_arifle_Mk17_CQC_FG {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_CQC_SFG_black: CUP_arifle_Mk17_CQC_SFG {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_CQC_EGLM_black: CUP_arifle_Mk17_CQC_EGLM {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_STD_black: CUP_arifle_Mk17_STD {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_STD_FG_black: CUP_arifle_Mk17_STD_FG {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_STD_SFG_black: CUP_arifle_Mk17_STD_SFG {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_STD_EGLM_black: CUP_arifle_Mk17_STD_EGLM {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk20_black: CUP_arifle_Mk20 {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_CQC_woodland: CUP_arifle_Mk17_CQC {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_CQC_FG_woodland: CUP_arifle_Mk17_CQC_FG {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_CQC_SFG_woodland: CUP_arifle_Mk17_CQC_SFG {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_CQC_EGLM_woodland: CUP_arifle_Mk17_CQC_EGLM {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_STD_woodland: CUP_arifle_Mk17_STD {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_STD_FG_woodland: CUP_arifle_Mk17_STD_FG {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_STD_SFG_woodland: CUP_arifle_Mk17_STD_SFG {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk17_STD_EGLM_woodland: CUP_arifle_Mk17_STD_EGLM {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
 	class CUP_arifle_Mk20_woodland: CUP_arifle_Mk20 {
-		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+		modes[] = {"SCAR_H_Single", "SCAR_H_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_H_FullAuto);
     };
     class CUP_arifle_XM8_Base;
 	class CUP_arifle_XM8_Carbine: CUP_arifle_XM8_Base {
-		__modes__[] = {"Single", "Fullauto"};
+		modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(Fullauto);
     };
 	class CUP_arifle_XM8_Carbine_FG: CUP_arifle_XM8_Carbine {
-		__modes__[] = {"Single", "Fullauto"};
+		modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(Fullauto);
     };
 	class CUP_arifle_XM8_Carbine_GL: CUP_arifle_XM8_Base {
-		__modes__[] = {"Single", "Fullauto"};
+		modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(Fullauto);
     };
 	class CUP_arifle_xm8_sharpshooter: CUP_arifle_XM8_Base {
-		__modes__[] = {"Single", "Fullauto"};
+		modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(Fullauto);
     };
 	class CUP_arifle_xm8_SAW: CUP_arifle_xm8_sharpshooter {
-		__modes__[] = {"Single", "Fullauto", "Close", "Short", "Medium", "Far"};
+		modes[] = {"Single", "Fullauto", "Close", "Short", "Medium", "Far", "NEV_FullAuto"};
         AI_ROF(Fullauto);
     };
 	class CUP_arifle_XM8_Compact: CUP_arifle_XM8_Base {
-		__modes__[] = {"Single", "Fullauto"};
+		modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(Fullauto);
     };
 	class CUP_arifle_XM8_Compact_Rail: CUP_arifle_XM8_Compact {
-		__modes__[] = {"Single", "Fullauto"};
+		modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(Fullauto);
     };
     class CUP_arifle_XM8_Railed_Base;
 	class CUP_arifle_XM8_Railed: CUP_arifle_XM8_Railed_Base {
-		__modes__[] = {"Single", "Fullauto"};
+		modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(Fullauto);
     };
     class rhs_weap_kar98k_Base_F;
@@ -3268,15 +3268,15 @@ class CfgWeapons {
     };
     class rhs_weap_m70_base;
 	class rhs_weap_m70ab2: rhs_weap_m70_base {
-		__modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_m70b1: rhs_weap_m70ab2 {
-		__modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_m92: rhs_weap_m70_base {
-		__modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_m76: rhs_weap_m70_base {
@@ -3284,61 +3284,61 @@ class CfgWeapons {
     };
     class rhs_weap_m21_base;
 	class rhs_weap_m21a: rhs_weap_m21_base {
-		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_m21a_pr: rhs_weap_m21_base {
-		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_m21s: rhs_weap_m21_base {
-		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_m21s_pr: rhs_weap_m21a_pr {
-		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_savz61: SMG_01_F {
-		__modes__[] = {"Single", "FullAuto"};
+		modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
     class rhs_weap_savz58_base;
 	class rhs_weap_savz58p: rhs_weap_savz58_base {
-		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_savz58v: rhs_weap_savz58_base {
-		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
     class rhs_weap_savz58_rail_base;
 	class rhs_weap_savz58p_rail: rhs_weap_savz58_rail_base {
-		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_savz58v_rail: rhs_weap_savz58_rail_base {
-		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_savz58v_ris: rhs_weap_savz58_ris_base {
-		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_savz58p_black: rhs_weap_savz58p {
-		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_savz58v_black: rhs_weap_savz58v {
-		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_savz58p_rail_black: rhs_weap_savz58p_rail {
-		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_savz58v_rail_black: rhs_weap_savz58v_rail {
-		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_Izh18: Rifle_Base_F {
@@ -3346,37 +3346,37 @@ class CfgWeapons {
     };
     class rhs_weap_vhs2_base;
 	class rhs_weap_vhsd2: rhs_weap_vhs2_base {
-		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_vhsd2_bg: rhs_weap_vhs2_base {
-		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_vhsd2_ct15x: rhs_weap_vhs2_base {
-		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_vhsd2_bg_ct15x: rhs_weap_vhsd2_ct15x {
-		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_vhsk2: rhs_weap_vhsd2 {
-		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
     class rhs_weap_m3a1_base;
 	class rhs_weap_m3a1: rhs_weap_m3a1_base {
-		__modes__[] = {"FullAuto"};
+		modes[] = {"FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_m3a1_specops: rhs_weap_m3a1_base {
-		__modes__[] = {"FullAuto"};
+		modes[] = {"FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
     class rhs_weap_MP44_base;
 	class rhs_weap_MP44: rhs_weap_MP44_base {
-		__modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
     class rhs_weap_M1garand_Base_F;
@@ -3385,7 +3385,7 @@ class CfgWeapons {
     };
     class rhs_weap_mg42_base;
 	class rhs_weap_mg42: rhs_weap_mg42_base {
-		__modes__[] = {"manual", "close", "short", "medium", "far"};
+		modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_ROF(manual);
     };
 	class rhs_weap_m79: Rifle_Base_F {
@@ -3400,43 +3400,43 @@ class CfgWeapons {
         AI_DISPERSION;
     };
 	class rhs_weap_m70b1n: rhs_weap_m70ab2 {
-		__modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_m70b3n: rhs_weap_m70ab2 {
-		__modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_m70b3n_pbg40: rhs_weap_m70ab2 {
-		__modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_m21a_pr_pbg40: rhs_weap_m21_base {
-		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_m21a_pbg40: rhs_weap_m21a {
-		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+		modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_m82a1: rhs_weap_M107 {
         AI_DISPERSION;
     };
 	class rhs_weap_scorpion: SMG_01_F {
-		__modes__[] = {"Single", "FullAuto"};
+		modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
     class rhs_weap_g36_base;
 	class rhs_weap_g36c: rhs_weap_g36_base {
-		__modes__[] = {"Single", "Burst", "FullAuto", "single_medium_optics1", "single_far_optics2"};
+		modes[] = {"Single", "Burst", "FullAuto", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_g36kv: rhs_weap_g36_base {
-		__modes__[] = {"Single", "Burst", "FullAuto", "single_medium_optics1", "single_far_optics2"};
+		modes[] = {"Single", "Burst", "FullAuto", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_g36kv_ag36: rhs_weap_g36kv {
-		__modes__[] = {"Single", "Burst", "FullAuto", "single_medium_optics1", "single_far_optics2"};
+		modes[] = {"Single", "Burst", "FullAuto", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 	class rhs_weap_SCARH_CQC: rhs_weap_SCAR_H_CQC_Base {
@@ -3464,12 +3464,12 @@ class CfgWeapons {
         AI_ROF(FullAuto);
     };
 	class rhs_weap_m84: Rifle_Long_Base_F {
-        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        modes[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
     class rhs_weap_lmg_minimipara;
 	class rhs_weap_minimi_para_railed: rhs_weap_lmg_minimipara {
-        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        modes[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
 /*AI_DISPERSION;
