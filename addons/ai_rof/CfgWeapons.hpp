@@ -2038,43 +2038,131 @@ class CfgWeapons {
         modes[] = {"FullAuto", "Single", "Burst", "Burst_medium", "single_medium_optics1", "single_medium_optics2", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
+	class CUP_arifle_RPK74: CUP_arifle_AK_Base {
+        __modes__[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_RPK74_top_rail: CUP_arifle_RPK74 {
+        __modes__[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_RPK74_45: CUP_arifle_RPK74 {
+        __modes__[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_RPK74_45_top_rail: CUP_arifle_RPK74_45 {
+        __modes__[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_RPK74M: CUP_arifle_RPK74 {
+        __modes__[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_RPK74M_top_rail: CUP_arifle_RPK74M {
+        __modes__[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2", "Single"};
+        AI_ROF(manual);
+    };
+	class CUP_arifle_RPK74M_railed: CUP_arifle_RPK74M_top_rail {
+        __modes__[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2", "Single"};
+        AI_ROF(manual);
+    };
+	class CUP_arifle_SAIGA_MK03: CUP_arifle_AK104 {
+        AI_DISPERSION;
+    };
+	class CUP_arifle_SAIGA_MK03_top_rail: CUP_arifle_SAIGA_MK03 {
+        AI_DISPERSION;
+    };
+	class CUP_arifle_SAIGA_MK03_Wood: CUP_arifle_SAIGA_MK03 {
+        AI_DISPERSION;
+    };
+	class CUP_arifle_SIAGE_MK03_Wood_top_rail: CUP_arifle_SAIGA_MK03_Wood {
+        AI_DISPERSION;
+    };
+	class CUP_arifle_TYPE_56_2: CUP_arifle_AKM {
+        modes[] = {"FullAuto", "Single", "Burst", "FullAuto_medium", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_TYPE_56_2_top_rail: CUP_arifle_TYPE_56_2 {
+        modes[] = {"FullAuto", "Single", "Burst", "FullAuto_medium", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_TYPE_56_2_Early: CUP_arifle_TYPE_56_2 {
+        modes[] = {"FullAuto", "Single", "Burst", "FullAuto_medium", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_srifle_AS50: Rifle_Long_Base_F {
+        AI_DISPERSION;
+    };
+    class CUP_srifle_AWM_Base;
+	class CUP_srifle_AWM_des: CUP_srifle_AWM_Base {
+        AI_DISPERSION;
+    };
+	class CUP_srifle_AWM_wdl: CUP_srifle_AWM_Base {
+        AI_DISPERSION;
+    };
+	class CUP_srifle_G22_des: CUP_srifle_AWM_des {
+        AI_DISPERSION;
+    };
+	class CUP_srifle_G22_wdl: CUP_srifle_AWM_wdl {
+        AI_DISPERSION;
+    };
+	class CUP_smg_bizon: Rifle_Base_F {
+        __modes__[] = {"FullAuto", "Single", "Burst"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_smg_vityaz: CUP_smg_bizon {
+        __modes__[] = {"FullAuto", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_smg_vityaz_vfg: CUP_smg_vityaz {
+        __modes__[] = {"FullAuto", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_smg_vityaz_top_rail: CUP_smg_vityaz {
+        __modes__[] = {"FullAuto", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_smg_vityaz_vfg_top_rail: CUP_smg_vityaz_top_rail {
+        __modes__[] = {"FullAuto", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_smg_vityaz_vfg_front_rail: CUP_smg_vityaz_top_rail {
+        __modes__[] = {"FullAuto", "Single"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_smg_saiga9: CUP_smg_vityaz_top_rail {
+        AI_DISPERSION;
+    };
+    class CUP_arifle_CZ805_Base;
+	class CUP_arifle_CZ805_A2: CUP_arifle_CZ805_Base {
+        AI_DISPERSION;
+    };
+	class CUP_arifle_CZ805_A1: CUP_arifle_CZ805_Base {
+        AI_DISPERSION;
+    };
+	class CUP_arifle_CZ805_GL: CUP_arifle_CZ805_Base {
+        AI_DISPERSION;
+    };
+	class CUP_arifle_CZ805_A2_blk: CUP_arifle_CZ805_A2 {
+        AI_DISPERSION;
+    };
+	class CUP_arifle_CZ805_A2_coyote: CUP_arifle_CZ805_A2 {
+        AI_DISPERSION;
+    };
+	class CUP_arifle_CZ805_A1_blk: CUP_arifle_CZ805_A1 {
+        AI_DISPERSION;
+    };
+	class CUP_arifle_CZ805_A1_coyote: CUP_arifle_CZ805_A1 {
+        AI_DISPERSION;
+    };
+	class CUP_arifle_CZ805_GL_blk: CUP_arifle_CZ805_GL {
+        AI_DISPERSION;
+    };
+	class CUP_arifle_CZ805_GL_coyote: CUP_arifle_CZ805_GL {
+        AI_DISPERSION;
+    };
 /*
 AI_DISPERSION;
-CUP_arifle_RPK74
-CUP_arifle_RPK74_top_rail
-CUP_arifle_RPK74_45
-CUP_arifle_RPK74_45_top_rail
-CUP_arifle_RPK74M
-CUP_arifle_RPK74M_top_rail
-CUP_arifle_RPK74M_railed
-CUP_arifle_SAIGA_MK03
-CUP_arifle_SAIGA_MK03_top_rail
-CUP_arifle_SAIGA_MK03_Wood
-CUP_arifle_SIAGE_MK03_Wood_top_rail
-CUP_arifle_TYPE_56_2
-CUP_arifle_TYPE_56_2_top_rail
-CUP_arifle_TYPE_56_2_Early
-CUP_srifle_AS50
-CUP_srifle_AWM_des
-CUP_srifle_AWM_wdl
-CUP_srifle_G22_des
-CUP_srifle_G22_wdl
-CUP_smg_bizon
-CUP_smg_vityaz
-CUP_smg_vityaz_vfg
-CUP_smg_vityaz_top_rail
-CUP_smg_vityaz_vfg_top_rail
-CUP_smg_vityaz_vfg_front_rail
-CUP_smg_saiga9
-CUP_arifle_CZ805_A2
-CUP_arifle_CZ805_A1
-CUP_arifle_CZ805_GL
-CUP_arifle_CZ805_A2_blk
-CUP_arifle_CZ805_A2_coyote
-CUP_arifle_CZ805_A1_blk
-CUP_arifle_CZ805_A1_coyote
-CUP_arifle_CZ805_GL_blk
-CUP_arifle_CZ805_GL_coyote
 CUP_smg_EVO
 CUP_arifle_FNFAL
 CUP_arifle_FNFAL_railed
