@@ -2554,31 +2554,86 @@ class CfgWeapons {
     class CUP_sgun_CZ584_RIS: CUP_sgun_CZ584 {
         AI_DISPERSION;
     };
-/*
-AI_DISPERSION;
-CUP_srifle_L129A1
-CUP_srifle_L129A1_HG
-CUP_arifle_L85A2
-CUP_arifle_L85A2_G
-CUP_arifle_L85A2_NG
-CUP_arifle_L85A2_GL
-CUP_arifle_L86A2
-CUP_sgun_M1014
-CUP_sgun_M1014_solidstock
-CUP_sgun_M1014_vfg
-CUP_sgun_M1014_Entry
-CUP_sgun_M1014_Entry_vfg
-CUP_srifle_M107_Base
-CUP_srifle_M107_Desert
-CUP_srifle_M107_Pristine
-CUP_srifle_M107_Snow
-CUP_srifle_M107_Woodland
-CUP_srifle_M110
-CUP_srifle_M110_black
-CUP_srifle_M110_woodland
-CUP_srifle_m110_kac
-CUP_srifle_m110_kac_black
-CUP_srifle_m110_kac_woodland
+	class CUP_srifle_L129A1: Rifle_Base_F {
+        AI_DISPERSION;
+    };
+	class CUP_srifle_L129A1_HG: CUP_srifle_L129A1 {
+        AI_DISPERSION;
+    };
+    class CUP_l85a2;
+	class CUP_arifle_L85A2: CUP_l85a2 {
+        __modes__[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+    class CUP_l85a2_ris;
+	class CUP_arifle_L85A2_G: CUP_l85a2_ris {
+        __modes__[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+    class CUP_l85a2_ris_ng;
+	class CUP_arifle_L85A2_NG: CUP_l85a2_ris_ng {
+        __modes__[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+    class CUP_l85a2_ugl;
+	class CUP_arifle_L85A2_GL: CUP_l85a2_ugl {
+        __modes__[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_L86A2: CUP_l85a2 {
+        __modes__[] = {"Single", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+    class CUP_sgun_M1014_base;
+	class CUP_sgun_M1014: CUP_sgun_M1014_base {
+        AI_DISPERSION;
+    };
+	class CUP_sgun_M1014_solidstock: CUP_sgun_M1014 {
+        AI_DISPERSION;
+    };
+	class CUP_sgun_M1014_vfg: CUP_sgun_M1014_base {
+        AI_DISPERSION;
+    };
+	class CUP_sgun_M1014_Entry: CUP_sgun_M1014_base {
+        AI_DISPERSION;
+    };
+	class CUP_sgun_M1014_Entry_vfg: CUP_sgun_M1014_Entry {
+        AI_DISPERSION;
+    };
+	class CUP_srifle_M107_Base: Rifle_Long_Base_F {
+        AI_DISPERSION;
+    };
+	class CUP_srifle_M107_Desert: CUP_srifle_M107_Base {
+        AI_DISPERSION;
+    };
+	class CUP_srifle_M107_Pristine: CUP_srifle_M107_Base {
+        AI_DISPERSION;
+    };
+	class CUP_srifle_M107_Snow: CUP_srifle_M107_Base {
+        AI_DISPERSION;
+    };
+	class CUP_srifle_M107_Woodland: CUP_srifle_M107_Base {
+        AI_DISPERSION;
+    };
+	class CUP_srifle_M110: Rifle_Base_F {
+        AI_DISPERSION;
+    };
+	class CUP_srifle_M110_black: CUP_srifle_M110 {
+        AI_DISPERSION;
+    };
+	class CUP_srifle_M110_woodland: CUP_srifle_M110 {
+        AI_DISPERSION;
+    };
+	class CUP_srifle_m110_kac: CUP_srifle_M110 {
+        AI_DISPERSION;
+    };
+	class CUP_srifle_m110_kac_black: CUP_srifle_m110_kac {
+        AI_DISPERSION;
+    };
+	class CUP_srifle_m110_kac_woodland: CUP_srifle_m110_kac {
+        AI_DISPERSION;
+    };
+/*AI_DISPERSION;
 CUP_srifle_M14
 CUP_arifle_M16A2
 CUP_arifle_M16A2_GL
