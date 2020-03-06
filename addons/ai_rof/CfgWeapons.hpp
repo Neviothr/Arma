@@ -2999,69 +2999,260 @@ class CfgWeapons {
 		__modes__[] = {"Single", "FullAuto"};
         AI_ROF(FullAuto);
     };
+    class CUP_arifle_SCAR_L_Base;
+	class CUP_arifle_Mk16_STD: CUP_arifle_SCAR_L_Base {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_STD_FG: CUP_arifle_Mk16_STD {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_STD_SFG: CUP_arifle_Mk16_STD {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_STD_EGLM: CUP_arifle_Mk16_STD {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+    class CUP_arifle_SCAR_L_Base;
+	class CUP_arifle_Mk16_SV: CUP_arifle_SCAR_L_Base {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_CQC: CUP_arifle_SCAR_L_Base {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_CQC_FG: CUP_arifle_Mk16_CQC {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_CQC_SFG: CUP_arifle_Mk16_CQC {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_CQC_EGLM: CUP_arifle_Mk16_CQC {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_CQC_black: CUP_arifle_Mk16_CQC {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_CQC_FG_black: CUP_arifle_Mk16_CQC_FG {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_CQC_SFG_black: CUP_arifle_Mk16_CQC_SFG {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_CQC_EGLM_black: CUP_arifle_Mk16_CQC_EGLM {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_STD_black: CUP_arifle_Mk16_STD {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_STD_FG_black: CUP_arifle_Mk16_STD_FG {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_STD_SFG_black: CUP_arifle_Mk16_STD_SFG {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_STD_EGLM_black: CUP_arifle_Mk16_STD_EGLM {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_SV_black: CUP_arifle_Mk16_SV {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_CQC_woodland: CUP_arifle_Mk16_CQC {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_CQC_FG_woodland: CUP_arifle_Mk16_CQC_FG {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_CQC_SFG_woodland: CUP_arifle_Mk16_CQC_SFG {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_CQC_EGLM_woodland: CUP_arifle_Mk16_CQC_EGLM {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_STD_woodland: CUP_arifle_Mk16_STD {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_STD_FG_woodland: CUP_arifle_Mk16_STD_FG {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_STD_SFG_woodland: CUP_arifle_Mk16_STD_SFG {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_STD_EGLM_woodland: CUP_arifle_Mk16_STD_EGLM {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+	class CUP_arifle_Mk16_SV_woodland: CUP_arifle_Mk16_SV {
+		__modes__[] = {"SCAR_L_Single", "SCAR_L_FullAuto"};
+        AI_ROF(SCAR_L_FullAuto);
+    };
+    class CUP_arifle_Mk17_Base;
+	class CUP_arifle_Mk17_CQC: CUP_arifle_Mk17_Base {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_CQC_FG: CUP_arifle_Mk17_CQC {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_CQC_SFG: CUP_arifle_Mk17_CQC_FG {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_CQC_EGLM: CUP_arifle_Mk17_CQC {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_STD: CUP_arifle_Mk17_Base {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_STD_FG: CUP_arifle_Mk17_STD {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_STD_SFG: CUP_arifle_Mk17_STD_FG {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_STD_EGLM: CUP_arifle_Mk17_STD {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk20: CUP_arifle_Mk17_Base {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_CQC_Black: CUP_arifle_Mk17_CQC {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_CQC_FG_black: CUP_arifle_Mk17_CQC_FG {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_CQC_SFG_black: CUP_arifle_Mk17_CQC_SFG {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_CQC_EGLM_black: CUP_arifle_Mk17_CQC_EGLM {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_STD_black: CUP_arifle_Mk17_STD {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_STD_FG_black: CUP_arifle_Mk17_STD_FG {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_STD_SFG_black: CUP_arifle_Mk17_STD_SFG {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_STD_EGLM_black: CUP_arifle_Mk17_STD_EGLM {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk20_black: CUP_arifle_Mk20 {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_CQC_woodland: CUP_arifle_Mk17_CQC {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_CQC_FG_woodland: CUP_arifle_Mk17_CQC_FG {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_CQC_SFG_woodland: CUP_arifle_Mk17_CQC_SFG {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_CQC_EGLM_woodland: CUP_arifle_Mk17_CQC_EGLM {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_STD_woodland: CUP_arifle_Mk17_STD {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_STD_FG_woodland: CUP_arifle_Mk17_STD_FG {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_STD_SFG_woodland: CUP_arifle_Mk17_STD_SFG {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk17_STD_EGLM_woodland: CUP_arifle_Mk17_STD_EGLM {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+	class CUP_arifle_Mk20_woodland: CUP_arifle_Mk20 {
+		__modes__[] = {"SCAR_H_Single", "SCAR_H_FullAuto"};
+        AI_ROF(SCAR_H_FullAuto);
+    };
+    class CUP_arifle_XM8_Base;
+	class CUP_arifle_XM8_Carbine: CUP_arifle_XM8_Base {
+		__modes__[] = {"Single", "Fullauto"};
+        AI_ROF(Fullauto);
+    };
+	class CUP_arifle_XM8_Carbine_FG: CUP_arifle_XM8_Carbine {
+		__modes__[] = {"Single", "Fullauto"};
+        AI_ROF(Fullauto);
+    };
+	class CUP_arifle_XM8_Carbine_GL: CUP_arifle_XM8_Base {
+		__modes__[] = {"Single", "Fullauto"};
+        AI_ROF(Fullauto);
+    };
+	class CUP_arifle_xm8_sharpshooter: CUP_arifle_XM8_Base {
+		__modes__[] = {"Single", "Fullauto"};
+        AI_ROF(Fullauto);
+    };
+	class CUP_arifle_xm8_SAW: CUP_arifle_xm8_sharpshooter {
+		__modes__[] = {"Single", "Fullauto", "Close", "Short", "Medium", "Far"};
+        AI_ROF(Fullauto);
+    };
+	class CUP_arifle_XM8_Compact: CUP_arifle_XM8_Base {
+		__modes__[] = {"Single", "Fullauto"};
+        AI_ROF(Fullauto);
+    };
+	class CUP_arifle_XM8_Compact_Rail: CUP_arifle_XM8_Compact {
+		__modes__[] = {"Single", "Fullauto"};
+        AI_ROF(Fullauto);
+    };
+    class CUP_arifle_XM8_Railed_Base;
+	class CUP_arifle_XM8_Railed: CUP_arifle_XM8_Railed_Base {
+		__modes__[] = {"Single", "Fullauto"};
+        AI_ROF(Fullauto);
+    };
 /*AI_DISPERSION;
-CUP_arifle_Mk16_STD
-CUP_arifle_Mk16_STD_FG
-CUP_arifle_Mk16_STD_SFG
-CUP_arifle_Mk16_STD_EGLM
-CUP_arifle_Mk16_SV
-CUP_arifle_Mk16_CQC
-CUP_arifle_Mk16_CQC_FG
-CUP_arifle_Mk16_CQC_SFG
-CUP_arifle_Mk16_CQC_EGLM
-CUP_arifle_Mk16_CQC_black
-CUP_arifle_Mk16_CQC_FG_black
-CUP_arifle_Mk16_CQC_SFG_black
-CUP_arifle_Mk16_CQC_EGLM_black
-CUP_arifle_Mk16_STD_black
-CUP_arifle_Mk16_STD_FG_black
-CUP_arifle_Mk16_STD_SFG_black
-CUP_arifle_Mk16_STD_EGLM_black
-CUP_arifle_Mk16_SV_black
-CUP_arifle_Mk16_CQC_woodland
-CUP_arifle_Mk16_CQC_FG_woodland
-CUP_arifle_Mk16_CQC_SFG_woodland
-CUP_arifle_Mk16_CQC_EGLM_woodland
-CUP_arifle_Mk16_STD_woodland
-CUP_arifle_Mk16_STD_FG_woodland
-CUP_arifle_Mk16_STD_SFG_woodland
-CUP_arifle_Mk16_STD_EGLM_woodland
-CUP_arifle_Mk16_SV_woodland
-CUP_arifle_Mk17_CQC
-CUP_arifle_Mk17_CQC_FG
-CUP_arifle_Mk17_CQC_SFG
-CUP_arifle_Mk17_CQC_EGLM
-CUP_arifle_Mk17_STD
-CUP_arifle_Mk17_STD_FG
-CUP_arifle_Mk17_STD_SFG
-CUP_arifle_Mk17_STD_EGLM
-CUP_arifle_Mk20
-CUP_arifle_Mk17_CQC_Black
-CUP_arifle_Mk17_CQC_FG_black
-CUP_arifle_Mk17_CQC_SFG_black
-CUP_arifle_Mk17_CQC_EGLM_black
-CUP_arifle_Mk17_STD_black
-CUP_arifle_Mk17_STD_FG_black
-CUP_arifle_Mk17_STD_SFG_black
-CUP_arifle_Mk17_STD_EGLM_black
-CUP_arifle_Mk20_black
-CUP_arifle_Mk17_CQC_woodland
-CUP_arifle_Mk17_CQC_FG_woodland
-CUP_arifle_Mk17_CQC_SFG_woodland
-CUP_arifle_Mk17_CQC_EGLM_woodland
-CUP_arifle_Mk17_STD_woodland
-CUP_arifle_Mk17_STD_FG_woodland
-CUP_arifle_Mk17_STD_SFG_woodland
-CUP_arifle_Mk17_STD_EGLM_woodland
-CUP_arifle_Mk20_woodland
-CUP_arifle_XM8_Carbine
-CUP_arifle_XM8_Carbine_FG
-CUP_arifle_XM8_Carbine_GL
-CUP_arifle_xm8_sharpshooter
-CUP_arifle_xm8_SAW
-CUP_arifle_XM8_Compact
-CUP_arifle_XM8_Compact_Rail
-CUP_arifle_XM8_Railed
 rhs_weap_kar98k
 rhs_weap_m38
 rhs_weap_m38_rail
