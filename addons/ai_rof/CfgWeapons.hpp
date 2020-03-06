@@ -3399,26 +3399,80 @@ class CfgWeapons {
 	class rhs_weap_l1a1_wood: rhs_weap_l1a1_wood_base {
         AI_DISPERSION;
     };
+	class rhs_weap_m70b1n: rhs_weap_m70ab2 {
+		__modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_m70b3n: rhs_weap_m70ab2 {
+		__modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_m70b3n_pbg40: rhs_weap_m70ab2 {
+		__modes__[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_m21a_pr_pbg40: rhs_weap_m21_base {
+		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_m21a_pbg40: rhs_weap_m21a {
+		__modes__[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_m82a1: rhs_weap_M107 {
+        AI_DISPERSION;
+    };
+	class rhs_weap_scorpion: SMG_01_F {
+		__modes__[] = {"Single", "FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_g36_base;
+	class rhs_weap_g36c: rhs_weap_g36_base {
+		__modes__[] = {"Single", "Burst", "FullAuto", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_g36kv: rhs_weap_g36_base {
+		__modes__[] = {"Single", "Burst", "FullAuto", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_g36kv_ag36: rhs_weap_g36kv {
+		__modes__[] = {"Single", "Burst", "FullAuto", "single_medium_optics1", "single_far_optics2"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_SCARH_CQC: rhs_weap_SCAR_H_CQC_Base {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_SCARH_STD: rhs_weap_SCAR_H_STD_Base {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_SCARH_LB: rhs_weap_SCAR_H_LB_Base {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_SCARH_FDE_CQC: rhs_weap_SCARH_CQC {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_SCARH_FDE_STD: rhs_weap_SCARH_STD {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_SCARH_FDE_LB: rhs_weap_SCARH_LB {
+        modes[] = {"Single", "Single_AI", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class rhs_weap_m84: Rifle_Long_Base_F {
+        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_lmg_minimipara;
+	class rhs_weap_minimi_para_railed: rhs_weap_lmg_minimipara {
+        __modes__[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+        AI_ROF(FullAuto);
+    };
 /*AI_DISPERSION;
-rhs_weap_m70b1n
-rhs_weap_m70b3n
-rhs_weap_m70b3n_pbg40
-rhs_weap_m21a_pr_pbg40
-rhs_weap_m21a_pbg40
-rhs_weap_m82a1
-rhs_weap_scorpion
-rhs_weap_g36c
-rhs_weap_g36kv
-rhs_weap_g36kv_ag36
-rhs_weap_SCARH_CQC
-rhs_weap_SCARH_STD
-rhs_weap_SCARH_LB
-rhs_weap_SCARH_FDE_CQC
-rhs_weap_SCARH_FDE_STD
-rhs_weap_SCARH_FDE_LB
-rhs_weap_m84
-rhs_weap_minimi_para_railed
-
 launch_NLAW_F
 launch_RPG32_F
 launch_B_Titan_F
