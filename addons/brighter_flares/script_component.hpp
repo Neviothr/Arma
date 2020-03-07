@@ -6,5 +6,5 @@
 
 #define BRIGHTER_FLARE \
     timeToLive = 60; \
-    intensity  = 5000000; \
+    intensity  = 2500000; \
     coefGravity = 0.25
