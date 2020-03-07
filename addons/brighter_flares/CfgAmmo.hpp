@@ -73,4 +73,29 @@ class CfgAmmo {
     class CUP_Sub_F_40mm_StarCluster_Red: F_40mm_White {
         BRIGHTER_FLARE;
     };
+	class Flare_82mm_AMOS_White: FlareCore {
+        BRIGHTER_FLARE;
+    };
+	class CUP_Sh_122_ILLUM: Flare_82mm_AMOS_White {
+        BRIGHTER_FLARE;
+    };
+	class CUP_Sh_105_ILLUM: Flare_82mm_AMOS_White {
+        BRIGHTER_FLARE;
+    };
+	class rhs_ammo_3WS23: Flare_82mm_AMOS_White {
+        BRIGHTER_FLARE;
+    };
+	class rhs_ammo_s463: Flare_82mm_AMOS_White {
+        BRIGHTER_FLARE;
+    };
+	class rhs_ammo_3vs25m: Flare_82mm_AMOS_White {
+        BRIGHTER_FLARE;
+    };
+    class rhs_ammo_rdg2_white;
+	class rhs_ammo_nspn_yellow: rhs_ammo_rdg2_white {
+        BRIGHTER_FLARE;
+    };
+	class rhs_ammo_m314_ilum: Flare_82mm_AMOS_White {
+        BRIGHTER_FLARE;
+    };
 };
