@@ -58,7 +58,7 @@ class CfgAmmo {
         BRIGHTER_FLARE;
     };
 
-    class CUP_F_40mm_Star_Red: F_40mm_White {
+    class CUP_F_40mm_Star_Red: CUP_F_40mm_Star_White {
         BRIGHTER_FLARE;
     };
 
@@ -69,7 +69,7 @@ class CfgAmmo {
     class CUP_Sub_F_40mm_StarCluster_Green: F_40mm_White {
         BRIGHTER_FLARE;
     };
-    
+
     class CUP_Sub_F_40mm_StarCluster_Red: F_40mm_White {
         BRIGHTER_FLARE;
     };
