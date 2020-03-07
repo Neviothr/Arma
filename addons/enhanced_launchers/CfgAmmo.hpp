@@ -85,7 +85,9 @@ class CfgAmmo {
 	class CUP_M_9K38_Igla_AA: M_Titan_AA {
         ENHANCED_LAUNCHER_AMMO;
     };
-    class rhs_ammo_9k32;
+    class rhs_ammo_9k32: M_Titan_AA {
+        ENHANCED_LAUNCHER_AMMO;
+    };
 	class rhs_ammo_9k38: rhs_ammo_9k32 {
         ENHANCED_LAUNCHER_AMMO;
     };
