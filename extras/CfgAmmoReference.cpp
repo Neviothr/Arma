@@ -9112,7 +9112,7 @@ class CfgAmmo
 		whistleDist = 32;
 		maxControlRange = 5000;
 	};
-	class CUP_M_9K115_2_AT13_Saxhorn_2_AT: M_Titan_AT
+	class CUP_M_9K115_2_AT13_Saxhorn_2_AT: MissileBase
 	{
 		aiAmmoUsageFlags = "128 + 512";
 		SoundSetExplosion[] = {"RocketsHeavy_Exp_SoundSet", "RocketsHeavy_Tail_SoundSet", "Explosion_Debris_SoundSet"};
