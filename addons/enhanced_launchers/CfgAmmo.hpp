@@ -49,7 +49,7 @@ class CfgAmmo {
     class CUP_R_MEEWS_HEAT: CUP_R_MEEWS_HEDP {
         ENHANCED_LAUNCHER_AMMO;
     };
-	class CUP_M_9K115_2_AT13_Saxhorn_2_AT: M_Titan_AT {
+	class CUP_M_9K115_2_AT13_Saxhorn_2_AT: MissileBase {
         ENHANCED_LAUNCHER_AMMO;
     };
 	class CUP_R_SMAW_HEDP: RocketBase {
