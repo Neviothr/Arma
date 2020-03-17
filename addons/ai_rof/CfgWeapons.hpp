@@ -3825,31 +3825,99 @@ class CfgWeapons {
         modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
+    class CUP_Famas_Base;
+	class CUP_Famas_F1: CUP_Famas_Base {
+        modes[] = {"Single", "Burst", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_Famas_F1_Rail: CUP_Famas_Base {
+        modes[] = {"Single", "Burst", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_Famas_F1_Wood: CUP_Famas_F1 {
+        modes[] = {"Single", "Burst", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_Famas_F1_Arid: CUP_Famas_F1 {
+        modes[] = {"Single", "Burst", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_Famas_F1_Rail_Wood: CUP_Famas_F1_Rail {
+        modes[] = {"Single", "Burst", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_Famas_F1_Rail_Arid: CUP_Famas_F1_Rail {
+        modes[] = {"Single", "Burst", "FullAuto", "fullauto_medium", "single_medium_optics1", "single_far_optics2", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_DSA_SA58: CUP_arifle_FNFAL {
+        modes[] = {"Single", "Fullauto", "FullAuto_medium", "single_medium_optics1", "single_medium_optics2", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_DSA_SA58_OSW: CUP_arifle_DSA_SA58 {
+        modes[] = {"Single", "Fullauto", "FullAuto_medium", "single_medium_optics1", "single_medium_optics2", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_DSA_SA58_OSW_VFG: CUP_arifle_DSA_SA58_OSW {
+        modes[] = {"Single", "Fullauto", "FullAuto_medium", "single_medium_optics1", "single_medium_optics2", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_DSA_SA58_OSW_M203: CUP_arifle_DSA_SA58_OSW {
+        modes[] = {"Single", "Fullauto", "FullAuto_medium", "single_medium_optics1", "single_medium_optics2", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_DSA_SA58_DMR: CUP_arifle_DSA_SA58 {
+        modes[] = {"Single", "Fullauto", "FullAuto_medium", "single_medium_optics1", "single_medium_optics2", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_DSA_SA58_OSW_Sand: CUP_arifle_DSA_SA58_OSW {
+        modes[] = {"Single", "Fullauto", "FullAuto_medium", "single_medium_optics1", "single_medium_optics2", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_DSA_SA58_OSW_Desert: CUP_arifle_DSA_SA58_OSW {
+        modes[] = {"Single", "Fullauto", "FullAuto_medium", "single_medium_optics1", "single_medium_optics2", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_DSA_SA58_OSW_Woodland: CUP_arifle_DSA_SA58_OSW {
+        modes[] = {"Single", "Fullauto", "FullAuto_medium", "single_medium_optics1", "single_medium_optics2", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_DSA_SA58_OSW_VFG_Sand: CUP_arifle_DSA_SA58_OSW_VFG {
+        modes[] = {"Single", "Fullauto", "FullAuto_medium", "single_medium_optics1", "single_medium_optics2", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_DSA_SA58_OSW_VFG_Desert: CUP_arifle_DSA_SA58_OSW_VFG {
+        modes[] = {"Single", "Fullauto", "FullAuto_medium", "single_medium_optics1", "single_medium_optics2", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_DSA_SA58_OSW_VFG_Woodland: CUP_arifle_DSA_SA58_OSW_VFG {
+        modes[] = {"Single", "Fullauto", "FullAuto_medium", "single_medium_optics1", "single_medium_optics2", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Gewehr1: CUP_arifle_FNFAL {
+        modes[] = {"Single", "Fullauto", "FullAuto_medium", "single_medium_optics1", "single_medium_optics2", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Gewehr1_railed: CUP_arifle_Gewehr1 {
+        modes[] = {"Single", "Fullauto", "FullAuto_medium", "single_medium_optics1", "single_medium_optics2", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_IMI_Romat: CUP_arifle_FNFAL {
+        AI_DISPERSION;
+    };
+	class CUP_arifle_IMI_Romat_railed: CUP_arifle_IMI_Romat {
+        AI_DISPERSION;
+    };
+	class CUP_arifle_Steyr_Stg58: CUP_arifle_FNFAL {
+        modes[] = {"Single", "Fullauto", "FullAuto_medium", "single_medium_optics1", "single_medium_optics2", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_Steyr_Stg58_railed: CUP_arifle_Steyr_Stg58 {
+        modes[] = {"Single", "Fullauto", "FullAuto_medium", "single_medium_optics1", "single_medium_optics2", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
 /*
 AI_DISPERSION;
-CUP_Famas_F1
-CUP_Famas_F1_Rail
-CUP_Famas_F1_Wood
-CUP_Famas_F1_Arid
-CUP_Famas_F1_Rail_Wood
-CUP_Famas_F1_Rail_Arid
-CUP_arifle_DSA_SA58
-CUP_arifle_DSA_SA58_OSW
-CUP_arifle_DSA_SA58_OSW_VFG
-CUP_arifle_DSA_SA58_OSW_M203
-CUP_arifle_DSA_SA58_DMR
-CUP_arifle_DSA_SA58_OSW_Sand
-CUP_arifle_DSA_SA58_OSW_Desert
-CUP_arifle_DSA_SA58_OSW_Woodland
-CUP_arifle_DSA_SA58_OSW_VFG_Sand
-CUP_arifle_DSA_SA58_OSW_VFG_Desert
-CUP_arifle_DSA_SA58_OSW_VFG_Woodland
-CUP_arifle_Gewehr1
-CUP_arifle_Gewehr1_railed
-CUP_arifle_IMI_Romat
-CUP_arifle_IMI_Romat_railed
-CUP_arifle_Steyr_Stg58
-CUP_arifle_Steyr_Stg58_railed
 CUP_srifle_Mosin_Nagant
 CUP_srifle_Remington700
 CUP_SKS
