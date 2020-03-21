@@ -10,7 +10,7 @@
         params ["_value"];
         GVAR(maxDistance) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Min distance
 [
@@ -24,7 +24,7 @@
         params ["_value"];
         GVAR(minDistance) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Group side
 [
@@ -38,7 +38,7 @@
         params ["_value"];
         GVAR(groupSide) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Group array
 [
@@ -52,7 +52,7 @@
         params ["_value"];
         GVAR(groupArray) = _value splitString " "; // Turns editbox's `name1 name2` into ["name1", "name2"]
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Code to run on spawned units
 [
@@ -66,4 +66,4 @@
         params ["_value"];
         GVAR(unitCode) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
