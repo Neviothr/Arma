@@ -32,6 +32,8 @@ for "_i" from 0 to 5 step 1 do {
         // Move spawned group into array, for which code will be ran on each element
         _spawnedGroups pushBack _dummyGroup;
     };
+
+    [_dummyGroup, 150] spawn lambs_wp_fnc_taskHunt;
 };
 
 // Apply code to spawned units

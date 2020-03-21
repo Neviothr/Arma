@@ -4090,4 +4090,815 @@ class CfgWeapons {
     class CUP_sgun_SPAS12: Rifle_Base_F {
         AI_DISPERSION;
     };
+
+    // Vehicle weapons
+    class MGun;
+    class M2: MGun {
+        AI_DISPERSION;
+    };
+    class LMG_RCWS: MGun {
+        AI_DISPERSION;
+    };
+    class LMG_65mm_body: LMG_RCWS {
+        AI_DISPERSION;
+    };
+    class LMG_M200: LMG_RCWS {
+        AI_DISPERSION;
+    };
+    class LMG_M200_body: LMG_M200 {
+        AI_DISPERSION;
+    };
+    class LMG_Minigun: LMG_RCWS {
+        AI_DISPERSION;
+    };
+    class LMG_Minigun_heli: LMG_Minigun {
+        AI_DISPERSION;
+    };
+    class HMG_127: LMG_RCWS {
+        AI_DISPERSION;
+    };
+    class HMG_127_APC: HMG_127 {
+        AI_DISPERSION;
+    };
+    class HMG_127_UGV: HMG_127 {
+        AI_DISPERSION;
+    };
+    class HMG_01: HMG_127 {
+        AI_DISPERSION;
+    };
+    class HMG_static: HMG_01 {
+        AI_DISPERSION;
+    };
+    class HMG_M2: HMG_01 {
+        AI_DISPERSION;
+    };
+    class HMG_NSVT: HMG_127 {
+        AI_DISPERSION;
+    };
+    class MGunCore;
+    class M134_minigun: MGunCore {
+        AI_DISPERSION;
+    };
+    class GMG_F: MGun {
+        AI_DISPERSION;
+    };
+    class GMG_20mm: GMG_F {
+        AI_DISPERSION;
+    };
+    class GMG_40mm: GMG_F {
+        AI_DISPERSION;
+    };
+    class autocannon_Base_F;
+    class autocannon_40mm_CTWS: autocannon_Base_F {
+        AI_DISPERSION;
+    };
+    class autocannon_30mm_CTWS: autocannon_Base_F {
+        AI_DISPERSION;
+    };
+    class CannonCore;
+    class gatling_20mm: CannonCore {
+        AI_DISPERSION;
+    };
+    class gatling_30mm_base;
+    class gatling_30mm: gatling_30mm_base {
+        AI_DISPERSION;
+    };
+    class LMG_Minigun;
+    class LMG_Minigun2: LMG_Minigun {
+        AI_DISPERSION;
+    };
+    class LMG_Minigun_Transport: LMG_Minigun {
+        AI_DISPERSION;
+    };
+    class LMG_Minigun_Transport2: LMG_Minigun_Transport {
+        AI_DISPERSION;
+    };
+    class cannon_120mm: CannonCore {
+        AI_DISPERSION;
+    };
+    class cannon_125mm: CannonCore {
+        AI_DISPERSION;
+    };
+    class cannon_105mm: CannonCore {
+        AI_DISPERSION;
+    };
+    class gatling_25mm: CannonCore {
+        AI_DISPERSION;
+    };
+    class autocannon_35mm: CannonCore {
+        AI_DISPERSION;
+    };
+    class LMG_coax: LMG_RCWS {
+        AI_DISPERSION;
+    };
+    class LMG_coax_ext: LMG_coax {
+        AI_DISPERSION;
+    };
+    class autocannon_30mm: autocannon_30mm_CTWS {
+        AI_DISPERSION;
+    };
+    class cannon_120mm_long: cannon_120mm {
+        AI_DISPERSION;
+    };
+    class Twin_Cannon_20mm: gatling_20mm {
+        AI_DISPERSION;
+    };
+    class Gatling_30mm_Plane_CAS_01_F: CannonCore {
+        AI_DISPERSION;
+    };
+    class Cannon_30mm_Plane_CAS_02_F: CannonCore {
+        AI_DISPERSION;
+    };
+    class HMG_127_MBT: HMG_127_APC {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_DSHKM_veh: MGun {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_NSVT_veh: CUP_Vhmg_DSHKM_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_M2_veh: HMG_M2 {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_L111A1_veh: CUP_Vhmg_M2_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_M2_M1Abrams_Commander: CUP_Vhmg_M2_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_M85_M60_Commander: CUP_Vhmg_M2_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_M2_AAV_Noeject: CUP_Vhmg_M2_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_M3P_veh: CUP_Vhmg_M2_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_GAU21_MH60_Left: CUP_Vhmg_M3P_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_GAU21_MH60_Right: CUP_Vhmg_GAU21_MH60_Left {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_M2_static: CUP_Vhmg_M2_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_M2_CROWS_gunner: CUP_Vhmg_M2_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_M2_LG_veh: CUP_Vhmg_M2_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_M2_RG_veh: CUP_Vhmg_M2_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_M240_veh: MGun {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_L7A2_veh: CUP_Vlmg_M240_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_M240_veh_laser: CUP_Vlmg_M240_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_M240_veh2: CUP_Vlmg_M240_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_M240_veh3: CUP_Vlmg_M240_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_M240_veh4: CUP_Vlmg_M240_veh {
+        AI_DISPERSION;
+    };
+    class CUP_M240_uh1h_right_veh_W: CUP_Vlmg_M240_veh {
+        AI_DISPERSION;
+    };
+    class CUP_M240_uh1h_left_veh_W: CUP_Vlmg_M240_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_M240_M1Abrams_Loader: CUP_Vlmg_M240_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_M240_Challenger2_Loader: CUP_Vlmg_M240_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_M240_M1Abrams_Coax: CUP_Vlmg_M240_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_L94A1_Coax: CUP_Vlmg_M240_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_M240_Merlin_Rear: CUP_Vlmg_M240_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_MG3_veh_noeject: CUP_Vlmg_M240_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_UK59_veh: MGun {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_M134_veh: MGun {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_M134_veh2: CUP_Vlmg_M134_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_M134_UH1Y_veh: CUP_Vlmg_M134_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_M134_UH1Y_veh2: CUP_Vlmg_M134_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_TwinM134_veh: CUP_Vlmg_M134_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_TwinM134_AC47: CUP_Vlmg_TwinM134_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_KORD_veh: MGun {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_KORD_T72CZ: CUP_Vhmg_KORD_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_L2A1_veh: HMG_M2 {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_MG3_veh: MGun {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_MG3_Loader_veh: CUP_Vlmg_MG3_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_PKT_veh: MGun {
+        AI_DISPERSION;
+    };
+    class CUP_Vlmg_MG3_coax_veh: CUP_Vlmg_MG3_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_SGMT: CUP_Vhmg_PKT_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_PKT_MGNest: CUP_Vhmg_PKT_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_PKT_veh2: CUP_Vhmg_PKT_MGNest {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_PKT_veh3: CUP_Vhmg_PKT_MGNest {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_PKT_veh_Noeject: CUP_Vhmg_PKT_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_PKT_veh_Noeject_FCS: CUP_Vhmg_PKT_veh_Noeject {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_PKT_BMP_L_Noeject: CUP_Vhmg_PKT_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_PKT_BMP_R_Noeject: CUP_Vhmg_PKT_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_PKT_T34: CUP_Vhmg_PKT_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_PKT_LR: CUP_Vhmg_PKT_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_KPVT_veh: MGun {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_GAU19_veh: MGun {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_TwinGAU19_veh: CUP_Vhmg_GAU19_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vgmg_HKGMG_veh: GMG_40mm {
+        AI_DISPERSION;
+    };
+    class CUP_Vhmg_AGS30_veh: GMG_20mm {
+        AI_DISPERSION;
+    };
+    class CUP_Vgmg_AGS17_veh: CUP_Vhmg_AGS30_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vgmg_MK19_veh: CUP_Vhmg_AGS30_veh {
+        AI_DISPERSION;
+    };
+    class CUP_M32_heli: MGun {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_D10: cannon_125mm {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_D5_T34: cannon_125mm {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_2A70_veh: CUP_Vacannon_D10 {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_2A28: CUP_Vacannon_D10 {
+        AI_DISPERSION;
+    };
+    class CUP_Vcannon_rh120: cannon_120mm {
+        AI_DISPERSION;
+    };
+    class CUP_Vcannon_M256_veh: CUP_Vcannon_rh120 {
+        AI_DISPERSION;
+    };
+    class CUP_Vcannon_M256_M1Abrams: CUP_Vcannon_M256_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vcannon_L55_veh: CUP_Vcannon_rh120 {
+        AI_DISPERSION;
+    };
+    class CUP_Vcannon_L7_veh: cannon_105mm {
+        AI_DISPERSION;
+    };
+    class CUP_Vcannon_M68_veh: CUP_Vcannon_L7_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vcannon_M68A2_veh: CUP_Vcannon_M68_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vcannon_2A46_Txx: cannon_125mm {
+        AI_DISPERSION;
+    };
+    class CUP_Vcannon_L30A1_veh: cannon_120mm {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_M197_veh: CannonCore {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_M242_veh: CannonCore {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_CTWS_veh: autocannon_40mm_CTWS {
+        AI_DISPERSION;
+    };
+    class CUP_Rarden_CTWS_veh: autocannon_40mm_CTWS {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_KPVB_veh: CUP_Vacannon_M242_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_M230_veh: CannonCore {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_2A14_veh: CannonCore {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_AZP23_veh: CannonCore {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_AZP23_2_veh: CUP_Vacannon_AZP23_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_2A42_veh: CannonCore {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_2A42_FCS: CUP_Vacannon_2A42_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_2A42_Ka50: CUP_Vacannon_2A42_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_2A72_veh: CUP_Vacannon_2A42_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_2A72_FCS: CUP_Vacannon_2A72_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_M621_AW159_veh: CannonCore {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_GI2_veh: CannonCore {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_GSh23L_in_veh: CannonCore {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_GSh23L_L39: CUP_Vacannon_GSh23L_in_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_GAU8_veh: CannonCore {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_GAU12_veh: CannonCore {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_GAU22_veh: CannonCore {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_M168_M163VADS: CannonCore {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_Phalanx_veh: CUP_Vacannon_M168_M163VADS {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_GSh302K_veh: CannonCore {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_GSh301_veh: CUP_Vacannon_GSh302K_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_2A38M_veh: CUP_Vacannon_GSh302K_veh {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_Yakb_veh: gatling_20mm {
+        AI_DISPERSION;
+    };
+    class CUP_Vacannon_SPG9_veh: CannonCore {
+        AI_DISPERSION;
+    };
+    class CUP_DSHKM_W: CUP_Vhmg_DSHKM_veh {
+        AI_DISPERSION;
+    };
+    class CUP_M2_vehicle_W: CUP_Vhmg_M2_veh {
+        AI_DISPERSION;
+    };
+    class CUP_M3P_vehicle_W: CUP_Vhmg_M3P_veh {
+        AI_DISPERSION;
+    };
+    class CUP_M2_Commander_M1_Abrams_W: CUP_Vhmg_M2_M1Abrams_Commander {
+        AI_DISPERSION;
+    };
+    class CUP_M240_veh_W: CUP_Vlmg_M240_veh {
+        AI_DISPERSION;
+    };
+    class CUP_M240_veh2_W: CUP_Vlmg_M240_veh2 {
+        AI_DISPERSION;
+    };
+    class CUP_M240_veh3_W: CUP_Vlmg_M240_veh3 {
+        AI_DISPERSION;
+    };
+    class CUP_M240_Loader_M1_Abrams_W: CUP_Vlmg_M240_M1Abrams_Loader {
+        AI_DISPERSION;
+    };
+    class CUP_M240_Coax_M1_Abrams_W: CUP_Vlmg_M240_M1Abrams_Coax {
+        AI_DISPERSION;
+    };
+    class CUP_MG3_noeject_W: CUP_Vlmg_MG3_veh_noeject {
+        AI_DISPERSION;
+    };
+    class CUP_M134: CUP_Vlmg_M134_veh {
+        AI_DISPERSION;
+    };
+    class CUP_M134_2: CUP_Vlmg_M134_veh2 {
+        AI_DISPERSION;
+    };
+    class CUP_KORD_W: CUP_Vhmg_KORD_veh {
+        AI_DISPERSION;
+    };
+    class CUP_L2A1_W: CUP_Vlmg_L2A1_veh {
+        AI_DISPERSION;
+    };
+    class CUP_PKT_MG_Nest_W: CUP_Vhmg_PKT_MGNest {
+        AI_DISPERSION;
+    };
+    class CUP_PKT_veh_W: CUP_Vhmg_PKT_veh2 {
+        AI_DISPERSION;
+    };
+    class CUP_PKT_Noeject_W: CUP_Vhmg_PKT_veh_Noeject {
+        AI_DISPERSION;
+    };
+    class CUP_KPVT_W: CUP_Vhmg_KPVT_veh {
+        AI_DISPERSION;
+    };
+    class CUP_HKGMG_W: CUP_Vgmg_HKGMG_veh {
+        AI_DISPERSION;
+    };
+    class CUP_AGS30_W: CUP_Vhmg_AGS30_veh {
+        AI_DISPERSION;
+    };
+    class CUP_AGS17_W: CUP_Vgmg_AGS17_veh {
+        AI_DISPERSION;
+    };
+    class CUP_MK19_W: CUP_Vgmg_MK19_veh {
+        AI_DISPERSION;
+    };
+    class CUP_M256_Cannon_W: CUP_Vcannon_M256_veh {
+        AI_DISPERSION;
+    };
+    class CUP_M197_W: CUP_Vacannon_M197_veh {
+        AI_DISPERSION;
+    };
+    class CUP_M242_W: CUP_Vacannon_M242_veh {
+        AI_DISPERSION;
+    };
+    class CUP_KPVB_W: CUP_Vacannon_KPVB_veh {
+        AI_DISPERSION;
+    };
+    class CUP_M230_W: CUP_Vacannon_M230_veh {
+        AI_DISPERSION;
+    };
+    class CUP_2A14_W: CUP_Vacannon_2A14_veh {
+        AI_DISPERSION;
+    };
+    class CUP_2A42_W: CUP_Vacannon_2A42_veh {
+        AI_DISPERSION;
+    };
+    class CUP_GAU12_W: CUP_Vacannon_GAU12_veh {
+        AI_DISPERSION;
+    };
+    class CUP_GSh302K_W: CUP_Vacannon_GSh302K_veh {
+        AI_DISPERSION;
+    };
+    class weapon_Fighter_Gun20mm_AA: CannonCore {
+        AI_DISPERSION;
+    };
+    class weapon_Fighter_Gun_30mm: CannonCore {
+        AI_DISPERSION;
+    };
+    class MissileLauncher;
+    class launcher_SPG9: MissileLauncher {
+        AI_DISPERSION;
+    };
+    class cannon_20mm: autocannon_Base_F {
+        AI_DISPERSION;
+    };
+    class cannon_125mm_advanced: cannon_125mm {
+        AI_DISPERSION;
+    };
+    class MMG_01_vehicle: LMG_RCWS {
+        AI_DISPERSION;
+    };
+    class MMG_02_vehicle;
+    class MMG_02_coax: MMG_02_vehicle {
+        AI_DISPERSION;
+    };
+    class autocannon_30mm_RCWS: autocannon_Base_F {
+        AI_DISPERSION;
+    };
+    class HMG_127_AFV: HMG_127 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_pkt;
+    class rhs_weap_pkt_bmd_coax: rhs_weap_pkt {
+        AI_DISPERSION;
+    };
+    class rhs_weap_pkt_2s3: rhs_weap_pkt {
+        AI_DISPERSION;
+    };
+    class rhs_weap_pkt_bmd_bow1: rhs_weap_pkt {
+        AI_DISPERSION;
+    };
+    class rhs_weap_pkt_bmd_bow2: rhs_weap_pkt {
+        AI_DISPERSION;
+    };
+    class rhs_weap_pkt_btr: rhs_weap_pkt {
+        AI_DISPERSION;
+    };
+    class rhs_weap_pkt_btr80a: rhs_weap_pkt {
+        AI_DISPERSION;
+    };
+    class rhs_weap_pkt_t90m_RWS: rhs_weap_pkt {
+        AI_DISPERSION;
+    };
+    class rhs_weap_pktm;
+    class rhs_weap_pktm_t14_RWS: rhs_weap_pktm {
+        AI_DISPERSION;
+    };
+    class rhs_weap_DSHKM: LMG_RCWS {
+        AI_DISPERSION;
+    };
+    class rhs_weap_dshkm_slow: rhs_weap_DSHKM {
+        AI_DISPERSION;
+    };
+    class rhs_weap_nsvt: rhs_weap_DSHKM {
+        AI_DISPERSION;
+    };
+    class rhs_weap_nsvt_effects;
+    class rhs_weap_nsvt_t72: rhs_weap_nsvt_effects {
+        AI_DISPERSION;
+    };
+    class rhs_weap_nsvt_obj681: rhs_weap_nsvt_effects {
+        AI_DISPERSION;
+    };
+    class rhs_weap_nsvt_t80: rhs_weap_nsvt_effects {
+        AI_DISPERSION;
+    };
+    class rhs_weap_nsvt_t90m_RWS: rhs_weap_nsvt_t72 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_kord: rhs_weap_nsvt_effects {
+        AI_DISPERSION;
+    };
+    class rhs_weap_kpvt: MGun {
+        AI_DISPERSION;
+    };
+    class rhs_weap_yakB: gatling_30mm {
+        AI_DISPERSION;
+    };
+    class RHS_weap_Ags30: GMG_20mm {
+        AI_DISPERSION;
+    };
+    class rhs_weap_pkm_tigr: rhs_weap_pkt {
+        AI_DISPERSION;
+    };
+    class RHS_weap_Ags30_tigr: RHS_weap_Ags30 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_d81: cannon_120mm {
+        AI_DISPERSION;
+    };
+    class rhs_weap_2a26: rhs_weap_d81 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_2a46_2: rhs_weap_d81 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_2a46m_2: rhs_weap_d81 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_2a46m: rhs_weap_2a46m_2 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_2a46m_4: rhs_weap_2a46m_2 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_2a46m_5: rhs_weap_2a46m_2 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_2a82: rhs_weap_2a46m_2 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_2a82_1m: rhs_weap_2a82 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_d10t2s_2: rhs_weap_d81 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_d10tg: rhs_weap_d10t2s_2 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_d10t2s: rhs_weap_d10t2s_2 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_u5ts: rhs_weap_d81 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_2a42_base;
+    class rhs_weap_2a42: rhs_weap_2a42_base {
+        AI_DISPERSION;
+    };
+    class rhs_weap_2a72_base;
+    class rhs_weap_2a72: rhs_weap_2a72_base {
+        AI_DISPERSION;
+    };
+    class rhs_weap_2a72_btr: rhs_weap_2a72_base {
+        AI_DISPERSION;
+    };
+    class rhs_weap_2a70: rhs_weap_d81 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_2a28_base;
+    class rhs_weap_2a28: rhs_weap_2a28_base {
+        AI_DISPERSION;
+    };
+    class rhs_weap_2a41_base;
+    class rhs_weap_2a41: rhs_weap_2a41_base {
+        AI_DISPERSION;
+    };
+    class rhs_weap_gsh30: gatling_30mm {
+        AI_DISPERSION;
+    };
+    class rhs_weap_gsh302: rhs_weap_gsh30 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_gsh301: rhs_weap_gsh30 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_gsh23l: rhs_weap_gsh30 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_gsh23lx2: rhs_weap_gsh23l {
+        AI_DISPERSION;
+    };
+    class rhs_weap_azp23: CannonCore {
+        AI_DISPERSION;
+    };
+    class rhs_weap_2a14: rhs_weap_azp23 {
+        AI_DISPERSION;
+    };
+    class RocketPods;
+    class rhs_weap_SPG9: RocketPods {
+        AI_DISPERSION;
+    };
+    class rhs_weap_m256: cannon_120mm {
+        AI_DISPERSION;
+    };
+    class mortar_155mm_AMOS;
+    class cannon_155mm: mortar_155mm_AMOS {
+        AI_DISPERSION;
+    };
+    class rhs_weap_m284: cannon_155mm {
+        AI_DISPERSION;
+    };
+    class RHS_weap_M242BC: autocannon_30mm_CTWS {
+        AI_DISPERSION;
+    };
+    class RHS_weap_M242BC_manual: RHS_weap_M242BC {
+        AI_DISPERSION;
+    };
+    class RHS_M2_Abrams_Commander: HMG_M2 {
+        AI_DISPERSION;
+    };
+    class RHS_M2_Abrams_Gunner: HMG_M2 {
+        AI_DISPERSION;
+    };
+    class RHS_M2: HMG_M2 {
+        AI_DISPERSION;
+    };
+    class RHS_M2_offroad: RHS_M2 {
+        AI_DISPERSION;
+    };
+    class RHS_M2_M1117: RHS_M2 {
+        AI_DISPERSION;
+    };
+    class RHS_MKV_M2_p: RHS_M2 {
+        AI_DISPERSION;
+    };
+    class RHS_MKV_M2_s: RHS_MKV_M2_p {
+        AI_DISPERSION;
+    };
+    class RHS_M2_CROWS_M151: RHS_M2 {
+        AI_DISPERSION;
+    };
+    class RHS_M2_CROWS_M153: RHS_M2_CROWS_M151 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_gau21_1: RHS_M2 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_m240veh: LMG_M200 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_m240_abrams: rhs_weap_m240veh {
+        AI_DISPERSION;
+    };
+    class rhs_weap_m240_m113: rhs_weap_m240veh {
+        AI_DISPERSION;
+    };
+    class rhs_weap_m240_abrams_coax: rhs_weap_m240veh {
+        AI_DISPERSION;
+    };
+    class rhs_weap_m240_bradley_coax: rhs_weap_m240veh {
+        AI_DISPERSION;
+    };
+    class rhs_weap_m240H: rhs_weap_m240veh {
+        AI_DISPERSION;
+    };
+    class rhs_weap_m240H_1: rhs_weap_m240H {
+        AI_DISPERSION;
+    };
+    class rhs_weap_m240H_2: rhs_weap_m240H_1 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_m134_minigun_1: M134_minigun {
+        AI_DISPERSION;
+    };
+    class rhs_weap_m134_minigun_2: rhs_weap_m134_minigun_1 {
+        AI_DISPERSION;
+    };
+    class RHS_MKV_M134: rhs_weap_m134_minigun_1 {
+        AI_DISPERSION;
+    };
+    class RHS_weap_m134_pylon: rhs_weap_m134_minigun_1 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_M197: gatling_30mm {
+        AI_DISPERSION;
+    };
+    class rhs_weap_M301: rhs_weap_M197 {
+        AI_DISPERSION;
+    };
+    class rhs_weap_M230: rhs_weap_M197 {
+        AI_DISPERSION;
+    };
+    class RHS_weap_gau8: Gatling_30mm_Plane_CAS_01_F {
+        AI_DISPERSION;
+    };
+    class RHS_weap_gau19: HMG_127 {
+        AI_DISPERSION;
+    };
+    class RHS_MK19: GMG_20mm {
+        AI_DISPERSION;
+    };
+    class RHS_MKV_MK19: RHS_MK19 {
+        AI_DISPERSION;
+    };
+    class RHS_MK19_CROWS_M151: RHS_MK19 {
+        AI_DISPERSION;
+    };
+    class RHS_MK19_CROWS_M153: RHS_MK19_CROWS_M151 {
+        AI_DISPERSION;
+    };
+    class rhsusf_M61A2: weapon_Fighter_Gun20mm_AA {
+        AI_DISPERSION;
+    };
 };
