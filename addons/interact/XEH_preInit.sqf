@@ -4,7 +4,6 @@ ADDON = false;
 
 #include "XEH_PREP.hpp"
 
-// Take ground weapon action
 ["WeaponHolderSimulated", "InitPost", {
     private _takeWeaponAction = [
         QGVAR(takeWeapon),

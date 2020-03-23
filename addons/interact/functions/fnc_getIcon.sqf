@@ -8,4 +8,4 @@ if (_actionIconStr find "\" == -1) then {
     _actionIconStr = "";
 };
 
-_actionIconStr;
+_actionIconStr

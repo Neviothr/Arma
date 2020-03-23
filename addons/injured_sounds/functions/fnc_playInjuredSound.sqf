@@ -6,13 +6,10 @@ if (!(isDamageAllowed _unit) || !(local _unit)) exitWith {};
 
 private _pain = damage _unit;
 
-// Lock if the unit is already playing a sound.
 if ((_unit getVariable [QGVAR(playingInjuredSound), false])) exitWith {};
 _unit setVariable [QGVAR(playingInjuredSound), true];
 
-// Play the sound if there is any damage present.
 if (_pain > 0) exitWith {
-    // Classnames of the available sounds.
     private _availableSounds_A = [
         "WoundedGuyA_01",
         "WoundedGuyA_02",
@@ -42,7 +39,6 @@ if (_pain > 0) exitWith {
     ];
     private _sound = "";
 
-    // Select the to be played sound based upon damage amount.
     if (_pain > 0.5) then {
         if (random (1) > 0.5) then {
             _sound = selectRandom _availableSounds_A;
@@ -53,17 +49,14 @@ if (_pain > 0) exitWith {
         _sound = selectRandom _availableSounds_B;
     };
 
-    // Play the sound
     playSound3D [(getArray (configFile >> "CfgSounds" >> _sound >> "sound") select 0) + ".wss", objNull, false, getPos _unit, 15, 1, 25]; // +2db, 15 meters.
 
-    // Figure out what the delay will be before it is possible to play a sound again.
     private _delay = (30 - (random (25) * _pain)) max (3.5 + random (2));
 
-    // Clean up the lock
     [{
         (_this select 0) setVariable [QGVAR(playingInjuredSound), nil];
     }, [_unit], _delay, _delay] call CBA_fnc_waitAndExecute;
 };
 
-// Clean up in case there has not been played any sounds.
+// Clean up in case no sounds have been played
 _unit setVariable [QGVAR(playingInjuredSound), nil];
