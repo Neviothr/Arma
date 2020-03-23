@@ -7,7 +7,16 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"nev_main"};
+        requiredAddons[] = {
+            "nev_main",
+            "rhs_c_tanks",
+            "rhs_c_vehiclesounds",
+            "rhsgref_c_vehicles_ret",
+            "rhs_c_t72",
+            "rhs_c_sprut",
+            "rhsusf_c_m1a1",
+            "rhsusf_c_m1a2"
+        };
         VERSION_CONFIG;
     };
 };

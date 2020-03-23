@@ -7,7 +7,10 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"nev_main"};
+        requiredAddons[] = {
+            "nev_main",
+            "rhsusf_c_weapons"
+        };
         VERSION_CONFIG;
     };
 };
