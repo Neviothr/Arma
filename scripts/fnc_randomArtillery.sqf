@@ -3,6 +3,16 @@
 	https://www.reddit.com/r/armadev/comments/2qwzgq/fake_artillerymortar_fire_around_player/cnaggt6
 
 	Usage: [triggerName, numberOfShells] execVM "fnc_randomArtillery.sqf";
+
+	Munition classnames:
+		Mortar:
+			Sh_82mm_AMOS
+		Howitzer:
+			Sh_155mm_AMOS
+			rhs_ammo_3of56
+		MLRS:
+			12Rnd_230mm_rockets
+			CUP_R_GRAD_HE
 */
 
 if (!isServer) exitWith {};
@@ -25,7 +35,7 @@ for "_index" from 1 to _shellCount do {
 			if ((_x distance _posToFireAt) < SAFE_DISTANCE) exitWith {_posToFireAt = []};
 		} forEach allUnits;
 	};
-	
+
 	_posToFireAt set [2, 800];
 
 	private _shell = SHELL_TYPE createVehicle _posToFireAt;
