@@ -3,3 +3,9 @@ class Extended_DisplayLoad_EventHandlers {
         ADDON = QUOTE(call COMPILE_FILE(init3DEN));
     };
 };
+
+class Extended_PreInit_EventHandlers {
+    class ADDON {
+        init = QUOTE(call COMPILE_FILE(XEH_preInit));
+    };
+};
