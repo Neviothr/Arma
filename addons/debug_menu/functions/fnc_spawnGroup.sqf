@@ -9,9 +9,7 @@ params [
 ];
 
 private _spawnedGroups = [];
-private _codeTargetUnits = [];
 
-// Group spawning loop
 for "_i" from 0 to 2 step 1 do {
     // Select random pos
     private _aiPos = [player, _minDistance, _maxDistance, 20, 0, 0, 0, [], []] call BIS_fnc_findSafePos;

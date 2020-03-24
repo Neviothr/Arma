@@ -18,6 +18,6 @@ add3DENEventHandler ["onMissionNew", {
         ["Intel", "IntelRainIsForced", true],
         ["Intel", "IntelLightningIsForced", true],
         ["Intel", "IntelWavesIsForced", true],
-        ["Intel", "IntelWindIsForced", true],
+        ["Intel", "IntelWindIsForced", true]
     ];
 }];
