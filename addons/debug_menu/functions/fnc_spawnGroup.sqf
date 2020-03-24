@@ -18,7 +18,7 @@ for "_i" from 0 to 2 step 1 do {
     _aiPos = ASLToAGL _aiPos;
 
     if !(_intersections isEqualTo []) then {
-        private _dummyGroup = [_aiPos, call compile _groupSide, _groupArray] call BIS_fnc_spawnGroup;
+        private _dummyGroup = [_aiPos, _groupSide, _groupArray] call BIS_fnc_spawnGroup;
 
         _spawnedGroups pushBack _dummyGroup;
         [_dummyGroup, 1000] spawn lambs_wp_fnc_taskRush;

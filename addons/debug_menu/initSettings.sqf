@@ -29,7 +29,7 @@
     "LIST",
     ["Unit Side", "The side of spawned units."],
     "Debug Menu Groups",
-    [["west", "east", "independent", "civilian"], ["West", "East", "Independent", "Civilian"], 0],
+    [[west, east, independent, civilian], ["West", "East", "Independent", "Civilian"], 0],
     true,
     {
         params ["_value"];
