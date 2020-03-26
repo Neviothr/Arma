@@ -23,7 +23,6 @@ _ammoBox allowDamage false;
 _ammoBox attachTo [_parachute, [0, 0, -1.3]];
 
 // Fill supply crate with equipment
-// Primary weapon magazines
 private _primaryWpn = primaryWeapon _player;
 
 if (primaryWeapon _player != "") then {
@@ -36,8 +35,6 @@ if (primaryWeapon _player != "") then {
     };
 };
 
-// Secondary magazines
-// Singleshot secondary weapons
 private _secondaryWpn = secondaryWeapon _player;
 private _blackSecondaries = ["", "CUP_launch_M136", "CUP_launch_NLAW", "CUP_launch_RPG18", "CUP_launch_M72A6", "CUP_launch_M72A6_Special", "CUP_launch_M72A6_Used", "rhs_weap_rpg26", "rhs_weap_rshg2", "rhs_weap_M136", "rhs_weap_M136_hedp", "rhs_weap_M136_hp", "rhs_weap_m72a7", "rhs_weap_panzerfaust60", "rhs_weap_rpg75", "rhs_weap_m80"];
 
@@ -55,8 +52,6 @@ if !(_secondaryWpn in _blackSecondaries) then {
     };
 };
 
-// Handgun magazines
-// Singleshot handguns
 private _handgunWeapon = handgunWeapon _player;
 private _blacklistedHandguns = ["", "rhs_weap_rsp30_white", "rhs_weap_rsp30_green", "rhs_weap_rsp30_red", "rhs_weap_tr8"];
 
@@ -74,22 +69,10 @@ if !(handgunWeapon _player in _blacklistedHandguns) then {
     };
 };
 
-// Misc items
-_ammoBox addItemCargoGlobal ["FirstAidKit", 30];
-_ammoBox addItemCargoGlobal ["HandGrenade", 30];
-_ammoBox addItemCargoGlobal ["MiniGrenade", 30];
-_ammoBox addItemCargoGlobal ["rhs_weap_rpg26", 30];
-_ammoBox addItemCargoGlobal ["rhs_weap_M136", 30];
-_ammoBox addItemCargoGlobal ["Chemlight_blue", 30];
-_ammoBox addItemCargoGlobal ["Chemlight_green", 30];
-_ammoBox addItemCargoGlobal ["Chemlight_red", 30];
-_ammoBox addItemCargoGlobal ["Chemlight_yellow", 30];
-_ammoBox addItemCargoGlobal ["SmokeShell", 30];
-_ammoBox addItemCargoGlobal ["DemoCharge_Remote_Mag", 30];
-_ammoBox addItemCargoGlobal ["SatchelCharge_Remote_Mag", 30];
-_ammoBox addItemCargoGlobal ["ACE_DefusalKit", 30];
-_ammoBox addItemCargoGlobal ["ACE_M26_Clacker", 30];
-_ammoBox addItemCargoGlobal ["ACE_Clacker", 30];
+private _miscItems = ["FirstAidKit", "HandGrenade", "rhs_weap_M136", "Chemlight_blue", "SmokeShell", "DemoCharge_Remote_Mag", "SatchelCharge_Remote_Mag", "ACE_Clacker", "UGL_FlareWhite_F"];
+{
+    _ammoBox addItemCargoGlobal [_x, 30];
+} forEach
 
 private _smokeShell = selectRandom ["SmokeShellYellow", "SmokeShellRed", "SmokeShellBlue", "SmokeShellGreen", "SmokeShellOrange"];
 private _smoke = createVehicle [_smokeShell, [0, 0, 0], [], 0, "NONE"];

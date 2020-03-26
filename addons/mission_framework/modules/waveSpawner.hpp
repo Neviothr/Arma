@@ -1,7 +1,7 @@
 class GVAR(waveSpawnModule): Module_F {
     scope = 2;
-    displayName = "Wave Spawner"; // Name displayed in the menu
-    category = "NO_CATEGORY";
+    displayName = "Wave Spawner";
+    category = "NO_CATEGORY"; // Adds modules under "misc." in the editor
     function = QFUNC(waveInit);
     functionPriority = 0;
     isGlobal = 0;
