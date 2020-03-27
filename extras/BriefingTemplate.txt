@@ -1,0 +1,31 @@
+<font size='16' face='PuristaBold' color='#FFA500'>SITUATION</font>
+<br/>
+---Situation text.---
+<br/><br/>
+<font size='16' face='PuristaMedium'>ENEMY FORCES</font>
+<br/>
+---Enemy forces text.---
+<br/><br/>
+<font size='16' face='PuristaMedium'>FRIENDLY FORCES</font>
+<br/>
+---Friendly forces text.---
+<br/><br/>
+<font size='16' face='PuristaBold' color='#FFA500'>MISSION</font>
+<br/>
+---Mission text.---
+<br/><br/>
+<font size='16' face='PuristaBold' color='#FFA500'>EXECUTION</font>
+<br/>
+---Execution text.---
+<br/><br/>
+<font size='16' face='PuristaMedium'>MOVEMENT PLAN</font>
+<br/>
+---Movement plan text.---
+<br/><br/>
+<font size='16' face='PuristaMedium'>FIRE SUPPORT PLAN</font>
+<br/>
+---Fire support plan text.---
+<br/><br/>
+<font size='16' face='PuristaMedium'>ADDITIONAL NOTES</font>
+<br/>
+---Additional notes text.---
