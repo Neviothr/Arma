@@ -122,3 +122,9 @@ _missionInfo ctrlSetStructuredText parseText format [
     floor (time / 60),
     ["NULL-Object", format ["%1 (%2)", typeOf cursorObject, cursorObject]] select (!isNull cursorObject)
 ];
+
+// Modules list
+private _modulesList = _dialog displayCtrl IDC_modulesListBox;
+{
+    _modulesList lbAdd str _x;
+} forEach entities "nev_mission_framework_waveSpawnModule";

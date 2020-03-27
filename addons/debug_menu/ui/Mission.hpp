@@ -19,3 +19,13 @@ class GVAR(enableSavingButton): NevRscButton {
     y = "SafeZoneY + (275 / 1080) * SafeZoneH";
     action = "enableSaving [true, true]";
 };
+
+class GVAR(moduleList): RscListBox {
+    idc = IDC_modulesListBox;
+    type = CT_LISTBOX;
+    style = ST_LEFT + LB_TEXTURES;
+    x = "SafeZoneX + (920 / 1920) * SafeZoneW";
+    y = "SafeZoneY + (625 / 1080) * SafeZoneH";
+    w = "(276 / 1920) * SafeZoneW";
+    h = "(100 / 1080) * SafeZoneH";
+};

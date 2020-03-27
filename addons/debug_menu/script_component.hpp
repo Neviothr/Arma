@@ -25,3 +25,4 @@
 #define IDC_debugConsole 80018
 #define IDC_execGlobalButton 80019
 #define IDC_execServerButton 80020
+#define IDC_modulesListBox 80021
