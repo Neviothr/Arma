@@ -72,7 +72,7 @@ if !(handgunWeapon _player in _blacklistedHandguns) then {
 private _miscItems = ["FirstAidKit", "HandGrenade", "rhs_weap_M136", "Chemlight_blue", "SmokeShell", "DemoCharge_Remote_Mag", "SatchelCharge_Remote_Mag", "ACE_Clacker", "UGL_FlareWhite_F"];
 {
     _ammoBox addItemCargoGlobal [_x, 30];
-} forEach
+} forEach _miscItems;
 
 private _smokeShell = selectRandom ["SmokeShellYellow", "SmokeShellRed", "SmokeShellBlue", "SmokeShellGreen", "SmokeShellOrange"];
 private _smoke = createVehicle [_smokeShell, [0, 0, 0], [], 0, "NONE"];
