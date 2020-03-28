@@ -18,6 +18,10 @@
 <br/>
 ---Execution text.---
 <br/><br/>
+<font size='16' face='PuristaMedium'>COMMANDER'S INTENT</font>
+<br/>
+---Commander's intent text.---
+<br/><br/>
 <font size='16' face='PuristaMedium'>MOVEMENT PLAN</font>
 <br/>
 ---Movement plan text.---
@@ -29,3 +33,7 @@
 <font size='16' face='PuristaMedium'>ADDITIONAL NOTES</font>
 <br/>
 ---Additional notes text.---
+<br/><br/>
+<font size='16' face='PuristaBold' color='#FFA500'>ADMINISTRATION / LOGISTICS</font>
+<br/>
+---Administration / logistics text.---
