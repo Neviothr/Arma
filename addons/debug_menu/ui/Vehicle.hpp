@@ -1,22 +1,15 @@
-class GVAR(repairButton): NevRscButton {
-    text = "Repair / Heal";
+class GVAR(healButton): NevRscButton {
+    text = "Heal";
     x = "SafeZoneX + (500 / 1920) * SafeZoneW";
     y = "SafeZoneY + (275 / 1080) * SafeZoneH";
-    action = QUOTE(_this call FUNC(repair));
-};
-
-class GVAR(refuelButton): NevRscButton {
-    text = "Refuel";
-    x = "SafeZoneX + (500 / 1920) * SafeZoneW";
-    y = "SafeZoneY + (310 / 1080) * SafeZoneH";
-    action = QUOTE(_this call FUNC(refuel));
+    action = QUOTE([ARR_1(0)] call FUNC(vehicleActions));
 };
 
 class GVAR(rearmButton): NevRscButton {
     text = "Rearm";
     x = "SafeZoneX + (500 / 1920) * SafeZoneW";
     y = "SafeZoneY + (345 / 1080) * SafeZoneH";
-    action = QUOTE(_this call FUNC(rearm));
+    action = QUOTE([ARR_1(1)] call FUNC(vehicleActions));
 };
 
 class GVAR(deleteButton): NevRscButton {

@@ -13,6 +13,7 @@ class GVAR(debugMenuDisplay) {
             action = QUOTE({deleteVehicle _x} forEach allDead - GVAR(deadOnStart) + nev_blood_bloodDrops);
         };
 
+        #include "Arsenal.hpp"
         #include "Date.hpp"
         #include "DebugConsole.hpp"
         #include "Mission.hpp"
@@ -20,8 +21,6 @@ class GVAR(debugMenuDisplay) {
         #include "Teleportation.hpp"
         #include "Tools.hpp"
         #include "Vehicle.hpp"
-        #include "VirtualArsenal.hpp"
-        #include "Visability.hpp"
         #include "Weather.hpp"
     };
 };

@@ -10,7 +10,14 @@ openMap [true, true];
 addMissionEventHandler ["MapSingleClick", {
     params ["", "_pos"];
 
-    vehicle player setPos _pos;
+    if ((count units group player) > 1) then {
+        {
+            _x setPos _pos;
+        } forEach units group player;
+    } else {
+        player setPos _pos;
+    };
+
     openMap [false, false];
     removeMissionEventHandler ["MapSingleClick", _thisEventhandler];
 }];

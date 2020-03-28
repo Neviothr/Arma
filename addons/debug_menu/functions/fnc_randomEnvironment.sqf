@@ -1,6 +1,3 @@
-// Script by jameslkingsley
-// https://github.com/ARCOMM/ARCMF/blob/master/ARCMF.VR/f/arc/misc/fn_randomEnvironment.sqf
-
 #include "script_component.hpp"
 
 if (!isServer) exitWith {};
@@ -25,7 +22,6 @@ skipTime 24;
 
 0 setFog [random [0, 0.033, 0.1], random [0, 0.0066, 0.015], random [0, 10, 200]];
 0 setWaves random 1;
-
 0 setRain random 1;
 
 simulWeatherSync;

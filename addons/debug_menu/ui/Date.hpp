@@ -52,10 +52,3 @@ class GVAR(minuteBox): RscCombo {
     style = ST_LEFT;
     tooltip = "Change minute...";
 };
-
-class GVAR(commitDateButton): NevRscButton {
-    text = "Change Date";
-    x = "SafeZoneX + (780 / 1920) * SafeZoneW";
-    y = "SafeZoneY + (450 / 1080) * SafeZoneH";
-    action = QUOTE(call FUNC(setDate));
-};

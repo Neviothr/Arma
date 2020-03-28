@@ -43,30 +43,12 @@ class GVAR(rainSlider): NevRscSlider {
     onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(changeWeather), 0)]);
 };
 
-class GVAR(gustsSlider): NevRscSlider {
-    idc = IDC_gustsSlider;
+class GVAR(windSlider): NevRscSlider {
+    idc = IDC_windSlider;
     x = "SafeZoneX + (920 / 1920) * SafeZoneW";
     y = "SafeZoneY + (450 / 1080) * SafeZoneH";
-    tooltip = "Change wind gusts...";
+    tooltip = "Change wind...";
     sliderRange[] = {0, 1};
-    onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(changeWeather), 0)]);
-};
-
-class GVAR(windStrSlider): NevRscSlider {
-    idc = IDC_windStrSlider;
-    x = "SafeZoneX + (920 / 1920) * SafeZoneW";
-    y = "SafeZoneY + (485 / 1080) * SafeZoneH";
-    tooltip = "Change wind strength...";
-    sliderRange[] = {0, 1};
-    onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(changeWeather), 0)]);
-};
-
-class GVAR(windDirSlider): NevRscSlider {
-    idc = IDC_windDirSlider;
-    x = "SafeZoneX + (920 / 1920) * SafeZoneW";
-    y = "SafeZoneY + (520 / 1080) * SafeZoneH";
-    tooltip = "Change wind direction...";
-    sliderRange[] = {0, 359};
     onSliderPosChanged = QUOTE([ARR_1(_this)] remoteExecCall [ARR_2(QQFUNC(changeWeather), 0)]);
 };
 

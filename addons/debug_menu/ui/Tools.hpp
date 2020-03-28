@@ -1,15 +1,3 @@
-class GVAR(sideList): RscCombo {
-    idc = IDC_sideList;
-    x = "SafeZoneX + (780 / 1920) * SafeZoneW";
-    y = "SafeZoneY + (695 / 1080) * SafeZoneH";
-    w = "(135 / 1920) * SafeZoneW";
-    h = "(30 / 1080) * SafeZoneH";
-    type = CT_COMBO;
-    style = ST_LEFT;
-    tooltip = "Change side...";
-    onLBSelChanged = QUOTE(_this call FUNC(changeSide));
-};
-
 class GVAR(utilsButton): NevRscButton {
     text = "Utils";
     x = "SafeZoneX + (780 / 1920) * SafeZoneW";
@@ -30,25 +18,4 @@ class GVAR(createAceZeusButton): NevRscButton {
     x = "SafeZoneX + (780 / 1920) * SafeZoneW";
     y = "SafeZoneY + (625 / 1080) * SafeZoneH";
     action = "ace_zeus_zeus = objNull; ['ace_zeus_createZeus', player] call CBA_fnc_serverEvent";
-};
-
-class GVAR(setMedicButton): NevRscButton {
-    text = "Set Medic";
-    x = "SafeZoneX + (1200 / 1920) * SafeZoneW";
-    y = "SafeZoneY + (310 / 1080) * SafeZoneH";
-    action = QUOTE(call FUNC(setMedic));
-};
-
-class GVAR(setEngineerButton): NevRscButton {
-    text = "Set Engineer";
-    x = "SafeZoneX + (1200 / 1920) * SafeZoneW";
-    y = "SafeZoneY + (345 / 1080) * SafeZoneH";
-    action = QUOTE(call FUNC(setEngineer));
-};
-
-class GVAR(propagateKit): NevRscButton {
-    text = "Propagate Kit";
-    x = "SafeZoneX + (1200 / 1920) * SafeZoneW";
-    y = "SafeZoneY + (380 / 1080) * SafeZoneH";
-    action = QUOTE(call FUNC(propagateKit));
 };

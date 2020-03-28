@@ -13,41 +13,32 @@ switch (str _control) do {
         simulWeatherSync;
     };
 
-    case "Control #80002": { // Fog value
+    case "Control #80002": {
         0 setFog [_value, _fogDecay, _fogBase];
     };
 
-    case "Control #80003": { // Fog decay
+    case "Control #80003": {
         0 setFog [_fogValue, _value, _fogBase];
     };
 
-    case "Control #80004": { // Fog base
+    case "Control #80004": {
         0 setFog [_fogValue, _fogDecay, _value];
     };
 
     case "Control #80005": {
         0 setRain _value;
-
         forceWeatherChange;
     };
 
     case "Control #80006": {
-        0 setGusts _value;
-    };
-
-    case "Control #80007": {
         0 setWindStr _value;
     };
 
-    case "Control #80008": {
-        0 setWindDir _value;
-    };
-
-    case "Control #80009": {
+    case "Control #80007": {
         0 setLightnings _value;
     };
 
-    case "Control #80010": {
+    case "Control #80008": {
         0 setWaves _value;
     };
 };

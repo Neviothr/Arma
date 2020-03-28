@@ -6,20 +6,6 @@ class GVAR(spawnGroupsButton): NevRscButton {
     tooltip = "Spawn preset group(s).";
 };
 
-class GVAR(supplyDropButton): NevRscButton {
-    text = "Supply Drop";
-    x = "SafeZoneX + (780 / 1920) * SafeZoneW";
-    y = "SafeZoneY + (485 / 1080) * SafeZoneH";
-    action = QUOTE([ARR_1(player)] call FUNC(supplyDrop));
-};
-
-class GVAR(enableSavingButton): NevRscButton {
-    text = "Enable Saving";
-    x = "SafeZoneX + (1200 / 1920) * SafeZoneW";
-    y = "SafeZoneY + (275 / 1080) * SafeZoneH";
-    action = "enableSaving [true, true]";
-};
-
 class GVAR(moduleList): RscListBox {
     idc = IDC_modulesListBox;
     type = CT_LISTBOX;

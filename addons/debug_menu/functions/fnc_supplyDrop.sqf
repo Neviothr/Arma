@@ -5,15 +5,14 @@ params ["_player"];
 _player setVariable [QGVAR(paradropInProgress), true];
 
 // Randomize wind
-[] remoteExec ["setWind [random 359, random 359, false]; 3 setWindDir random 359; 3 setWindStr random 1; 3 setWindForce random 1", 2];
+[] remoteExec ["3 setWindDir random 359; 3 setWindStr random 1", 2];
 
-private _position = player getPos [50 * sqrt random 1, random 360];
+private _position = player getPos [100 * sqrt random 1, random 360];
 _position set [2, 75];
 
 private _parachute = createVehicle ["NonSteerable_Parachute_F", _position, [], 0, "FLY"];
 private _ammoBox = createVehicle ["Box_Syndicate_Ammo_F", [0, 0, 0], [], 0, "NONE"];
 
-// Make sure our supply crate is empty
 clearItemCargoGlobal _ammoBox;
 clearMagazineCargoGlobal _ammoBox;
 clearWeaponCargoGlobal _ammoBox;
@@ -22,7 +21,6 @@ clearBackpackCargoGlobal _ammoBox;
 _ammoBox allowDamage false;
 _ammoBox attachTo [_parachute, [0, 0, -1.3]];
 
-// Fill supply crate with equipment
 private _primaryWpn = primaryWeapon _player;
 
 if (primaryWeapon _player != "") then {
