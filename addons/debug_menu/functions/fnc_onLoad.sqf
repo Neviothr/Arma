@@ -82,26 +82,26 @@ _missionInfo ctrlSetStructuredText parseText format [
     "<t size = '1' font = 'RobotoCondensedBold' color='#ffffff' align = 'left'>
     %1 on %2
     <br/>
-    Active SQF: %3
+    Cursor Object: %3
     <br/>
-    Active FSM: %4
-    <br/>
-    Pos: %5
-    <br/>
-    Time: %6m
-    <br/>
-    Cursor Object: %7
+    Active SQF: %4 Active FSM: %5 Pos: %6 Time: %7m
     </t>",
     missionName call CBA_fnc_decodeURL,
     worldName,
+    ["NULL-Object", format ["%1 (%2)", typeOf cursorObject, cursorObject]] select (!isNull cursorObject),
     (diag_activeScripts select 0) + (diag_activeScripts select 1) + (diag_activeScripts select 2),
     diag_activeScripts select 3,
     getPos player apply {floor _x},
-    floor (time / 60),
-    ["NULL-Object", format ["%1 (%2)", typeOf cursorObject, cursorObject]] select (!isNull cursorObject)
+    floor (time / 60)
 ];
 
-private _modulesList = _dialog displayCtrl IDC_modulesListBox;
+GVAR(moduleMarkers) = [];
+
+private _mapDisplay = _dialog displayCtrl IDC_mapDisplay;
+_mapDisplay ctrlAddEventHandler ["Draw", {call FUNC(drawModuleMarkers)}];
+_mapDisplay ctrlAddEventHandler ["Destroy", {{deleteMarkerLocal _x} forEach GVAR(moduleMarkers)}];
+
+private _objectList = _dialog displayCtrl IDC_objectListBox;
 {
-    _modulesList lbAdd str _x;
-} forEach entities "nev_mission_framework_waveSpawnModule";
+    _objectList lbAdd str typeOf _x;
+} forEach nearestObjects [player, [], 25];

@@ -24,3 +24,5 @@
 #define IDC_execGlobalButton 80017
 #define IDC_execServerButton 80018
 #define IDC_modulesListBox 80019
+#define IDC_mapDisplay 80020
+#define IDC_objectListBox 80021

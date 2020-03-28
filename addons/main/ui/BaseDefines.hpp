@@ -106,6 +106,7 @@ class RscTitle;
 class RscHTML;
 class RscButtonMenuOk;
 class RscButtonMenuCancel;
+class RscMapControl;
 
 class NevRscButton: RscButton {
     type = CT_BUTTON;

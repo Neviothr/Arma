@@ -1,6 +1,7 @@
 PREP(changeWeather);
 PREP(debugConsoleExec);
 PREP(detachCrate);
+PREP(drawModuleMarkers);
 PREP(getFullMoonDates);
 PREP(onLoad);
 PREP(propagateKit);
