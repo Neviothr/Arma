@@ -2,7 +2,6 @@
 
 params ["_display"];
 private _control = _display displayCtrl IDC_aiCounterText;
-TRACE_2("",_display,_control);
 
 GVAR(counterDisplayPFEH) = [
     {

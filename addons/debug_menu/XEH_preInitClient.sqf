@@ -15,7 +15,6 @@
         // Check if the AI counter display is shown, if not - load it
         if (isNull (uiNamespace getVariable ["nev_ai_counter_aiCounterDisplay", displayNull])) then {
             QGVAR(aiCounterLayer) cutRsc ["nev_ai_counter_aiCounter", "PLAIN", -1, true];
-            LOG("AI Counter display not found. Creating...");
         };
     },
     ""
