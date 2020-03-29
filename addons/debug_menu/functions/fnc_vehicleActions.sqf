@@ -1,9 +1,8 @@
 #include "script_component.hpp"
 
 params ["_actionType"];
-
 private _target = [vehicle player, cursorTarget] select (cursorTarget isKindOf "AllVehicles");
-TRACE_1("",_target);
+TRACE_2("",_actionType,_target);
 
 if (_actionType == 1) then {
     [_target, 1] remoteExec ["setVehicleAmmoDef", _target];

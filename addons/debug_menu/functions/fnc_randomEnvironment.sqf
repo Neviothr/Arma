@@ -1,7 +1,5 @@
 #include "script_component.hpp"
 
-if (!isServer) exitWith {};
-
 private _date = [random [1982, 2000, 2020], random [1, 6, 12], random [1, 15, 30], random [0, 16, 24], random [0, 30, 59]];
 private _hour = _date select 3;
 private _isFullMoon = false;
@@ -10,6 +8,7 @@ TRACE_2("",_date,_hour);
 if (_hour > 18 || _hour < 6) then {
     _isFullMoon = true;
     _date = selectRandom ([_date select 0] call FUNC(getFullMoonDates));
+    TRACE_1("",_date);
 };
 
 setDate _date;

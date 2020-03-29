@@ -1,11 +1,12 @@
 #include "script_component.hpp"
 
-params ["_actionIconStr"];
+params ["_actionIcon"];
+private _actionIcon = getText (configfile >> "CfgVehicles" >> typeOf _x >> "icon");
+TRACE_1("",_actionIcon);
 
-private _actionIconStr = getText (configfile >> "CfgVehicles" >> typeOf _x >> "icon");
-
-if (_actionIconStr find "\" == -1) then {
-    _actionIconStr = "";
+if (_actionIcon find "\" == -1) then {
+    _actionIcon = "";
 };
 
-_actionIconStr
+TRACE_1("",_actionIcon);
+_actionIcon

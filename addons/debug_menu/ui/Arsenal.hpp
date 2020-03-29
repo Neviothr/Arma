@@ -17,5 +17,5 @@ class GVAR(supplyDropButton): NevRscButton {
     text = "Supply Drop";
     x = "SafeZoneX + (1220 / 1920) * SafeZoneW";
     y = "SafeZoneY + (435 / 1080) * SafeZoneH";
-    action = QUOTE([ARR_1(player)] call FUNC(supplyDrop));
+    action = QUOTE(call FUNC(supplyDrop));
 };

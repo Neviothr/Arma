@@ -25,4 +25,5 @@ for "_i" from -_day to dateToNumber [_year, 12, 31, 23, 59] step _day do {
     _fullMoonPhase = _phase;
 };
 
+TRACE_1("",_fullMoonDates);
 _fullMoonDates

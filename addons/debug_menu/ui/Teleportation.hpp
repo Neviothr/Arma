@@ -9,5 +9,5 @@ class GVAR(resetPosButton): NevRscButton {
     text = "Reset Pos";
     x = "SafeZoneX + (1220 / 1920) * SafeZoneW";
     y = "SafeZoneY + (540 / 1080) * SafeZoneH";
-    action = QUOTE(ARR_1([player]) call FUNC(resetPosition));
+    action = QUOTE(call FUNC(resetPosition));
 };

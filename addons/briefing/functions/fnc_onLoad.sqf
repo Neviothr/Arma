@@ -14,7 +14,6 @@ GVAR(logicCenter) setDir 180;
 
 private _target = createAgent ["Logic", _logicCenterPos, [], 0, "none"];
 _target setPos _logicCenterPos;
-TRACE_1("",_target);
 
 // Debug orb
 GVAR(orb) = "Sign_Arrow_Blue_F" createVehicleLocal getPos GVAR(logicCenter);

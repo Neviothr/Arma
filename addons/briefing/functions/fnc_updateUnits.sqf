@@ -1,11 +1,9 @@
 #include "script_component.hpp"
 
 params ["_control", "_selectedIndex"];
-TRACE_2("",_control,_selectedIndex);
-
 private _sideBox = (findDisplay IDD_IFFDisplay) displayCtrl IDC_iffSideCombo;
 private _side = _sideBox lbText (lbCurSel _sideBox);
-TRACE_2("",_sideBox,_side);
+TRACE_4("",_control,_selectedIndex,_sideBox,_side);
 
 if (_side == "GUER") then {
     _side = "INDEP";

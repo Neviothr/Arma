@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 
 params ["_group", "_waypointIndex"];
+TRACE_2("",_group,_waypointIndex);
 
 private _way = [];
 
@@ -18,4 +19,5 @@ _way pushBack waypointSpeed [_group, _waypointIndex];
 _way pushBack waypointTimeout [_group, _waypointIndex];
 _way pushBack waypointVisible [_group, _waypointIndex];
 
+TRACE_1("",_way);
 _way

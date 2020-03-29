@@ -12,7 +12,7 @@ private _factions = [];
         private _faction = faction _x;
 
         if (_faction in FACTION_BLACKLIST) then {
-            WARNING_1("Unable to add %1 to faction list, is blacklisted.",_faction);
+            WARNING_1("Unable to add %1 to factions list, is blacklisted",_faction);
         } else {
             _factions pushBackUnique _faction;
         };
@@ -20,5 +20,4 @@ private _factions = [];
 } forEach allUnits;
 
 TRACE_1("",_factions);
-
-_factions;
+_factions

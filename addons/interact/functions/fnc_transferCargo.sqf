@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 
 params ["_target"];
+TRACE_1("",_target);
 
 private _items = [];
 private _backpacks = [];

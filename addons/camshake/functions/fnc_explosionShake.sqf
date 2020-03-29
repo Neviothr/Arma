@@ -1,20 +1,18 @@
 #include "script_component.hpp"
 
-params ["_unit"];
-TRACE_1("",_unit);
+params ["_explosionSource"];
+private _distanceToPlayeranceToPlayer = player distance2D _explosionSource;
+TRACE_2("",_explosionSource,_distanceToPlayer);
 
-private _dist = player distance2D _unit;
-TRACE_1("",_dist);
+if (_distanceToPlayer > 1000) exitWith {INFO_1("Distance is greater than 1000 (%1), terminating")};
 
-if (_dist > 1000) exitWith {};
-
-// If you pass 0 in _dist (vehicle blows up with you in it) you get a zero divisor error
-if (_dist isEqualTo 0) then {
-     _dist = 50;
+// If you pass 0 in _distanceToPlayer (vehicle blows up with you in it) you get a zero divisor error
+if (_distanceToPlayer isEqualTo 0) then {
+    _distanceToPlayer = 50;
 };
 
-private _force = (1000 / _dist) min 20;
-private _delay = _dist / 343;
+private _force = (1000 / _distanceToPlayer) min 20;
+private _delay = _distanceToPlayer / 343;
 TRACE_2("",_force,_delay);
 
 [{addCamShake [(_this #0), 1, 5]}, [_force], _delay] call CBA_fnc_waitAndExecute;

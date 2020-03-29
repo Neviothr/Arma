@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-if (IS_ADMIN || (isServer && hasInterface)) then {
+if (hasInterface) then {
     // Using CBA_fnc_waitUntilAndExecute because we can't suspend this script
     [
         {!isNull (findDisplay 46)}, // Wait for RscDisplayMission
