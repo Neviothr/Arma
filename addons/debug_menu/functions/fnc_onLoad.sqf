@@ -101,3 +101,4 @@ GVAR(moduleMarkers) = [];
 private _mapDisplay = _dialog displayCtrl IDC_mapDisplay;
 _mapDisplay ctrlAddEventHandler ["Draw", {call FUNC(drawModuleMarkers)}];
 _mapDisplay ctrlAddEventHandler ["Destroy", {{deleteMarkerLocal _x} forEach GVAR(moduleMarkers)}];
+_mapDisplay ctrlAddEventHandler ["MouseButtonDown", {_this call FUNC(mapMouseButtonClick)}];

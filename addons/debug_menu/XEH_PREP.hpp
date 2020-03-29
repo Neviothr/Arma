@@ -3,6 +3,7 @@ PREP(debugConsoleExec);
 PREP(detachCrate);
 PREP(drawModuleMarkers);
 PREP(getFullMoonDates);
+PREP(mapMouseButtonClick);
 PREP(onLoad);
 PREP(propagateKit);
 PREP(randomEnvironment);
