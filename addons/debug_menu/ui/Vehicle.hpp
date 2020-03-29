@@ -20,14 +20,5 @@ class GVAR(deleteButton): NevRscButton {
     y = "SafeZoneY + (155 / 1080) * SafeZoneH";
     w = "(88 / 1920) * SafeZoneW";
     action = "deleteVehicle cursorObject";
-};
-
-class GVAR(objectList): RscListBox {
-    idc = IDC_objectListBox;
-    type = CT_LISTBOX;
-    style = ST_LEFT + LB_TEXTURES;
-    x = "SafeZoneX + (1360 / 1920) * SafeZoneW";
-    y = "SafeZoneY + (190 / 1080) * SafeZoneH";
-    w = "(276 / 1920) * SafeZoneW";
-    h = "(185 / 1080) * SafeZoneH";
+    colorText[] = {0.5, 0, 0, 1};
 };

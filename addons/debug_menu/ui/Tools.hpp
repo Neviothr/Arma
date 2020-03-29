@@ -8,7 +8,7 @@ class GVAR(utilsButton): NevRscButton {
 class GVAR(iffButton): NevRscButton {
     text = "IFF";
     x = "SafeZoneX + (1220 / 1920) * SafeZoneW";
-    y = "SafeZoneY + (435 / 1080) * SafeZoneH";
+    y = "SafeZoneY + (330 / 1080) * SafeZoneH";
     action = "closeDialog 1; createDialog 'IFF'";
     colorText[] = {0.85, 0.4, 0, 1};
 };
@@ -16,7 +16,7 @@ class GVAR(iffButton): NevRscButton {
 class GVAR(createAceZeusButton): NevRscButton {
     text = "Create ACE Zeus";
     x = "SafeZoneX + (1220 / 1920) * SafeZoneW";
-    y = "SafeZoneY + (540 / 1080) * SafeZoneH";
+    y = "SafeZoneY + (365 / 1080) * SafeZoneH";
     action = "ace_zeus_zeus = objNull; ['ace_zeus_createZeus', player] call CBA_fnc_serverEvent";
 };
 
@@ -25,7 +25,17 @@ class GVAR(map): RscMapControl {
     x = "SafeZoneX + (640 / 1920) * SafeZoneW";
     y = "SafeZoneY + (155 / 1080) * SafeZoneH";
     w = "(575 / 1920) * SafeZoneW";
-    h = "(430 / 1080) * SafeZoneH";
+    h = "(415 / 1080) * SafeZoneH";
     type = CT_MAP_MAIN;
     style = ST_PICTURE;
+};
+
+class GVAR(spawnGroupsButton): NevRscButton {
+    text = "Spawn Group(s)";
+    x = "SafeZoneX + (1220 / 1920) * SafeZoneW";
+    y = "SafeZoneY + (575 / 1080) * SafeZoneH";
+    action = QUOTE([ARR_5(GVAR(minDistance), GVAR(maxDistance), GVAR(groupSide), GVAR(groupArray), GVAR(unitCode))] call FUNC(spawnGroup));
+    tooltip = "Spawn preset group(s).";
+    colorText[] = {0.5, 0, 0, 1};
+    scaleDefault = 0.32; // 0.16
 };

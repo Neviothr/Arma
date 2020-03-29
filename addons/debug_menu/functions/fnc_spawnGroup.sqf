@@ -10,8 +10,11 @@ params [
 
 private _spawnedGroups = [];
 
-for "_i" from 0 to 2 step 1 do {
+for "_i" from 0 to 5 step 1 do {
     private _aiPos = [player, _minDistance, _maxDistance, 20, 0, 0, 0, [], []] call BIS_fnc_findSafePos;
+
+    if ((count _aiPos) > 2) exitWith {};
+
     _aiPos pushBack (getTerrainHeightASL _aiPos + 1.85);
 
     private _intersections = lineIntersectsSurfaces [eyePos player, _aiPos, player, objNull];
@@ -21,7 +24,10 @@ for "_i" from 0 to 2 step 1 do {
         private _dummyGroup = [_aiPos, _groupSide, _groupArray] call BIS_fnc_spawnGroup;
 
         _spawnedGroups pushBack _dummyGroup;
-        [_dummyGroup, 1000] spawn lambs_wp_fnc_taskRush;
+
+        if (isClass (configFile >> "CfgPatches" >> "lambs_main")) then {
+            [_dummyGroup, 5000] spawn lambs_wp_fnc_taskRush;
+        };
     };
 };
 

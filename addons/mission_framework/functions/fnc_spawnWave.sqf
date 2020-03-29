@@ -109,9 +109,11 @@ _handlers = _logic getVariable ["Handlers", []];
     };
 } forEach _handlers;
 
-{
-    [_x, 1500] spawn lambs_wp_fnc_taskRush;
-} forEach _spawnedGroups;
+if (isClass (configFile >> "CfgPatches" >> "lambs_main")) then {
+    {
+        [_x, 5000] spawn lambs_wp_fnc_taskRush;
+    } forEach _spawnedGroups;
+};
 
 // Check if there is another wave
 if (_logic getVariable ["Waves", 1] > 0) then {

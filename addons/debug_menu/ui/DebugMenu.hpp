@@ -9,14 +9,14 @@ class GVAR(debugMenuDisplay) {
         class GVAR(removeDeadButton): NevRscButton {
             text = "Remove Dead";
             x = "SafeZoneX + (1220 / 1920) * SafeZoneW";
-            y = "SafeZoneY + (505 / 1080) * SafeZoneH";
+            y = "SafeZoneY + (400 / 1080) * SafeZoneH";
             action = QUOTE({deleteVehicle _x} forEach allDead - GVAR(deadOnStart) + nev_blood_bloodDrops);
+            default = 1;
         };
 
         #include "Arsenal.hpp"
         #include "Date.hpp"
         #include "DebugConsole.hpp"
-        #include "Mission.hpp"
         #include "Static.hpp"
         #include "Teleportation.hpp"
         #include "Tools.hpp"

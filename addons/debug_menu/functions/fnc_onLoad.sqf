@@ -100,8 +100,3 @@ GVAR(moduleMarkers) = [];
 private _mapDisplay = _dialog displayCtrl IDC_mapDisplay;
 _mapDisplay ctrlAddEventHandler ["Draw", {call FUNC(drawModuleMarkers)}];
 _mapDisplay ctrlAddEventHandler ["Destroy", {{deleteMarkerLocal _x} forEach GVAR(moduleMarkers)}];
-
-private _objectList = _dialog displayCtrl IDC_objectListBox;
-{
-    _objectList lbAdd str typeOf _x;
-} forEach nearestObjects [player, [], 25];

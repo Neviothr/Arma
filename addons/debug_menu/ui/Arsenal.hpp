@@ -8,13 +8,14 @@ class GVAR(aceVaButton): NevRscButton {
 class GVAR(propagateKit): NevRscButton {
     text = "Propagate Kit";
     x = "SafeZoneX + (1220 / 1920) * SafeZoneW";
-    y = "SafeZoneY + (645 / 1080) * SafeZoneH";
+    y = "SafeZoneY + (470 / 1080) * SafeZoneH";
     action = QUOTE(call FUNC(propagateKit));
+    colorText[] = {0.5, 0, 0, 1};
 };
 
 class GVAR(supplyDropButton): NevRscButton {
     text = "Supply Drop";
     x = "SafeZoneX + (1220 / 1920) * SafeZoneW";
-    y = "SafeZoneY + (610 / 1080) * SafeZoneH";
+    y = "SafeZoneY + (435 / 1080) * SafeZoneH";
     action = QUOTE([ARR_1(player)] call FUNC(supplyDrop));
 };
