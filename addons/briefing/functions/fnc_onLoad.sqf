@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 
 params ["_dialog"];
+TRACE_1("",_dialog);
 
 GVAR(iffUnits) = [];
 
@@ -11,8 +12,9 @@ GVAR(logicCenter) = createAgent ["Logic", _logicCenterPos, [], 0, "none"];
 GVAR(logicCenter) setPos _logicCenterPos;
 GVAR(logicCenter) setDir 180;
 
-_target = createAgent ["Logic", _logicCenterPos, [], 0, "none"];
+private _target = createAgent ["Logic", _logicCenterPos, [], 0, "none"];
 _target setPos _logicCenterPos;
+TRACE_1("",_target);
 
 // Debug orb
 GVAR(orb) = "Sign_Arrow_Blue_F" createVehicleLocal getPos GVAR(logicCenter);
@@ -38,6 +40,7 @@ showCinemaBorder false;
 
 private _sides = call FUNC(getSides);
 private _sideBox = _dialog displayCtrl IDC_iffSideCombo;
+TRACE_2("",_sides,_sideBox);
 
 {
     _sideBox lbAdd str _x;

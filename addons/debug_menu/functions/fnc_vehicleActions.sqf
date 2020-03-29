@@ -3,6 +3,7 @@
 params ["_actionType"];
 
 private _target = [vehicle player, cursorTarget] select (cursorTarget isKindOf "AllVehicles");
+TRACE_1("",_target);
 
 if (_actionType == 1) then {
     [_target, 1] remoteExec ["setVehicleAmmoDef", _target];

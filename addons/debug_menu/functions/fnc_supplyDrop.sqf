@@ -9,6 +9,7 @@ _player setVariable [QGVAR(paradropInProgress), true];
 
 private _position = player getPos [100 * sqrt random 1, random 360];
 _position set [2, 75];
+TRACE_1("",_position);
 
 private _parachute = createVehicle ["NonSteerable_Parachute_F", _position, [], 0, "FLY"];
 private _ammoBox = createVehicle ["Box_Syndicate_Ammo_F", [0, 0, 0], [], 0, "NONE"];

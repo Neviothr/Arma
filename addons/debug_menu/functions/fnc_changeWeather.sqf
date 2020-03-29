@@ -2,6 +2,7 @@
 
 (_this select 0) params ["_control", "_value"];
 (fogParams) params ["_fogValue", "_fogDecay", "_fogBase"];
+TRACE_5("",_control,_value,_fogValue,_fogDecay,_fogBase);
 
 switch (str _control) do {
     case "Control #80001": {

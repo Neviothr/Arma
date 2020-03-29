@@ -1,8 +1,10 @@
 #include "script_component.hpp"
 
 params ["_unit"];
+TRACE_1("",_unit);
 
 private _dist = player distance2D _unit;
+TRACE_1("",_dist);
 
 if (_dist > 1000) exitWith {};
 
@@ -13,5 +15,6 @@ if (_dist isEqualTo 0) then {
 
 private _force = (1000 / _dist) min 20;
 private _delay = _dist / 343;
+TRACE_2("",_force,_delay);
 
 [{addCamShake [(_this #0), 1, 5]}, [_force], _delay] call CBA_fnc_waitAndExecute;

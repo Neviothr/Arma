@@ -10,4 +10,5 @@ private _sides = [];
     };
 } forEach allUnits;
 
+TRACE_1("",_sides);
 _sides;

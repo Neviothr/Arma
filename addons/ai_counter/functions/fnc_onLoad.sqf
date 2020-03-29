@@ -1,8 +1,10 @@
 #include "script_component.hpp"
 
 params ["_display"];
+TRACE_1("",_display);
 
 private _control = _display displayCtrl IDC_aiCounterText;
+TRACE_1("",_control);
 
 GVAR(counterDisplayPFEH) = [
     {

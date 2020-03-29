@@ -59,6 +59,6 @@
     true,
     {
         params ["_value"];
-        GVAR(unitCode) = _value;
+        GVAR(unitCode) = compile _value; // Compile here to check if variable is of type code
     }
 ] call CBA_fnc_addSetting;

@@ -26,6 +26,8 @@ _lightningsSlider sliderSetPosition lightnings;
 private _wavesSlider = _dialog displayCtrl IDC_wavesSlider;
 _wavesSlider sliderSetPosition waves;
 
+TRACE_8("",_overcastSlider,_fogValueSlider,_fogDecaySlider,_fogBaseSlider,_rainSlider,_windSlider,_lightningsSlider,_wavesSlider);
+
 private _yearBox = _dialog displayCtrl IDC_yearBox;
 for "_year" from 1982 to 2050 do {
     _yearBox lbAdd str _year;
@@ -54,7 +56,7 @@ for "_day" from 1 to 31 do {
     _dayBox lbAdd str _day;
 };
 _dayBox lbSetCurSel ((date select 2) - 1);
-_hourBox ctrlAddEventHandler ["LBSelChanged", {_this call FUNC(setDate)}];
+_dayBox ctrlAddEventHandler ["LBSelChanged", {_this call FUNC(setDate)}];
 
 private _hourBox = _dialog displayCtrl IDC_hourBox;
 for "_hour" from 0 to 23 do {
@@ -70,14 +72,20 @@ for "_minute" from 0 to 59 do {
 _minuteBox lbSetCurSel (date select 4);
 _minuteBox ctrlAddEventHandler ["LBSelChanged", {_this call FUNC(setDate)}];
 
+TRACE_5("",_yearBox,_monthBox,_dayBox,_hourBox,_minuteBox);
+
 if !(isMultiplayer) then {
     private _execGlobalButton = _dialog displayCtrl IDC_execGlobalButton;
     private _execServerButton = _dialog displayCtrl IDC_execServerButton;
     _execGlobalButton ctrlEnable false;
     _execServerButton ctrlEnable false;
+
+    TRACE_2("",_execGlobalButton,_execServerButton);
 };
 
 private _missionInfo = _dialog displayCtrl IDC_missionInfo;
+TRACE_1("",_missionInfo);
+
 _missionInfo ctrlSetStructuredText parseText format [
     "<t size = '1' font = 'RobotoCondensedBold' color='#ffffff' align = 'left'>
     %1 on %2
@@ -98,5 +106,7 @@ _missionInfo ctrlSetStructuredText parseText format [
 GVAR(moduleMarkers) = [];
 
 private _mapDisplay = _dialog displayCtrl IDC_mapDisplay;
+TRACE_1("",_mapDisplay);
+
 _mapDisplay ctrlAddEventHandler ["Draw", {call FUNC(drawModuleMarkers)}];
 _mapDisplay ctrlAddEventHandler ["Destroy", {{deleteMarkerLocal _x} forEach GVAR(moduleMarkers)}];

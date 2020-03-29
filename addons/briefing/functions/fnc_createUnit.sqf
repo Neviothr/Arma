@@ -1,10 +1,12 @@
 #include "script_component.hpp"
 
-params ["_unitCfg", "_unitNumber"];
+params ["_unitCfg", ["_unitNumber", 0, [0]]];
+TRACE_2("",_unitCfg,_unitNumber);
 
-if ((_unitCfg == "") || (typeName _unitNumber != "SCALAR"))  exitWith {INFO_2("Unable to create unit(s). _unitCfg - %1, _unitNumber - %2", _unitCfg, _unitNumber)};
+if (_unitCfg == "") exitWith {ERROR_1("Unable to create unit",_unitCfg)};
 
 private _unit = _unitCfg createVehicleLocal getPos GVAR(logicCenter);
+TRACE_1("",_unit);
 
 switch (_unitNumber) do {
     case 1: {
@@ -29,7 +31,4 @@ switch (_unitNumber) do {
 };
 
 GVAR(iffUnits) pushBack _unit;
-
-{
-    _unit disableAI _x;
-} forEach ["TARGET", "AUTOTARGET", "MOVE", "ANIM", "TEAMSWITCH", "FSM", "WEAPONAIM", "COVER", "AUTOCOMBAT", "PATH", "MINEDETECTION", "NVG", "LIGHTS", "RADIOPROTOCOL"];
+_unit disableAI "ALL";
