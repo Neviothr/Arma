@@ -1,7 +1,6 @@
 #include "script_component.hpp"
 
 params ["_unit", "_weapon", "_muzzle", "_newMagazine"];
-TRACE_4("",_unit,_weapon,_muzzle,_newMagazine);
 
 if (isPlayer _unit) exitWith {};
 if (_muzzle != _weapon) exitWith {};

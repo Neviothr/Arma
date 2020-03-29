@@ -6,7 +6,7 @@ TRACE_2("",_display,_control);
 
 GVAR(counterDisplayPFEH) = [
     {
-        (_this select 0) ctrlSetText format ["AI %1", str count (allUnits - 1)];
+        (_this select 0) ctrlSetText format ["AI %1", str count (allUnits)];
     },
     5,
     _control

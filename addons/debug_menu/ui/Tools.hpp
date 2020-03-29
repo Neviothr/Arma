@@ -2,7 +2,7 @@ class GVAR(utilsButton): NevRscButton {
     text = "Utils";
     x = "SafeZoneX + (360 / 1920) * SafeZoneW";
     y = "SafeZoneY + (120 / 1080) * SafeZoneH";
-    action = "[] execVM 'A3\functions_f\debug\utilities\lib\index.sqf'";
+    action = "closeDialog 1; [] execVM 'A3\functions_f\debug\utilities\lib\index.sqf'";
 };
 
 class GVAR(iffButton): NevRscButton {

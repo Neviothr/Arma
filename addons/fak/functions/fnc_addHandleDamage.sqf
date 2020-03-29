@@ -4,7 +4,7 @@ params ["_unit"];
 
 if !(isPlayer _unit) exitWith {};
 
-LOG("%1 is a player, adding FAKs");
+LOG_1("%1 is a player, adding FAKs",_unit);
 
 for "_i" from 1 to 10 step 1 do {
     _unit addItemToUniform "FirstAidKit";

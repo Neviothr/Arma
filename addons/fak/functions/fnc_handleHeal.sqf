@@ -4,7 +4,7 @@ params ["_unit"];
 
 if !(isPlayer _unit) exitWith {};
 
-LOG("%1 is a player, handling damage")
+LOG_1("%1 is a player, handling damage",_unit);
 
 private _healingFactor = (damage _unit) - (random 1);
 TRACE_1("",_healingFactor);

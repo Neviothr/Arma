@@ -18,7 +18,7 @@ private _rainSlider = _dialog displayCtrl IDC_rainSlider;
 _rainSlider sliderSetPosition rain;
 
 private _windSlider = _dialog displayCtrl IDC_windSlider;
-_windStrSlider sliderSetPosition windStr;
+_windSlider sliderSetPosition windStr;
 
 private _lightningsSlider = _dialog displayCtrl IDC_lightningsSlider;
 _lightningsSlider sliderSetPosition lightnings;
