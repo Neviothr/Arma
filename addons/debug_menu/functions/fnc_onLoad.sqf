@@ -102,3 +102,8 @@ private _mapDisplay = _dialog displayCtrl IDC_mapDisplay;
 _mapDisplay ctrlAddEventHandler ["Draw", {call FUNC(drawModuleMarkers)}];
 _mapDisplay ctrlAddEventHandler ["Destroy", {{deleteMarkerLocal _x} forEach GVAR(moduleMarkers)}];
 _mapDisplay ctrlAddEventHandler ["MouseButtonDown", {_this call FUNC(mapMouseButtonClick)}];
+
+if (GVAR(mapCentering)) then {
+    _mapDisplay ctrlMapAnimAdd [0, 0.05, [worldSize / 2, worldsize / 2, 0]];
+    ctrlMapAnimCommit _mapDisplay;
+};

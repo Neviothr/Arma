@@ -62,3 +62,12 @@
         GVAR(unitCode) = compile _value; // Compile here to check if variable is of type code
     }
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(mapCentering),
+    "CHECKBOX",
+    ["Map Centering", "When enabled the debug menu's map will move to map center upon loading. Used when the player isn't supposed to know where he is."],
+    "Debug Menu Map",
+    true,
+    false
+] call CBA_fnc_addSetting;
