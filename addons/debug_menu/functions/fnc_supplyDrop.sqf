@@ -1,7 +1,6 @@
 #include "script_component.hpp"
 
-// Randomize wind
-[] remoteExec ["3 setWindDir random 359; 3 setWindStr random 1", 2];
+[] remoteExec ["setWind [random 359, random 359, false]; 3 setWindDir random 359; 3 setWindStr random 1; 3 setWindForce random 1", 2];
 
 private _position = player getPos [100 * sqrt random 1, random 360];
 _position set [2, 75];
@@ -29,7 +28,7 @@ if (_primaryWpn != "") then {
         private _selectedPrimaryMag = _primaryMags select (floor (random ((count _primaryMags) - 1)));
         TRACE_1("",_selectedPrimaryMag);
 
-        _ammoBox addItemCargoGlobal [_selectedPrimaryMag, 10];
+        _ammoBox addItemCargoGlobal [_selectedPrimaryMag, 15];
     };
 };
 
@@ -49,7 +48,7 @@ if !(_secondaryWpn in _blackSecondaries) then {
     };
 } else {
     if (_secondaryWpn != "") then {
-        _ammoBox addItemCargoGlobal [_secondaryWpn, 5];
+        _ammoBox addItemCargoGlobal [_secondaryWpn, 15];
     };
 };
 
@@ -65,18 +64,23 @@ if !(_handgunWeapon in _blacklistedHandguns) then {
         private _selectedhandgunMag = _handgunMagazines select (floor (random ((count _handgunMagazines) - 1)));
         TRACE_1("",_selectedhandgunMag);
 
-        _ammoBox addItemCargoGlobal [_selectedhandgunMag, 5];
+        _ammoBox addItemCargoGlobal [_selectedhandgunMag, 10];
     };
 } else {
     if (_handgunWeapon != "") then {
-        _ammoBox addItemCargoGlobal [_handgunWeapon, 5];
+        _ammoBox addItemCargoGlobal [_handgunWeapon, 15];
     };
 };
 
-private _miscItems = ["FirstAidKit", "HandGrenade", "rhs_weap_M136", "Chemlight_blue", "SmokeShell", "DemoCharge_Remote_Mag", "SatchelCharge_Remote_Mag", "ACE_Clacker", "UGL_FlareWhite_F"];
 {
     _ammoBox addItemCargoGlobal [_x, 30];
-} forEach _miscItems;
+} forEach [
+    "FirstAidKit",
+    "rhs_mag_m67", "rhs_weap_m72a7",
+    "Chemlight_blue", "rhs_mag_an_m8hc", "rhs_mag_an_m14_th3", "rhs_grenade_m15_mag",
+    "DemoCharge_Remote_Mag", "SatchelCharge_Remote_Mag", "ACE_Clacker",
+    "UGL_FlareWhite_F", "1Rnd_HE_Grenade_shell"
+];
 
 private _smokeShell = selectRandom ["SmokeShellYellow", "SmokeShellRed", "SmokeShellBlue", "SmokeShellGreen", "SmokeShellOrange"];
 private _smoke = createVehicle [_smokeShell, [0, 0, 0], [], 0, "NONE"];
