@@ -99,9 +99,17 @@ _missionInfo ctrlSetStructuredText parseText format [
 GVAR(moduleMarkers) = [];
 
 private _mapDisplay = _dialog displayCtrl IDC_mapDisplay;
-_mapDisplay ctrlAddEventHandler ["Draw", {call FUNC(drawModuleMarkers)}];
 _mapDisplay ctrlAddEventHandler ["Destroy", {{deleteMarkerLocal _x} forEach GVAR(moduleMarkers)}];
 _mapDisplay ctrlAddEventHandler ["MouseButtonDown", {_this call FUNC(mapMouseButtonClick)}];
+
+{
+    private _marker = createMarkerLocal [str _x, getPos _x];
+    _marker setMarkerTextLocal str _x;
+    _marker setMarkerType "respawn_inf";
+    _marker setMarkerColorLocal "colorOPFOR";
+
+    GVAR(moduleMarkers) pushBackUnique _marker;
+} forEach entities "nev_mission_framework_waveSpawnModule";
 
 if (GVAR(mapCentering)) then {
     _mapDisplay ctrlMapAnimAdd [0, 0.05, [worldSize / 2, worldsize / 2, 0]];
