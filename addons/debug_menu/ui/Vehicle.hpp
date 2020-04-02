@@ -20,5 +20,5 @@ class GVAR(deleteButton): NevRscButton {
     y = "SafeZoneY + (155 / 1080) * SafeZoneH";
     w = "(88 / 1920) * SafeZoneW";
     action = "deleteVehicle cursorObject";
-    colorText[] = {0.5, 0, 0, 1};
+    colorText[] = {0.9, 0.195, 0.195, 1};
 };

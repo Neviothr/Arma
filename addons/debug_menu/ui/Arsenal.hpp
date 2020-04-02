@@ -10,7 +10,7 @@ class GVAR(propagateKit): NevRscButton {
     x = "SafeZoneX + (1220 / 1920) * SafeZoneW";
     y = "SafeZoneY + (470 / 1080) * SafeZoneH";
     action = QUOTE(call FUNC(propagateKit));
-    colorText[] = {0.5, 0, 0, 1};
+    colorText[] = {0.9, 0.195, 0.195, 1};
 };
 
 class GVAR(supplyDropButton): NevRscButton {

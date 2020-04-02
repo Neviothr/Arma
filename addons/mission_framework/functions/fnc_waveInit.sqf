@@ -79,8 +79,15 @@ if (!(_logic getVariable [QGVAR(init), false])) then {
     _logic setVariable [QGVAR(init), true, true];
 };
 
+[
+    {GVAR(gameOn) || {getMissionConfigValue ["safeStartEnabled", 0] == 0}},
+    {
+        params ["_activated", "_logic"];
 
-if (_activated) then {
-    private _delay = _logic getVariable ["Delay", 0];
-    [FUNC(spawnWave), [_logic], _delay] call CBA_fnc_waitAndExecute;
-};
+        if (_activated) then {
+            private _delay = _logic getVariable ["Delay", 0];
+            [FUNC(spawnWave), [_logic], _delay] call CBA_fnc_waitAndExecute;
+        };
+    },
+    [_activated, _logic]
+] call CBA_fnc_waitUntilAndExecute;

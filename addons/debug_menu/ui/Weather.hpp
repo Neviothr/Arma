@@ -75,5 +75,5 @@ class GVAR(randomEnvironmentButton): NevRscButton {
     x = "SafeZoneX + (1220 / 1920) * SafeZoneW";
     y = "SafeZoneY + (610 / 1080) * SafeZoneH";
     action = QUOTE([] remoteExecCall [ARR_2(QQFUNC(randomEnvironment), 0)]);
-    colorText[] = {0.5, 0, 0, 1};
+    colorText[] = {0.9, 0.195, 0.195, 1};
 };

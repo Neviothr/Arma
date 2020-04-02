@@ -79,7 +79,7 @@ if !(_handgunWeapon in _blacklistedHandguns) then {
     "rhs_mag_m67", "rhs_weap_m72a7",
     "Chemlight_blue", "rhs_mag_an_m8hc", "rhs_mag_an_m14_th3", "rhs_grenade_m15_mag",
     "DemoCharge_Remote_Mag", "SatchelCharge_Remote_Mag", "ACE_Clacker",
-    "UGL_FlareWhite_F", "1Rnd_HE_Grenade_shell"
+    "UGL_FlareWhite_F", "1Rnd_HE_Grenade_shell", "CUP_1Rnd_HEDP_M203"
 ];
 
 private _smokeShell = selectRandom ["SmokeShellYellow", "SmokeShellRed", "SmokeShellBlue", "SmokeShellGreen", "SmokeShellOrange"];
