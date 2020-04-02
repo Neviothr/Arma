@@ -5,7 +5,7 @@ if (getMissionConfigValue ["safeStartEnabled", 0] == 1) then {
 
     GVAR(safeStartPFH) = [
         {call FUNC(safeStartNotification)},
-        5
+        60
     ] call CBA_fnc_addPerFrameHandler;
 
     [
