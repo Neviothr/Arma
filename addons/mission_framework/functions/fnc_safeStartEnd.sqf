@@ -1,13 +1,12 @@
 #include "script_component.hpp"
 
-GVAR(safeStartPFH) = nil;
-
-systemChat format ["%1 ready.", side player];
-hint "Weapons are live in 5 seconds.";
+hint "AI modules are live in 5 seconds.";
 
 [
     {
+        hint "";
         ["<t color='#ffffff' size = '.45'>Game on!</t>"] spawn BIS_fnc_dynamicText;
+        systemChat "[SafeStart] AI modules are live.";
         GVAR(gameOn) = true;
     },
     [],
