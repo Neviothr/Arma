@@ -5,10 +5,16 @@ hint "AI modules are live in 5 seconds.";
 [
     {
         hint "";
-        ["<t color='#ffffff' size = '.45'>Game on!</t>"] spawn BIS_fnc_dynamicText;
+        titleText ["Game on!", "PLAIN"];
         systemChat "[SafeStart] AI modules are live.";
         GVAR(gameOn) = true;
     },
     [],
     5
+] call CBA_fnc_waitAndExecute;
+
+[
+    {call FUNC(dynamicGameOnText)},
+    [],
+    10
 ] call CBA_fnc_waitAndExecute;

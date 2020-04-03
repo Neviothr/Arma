@@ -1,5 +1,7 @@
 #include "script_component.hpp"
 
+GVAR(gameOn) = false;
+
 if (getMissionConfigValue ["safeStartEnabled", 0] == 1) then {
     LOG("Mission cfg value for SafeStart is 1 - enabling");
 

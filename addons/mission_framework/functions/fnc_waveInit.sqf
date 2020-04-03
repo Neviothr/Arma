@@ -80,7 +80,7 @@ if (!(_logic getVariable [QGVAR(init), false])) then {
 };
 
 [
-    {GVAR(gameOn) || {getMissionConfigValue ["safeStartEnabled", 0] == 0}},
+    {(GVAR(gameOn)) || (getMissionConfigValue ["safeStartEnabled", 0] == 0)},
     {
         params ["_activated", "_logic"];
 
