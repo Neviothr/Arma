@@ -1,5 +1,6 @@
 class CfgWeapons
 {
+    class Launcher_Base_F;
     //Ace Javelin :
 	class CUP_launch_Javelin: Launcher_Base_F {
 		ace_overpressure_angle = 30;

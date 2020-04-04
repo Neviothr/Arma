@@ -1,10 +1,5 @@
 class CfgMagazines
 {
-	class CA_LauncherMagazine;
-	class CUP_NLAW_M: CA_LauncherMagazine
-	{
-		ammo = "ACE_NLAW";
-	};
 
 	/* **************************************************************************
 	 * 			ACE Explosives

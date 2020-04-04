@@ -1,24 +1,4 @@
 class CfgVehicles {
-    class Helicopter_Base_H;
-    class rhsusf_CH53E_USMC: Helicopter_Base_H {
-        ace_interaction_bodyWidth = 3.5;
-    };
-
-    class StaticWeapon: LandVehicle {
-        class ACE_Actions {
-            class ACE_MainActions;
-        };
-    };
-    class StaticMortar: StaticWeapon {};
-    class RHS_M252_Base: StaticMortar {
-        class ACE_Actions: ACE_Actions {
-            class ACE_MainActions: ACE_MainActions {
-                position = "";
-                selection = "main_gun";
-            };
-        };
-    };
-
     class Items_base_F;
     class ACE_Explosives_Place: Items_base_F {
         class ACE_Actions {

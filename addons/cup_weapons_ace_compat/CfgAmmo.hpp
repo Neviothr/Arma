@@ -1,7 +1,6 @@
 class CfgAmmo
 {
 	class PipeBombBase;
-	class MissileBase;
 
 	class CUP_TimeBomb_Ammo: PipeBombBase
 	{

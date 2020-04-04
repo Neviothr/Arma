@@ -7,6 +7,7 @@ class cfgMagazines {
         ace_overpressure_damage = 0;
     };
 
+    class CA_Magazine;
     class rhsusf_m112_mag: CA_Magazine {
         ace_explosives_DelayTime = 1;
         ace_explosives_Placeable = 1;
