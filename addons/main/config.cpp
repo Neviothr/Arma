@@ -7,7 +7,9 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { // List only used modules
+        // List used ACE modules
+        // https://community.bistudio.com/wiki/configSourceAddonList
+        requiredAddons[] = {
             "ace_advanced_fatigue",
             "ace_advanced_throwing",
             "ace_ai",
