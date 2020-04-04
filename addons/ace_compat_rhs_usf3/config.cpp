@@ -1,5 +1,6 @@
 #include "script_component.hpp"
 
+// Commit cf732c1
 class CfgPatches {
     class ADDON {
         name = "NEV Component - Custom ACE RHS USF Compat";

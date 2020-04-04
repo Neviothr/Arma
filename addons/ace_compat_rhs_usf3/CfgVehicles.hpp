@@ -1,36 +1,7 @@
 class CfgVehicles {
-    class LandVehicle;
-    class Car: LandVehicle {
-        class ACE_Actions {
-            class ACE_MainActions {};
-        };
-    };
-
-    class Car_F: Car {};
-    class Truck_F: Car_F {};
-    class rhs_truck: Truck_F {};
-    class Tank: LandVehicle {
-        class NewTurret;
-        class ACE_Actions {
-            class ACE_MainActions {};
-        };
-    };
-
-    class Tank_F: Tank {
-        class Turrets {
-            class MainTurret: NewTurret {
-                class Turrets {
-                    class CommanderOptics;
-                };
-            };
-        };
-    };
-
-    class Air;
-    class Helicopter: Air {
-        class Turrets {
-            class MainTurret;
-        };
+    class Helicopter_Base_H;
+    class rhsusf_CH53E_USMC: Helicopter_Base_H {
+        ace_interaction_bodyWidth = 3.5;
     };
 
     class StaticWeapon: LandVehicle {
@@ -38,7 +9,6 @@ class CfgVehicles {
             class ACE_MainActions;
         };
     };
-
     class StaticMortar: StaticWeapon {};
     class RHS_M252_Base: StaticMortar {
         class ACE_Actions: ACE_Actions {

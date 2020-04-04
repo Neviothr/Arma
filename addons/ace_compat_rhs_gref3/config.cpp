@@ -1,5 +1,6 @@
 #include "script_component.hpp"
 
+// Commit 95c213f
 class CfgPatches {
     class ADDON {
         name = "NEV Component - Custom ACE RHS GREF Compat";
