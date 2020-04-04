@@ -1,5 +1,6 @@
 #include "script_component.hpp"
 
+// Commit b4ac330
 class CfgPatches {
     class ADDON {
         name = "NEV Component - Custom ACE RHS AFRF Compat";
@@ -18,6 +19,4 @@ class CfgPatches {
 };
 
 #include "CfgAmmo.hpp"
-#include "CfgMagazines.hpp"
-#include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"

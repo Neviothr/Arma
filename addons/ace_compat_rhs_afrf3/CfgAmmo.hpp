@@ -1,9 +1,4 @@
 class CfgAmmo {
-    class SubmunitionBase;
-    class rhs_ammo_127x108mm_x5: SubmunitionBase {
-        ACE_rearm_caliber=13;
-    };
-
     class GrenadeHand;
     class rhs_ammo_rgd5: GrenadeHand {
         ace_frag_enabled = 1;
@@ -15,19 +10,16 @@ class CfgAmmo {
         ace_frag_skip = 0;
         ace_frag_force = 1;
     };
-
     class rhs_ammo_rgn: rhs_ammo_rgd5 {
         ace_frag_enabled = 0;
         ace_frag_skip = 1;
         ace_frag_force = 0;
     };
-
     class rhs_ammo_fakel: GrenadeHand {
         ace_frag_enabled = 0;
         ace_frag_skip = 1;
         ace_frag_force = 0;
     };
-
     class rhs_ammo_fakels: rhs_ammo_fakel {};
     class rhs_ammo_zarya2: rhs_ammo_fakels {};
     class rhs_ammo_plamyam: rhs_ammo_fakels {};
@@ -46,13 +38,11 @@ class CfgAmmo {
         ace_frag_skip = 0;
         ace_frag_force = 1;
     };
-
     class rhs_rpg7v2_tbg7v: rhs_rpg7v2_pg7vl {
         ace_frag_enabled = 0;
         ace_frag_skip = 1;
         ace_frag_force = 0;
     };
-
     class rhs_rshg2_rocket: rhs_rpg7v2_tbg7v {
         ace_frag_enabled = 0;
         ace_frag_skip = 1;
@@ -64,15 +54,12 @@ class CfgAmmo {
     class rhs_g_vg40tb: rhs_g_vog25 { //Thermobaric
         ace_frag_force = 0;
     };
-
     class rhs_g_vg40sz: rhs_g_vog25 { //Flashbang
         ace_frag_force = 0;
     };
-
     class rhs_g_gdm40: rhs_g_vog25 { //Smoke
         ace_frag_force = 0;
     };
-
     class rhs_g_vg40md_white: rhs_g_vog25 { //Smoke
         ace_frag_force = 0;
     };
