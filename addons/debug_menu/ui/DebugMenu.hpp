@@ -8,7 +8,7 @@ class GVAR(debugMenuDisplay) {
         // Keep button out of Tools.hpp and as the top class to insure it as the default selection
         class GVAR(removeDeadButton): NevRscButton {
             text = "Remove Dead";
-            x = "SafeZoneX + (1220 / 1920) * SafeZoneW";
+            x = "SafeZoneX + (1215 / 1920) * SafeZoneW";
             y = "SafeZoneY + (400 / 1080) * SafeZoneH";
             action = QUOTE({deleteVehicle _x} forEach allDead - GVAR(deadOnStart) + nev_blood_bloodDrops);
             default = 1;
@@ -26,7 +26,7 @@ class GVAR(debugMenuDisplay) {
 };
 
 /*
-<--140--> Horizontal distance between elements
+<--95--> Horizontal distance between elements
 
 /\
 ||

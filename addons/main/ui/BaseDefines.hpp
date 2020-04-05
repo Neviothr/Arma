@@ -111,7 +111,7 @@ class RscMapControl;
 class NevRscButton: RscButton {
     type = CT_BUTTON;
     style = ST_CENTER;
-    w = "(135 / 1920) * SafeZoneW";
+    w = "(90 / 1920) * SafeZoneW";
     h = "(30 / 1080) * SafeZoneH";
 };
 
@@ -123,7 +123,7 @@ class NevRscSlider: RscSlider {
     arrowFull = "\A3\ui_f\data\gui\cfg\slider\arrowFull_ca.paa";
     border = "\A3\ui_f\data\gui\cfg\slider\border_ca.paa";
     thumb = "\A3\ui_f\data\gui\cfg\slider\thumb_ca.paa";
-    w = "(275 / 1920) * SafeZoneW";
+    w = "(280 / 1920) * SafeZoneW";
     h = "(30 / 1080) * SafeZoneH";
     type = CT_XSLIDER;
     style = SL_HORZ;
