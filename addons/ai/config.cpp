@@ -2,7 +2,7 @@
 
 class CfgPatches {
     class ADDON {
-        name = "NEV Component - AI Dispersion";
+        name = "NEV Component - AI";
         author = "Neviothr";
         units[] = {};
         weapons[] = {};
@@ -13,3 +13,4 @@ class CfgPatches {
 };
 
 #include "CfgBrains.hpp"
+#include "CfgSurfaces.hpp"

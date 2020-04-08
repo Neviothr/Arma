@@ -1,4 +1,4 @@
-#define COMPONENT difficulty
+#define COMPONENT ai
 
 #include "\x\nev\addons\main\script_mod.hpp"
 

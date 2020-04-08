@@ -1,4 +1,4 @@
-#define COMPONENT ai_suppression
+#define COMPONENT map_brightness
 
 #include "\x\nev\addons\main\script_mod.hpp"
 

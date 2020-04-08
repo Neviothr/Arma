@@ -2,7 +2,7 @@
 
 class CfgPatches {
     class ADDON {
-        name = "NEV Component - Difficulty";
+        name = "NEV Component - Map Brightness";
         author = "Neviothr";
         units[] = {};
         weapons[] = {};
@@ -12,4 +12,4 @@ class CfgPatches {
     };
 };
 
-#include "CfgSurfaces.hpp"
+#include "CfgEventhandlers.hpp"
