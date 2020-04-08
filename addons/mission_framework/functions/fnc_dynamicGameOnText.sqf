@@ -15,18 +15,18 @@ private _formattedTime = format ["%1:%2", _hour, _minute];
 
 private _nearestLocations = (nearestLocations [getPos player, LOCATION_TYPES, worldSize]) apply {text _x};
 private _formattedLocation = if (_nearestLocations isEqualTo []) then {
-	"In the middle of nowhere";
+    "In the middle of nowhere";
 } else {
-	format ["NEAR %1", toUpper (_nearestLocations select (_nearestLocations findIf {_x != ""}))];
+    format ["NEAR %1", toUpper (_nearestLocations select (_nearestLocations findIf {_x != ""}))];
 };
 
 [
-	[
-		[toUpper str missionName, "align = 'right' shadow = '1' size = '0.7' font='PuristaBold'", "#FFA500"],
-		["", "<br/>"],
-		[_formattedDate, "align = 'right' shadow = '1' size = '0.7' font = 'PuristaLight'"],
-		[_formattedTime, "align = 'right' shadow = '1' size = '0.7' font = 'PuristaMedium'"],
-		["", "<br/>"],
-		[_formattedLocation, "align = 'right' shadow = '1' size = '0.7' font = 'PuristaLight'"]
-	], -1.1, 1.1
+    [
+        [toUpper str missionName, "align = 'right' shadow = '1' size = '0.7' font='PuristaBold'", "#FFA500"],
+        ["", "<br/>"],
+        [_formattedDate, "align = 'right' shadow = '1' size = '0.7' font = 'PuristaLight'"],
+        [_formattedTime, "align = 'right' shadow = '1' size = '0.7' font = 'PuristaMedium'"],
+        ["", "<br/>"],
+        [_formattedLocation, "align = 'right' shadow = '1' size = '0.7' font = 'PuristaLight'"]
+    ], -1.1, 1.1
 ] spawn BIS_fnc_typeText2;
