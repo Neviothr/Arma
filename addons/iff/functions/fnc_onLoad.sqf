@@ -1,7 +1,6 @@
 #include "script_component.hpp"
 
 params ["_dialog"];
-TRACE_1("",_dialog);
 
 GVAR(iffUnits) = [];
 
@@ -39,7 +38,6 @@ showCinemaBorder false;
 
 private _sides = call FUNC(getSides);
 private _sideBox = _dialog displayCtrl IDC_iffSideCombo;
-TRACE_2("",_sides,_sideBox);
 
 {
     _sideBox lbAdd str _x;

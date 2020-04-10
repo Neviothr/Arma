@@ -1,4 +1,4 @@
-#define COMPONENT briefing
+#define COMPONENT iff
 
 #include "\x\nev\addons\main\script_mod.hpp"
 

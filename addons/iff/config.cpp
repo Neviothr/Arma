@@ -2,7 +2,7 @@
 
 class CfgPatches {
     class ADDON {
-        name = "NEV Component - Briefing";
+        name = "NEV Component - IFF Viewer";
         author = "Neviothr";
         units[] = {};
         weapons[] = {};
@@ -14,4 +14,4 @@ class CfgPatches {
 
 #include "CfgEventHandlers.hpp"
 #include "\x\nev\addons\main\ui\BaseDefines.hpp"
-#include "\x\nev\addons\briefing\ui\IFF.hpp"
+#include "\x\nev\addons\iff\ui\IFF.hpp"

@@ -1,15 +1,20 @@
 #include "script_component.hpp"
 
 setViewDistance -1;
+
 GVAR(camera) cameraEffect ["terminate", "back"];
 camDestroy GVAR(camera);
-
-GVAR(logicCenter) = nil;
 
 {
     deleteVehicle _x;
 } forEach GVAR(iffUnits);
 
-GVAR(iffUnits) = nil;
+deleteVehicle GVAR(logicCenter);
 deleteVehicle GVAR(light);
 deleteVehicle GVAR(orb);
+
+GVAR(camera) = nil;
+GVAR(iffUnits) = nil;
+GVAR(logicCenter) = nil;
+GVAR(light) = nil;
+GVAR(orb) = nil;
