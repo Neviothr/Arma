@@ -3,30 +3,23 @@
 params ["_control", "_selectedIndex"];
 private _sideBox = (findDisplay IDD_IFFDisplay) displayCtrl IDC_iffSideCombo;
 private _side = _sideBox lbText (lbCurSel _sideBox);
-TRACE_4("",_control,_selectedIndex,_sideBox,_side);
 
 if (_side == "GUER") then {
     _side = "INDEP";
 };
+TRACE_1("",_side);
 
 private _faction = _control lbText _selectedIndex;
-private _factionTypeCfg = str (configProperties [configFile >> "CfgGroups" >> _side >> _faction, "isClass _x"]);
-private _factionTypesList = _factionTypeCfg splitString "\/,[]";
-private _factionType = "";
-_factionType = _factionTypesList select (_factionTypesList findIf {("infantry" in toLower _x) || ("spec" in toLower _x)});
-TRACE_3("",_faction,_factionTypeCfg,_factionType);
+private _factionGroupType = (configProperties [configFile >> "CfgGroups" >> _side >> _faction, "isClass _x"] apply {configName _x}) select 0;
+TRACE_2("",_faction,_factionGroupType);
 
-private _groupsCfg = str (configProperties [configFile >> "CfgGroups" >> _side >> _faction >> _factionType, "isClass _x"]);
-private _groupsList = _groupsCfg splitString "\/,[]";
-private _group = "";
-_group = _groupsList select (_groupsList findIf {(("inf" in toLower _x) || ("team" in toLower _x) || ("squad" in toLower _x) || ("cell" in toLower _x) || ("patrol" in toLower _x) || ("gang" in toLower _x)) && ("infantry" != toLower _x) && (_factionType != _x)});
-TRACE_3("",_faction,_factionTypeCfg,_factionType);
+private _group = (configProperties [configFile >> "CfgGroups" >> _side >> _faction >> _factionGroupType, "isClass _x"] apply {configName _x}) select 0;
+TRACE_1("",_group);
 
 {
     deleteVehicle _x;
 } forEach GVAR(iffUnits);
 
-[getText (configfile >> "CfgGroups" >> _side >> _faction >> _factionType >> _group >> "Unit0" >> "vehicle"), 1] call FUNC(createUnit);
-[getText (configfile >> "CfgGroups" >> _side >> _faction >> _factionType >> _group >> "Unit1" >> "vehicle"), 2] call FUNC(createUnit);
-[getText (configfile >> "CfgGroups" >> _side >> _faction >> _factionType >> _group >> "Unit2" >> "vehicle"), 3] call FUNC(createUnit);
-[getText (configfile >> "CfgGroups" >> _side >> _faction >> _factionType >> _group >> "Unit3" >> "vehicle"), 4] call FUNC(createUnit);
+for "_unitNumber" from 1 to 4 do {
+    [getText (configfile >> "CfgGroups" >> _side >> _faction >> _factionGroupType >> _group >> "Unit0" >> "vehicle"), _unitNumber] call FUNC(createUnit);
+};

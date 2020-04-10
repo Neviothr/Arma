@@ -1,5 +1,5 @@
 class IFF {
-    idd = IDD_IFFDisplay;
+    idd = IDD_iffDisplay;
     movingEnable = 0;
     enableSimulation = 1;
     onLoad = QUOTE(call FUNC(onLoad));

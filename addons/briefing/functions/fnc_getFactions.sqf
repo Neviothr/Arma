@@ -1,14 +1,11 @@
 #include "script_component.hpp"
 
 params ["_side"];
-TRACE_1("",_side);
 
 private _factions = [];
 
 {
-    private _unitSide = str side _x;
-
-    if (_unitSide == _side) then {
+    if ((str side _x) == _side) then {
         private _faction = faction _x;
 
         if (_faction in FACTION_BLACKLIST) then {
@@ -19,5 +16,4 @@ private _factions = [];
     };
 } forEach allUnits;
 
-TRACE_1("",_factions);
 _factions

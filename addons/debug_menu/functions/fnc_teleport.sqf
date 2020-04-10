@@ -10,10 +10,12 @@ openMap [true, true];
 addMissionEventHandler ["MapSingleClick", {
     params ["", "_pos"];
 
-    if ((count units group player) > 1) then {
+    private _group = units player;
+
+    if (count _group > 1) then {
         {
             _x setPos _pos;
-        } forEach units group player;
+        } forEach _group;
     } else {
         player setPos _pos;
     };

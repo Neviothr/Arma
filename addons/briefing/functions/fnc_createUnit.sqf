@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-params ["_unitCfg", ["_unitNumber", 0, [0]]];
+params [["_unitCfg", "", [""]], ["_unitNumber", 0, [0]]];
 TRACE_2("",_unitCfg,_unitNumber);
 
 if (_unitCfg == "") exitWith {ERROR_1("%1 is empty, no classname passed", _unitCfg)};
