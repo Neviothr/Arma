@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 params ["_explosionSource"];
-private _distanceToPlayeranceToPlayer = player distance2D _explosionSource;
+private _distanceToPlayer = player distance2D _explosionSource;
 TRACE_2("",_explosionSource,_distanceToPlayer);
 
 if (_distanceToPlayer > 1000) exitWith {INFO_1("Distance is greater than 1000 (%1), terminating")};
