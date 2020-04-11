@@ -18,6 +18,6 @@ class GVAR(missionInfo): RscStructuredText {
     h = "(86 / 1920) * SafeZoneW";
     type = CT_STRUCTURED_TEXT;
     style = ST_MULTI;
-    size = 0.04;
+    size = 0.035;
     colorBackground[] = {0, 0, 0, 0.4};
 };

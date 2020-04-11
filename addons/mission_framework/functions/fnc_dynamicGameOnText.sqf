@@ -22,7 +22,7 @@ private _formattedLocation = if (_nearestLocations isEqualTo []) then {
 
 [
     [
-        [toUpper str missionName, "align = 'right' shadow = '1' size = '0.7' font='PuristaBold'", "#FFA500"],
+        [toUpper str briefingName, "align = 'right' shadow = '1' size = '0.7' font='PuristaBold'", "#FFA500"],
         ["", "<br/>"],
         [_formattedDate, "align = 'right' shadow = '1' size = '0.7' font = 'PuristaLight'"],
         [_formattedTime, "align = 'right' shadow = '1' size = '0.7' font = 'PuristaMedium'"],
