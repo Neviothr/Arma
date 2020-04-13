@@ -1,3 +1,4 @@
+// https://github.com/acemod/ACE3/blob/master/optionals/compat_rhs_afrf3/CfgWeapons.hpp
 class CfgWeapons {
     class NVGoggles;
     class rhs_1PN138: NVGoggles { // Monocular

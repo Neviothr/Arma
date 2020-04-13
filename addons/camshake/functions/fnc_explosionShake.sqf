@@ -6,7 +6,7 @@ TRACE_2("",_explosionSource,_distanceToPlayer);
 
 if (_distanceToPlayer > 1000) exitWith {INFO_1("Distance is greater than 1000 (%1), terminating")};
 
-// If you pass 0 in _distanceToPlayer (vehicle blows up with you in it) you get a zero divisor error
+// If you pass 0 in _distanceToPlayer (vehicle blows up with you in it) you get a zero divisor error.
 if (_distanceToPlayer isEqualTo 0) then {
     _distanceToPlayer = 50;
 };

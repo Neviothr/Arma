@@ -1,3 +1,5 @@
+// Extracted and edited from:
+// https://steamcommunity.com/sharedfiles/filedetails/?id=549676314
 class CfgVehicles {
     class ACE_Explosives_Place;
     class ACE_PipeBomb_place_CUP: ACE_Explosives_Place {

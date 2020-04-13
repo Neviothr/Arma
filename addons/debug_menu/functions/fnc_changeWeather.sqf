@@ -1,5 +1,8 @@
 #include "script_component.hpp"
 
+// Serialization of control variables is not implemented.
+disableSerialization;
+
 (_this select 0) params ["_control", "_value"];
 (fogParams) params ["_fogValue", "_fogDecay", "_fogBase"];
 TRACE_5("",_control,_value,_fogValue,_fogDecay,_fogBase);

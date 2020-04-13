@@ -1,3 +1,4 @@
+// https://github.com/acemod/ACE3/blob/master/optionals/compat_rhs_usf3/CfgMagazines.hpp
 class cfgMagazines {
     class CA_LauncherMagazine;
     class rhs_mag_smaw_SR: CA_LauncherMagazine {

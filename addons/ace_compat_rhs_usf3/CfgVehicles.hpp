@@ -1,3 +1,4 @@
+// https://github.com/acemod/ACE3/blob/master/optionals/compat_rhs_usf3/CfgVehicles.hpp
 class CfgVehicles {
     class Items_base_F;
     class ACE_Explosives_Place: Items_base_F {

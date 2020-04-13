@@ -11,7 +11,7 @@ class RscTitles {
                 y = "0.951388 * safezoneH + safezoneY";
                 h = "0.0352567 * safezoneW";
                 w = "0.0470196 * safezoneH";
-                text = "ERROR"; // If onLoad fails this will displayed
+                text = "ERROR"; // If onLoad fails this will displayed.
             };
         };
     };

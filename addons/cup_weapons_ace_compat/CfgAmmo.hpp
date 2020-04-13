@@ -1,3 +1,5 @@
+// Extracted and edited from:
+// https://steamcommunity.com/sharedfiles/filedetails/?id=549676314
 class CfgAmmo
 {
     class PipeBombBase;

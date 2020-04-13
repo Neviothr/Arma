@@ -4,7 +4,9 @@ class Mode_FullAuto;
 
 class CfgWeapons {
     // Manually add the "NEV_FullAuto" firemode to modes[] array because += operator doesn't work reliably.
-    // Handheld Weapons
+    // AI_ROF adds an AI-only fire mode, and increases dispersion.
+    // AI_DISPERSION and AI_VEHICLE_DISPERSION are used to increase dispersion in handheld and vehicle weapons, respectively, without modifiying fire modes.
+    // Handheld Weapons.
     class DMR_01_base_F;
     class srifle_DMR_01_F: DMR_01_base_F {
         modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "fullauto_medium", "NEV_FullAuto"};
@@ -4091,7 +4093,7 @@ class CfgWeapons {
         AI_DISPERSION;
     };
 
-    // Vehicle weapons
+    // Vehicle weapons.
     class MGun;
     class M2: MGun {
         AI_VEHICLE_DISPERSION;

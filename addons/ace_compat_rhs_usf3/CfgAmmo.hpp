@@ -1,3 +1,4 @@
+// https://github.com/acemod/ACE3/blob/master/optionals/compat_rhs_usf3/CfgAmmo.hpp
 class CfgAmmo {
     class GrenadeHand;
     class rhs_ammo_mk3a2: GrenadeHand {

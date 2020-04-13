@@ -26,11 +26,27 @@ _lightningsSlider sliderSetPosition lightnings;
 private _wavesSlider = _dialog displayCtrl IDC_wavesSlider;
 _wavesSlider sliderSetPosition waves;
 
+// Inconsistancy of weather commands rises after game load,
+// detect this, and disable them to prevent issues.
+if !(isNil QGVAR(disableWeatherSliders)) then {
+    {
+        _x ctrlEnable false;
+    } forEach [_overcastSlider, _fogValueSlider, _fogDecaySlider, _fogBaseSlider, _rainSlider, _windSlider, _lightningsSlider, _wavesSlider]
+};
+
 private _yearBox = _dialog displayCtrl IDC_yearBox;
 for "_year" from 1982 to 2050 do {
     _yearBox lbAdd str _year;
 };
+
+// Years go from 1982 to 2050, while listbox indexs go from 0 to 68,
+// to get the currect index from 'date' we must subract 1982 from it.
+// This is also valid for the month any listboxes.
 _yearBox lbSetCurSel (date select 0) - 1982;
+
+// Use 'ctrlAddEventHandler' instead of a 'onLBSelChanged' config EH because running
+// 'lbSetCurSel' fires the 'onLBSelChanged' EH.
+// This is valid for all listboxes
 _yearBox ctrlAddEventHandler ["LBSelChanged", {_this call FUNC(setDate)}];
 
 private _monthBox = _dialog displayCtrl IDC_monthBox;
@@ -50,7 +66,7 @@ _monthBox lbSetCurSel ((date select 1) - 1);
 _monthBox ctrlAddEventHandler ["LBSelChanged", {_this call FUNC(setDate)}];
 
 private _dayBox = _dialog displayCtrl IDC_dayBox;
-for "_day" from 1 to 31 do {
+for "_day" from 1 to ([date select 0, date select 1] call BIS_fnc_monthDays) do {
     _dayBox lbAdd str _day;
 };
 _dayBox lbSetCurSel ((date select 2) - 1);
@@ -78,7 +94,6 @@ if !(isMultiplayer) then {
 };
 
 private _missionInfo = _dialog displayCtrl IDC_missionInfo;
-
 _missionInfo ctrlSetStructuredText parseText format [
     "<t size = '1' font = 'RobotoCondensedBold' color='#ffffff' align = 'left'>
     %1 on %2
@@ -96,11 +111,11 @@ _missionInfo ctrlSetStructuredText parseText format [
     floor (time / 60)
 ];
 
-GVAR(moduleMarkers) = [];
-
 private _mapDisplay = _dialog displayCtrl IDC_mapDisplay;
 _mapDisplay ctrlAddEventHandler ["Destroy", {{deleteMarkerLocal _x} forEach GVAR(moduleMarkers)}];
 _mapDisplay ctrlAddEventHandler ["MouseButtonDown", {_this call FUNC(mapMouseButtonClick)}];
+
+GVAR(moduleMarkers) = [];
 
 {
     private _marker = createMarkerLocal [str _x, getPos _x];

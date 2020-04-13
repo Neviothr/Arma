@@ -1,3 +1,5 @@
+// Extracted and edited from:
+// https://steamcommunity.com/sharedfiles/filedetails/?id=549676314
 class CfgWeapons
 {
     class Launcher_Base_F;
@@ -7,7 +9,6 @@ class CfgWeapons
         ace_overpressure_range = 2;
         ace_overpressure_damage = 0.5;
     };
-
 
     // Non Disposable launchers
     class CUP_launch_M47: Launcher_Base_F {
