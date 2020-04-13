@@ -1,7 +1,27 @@
 #include "script_component.hpp"
 
+/*
+ * Author: Neviothr
+ * Spawn a supply drop which contents are based on the player's weapons.
+ *
+ * Arguments:
+ * None.
+ *
+ * Return Value:
+ * None.
+ *
+ * Example:
+ * call nev_debug_menu_fnc_supplyDrop
+ *
+ * Public: No
+*/
+
+#define BLACKLISTED_LAUNCHERS ["", "CUP_launch_M136", "CUP_launch_NLAW", "CUP_launch_RPG18", "CUP_launch_M72A6", "CUP_launch_M72A6_Special", "CUP_launch_M72A6_Used", "rhs_weap_rpg26", "rhs_weap_rshg2", "rhs_weap_M136", "rhs_weap_M136_hedp", "rhs_weap_M136_hp", "rhs_weap_m72a7", "rhs_weap_panzerfaust60", "rhs_weap_rpg75", "rhs_weap_m80"]
+#define BLACKLISTED_HANDGUNS ["", "rhs_weap_rsp30_white", "rhs_weap_rsp30_green", "rhs_weap_rsp30_red", "rhs_weap_tr8"]
+// Randomize wind, this allows the supply crate to drift while falling, forcing the player to reach it, instead of having it drop straight on him.
 [] remoteExec ["setWind [random 359, random 359, false]; 3 setWindDir random 359; 3 setWindStr random 1; 3 setWindForce random 1", 2];
 
+// Choose a random location around the player, 75m high, at which the crate will spawn.
 private _position = player getPos [100 * sqrt random 1, random 360];
 _position set [2, 75];
 TRACE_1("",_position);
@@ -17,6 +37,7 @@ clearBackpackCargoGlobal _ammoBox;
 _ammoBox allowDamage false;
 _ammoBox attachTo [_parachute, [0, 0, -1.3]];
 
+// Add 90 magazines compatible with the player's rifle, 5 random types, 15 of each.
 private _primaryWpn = primaryWeapon player;
 TRACE_1("",_primaryWpn);
 
@@ -32,11 +53,12 @@ if (_primaryWpn != "") then {
     };
 };
 
+// Add 60 magazines compatible with the player's launcher, 5 random types, 15 of each.
+// If no launcher is found, add 15 launcher of the currently equiped type.
 private _secondaryWpn = secondaryWeapon player;
-private _blackSecondaries = ["", "CUP_launch_M136", "CUP_launch_NLAW", "CUP_launch_RPG18", "CUP_launch_M72A6", "CUP_launch_M72A6_Special", "CUP_launch_M72A6_Used", "rhs_weap_rpg26", "rhs_weap_rshg2", "rhs_weap_M136", "rhs_weap_M136_hedp", "rhs_weap_M136_hp", "rhs_weap_m72a7", "rhs_weap_panzerfaust60", "rhs_weap_rpg75", "rhs_weap_m80"];
 TRACE_1("",_secondaryWpn);
 
-if !(_secondaryWpn in _blackSecondaries) then {
+if !(_secondaryWpn in BLACKLISTED_LAUNCHERS) then {
     private _secondaryMags = [_secondaryWpn, false] call CBA_fnc_compatibleMagazines;
     TRACE_1("",_secondaryMags);
 
@@ -52,11 +74,13 @@ if !(_secondaryWpn in _blackSecondaries) then {
     };
 };
 
+
+// Add 60 magazines compatible with the player's handgun, 5 random types, 15 of each.
+// If the "handgun" is an RHS, single use flare or periscope - add 15 of the same type to the crate.
 private _handgunWeapon = handgunWeapon player;
-private _blacklistedHandguns = ["", "rhs_weap_rsp30_white", "rhs_weap_rsp30_green", "rhs_weap_rsp30_red", "rhs_weap_tr8"];
 TRACE_1("",_handgunWeapon);
 
-if !(_handgunWeapon in _blacklistedHandguns) then {
+if !(_handgunWeapon in BLACKLISTED_HANDGUNS) then {
     private _handgunMagazines = [_handgunWeapon, false] call CBA_fnc_compatibleMagazines;
     TRACE_1("",_handgunMagazines);
 

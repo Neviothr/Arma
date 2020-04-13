@@ -2,6 +2,8 @@
 
 params ["_unit"];
 
+TRACE_1("",_unit);
+
 if !(isPlayer _unit) exitWith {};
 
 for "_i" from 1 to 10 step 1 do {

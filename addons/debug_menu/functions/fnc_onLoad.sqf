@@ -1,6 +1,26 @@
 #include "script_component.hpp"
 
+/*
+ * Author: Neviothr
+ * Handles various aspects of the debug menu upon loading -
+ * slider postions, listbox population, map centering, eventhandler assignment,
+ * marker creation, editing and disabling of certain controls.
+ *
+ * Arguments:
+ * 0: Debug Menu Dialog <CONTROL>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * onLoad = "call nev_debug_menu_fnc_onLoad"
+ *
+ * Public: No
+*/
+
 params ["_dialog"];
+
+TRACE_1("",_dialog);
 
 private _overcastSlider = _dialog displayCtrl IDC_overcastSlider;
 _overcastSlider sliderSetPosition overcast;
@@ -41,13 +61,13 @@ for "_year" from 1982 to 2050 do {
 
 // Years go from 1982 to 2050, while listbox indexs go from 0 to 68,
 // to get the currect index from 'date' we must subract 1982 from it.
-// This is also valid for the month any listboxes.
+// This is also valid for the month and day listboxes.
 _yearBox lbSetCurSel (date select 0) - 1982;
 
 // Use 'ctrlAddEventHandler' instead of a 'onLBSelChanged' config EH because running
 // 'lbSetCurSel' fires the 'onLBSelChanged' EH.
 // This is valid for all listboxes
-_yearBox ctrlAddEventHandler ["LBSelChanged", {_this call FUNC(setDate)}];
+_yearBox ctrlAddEventHandler ["LBSelChanged", {call FUNC(setDate)}];
 
 private _monthBox = _dialog displayCtrl IDC_monthBox;
 _monthBox lbAdd "January";
@@ -63,28 +83,28 @@ _monthBox lbAdd "October";
 _monthBox lbAdd "November";
 _monthBox lbAdd "December";
 _monthBox lbSetCurSel ((date select 1) - 1);
-_monthBox ctrlAddEventHandler ["LBSelChanged", {_this call FUNC(setDate)}];
+_monthBox ctrlAddEventHandler ["LBSelChanged", {call FUNC(setDate)}];
 
 private _dayBox = _dialog displayCtrl IDC_dayBox;
 for "_day" from 1 to ([date select 0, date select 1] call BIS_fnc_monthDays) do {
     _dayBox lbAdd str _day;
 };
 _dayBox lbSetCurSel ((date select 2) - 1);
-_dayBox ctrlAddEventHandler ["LBSelChanged", {_this call FUNC(setDate)}];
+_dayBox ctrlAddEventHandler ["LBSelChanged", {call FUNC(setDate)}];
 
 private _hourBox = _dialog displayCtrl IDC_hourBox;
 for "_hour" from 0 to 23 do {
     _hourBox lbAdd str _hour;
 };
 _hourBox lbSetCurSel (date select 3);
-_hourBox ctrlAddEventHandler ["LBSelChanged", {_this call FUNC(setDate)}];
+_hourBox ctrlAddEventHandler ["LBSelChanged", {call FUNC(setDate)}];
 
 private _minuteBox = _dialog displayCtrl IDC_minuteBox;
 for "_minute" from 0 to 59 do {
     _minuteBox lbAdd str _minute;
 };
 _minuteBox lbSetCurSel (date select 4);
-_minuteBox ctrlAddEventHandler ["LBSelChanged", {_this call FUNC(setDate)}];
+_minuteBox ctrlAddEventHandler ["LBSelChanged", {call FUNC(setDate)}];
 
 if !(isMultiplayer) then {
     private _execGlobalButton = _dialog displayCtrl IDC_execGlobalButton;

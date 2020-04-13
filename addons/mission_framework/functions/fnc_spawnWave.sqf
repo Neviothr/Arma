@@ -2,6 +2,8 @@
 
 params ["_logic"];
 
+TRACE_1("",_logic);
+
 private _spawnedVehicles = [];
 private _spawnedGroups = [];
 private _data = _logic getVariable [QGVAR(waveData), []];

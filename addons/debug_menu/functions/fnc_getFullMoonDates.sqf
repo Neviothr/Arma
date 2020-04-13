@@ -12,6 +12,7 @@
  * [2002] call mars_environment_fnc_fullMoonDates;
  *
  * Public: Yes
+ * https://github.com/marseditor/mars/blob/00167a8739dbf1f3aae00d1914a6bba70a3f5764/addons/environment/functions/fnc_fullMoonDates.sqf
  */
 
 #include "script_component.hpp"

@@ -1,6 +1,9 @@
 #include "script_component.hpp"
 
 params ["_target", "_player", "_params"];
+
+TRACE_3("",_target,_player,_params);
+
 private _vehicles = (nearestObjects [_target, ["Tank", "Car", "Ship", "Helicopter", "Plane", "ReammoBox_F"], 20]) select {_x != _target};
 private _actions = [];
 TRACE_4("",_target,_player,_params,_vehicles);

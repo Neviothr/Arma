@@ -2,9 +2,9 @@
 
 params [["_unitCfg", "", [""]], ["_unitNumber", 0, [0]]];
 
-if (_unitCfg == "") exitWith {ERROR("No classname passed")};
+TRACE_2("",_unitCfg,_unitNumber);
 
-TRACE_1("",_unitCfg);
+if (_unitCfg == "") exitWith {ERROR("No classname passed")};
 
 private _unit = _unitCfg createVehicleLocal getPos GVAR(logicCenter);
 

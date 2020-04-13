@@ -2,6 +2,8 @@
 
 params ["_control"];
 
+TRACE_1("",_control);
+
 private _topLeftCorner = _control ctrlMapScreenToWorld [safeZoneX, safeZoneY];
 private _bottomRightCorner = _control ctrlMapScreenToWorld [safeZoneX + safeZoneW, safeZoneY + safeZoneH];
 private _position = _control ctrlMapScreenToWorld [0.5, 0.5];

@@ -17,6 +17,9 @@
 */
 
 params ["_display"];
+
+TRACE_1("",_display);
+
 private _control = _display displayCtrl IDC_aiCounterText;
 
 GVAR(counterDisplayPFEH) = [

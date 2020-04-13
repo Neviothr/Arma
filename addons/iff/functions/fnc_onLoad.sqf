@@ -2,6 +2,8 @@
 
 params ["_dialog"];
 
+TRACE_1("",_dialog);
+
 GVAR(iffUnits) = [];
 
 // Logic

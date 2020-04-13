@@ -2,6 +2,7 @@
 
 params ["_actionType"];
 private _target = [vehicle player, cursorTarget] select (cursorTarget isKindOf "AllVehicles");
+
 TRACE_2("",_actionType,_target);
 
 if (_actionType == 1) then {

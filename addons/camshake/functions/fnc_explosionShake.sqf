@@ -1,5 +1,22 @@
 #include "script_component.hpp"
 
+/*
+ * Author: Cyruz143
+ * Applies a camera shaking effect to a unit based on distance from explosion.
+ *
+ * Arguments:
+ * 0: Explotion source <OBJECT>
+ *
+ * Return Value:
+ * None.
+ *
+ * Example:
+ * [killedVehicle] call nev_camshake_fnc_explosionShake
+ *
+ * Public: No
+ https://github.com/Cyruz143/ark_inhouse/blob/master/addons/ark_camshake/client_postinit.sqf
+*/
+
 params ["_explosionSource"];
 private _distanceToPlayer = player distance2D _explosionSource;
 TRACE_2("",_explosionSource,_distanceToPlayer);

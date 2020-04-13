@@ -1,3 +1,4 @@
+// https://github.com/Cyruz143/ark_inhouse/blob/master/addons/ark_blood_effects/ImpactEffectsBlood.hpp
 class ImpactEffectsBlood {
     class BloodMist {
         simulation = "particles";

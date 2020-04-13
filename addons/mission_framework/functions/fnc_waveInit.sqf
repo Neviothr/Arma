@@ -4,6 +4,8 @@ if (is3DEN) exitWith {};
 
 params ["_logic", "_units", "_activated"];
 
+TRACE_3("",_logic,_units,_activated);
+
 if (" " in str _logic) exitWith {ERROR_MSG_1("One or more wave spawner modules aren't named properly - '%1'. Terminating init.",_logic)};
 
 if !(_logic getVariable [QGVAR(init), false]) then {

@@ -2,6 +2,8 @@
 
 params ["_side"];
 
+TRACE_1("",_side);
+
 private _factions = [];
 
 {

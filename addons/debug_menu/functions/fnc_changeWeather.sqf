@@ -1,10 +1,25 @@
 #include "script_component.hpp"
 
-// Serialization of control variables is not implemented.
-disableSerialization;
+/*
+ * Author: Neviothr
+ * Apply weather effects based on slider values. Called every time a weather slider's value changes through 'onSliderPosChanged' EH.
+ *
+ * Arguments:
+ * 0: Slider control <CONTROL>
+ * 1: Slider value <NUMBER>
+ *
+ * Return Value:
+ * None.
+ *
+ * Example:
+ * onSliderPosChanged = "_this call nev_debug_menu_fnc_changeWeather"
+ *
+ * Public: No
+*/
 
-(_this select 0) params ["_control", "_value"];
+params ["_control", "_value"];
 (fogParams) params ["_fogValue", "_fogDecay", "_fogBase"];
+
 TRACE_5("",_control,_value,_fogValue,_fogDecay,_fogBase);
 
 switch (str _control) do {

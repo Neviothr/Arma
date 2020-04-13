@@ -19,6 +19,8 @@
 
 params ["_unit"];
 
+TRACE_1("",_unit);
+
 // Ignore units in vehicles.
 if !(_unit isKindOf "CAManBase") exitWith {};
 if !(isNull objectParent _unit) exitWith {};

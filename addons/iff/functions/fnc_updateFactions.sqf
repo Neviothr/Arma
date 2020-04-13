@@ -2,6 +2,8 @@
 
 params ["_control", "_selectedIndex"];
 
+TRACE_2("",_control,_selectedIndex);
+
 private _factionBox = (findDisplay IDD_iffDisplay) displayCtrl IDC_iffFactionCombo;
 lbClear _factionBox;
 

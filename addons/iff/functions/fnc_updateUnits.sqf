@@ -1,6 +1,9 @@
 #include "script_component.hpp"
 
 params ["_control", "_selectedIndex"];
+
+TRACE_2("",_control,_selectedIndex);
+
 private _sideBox = (findDisplay IDD_iffDisplay) displayCtrl IDC_iffSideCombo;
 private _side = _sideBox lbText (lbCurSel _sideBox);
 
