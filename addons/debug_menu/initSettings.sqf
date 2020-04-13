@@ -46,7 +46,9 @@
     true,
     {
         params ["_value"];
-        GVAR(groupArray) = _value splitString " "; // Turns editbox's `name1 name2` into ["name1", "name2"]
+
+        // Turns editbox's `name1 name2` into ["name1", "name2"].
+        GVAR(groupArray) = _value splitString " ";
     }
 ] call CBA_fnc_addSetting;
 
@@ -59,7 +61,8 @@
     true,
     {
         params ["_value"];
-        GVAR(unitCode) = compile _value; // Compile here to check if variable is of type code
+        // Compile here to check if variable is of type code.
+        GVAR(unitCode) = compile _value;
     }
 ] call CBA_fnc_addSetting;
 

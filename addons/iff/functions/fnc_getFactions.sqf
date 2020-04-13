@@ -1,5 +1,21 @@
 #include "script_component.hpp"
 
+/*
+ * Author: Neviothr
+ * Get a list of all factions of a certain side, of all units in the scenario.
+ *
+ * Arguments:
+ * 0: Side <SIDE>
+ *
+ * Return Value:
+ * Array of faction name as strings <ARRAY of STRINGS>
+ *
+ * Example:
+ * [WEST] call nev_iff_fnc_getFactions
+ *
+ * Public: No
+*/
+
 params ["_side"];
 
 TRACE_1("",_side);

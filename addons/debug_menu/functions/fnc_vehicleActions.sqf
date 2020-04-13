@@ -1,6 +1,24 @@
 #include "script_component.hpp"
 
+/*
+ * Author: Neviothr
+ * Restores health or ammo based on passed action type.
+ *
+ * Arguments:
+ * 0: Action type <NUMBER>
+ *
+ * Return Value:
+ * None.
+ *
+ * Example:
+ * [1] call nev_debug_menu_fnc_vehicleActions
+ *
+ * Public: [Yes/No]
+*/
+
 params ["_actionType"];
+
+// Default to player as target if the object under the cursor is not a vehicle.
 private _target = [vehicle player, cursorTarget] select (cursorTarget isKindOf "AllVehicles");
 
 TRACE_2("",_actionType,_target);

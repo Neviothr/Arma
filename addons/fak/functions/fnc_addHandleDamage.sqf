@@ -15,6 +15,7 @@ for "_i" from 1 to 10 step 1 do {
 
     _damage = damage _unit;
 
+    // Make sure the unit can't receive lethal damage.
     if (_damage > 0.9) then {
         _damage = 0.9;
     };

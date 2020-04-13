@@ -1,5 +1,21 @@
 #include "script_component.hpp"
 
+/*
+ * Author: Neviothr
+ * Terminate and clean up the IFF dialog.
+ *
+ * Arguments:
+ * None.
+ *
+ * Return Value:
+ * None.
+ *
+ * Example:
+ * onUnload = "call nev_iff_fnc_exitIFF"
+ *
+ * Public: No
+*/
+
 setViewDistance -1;
 
 GVAR(camera) cameraEffect ["terminate", "back"];

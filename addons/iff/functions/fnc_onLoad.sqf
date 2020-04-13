@@ -1,5 +1,23 @@
 #include "script_component.hpp"
 
+/*
+ * Author: Neviothr
+ * Handle loading of IFF dialog - creation of center position to offset unit placement from,
+ * create an invisible orb to point camera at, lighting and camera creation,
+ * reduction of view distance and population of listboxes.
+ *
+ * Arguments:
+ * IFF display <DISPLAY>
+ *
+ * Return Value:
+ * None.
+ *
+ * Example:
+ * onLoad = "call nev_iff_fnc_onLoad"
+ *
+ * Public: No
+*/
+
 params ["_dialog"];
 
 TRACE_1("",_dialog);

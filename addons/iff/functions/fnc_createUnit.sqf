@@ -1,5 +1,22 @@
 #include "script_component.hpp"
 
+/*
+ * Author: Neviothr
+ * Create a unit of a certain type at one of the 4 given positions.
+ *
+ * Arguments:
+ * 0: Unit classname <STRING>
+ * 1: Position <NUMBER>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * ["B_Soldier_A_F", 3] call nev_iff_fnc_createUnit
+ *
+ * Public: No
+*/
+
 params [["_unitCfg", "", [""]], ["_unitNumber", 0, [0]]];
 
 TRACE_2("",_unitCfg,_unitNumber);

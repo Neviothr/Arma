@@ -5,7 +5,7 @@ class GVAR(debugMenuDisplay) {
     onLoad = QUOTE(call FUNC(onLoad));
 
     class Controls {
-        // Keep button out of Tools.hpp and as the top class to insure it as the default selection
+        // Keep as the top class to insure it as the default selection
         class GVAR(removeDeadButton): NevRscButton {
             text = "Remove Dead";
             x = "SafeZoneX + (1215 / 1920) * SafeZoneW";
