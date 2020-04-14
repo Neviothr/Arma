@@ -2,7 +2,9 @@
 
 ADDON = false;
 
+PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
+PREP_RECOMPILE_END;
 
 // Weather commands are inconsistant after save load.
 // Detect this using EH, and define a variable.
