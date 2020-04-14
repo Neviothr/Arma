@@ -58,9 +58,6 @@ class CfgAmmo {
     class CUP_R_SMAW_HEAA: CUP_R_SMAW_HEDP {
         ENHANCED_LAUNCHER_AMMO;
     };
-    class CUP_R_SMAW_HEAA: CUP_R_SMAW_HEDP {
-        ENHANCED_LAUNCHER_AMMO;
-    };
     class CUP_R_OG7_AT: RocketBase {
         ENHANCED_LAUNCHER_AMMO;
     };
@@ -80,9 +77,6 @@ class CfgAmmo {
         ENHANCED_LAUNCHER_AMMO;
     };
     class CUP_R_RPG18_AT: RocketBase {
-        ENHANCED_LAUNCHER_AMMO;
-    };
-    class CUP_M_9K38_Igla_AA: M_Titan_AA {
         ENHANCED_LAUNCHER_AMMO;
     };
     class rhs_ammo_9k32: M_Titan_AA {

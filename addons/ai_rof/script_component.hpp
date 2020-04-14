@@ -6,9 +6,9 @@
 
 #include "\x\nev\addons\main\script_macros.hpp"
 
-# define AI_ROF(baseMode) \
+#define AI_ROF(baseMode) \
         class baseMode; \
-        class NEV_FullAuto: ##baseMode { \
+        class NEV_FullAuto: baseMode { \
             aiRateOfFire = 0.5; \
             aiRateOfFireDistance = 50; \
             minRange = 0; \
@@ -26,10 +26,10 @@
         aiDispersionCoefX = 40.0; \
         aiDispersionCoefY = 40.0
 
-# define AI_DISPERSION \
+#define AI_DISPERSION \
     aiDispersionCoefX = 40.0; \
     aiDispersionCoefY = 40.0
 
-# define AI_VEHICLE_DISPERSION \
+#define AI_VEHICLE_DISPERSION \
     aiDispersionCoefX = 75.0; \
     aiDispersionCoefY = 75.0

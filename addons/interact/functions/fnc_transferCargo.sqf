@@ -1,5 +1,21 @@
 #include "script_component.hpp"
 
+/*
+ * Author: Neviothr
+ * Move inventory content from one vehicle to another.
+ *
+ * Arguments:
+ * 0: The first argument <STRING>
+ *
+ * Return Value:
+ * Vehicle to move cargo from <OBJECT>
+ *
+ * Example:
+ * [truck] call nev_interact_fnc_transferCargo
+ *
+ * Public: No
+*/
+
 params ["_target"];
 TRACE_1("",_target);
 

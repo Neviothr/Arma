@@ -968,26 +968,26 @@ class CfgWeapons {
     };
     class rhs_weap_svd;
     class rhs_weap_svdp: rhs_weap_svd {
-        AI_DISPERSION
+        AI_DISPERSION;
     };
     class rhs_weap_svdp_npz: rhs_weap_svdp {
-        AI_DISPERSION
+        AI_DISPERSION;
     };
     class rhs_weap_svdp_wd: rhs_weap_svdp {
-        AI_DISPERSION
+        AI_DISPERSION;
     };
     class rhs_weap_svdp_wd_npz: rhs_weap_svdp_wd {
-        AI_DISPERSION
+        AI_DISPERSION;
     };
     class rhs_weap_svds: rhs_weap_svdp {
-        AI_DISPERSION
+        AI_DISPERSION;
     };
     class rhs_weap_svds_npz: rhs_weap_svds {
-        AI_DISPERSION
+        AI_DISPERSION;
     };
     class rhs_weap_orsis_Base_F;
     class rhs_weap_t5000: rhs_weap_orsis_Base_F {
-        AI_DISPERSION
+        AI_DISPERSION;
     };
     class rhs_weap_pp2000: hgun_PDW2000_F {
         modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
@@ -1004,34 +1004,34 @@ class CfgWeapons {
     };
     class rhs_weap_XM2010_Base_F;
     class rhs_weap_XM2010: rhs_weap_XM2010_Base_F {
-        AI_DISPERSION
+        AI_DISPERSION;
     };
     class rhs_weap_XM2010_d: rhs_weap_XM2010 {
-        AI_DISPERSION
+        AI_DISPERSION;
     };
     class rhs_weap_XM2010_wd: rhs_weap_XM2010 {
-        AI_DISPERSION
+        AI_DISPERSION;
     };
     class rhs_weap_XM2010_sa: rhs_weap_XM2010 {
-        AI_DISPERSION
+        AI_DISPERSION;
     };
     class rhs_weap_m24sws: rhs_weap_XM2010_Base_F {
-        AI_DISPERSION
+        AI_DISPERSION;
     };
     class rhs_weap_m24sws_d: rhs_weap_m24sws {
-        AI_DISPERSION
+        AI_DISPERSION;
     };
     class rhs_weap_m24sws_wd: rhs_weap_m24sws {
-        AI_DISPERSION
+        AI_DISPERSION;
     };
     class rhs_weap_m40a5: rhs_weap_XM2010_Base_F {
-        AI_DISPERSION
+        AI_DISPERSION;
     };
     class rhs_weap_m40a5_d: rhs_weap_m40a5 {
-        AI_DISPERSION
+        AI_DISPERSION;
     };
     class rhs_weap_m40a5_wd: rhs_weap_m40a5 {
-        AI_DISPERSION
+        AI_DISPERSION;
     };
     class rhs_weap_m4_Base;
     class rhs_weap_m4: rhs_weap_m4_Base {
@@ -1585,10 +1585,6 @@ class CfgWeapons {
         modes[] = {"Single", "Full", "NEV_FullAuto"};
         AI_ROF(Full);
     };
-    class CUP_arifle_AS_VAL_VFG_top_rail: CUP_arifle_AS_VAL_top_rail {
-        modes[] = {"Single", "Full", "NEV_FullAuto"};
-        AI_ROF(Full);
-    };
     class CUP_arifle_AS_VAL_flash: CUP_arifle_AS_VAL {
         modes[] = {"Single", "Full", "NEV_FullAuto"};
         AI_ROF(Full);
@@ -1613,7 +1609,6 @@ class CfgWeapons {
         modes[] = {"Single", "Full", "NEV_FullAuto"};
         AI_ROF(Full);
     };
-    class Tavor_base_F;
     class CUP_arifle_X95: Tavor_base_F {
         modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_medium_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
@@ -3019,7 +3014,6 @@ class CfgWeapons {
         modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
     };
-    class CUP_arifle_SCAR_L_Base;
     class CUP_arifle_Mk16_SV: CUP_arifle_SCAR_L_Base {
         modes[] = {"SCAR_L_Single", "SCAR_L_FullAuto", "NEV_FullAuto"};
         AI_ROF(SCAR_L_FullAuto);
@@ -3667,10 +3661,6 @@ class CfgWeapons {
         modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-    class CUP_arifle_ACR_tan_556: CUP_arifle_ACR_blk_556 {
-        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
-        AI_ROF(FullAuto);
-    };
     class CUP_arifle_ACR_snw_556: CUP_arifle_ACR_blk_556 {
         modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_far_optics2", "fullauto_medium", "NEV_FullAuto"};
         AI_ROF(FullAuto);
@@ -4027,10 +4017,6 @@ class CfgWeapons {
         modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-    class CUP_arifle_M4A1_standard_short_wdl: CUP_arifle_M4A1_standard_short_black {
-        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
-        AI_ROF(FullAuto);
-    };
     class CUP_arifle_M4A1_standard_short_dsrt: CUP_arifle_M4A1_standard_short_black {
         modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
@@ -4165,7 +4151,6 @@ class CfgWeapons {
     class gatling_30mm: gatling_30mm_base {
         AI_VEHICLE_DISPERSION;
     };
-    class LMG_Minigun;
     class LMG_Minigun2: LMG_Minigun {
         AI_VEHICLE_DISPERSION;
     };

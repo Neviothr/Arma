@@ -49,7 +49,7 @@ class IFF {
             w = 0.1;
             h = 0.05;
             colorText[] = {1,1,1,1};
-            text = "SIDE:"
+            text = "SIDE:";
         };
 
         class GVAR(factionText): RscText {
@@ -61,7 +61,7 @@ class IFF {
             w = 0.1;
             h = 0.05;
             colorText[] = {1,1,1,1};
-            text = "FACTION:"
+            text = "FACTION:";
         };
     };
 };

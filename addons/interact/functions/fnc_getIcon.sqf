@@ -1,15 +1,28 @@
 #include "script_component.hpp"
 
-params ["_actionIcon"];
+/*
+ * Author: Neviothr
+ * Get the icon of a vehicle.
+ *
+ * Arguments:
+ * 0: Vehicle <OBJECT>
+ *
+ * Return Value:
+ * Icon path <STRING>
+ *
+ * Example:
+ * [truck] call nev_interact_fnc_getIcon
+ *
+ * Public: No
+*/
 
-TRACE_1("",_actionIcon);
+params ["_vehicle"];
 
-private _actionIcon = getText (configfile >> "CfgVehicles" >> typeOf _x >> "icon");
-TRACE_1("",_actionIcon);
+private _actionIcon = getText (configfile >> "CfgVehicles" >> typeOf _vehicle >> "icon");
 
+// Use an emtpy string (default action icon) if no icon is found in config.
 if (_actionIcon find "\" == -1) then {
     _actionIcon = "";
 };
 
-TRACE_1("",_actionIcon);
 _actionIcon
