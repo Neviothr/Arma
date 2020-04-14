@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-GVAR(gameOn) = false; // Needed for CBA_fnc_waitUntilAndExecute's condition in fnc_waveInit
+GVAR(gameOn) = false; // Needed for CBA_fnc_waitUntilAndExecute's condition in fnc_waveInit.
 
 if (getMissionConfigValue ["safeStartEnabled", 0] == 1) then {
     LOG("Mission cfg value for SafeStart is 1 - enabling");

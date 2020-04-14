@@ -4,6 +4,7 @@ ADDON = false;
 
 #include "XEH_PREP.hpp"
 
+// https://github.com/acemod/ACE3/pull/6029
 ["WeaponHolderSimulated", "InitPost", {
     private _takeWeaponAction = [
         QGVAR(takeWeapon),

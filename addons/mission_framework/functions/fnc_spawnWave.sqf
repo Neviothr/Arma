@@ -1,5 +1,20 @@
 #include "script_component.hpp"
 
+/*
+ * Name: TMF_ai_fnc_spawnWave
+ * Author: Head, Snippers
+ *
+ * Arguments:
+ * 0: TMF WaveSpawner logic
+ *
+ * Return:
+ * N/A
+ *
+ * Description:
+ * Handles spawning units
+ * https://github.com/TMF3/TMF/blob/master/addons/ai/functions/fn_spawnWave.sqf
+*/
+
 params ["_logic"];
 
 TRACE_1("",_logic);
@@ -28,6 +43,7 @@ _data params ["_groups", "_vehicles"];
 
 {
     _x params ["_side", "_units", "_waypoints"];
+
     private _grp = createGroup [_side, true]; // Delete group when empty
 
     {
@@ -80,6 +96,7 @@ _data params ["_groups", "_vehicles"];
     for "_i" from 0 to ((count _waypoints) - 1) step 1 do {
         _way = _waypoints select _i;
 
+        // TODO fix this shit
         _w = _grp addWaypoint [_way select 1, 0, (_i + 1), _way select 0];
         _w setWaypointType (_way select 2);
         _w setWaypointBehaviour (_way select 3);
@@ -111,6 +128,7 @@ _handlers = _logic getVariable ["Handlers", []];
     };
 } forEach _handlers;
 
+// Issue a rush task to all spawned groups if Lambs Danger.fsm is loaded.
 if (isClass (configFile >> "CfgPatches" >> "lambs_main")) then {
     {
         [_x, 5000] spawn lambs_wp_fnc_taskRush;

@@ -1,3 +1,4 @@
+// https://github.com/TMF3/TMF/blob/master/addons/ai/CfgModules.hpp
 class CfgVehicles {
     class Logic;
     class Module_F: Logic {

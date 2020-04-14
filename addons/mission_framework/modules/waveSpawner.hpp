@@ -1,3 +1,4 @@
+// https://github.com/TMF3/TMF/blob/master/addons/ai/modules/waveSpawner.hpp
 class GVAR(waveSpawnModule): Module_F {
     scope = 2;
     displayName = "Wave Spawner";

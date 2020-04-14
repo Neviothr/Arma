@@ -1,5 +1,21 @@
 #include "script_component.hpp"
 
+/*
+ * Author: Neviothr
+ * Handle displaying of SafeStart notifcations.
+ *
+ * Arguments:
+ * 0: None.
+ *
+ * Return Value:
+ * None.
+ *
+ * Example:
+ * nev_mission_framework_fnc_safeStartNotification
+ *
+ * Public: No
+*/
+
 if (isNil QGVAR(safeStartPFH)) exitWith {};
 
 if (isNil QGVAR(safeStartCounter)) then {

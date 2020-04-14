@@ -1,5 +1,25 @@
 #include "script_component.hpp"
 
+/*
+ * Author: Head
+ * Serialize waypoints(?)
+ *
+ * Arguments:
+ * 0: Group of units <GROUP>
+ * 1: Waypoint index <NUBMER>
+ *
+ * Return Value:
+ * Waypoint <ARRAY>
+ *
+ * Example:
+ * [alpha1, 4] call nev_mission_framework_fnc_serializeWaypoint
+ *
+ * Public: No
+ * https://github.com/TMF3/TMF/blob/master/addons/common/functions/fn_serializeWaypoint.sqf
+*/
+
+_group=B Alpha 1-2, _waypointIndex=0
+
 params ["_group", "_waypointIndex"];
 TRACE_2("",_group,_waypointIndex);
 

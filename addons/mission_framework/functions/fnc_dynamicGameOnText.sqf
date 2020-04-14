@@ -1,5 +1,22 @@
 #include "script_component.hpp"
 
+/*
+ * Author: Neviothr
+ * Display text containing mission name, time, date and nearest location.
+ *
+ * Arguments:
+ * None.
+ *
+ * Return Value:
+ * None.
+ *
+ * Example:
+ * call nev_mission_framework_fnc_dynamicGameOnText
+ *
+ * Public: No
+*/
+
+// List of location types with text.
 #define LOCATION_TYPES ["Airport", "Area", "BorderCrossing", "BorderCrossing", "CivilDefense", "CulturalProperty", "DangerousForces", "Flag", "FlatArea", "FlatAreaCity", "FlatAreaCitySmall", "Hill", "Name", "NameCity", "NameCityCapital", "NameMarine", "NameVillage", "RockArea", "SafetyZone", "Strategic", "StrongpointArea", "VegetationBroadleaf", "VegetationFir", "VegetationPalm", "VegetationVineyard", "ViewPoint"]
 
 date params ["_year", "_month", "_day", "_hour", "_minute"];
@@ -14,6 +31,9 @@ if (_minute < 10) then {_minute = format ["0%1", _minute]};
 private _formattedTime = format ["%1:%2", _hour, _minute];
 
 private _nearestLocations = (nearestLocations [getPos player, LOCATION_TYPES, worldSize]) apply {text _x};
+
+// If no locations are found use default text,
+// if locations are found, use the first one with text.
 private _formattedLocation = if (_nearestLocations isEqualTo []) then {
     "In the middle of nowhere";
 } else {

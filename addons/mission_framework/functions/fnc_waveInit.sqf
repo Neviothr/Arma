@@ -1,11 +1,28 @@
 #include "script_component.hpp"
 
+/*
+ * Name: TMF_ai_fnc_waveInit
+ * Author: Head, Snippers
+ *
+ * Arguments:
+ * 0: TMF WaveSpawner logic
+ * 1: _units
+ * 2: _activated
+ *
+ * Return:
+ * N/A
+ *
+ * Description:
+ * Handles creation of wavespawner structure
+*/
+
 if (is3DEN) exitWith {};
 
 params ["_logic", "_units", "_activated"];
 
 TRACE_3("",_logic,_units,_activated);
 
+// Make sure our module is named properly.
 if (" " in str _logic) exitWith {ERROR_MSG_1("One or more wave spawner modules aren't named properly - '%1'. Terminating init.",_logic)};
 
 if !(_logic getVariable [QGVAR(init), false]) then {
@@ -80,6 +97,7 @@ if !(_logic getVariable [QGVAR(init), false]) then {
     _logic setVariable [QGVAR(init), true, true];
 };
 
+// Wait until game on if SafeStart is enabled.
 [
     {(GVAR(gameOn)) || (getMissionConfigValue ["safeStartEnabled", 0] == 0)},
     {
