@@ -18,8 +18,6 @@
  * https://github.com/TMF3/TMF/blob/master/addons/common/functions/fn_serializeWaypoint.sqf
 */
 
-_group=B Alpha 1-2, _waypointIndex=0
-
 params ["_group", "_waypointIndex"];
 TRACE_2("",_group,_waypointIndex);
 
