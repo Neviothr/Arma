@@ -79,20 +79,13 @@ if ((getAnimSpeedCoef _unit) != 1) then {
     };
 };
 
-if (_overexhausted) then {
+if (_fatigue > 0.6) then {
+    [_unit, "blockSprint", "advanced_fatigue", false] call ace_common_fnc_statusEffect_set;
+    _unit setAnimSpeedCoef 0.75;
+};
+if (_fatigue > 0.75) then {
     [_unit, "blockSprint", "advanced_fatigue", true] call ace_common_fnc_statusEffect_set;
-} else {
-     if (isForcedWalk _unit && {_fatigue < 0.7}) then {
-        [_unit, "blockSprint", "advanced_fatigue", false] call ace_common_fnc_statusEffect_set;
-    } else {
-        if ((isSprintAllowed _unit) && {_fatigue > 0.7}) then {
-            [_unit, "blockSprint", "advanced_fatigue", true] call ace_common_fnc_statusEffect_set;
-        } else {
-            if ((!isSprintAllowed _unit) && {_fatigue < 0.6}) then {
-                [_unit, "blockSprint", "advanced_fatigue", false] call ace_common_fnc_statusEffect_set;
-            };
-        };
-    };
+    _unit setAnimSpeedCoef 0.5;
 };
 
 _unit setVariable ["ace_advanced_fatigue_aimFatigue", _fatigue];
