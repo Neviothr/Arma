@@ -131,7 +131,7 @@ _handlers = _logic getVariable ["Handlers", []];
 // Issue a rush task to all spawned groups if Lambs Danger.fsm is loaded.
 if (isClass (configFile >> "CfgPatches" >> "lambs_main")) then {
     {
-        [_x, 5000] spawn lambs_wp_fnc_taskRush;
+        [_x, sqrt ((worldSize ^ 2) + (worldSize ^ 2))] spawn lambs_wp_fnc_taskRush;
     } forEach _spawnedGroups;
 };
 

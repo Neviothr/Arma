@@ -10,7 +10,7 @@ class GVAR(debugMenuDisplay) {
             text = "Remove Dead";
             x = "SafeZoneX + (1215 / 1920) * SafeZoneW";
             y = "SafeZoneY + (400 / 1080) * SafeZoneH";
-            action = QUOTE({deleteVehicle _x} forEach allDead - GVAR(deadOnStart) + nev_blood_bloodDrops);
+            action = QUOTE({deleteVehicle _x} forEach allDead - GVAR(deadOnStart));
             default = 1;
         };
 

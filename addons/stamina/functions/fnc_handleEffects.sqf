@@ -79,11 +79,11 @@ if ((getAnimSpeedCoef _unit) != 1) then {
     };
 };
 
-if (_fatigue > 0.6) then {
+if (_fatigue > 0.8) then {
     [_unit, "blockSprint", "advanced_fatigue", false] call ace_common_fnc_statusEffect_set;
     _unit setAnimSpeedCoef 0.75;
 };
-if (_fatigue > 0.75) then {
+if (_fatigue > 0.9) then {
     [_unit, "blockSprint", "advanced_fatigue", true] call ace_common_fnc_statusEffect_set;
     _unit setAnimSpeedCoef 0.5;
 };

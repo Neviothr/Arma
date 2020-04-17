@@ -50,7 +50,7 @@ if !(_safePos isEqualTo [0,0]) then {
         private _group = [_safePosAGL, _groupSide, _groupArray] call BIS_fnc_spawnGroup;
 
         if (isClass (configFile >> "CfgPatches" >> "lambs_main")) then {
-            [_group, 5000] spawn lambs_wp_fnc_taskRush;
+            [_group, sqrt ((worldSize ^ 2) + (worldSize ^ 2))] spawn lambs_wp_fnc_taskRush;
         };
 
         if (_unitCode isEqualTo {}) then {
