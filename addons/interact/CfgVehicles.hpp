@@ -90,6 +90,16 @@ class CfgVehicles {
     // https://github.com/acemod/ACE3/pull/6029/files#diff-862801d9b09964647e9ad6134b3cab17
     class Man;
     class CAManBase: Man {
+        class ACE_SelfActions {
+            class GVAR(placeMarker) {
+                displayName = "Place Marker";
+                condition = "true";
+                exceptions[] = {};
+                statement = QUOTE(call FUNC(placeMarker));
+                icon = "";
+            };
+        };
+
         class ACE_Actions {
             class ACE_MainActions {
                 class GVAR(Gear) {
