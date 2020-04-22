@@ -14,10 +14,17 @@ class GVAR(iffButton): NevRscButton {
 };
 
 class GVAR(createAceZeusButton): NevRscButton {
-    text = "ACE Zeus";
+    text = "ACE Zeus On";
     x = "SafeZoneX + (1215 / 1920) * SafeZoneW";
     y = "SafeZoneY + (365 / 1080) * SafeZoneH";
     action = "ace_zeus_zeus = objNull; ['ace_zeus_createZeus', player] call CBA_fnc_serverEvent";
+};
+
+class GVAR(deleteAceZeusButton): NevRscButton {
+    text = "ACE Zeus Off";
+    x = "SafeZoneX + (1310 / 1920) * SafeZoneW";
+    y = "SafeZoneY + (365 / 1080) * SafeZoneH";
+    action = "deleteVehicle ace_zeus_zeus; ace_zeus_zeus) = nil";
 };
 
 class GVAR(map): RscMapControl {

@@ -16,6 +16,7 @@
  * Public: No
 */
 
-private _marker = createMarker ["BuildingMarker" + str random 10000, getPos player];
+// By using doing this we can create markers at the center of buildings, even if the player is not inside.
+private _marker = createMarker ["BuildingMarker" + str random 10000, (nearestBuilding player) modelToWorld [0,0,0]];
 _marker setMarkerType "mil_dot";
 _marker setMarkerColor "ColorRed";

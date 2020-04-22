@@ -91,11 +91,11 @@ class CfgVehicles {
     class Man;
     class CAManBase: Man {
         class ACE_SelfActions {
-            class GVAR(placeMarker) {
-                displayName = "Place Marker";
+            class GVAR(createMarker) {
+                displayName = "Create Marker";
                 condition = "true";
                 exceptions[] = {};
-                statement = QUOTE(call FUNC(placeMarker));
+                statement = QUOTE(call FUNC(createMarker));
                 icon = "";
             };
         };

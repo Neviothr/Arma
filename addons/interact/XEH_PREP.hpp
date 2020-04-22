@@ -1,4 +1,4 @@
 PREP(addCargoActions);
+PREP(createMarker);
 PREP(getIcon);
-PREP(placeMarker);
 PREP(transferCargo);
