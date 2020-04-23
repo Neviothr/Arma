@@ -15,6 +15,7 @@ class GVAR(debugMenuDisplay) {
         };
 
         #include "Arsenal.hpp"
+        #include "ConfigDump.hpp"
         #include "Date.hpp"
         #include "DebugConsole.hpp"
         #include "Static.hpp"

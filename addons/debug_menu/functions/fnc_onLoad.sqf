@@ -150,3 +150,12 @@ if (GVAR(mapCentering)) then {
     _mapDisplay ctrlMapAnimAdd [0, 0.05, [worldSize / 2, worldsize / 2, 0]];
     ctrlMapAnimCommit _mapDisplay;
 };
+
+// Disable config dump button and edit box if filePatching is disabled, since script and extention are in A3 root.
+if !(isFilePatchingEnabled) then {
+    private _configDumpButton = _dialog displayCtrl IDC_configDumpButton;
+    private _configDumpHandle = _dialog displayCtrl IDC_configDumpHandle;
+
+    _configDumpButton ctrlEnable false;
+    _configDumpHandle ctrlEnable false;
+};

@@ -1,6 +1,7 @@
 PREP(changeWeather);
 PREP(debugConsoleExec);
 PREP(detachCrate);
+PREP(dumpConfig);
 PREP(getFullMoonDates);
 PREP(mapMouseButtonClick);
 PREP(onLoad);

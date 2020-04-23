@@ -18,7 +18,7 @@
 
 private _code = compile ctrlText IDC_debugConsole;
 
-if (_code isEqualTo {}) exitWith {LOG("Console is emtpy, no code to execute provided.")}
+if (_code isEqualTo {}) exitWith {LOG("Console is empty, no code to execute provided.")}
 
 params ["_target"];
 TRACE_2("",_target,_code);
