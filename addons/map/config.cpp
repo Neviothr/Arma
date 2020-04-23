@@ -14,6 +14,7 @@ class CfgPatches {
 
 #include "CfgEventhandlers.hpp"
 
+// Tints the map ever so slightly in yellow, easier on eyes.
 class RscMapControl {
     colorBackground[]={1,1,0.85000002,0.94999999};
 };
