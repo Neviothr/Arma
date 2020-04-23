@@ -1,4 +1,4 @@
-#define COMPONENT map_brightness
+#define COMPONENT map
 
 #include "\x\nev\addons\main\script_mod.hpp"
 

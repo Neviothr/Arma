@@ -2,7 +2,7 @@
 
 class CfgPatches {
     class ADDON {
-        name = "NEV Component - Map Brightness";
+        name = "NEV Component - Map";
         author = "Neviothr";
         units[] = {};
         weapons[] = {};
@@ -13,3 +13,7 @@ class CfgPatches {
 };
 
 #include "CfgEventhandlers.hpp"
+
+class RscMapControl {
+    colorBackground[]={1,1,0.85000002,0.94999999};
+};

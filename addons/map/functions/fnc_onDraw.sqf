@@ -12,7 +12,7 @@
  * None.
  *
  * Example:
- * _mapControl ctrlAddEventHandler ["Draw", {_this call nev_map_brightness_onDraw}];
+ * _mapControl ctrlAddEventHandler ["Draw", {_this call nev_map_fnc_onDraw}];
  *
  * Public: No
  * https://steamcommunity.com/sharedfiles/filedetails/?id=498740884
