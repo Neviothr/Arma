@@ -16,13 +16,13 @@ addMissionEventHandler ["Loaded", {
 
 // Sort ACE VA by mod/weight upon opening.
 ["ace_arsenal_leftPanelFilled", {
-	params ["_display"];
+    params ["_display"];
 
-	private _leftPanelCtrl = _display displayCtrl 16; // IDC_sortLeftTab
-	_leftPanelCtrl lbSetCurSel 1;
+    private _leftPanelCtrl = _display displayCtrl 16; // IDC_sortLeftTab
+    _leftPanelCtrl lbSetCurSel 1;
 
-	private _rightPanelCtrl = _display displayCtrl 17; // IDC_sortRightTab
-	_rightPanelCtrl lbSetCurSel 1;
+    private _rightPanelCtrl = _display displayCtrl 17; // IDC_sortRightTab
+    _rightPanelCtrl lbSetCurSel 1;
 }] call CBA_fnc_addEventHandler;
 
 
