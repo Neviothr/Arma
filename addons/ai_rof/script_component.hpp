@@ -22,13 +22,15 @@
             showToPlayer = 0; \
             aiRateOfFireDispersion = 0; \
             aiBurstTerminable = false; \
+            aiDispersionCoefX = 75.0; \
+            aiDispersionCoefY = 75.0; \
         }; \
-        aiDispersionCoefX = 40.0; \
-        aiDispersionCoefY = 40.0
+        aiDispersionCoefX = 75.0; \
+        aiDispersionCoefY = 75.0
 
 #define AI_DISPERSION \
-    aiDispersionCoefX = 40.0; \
-    aiDispersionCoefY = 40.0
+    aiDispersionCoefX = 75.0; \
+    aiDispersionCoefY = 75.0
 
 #define AI_VEHICLE_DISPERSION \
     aiDispersionCoefX = 75.0; \

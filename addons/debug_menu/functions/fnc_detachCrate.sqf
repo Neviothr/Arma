@@ -28,9 +28,9 @@ detach _ammoBox;
 
 // Don't create maker if debug menu map centering is disabled, to prevent player from using it to orient.
 if !(GVAR(mapCentering)) then {
-    private _ammoBoxMarker = createMarker ["", _ammoBox];
+    private _ammoBoxMarker = createMarker [str (_ammoBox modelToWorld [0,0,0]), _ammoBox];
     _ammoBoxMarker setMarkerColor "ColorWEST";
     _ammoBoxMarker setMarkerShape "ELLIPSE";
     _ammoBoxMarker setMarkerBrush "Solid";
-    _ammoBoxMarker setMarkerSize [50, 50];
+    _ammoBoxMarker setMarkerSize [5, 5];
 };

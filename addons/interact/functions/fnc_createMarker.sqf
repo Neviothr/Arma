@@ -16,8 +16,8 @@
  * Public: No
 */
 
-// Use the model center of the neareast building for marker creation,
-// this allows the player to mark buildings at their center, even from the outside.
-private _marker = createMarker ["", (nearestBuilding player) modelToWorld [0,0,0]];
+// Use the model center of the building the player is looking at for marker loaction,
+// this allows the player to mark buildings at their center, even from the outside, and even if the building is enterable.
+private _marker = createMarker [str (cursorObject modelToWorld [0,0,0]), cursorObject modelToWorld [0,0,0]];
 _marker setMarkerType "mil_dot";
-_marker setMarkerColor "ColorRed";
+_marker setMarkerColor "ColorGreen";
