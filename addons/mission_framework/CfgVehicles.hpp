@@ -10,4 +10,5 @@ class CfgVehicles {
         };
     };
     #include "\x\nev\addons\mission_framework\modules\waveSpawner.hpp"
+    #include "\x\nev\addons\mission_framework\modules\endMission.hpp"
 };

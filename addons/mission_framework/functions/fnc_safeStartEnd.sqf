@@ -32,5 +32,5 @@ hint "AI modules are live in 5 seconds.";
 [
     {call FUNC(dynamicGameOnText)},
     [],
-    10
+    15
 ] call CBA_fnc_waitAndExecute;

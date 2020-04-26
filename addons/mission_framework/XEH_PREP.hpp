@@ -1,5 +1,6 @@
 PREP(addWaveHandler);
 PREP(dynamicGameOnText);
+PREP(endMission);
 PREP(safeStartEnd);
 PREP(safeStartNotification);
 PREP(serializeWaypoint);
