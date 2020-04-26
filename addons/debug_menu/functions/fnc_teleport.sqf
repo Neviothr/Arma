@@ -27,7 +27,7 @@ openMap [true, true];
 addMissionEventHandler ["MapSingleClick", {
     params ["", "_pos"];
 
-    // If the player isn't allow in a group, teleport every member of it.
+    // If the player isn't alone in a group, teleport every member of it.
     private _group = units player;
 
     if (count _group > 1) then {

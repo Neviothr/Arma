@@ -21,7 +21,7 @@
             burstRangeMax = 5; \
             showToPlayer = 0; \
             aiRateOfFireDispersion = 0; \
-            aiBurstTerminable = false; \
+            aiBurstTerminable = true; \
             aiDispersionCoefX = 75.0; \
             aiDispersionCoefY = 75.0; \
         }; \
