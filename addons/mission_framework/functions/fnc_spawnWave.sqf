@@ -118,9 +118,9 @@ _data params ["_groups", "_vehicles"];
     _spawnedGroups pushBack _grp;
 } forEach _groups;
 
-_wave = _logic getVariable ["Waves", 1];
-_logic setVariable ["Waves", (_wave - 1)];
-_handlers = _logic getVariable ["Handlers", []];
+_wave = _logic getVariable [QGVAR(waves), 1];
+_logic setVariable [QGVAR(waves), (_wave - 1)];
+_handlers = _logic getVariable [QGVAR(handlers), []];
 
 {
     if (_x isEqualType {}) then {
@@ -136,10 +136,10 @@ if (isClass (configFile >> "CfgPatches" >> "lambs_main")) then {
 };
 
 // Check if there is another wave
-if (_logic getVariable ["Waves", 1] > 0) then {
+if (_logic getVariable [QGVAR(waves), 1] > 0) then {
 
     // Check if we need to wait for them to die
-    if (_logic getVariable ["WhenDead", false]) then {
+    if (_logic getVariable [QGVAR(whenDead), false]) then {
         [
             {{{alive _x} count (units _x) > 0 } count (_this select 1) <= 0},
             FUNC(spawnWave),
@@ -149,7 +149,7 @@ if (_logic getVariable ["Waves", 1] > 0) then {
         [
             FUNC(spawnWave),
             [_logic],
-            _logic getvariable ["Time", 10]
+            _logic getvariable [QGVAR(time), 10]
         ] call CBA_fnc_waitAndExecute;
     };
 };

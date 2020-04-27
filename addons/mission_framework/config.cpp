@@ -16,5 +16,3 @@ class CfgPatches {
 #include "CfgEventHandlers.hpp"
 #include "CfgNotifications.hpp"
 #include "CfgVehicles.hpp"
-// #include "\x\nev\addons\main\ui\BaseDefines.hpp"
-// #include "RscDisplaySingleMission.hpp"

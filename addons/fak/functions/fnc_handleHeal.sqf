@@ -1,7 +1,6 @@
 #include "script_component.hpp"
 
 params ["_unit"];
-TRACE_1("",_unit);
 
 if !(isPlayer _unit) exitWith {};
 

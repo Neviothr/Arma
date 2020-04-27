@@ -20,8 +20,6 @@
 
 params ["_control"];
 
-TRACE_1("",_control);
-
 #define MAX_DARK 0.7
 
 // Find the edges of the screen in world space.

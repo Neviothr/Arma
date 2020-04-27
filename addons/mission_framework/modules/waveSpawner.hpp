@@ -14,25 +14,25 @@ class GVAR(waveSpawnModule): Module_F {
     };
 
     class Arguments: ArgumentsBaseUnits {
-        class Delay {
+        class GVAR(delay) {
             displayName = "Execution delay";
             description = "The time in seconds to wait before spawning the first wave";
             typeName = "NUMBER";
             defaultValue = "0";
         };
-        class Waves {
+        class GVAR(waves) {
             displayName = "Number of waves";
             description = "";
             typeName = "NUMBER";
             defaultValue = "1";
         };
-        class Time {
+        class GVAR(time) {
             displayName = "Time between waves";
             description = "In seconds.";
             typeName = "NUMBER";
             defaultValue = "10";
         };
-        class WhenDead {
+        class GVAR(whenDead) {
             displayName = "Previous wave must be dead";
             description = "Well should they?";
             typeName = "bool";
