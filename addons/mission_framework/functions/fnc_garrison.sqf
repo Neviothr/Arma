@@ -26,14 +26,14 @@ _buildings = _buildings + (_center nearObjects ["Land_fortified_nest_small_EP1",
 
 private _positions = [];
 
-// TODO - reduce coverage
+#define BUILDINGPOS (_x buildingPos -1)
 {
-    private _buildingPositions = _x call BIS_fnc_buildingPositions;
-    {
-        _positions pushBack _x;
-        TRACE_1("",_positions);
-    } forEach _buildingPositions;
-} forEach _buildings;
+	for "_i" from 0 to (count BUILDINGPOS - 1) step 2 do {
+		_positions pushBack (_x buildingPos _i);
+	};
+
+	false;
+} count _buildings;
 
 collect3DENHistory {
 	{
