@@ -1,4 +1,4 @@
-#define COMPONENT flashlight
+#define COMPONENT compositions
 
 #include "\x\nev\addons\main\script_mod.hpp"
 
