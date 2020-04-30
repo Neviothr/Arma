@@ -41,28 +41,28 @@ private _positions = [];
 
 #define BUILDINGPOS (_x buildingPos -1)
 {
-	for "_i" from 0 to (count BUILDINGPOS - 1) step 2 do {
-		_positions pushBack (_x buildingPos _i);
-	};
+    for "_i" from 0 to (count BUILDINGPOS - 1) step 2 do {
+        _positions pushBack (_x buildingPos _i);
+    };
 
-	false;
+    false;
 } count _buildings;
 
 collect3DENHistory {
-	{
-		private _randomPosition = selectRandom _positions;
-		_positions = _positions - [_randomPosition];
+    {
+        private _randomPosition = selectRandom _positions;
+        _positions = _positions - [_randomPosition];
 
-		if (count _positions == 0) exitWith {[localize "Not enough empty building positions.", 1] call BIS_fnc_3DENNotification};
+        if (count _positions == 0) exitWith {[localize "Not enough empty building positions.", 1] call BIS_fnc_3DENNotification};
 
-		if (surfaceIsWater _randomPosition) then {
-			_x set3DENAttribute ["position", ASLToATL _randomPosition];
-		} else {
-			_x set3DENAttribute ["position", _randomPosition];
-		};
+        if (surfaceIsWater _randomPosition) then {
+            _x set3DENAttribute ["position", ASLToATL _randomPosition];
+        } else {
+            _x set3DENAttribute ["position", _randomPosition];
+        };
 
-		_x set3DENAttribute ["unitPos", 3];
-		_x set3DENAttribute ["rotation", [0, 0, random 360]];
-		_x set3DENAttribute ["init", "this disableAI 'PATH'"];
-	} forEach _selectedObjects;
+        _x set3DENAttribute ["unitPos", 3];
+        _x set3DENAttribute ["rotation", [0, 0, random 360]];
+        _x set3DENAttribute ["init", "this disableAI 'PATH'"];
+    } forEach _selectedObjects;
 };
