@@ -6,7 +6,7 @@ class Display3DEN {
 			class GVAR(garrisonEntry) {
 				text = "[NEV] Garrison...";
                 value = 0;
-				action = "systemChat 'Showing some old text.'";
+				action = QUOTE(call FUNC(garrison));
 				conditionShow = "selected";
 			};
 		};

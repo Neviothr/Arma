@@ -1,6 +1,7 @@
 PREP(addWaveHandler);
 PREP(dynamicGameOnText);
 PREP(endMission);
+PREP(garrison);
 PREP(safeStartEnd);
 PREP(safeStartNotification);
 PREP(serializeWaypoint);
