@@ -1,5 +1,18 @@
 #include "script_component.hpp"
 
+/*
+   Author:R3vo
+   Date: 2019-08-03
+   Description:
+   Garrison one or multiple buildings in the area. Radius and coverage are taken from the custom UI ENH_Garrison.
+   Parameter(s):
+   CONTROL: Button control
+   Returns:
+   BOOLEAN: true
+
+   https://github.com/R3voA3/3den-Enhanced/blob/4935419b4f20054ff4325f64db143b32606ecd7f/3denEnhanced/functions/GUI/garrison/fn_garrison_garrison.sqf
+*/
+
 _fnc_all3DENSelected = {
     params [["_whiteList", ["Object", "Logic", "Trigger", "Marker"], [[]]]];
     private _return = [];
@@ -48,8 +61,8 @@ collect3DENHistory {
 			_x set3DENAttribute ["position", _randomPosition];
 		};
 
-		_x set3DENAttribute ["UnitPos", 3];
+		_x set3DENAttribute ["unitPos", 3];
 		_x set3DENAttribute ["rotation", [0, 0, random 360]];
-		_x disableAI "PATH";
+		_x set3DENAttribute ["init", "this disableAI 'PATH'"];
 	} forEach _selectedObjects;
 };
