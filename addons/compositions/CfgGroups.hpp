@@ -2409,7 +2409,7 @@ class CfgGroups {
                     class Object45 {side = 8; vehicle = "Land_Pallets_stack_F"; rank = ""; position[] = {1.12109,-3.87012,4.22088}; dir = 358.339;};
                     class Object46 {side = 8; vehicle = "Land_Pallets_stack_F"; rank = ""; position[] = {2.66919,-7.46362,4.23173}; dir = 358.881;};
                 };
-                class GVAR(stonePillbox2) {
+                class GVAR(stonePillbox1) {
                     name = "Stone Pillbox 1";
                     class Object0 {side = 8; vehicle = "Land_PillboxBunker_01_hex_F"; rank = ""; position[] = {-4.20825,0.88623,0.451925}; dir = 180.16;};
                     class Object1 {side = 8; vehicle = "Land_PillboxWall_01_3m_round_F"; rank = ""; position[] = {-8.07593,-0.378418,-0.00514603}; dir = 0;};

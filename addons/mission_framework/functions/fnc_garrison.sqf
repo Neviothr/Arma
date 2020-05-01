@@ -30,12 +30,7 @@ _center set [2, 0];
 
 // TODO - find a better way to find all occupiable buildings.
 private _buildings = _center nearObjects ["House", 200];
-_buildings = _buildings + (_center nearObjects ["Land_BagBunker_Large_F", 200]);
-_buildings = _buildings + (_center nearObjects ["Land_BagBunker_Small_F", 200]);
-_buildings = _buildings + (_center nearObjects ["Land_BagBunker_01_large_green_F", 200]);
-_buildings = _buildings + (_center nearObjects ["Land_BagBunker_01_small_green_F", 200]);
-_buildings = _buildings + (_center nearObjects ["Land_fortified_nest_big", 200]);
-_buildings = _buildings + (_center nearObjects ["Land_fortified_nest_small_EP1", 200]);
+_buildings = _buildings + (_center nearObjects ["Strategic", 200]);
 
 private _positions = [];
 
