@@ -14,6 +14,7 @@
  * [charlie2] call nev_mission_framework_fnc_serializeWaypoints
  *
  * Public: No
+ * Based on:
  * https://github.com/TMF3/TMF/blob/master/addons/common/functions/fn_serializeWaypoints.sqf
 */
 

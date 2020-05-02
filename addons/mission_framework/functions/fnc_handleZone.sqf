@@ -1,4 +1,26 @@
 #include "script_component.hpp"
+/*
+ * Author: Tim Beswick, Neviothr
+ * Handle spawning of units in zone.
+ *
+ * Arguments:
+ * 0: Zone spawner module logic <OBJECT>
+ * 1: Area marker created during zone init <MARKER>
+ * 2: Maximum amount of groups within zone at any given time <NUMBER>
+ * 3: Total amount of groups that will spawn in this zone <NUMBER>
+ * 4: Array of units from which spawned groups will consist of <ARRAY of STRINGS>
+ * 5: Side of spawned groups <SIDE>
+ *
+ * Return Value:
+ * None.
+ *
+ * Example:
+ * [zoneModule1, zoneMarker1, 8, 4, ["some_blufor_F"], east] call nev_mission_framework_fnc_endMission
+ *
+ * Public: No
+ * Based on:
+ * https://github.com/uksf/modpack/blob/master/addons/mission/functions/fnc_initPatrol.sqf
+*/
 
 params ["_logic", "_marker", "_maxGroups", "_groupPoolSize", "_unitArray", "_side"];
 
@@ -34,4 +56,4 @@ _logic setVariable [QGVAR(groupPoolSize), _groupPoolSize];
         private _groupPoolSize = _logic getVariable QGVAR(groupPoolSize);
         _logic setVariable [QGVAR(groupPoolSize), (_groupPoolSize - 1)];
     };
-}, 5, [_logic, _marker, _maxGroups, _unitArray, _side]] call CBA_fnc_addPerFrameHandler;
+}, 20 + (random 10), [_logic, _marker, _maxGroups, _unitArray, _side]] call CBA_fnc_addPerFrameHandler;

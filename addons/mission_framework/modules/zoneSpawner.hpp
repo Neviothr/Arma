@@ -1,4 +1,4 @@
-// https://github.com/TMF3/TMF/blob/master/addons/ai/modules/waveSpawner.hpp
+// https://github.com/uksf/modpack/blob/master/addons/mission/CfgVehicles.hpp
 class GVAR(zoneSpawnModule): Module_F {
     scope = 2;
     displayName = "Zone Spawner";

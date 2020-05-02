@@ -15,6 +15,7 @@
  * [alpha1, 4] call nev_mission_framework_fnc_serializeWaypoint
  *
  * Public: No
+ * Based on:
  * https://github.com/TMF3/TMF/blob/master/addons/common/functions/fn_serializeWaypoint.sqf
 */
 

@@ -1,16 +1,21 @@
 #include "script_component.hpp"
-
 /*
-   Author:R3vo
-   Date: 2019-08-03
-   Description:
-   Garrison one or multiple buildings in the area. Radius and coverage are taken from the custom UI ENH_Garrison.
-   Parameter(s):
-   CONTROL: Button control
-   Returns:
-   BOOLEAN: true
-
-   https://github.com/R3voA3/3den-Enhanced/blob/4935419b4f20054ff4325f64db143b32606ecd7f/3denEnhanced/functions/GUI/garrison/fn_garrison_garrison.sqf
+ * Author: R3vo, Neviothr
+ * Garrison one or multiple buildings and bunkers in the area.
+ *
+ * Arguments:
+ * None.
+ * At least 1 unit must be selected in 3den.
+ *
+ * Return Value:
+ * None.
+ *
+ * Example:
+ * call nev_mission_framework_fnc_garrison
+ *
+ * Public: No
+ * Based on:
+ * https://github.com/R3voA3/3den-Enhanced/blob/4935419b4f20054ff4325f64db143b32606ecd7f/3denEnhanced/functions/GUI/garrison/fn_garrison_garrison.sqf
 */
 
 _fnc_all3DENSelected = {

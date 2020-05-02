@@ -1,20 +1,15 @@
 /*
- * Name: TMF_ai_fnc_addWaveHandler
  * Author: Head
+ * Adds an eventhandler to a wave spawner that execute everytime a wave is spawned. Local execution only.
  *
  * Arguments:
  * 0: The wave spawner logic <OBJECT>
  * 1: Code to execute <CODE>
  *
- * Return:
- * None
+ * Return Value:
+ * None.
  *
- * Description:
- * Adds an eventhandler to a wave spawner that execute everytime a wave is spawned.
- * Local execution only.
- * https://github.com/TMF3/TMF/blob/master/addons/ai/functions/fn_addWaveHandler.sqf
- *
- * Example for removing headgear from all spawned units:
+ * Example:
  * [this, {
  *   params ["", "_groups"];
  *   {
@@ -23,6 +18,10 @@
  *     } forEach units _x;
  *   } forEach _groups;
  * }] call nev_mission_framework_fnc_addWaveHandler;
+ *
+ * Public: No
+ * Based on:
+ * https://github.com/TMF3/TMF/blob/master/addons/ai/functions/fn_addWaveHandler.sqf
 */
 
 #include "script_component.hpp"
