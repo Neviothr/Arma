@@ -12,13 +12,13 @@ class GVAR(endMissionModule): Module_F {
     class Arguments: ArgumentsBaseUnits {
         class Title {
             displayName = "Title";
-            description = "Notification Title";
+            description = "Notification Title.";
             typeName = "STRING";
             defaultValue = "";
         };
         class Description {
             displayName = "Description";
-            description = "Notification Description";
+            description = "Notification Description.";
             typeName = "STRING";
             defaultValue = "";
         };

@@ -2,6 +2,7 @@
 class CfgVehicles {
     class Logic;
     class Module_F: Logic {
+        class AttributesBase;
         class ArgumentsBaseUnits {
             class Units;
         };
@@ -11,4 +12,5 @@ class CfgVehicles {
     };
     #include "\x\nev\addons\mission_framework\modules\waveSpawner.hpp"
     #include "\x\nev\addons\mission_framework\modules\endMission.hpp"
+    #include "\x\nev\addons\mission_framework\modules\zoneSpawner.hpp"
 };

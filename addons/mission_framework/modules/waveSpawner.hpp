@@ -10,13 +10,13 @@ class GVAR(waveSpawnModule): Module_F {
     isDisposable = 0;
 
     class EventHandlers {
-        init = "if (isServer && !is3DEN) then {[{_this call tmf_AI_fnc_waveInit;}, [_this select 0 ,[], false]] call CBA_fnc_execNextFrame;}; _this call bis_fnc_moduleInit;";
+        init = "if (isServer && !is3DEN) then {[{_this call nev_mission_framework_fnc_waveInit;}, [_this select 0 ,[], false]] call CBA_fnc_execNextFrame;}; _this call bis_fnc_moduleInit;";
     };
 
     class Arguments: ArgumentsBaseUnits {
         class GVAR(delay) {
             displayName = "Execution delay";
-            description = "The time in seconds to wait before spawning the first wave";
+            description = "The time in seconds to wait before spawning the first wave.";
             typeName = "NUMBER";
             defaultValue = "0";
         };
