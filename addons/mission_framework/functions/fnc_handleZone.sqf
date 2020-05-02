@@ -41,7 +41,10 @@ _logic setVariable [QGVAR(groupPoolSize), _groupPoolSize];
     if ((count _currentGroupsActive) < _maxGroups) then {
 
         private _spawnPoint = [_marker] call CBA_fnc_randPosArea;
-        if (({_x distance2D _randomSpawn < 300} count (call CBA_fnc_players)) > 0) exitWith {};
+        if (player distance2D _randomSpawn < 500) exitWith {};
+
+        private _intersections = lineIntersectsSurfaces [eyePos player, _spawnPoint, player, objNull];
+        if (_intersections isEqualTo []) exitWith {};
 
         private _group = [_spawnPoint, call compile _side, call compile _unitArray] call BIS_fnc_spawnGroup;
 

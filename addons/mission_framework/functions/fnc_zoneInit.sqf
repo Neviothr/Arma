@@ -27,10 +27,11 @@ private _marker = createMarker [format ["zoneSpawner_%1_%2_%3", _position select
 private _area = _logic getVariable ["objectArea", []];
 _area params ["_a", "_b", "_angle", "_isRectangle"];
 
-_marker setMarkerAlpha 0.5;
 _marker setMarkerShape (["ELLIPSE", "RECTANGLE"] select _isRectangle);
 _marker setMarkerSize [_a, _b];
 _marker setMarkerDir (direction _logic);
+_marker setMarkerBrush "BORDER";
+_marker setMarkerColor "ColorRed";
 
 private _maxGroups = _logic getVariable QGVAR(maxGroups);
 private _groupPoolSize = _logic getVariable QGVAR(groupPoolSize);

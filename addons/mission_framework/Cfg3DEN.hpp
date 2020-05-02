@@ -8,8 +8,8 @@ class Cfg3DEN {
                             property = "safeStartEnabled";
                             value = 0;
                             control = "CheckboxNumber";
-                            displayName = "SafeStart";
-                            tooltip = "[NEV Addons] Enable SafeStart on mission launch?";
+                            displayName = "[NEV] SafeStart";
+                            tooltip = "Enable SafeStart on mission launch?";
                             defaultValue = "0";
                             expression = "true";
                             wikiType = "[[Bool]]";
