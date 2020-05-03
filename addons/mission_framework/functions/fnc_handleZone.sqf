@@ -46,6 +46,9 @@ _logic setVariable [QGVAR(groupPoolSize), _groupPoolSize];
         private _intersections = lineIntersectsSurfaces [eyePos player, _spawnPoint, player, objNull];
         if (_intersections isEqualTo []) exitWith {};
 
+        // For an unknown reason, _side and _unitArray are strings inside this scope, and therefore must be call compile'd in order to be used.
+        // Failing to do so for _side would raise a "Type String, expected Side" error,
+        // and would silently fail to execute BIS_fnc_spawnGroup for _unitArray.
         private _group = [_spawnPoint, call compile _side, call compile _unitArray] call BIS_fnc_spawnGroup;
 
         if (isClass (configFile >> "CfgPatches" >> "lambs_main")) then {

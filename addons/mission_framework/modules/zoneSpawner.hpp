@@ -42,11 +42,11 @@ class GVAR(zoneSpawnModule): Module_F {
             typeName = "COMBO";
             defaultValue = "";
             class Values {
-				class GVAR(west)        {name = "WEST"; value = west;}; // Listbox item
-				class GVAR(east)        {name = "EAST"; value = east;};
+                class GVAR(west)        {name = "WEST"; value = west;}; // Listbox item
+                class GVAR(east)        {name = "EAST"; value = east;};
                 class GVAR(independent) {name = "INDEPENDENT"; value = independent;};
                 class GVAR(civilian)    {name = "CIVILIAN"; value = civilian;};
-			};
+            };
         };
     };
     class ModuleDescription: ModuleDescription {};
