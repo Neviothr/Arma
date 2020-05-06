@@ -6,7 +6,7 @@ if !(isPlayer _unit) exitWith {};
 
 // Reduce the amount of damage the unit has by a random value between 0 and 1,
 // this requires multiple FAKs heal.
-private _healingFactor = (damage _unit) - (random 1);
+private _healingFactor = (damage _unit) - (random [0.25, 0.5, 1]);
 
 [
     {
