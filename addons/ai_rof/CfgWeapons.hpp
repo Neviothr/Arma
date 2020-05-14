@@ -1332,6 +1332,63 @@ class CfgWeapons {
         modes[] = {"manual", "close", "short", "medium", "far", "NEV_FullAuto"};
         AI_ROF(manual);
     };
+    class rhs_weap_m14_base;
+    class rhs_weap_m14: rhs_weap_m14_base {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m14_wd: rhs_weap_m14 {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m14_d: rhs_weap_m14 {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m14_fiberglass: rhs_weap_m14 {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m14_rail: rhs_weap_m14_rail_base {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m14_rail_wd: rhs_weap_m14_rail {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m14_rail_d: rhs_weap_m14_rail {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m14_rail_fiberglass: rhs_weap_m14_rail {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m14_ris: rhs_weap_m14_ris_base {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m14_ris_wd: rhs_weap_m14_ris {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m14_ris_d: rhs_weap_m14_ris {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m14_ris_fiberglass: rhs_weap_m14_ris {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m14_socom: rhs_weap_m14_socom_base {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class rhs_weap_m14_socom_rail: rhs_weap_m14_socom_rail_base {
+        modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
     class rhs_weap_m14ebrri: srifle_EBR_F {
         AI_DISPERSION;
     };
