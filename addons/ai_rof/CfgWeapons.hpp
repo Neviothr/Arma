@@ -1349,6 +1349,7 @@ class CfgWeapons {
         modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
+    class rhs_weap_m14_rail_base;
     class rhs_weap_m14_rail: rhs_weap_m14_rail_base {
         modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
         AI_ROF(FullAuto);
@@ -1365,6 +1366,7 @@ class CfgWeapons {
         modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
+    class rhs_weap_m14_ris_base;
     class rhs_weap_m14_ris: rhs_weap_m14_ris_base {
         modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
         AI_ROF(FullAuto);
@@ -1381,15 +1383,18 @@ class CfgWeapons {
         modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
+    class rhs_weap_m14_socom_base;
     class rhs_weap_m14_socom: rhs_weap_m14_socom_base {
         modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
+    class rhs_weap_m14_socom_rail_base;
     class rhs_weap_m14_socom_rail: rhs_weap_m14_socom_rail_base {
         modes[] = {"Single", "FullAuto", "single_close_optics1", "single_medium_optics1", "single_far_optics1", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
-    class rhs_weap_m14ebrri: srifle_EBR_F {
+    class rhs_weap_m14ebrri_base;
+    class rhs_weap_m14ebrri: rhs_weap_m14ebrri_base {
         AI_DISPERSION;
     };
     class rhs_weap_sr25: rhs_weap_m14ebrri {
