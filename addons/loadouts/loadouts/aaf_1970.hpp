@@ -3,7 +3,6 @@ class GVAR(r) {
     backpack = "CUP_B_AlicePack_Khaki";
     linkedItems[] = {"rhsgref_alice_webbing", "rhsgref_helmet_pasgt_altis_lizard", "ItemCompass", "ItemWatch", "ItemRadio"};
     weapons[] = {"hlc_rifle_hk33a2"};
-    items[] = {"rhsusf_acc_m952v", LIST_10("FirstAidKit")};
     magazines[] = {
         LIST_15("hlc_30rnd_556x45_b_HK33"),
         LIST_2("rhs_mag_f1"),
@@ -16,7 +15,6 @@ class GVAR(g) {
     backpack = "CUP_B_AlicePack_Khaki";
     linkedItems[] = {"rhsgref_alice_webbing", "rhsgref_helmet_pasgt_altis_lizard", "ItemCompass", "ItemWatch", "ItemRadio"};
     weapons[] = {"rhs_weap_m79", "rhs_weap_tt33"};
-    items[] = {"rhsusf_acc_m952v", LIST_10("FirstAidKit")};
     magazines[] = {
         LIST_5("rhs_mag_762x25_8"),
         LIST_2("rhs_mag_f1"),
@@ -34,7 +32,6 @@ class GVAR(rat) {
     backpack = "CUP_B_AlicePack_Khaki";
     linkedItems[] = {"rhsgref_alice_webbing", "rhsgref_helmet_pasgt_altis_lizard", "ItemCompass", "ItemWatch", "ItemRadio"};
     weapons[] = {"hlc_rifle_hk33a2", "rhs_weap_panzerfaust60"};
-    items[] = {"rhsusf_acc_m952v", LIST_10("FirstAidKit")};
     magazines[] = {
         LIST_15("hlc_30rnd_556x45_b_HK33"),
         LIST_2("rhs_mag_f1"),
@@ -47,7 +44,6 @@ class GVAR(ar) {
     backpack = "CUP_B_AlicePack_Khaki";
     linkedItems[] = {"rhsgref_alice_webbing", "rhsgref_helmet_pasgt_altis_lizard", "ItemCompass", "ItemWatch", "ItemRadio"};
     weapons[] = {"rhs_weap_mg42"};
-    items[] = {"rhsusf_acc_m952v", LIST_10("FirstAidKit")};
     magazines[] = {
         LIST_10("rhsgref_50Rnd_792x57_SmK_drum"),
         LIST_2("rhs_mag_f1"),
