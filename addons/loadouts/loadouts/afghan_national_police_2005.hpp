@@ -12,7 +12,7 @@ class GVAR(r) {
 
 class GVAR(g) {
     uniformClass = "rhsgref_uniform_ttsko_urban";
-    backpack = "B_Kitbag_cbr";
+    backpack = "B_TacticalPack_blk";
     linkedItems[] = {"V_TacVestIR_blk", "H_MilCap_blue_black_ess", "ItemCompass", "ItemWatch", "ItemRadio"};
     weapons[] = {"rhs_weap_akms_gp25"};
     magazines[] = {
@@ -26,7 +26,7 @@ class GVAR(g) {
 
 class GVAR(rat) {
     uniformClass = "rhsgref_uniform_ttsko_urban";
-    backpack = "B_Kitbag_cbr";
+    backpack = "B_TacticalPack_blk";
     linkedItems[] = {"V_TacVestIR_blk", "H_MilCap_blue_black_ess_bare", "ItemCompass", "ItemWatch", "ItemRadio"};
     weapons[] = {"rhs_weap_akmn", "rhs_weap_rpg7"};
     magazines[] = {
@@ -40,7 +40,7 @@ class GVAR(rat) {
 
 class GVAR(ar) {
     uniformClass = "rhsgref_uniform_ttsko_urban";
-    backpack = "B_Kitbag_cbr";
+    backpack = "B_TacticalPack_blk";
     linkedItems[] = {"V_TacVestIR_blk", "H_MilCap_blue_black_ess_bare", "ItemCompass", "ItemWatch", "ItemRadio"};
     weapons[] = {"rhs_weap_pkm"};
     magazines[] = {
