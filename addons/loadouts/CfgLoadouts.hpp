@@ -278,6 +278,9 @@ class CfgLoadouts {
     class bundeswehr_steppentarn {
         #include "loadouts\bundeswehr_steppentarn.hpp"
     };
+    class bundeswehr_steppentarn_alt {
+        #include "loadouts\bundeswehr_steppentarn_alt.hpp"
+    };
     class BUNDESWEHR_KSK_FLECKTARN {
         #include "loadouts\bundeswehr_ksk_flecktarn.hpp"
     };

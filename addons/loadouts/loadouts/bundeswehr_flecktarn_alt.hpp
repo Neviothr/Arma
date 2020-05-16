@@ -31,7 +31,7 @@ class GVAR(rat) {
     uniformClass = "rhsgref_uniform_flecktarn_full";
     backpack = "rhssaf_kitbag_smb";
     linkedItems[] = {"CUP_V_CZ_vest02", "rhsgref_helmet_pasgt_flecktarn", "ItemCompass", "ItemWatch", "ItemRadio"};
-    weapons[] = {"CUP_arifle_G36A_wdl", "launch_NLAW_F"};
+    weapons[] = {"CUP_arifle_G36A_wdl", "rhs_weap_M136"};
     magazines[] = {
         LIST_8("CUP_30Rnd_556x45_G36_wdl"),
         LIST_2("CUP_30Rnd_TE1_Green_Tracer_556x45_G36_wdl"),
