@@ -14,7 +14,7 @@ class GVAR(r) {
 class GVAR(g) {
     uniformClass = "rhsgref_uniform_ttsko_forest";
     backpack = "rhs_sidor";
-    linkedItems[] = {"rhsgref_otv_digi", "bear_ssh68", "ItemCompass", "ItemWatch", "ItemRadio"};
+    linkedItems[] = {"rhsgref_otv_digi", "rhs_ssh68", "ItemCompass", "ItemWatch", "ItemRadio"};
     weapons[] = {"rhs_weap_ak74_gp25"};
     magazines[] = {
         LIST_9("rhs_30Rnd_545x39_7N10_AK"),
@@ -29,7 +29,7 @@ class GVAR(g) {
 class GVAR(rat) {
     uniformClass = "rhsgref_uniform_ttsko_forest";
     backpack = "rhs_sidor";
-    linkedItems[] = {"rhsgref_otv_khaki", "bear_ssh68_olive", "ItemCompass", "ItemWatch", "ItemRadio"};
+    linkedItems[] = {"rhsgref_otv_khaki", "rhs_ssh68", "ItemCompass", "ItemWatch", "ItemRadio"};
     weapons[] = {"rhs_weap_ak74n", "rhs_weap_rpg75"};
     magazines[] = {
         LIST_9("rhs_30Rnd_545x39_7N10_AK"),
@@ -42,7 +42,7 @@ class GVAR(rat) {
 class GVAR(ar) {
     uniformClass = "rhsgref_uniform_ttsko_forest";
     backpack = "rhs_sidor";
-    linkedItems[] = {"rhsgref_otv_khaki", "bear_ssh68_olive", "ItemCompass", "ItemWatch", "ItemRadio"};
+    linkedItems[] = {"rhsgref_otv_khaki", "rhs_ssh68", "ItemCompass", "ItemWatch", "ItemRadio"};
     weapons[] = {"CUP_arifle_RPK74_45"};
     magazines[] = {
         LIST_6("rhs_45Rnd_545X39_7N10_AK"),

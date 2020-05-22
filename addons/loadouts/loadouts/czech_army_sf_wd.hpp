@@ -42,7 +42,7 @@ class GVAR(ar) {
     linkedItems[] = {"CUP_V_CZ_NPP2006_co_black", "CUP_V_CZ_NPP2006_nk_black", "ItemCompass", "ItemWatch", "ItemRadio"};
     weapons[] = {"CUP_lmg_Mk48_wdl"};
     magazines[] = {
-        LIST_5("rhsusf_100Rnd_762x51"),
+        LIST_5("CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M"),
         "rhs_mag_m67",
         "rhs_mag_an_m8hc"
     };
