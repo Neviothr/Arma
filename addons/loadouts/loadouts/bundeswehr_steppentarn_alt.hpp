@@ -31,7 +31,6 @@ class GVAR(rat) {
     uniformClass = "CUP_U_B_GER_Tropentarn_2";
     backpack = "B_Kitbag_tan";
     linkedItems[] = {"CUP_V_I_RACS_Carrier_Vest_2", "CUP_H_Ger_Boonie_desert", "ItemCompass", "ItemWatch", "ItemRadio"};
-    weapons[] = {"CUP_arifle_G36K_KSK_VFG_camo", "rhs_weap_M136"};
     weapons[] = {"CUP_arifle_G36A_camo", "rhs_weap_M136"};
     magazines[] = {
         LIST_8("CUP_30Rnd_556x45_G36_camo"),
