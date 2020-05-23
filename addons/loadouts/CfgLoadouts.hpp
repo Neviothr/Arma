@@ -71,17 +71,8 @@ class CfgLoadouts {
     class GB_WOOD_1990 {
         #include "loadouts\gb_wood_1990.hpp"
     };
-    class GB_DES_1990 {
-        #include "loadouts\gb_des_1990.hpp"
-    };
     class GB_WOOD_2000 {
         #include "loadouts\gb_wood_2000.hpp"
-    };
-    class GB_DES_2000 {
-        #include "loadouts\gb_des_2000.hpp"
-    };
-    class GB_MTP_2015 {
-        #include "loadouts\gb_mtp_2015.hpp"
     };
     class GB_MTP_2015_H {
         #include "loadouts\gb_mtp_2015_H.hpp"
