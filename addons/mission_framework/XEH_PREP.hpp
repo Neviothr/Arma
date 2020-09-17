@@ -1,5 +1,6 @@
 PREP(addWaveHandler);
 PREP(ambientAA);
+PREP(deserializeWaypoint);
 PREP(dynamicGameOnText);
 PREP(endMission);
 PREP(garrison);

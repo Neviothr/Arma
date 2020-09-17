@@ -78,10 +78,11 @@ if !(_logic getVariable [QGVAR(init), false]) then {
         _groups pushBack [side _x, _units, [_x] call FUNC(serializeWaypoints)];
     } forEach _synchronizedGroups;
 
+    // store vehicle data
     _vehicles = _vehicles apply {[typeof _x, getposATL _x, getDir _x, [_x] call BIS_fnc_getVehicleCustomization]};
     _logic setVariable [QGVAR(waveData), [_groups, _vehicles]];
 
-    // Delete the old units/grps
+    // Clean up the template units.
     {
         _units = units _x;
 

@@ -1,42 +1,32 @@
-#include "script_component.hpp"
-
 /*
+ * Name: TMF_common_fnc_serializeWaypoint
  * Author: Head
- * Serialize waypoints(?)
  *
  * Arguments:
- * 0: Group of units <GROUP>
- * 1: Waypoint index <NUBMER>
+ * _this: Waypoint
  *
- * Return Value:
- * Waypoint <ARRAY>
+ * Return:
+ * array: waypoint data
  *
- * Example:
- * [alpha1, 4] call nev_mission_framework_fnc_serializeWaypoint
- *
- * Public: No
- * Based on:
- * https://github.com/TMF3/TMF/blob/master/addons/common/functions/fn_serializeWaypoint.sqf
-*/
+ * https://raw.githubusercontent.com/TMF3/TMF/591ed940fc43466e6599fd53bd4ad8df03e133dc/addons/common/functions/fnc_serializeWaypoint.sqf
+ */
+private _way = [
+    waypointName _this,
+    waypointPosition  _this,
+    waypointType _this,
+    waypointBehaviour _this,
+    waypointCombatMode _this,
+    waypointDescription _this,
+    waypointFormation _this,
+    waypointHousePosition _this,
+    waypointScript _this,
+    waypointSpeed _this,
+    waypointTimeout _this,
+    waypointVisible _this,
+    waypointCompletionRadius _this,
+    waypointStatements _this,
+    waypointAttachedObject _this,
+    waypointAttachedVehicle _this
+];
 
-params ["_group", "_waypointIndex"];
-TRACE_2("",_group,_waypointIndex);
-
-private _way = [];
-
-_way pushBack waypointName [_group, _waypointIndex];
-_way pushBack waypointPosition  [_group, _waypointIndex];
-_way pushBack waypointType [_group, _waypointIndex];
-_way pushBack waypointBehaviour [_group, _waypointIndex];
-_way pushBack waypointCombatMode [_group, _waypointIndex];
-_way pushBack waypointDescription [_group, _waypointIndex];
-_way pushBack waypointFormation [_group, _waypointIndex];
-_way pushBack waypointHousePosition [_group, _waypointIndex];
-_way pushBack waypointScript [_group, _waypointIndex];
-_way pushBack waypointShow [_group, _waypointIndex];
-_way pushBack waypointSpeed [_group, _waypointIndex];
-_way pushBack waypointTimeout [_group, _waypointIndex];
-_way pushBack waypointVisible [_group, _waypointIndex];
-
-TRACE_1("",_way);
 _way

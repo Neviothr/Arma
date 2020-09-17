@@ -21,11 +21,7 @@
 params ["_group"];
 TRACE_1("",_group);
 
-private _waypoints = [];
-
-{
-    _waypoints pushback (_x call FUNC(serializeWaypoint));
-} foreach waypoints _group;
+private _waypoints = (waypoints _group) apply {_x call FUNC(serializeWaypoint)};
 
 TRACE_1("",_waypoints);
 _waypoints
