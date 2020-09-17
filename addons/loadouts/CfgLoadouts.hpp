@@ -245,6 +245,11 @@ class CfgLoadouts {
     class nva_army_1970 {
         #include "loadouts\nva_army_1970.hpp"
     };
+    class UA_VDV_MM14 {
+        displayName = "UA Airborne Troops (2015-, MM-14)";
+        category = "Eastern Factions";
+        #include "loadouts\ua_vdv_mm14.hpp"
+    };
     class UA_VDV_TTSKO {
         #include "loadouts\ua_vdv_ttsko.hpp"
     };
@@ -308,6 +313,16 @@ class CfgLoadouts {
     class GREEK_ARMY_2018 {
         #include "loadouts\greek_army_2018.hpp"
     };
+    class NEW_ZEALAND_ARMY_2013_NZMCU {
+        displayName = "New Zealand Army (2013, NZMCU, AUG)";
+        category = "Western Factions";
+        #include "loadouts\nz_2013_aug.hpp"
+    };
+    class NEW_ZEALAND_ARMY_2015_NZMCU_LMT {
+        displayName = "New Zealand Army (2015, NZMCU, MARS-L)";
+        category = "Western Factions";
+        #include "loadouts\nz_2015_lmt.hpp"
+    };
     class NORWEGIAN_ARMY_2018 {
         #include "loadouts\norwegian_army_2018.hpp"
     };
@@ -325,6 +340,11 @@ class CfgLoadouts {
     };
     class AFR_MILITIA {
         #include "loadouts\afr_militia.hpp"
+    };
+    class AFR_ARMY {
+        displayName = "African Army (1990-)";
+        category = "Other";
+        #include "loadouts\afr_army.hpp"
     };
     class ARAB_INSURGENTS {
         #include "loadouts\arab_insurgents.hpp"
