@@ -34,18 +34,18 @@ TRACE_5("",_minDistance,_maxDistance,_groupSide,_groupArray,_unitCode);
 if (_groupArray isEqualTo []) exitWith {LOG("_groupArray is empty")};
 
 // Find a position obstructed from the player's view
-private _safePos = [player, _minDistance, _maxDistance, 20, 0, 0, 0, [], [[0,0], [0,0]]] call BIS_fnc_findSafePos;
+private _safePos = [player, _minDistance, _maxDistance, 20, 0, 0, 0, [], [[0, 0], [0, 0]]] call BIS_fnc_findSafePos;
 
 // When BIS_fnc_findSafePos cannot find a suitable position, default map center position is returned, which will be in format [x,y,0].
 // Make sure the position isn't the world center
-if !(_safePos isEqualTo [0,0]) then {
+if (_safePos isNotEqualTo [0, 0]) then {
     // Add 2 meters of height into the suitable position, this prevents AI from being created in shallow trenches into which the player can look.
     _safePos set [2, UNIT_HEIGHT];
 
     // Confirm the position is out of view
     private _intersections = lineIntersectsSurfaces [eyePos player, _safePos, player, objNull];
 
-    if !(_intersections isEqualTo []) then {
+    if (_intersections isNotEqualTo []) then {
         private _safePosAGL = ASLToAGL _safePos;
         private _group = [_safePosAGL, _groupSide, _groupArray] call BIS_fnc_spawnGroup;
 
