@@ -4140,6 +4140,199 @@ class CfgWeapons {
     class CUP_sgun_SPAS12: Rifle_Base_F {
         AI_DISPERSION;
     };
+    class CUP_arifle_G36A3: CUP_arifle_G36_Base {
+        modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_G36A3_AG36: CUP_arifle_G36A_RIS {
+        modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_G36A3_AG36_camo: CUP_arifle_G36A3_AG36 {
+        modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_G36A3_AG36_hex: CUP_arifle_G36A3_AG36 {
+        modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36A3_AG36_wdl: CUP_arifle_G36A3_AG36 {
+        modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36A3_camo: CUP_arifle_G36A3 {
+        modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36A3_grip: CUP_arifle_G36_Base {
+        modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36A3_grip_camo: CUP_arifle_G36A3_grip {
+        modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36A3_grip_hex: CUP_arifle_G36A3_grip {
+        modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36A3_grip_wdl: CUP_arifle_G36A3_grip {
+        modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36A3_hex: CUP_arifle_G36A3 {
+        modes[] = {"Single", "Burst", "FullAuto", "fullauto_medium", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36A3_wdl: CUP_arifle_G36A3 {
+        modes[] = {"Single", "Burst", "FullAuto", "fullauto_medium", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36CA3: CUP_arifle_G36C {
+        modes[] = {"Single", "Burst", "FullAuto", "fullauto_medium", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36CA3_camo: CUP_arifle_G36CA3 {
+        modes[] = {"Single", "Burst", "FullAuto", "fullauto_medium", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36CA3_grip: CUP_arifle_G36C {
+        modes[] = {"Single", "Burst", "FullAuto", "fullauto_medium", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36CA3_grip_camo: CUP_arifle_G36CA3_grip {
+        modes[] = {"Single", "Burst", "FullAuto", "fullauto_medium", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36CA3_grip_hex: CUP_arifle_G36CA3_grip {
+        modes[] = {"Single", "Burst", "FullAuto", "fullauto_medium", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36CA3_grip_wdl: CUP_arifle_G36CA3_grip {
+        modes[] = {"Single", "Burst", "FullAuto", "fullauto_medium", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36CA3_hex: CUP_arifle_G36CA3 {
+        modes[] = {"Single", "Burst", "FullAuto", "fullauto_medium", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36CA3_wdl: CUP_arifle_G36CA3 {
+        modes[] = {"Single", "Burst", "FullAuto", "fullauto_medium", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36E: CUP_arifle_G36_Base_CarryhandleOptics {
+        modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36E_camo: CUP_arifle_G36E {
+        modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36E_wdl: CUP_arifle_G36E {
+        modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36KA3: CUP_arifle_G36_Base {
+        modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36KA3_camo: CUP_arifle_G36KA3 {
+        modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36KA3_grip: CUP_arifle_G36_Base {
+        modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36KA3_grip_camo: CUP_arifle_G36KA3_grip {
+        modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36KA3_grip_hex: CUP_arifle_G36KA3_grip {
+        modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36KA3_grip_wdl: CUP_arifle_G36KA3_grip {
+        modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36KA3_hex: CUP_arifle_G36KA3 {
+        modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_G36KA3_wdl: CUP_arifle_G36KA3 {
+        modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+/*
+CUP_arifle_M4A1_SOMMOD_black
+CUP_arifle_M4A1_SOMMOD_ctrg
+CUP_arifle_M4A1_SOMMOD_ctrgt
+CUP_arifle_M4A1_SOMMOD_green
+CUP_arifle_M4A1_SOMMOD_Grip_black
+CUP_arifle_M4A1_SOMMOD_Grip_ctrg
+CUP_arifle_M4A1_SOMMOD_Grip_ctrgt
+CUP_arifle_M4A1_SOMMOD_Grip_green
+CUP_arifle_M4A1_SOMMOD_Grip_hex
+CUP_arifle_M4A1_SOMMOD_Grip_snow
+CUP_arifle_M4A1_SOMMOD_Grip_tan
+CUP_arifle_M4A1_SOMMOD_hex
+CUP_arifle_M4A1_SOMMOD_snow
+CUP_arifle_M4A1_SOMMOD_tan
+CUP_arifle_M16A1E1
+CUP_arifle_M16A1E1GL
+CUP_arifle_Mk17_CQC_AFG
+CUP_arifle_Mk17_CQC_AFG_black
+CUP_arifle_Mk17_CQC_AFG_woodland
+CUP_arifle_Mk17_STD_AFG
+CUP_arifle_Mk17_STD_AFG_black
+CUP_arifle_Mk17_STD_AFG_woodland
+CUP_arifle_Sa58P_rearris
+CUP_arifle_Sa58P_RIS1
+CUP_arifle_Sa58P_wood
+CUP_arifle_Sa58V_frontris
+CUP_arifle_Sa58V_rearris
+CUP_arifle_Sa58V_wood
+CUP_CZ_BREN2_556_8_Grn
+CUP_CZ_BREN2_556_8_Tan
+CUP_CZ_BREN2_556_11_GL_Grn
+CUP_CZ_BREN2_556_11_GL_Tan
+CUP_CZ_BREN2_556_11_Grn
+CUP_CZ_BREN2_556_11_Tan
+CUP_CZ_BREN2_556_14_GL_Grn
+CUP_CZ_BREN2_556_14_GL_Tan
+CUP_CZ_BREN2_556_14_Grn
+CUP_CZ_BREN2_556_14_Tan
+CUP_CZ_BREN2_762_8_Grn
+CUP_CZ_BREN2_762_8_Tan
+CUP_CZ_BREN2_762_14_GL_Grn
+CUP_CZ_BREN2_762_14_GL_Tan
+CUP_CZ_BREN2_762_14_Grn
+CUP_CZ_BREN2_762_14_Tan
+CUP_lmg_FNMAG_RIS_modern
+CUP_lmg_M240_B
+CUP_lmg_M240_norail
+CUP_lmg_M249_E1
+CUP_lmg_Pecheneg_B50_vfg
+CUP_lmg_Pecheneg_top_rail
+CUP_lmg_Pecheneg_top_rail_B50_vfg
+CUP_lmg_PKM_B50_vfg
+CUP_lmg_PKM_front_rail_B50_vfg
+CUP_lmg_PKM_top_rail
+CUP_lmg_PKM_top_rail_B50_vfg
+CUP_smg_M3A1
+CUP_smg_M3A1_blk
+CUP_smg_M3A1_grn
+CUP_smg_M3A1_snd
+CUP_srifle_M21
+CUP_srifle_M21_ris
+CUP_srifle_Mk18_blk
+CUP_srifle_Mk18_des
+CUP_srifle_Mk18_wdl
+rhs_weap_cz99
+rhs_weap_savz61_folded
+rhs_weap_type94_new
+*/
 
     // Vehicle weapons.
     class MGun;
