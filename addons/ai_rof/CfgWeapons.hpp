@@ -4264,23 +4264,73 @@ class CfgWeapons {
         modes[] = {"Single", "Fullauto", "NEV_FullAuto"};
         AI_ROF(FullAuto);
     };
+	class CUP_arifle_M4A1_SOMMOD_black: CUP_arifle_M4A1_BUIS_Base {
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A1_SOMMOD_ctrg: CUP_arifle_M4A1_SOMMOD_black {
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A1_SOMMOD_ctrgt: CUP_arifle_M4A1_SOMMOD_black {
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_M4A1_SOMMOD_green;
+	class CUP_arifle_M4A1_SOMMOD_ELCAN_snds_green: CUP_arifle_M4A1_SOMMOD_green {
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A1_SOMMOD_Grip_black: CUP_arifle_M4A1_BUIS_Base {
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A1_SOMMOD_Grip_ctrg: CUP_arifle_M4A1_SOMMOD_Grip_black {
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A1_SOMMOD_Grip_ctrgt: CUP_arifle_M4A1_SOMMOD_Grip_black {
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A1_SOMMOD_Grip_green: CUP_arifle_M4A1_SOMMOD_Grip_black {
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A1_SOMMOD_Grip_hex: CUP_arifle_M4A1_SOMMOD_Grip_black {
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A1_SOMMOD_Grip_snow: CUP_arifle_M4A1_SOMMOD_Grip_black {
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+    class CUP_arifle_M4A1_SOMMOD_Grip_tan;
+	class CUP_arifle_M4A1_SOMMOD_ELCAN_snds_tan: CUP_arifle_M4A1_SOMMOD_Grip_tan {
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A1_SOMMOD_hex {
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A1_SOMMOD_snow: CUP_arifle_M4A1_SOMMOD_black {
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M4A1_SOMMOD_tan: CUP_arifle_M4A1_SOMMOD_black {
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M16A1E1: CUP_arifle_XM16E1 {
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
+	class CUP_arifle_M16A1E1GL: CUP_arifle_M16A1GL {
+        modes[] = {"Single", "FullAuto", "NEV_FullAuto"};
+        AI_ROF(FullAuto);
+    };
 /*
-CUP_arifle_M4A1_SOMMOD_black
-CUP_arifle_M4A1_SOMMOD_ctrg
-CUP_arifle_M4A1_SOMMOD_ctrgt
-CUP_arifle_M4A1_SOMMOD_green
-CUP_arifle_M4A1_SOMMOD_Grip_black
-CUP_arifle_M4A1_SOMMOD_Grip_ctrg
-CUP_arifle_M4A1_SOMMOD_Grip_ctrgt
-CUP_arifle_M4A1_SOMMOD_Grip_green
-CUP_arifle_M4A1_SOMMOD_Grip_hex
-CUP_arifle_M4A1_SOMMOD_Grip_snow
-CUP_arifle_M4A1_SOMMOD_Grip_tan
-CUP_arifle_M4A1_SOMMOD_hex
-CUP_arifle_M4A1_SOMMOD_snow
-CUP_arifle_M4A1_SOMMOD_tan
-CUP_arifle_M16A1E1
-CUP_arifle_M16A1E1GL
 CUP_arifle_Mk17_CQC_AFG
 CUP_arifle_Mk17_CQC_AFG_black
 CUP_arifle_Mk17_CQC_AFG_woodland
