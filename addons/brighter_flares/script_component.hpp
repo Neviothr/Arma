@@ -10,4 +10,4 @@
     timeToLive = 60; \
     intensity  = 2500000; \
     coefGravity = 0.25; \
-    affectedByWind = true;
+    affectedByWind = true

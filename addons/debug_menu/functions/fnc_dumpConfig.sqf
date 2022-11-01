@@ -22,4 +22,4 @@ if (_configHandle isEqualTo {}) exitWith {WARNING("No config handle, unable to p
 
 TRACE_1("",_configHandle);
 
-[call _configHandle] call compile preprocessFileLineNumbers "dumpConfig.sqf";
+[call _configHandle] call compileScript ["dumpConfig.sqf"];
